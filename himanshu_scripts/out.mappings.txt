@@ -1,0 +1,24 @@
+Connective : इसके बाद
+Types of Sense : 1
+Sense : Temporal.Asynchronous.Succession - 1
+
+Connective : लेकिन
+Types of Sense : 1
+Sense : Expansion.Exception - 1
+
+Connective : और
+Types of Sense : 1
+Sense : Expansion.Conjunction - 2
+
+Connective : अगर..तो
+Types of Sense : 1
+Sense : Contingency.Condition - 1
+
+Connective : जिसकी वजह से
+Types of Sense : 1
+Sense : Contingency.Cause.Result - 1
+
+Connective : हालांकि
+Types of Sense : 1
+Sense : Comparison.Concession.Contra-expectation - 1
+
