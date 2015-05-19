@@ -1,6 +1,9 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
-import sys 
 import os 
 import codecs
 from operator import itemgetter
@@ -106,23 +109,20 @@ def analyseRelation(relation,data) :
     if relation.connSpan!='' :
         return isBetween(relation.connSpan , relation.arg1Span , relation.arg2Span) 
 
-def processAnnFile(annFD,rawFD,type='full') :
-    print annFD.name
+def processAnnFile( relationList , connTypeCounts , explicitConnDict, implicitConnDict , altlexConnDict, senseDict , connSenseIndex ,annFD,rawFD,type='full') :
+    print "Processing annotation file:",annFD.name
     ''' Given the annotation file and raw file descriptor, process the ann file and populate the discourse relations '''
 
-    relationTypeCounts = {'Explicit':0 , 'Implicit':0 ,'AltLex':0 , 'EntRel':0 , 'NoRel':0}
-    connTypeCounts = [0,0,0,0,0]
-    senseDict = {}
-    explicitConnDict = {}
-    altlexConnDict = {}
-    implicitConnDict = {}
-    connSenseIndex = {}
+#   connTypeCounts = {'Explicit':0 , 'Implicit':0 ,'AltLex':0 , 'EntRel':0 , 'NoRel':0}
+#    connTypeCounts = [0,0,0,0,0]
+#    senseDict = {}
+#    explicitConnDict = {}
+#    altlexConnDict = {}
+#    implicitConnDict = {}
+#    connSenseIndex = {}
 
     temp = rawFD.read()
-    print "Raw data---"
-    print temp.encode('utf8')
-    print "Raw data end--"
-    relationList = []
+#    relationList = []
     for line in annFD :
             fields=line.split('|')
             tempDR = discourseRelation(fields[0], fields[1],fields[14],fields[20] , fields[8])
@@ -133,7 +133,7 @@ def processAnnFile(annFD,rawFD,type='full') :
                     
             if type=='full' : 
 
-                relationTypeCounts[tempDR.relationType] += 1
+                connTypeCounts[tempDR.relationType] += 1
                 senseDict[tempDR.sense] = senseDict.setdefault(tempDR.sense,0) + 1
 
                 if tempDR.relationType=='Explicit' :
@@ -152,7 +152,7 @@ def processAnnFile(annFD,rawFD,type='full') :
                         implicitConnDict[tempDR.conn] = implicitConnDict.setdefault(tempDR.conn , 0 ) + 1
 
             relationList.append(tempDR)
-    return [relationList, relationTypeCounts, [explicitConnDict , implicitConnDict , altlexConnDict] , senseDict, connSenseIndex]
+    return [relationList, connTypeCounts, [explicitConnDict , implicitConnDict , altlexConnDict] , senseDict, connSenseIndex]
 
 if __name__ == '__main__' :
 
@@ -174,19 +174,21 @@ if __name__ == '__main__' :
     outRelationFD = codecs.open(outRelationFile,'w',encoding='utf-8')
     adjRelationFD = codecs.open(adjRelationFile,'w',encoding='utf-8')
 
+    
+    connTypeCounts = {'Explicit':0 , 'Implicit':0 ,'AltLex':0 , 'EntRel':0 , 'NoRel':0}
+    senseDict = {}
+    explicitConnDict = {}
+    altlexConnDict = {}
+    implicitConnDict = {}
+    connSenseIndex = {}
+    relationList=[]
+    
     for inpFile in annFileDict.iterkeys() :
-            print "File name-",
 	    annFD = open(annFileDict[inpFile],'r')
             rawFD = codecs.open(rawFileDict[inpFile],'rb',encoding='utf-8')
             outRelationFD.write(annFD.name + '\n')
-            [relationList , connTypeCounts, [explicitConnDict , implicitConnDict , altlexConnDict] , senseDict, connSenseIndex ] = processAnnFile(annFD , rawFD)
+            [relationList , connTypeCounts, [explicitConnDict , implicitConnDict , altlexConnDict] , senseDict, connSenseIndex ] = processAnnFile( relationList , connTypeCounts , explicitConnDict, implicitConnDict , altlexConnDict, senseDict , connSenseIndex ,annFD , rawFD)
 	    annFD.close()
-	    print "Extracted Explicit connectives"
-	    for i in relationList:
-		if(i.relationType=="Explicit"):   
-			print i.connSpan
-			print i.conn.encode('utf8')
-	    break
 
     # Producing the statistics File 
 
