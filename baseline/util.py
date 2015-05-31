@@ -92,4 +92,4 @@ def writeResults(discourseRelationList,filePath):
 		outFD.write(string+"\n")
 	outFD.close()
 def analyzeResults(goldFilePath,outputFilePath):
-
+	print "hah"
