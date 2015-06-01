@@ -60,7 +60,7 @@ Methods of the Node
 			2.1     subaha  NN      <fs af='subaha,n,f,sg,3,o,0,0' name='subaha' posn='10'>
 			2.2     se      PSP     <fs af='se,psp,,,,,,' name='se' posn='20'>
         			))
-        
+        			
         >>> node.get_field(1) # Also node.token
         ((
         >>> node.get_field(2) # Also node.tag
