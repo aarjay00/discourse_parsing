@@ -7,7 +7,7 @@ do
 	for files in $directory/*;
 	do
 		file="$(echo $files | cut -d'/' -f3 | cut -d'_' -f3)"
-		ssf_file="$(tree -fi ../hdtb/HDTB_pre_release_version-0.03/IntraChunk/SSF/utf/  | grep $file  )"
+		ssf_file="$(tree -fi ../hdtb/HDTB_pre_release_version-0.03/InterChunk/SSF/utf/  | grep $file  )"
 		filename="$(echo $files | cut -d'/' -f3)"
 		if [ "$ssf_file" == "" ]
 		then
@@ -20,4 +20,5 @@ do
 #		echo $ssf_file
 		cp $ssf_file "ssf/"$new_directory/$filename
 	done
-done 
+done
+python clean_ssf.py

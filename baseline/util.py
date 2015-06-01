@@ -10,7 +10,10 @@ import  cPickle as pickle
 
 import re
 from extract_relations import *
+import os.path
 
+def fileExists(filePath):
+	return os.path.isfile(filePath)
 def folderWalk(folderPath):
 	import os
 	fileList = []
