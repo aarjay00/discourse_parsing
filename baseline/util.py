@@ -36,7 +36,7 @@ def getDiscourseUnit(text,delimList):
 	delimString=delimString[:len(delimString)-3]
 	return re.split(delimString,text)
 def loadConnList(fileName,split=False):
-	fd=open(fileName,"r")
+	fd=codecs.open(fileName,"r",encoding="utf-8")
 	connList=[]
 	for conn in fd.readlines():
 		conn=conn[:-1]
@@ -53,8 +53,8 @@ def extractRelation(filePath):
 	implicitConnDict = {}
 	connSenseIndex = {}
 	relationList=[]
-	rawFD=open(filePath,"r")
-	annFD=open(filePath.replace("/raw/","/ann/"),"r")
+	rawFD=codecs.open(filePath,"r",encoding="utf-8")
+	annFD=codecs.open(filePath.replace("/raw/","/ann/"),"r",encoding="utf-8")
 	[relationList , connTypeCounts, [explicitConnDict , implicitConnDict , altlexConnDict] , senseDict, connSenseIndex ] = processAnnFile( relationList , connTypeCounts , explicitConnDict, implicitConnDict , altlexConnDict, senseDict , connSenseIndex ,annFD , rawFD)
 	writeResults(relationList,filePath)
 	return relationList
@@ -69,7 +69,7 @@ def writeResults(discourseRelationList,filePath):
 	filePath="output/"+filePath
 	if not os.path.exists(os.path.dirname(filePath)):
 		os.makedirs(os.path.dirname(filePath))
-	outFD=open(filePath,"w")
+	outFD=codecs.open(filePath,"w",encoding="utf-8")
 	for discourseRelation in discourseRelationList:
 		string=""
 		if(discourseRelation.relationType=="Explicit"):

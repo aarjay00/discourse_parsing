@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import sys
 reload(sys)
+import codecs
 sys.setdefaultencoding("utf-8")
 
 import re
@@ -9,7 +10,8 @@ import ssf
 from util import *
 from bs4 import BeautifulSoup
 
-class SSFSentence():
+
+class Sentence():
 	def __init__(self):
 #		print "-"*30,"adding sentence"
 		self.chunkList=[]
@@ -27,10 +29,10 @@ class Chunk():
 #		print "-"*30,"new chunk with tag - %s and f = %s"%(tag,features_string)
 		self.chunkTag=tag
 		self.featureSet=FeatureSet(features_string)
-		self.wordList=[]
+		self.wordNumList=[]
 	def addWord(self,word):
 #		print "-"*30,"adding word to chunk"
-		self.wordList.append(word)
+		self.wordNumList.append(word)
 class Word():
 	def __init__(self,word,tag,features_string):
 #		print "-"*30,"new word- %s with tag - %s and f = %s"%(word,tag,features_string)
@@ -57,18 +59,19 @@ def extractSSFannotations(filePath):
 	if not fileExists(filePath) :
 		print "No file found"
 		return None
-	fileFD=open(filePath,"r")
+	fileFD=codecs.open(filePath,"r",encoding="utf-8")
 	data=fileFD.read()
 	fileFD.close()
 	beautData = BeautifulSoup(data)
 	sentenceList=beautData.find_all('sentence')
-	SSFSentenceInstList=[]
+	SentenceInstList=[]
 	for sentence in sentenceList:
-		SSFSentenceInst=SSFSentence()
+		SentenceInst=Sentence()
 		content=sentence.renderContents()
 		lines=re.split("\n",content)
 		chunkInst=None
 		wordInst=None
+		wordNum=0
 		for line in lines:
 			columns=line.split("\t")
 #			print line,"--",len(columns)
@@ -77,11 +80,12 @@ def extractSSFannotations(filePath):
 			if(columns[1]=="(("): # new chunk
 				chunkInst=Chunk(columns[2],columns[3])
 			elif(columns[1]=="))"):
-				SSFSentenceInst.addChunk(chunkInst)
+				SentenceInst.addChunk(chunkInst)
 			else:
 				wordInst=Word(columns[1],columns[2],columns[3])
-				chunkInst.addWord(wordInst)
-				SSFSentenceInst.addWord(wordInst)
+				chunkInst.addWord(wordNum)
+				wordNum+=1
+				SentenceInst.addWord(wordInst)
 #		print "final stats",len(SSFSentenceInst.wordList),len(SSFSentenceInst.chunkList)
-		SSFSentenceInstList.append(SSFSentenceInst)
-	return SSFSentenceInstList
+		SentenceInstList.append(SentenceInst)
+	return SentenceInstList

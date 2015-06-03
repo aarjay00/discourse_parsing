@@ -1,11 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import sys
+import codecs
 reload(sys)
 sys.setdefaultencoding("utf-8")
 from util import *
 from extract_relations import *
 from ssf_api import *
+
 fullStop='\xe0\xa5\xa4'
 
 
@@ -16,14 +18,16 @@ class discourseUnit():
 		self.spanEnd=span2
 		self.wordList=re.split(' ',unit)
 class discourseFile():
-	def __init__(self):
-		self.discourseUnitList=[]
-	def addUnit(self,discourseUnit):
-		self.discourseUnitList.append(discourseUnit)
-	def addDiscourseRelationList(self,discourseRelationList):
-		self.discourseRelationList=discourseRelationList
-	def addSSFData(self,ssf):
-		self.SSFData=ssf
+	def __init__(self,sentenceList):
+		self.sentenceList=sentenceList
+	def addDiscourseRelationInfo(self,relationInfo):
+		pass
+#	def addUnit(self,discourseUnit):
+#		self.discourseUnitList.append(discourseUnit)
+#	def addDiscourseRelationList(self,discourseRelationList):
+#		self.discourseRelationList=discourseRelationList
+#	def addSSFData(self,ssf):
+#		self.SSFData=ssf
 
 
 def processRawFile(data,connList,connSplitList,extraDelimiters):
@@ -51,9 +55,10 @@ connList=loadConnList("connectives/compConnectiveList.list")
 connSplitList=loadConnList("connectives/splitConnectiveList.list",True)
 discourseFileCollection=[]
 for rawFile in rawFileList:
-	fd=open(rawFile,"r")
-	discourseFileInst=processRawFile(fd.read(),connList,connSplitList,[])
-	discourseFileInst.addDiscourseRelationList(extractRelation(rawFile))
-	discourseFileInst.addSSFData(extractSSFannotations(rawFile))
+#	fd=codecs.open(rawFile,"r",encoding="utf-8")
+#	discourseFileInst=processRawFile(fd.read(),connList,connSplitList,[])
+	sentenceList=extractSSFannotations(rawFile)
+	discourseFileInst=discourseFile(sentenceList)
+	discourseFileInst.addDiscourseRelationInfo(extractRelation(rawFile))
 	discourseFileCollection.append(discourseFileInst)
-	fd.close()
+#	fd.close()
