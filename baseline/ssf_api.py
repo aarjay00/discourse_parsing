@@ -26,7 +26,7 @@ class Chunk():
 	def __init__(self,tag,features_string):
 #		print "-"*30,"new chunk with tag - %s and f = %s"%(tag,features_string)
 		self.chunkTag=tag
-		self.featureSet=features_string
+		self.featureSet=FeatureSet(features_string)
 		self.wordList=[]
 	def addWord(self,word):
 #		print "-"*30,"adding word to chunk"
@@ -36,7 +36,21 @@ class Word():
 #		print "-"*30,"new word- %s with tag - %s and f = %s"%(word,tag,features_string)
 		self.wordTag=tag;
 		self.word=word
-		self.featureSet=features_string
+		self.featureSet=FeatureSet(features_string)
+class FeatureSet():
+	def __init__(self,featureString):
+		self.featureDict={}
+		self.processFeatureString(featureString)
+	def processFeatureString(self,featureString):
+		featureSet=re.split(' ',featureString)
+		featureSet=featureSet[1:]
+		for feature in featureSet:
+#			print feature
+			feature=re.split('=',feature)
+			key=feature[0]
+			value=re.split('\"',feature[1])[1]
+#			print key,"=",value
+			self.featureDict[key]=value
 
 def extractSSFannotations(filePath):
 	filePath=filePath.replace("/raw/","/ssf/")
@@ -71,6 +85,3 @@ def extractSSFannotations(filePath):
 #		print "final stats",len(SSFSentenceInst.wordList),len(SSFSentenceInst.chunkList)
 		SSFSentenceInstList.append(SSFSentenceInst)
 	return SSFSentenceInstList
-
-#extractSSFannotations("./sample.ssf")	
-

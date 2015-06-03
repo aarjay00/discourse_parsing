@@ -21,4 +21,3 @@ do
 		cp $ssf_file "ssf/"$new_directory/$filename
 	done
 done
-python clean_ssf.py
