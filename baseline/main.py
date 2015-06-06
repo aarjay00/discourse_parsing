@@ -9,7 +9,29 @@ from extract_relations import *
 from ssf_api import *
 
 fullStop='\xe0\xa5\xa4'
-
+numMap={"1":"१",
+	"2":"२",
+	"3":"३",
+	"4":"४",
+	"5":"५",
+	"6":"६",
+	"7":"७",
+	"8":"८",
+	"9":"९",
+	"0":"०",
+        "१":"1",
+	"२":"2",
+	"३":"3",
+	"४":"4",
+	"५":"5",
+	"६":"6",
+	"७":"7",
+	"८":"8",
+	"९":"9",
+	"०":"0"
+}
+hindiNum=["१","२","३","४","५","६","७","८","९","०"]
+engNum=["1","2","3","4","5","6","7","8","9","0"]
 
 class discourseUnit():
 	def __init__(self,unit,span1,span2):
@@ -22,8 +44,11 @@ class discourseFile():
 		self.rawData=rawData
 		self.sentenceList=sentenceList
 		self.globalWordList=globalWordList
+		self.rawToAnnMapping={}
+		self.annToRawMapping={}
 	def addDiscourseRelationInfo(self,relationList):
 		self.relationList=relationList
+		(self.rawToAnnMapping,self.annToRawMapping)=mappingBetweenFiles(self.globalWordList,self.rawData)
 		for relation in self.relationList:
 			if(relation.relationType != "Explicit"):
 				continue
@@ -31,9 +56,11 @@ class discourseFile():
 			print "arg1",relation.arg1Span
 			print "connective",relation.connSpan
 			print "arg2",relation.arg2Span
-			span=convertSpan(relation.arg2Span,self.rawData,self.globalWordList)
-			printSpan(relation.arg2Span,self.rawData)
-			printSpanWord(span,self.globalWordList)
+#			span=convertSpan(relation.arg2Span,self.rawData,self.globalWordList)
+#			printSpan(relation.arg2Span,self.rawData)
+#			getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+#			printSpanWord(span,self.globalWordList)
+		return
 		i=0
 		for word in self.globalWordList:
 			print word.word,i,
@@ -51,6 +78,112 @@ class discourseFile():
 		for word in data:
 			print word,i,
 			i+=1
+def mappingBetweenFiles(wordList,rawData):
+	rawToWord={}
+	wordToRaw={}
+	rawData=addSpaces(rawData)
+	startString=wordList[0].word
+	for i in range(1,5):
+		startString=startString+" "+wordList[i].word
+	startDoc=rawData.find(startString)
+	if(startDoc==-1):
+		startDoc=rawData.find(wordList[0].word)
+	rawData=rawData[startDoc:]
+	rawData=rawData.split()
+	rawPos=0
+	wordPos=0
+	while(1):
+		print "comparing",rawData[rawPos],wordList[wordPos].word
+#		print "comparing",repr(rawData[rawPos]),repr(wordList[wordPos].word)
+		if(rawData[rawPos]==wordList[wordPos].word):
+			print "word matched perfectly",rawData[rawPos],wordList[wordPos].word
+			rawToWord[rawPos]=(wordPos,)
+			wordToRaw[wordPos]=(rawPos,)
+			wordPos+=1
+		else:
+			if(wordPos+1  < len(wordList)  and  wordList[wordPos].word+wordList[wordPos+1].word==rawData[rawPos] ):
+				print "word 1 matched perfectly",rawData[rawPos],wordList[wordPos].word+wordList[wordPos+1].word
+				rawToWord[rawPos]=(wordPos,wordPos+1)
+				wordToRaw[wordPos]=(rawPos,)
+				wordToRaw[wordPos+1]=(rawPos,)
+				wordPos+=2
+			elif(wordPos+1  < len(wordList)  and  wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]==rawData[rawPos] ):
+				print "word 2 matched perfectly",rawData[rawPos],wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]
+				rawToWord[rawPos]=(wordPos,wordPos+1)
+				wordToRaw[wordPos]=(rawPos,)
+				wordToRaw[wordPos+1]=(rawPos,)
+				wordPos+=2
+			elif( wordPos+2 < len(wordList ) and wordList[wordPos].word+wordList[wordPos+2].word==rawData[rawPos]):
+				print "word 3 matched perfectly",rawData[rawPos],wordList[wordPos].word+wordList[wordPos+2].word, "extra",wordList[wordPos+1].word
+				rawToWord[rawPos]=(wordPos,wordPos+1,wordPos+2)
+				wordToRaw[wordPos]=(rawPos,)
+				wordToRaw[wordPos+1]=(rawPos,)
+				wordToRaw[wordPos+2]=(rawPos,)
+				wordPos+=3
+			elif (rawPos+2 < len(rawData) and rawData[rawPos]+rawData[rawPos+1]+rawData[rawPos+2]==wordList[wordPos].word):
+				print "word 4 matched perfectly"
+				rawToWord[rawPos]=(wordPos,)
+				rawToWord[rawPos+1]=(wordPos,)
+				rawToWord[rawPos+2]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,rawPos+1,rawPos+2)
+				rawPos+=2
+				wordPos+=1
+			elif(rawPos +4 < len(rawData) and rawData[rawPos]+rawData[rawPos+2]+rawData[rawPos+4]==wordList[wordPos].word):
+				print "word 5 matched perfectly"
+				rawToWord[rawPos]=(wordPos,)
+				rawToWord[rawPos+1]=(wordPos,)
+				rawToWord[rawPos+2]=(wordPos,)
+				rawToWord[rawPos+3]=(wordPos,)
+				rawToWord[rawPos+4]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,rawPos+1,rawPos+2,rawPos+3,rawPos+4)
+				rawPos+=4
+				wordPos+=1
+			elif(rawPos +2 < len(rawData) and rawData[rawPos+2]==wordList[wordPos+1].word):
+				rawToWord[rawPos]=(wordPos,)
+				rawToWord[rawPos+1]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,rawPos+1)
+				rawPos+=1
+				wordPos+=1
+			elif(wordPos +1 < len(wordList) and rawPos+1 < len(rawData) and wordList[wordPos+1].word==rawData[rawPos+1]):
+				print "-"*30,"SKIPPED 1",rawData[rawPos],wordList[wordPos].word
+				rawToWord[rawPos]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,)
+				wordPos+=1
+			elif(wordPos+2 < len(wordList) and rawPos + 2< len(rawData) and rawData[rawPos+2]==wordList[wordPos+2].word):
+				print "-"*30,"SKIPPED 3"
+				rawToWord[rawPos]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,)
+				wordPos+=1
+				rawPos+=1
+				rawToWord[rawPos]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,)
+				wordPos+=1
+			elif(wordPos +2 < len(wordList) and rawPos+1 < len(rawData) and wordList[wordPos+2].word==rawData[rawPos+1]):
+				print "-"*30,"SKIPPED 2",rawData[rawPos],wordList[wordPos].word
+				rawToWord[rawPos]=(wordPos,wordPos+1)
+				wordToRaw[wordPos]=(rawPos,)
+				wordToRaw[wordPos+1]=(rawPos,)
+				wordPos+=2
+
+			elif (rawPos+1 < len(rawData) and rawData[rawPos]+rawData[rawPos+1]==wordList[wordPos].word):
+				print "word 4 matched perfectly"
+			elif(rawPos+2 < len(rawData) and isNum(rawData[rawPos]) and isNum(rawData[rawPos+2]) and rawData[rawPos+1]=="," and convertNum(rawData[rawPos])+rawData[rawPos+1] +convertNum(rawData[rawPos+2]) == wordList[wordPos].word):
+				print "number detected"
+				rawToWord[rawPos]=(wordPos,)
+				rawToWord[rawPos+1]=(wordPos,)
+				rawToWord[rawPos+2]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,rawPos+1,rawPos+2)
+				rawPos+=2
+				wordPos+=1
+			else:
+				print "ISSUES"
+#				print rawData[rawPos+2],wordList[wordPos+2].word
+				return (rawToWord,wordToRaw)
+		rawPos+=1
+		if(rawPos>=len(rawData) or wordPos>=len(wordList)):
+			break
+	print "stats %d %d"%(rawPos,wordPos)
+	return (rawToWord,wordToRaw)
 
 #	def addUnit(self,discourseUnit):
 #		self.discourseUnitList.append(discourseUnit)
@@ -59,6 +192,25 @@ class discourseFile():
 #	def addSSFData(self,ssf):
 #		self.SSFData=ssf
 
+def addSpaces(rawData):
+	rawData=rawData.replace(fullStop," "+fullStop+" ")
+	rawData=rawData.replace("," ," , ")
+	rawData=rawData.replace("-" ," - ")
+	rawData=rawData.replace("("," ( ")
+	rawData=rawData.replace(")"," ) ")
+	rawData=rawData.replace("?"," ? ")
+	rawData=rawData.replace("'"," ' ")
+	return rawData
+def convertNum(num):
+	returnNum=""
+	for letter in num:
+		returnNum+=numMap[letter.encode("utf-8")]
+	return returnNum
+def isNum(word):
+	for letter in word:
+		if(letter not in hindiNum):
+			return False
+	return True
 def printSpan(spans,rawData):
 	spans=re.split(';',spans)
 	for span in spans:
@@ -72,11 +224,13 @@ def printSpanWord(spans,wordList):
 			print word.word,
 		print "-"
 
-def convertSpan(spans,rawData,wordList):
+def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
 	startString=wordList[0].word
 	for i in range(1,5):
 		startString=startString+" "+wordList[i].word
 	startDoc=rawData.find(startString)
+	if(startDoc==-1):
+		startDoc=rawData.find(wordList[0])
 	spans=re.split(';',spans)
 	returnSpan=[]
 	for span in spans:
@@ -84,16 +238,23 @@ def convertSpan(spans,rawData,wordList):
 #		print rawData[int(span[0]):int(span[1])]
 		dataBefore=rawData[startDoc:int(span[0])]
 		dataAfter=rawData[startDoc:int(span[1])]
-		dataBefore=dataBefore.replace(fullStop," "+fullStop+" ")
-		dataAfter=dataAfter.replace(fullStop," "+fullStop+" ")
-#		print "dataBefore starts--",len(re.split('\s+',dataBefore))
+		dataBefore=addSpaces(dataBefore).split()
+		dataAfter=addSpaces(dataAfter).split()
+		print len(dataBefore)
+		print len(dataAfter)
+		print wordToAnn[len(dataBefore)]
+		print wordToAnn[len(dataAfter)]
+		for wordNum in range(len(dataBefore),len(dataAfter)):
+			wordNumTuple=wordToAnn[wordNum]
+			for word in wordNumTuple:
+				print wordList[word].word,
+		print "\n"
+#		
 #		i=0
 #		for w in re.split(' ',dataBefore):
 #			print w,i,
 #			i+=1
 #		print "dataBefore ends--"
-		returnSpan.append((int(len(re.split('\s+',dataBefore)))-1,int(len(re.split('\s+',dataAfter)))))
-	return returnSpan
 
 		
 def getSpan(span,data):
@@ -137,6 +298,7 @@ annFileList=folderWalk(dataLocation+"/ann")
 connList=loadConnList("connectives/compConnectiveList.list")
 connSplitList=loadConnList("connectives/splitConnectiveList.list",True)
 discourseFileCollection=[]
+fileNum=0
 for rawFile in rawFileList:
 	fd=codecs.open(rawFile,"r",encoding="utf-8")
 #	discourseFileInst=processRawFile(fd.read(),connList,connSplitList,[])
@@ -148,4 +310,7 @@ for rawFile in rawFileList:
 	discourseFileInst.addDiscourseRelationInfo(extractRelation(rawFile))
 	discourseFileCollection.append(discourseFileInst)
 	fd.close()
-	break
+	fileNum+=1
+	print "*"*30,fileNum,"files done"
+
+print "processed %d files correctly"%(fileNum)

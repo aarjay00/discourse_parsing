@@ -38,7 +38,7 @@ class Word():
 	def __init__(self,word,tag,features_string,sentenceNum,chunkNum):
 #		print "-"*30,"new word- %s with tag - %s and f = %s"%(word,tag,features_string)
 		self.wordTag=tag;
-		self.word=word
+		self.word=word.decode("utf-8")
 		self.featureSet=FeatureSet(features_string)
 		self.sentenceNum=sentenceNum
 		self.chunkNum=chunkNum
