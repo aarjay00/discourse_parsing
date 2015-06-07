@@ -141,7 +141,7 @@ def mappingBetweenFiles(wordList,rawData):
 				wordToRaw[wordPos]=(rawPos,)
 				wordToRaw[wordPos+1]=(rawPos,)
 				wordPos+=2
-			elif( wordPos+2 < len(wordList ) and wordList[wordPos].word+wordList[wordPos+2].word==rawData[rawPos]):
+			elif( wordPos+2 < len(wordList ) and (wordList[wordPos].word+wordList[wordPos+2].word==rawData[rawPos] or wordList[wordPos].word+u'\u093e'+wordList[wordPos+2].word==rawData[rawPos])):
 				print "word 3 matched perfectly",rawData[rawPos],wordList[wordPos].word+wordList[wordPos+2].word, "extra",wordList[wordPos+1].word
 				rawToWord[rawPos]=(wordPos,wordPos+1,wordPos+2)
 				wordToRaw[wordPos]=(rawPos,)
@@ -166,7 +166,20 @@ def mappingBetweenFiles(wordList,rawData):
 				wordToRaw[wordPos]=(rawPos,rawPos+1,rawPos+2,rawPos+3,rawPos+4)
 				rawPos+=4
 				wordPos+=1
+			elif(rawPos+1< len(rawData) and rawData[rawPos]+rawData[rawPos+1]==wordList[wordPos].word):
+				print "word 6 matched perfectly"
+				rawToWord[rawPos]=(wordPos,)
+				rawToWord[rawPos+1]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,rawPos+1)
+				rawPos+=1
+				wordPos+=1
+			elif(rawData[rawPos].replace(u'\u0902',u'\u0901')==wordList[wordPos].word or rawData[rawPos].replace(u'\u0901',u'\u0902')==wordList[wordPos].word):
+				print "word 7 matched perfectly",rawData[rawPos],wordList[wordPos].word
+				rawToWord[rawPos]=(wordPos,)
+				wordToRaw[wordPos]=(rawPos,)
+				wordPos+=1
 			elif(rawPos +2 < len(rawData) and rawData[rawPos+2]==wordList[wordPos+1].word):
+				print "ahem ahem"
 				rawToWord[rawPos]=(wordPos,)
 				rawToWord[rawPos+1]=(wordPos,)
 				wordToRaw[wordPos]=(rawPos,rawPos+1)
@@ -197,14 +210,20 @@ def mappingBetweenFiles(wordList,rawData):
 				wordToRaw[wordPos]=(rawPos,)
 				wordPos+=1
 			elif(wordPos +2 < len(wordList) and rawPos+1 < len(rawData) and wordList[wordPos+2].word==rawData[rawPos+1]):
-				print "-"*30,"SKIPPED 2",rawData[rawPos],wordList[wordPos].word
+				print "-"*30,"SKIPPED 4",rawData[rawPos],wordList[wordPos].word
 				rawToWord[rawPos]=(wordPos,wordPos+1)
 				wordToRaw[wordPos]=(rawPos,)
 				wordToRaw[wordPos+1]=(rawPos,)
 				wordPos+=2
-
-			elif (rawPos+1 < len(rawData) and rawData[rawPos]+rawData[rawPos+1]==wordList[wordPos].word):
-				print "word 4 matched perfectly"
+			elif (wordPos+2 < len(wordList) and rawData[rawPos]==wordList[wordPos+2].word):
+				print "-"*30,"SKIPPED 5"
+				rawToWord[rawPos-1]=list(rawToWord[rawPos-1])
+				rawToWord[rawPos-1].append(wordPos)
+				rawToWord[rawPos-1].append(wordPos+1)
+				rawToWord[rawPos-1]=tuple(rawToWord[rawPos-1])
+				wordToRaw[wordPos]=(rawPos-1,)
+				wordToRaw[wordPos+1]=(rawPos-1,)
+				wordPos+=2
 			elif(rawPos+2 < len(rawData) and isNum(rawData[rawPos]) and isNum(rawData[rawPos+2]) and rawData[rawPos+1]=="," and (rawData[rawPos]+","+rawData[rawPos+2]==wordList[wordPos] or convertNum(rawData[rawPos])+"," +convertNum(rawData[rawPos+2]) == wordList[wordPos].word)):
 				print "number detected"
 				rawToWord[rawPos]=(wordPos,)

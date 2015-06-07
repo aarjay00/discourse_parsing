@@ -88,17 +88,19 @@ def extractSSFannotations(filePath):
 			if(len(columns)<2): #useless line
 				continue
 			if(columns[1]=="(("): # new chunk
-				if("NULL" in columns[2]):
-					skip=True
-					continue
+#				if("NULL" in columns[2]):
+#					skip=True
+#					continue
 				chunkNum+=1
 				chunkInst=Chunk(columns[2],columns[3],sentenceNum)
 			elif(columns[1]=="))"):
-			  	if(skip==True):
+				
+			  	if(len(chunkInst.wordNumList)!=0):
 					sentenceInst.addChunk(chunkInst)
-				skip=False
+				else:
+					chunkNum-=1
 			else:
-			  	if(skip):
+			  	if(columns[1]=="NULL"):
 					continue
 				wordInst=Word(columns[1],columns[2],columns[3],sentenceNum,chunkNum)
 				chunkInst.addWord(wordNum)
