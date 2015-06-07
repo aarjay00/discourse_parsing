@@ -135,8 +135,10 @@ def mappingBetweenFiles(wordList,rawData):
 				wordToRaw[wordPos]=(rawPos,)
 				wordToRaw[wordPos+1]=(rawPos,)
 				wordPos+=2
-			elif(wordPos+1  < len(wordList)  and  wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]==rawData[rawPos] ):
+			elif(not isNum(rawData[rawPos]) and wordPos+1  < len(wordList)  and  wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]==rawData[rawPos] ):
 				print "word 2 matched perfectly",rawData[rawPos],wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]
+				print wordList[wordPos].word
+				print wordList[wordPos+1].word
 				rawToWord[rawPos]=(wordPos,wordPos+1)
 				wordToRaw[wordPos]=(rawPos,)
 				wordToRaw[wordPos+1]=(rawPos,)
@@ -298,6 +300,9 @@ def convertNum(num):
 		returnNum+=numMap[letter.encode("utf-8")]
 	return returnNum
 def isNum(word):
+	word=word.replace(".","")
+	word=word.replace(",","")
+	print word
 	num=True
 	for letter in word:
 		if(letter not in hindiNum):
