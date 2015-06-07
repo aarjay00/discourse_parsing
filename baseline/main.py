@@ -57,60 +57,16 @@ class discourseFile():
 			print "connective",relation.connSpan
 			print "arg2",relation.arg2Span
 #			span=convertSpan(relation.arg2Span,self.rawData,self.globalWordList)
-#			printSpan(relation.arg2Span,self.rawData)
-#			getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			printSpan(relation.arg2Span,self.rawData)
+			getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 #			printSpanWord(span,self.globalWordList)
 		return
-		i=0
-		for word in self.globalWordList:
-			print word.word,i,
-			i+=1
-		i=0
-		startString=self.globalWordList[0].word
-		for i in range(1,5):
-			startString=startString+" "+globalWordList[i].word
-		data=self.rawData.replace(fullStop," "+fullStop+" ")
-		startDoc=data.find(startString)
-		data=data[startDoc:]
-		data=re.split('\s+',data)
-		print "-"*30
-		i=0
-		for word in data:
-			print word,i,
-			i+=1
 def mappingBetweenFiles(wordList,rawData):
 	rawToWord={}
 	wordToRaw={}
 	rawData=addSpaces(rawData)
-	startString=wordList[0].word
-	for i in range(1,5):
-		startString=startString+" "+wordList[i].word
-	print startString
-	startDoc=rawData.find(startString)
-	if(startDoc==-1):	
-		print "here here 1",wordList[0].word+" "+wordList[1].word+" "+wordList[2].word+" "+wordList[3].word
-		startDoc=rawData.find(wordList[0].word+" "+wordList[1].word+" "+wordList[2].word+" "+wordList[3].word)
-	if(startDoc==-1):
-		startDoc=rawData.find(wordList[0].word+" "+wordList[1].word)
-		print "here here 2",wordList[0].word+" "+wordList[1].word
-	if(startDoc==-1):
-		print "here here 3"
-		startDoc=rawData.find(wordList[1].word+" "+wordList[2].word)
-		startDoc-=2
-		while(rawData[startDoc]!=' '):
-			startDoc-=1
-		print startDoc
-	if(startDoc<0):
-		print "here here 4"
-		startDoc=rawData.find(wordList[2].word+" "+wordList[3].word)
-		startDoc-=2
-		while(rawData[startDoc]!=' '):
-			startDoc-=1
-		startDoc-=1
-		while(rawData[startDoc]!=' '):
-			startDoc-=1
-		print startDoc
-		
+			
+	startDoc=getStartPos(rawData,wordList)
 	rawData=rawData[startDoc:]
 	rawData=rawData.split()
 	rawPos=0
@@ -137,8 +93,8 @@ def mappingBetweenFiles(wordList,rawData):
 				wordPos+=2
 			elif(not isNum(rawData[rawPos]) and wordPos+1  < len(wordList)  and  wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]==rawData[rawPos] ):
 				print "word 2 matched perfectly",rawData[rawPos],wordList[wordPos].word[:len(wordList[wordPos].word)-1]+wordList[wordPos+1].word[:len(wordList[wordPos+1].word)-1]
-				print wordList[wordPos].word
-				print wordList[wordPos+1].word
+#				print wordList[wordPos].word
+#				print wordList[wordPos+1].word
 				rawToWord[rawPos]=(wordPos,wordPos+1)
 				wordToRaw[wordPos]=(rawPos,)
 				wordToRaw[wordPos+1]=(rawPos,)
@@ -225,7 +181,8 @@ def mappingBetweenFiles(wordList,rawData):
 				rawToWord[rawPos-1]=tuple(rawToWord[rawPos-1])
 				wordToRaw[wordPos]=(rawPos-1,)
 				wordToRaw[wordPos+1]=(rawPos-1,)
-				wordPos+=2
+				rawToWord[rawPos]=(wordPos+2,)
+				wordPos+=3
 			elif(rawPos+2 < len(rawData) and isNum(rawData[rawPos]) and isNum(rawData[rawPos+2]) and rawData[rawPos+1]=="," and (rawData[rawPos]+","+rawData[rawPos+2]==wordList[wordPos] or convertNum(rawData[rawPos])+"," +convertNum(rawData[rawPos+2]) == wordList[wordPos].word)):
 				print "number detected"
 				rawToWord[rawPos]=(wordPos,)
@@ -258,6 +215,7 @@ def mappingBetweenFiles(wordList,rawData):
 					loop+=1
 #				print rawData[rawPos+2],wordList[wordPos+2].word
 				return (rawToWord,wordToRaw)
+		print rawPos
 		rawPos+=1
 	print "stats %d %d"%(rawPos,wordPos)
 	return (rawToWord,wordToRaw)
@@ -268,6 +226,37 @@ def mappingBetweenFiles(wordList,rawData):
 #		self.discourseRelationList=discourseRelationList
 #	def addSSFData(self,ssf):
 #		self.SSFData=ssf
+def getStartPos(rawData,wordList):
+	startString=wordList[0].word
+	for i in range(1,5):
+		startString=startString+" "+wordList[i].word
+#	print startString
+	startDoc=rawData.find(startString)
+	if(startDoc==-1):	
+#		print "here here 1",wordList[0].word+" "+wordList[1].word+" "+wordList[2].word+" "+wordList[3].word
+		startDoc=rawData.find(wordList[0].word+" "+wordList[1].word+" "+wordList[2].word+" "+wordList[3].word)
+	if(startDoc==-1):
+		startDoc=rawData.find(wordList[0].word+" "+wordList[1].word)
+#		print "here here 2",wordList[0].word+" "+wordList[1].word
+	if(startDoc==-1):
+#		print "here here 3"
+		startDoc=rawData.find(wordList[1].word+" "+wordList[2].word)
+		startDoc-=2
+		while(rawData[startDoc]!=' '):
+			startDoc-=1
+#		print startDoc
+	if(startDoc<0):
+#		print "here here 4"
+		startDoc=rawData.find(wordList[2].word+" "+wordList[3].word)
+		startDoc-=2
+		while(rawData[startDoc]!=' '):
+			startDoc-=1
+		startDoc-=1
+		while(rawData[startDoc]!=' '):
+			startDoc-=1
+#		print startDoc
+	return startDoc
+
 def editDistance(word1 , word2):
 
 	len_1=len(word1)
@@ -302,7 +291,7 @@ def convertNum(num):
 def isNum(word):
 	word=word.replace(".","")
 	word=word.replace(",","")
-	print word
+#	print word
 	num=True
 	for letter in word:
 		if(letter not in hindiNum):
@@ -328,12 +317,8 @@ def printSpanWord(spans,wordList):
 		print "-"
 
 def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
-	startString=wordList[0].word
-	for i in range(1,5):
-		startString=startString+" "+wordList[i].word
-	startDoc=rawData.find(startString)
-	if(startDoc==-1):
-		startDoc=rawData.find(wordList[0])
+	
+	startDoc=getStartPos(rawData,wordList)
 	spans=re.split(';',spans)
 	returnSpan=[]
 	for span in spans:
@@ -348,7 +333,11 @@ def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
 		print wordToAnn[len(dataBefore)]
 		print wordToAnn[len(dataAfter)]
 		for wordNum in range(len(dataBefore),len(dataAfter)):
-			wordNumTuple=wordToAnn[wordNum]
+			try:
+				wordNumTuple=wordToAnn[wordNum]
+			except:
+#				print dataAfter[wordNum]
+				wordNumTuple=wordToAnn[wordNum]
 			for word in wordNumTuple:
 				print wordList[word].word,
 		print "\n"
