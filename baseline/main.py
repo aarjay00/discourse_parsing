@@ -32,14 +32,14 @@ class discourseFile():
 			print relation.relationType
 			print "arg1",relation.arg1Span
 			printSpan(relation.arg1Span,self.rawData)
-			getSpanFromAnn(relation.arg1Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			arg1=getSpanFromAnn(relation.arg1Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 			print "connective",relation.connSpan
 			printSpan(relation.connSpan,self.rawData)
-			getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 			print "arg2",relation.arg2Span
 #			span=convertSpan(relation.arg2Span,self.rawData,self.globalWordList)
 			printSpan(relation.arg2Span,self.rawData)
-			getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			arg2=getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 		return
 def printSpan(spans,rawData):
 	spans=re.split(';',spans)

@@ -219,6 +219,7 @@ def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
 	spans=re.split(';',spans)
 	returnSpan=[]
 	for span in spans:
+		posList=[]
 		span=re.split("\.\.",span)
 #		print startDoc
 #		print rawData[int(span[0]):int(span[1])]
@@ -233,8 +234,17 @@ def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
 		for wordNum in range(len(dataBefore),len(dataAfter)):
 			wordNumTuple=wordToAnn[wordNum]
 			for word in wordNumTuple:
+				posList.append(word)
 				print wordList[word].word,
+		prev=-1
+		trimmedPosList=[]
+		for pos in posList: 
+		 	if(pos!=prev):
+				trimmedPosList.append(pos)
+			prev=pos
+		returnSpan.append(posList)
 		print "\n"
+	return returnSpan
 def editDistance(word1 , word2):
 
 	len_1=len(word1)
