@@ -242,7 +242,7 @@ def getSpanFromAnn(spans,rawData,wordList,annToWord,wordToAnn):
 		 	if(pos!=prev):
 				trimmedPosList.append(pos)
 			prev=pos
-		returnSpan.append(posList)
+		returnSpan.extend(posList)
 		print "\n"
 	return returnSpan
 def editDistance(word1 , word2):

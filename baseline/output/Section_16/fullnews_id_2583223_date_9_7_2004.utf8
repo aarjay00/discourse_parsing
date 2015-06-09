@@ -2,7 +2,7 @@ Implicit||Wr|Comm|Null|Null||waWA|Expansion.Conjunction||||||166..319|Inh|Null|N
 Implicit||Wr|Comm|Null|Null||sAWa sAWa|Expansion.Conjunction||||||321..372|Inh|Null|Null|Null||374..479|Inh|Null|Null|Null||
 Implicit||Wr|Comm|Null|Null||sAWa hI|Expansion.Conjunction||||||374..479|Inh|Null|Null|Null||481..528|Inh|Null|Null|Null||
 
-Explicit|557..559;620..622|Wr|Comm|Null|Null|||Temporal.Synchrony||||||542..556;560..619|Inh|Null|Null|Null||623..681|Inh|Null|Null|Null||
+Explicit|560..562;623..625|Wr|Comm|Null|Null|||Temporal.Synchrony||||||542..556;560..619|Inh|Null|Null|Null||623..681|Inh|Null|Null|Null||
 Implicit||Wr|Comm|Null|Null||viSeRakara|Expansion.Restatement.Specification||||||623..681|Inh|Null|Null|Null||683..749|Inh|Null|Null|Null||
 Implicit||Wr|Comm|Null|Null||Ese|Expansion.Restatement.Equivalence||||||166..319|Inh|Null|Null|Null||753..878|Inh|Null|Null|Null||
 Implicit||Wr|Comm|Null|Null||waWA|Expansion.Conjunction||||||753..878|Inh|Null|Null|Null||880..936|Inh|Null|Null|Null||
@@ -12,7 +12,7 @@ Implicit||Wr|Comm|Null|Null||jisa vajaha se|Contingency.Cause.Result||||||1187..
 Implicit||Wr|Comm|Null|Null||isa waraha se|Expansion.Restatement.Equivalence||||||1297..1403|Inh|Null|Null|Null||1497..1631|Inh|Null|Null|Null||
 Implicit||Wr|Comm|Null|Null||isa vajaha se|Contingency.Cause.Result||||||1405..1495|Inh|Null|Null|Null||1497..1631|Inh|Null|Null|Null||
 
-Explicit|1651..1661|Wr|Comm|Null|Null|||Temporal.Asynchronous.Precedence||||||1050..1185|Inh|Null|Null|Null||1662..1816|Inh|Null|Null|Null||
+Explicit|1654..1664|Wr|Comm|Null|Null|||Temporal.Asynchronous.Precedence||||||1050..1185|Inh|Null|Null|Null||1662..1816|Inh|Null|Null|Null||
 EntRel||||||||||||||1050..1185||||||1816..1857||||||
 NoRel||||||||||||||1662..1816||||||1818..1902||||||
 Implicit||Wr|Comm|Null|Null||Ora|Contingency.Cause.Result||||||1818..1857|Inh|Null|Null|Null||1859..1902|Inh|Null|Null|Null||
