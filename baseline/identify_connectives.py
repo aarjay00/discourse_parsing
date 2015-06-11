@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import sys
 import codecs
@@ -7,7 +8,8 @@ from util import *
 from extract_relations import *
 from ssf_api import *
 from letter import *
-
+from merge_annotations import *
+from annotated_data import *
 
 
 def searchConn(conn,wordList):
@@ -36,7 +38,13 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 			print "found ",conn,len(posList)
 			for i in posList:
 				if(wordList[i].conn):
-					print "Yes"
+					print "Yes",wordList[i].sense
 				else:
 				 	print "No"
 	
+connList=loadConnList("connectives/compConnectiveList.list")
+connSplitList=loadConnList("connectives/splitConnectiveList.list",True)
+
+
+discourseFileCollection=loadModel("processedData/annotatedData")
+print len(discourseFileCollection)

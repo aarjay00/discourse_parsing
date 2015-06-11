@@ -42,6 +42,7 @@ class Word():
 		self.featureSet=FeatureSet(features_string)
 		self.sentenceNum=sentenceNum
 		self.chunkNum=chunkNum
+		self.sense=None
 		self.conn=False
 		self.splitConn=False
 		self.arg1=False

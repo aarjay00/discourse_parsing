@@ -5,7 +5,6 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 import os 
 import codecs
-
 import  cPickle as pickle
 
 import re
@@ -94,5 +93,14 @@ def writeResults(discourseRelationList,filePath):
 			string+=(discourseRelation.arg2Span+"||||||")
 		outFD.write(string+"\n")
 	outFD.close()
+def exportModel(filePath,model):
+	fileFD=codecs.open(filePath,"w",encoding="utf-8")
+	pickle.dump(model,fileFD)
+	fileFD.close()
+def loadModel(filePath):
+	fileFD=open(filePath,"rb")
+	model=pickle.load(fileFD)
+	fileFD.close()
+	return model
 def analyzeResults(goldFilePath,outputFilePath):
 	print "hah"
