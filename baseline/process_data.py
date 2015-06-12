@@ -35,8 +35,8 @@ if len(sys.argv)<2:
 dataLocation=sys.argv[1]
 rawFileList=folderWalk(dataLocation+"/raw")
 annFileList=folderWalk(dataLocation+"/ann")
-connList=loadConnList("connectives/compConnectiveList.list")
-connSplitList=loadConnList("connectives/splitConnectiveList.list",True)
+connList=loadConnList("lists/compConnectiveList.list")
+connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 discourseFileCollection=[]
 fileNum=0
 for rawFile in rawFileList:

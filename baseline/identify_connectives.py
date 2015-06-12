@@ -29,8 +29,7 @@ def searchConn(conn,wordList):
 			pos+=1
 	return posList
 
-
-def identifyConnectives(discourseFileInst,connList,connSplitList):
+def identifyConnectives(discourseFileInst,connList,connSplitList,positiveSet,negativeSet):
 	wordList=discourseFileInst.globalWordList
 	for conn in connList:
 		posList=searchConn(conn,wordList)
@@ -38,13 +37,21 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 			print "found ",conn,len(posList)
 			for i in posList:
 				if(wordList[i].conn):
+					positiveSet.append((i,i+len(conn)-1))
 					print "Yes",wordList[i].sense
 				else:
+					negativeSet.append((i,i+len(conn)-1))
 				 	print "No"
+	return (positiveSet,negativeSet)
 	
-connList=loadConnList("connectives/compConnectiveList.list")
-connSplitList=loadConnList("connectives/splitConnectiveList.list",True)
+connList=loadConnList("lists/compConnectiveList.list")
+connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 
 
 discourseFileCollection=loadModel("processedData/annotatedData")
 print len(discourseFileCollection)
+positiveSet=[]
+negativeSet=[]
+for discourseFile in discourseFileCollection:
+	positiveSet,negativeSet=identifyConnectives(discourseFile,connList,connSplitList,positiveSet,negativeSet)
+print len(positiveSet),len(negativeSet)
