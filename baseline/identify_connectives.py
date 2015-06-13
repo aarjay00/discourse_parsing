@@ -10,7 +10,7 @@ from ssf_api import *
 from letter import *
 from merge_annotations import *
 from annotated_data import *
-
+from feature import *
 
 def searchConn(conn,wordList):
 	conn=conn.split()
@@ -29,18 +29,29 @@ def searchConn(conn,wordList):
 			pos+=1
 	return posList
 
-def identifyConnectives(discourseFileInst,connList,connSplitList,positiveSet,negativeSet):
+def identifyConnectives(discourseFileInst,connList,connSplitList):
+	positiveSet=[]
+	negativeSet=[]
 	wordList=discourseFileInst.globalWordList
 	for conn in connList:
 		posList=searchConn(conn,wordList)
 		if(len(posList)>0):
 			print "found ",conn,len(posList)
 			for i in posList:
+				for j in range(i,i+len(conn.split())):
+					print wordList[j].chunkNum,
+				print "\n"
 				if(wordList[i].conn):
-					positiveSet.append((i,i+len(conn)-1))
+					connSpan=[]
+					for i in range(i,i+len(conn.split())):
+						connSpan.append(i)
+					positiveSet.append(connSpan)
 					print "Yes",wordList[i].sense
 				else:
-					negativeSet.append((i,i+len(conn)-1))
+					connSpan=[]
+					for i in range(i,i+len(conn.split())):
+						connSpan.append(i)
+					negativeSet.append(connSpan)
 				 	print "No"
 	return (positiveSet,negativeSet)
 	
@@ -53,5 +64,17 @@ print len(discourseFileCollection)
 positiveSet=[]
 negativeSet=[]
 for discourseFile in discourseFileCollection:
-	positiveSet,negativeSet=identifyConnectives(discourseFile,connList,connSplitList,positiveSet,negativeSet)
+	print discourseFile.rawData
+	pSet,nSet=identifyConnectives(discourseFile,connList,connSplitList)
+	for conn in pSet:
+		print "conn","-"*30
+		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList)
+		feature.tagFeature(conn)
+		feature.chunkFeature(conn)
+		feature.chunkNeighbor(conn,1)
+		feature.chunkNeighbor(conn,-1)
+		print feature.featureVector
+	positiveSet.extend(pSet)
+	negativeSet.extend(nSet)
+	break
 print len(positiveSet),len(negativeSet)
