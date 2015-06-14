@@ -29,6 +29,15 @@ class Feature():
 				Set.append(word)
 		Set.extend(extra)
 		return Set
+	def wordFeature(self,wordList):
+		print "wordfeature"
+		words=[]
+		for word in wordList:
+			word=self.globalWordList[word].word
+			words.append(word)
+		feature=self.markItemsinList(words,self.wordDictionary)
+		print feature
+		return feature
 	def tagFeature(self,wordList):
 		print "tagfeature"
 		tagList=[]
@@ -36,7 +45,7 @@ class Feature():
 			word=self.globalWordList[word]
 			print word.wordTag,
 			tagList.append(word.wordTag)
-		print "\n"
+		print ""
 		feature=self.markItemsinList(tagList,self.tagSet)
 		print feature
 		return feature
@@ -47,7 +56,7 @@ class Feature():
 			word=self.globalWordList[word]
 			print self.getChunkInfo(word,0).chunkTag,
 			chunkList.append(self.getChunkInfo(word,0).chunkTag)
-		print "\n"
+		print ""
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
 	def chunkNeighbor(self,wordList,offSet):
@@ -65,8 +74,6 @@ class Feature():
 				chunkList.append("Last")
 		print chunkList
 		feature=self.markItemsinList(chunkList,self.chunkSet)
-	def wordDictionaryFeature(self,wordList):
-		return markItemsinList(wordList,self.wordDictionary)
 	def markItemsinList(self,List,Set):
 		feature=[]
 		for item in Set:
@@ -85,3 +92,14 @@ class Feature():
 		return chunk
 	def setClassLabel(self,label):
 		self.classLabel=label
+
+def convertDataSet(featureCollection):
+	data=[]
+	labels=[]
+	for feature in featureCollection:
+		data.append(numpy.array(feature.featureVector))
+		labels.append(feature.classLabel)
+	labels=numpy.array(labels)
+	data=numpy.array(data)
+	return data,labels
+
