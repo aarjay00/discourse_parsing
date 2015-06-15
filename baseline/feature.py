@@ -10,14 +10,21 @@ from letter import *
 
 
 class Feature():
-	def __init__(self,word_dictionary_path,tag_path,chunk_path,global_word_list,sentence_list):
-		self.wordDictionary=self.loadSet(word_dictionary_path)
-		self.tagSet=self.loadSet(tag_path)
+	def __init__(self,word_dictionary_path,tag_path,chunk_path,discourse_file,global_word_list,sentence_list,conn=None):
+		self.discourseFile=discourse_file
+		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
+		self.tagSet=self.loadSet(tag_path,["First","Last"])
 		self.chunkSet=self.loadSet(chunk_path,["First","Last"])
 		self.featureVector=[]
 		self.classLabel=None
 		self.globalWordList=global_word_list
 		self.sentenceList=sentence_list
+		if(conn!=None):
+			self.connective=""
+			for i in conn:
+				self.connective=self.connective+" "+self.globalWordList[i].word
+			self.connective=self.connective[1:]
+			self.conn=conn
 		print len(self.tagSet)
 		print len(self.chunkSet)
 	def loadSet(self,filePath,extra=[]):
@@ -38,6 +45,22 @@ class Feature():
 		feature=self.markItemsinList(words,self.wordDictionary)
 		print feature
 		return feature
+	def wordNeighbor(self,wordList,offSet):
+		print "wordNeighbor"
+		words=[]
+		if(offSet<0):
+			if(wordList[0]+offSet<0):
+				words.append("First")
+			else:
+				words.append(self.globalWordList[wordList[0]+offSet].word)
+		else:
+			if(wordList[-1]+offSet>=len(self.globalWordList)):
+				words.append("Last")
+			else:
+			 	words.append(self.globalWordList[wordList[-1]+offSet].word)
+		feature=self.markItemsinList(words,self.wordDictionary)
+		print feature
+		return feature
 	def tagFeature(self,wordList):
 		print "tagfeature"
 		tagList=[]
@@ -46,6 +69,22 @@ class Feature():
 			print word.wordTag,
 			tagList.append(word.wordTag)
 		print ""
+		feature=self.markItemsinList(tagList,self.tagSet)
+		print feature
+		return feature
+	def tagNeighbor(self,wordList,offSet):
+		print "tagNeighbor"
+		tagList=[]
+		if(offSet<0):
+			if(wordList[0]+offSet<0):
+				tagList.append("First")
+			else:
+				tagList.append(self.globalWordList[wordList[0]+offSet].word)
+		else:
+			if(wordList[-1]+offSet>=len(self.globalWordList)):
+				tagList.append("Last")
+			else:
+			 	tagList.append(self.globalWordList[wordList[-1]+offSet].word)
 		feature=self.markItemsinList(tagList,self.tagSet)
 		print feature
 		return feature
@@ -90,6 +129,31 @@ class Feature():
 		else:
 			chunk=None
 		return chunk
+	def aurFeature(self,conn):
+		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
+			self.featureVector.append(0)
+			return [0]
+		chunkNum=0
+                before=False
+                after=False
+                middle=False
+		sentence=self.discourseFile.sentenceList[self.globalWordList[conn[0]].sentenceNum]
+                for chunk in sentence.chunkList:
+                        if(chunk.chunkTag[:2]=="VG"):
+                                if(middle==False):
+                                        before=True
+                                else:
+                                        after=True
+                        for word in chunk.wordNumList:
+                                if(self.discourseFile.globalWordList[word].word==u'\u0914\u0930'):
+                                        middle=True
+                        chunkNum+=1
+		if(before and after):
+			self.featureVector.append(1)
+			return [1]
+		self.featureVector.append(0)
+		return [0]
+
 	def setClassLabel(self,label):
 		self.classLabel=label
 
