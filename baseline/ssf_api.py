@@ -107,9 +107,9 @@ def extractSSFannotations(filePath):
 					continue
 				wordInst=Word(columns[1],columns[2],columns[3],sentenceNum,chunkNum)
 				chunkInst.addWord(wordNum)
-				wordNum+=1
 				sentenceInst.addWord(wordNum)
 				globalWordList.append(wordInst)
+				wordNum+=1
 #		print "final stats",len(SSFSentenceInst.wordList),len(SSFSentenceInst.chunkList)
 		sentenceInstList.append(sentenceInst)
 		sentenceNum+=1

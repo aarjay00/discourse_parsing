@@ -13,14 +13,19 @@ from feature import *
 
 
 from sklearn.linear_model import LogisticRegression as maxent
+from sklearn.linear_model import Perceptron
+from sklearn.linear_model import SGDClassifier
 
 from sklearn.svm import SVC
 from sklearn.lda import LDA
 from sklearn.qda import QDA
 from random import shuffle
+from sklearn import tree
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import MultinomialNB
 
-
-def runModel(featureCollection,cycleLen=10):
+def runModel(featureCollection,cycleLen=10,yesWt=1,noWt=1):
 	shuffle(featureCollection)
 	avgPrecision=0.0
 	avgRecall=0.0
@@ -41,7 +46,12 @@ def runModel(featureCollection,cycleLen=10):
 		dataSet,dataLabels=convertDataSet(train)
 
 #	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
-		model=maxent(solver='liblinear',class_weight={"Yes":1,"No":1})
+		model=maxent(solver='liblinear',class_weight={"Yes":yesWt,"No":noWt})
+#		model=tree.DecisionTreeClassifier()
+#		model=AdaBoostClassifier(n_estimators=100)
+#		model=MultinomialNB()
+#		model=Perceptron(n_iter=10)
+#		model=SGDClassifier()
 #	model=SVC()
 #	model=LDA(solver='svd')
 #	model=QDA()
@@ -107,7 +117,7 @@ def runModel(featureCollection,cycleLen=10):
 	FD.write(str(sum)+"\n")
 	FD.close()
 
-	return
+	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
 	for feature in fp[u'\u0914\u0930'][1]:
 #	if(feature.connective==u'\u0932\u0947\u0915\u093f\u0928'):
 		if(feature.connective==u'\u0914\u0930'):

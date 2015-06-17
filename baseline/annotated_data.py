@@ -40,6 +40,7 @@ class discourseFile():
 			print "connective",relation.connSpan
 			isSplitConn=printSpan(relation.connSpan,self.rawData)
 			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			print "---",
 			for pos in conn:
 				if(isSplitConn):
 					print "huihui"

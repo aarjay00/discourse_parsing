@@ -19,10 +19,17 @@ class Feature():
 		self.classLabel=None
 		self.globalWordList=global_word_list
 		self.sentenceList=sentence_list
-		if(conn!=None):
+		if(conn!=None and isinstance(conn[0],int)):
 			self.connective=""
 			for i in conn:
 				self.connective=self.connective+" "+self.globalWordList[i].word
+			self.connective=self.connective[1:]
+			self.conn=conn
+		elif(conn!=None and isinstance(conn[0],list)):
+			self.connective=""
+			for i in conn:
+				for j in i:
+					self.connective=self.connective+" "+self.globalWordList[j].word
 			self.connective=self.connective[1:]
 			self.conn=conn
 		print len(self.tagSet)
