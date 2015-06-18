@@ -148,8 +148,8 @@ def genFeatureSplitConn(conn,label,discourseFile):
 		feature.wordFeature(conn[1])
 		feature.tagFeature(conn[0])
 		feature.tagFeature(conn[1])
-		feature.tagNeighbor(conn[0],-1)
-		feature.tagNeighbor(conn[1],1)
+#		feature.tagNeighbor(conn[0],-1)
+#		feature.tagNeighbor(conn[1],1)
 		feature.chunkFeature(conn[0])
 		feature.chunkFeature(conn[1])
 		feature.chunkNeighbor(conn[0],1)
@@ -207,12 +207,22 @@ a=0.0
 b=0.0
 c=0.0
 d=0.0
-time=100
+max_acc=-1
+min_acc=100
+max_precision=-1
+min_precision=100
+time=200
 for i in range(0,time):
-#	x,y,z,l=runModel(featureCollectionSplit,8,1,1)
+	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
 	x,y,z,l=runModel(featureCollectionSingle,15,1,1)
 	a+=x
 	b+=y
 	c+=z
 	d+=l
+	max_acc=max(max_acc,z)
+	min_acc=min(min_acc,z)
+	max_precision=max(max_precision,l)
+	min_precision=min(min_precision,l)
+print "Accuracy",max_acc,"-",min_acc
+print "F-measure",max_precision,"-",min_precision
 print a/time,b/time,c/time,d/time

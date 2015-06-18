@@ -19,6 +19,9 @@ class discourseRelation() :
 	self.connSpan = connSpan
         self.arg1Span = arg1Span
         self.arg2Span = arg2Span
+	self.connList=[]
+	self.arg1List=[]
+	self.arg2List=[]
         self.sense = sense
 	self.arg1 = None
 	self.arg2 = None

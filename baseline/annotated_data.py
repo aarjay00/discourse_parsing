@@ -21,6 +21,7 @@ class discourseFile():
 		self.rawData=rawData
 		self.sentenceList=sentenceList
 		self.globalWordList=globalWordList
+		self.relationList=[]
 		self.rawToAnnMapping={}
 		self.annToRawMapping={}
 	def addDiscourseRelationInfo(self,relationList):
@@ -34,14 +35,18 @@ class discourseFile():
 			print "arg1",relation.arg1Span
 			printSpan(relation.arg1Span,self.rawData)
 			arg1=getSpanFromAnn(relation.arg1Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			print arg1
 			for pos in arg1:
+				relation.arg1List.append(pos)
 				self.globalWordList[pos].arg1=True
 				self.globalWordList[pos].relationNum=relationNum
 			print "connective",relation.connSpan
 			isSplitConn=printSpan(relation.connSpan,self.rawData)
 			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			print conn
 			print "---",
 			for pos in conn:
+				relation.connList.append(pos)
 				if(isSplitConn):
 					print "huihui"
 					self.globalWordList[pos].splitConn=True
@@ -52,7 +57,9 @@ class discourseFile():
 			print "arg2",relation.arg2Span
 			printSpan(relation.arg2Span,self.rawData)
 			arg2=getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			print arg2
 			for pos in arg2:
+				relation.arg2List.append(pos)
 				self.globalWordList[pos].arg2=True
 				self.globalWordList[pos].relationNum=relationNum
 			relationNum+=1
