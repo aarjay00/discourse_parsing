@@ -25,11 +25,16 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.naive_bayes import MultinomialNB
 
-def runModel(featureCollection,cycleLen=10,yesWt=1,noWt=1):
+def runModel(featureCollection,classList,cycleLen,yesWt=1,noWt=1):
 	shuffle(featureCollection)
-	avgPrecision=0.0
-	avgRecall=0.0
-	avgModelScore=0.0
+	avgPrecision={}
+	avgRecall={}
+	avgModelScore={}
+	
+	for classLabel in classList:
+		avgPrecision[classLabel]=0.0
+		avgRecall[classLabel]=0.0
+		avgModelScore[classLabel]=0.0
 
 	fn={}
 	fp={}
@@ -46,7 +51,10 @@ def runModel(featureCollection,cycleLen=10,yesWt=1,noWt=1):
 		dataSet,dataLabels=convertDataSet(train)
 
 #	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
-		model=maxent(solver='liblinear',class_weight={"Yes":yesWt,"No":noWt})
+		classWeight={}
+		for classLabel in classList:
+			classWeight[classLabel]=1.0
+		model=maxent(solver='liblinear',class_weight=classWeight)
 #		model=tree.DecisionTreeClassifier()
 #		model=AdaBoostClassifier(n_estimators=100)
 #		model=MultinomialNB()
@@ -56,51 +64,80 @@ def runModel(featureCollection,cycleLen=10,yesWt=1,noWt=1):
 #	model=LDA(solver='svd')
 #	model=QDA()
 		model.fit(dataSet,dataLabels)
+		
+		truePositives={}
+		falsePositives={}
+		gold={}
+		precision={}
+		recall={}
 
-
-		truePositives=0
-		falsePositives=0
-		trueNegatives=0
-		falseNegatives=0
+		for classLabel in classList:
+			truePositives[classLabel]=0
+			falsePositives[classLabel]=0
+			gold[classLabel]=0
+			precision[classLabel]=0.0
+			recall[classLabel]=0.0
 
 		d,l=convertDataSet(test)
 		print "model score",model.score(d,l)
 
 		for feature in test:
+
 			arr=numpy.array(feature.featureVector)
 			result=model.predict(arr)[0]
-#	print "Model",result
-#	print "Gold",feature.classLabel
 			if(result==feature.classLabel):
-				if(feature.classLabel=="Yes"):
-					truePositives+=1
-				else:
-					trueNegatives+=1
+				truePositives[feature.classLabel]+=1
 			else:
-				if(feature.classLabel=="Yes"):
-					falseNegatives+=1
-					if(feature.connective not in fn.keys()):
-						fn[feature.connective]=[0,[]]
-					fn[feature.connective][0]+=1
-					fn[feature.connective][1].append(feature)
-				else:
-					falsePositives+=1
-					if(feature.connective not in fp.keys()):
-						fp[feature.connective]=[0,[]]
-					fp[feature.connective][0]+=1
-					fp[feature.connective][1].append(feature)
-		print truePositives,falsePositives,trueNegatives,falseNegatives
-		precision=(1.0*truePositives)/(truePositives+falsePositives)
-		recall=(1.0*truePositives)/(truePositives+falseNegatives)
-		print "Precision : %f Recall %f"%(precision,recall)
-		avgPrecision=(avgPrecision*i + precision)/(i+1)
-		avgRecall=(avgRecall*i + recall)/(i+1)
-		avgModelScore=(avgModelScore*i+model.score(d,l))/(i+1)
+			 	falsePositives[feature.classLabel]+=1
+			gold[feature.classLabel]+=1
+				
+#			if(result==feature.classLabel):
+#				if(feature.classLabel=="Yes"):
+#					truePositives+=1
+#				else:
+#					trueNegatives+=1
+#			else:
+#				if(feature.classLabel=="Yes"):
+#					falseNegatives+=1
+#					if(feature.connective not in fn.keys()):
+#						fn[feature.connective]=[0,[]]
+#					fn[feature.connective][0]+=1
+#					fn[feature.connective][1].append(feature)
+#				else:
+#					falsePositives+=1
+#					if(feature.connective not in fp.keys()):
+#						fp[feature.connective]=[0,[]]
+#					fp[feature.connective][0]+=1
+#					fp[feature.connective][1].append(feature)
+#		print truePositives,falsePositives,trueNegatives,falseNegatives
+		for classLabel in classList:	
+			try:
+				precision[classLabel]=(1.0*truePositives[classLabel])/(truePositives[classLabel]+falsePositives[classLabel])
+				avgPrecision[classLabel]=(avgPrecision[classLabel]*i + precision[classLabel])/(i+1)
+			except:
+				print "e1"
+			try:
+				recall[classLabel]=(1.0*truePositives[classLabel])/(gold[classLabel])
+				avgRecall[classLabel]=(avgRecall[classLabel]*i + recall[classLabel])/(i+1)
+			except:
+				print "e2"
+			try:
+				print "Precision : %f Recall %f"%(precision[classLabel],recall[classLabel])
+			except:
+				print "e3"
+			avgModelScore[classLabel]=(avgModelScore[classLabel]*i+model.score(d,l))/(i+1)
 	print "Final",avgPrecision,avgRecall
 
 	FD=open("results.txt","a")
-	FD.write(str(avgPrecision)+" "+str(avgRecall)+" "+str(avgModelScore)+" "+str((2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))+"\n")
+	for classLabel in classList:
+		FD.write(classLabel+"\n")
+		FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+" "+str((2*avgPrecision[classLabel]*avgRecall[classLabel])/(avgRecall[classLabel]+avgPrecision[classLabel]))+"\n")
+	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
+
+
+#	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
+	exit()
 
 	FD=open("issues","w")
 	sum=0
@@ -117,7 +154,6 @@ def runModel(featureCollection,cycleLen=10,yesWt=1,noWt=1):
 	FD.write(str(sum)+"\n")
 	FD.close()
 
-	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
 	for feature in fp[u'\u0914\u0930'][1]:
 #	if(feature.connective==u'\u0932\u0947\u0915\u093f\u0928'):
 		if(feature.connective==u'\u0914\u0930'):
