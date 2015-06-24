@@ -46,7 +46,7 @@ for rawFile in rawFileList:
 	if(sentenceList==None or globalWordList==None):
 		print "Continuing"
 		continue
-	discourseFileInst=discourseFile(sentenceList,globalWordList,fd.read())
+	discourseFileInst=discourseFile(rawFile,sentenceList,globalWordList,fd.read())
 	discourseFileInst.addDiscourseRelationInfo(extractRelation(rawFile))
 	discourseFileCollection.append(discourseFileInst)
 #	identifyConnectives(discourseFileInst,connList,connSplitList)

@@ -17,7 +17,8 @@ class discourseUnit():
 		self.spanEnd=span2
 		self.wordList=re.split(' ',unit)
 class discourseFile():
-	def __init__(self,sentenceList,globalWordList,rawData):
+	def __init__(self,rawFileName,sentenceList,globalWordList,rawData):
+		self.rawFileName=rawFileName
 		self.rawData=rawData
 		self.sentenceList=sentenceList
 		self.globalWordList=globalWordList

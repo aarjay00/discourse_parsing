@@ -29,12 +29,14 @@ def completeChunk(posList,wordList):
 def convertPostList(posList,wordList):
 	span=""
 	for pos in posList:
-		span=span+" " + wordList[pos]
+		span=span+" " + wordList[pos].word
 	return span[1:]
 def print_span(posList,wordList):
 	for pos in posList:
 		print wordList[pos].word,wordList[pos].chunkNum,
 	print ""
+
+connList=loadConnList("lists/compConnectiveList.list")
 
 for discourseFileInst in discourseFileCollection:
 	print "-"*60
@@ -48,6 +50,23 @@ for discourseFileInst in discourseFileCollection:
 		print "Arg1",relation.arg1List
 		print "conn",relation.connList
 		print "Arg2",relation.arg2List
+		if(wordList[relation.connList[0]].conn):
+			print "Single Conn",
+			if(convertPostList(relation.connList,wordList) in connList):
+				print "Yes",
+			else:
+			 	print "No",wordList[relation.connList[0]-1].word,convertPostList(relation.connList,wordList) ,wordList[relation.connList[-1]+1].word,
+		if(wordList[relation.connList[0]].splitConn):
+			print "Split Conn",
+		if(relation.arg1List[0] < relation.connList[0] and relation.connList[0]<relation.arg2List[0]):
+			print "Case 1"
+		elif(relation.connList[0] < relation.arg1List[0] and relation.arg1List[0]<relation.arg2List[0]):
+			print "Case 2"
+			print_span(sentenceList[wordList[relation.arg2List[0]].sentenceNum].wordNumList,wordList)
+		elif(relation.connList[0] < relation.arg2List[0] and relation.arg2List[0]<relation.arg1List[0]):
+			print "Case 3"
+		else:
+		 	print "Case 4"
 		complete=completeChunk(relation.arg2List,wordList)
 		print complete
 		if(not complete[1]):

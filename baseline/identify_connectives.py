@@ -122,10 +122,10 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
 		feature.wordFeature(conn)
 		feature.tagFeature(conn)
-		feature.tagNeighbor(conn,-1)
-		feature.tagNeighbor(conn,1)
-		feature.tagNeighbor(conn,-2)
-		feature.tagNeighbor(conn,2)
+#		feature.tagNeighbor(conn,-1)
+#		feature.tagNeighbor(conn,1)
+#		feature.tagNeighbor(conn,-2)
+#		feature.tagNeighbor(conn,2)
 		feature.chunkFeature(conn)
 		feature.chunkNeighbor(conn,1)
 		feature.chunkNeighbor(conn,-1)
@@ -211,7 +211,7 @@ max_acc=-1
 min_acc=100
 max_precision=-1
 min_precision=100
-time=200
+time=100
 for i in range(0,time):
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
 	x,y,z,l=runModel(featureCollectionSingle,15,1,1)
