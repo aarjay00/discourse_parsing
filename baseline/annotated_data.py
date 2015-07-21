@@ -41,6 +41,15 @@ class discourseFile():
 				relation.arg1List.append(pos)
 				self.globalWordList[pos].arg1=True
 				self.globalWordList[pos].relationNum=relationNum
+		
+			print "arg2",relation.arg2Span
+			printSpan(relation.arg2Span,self.rawData)
+			arg2=getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
+			print arg2
+			for pos in arg2:
+				relation.arg2List.append(pos)
+				self.globalWordList[pos].arg2=True
+				self.globalWordList[pos].relationNum=relationNum
 			print "connective",relation.connSpan
 			isSplitConn=printSpan(relation.connSpan,self.rawData)
 			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
@@ -55,14 +64,8 @@ class discourseFile():
 					self.globalWordList[pos].conn=True
 				self.globalWordList[pos].sense=relation.sense
 				self.globalWordList[pos].relationNum=relationNum
-			print "arg2",relation.arg2Span
-			printSpan(relation.arg2Span,self.rawData)
-			arg2=getSpanFromAnn(relation.arg2Span,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
-			print arg2
-			for pos in arg2:
-				relation.arg2List.append(pos)
-				self.globalWordList[pos].arg2=True
-				self.globalWordList[pos].relationNum=relationNum
+				self.globalWordList[pos].arg1Span=arg1
+				self.globalWordList[pos].arg2Span=arg2
 			relationNum+=1
 		return
 def printSpan(spans,rawData):

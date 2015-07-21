@@ -48,6 +48,8 @@ class Word():
 		self.arg1=False
 		self.arg2=False
 		self.relationNum=None
+		self.arg1Span=None
+		self.arg2Span=None
 class FeatureSet():
 	def __init__(self,featureString):
 		self.featureDict={}

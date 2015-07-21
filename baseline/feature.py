@@ -120,6 +120,7 @@ class Feature():
 				chunkList.append("Last")
 		print chunkList
 		feature=self.markItemsinList(chunkList,self.chunkSet)
+	def tamFeature(self,word):
 	def markItemsinList(self,List,Set):
 		feature=[]
 		for item in Set:
@@ -136,6 +137,7 @@ class Feature():
 		else:
 			chunk=None
 		return chunk
+
 	def aurFeature(self,conn):
 		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
 			self.featureVector.append(0)

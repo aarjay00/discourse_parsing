@@ -134,18 +134,87 @@ for discourseFile in discourseFileCollection:
 #		print "\n"
 	singleSet,splitSet=identifyConnectives(discourseFile,connList,connSplitList)
 	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	print discourseFile.rawFileName,"-"*100
 	for conn in singleSet:
-		print wordList[conn[0]].sense.split(".")[0]
+		word=wordList[conn[0]]
+		print word.word
+		arg1Span= word.arg1Span
+		arg2Span= word.arg2Span
+		chunkList=sentenceList[word.sentenceNum].chunkList
+#		print arg1Span
+		print "-"*60
+		print "arg1","-"*10
+		for pos in arg1Span:
+			print wordList[pos].word,wordList[pos].wordTag,
+		print ""
+		for pos in  arg1Span:
+#		print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,
+			if(wordList[pos].wordTag=="VM"):
+				print wordList[pos].word
+				print wordList[pos].featureSet.featureDict["af"]
+
+		print ""
+		print "arg2","-"*10
+		for pos in arg2Span:
+			print wordList[pos].word,
+		print ""
+		for pos in  arg2Span:
+			if(wordList[pos].wordTag=="VM"):
+				print wordList[pos].featureSet.featureDict["af"]
+#			print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,wordList[pos].wordTag,
+		print ""
 		if(wordList[conn[0]].sense.split(".")[0]=="_Without_sense"):
 			continue
-		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
+#		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
 	connSingleSet.extend(singleSet)
 	connSplitSet.extend(splitSet)
 	fileNum+=1
 
 print len(connSingleSet),len(connSplitSet)
 
+category=[]
+gender=[]
+number=[]
+person=[]
+case=[]
 
+for discourseFile in discourseFileCollection:
+	wordList=discourseFile.globalWordList
+	for word in wordList:
+		tam=word.featureSet.featureDict["af"].split(",")
+		try:
+			if tam[1] not in category and tam[1]!="":
+				category.append(tam[1])
+			if tam[2] not in gender and tam[2]!="":
+				gender.append(tam[2])
+			if tam[3] not in number and tam[3]!="":
+				number.append(tam[3])
+			if tam[4] not in person and tam[4]!="":
+				person.append(tam[4])
+			if tam[5] not in case and tam[5]!="":
+				case.append(tam[5])
+		except:
+			print "here here"
+			print word.word,word.featureSet.featureDict["af"]
+print "category"
+for i in category:
+	print i
+print "gender"
+for i in gender:
+	print i
+print "number"
+for i in number:
+	print i
+print "person"
+for i in person:
+	print i
+print "case"
+for i in case:
+	print i
+
+
+exit()
 classList=[]
 for feature in featureCollectionSingle:
 	classList.append(feature.classLabel)
@@ -164,7 +233,7 @@ min_precision=100
 time=1
 for i in range(0,time):
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z,l=runModel(featureCollectionSingle,classList,5,1,1)
+	x,y,z,l=runModel(featureCollectionSingle,classList,10,1,1)
 	a+=x
 	b+=y
 	c+=z
