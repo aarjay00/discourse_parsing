@@ -120,7 +120,7 @@ class Feature():
 				chunkList.append("Last")
 		print chunkList
 		feature=self.markItemsinList(chunkList,self.chunkSet)
-	def tamFeature(self,word):
+#	def tamFeature(self,word):
 	def markItemsinList(self,List,Set):
 		feature=[]
 		for item in Set:

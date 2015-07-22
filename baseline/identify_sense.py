@@ -152,8 +152,10 @@ for discourseFile in discourseFileCollection:
 #		print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,
 			if(wordList[pos].wordTag=="VM"):
 				print wordList[pos].word
-				print wordList[pos].featureSet.featureDict["af"]
-
+				try:
+					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos")
+				except:
+					print "XXX"
 		print ""
 		print "arg2","-"*10
 		for pos in arg2Span:
@@ -161,7 +163,11 @@ for discourseFile in discourseFileCollection:
 		print ""
 		for pos in  arg2Span:
 			if(wordList[pos].wordTag=="VM"):
-				print wordList[pos].featureSet.featureDict["af"]
+				print wordList[pos].word
+				try:
+					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos")
+				except:
+					print "XXX"
 #			print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,wordList[pos].wordTag,
 		print ""
 		if(wordList[conn[0]].sense.split(".")[0]=="_Without_sense"):

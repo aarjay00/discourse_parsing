@@ -35,11 +35,12 @@ class Chunk():
 #		print "-"*30,"adding word to chunk"
 		self.wordNumList.append(word)
 class Word():
-	def __init__(self,word,tag,features_string,sentenceNum,chunkNum):
+	def __init__(self,word,tag,features_string,extra_features,sentenceNum,chunkNum):
 #		print "-"*30,"new word- %s with tag - %s and f = %s"%(word,tag,features_string)
 		self.wordTag=tag;
 		self.word=word.decode("utf-8")
 		self.featureSet=FeatureSet(features_string)
+		self.extraFeatureSet=extra_features
 		self.sentenceNum=sentenceNum
 		self.chunkNum=chunkNum
 		self.sense=None
@@ -65,9 +66,45 @@ class FeatureSet():
 #			print key,"=",value
 			self.featureDict[key]=value
 
+def extractExtraSSF(filePath):
+	filePath=filePath.replace("/ssf/","/ssf_1/")
+	print filePath
+	if not fileExists(filePath) :
+		print "No file found"
+		return None
+	fileFD=codecs.open(filePath,"r",encoding="utf-8")
+	data=fileFD.read()
+	fileFD.close()
+	beautData = BeautifulSoup(data)
+	sentenceList=beautData.find_all('sentence')
+	sList=[]
+	for sentence in sentenceList:
+		content=sentence.renderContents()
+		lines=re.split("\n",content)
+	 	wList=[]
+		for line in lines:
+			print line
+			columns=line.split("\t")
+			if(len(columns)<4):
+				continue
+			
+			f=FeatureSet(columns[3])
+			try:
+				print "XXX",f.featureDict["af"]
+			except:
+				print "XXXhere"
+			wList.append(f)
+		sList.append(wList)
+	return sList
+
+			
 def extractSSFannotations(filePath):
 	filePath=filePath.replace("/raw/","/ssf/")
 	if not fileExists(filePath) :
+		print "No file found"
+		return (None,None)
+	extraInfoList=extractExtraSSF(filePath)
+	if(extraInfoList==None):
 		print "No file found"
 		return (None,None)
 	fileFD=codecs.open(filePath,"r",encoding="utf-8")
@@ -80,6 +117,7 @@ def extractSSFannotations(filePath):
 	sentenceNum=0
 	wordNum=0
 	for sentence in sentenceList:
+	 	extraSentenceInfo=extraInfoList[sentenceNum]
 		sentenceInst=Sentence()
 		content=sentence.renderContents()
 		lines=re.split("\n",content)
@@ -87,6 +125,7 @@ def extractSSFannotations(filePath):
 		wordInst=None
 		chunkNum=-1
 		skip=False
+		wNum=0
 		for line in lines:
 			columns=line.split("\t")
 #			print line,"--",len(columns)
@@ -107,12 +146,20 @@ def extractSSFannotations(filePath):
 			else:
 			  	if(columns[1]=="NULL"):
 					continue
-				wordInst=Word(columns[1],columns[2],columns[3],sentenceNum,chunkNum)
+				try:
+					extraWordInfo=extraSentenceInfo[wNum]
+				except:
+				 	print "Could not match intrachunk and interchunk SSF annotations !!!"
+				 	print columns[1],columns[2],wordNum
+				 	exit()
+				wordInst=Word(columns[1],columns[2],columns[3],extraWordInfo,sentenceNum,chunkNum)
 				chunkInst.addWord(wordNum)
 				sentenceInst.addWord(wordNum)
 				globalWordList.append(wordInst)
 				wordNum+=1
+				wNum+=1
 #		print "final stats",len(SSFSentenceInst.wordList),len(SSFSentenceInst.chunkList)
 		sentenceInstList.append(sentenceInst)
 		sentenceNum+=1
 	return (sentenceInstList,globalWordList)
+
