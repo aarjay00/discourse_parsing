@@ -153,7 +153,7 @@ for discourseFile in discourseFileCollection:
 			if(wordList[pos].wordTag=="VM"):
 				print wordList[pos].word
 				try:
-					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos")
+					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos"),"----",wordList[pos].extraFeatureSet.featureDict.get("af")
 				except:
 					print "XXX"
 		print ""
@@ -165,7 +165,7 @@ for discourseFile in discourseFileCollection:
 			if(wordList[pos].wordTag=="VM"):
 				print wordList[pos].word
 				try:
-					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos")
+					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos"),"----",wordList[pos].extraFeatureSet.featureDict.get("af")
 				except:
 					print "XXX"
 #			print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,wordList[pos].wordTag,

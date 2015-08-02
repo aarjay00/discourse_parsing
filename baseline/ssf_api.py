@@ -11,11 +11,22 @@ from util import *
 from bs4 import BeautifulSoup
 
 
+class Node():
+	def __init__(self,node_name,node_relation,node_parent):
+		self.nodeName=node_name
+		self.nodeRelation=node_relation
+		self.nodeParent=node_parent
+		self.childList=[]
+	def add_child(self,child):
+		self.childList.append(child)
+
+
 class Sentence():
 	def __init__(self):
 #		print "-"*30,"adding sentence"
 		self.chunkList=[]
 		self.wordNumList=[]
+		self.nodeDict={}
 		return
 	def addChunk(self,chunk):
 #		print "-"*30,"adding chunk"
@@ -23,12 +34,15 @@ class Sentence():
 	def addWord(self,word):
 #		print "-"*30,"adding word to sentence"
 		self.wordNumList.append(word)
+	def addNode(self,node):
+		self.nodeDict[node.nodeName]=node
 
 class Chunk():
-	def __init__(self,tag,features_string,sentenceNum):
+	def __init__(self,tag,node_name,features_set,sentenceNum):
 #		print "-"*30,"new chunk with tag - %s and f = %s"%(tag,features_string)
 		self.chunkTag=tag
-		self.featureSet=FeatureSet(features_string)
+		self.nodeName=node_name
+		self.featureSet=features_set
 		self.wordNumList=[]
 		self.sentenceNum=sentenceNum
 	def addWord(self,word):
@@ -122,6 +136,7 @@ def extractSSFannotations(filePath):
 		content=sentence.renderContents()
 		lines=re.split("\n",content)
 		chunkInst=None
+		NodeInst=None
 		wordInst=None
 		chunkNum=-1
 		skip=False
@@ -136,12 +151,19 @@ def extractSSFannotations(filePath):
 #					skip=True
 #					continue
 				chunkNum+=1
-				chunkInst=Chunk(columns[2],columns[3],sentenceNum)
+				featureSetInst=FeatureSet(columns[3])
+				chunkInst=Chunk(columns[2],featureSetInst.featureDict["name"],featureSetInst,sentenceNum)
+				try:
+					nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["drel"].split(":")[0],featureSetInst.featureDict["drel"].split(":")[1])
+				except:
+					nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
+#					print "hohoh",line
 			elif(columns[1]=="))"):
-				
+				sentenceInst.addNode(nodeInst)
 			  	if(len(chunkInst.wordNumList)!=0):
 					sentenceInst.addChunk(chunkInst)
 				else:
+					print "found file with empty chunk !!!",filePath
 					chunkNum-=1
 			else:
 			  	if(columns[1]=="NULL"):
