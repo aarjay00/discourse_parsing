@@ -17,7 +17,7 @@ class Node():
 		self.nodeRelation=node_relation
 		self.nodeParent=node_parent
 		self.childList=[]
-	def add_child(self,child):
+	def addChild(self,child):
 		self.childList.append(child)
 
 
@@ -27,6 +27,7 @@ class Sentence():
 		self.chunkList=[]
 		self.wordNumList=[]
 		self.nodeDict={}
+		self.rootNode=[]
 		return
 	def addChunk(self,chunk):
 #		print "-"*30,"adding chunk"
@@ -157,7 +158,7 @@ def extractSSFannotations(filePath):
 					nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["drel"].split(":")[0],featureSetInst.featureDict["drel"].split(":")[1])
 				except:
 					nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
-#					print "hohoh",line
+					print "hohoh",line
 			elif(columns[1]=="))"):
 				sentenceInst.addNode(nodeInst)
 			  	if(len(chunkInst.wordNumList)!=0):
