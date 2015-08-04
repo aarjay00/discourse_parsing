@@ -42,12 +42,13 @@ print "-"*60,"traversing"
 for discourseFileInst in discourseFileCollection:
 	print "-"*30,"new file !!!",discourseFileInst.rawFileName
 	for sentence in discourseFileInst.sentenceList:
-	  print "-"	*30," new sentencce"
+	  print "-"*30," new sentencce"
 	  for root in sentence.rootNode:
 	  	traverseNode(0,root,sentence.nodeDict)
 	  for nodeName,nodeInst in sentence.nodeDict.items():
 	  	if(nodeInst.nodeLevel==-1):
 			print "problem here ", nodeName
+
 exit()
 
 exportModel("processedData/annotatedData",discourseFileCollection)	

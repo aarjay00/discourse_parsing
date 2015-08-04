@@ -15,9 +15,9 @@ class Feature():
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])
 		self.chunkSet=self.loadSet(chunk_path,["First","Last"])
-		self.categorySet=loadSet("./lists/category.list")
-		self.genderSet=loadSet("./lists/gender.list")
-		self.numberSet=loadSet("./lists/gender.list")
+		self.categorySet=self.loadSet("./lists/category.list")
+		self.genderSet=self.loadSet("./lists/gender.list")
+		self.numberSet=self.loadSet("./lists/gender.list")
 		self.personSet=self.loadSet("./lists/person.list")
 		self.caseSet=self.loadSet("./lists/case.list")
 		self.featureVector=[]
