@@ -17,6 +17,7 @@ class Node():
 		self.nodeRelation=node_relation
 		self.nodeParent=node_parent
 		self.childList=[]
+		self.nodeLevel=-1
 	def addChild(self,child):
 		self.childList.append(child)
 
