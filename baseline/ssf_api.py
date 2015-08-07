@@ -23,8 +23,9 @@ class Node():
 
 
 class Sentence():
-	def __init__(self):
+	def __init__(self,sentence_num):
 #		print "-"*30,"adding sentence"
+		self.sentenceNum=sentence_num
 		self.chunkList=[]
 		self.wordNumList=[]
 		self.nodeDict={}
@@ -134,7 +135,7 @@ def extractSSFannotations(filePath):
 	wordNum=0
 	for sentence in sentenceList:
 	 	extraSentenceInfo=extraInfoList[sentenceNum]
-		sentenceInst=Sentence()
+		sentenceInst=Sentence(sentenceNum)
 		content=sentence.renderContents()
 		lines=re.split("\n",content)
 		chunkInst=None

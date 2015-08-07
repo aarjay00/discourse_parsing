@@ -138,12 +138,19 @@ for discourseFile in discourseFileCollection:
 	print discourseFile.rawFileName,"-"*100
 	for conn in singleSet:
 		word=wordList[conn[0]]
-		print word.word
+		chunk=getChunk(conn[0],wordList,sentenceList)
+		print "-"*60
+		print "connective","-"*10
+		for pos in conn:
+			print wordList[pos].word,wordList[pos].wordTag,
+		print ""
+		print chunk.chunkTag,chunk.nodeName
+		node=sentenceList[word.sentenceNum].nodeDict[chunk.nodeName]
+		print node.nodeName,node.nodeParent 
 		arg1Span= word.arg1Span
 		arg2Span= word.arg2Span
 		chunkList=sentenceList[word.sentenceNum].chunkList
 #		print arg1Span
-		print "-"*60
 		print "arg1","-"*10
 		for pos in arg1Span:
 			print wordList[pos].word,wordList[pos].wordTag,

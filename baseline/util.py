@@ -63,6 +63,9 @@ def findIndexList(key,l):
 		return l.index(key)
 	except ValueError:
 		return -1;
+
+def getChunk(wordNum,wordList,sentenceList):
+	return sentenceList[wordList[wordNum].sentenceNum].chunkList[wordList[wordNum].chunkNum]
 def writeResults(discourseRelationList,filePath):
 	filePath=filePath.split("raw/")[1]
 	filePath="output/"+filePath

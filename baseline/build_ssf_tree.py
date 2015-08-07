@@ -25,9 +25,9 @@ def traverseNode(level,nodeName,nodeDict):
 
 
 for discourseFileInst in discourseFileCollection:
-	print "*"*60,"new file"
+#	print "*"*60,"new file"
 	for sentence in discourseFileInst.sentenceList:
-		print "\t","sentence"	
+#		print "\t","sentence"	
 		nodeDict=sentence.nodeDict
 		for nodeName,nodeInst in nodeDict.items():
 			if(nodeInst.nodeParent!="None"):
@@ -35,9 +35,9 @@ for discourseFileInst in discourseFileCollection:
 		for nodeName,nodeInst in nodeDict.items():
 			if(len(nodeInst.childList)!=0 and nodeInst.nodeParent=="None"):
 				sentence.rootNode.append(nodeName)
-				print "\t\there",nodeName,len(sentence.rootNode)
-				for child in nodeInst.childList:
-					print "\t\t\t",nodeDict[child].nodeName
+#				print "\t\there",nodeName,len(sentence.rootNode)
+#				for child in nodeInst.childList:
+#					print "\t\t\t",nodeDict[child].nodeName
 print "-"*60,"traversing"
 for discourseFileInst in discourseFileCollection:
 	print "-"*30,"new file !!!",discourseFileInst.rawFileName
@@ -49,19 +49,4 @@ for discourseFileInst in discourseFileCollection:
 	  	if(nodeInst.nodeLevel==-1):
 			print "problem here ", nodeName
 
-exit()
-
-exportModel("processedData/annotatedData",discourseFileCollection)	
-discourseFileCollection=loadModel("processedData/annotatedData")
-
-
-
-print "aloha hahahaha"
-
-for discourseFileInst in discourseFileCollection:
-	sentenceList=discourseFileInst.sentenceList
-	print "*"*60,"new file"
-	for sentence in sentenceList:
-		print "\t","sentence"	
-		for root in sentence.rootNode:
-			print "\t\t",root
+exportModel("processedData/annotatedDataTree",discourseFileCollection)
