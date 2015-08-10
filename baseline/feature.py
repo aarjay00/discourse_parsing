@@ -173,6 +173,16 @@ class Feature():
 	def setClassLabel(self,label):
 		self.classLabel=label
 
+class featureDesc():
+	def __init__(self,raw_filename,sentence_num,description,class_label):
+		self.rawFileName=raw_filename
+		self.sentenceNum=sentence_num
+		self.description=description
+		self.classLabel=class_label
+	def addDescription(self,desc):
+		self.description=self.description+"\n"+desc
+	def addAttr(self,attr_name,attr_value):
+		setattr(self,attr_name,attr_value)
 def convertDataSet(featureCollection):
 	data=[]
 	labels=[]
