@@ -163,7 +163,7 @@ for discourseFile in discourseFileCollection:
 		if(wordList[conn[0]].sense.split(".")[0]=="_Without_sense"):
 			continue
 		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
-		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense)
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense,len(featureDescSingleCollection))
 		featureDescInst.addAttr("singleConnectiveName",connective)
 		featureDescSingleCollection.append(featureDescInst)
 	connSingleSet.extend(singleSet)

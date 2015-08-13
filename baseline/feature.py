@@ -174,15 +174,23 @@ class Feature():
 		self.classLabel=label
 
 class featureDesc():
-	def __init__(self,raw_filename,sentence_num,description,class_label):
+	def __init__(self,raw_filename,sentence_num,description,class_label,identity):
 		self.rawFileName=raw_filename
 		self.sentenceNum=sentence_num
 		self.description=description
 		self.classLabel=class_label
+		self.attrList=[]
+		self.ID=identity
 	def addDescription(self,desc):
 		self.description=self.description+"\n"+desc
 	def addAttr(self,attr_name,attr_value):
 		setattr(self,attr_name,attr_value)
+		self.attrList.append(attr_name)
+	def printFeatureDesc(self):
+		print "FileName",self.rawFileName
+		print "Description",self.description
+		print "conn name",self.singleConnectiveName
+		print "class label",self.classLabel
 def convertDataSet(featureCollection):
 	data=[]
 	labels=[]

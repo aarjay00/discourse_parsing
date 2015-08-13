@@ -22487,63 +22487,760 @@ chunkNeighbor -2
 640 124
 [u'Comparison', u'Contingency', u'Temporal', u'Expansion']
 Iteration 0 --------------------------------------------------
-model score 0.793650793651
-Precision : 0.850000 Recall 0.850000
+model score 0.825396825397
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.884615 Recall 0.884615
+Precision : 0.833333 Recall 0.833333
 Precision : 0.692308 Recall 0.692308
-Precision : 0.500000 Recall 0.500000
-Precision : 0.875000 Recall 0.875000
+Precision : 0.833333 Recall 0.833333
 Iteration 1 --------------------------------------------------
 model score 0.793650793651
-Precision : 0.857143 Recall 0.857143
-Precision : 0.727273 Recall 0.727273
-Precision : 0.875000 Recall 0.875000
-Precision : 0.739130 Recall 0.739130
-Iteration 2 --------------------------------------------------
-model score 0.873015873016
-Precision : 1.000000 Recall 1.000000
-Precision : 0.800000 Recall 0.800000
-Precision : 0.666667 Recall 0.666667
-Precision : 0.857143 Recall 0.857143
-Iteration 3 --------------------------------------------------
-model score 0.777777777778
-Precision : 0.956522 Recall 0.956522
-Precision : 0.750000 Recall 0.750000
-Precision : 0.583333 Recall 0.583333
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.722222 Recall 0.722222
 Precision : 0.687500 Recall 0.687500
-Iteration 4 --------------------------------------------------
-model score 0.857142857143
-Precision : 0.920000 Recall 0.920000
-Precision : 1.000000 Recall 1.000000
-Precision : 0.714286 Recall 0.714286
-Precision : 0.736842 Recall 0.736842
-Iteration 5 --------------------------------------------------
-model score 0.761904761905
-Precision : 0.913043 Recall 0.913043
-Precision : 0.666667 Recall 0.666667
-Precision : 0.333333 Recall 0.333333
-Precision : 0.760000 Recall 0.760000
-Iteration 6 --------------------------------------------------
-model score 0.84126984127
-Precision : 0.950000 Recall 0.950000
-Precision : 0.846154 Recall 0.846154
-Precision : 0.750000 Recall 0.750000
-Precision : 0.777778 Recall 0.777778
-Iteration 7 --------------------------------------------------
-model score 0.84126984127
-Precision : 0.913043 Recall 0.913043
-Precision : 0.692308 Recall 0.692308
-Precision : 0.818182 Recall 0.818182
-Precision : 0.875000 Recall 0.875000
-Iteration 8 --------------------------------------------------
-model score 0.777777777778
-Precision : 0.850000 Recall 0.850000
-Precision : 0.812500 Recall 0.812500
-Precision : 0.500000 Recall 0.500000
-Precision : 0.823529 Recall 0.823529
-Iteration 9 --------------------------------------------------
-model score 0.904761904762
-Precision : 0.923077 Recall 0.923077
-Precision : 1.000000 Recall 1.000000
 Precision : 0.857143 Recall 0.857143
-Precision : 0.875000 Recall 0.875000
-Final {u'Comparison': 0.9132828475871954, u'Contingency': 0.7987208624708625, u'Temporal': 0.6597943722943722, u'Expansion': 0.8006922586731108} {u'Comparison': 0.9132828475871954, u'Contingency': 0.7987208624708625, u'Temporal': 0.6597943722943722, u'Expansion': 0.8006922586731108}
+Precision : 0.909091 Recall 0.909091
+Iteration 2 --------------------------------------------------
+model score 0.761904761905
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 1.000000 Recall 1.000000
+Precision : 0.777778 Recall 0.777778
+Precision : 0.888889 Recall 0.888889
+Precision : 0.555556 Recall 0.555556
+Iteration 3 --------------------------------------------------
+model score 0.761904761905
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.913043 Recall 0.913043
+Precision : 0.714286 Recall 0.714286
+Precision : 0.750000 Recall 0.750000
+Precision : 0.611111 Recall 0.611111
+Iteration 4 --------------------------------------------------
+model score 0.698412698413
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.916667 Recall 0.916667
+Precision : 0.636364 Recall 0.636364
+Precision : 0.272727 Recall 0.272727
+Precision : 0.705882 Recall 0.705882
+Iteration 5 --------------------------------------------------
+model score 0.84126984127
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.960000 Recall 0.960000
+Precision : 0.818182 Recall 0.818182
+Precision : 0.571429 Recall 0.571429
+Precision : 0.800000 Recall 0.800000
+Iteration 6 --------------------------------------------------
+model score 0.825396825397
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.687500 Recall 0.687500
+Precision : 0.937500 Recall 0.937500
+Precision : 0.692308 Recall 0.692308
+Precision : 0.944444 Recall 0.944444
+Iteration 7 --------------------------------------------------
+model score 0.873015873016
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.916667 Recall 0.916667
+Precision : 1.000000 Recall 1.000000
+Precision : 0.666667 Recall 0.666667
+Precision : 0.814815 Recall 0.814815
+Iteration 8 --------------------------------------------------
+model score 0.904761904762
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.931034 Recall 0.931034
+Precision : 0.727273 Recall 0.727273
+Precision : 0.800000 Recall 0.800000
+Precision : 1.000000 Recall 1.000000
+Iteration 9 --------------------------------------------------
+model score 0.873015873016
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 1.000000 Recall 1.000000
+Precision : 0.846154 Recall 0.846154
+Precision : 0.777778 Recall 0.777778
+Precision : 0.809524 Recall 0.809524
+Final {u'Comparison': 0.8931748901190432, u'Contingency': 0.7978368853368853, u'Temporal': 0.696924741924742, u'Expansion': 0.7983756330815155} {u'Comparison': 0.8931748901190432, u'Contingency': 0.7978368853368853, u'Temporal': 0.696924741924742, u'Expansion': 0.7983756330815155}
+-------------------------------------------------- issues
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name हालांकि
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name दूसरी ओर
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name या फिर
+class label Expansion.Alternative.Disjunctive
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसी प्रकार
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605262_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+Description Single Connective Sense Identification
+conn name तो
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Contrast.Opposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसके अलावा
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name गौरतलब है कि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name हालांकि
+class label Comparison.Pragmatic concession
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Pragmatic concession
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name ताकि
+class label Contingency.Goal
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name आगे
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name साथ ही
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name तो
+class label Contingency.Condition.Factual
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2617887_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name या
+class label Expansion.Alternative.Disjunctive
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name जिससे
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name गौरतलब है कि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसके अलावा
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name तथा
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name के बाद
+class label Temporal.Asynchronous.Succession
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसलिए
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580824_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name उधर
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+Description Single Connective Sense Identification
+conn name वहीं
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name या
+class label Expansion.Alternative.Chosen alternative
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name , पर
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name गौरतलब है कि
+class label Temporal.Asynchronous.Precedence
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और इसलिए
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name वहां इस दौरान
+class label Temporal.Synchrony
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इससे
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name उधर ,
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name वहीं
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लिहाजा
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name चूँकि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name साथ ही
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580832_date_8_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसलिए
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इस पर
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name बताया जाता है कि
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Concession.Expectation
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इस बात पर
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसलिए
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name यानि
+class label Expansion.Restatement.Generalization
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name तथा
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name वहीं
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इस बीच
+class label Temporal.Synchrony
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name के बाद
+class label Temporal.Asynchronous.Precedence
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name के बाद
+class label Temporal.Asynchronous.Succession
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name की वजह से
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610160_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name पर
+class label Comparison.Pragmatic concession
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इस पर
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name क्योंकि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name वहीं पर
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Comparison.Contrast.Opposition
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580807_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name वजह
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लिहाज़ा
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2615522_date_23_7_2004.utf8
+Description Single Connective Sense Identification
+conn name बहरहाल ,
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name हालांकि
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name चलते इस
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name के लिए
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name ताकि
+class label Contingency.Goal
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name उधर
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+Description Single Connective Sense Identification
+conn name दूसरे
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Temporal.Asynchronous.Succession
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इस बीच ,
+class label Temporal.Synchrony
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name अलबत्ता
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name मसलन ,
+class label Expansion.Instantiation
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Concession.Contra-expectation
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name मगर
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name लेकिन
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name उधर एक
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name या फिर
+class label Expansion.Alternative.Chosen alternative
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Temporal.Asynchronous.Succession
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625774_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसलिए
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name क्योंकि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+Description Single Connective Sense Identification
+conn name क्योंकि
+class label Contingency.Cause.Reason
+1 times
+FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+Description Single Connective Sense Identification
+conn name उधर
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name उधर ,
+class label Comparison.Contrast.Juxtaposition
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+Description Single Connective Sense Identification
+conn name इसलिए
+class label Contingency.Cause.Result
+1 times
+FileName ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+Description Single Connective Sense Identification
+conn name और
+class label Expansion.Conjunction
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
+Description Single Connective Sense Identification
+conn name जबकि
+class label Comparison.Pragmatic contrast
+1 times
+FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+Description Single Connective Sense Identification
+conn name आगे
+class label Expansion.Conjunction

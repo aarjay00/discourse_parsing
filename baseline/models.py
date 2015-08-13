@@ -32,6 +32,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 	avgPrecision={}
 	avgRecall={}
 	avgModelScore={}
+	errorDict={}
 	
 	for classLabel in classList:
 		avgPrecision[classLabel]=0.0
@@ -47,12 +48,13 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 		end=start+size
 #	print start,end
 		test=featureCollection[start:end]
+		testDesc=featureDescCollection[start:end]
 		train=featureCollection[:start]+featureCollection[end+1:]
 #	print len(test),len(train)
 
 		dataSet,dataLabels=convertDataSet(train)
 
-#	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
+#		model=maxent(dual=True,solver='lbfgs' , max_iter=200)
 		classWeight={}
 		for classLabel in classList:
 			classWeight[classLabel]=1.0
@@ -62,9 +64,9 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 #		model=MultinomialNB()
 #		model=Perceptron(n_iter=10)
 #		model=SGDClassifier()
-#	model=SVC()
-#	model=LDA(solver='svd')
-#	model=QDA()
+#		model=SVC()
+#		model=LDA(solver='svd')
+#		model=QDA()
 		model.fit(dataSet,dataLabels)
 		
 		truePositives={}
@@ -82,7 +84,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 
 		d,l=convertDataSet(test)
 		print "model score",model.score(d,l)
-
+		featureNum=0
 		for feature in test:
 
 			arr=numpy.array(feature.featureVector)
@@ -91,8 +93,14 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 				truePositives[feature.classLabel]+=1
 			else:
 			 	falsePositives[feature.classLabel]+=1
+			 	print "wrong here !!!"
+			 	if(testDesc[featureNum].ID in errorDict):
+			 		errorDict[testDesc[featureNum].ID]+=1
+				else:
+			 		errorDict[testDesc[featureNum].ID]=1
+
 			gold[feature.classLabel]+=1
-				
+			featureNum+=1	
 #			if(result==feature.classLabel):
 #				if(feature.classLabel=="Yes"):
 #					truePositives+=1
@@ -136,6 +144,12 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 		FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+" "+str((2*avgPrecision[classLabel]*avgRecall[classLabel])/(avgRecall[classLabel]+avgPrecision[classLabel]))+"\n")
 	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
+
+	print "-"*50,"issues"
+	for key,value in errorDict.items():
+		print value,"times"
+		featureDescInst=featureDescCollection[key]
+		featureDescInst.printFeatureDesc()
 
 
 #	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
