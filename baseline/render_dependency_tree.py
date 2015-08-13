@@ -37,9 +37,9 @@ discourseFileCollection=loadModel(dataLocation)
 
 
 def create_graph(currNode , nodeDict , graph):
-	print "\t"*nodeDict[currNode].nodeLevel,currNode
+#	print "\t"*nodeDict[currNode].nodeLevel,currNode
 	for child in nodeDict[currNode].childList:
-		edge = pydot.Edge(currNode,child)
+		edge = pydot.Edge(currNode,child , label=" "+nodeDict[child].nodeRelation+" ")
 		graph.add_edge(edge)
 	for child in nodeDict[currNode].childList:
 		graph=create_graph(child,nodeDict,graph)
@@ -48,17 +48,23 @@ def create_graph(currNode , nodeDict , graph):
 
 for discourseFileInst in discourseFileCollection:
 	print discourseFileInst.rawFileName
+	rawFileName=discourseFileInst.rawFileName.split("/")
+	filePath=""
+	for part in rawFileName:
+		if(part.startswith("Section") or filePath!="" ):
+			filePath=filePath+part+"/"
+	filePath="dependencyTreeGraph/"+filePath
+	print filePath
+	createDirectory(filePath)
 	sentenceList=discourseFileInst.sentenceList
 	for sentence in sentenceList:
 		graph = pydot.Dot(graph_type='graph')
 		rootNode=sentence.rootNode
 		nodeDict=sentence.nodeDict
-		print rootNode
+#		print rootNode
 		for node in rootNode:
 			graph=create_graph(node,nodeDict,graph)
-			graph.write_png(node+".png")
-		exit()
-
+			graph.write_png(filePath+str(sentence.sentenceNum)+".png")
 
 # let's add the relationship between the king and vassals
 for i in range(3):

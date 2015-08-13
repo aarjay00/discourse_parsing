@@ -25,8 +25,10 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.naive_bayes import MultinomialNB
 
-def runModel(featureCollection,classList,cycleLen,yesWt=1,noWt=1):
-	shuffle(featureCollection)
+def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,noWt=1):
+	combinedData=zip(featureCollection,featureDescCollection)
+	shuffle(combinedData)
+	featureCollection,featureDescCollection=zip(*combinedData)
 	avgPrecision={}
 	avgRecall={}
 	avgModelScore={}

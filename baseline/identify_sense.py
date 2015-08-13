@@ -192,7 +192,7 @@ min_precision=100
 time=1
 for i in range(0,time):
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z,l=runModel(featureCollectionSingle,classList,10,1,1)
+	x,y,z,l=runModel(featureCollectionSingle,featureDescSingleCollection,classList,10,1,1)
 	a+=x
 	b+=y
 	c+=z

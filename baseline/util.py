@@ -20,6 +20,11 @@ def folderWalk(folderPath):
 		for fileName in fileNames :
 			fileList.append(os.path.join(dirPath , fileName))
 	return fileList
+
+def createDirectory(filePath):
+	dirPath=os.path.dirname(filePath)
+	if not os.path.exists(dirPath):
+		os.makedirs(dirPath)
 def findAllOccurences(delimList,inputString):
 	searchKey=""
 	for delim in delimList:
