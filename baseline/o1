@@ -22487,6 +22487,24 @@ chunkNeighbor -2
 640 124
 [u'Comparison', u'Contingency', u'Temporal', u'Expansion']
 Iteration 0 --------------------------------------------------
+model score 0.809523809524
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.894737 Recall 0.894737
+Precision : 0.727273 Recall 0.727273
+Precision : 0.818182 Recall 0.818182
+Precision : 0.772727 Recall 0.772727
+Iteration 1 --------------------------------------------------
 model score 0.825396825397
 wrong here !!!
 wrong here !!!
@@ -22499,31 +22517,12 @@ wrong here !!!
 wrong here !!!
 wrong here !!!
 wrong here !!!
-Precision : 0.884615 Recall 0.884615
-Precision : 0.833333 Recall 0.833333
-Precision : 0.692308 Recall 0.692308
-Precision : 0.833333 Recall 0.833333
-Iteration 1 --------------------------------------------------
-model score 0.793650793651
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.722222 Recall 0.722222
-Precision : 0.687500 Recall 0.687500
+Precision : 0.851852 Recall 0.851852
+Precision : 0.750000 Recall 0.750000
 Precision : 0.857143 Recall 0.857143
-Precision : 0.909091 Recall 0.909091
+Precision : 0.823529 Recall 0.823529
 Iteration 2 --------------------------------------------------
-model score 0.761904761905
+model score 0.857142857143
 wrong here !!!
 wrong here !!!
 wrong here !!!
@@ -22533,21 +22532,44 @@ wrong here !!!
 wrong here !!!
 wrong here !!!
 wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 1.000000 Recall 1.000000
+Precision : 0.962963 Recall 0.962963
+Precision : 0.909091 Recall 0.909091
+Precision : 0.571429 Recall 0.571429
 Precision : 0.777778 Recall 0.777778
-Precision : 0.888889 Recall 0.888889
-Precision : 0.555556 Recall 0.555556
 Iteration 3 --------------------------------------------------
-model score 0.761904761905
+model score 0.857142857143
 wrong here !!!
 wrong here !!!
 wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.920000 Recall 0.920000
+Precision : 0.923077 Recall 0.923077
+Precision : 0.800000 Recall 0.800000
+Precision : 0.750000 Recall 0.750000
+Iteration 4 --------------------------------------------------
+model score 0.825396825397
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.909091 Recall 0.909091
+Precision : 0.866667 Recall 0.866667
+Precision : 0.375000 Recall 0.375000
+Precision : 0.888889 Recall 0.888889
+Iteration 5 --------------------------------------------------
+model score 0.809523809524
 wrong here !!!
 wrong here !!!
 wrong here !!!
@@ -22561,51 +22583,48 @@ wrong here !!!
 wrong here !!!
 wrong here !!!
 Precision : 0.913043 Recall 0.913043
-Precision : 0.714286 Recall 0.714286
-Precision : 0.750000 Recall 0.750000
-Precision : 0.611111 Recall 0.611111
-Iteration 4 --------------------------------------------------
-model score 0.698412698413
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.916667 Recall 0.916667
-Precision : 0.636364 Recall 0.636364
-Precision : 0.272727 Recall 0.272727
-Precision : 0.705882 Recall 0.705882
-Iteration 5 --------------------------------------------------
-model score 0.84126984127
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.960000 Recall 0.960000
-Precision : 0.818182 Recall 0.818182
-Precision : 0.571429 Recall 0.571429
-Precision : 0.800000 Recall 0.800000
+Precision : 0.777778 Recall 0.777778
+Precision : 0.600000 Recall 0.600000
+Precision : 0.809524 Recall 0.809524
 Iteration 6 --------------------------------------------------
+model score 0.809523809524
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.863636 Recall 0.863636
+Precision : 1.000000 Recall 1.000000
+Precision : 0.833333 Recall 0.833333
+Precision : 0.680000 Recall 0.680000
+Iteration 7 --------------------------------------------------
+model score 0.777777777778
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.875000 Recall 0.875000
+Precision : 0.692308 Recall 0.692308
+Precision : 0.571429 Recall 0.571429
+Precision : 0.814815 Recall 0.814815
+Iteration 8 --------------------------------------------------
 model score 0.825396825397
 wrong here !!!
 wrong here !!!
@@ -22618,629 +22637,198 @@ wrong here !!!
 wrong here !!!
 wrong here !!!
 wrong here !!!
-Precision : 0.687500 Recall 0.687500
-Precision : 0.937500 Recall 0.937500
-Precision : 0.692308 Recall 0.692308
-Precision : 0.944444 Recall 0.944444
-Iteration 7 --------------------------------------------------
-model score 0.873015873016
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.916667 Recall 0.916667
-Precision : 1.000000 Recall 1.000000
-Precision : 0.666667 Recall 0.666667
-Precision : 0.814815 Recall 0.814815
-Iteration 8 --------------------------------------------------
-model score 0.904761904762
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.931034 Recall 0.931034
+Precision : 0.958333 Recall 0.958333
+Precision : 0.700000 Recall 0.700000
 Precision : 0.727273 Recall 0.727273
-Precision : 0.800000 Recall 0.800000
-Precision : 1.000000 Recall 1.000000
-Iteration 9 --------------------------------------------------
-model score 0.873015873016
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 1.000000 Recall 1.000000
-Precision : 0.846154 Recall 0.846154
 Precision : 0.777778 Recall 0.777778
-Precision : 0.809524 Recall 0.809524
-Final {u'Comparison': 0.8931748901190432, u'Contingency': 0.7978368853368853, u'Temporal': 0.696924741924742, u'Expansion': 0.7983756330815155} {u'Comparison': 0.8931748901190432, u'Contingency': 0.7978368853368853, u'Temporal': 0.696924741924742, u'Expansion': 0.7983756330815155}
--------------------------------------------------- issues
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name हालांकि
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name दूसरी ओर
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name या फिर
-class label Expansion.Alternative.Disjunctive
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसी प्रकार
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605262_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-Description Single Connective Sense Identification
-conn name तो
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Contrast.Opposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसके अलावा
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name गौरतलब है कि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name हालांकि
-class label Comparison.Pragmatic concession
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Pragmatic concession
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name ताकि
-class label Contingency.Goal
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name आगे
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name साथ ही
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name तो
-class label Contingency.Condition.Factual
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2617887_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name या
-class label Expansion.Alternative.Disjunctive
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name जिससे
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name गौरतलब है कि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसके अलावा
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name तथा
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name के बाद
-class label Temporal.Asynchronous.Succession
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसलिए
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580824_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name उधर
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-Description Single Connective Sense Identification
-conn name वहीं
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name या
-class label Expansion.Alternative.Chosen alternative
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name , पर
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name गौरतलब है कि
-class label Temporal.Asynchronous.Precedence
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और इसलिए
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name वहां इस दौरान
-class label Temporal.Synchrony
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इससे
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name उधर ,
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name वहीं
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लिहाजा
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name चूँकि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name साथ ही
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580832_date_8_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसलिए
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इस पर
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name बताया जाता है कि
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Concession.Expectation
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इस बात पर
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसलिए
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name यानि
-class label Expansion.Restatement.Generalization
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name तथा
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name वहीं
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इस बीच
-class label Temporal.Synchrony
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name के बाद
-class label Temporal.Asynchronous.Precedence
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name के बाद
-class label Temporal.Asynchronous.Succession
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name की वजह से
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610160_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name पर
-class label Comparison.Pragmatic concession
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इस पर
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name क्योंकि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name वहीं पर
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Comparison.Contrast.Opposition
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580807_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name वजह
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लिहाज़ा
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2615522_date_23_7_2004.utf8
-Description Single Connective Sense Identification
-conn name बहरहाल ,
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name हालांकि
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name चलते इस
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name के लिए
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name ताकि
-class label Contingency.Goal
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name उधर
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-Description Single Connective Sense Identification
-conn name दूसरे
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Temporal.Asynchronous.Succession
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इस बीच ,
-class label Temporal.Synchrony
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name अलबत्ता
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name मसलन ,
-class label Expansion.Instantiation
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Concession.Contra-expectation
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name मगर
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name लेकिन
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name उधर एक
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name या फिर
-class label Expansion.Alternative.Chosen alternative
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Temporal.Asynchronous.Succession
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625774_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसलिए
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name क्योंकि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-Description Single Connective Sense Identification
-conn name क्योंकि
-class label Contingency.Cause.Reason
-1 times
-FileName ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-Description Single Connective Sense Identification
-conn name उधर
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name उधर ,
-class label Comparison.Contrast.Juxtaposition
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-Description Single Connective Sense Identification
-conn name इसलिए
-class label Contingency.Cause.Result
-1 times
-FileName ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-Description Single Connective Sense Identification
-conn name और
-class label Expansion.Conjunction
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
-Description Single Connective Sense Identification
-conn name जबकि
-class label Comparison.Pragmatic contrast
-1 times
-FileName ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-Description Single Connective Sense Identification
-conn name आगे
-class label Expansion.Conjunction
+Iteration 9 --------------------------------------------------
+model score 0.825396825397
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 1.000000 Recall 1.000000
+Precision : 0.727273 Recall 0.727273
+Precision : 0.500000 Recall 0.500000
+Precision : 0.875000 Recall 0.875000
+Final {u'Comparison': 0.9148655741241554, u'Contingency': 0.8073465423465424, u'Temporal': 0.6653787878787878, u'Expansion': 0.7970039753275047} {u'Comparison': 0.9148655741241554, u'Contingency': 0.8073465423465424, u'Temporal': 0.6653787878787878, u'Expansion': 0.7970039753275047}
+here XXX analysis/sense
+('../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430b0fd2d8>, <feature.featureDesc instance at 0x7f430c9e8bd8>, <feature.featureDesc instance at 0x7f430b0fdcf8>, <feature.featureDesc instance at 0x7f4307f323f8>, <feature.featureDesc instance at 0x7f4307f32098>, <feature.featureDesc instance at 0x7f430c9e81b8>, <feature.featureDesc instance at 0x7f4307f32e18>, <feature.featureDesc instance at 0x7f4302549098>, <feature.featureDesc instance at 0x7f4310bc6e18>, <feature.featureDesc instance at 0x7f4307f32ab8>])
+('../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430a8047e8>, <feature.featureDesc instance at 0x7f430c7837a0>, <feature.featureDesc instance at 0x7f430a804488>, <feature.featureDesc instance at 0x7f430c783a28>])
+('../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8', [<feature.featureDesc instance at 0x7f430116e488>, <feature.featureDesc instance at 0x7f430116e128>, <feature.featureDesc instance at 0x7f430d7fb6c8>])
+('../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f4301c2b560>, <feature.featureDesc instance at 0x7f4301c2b320>, <feature.featureDesc instance at 0x7f4301c2bc20>])
+('../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430356b1b8>, <feature.featureDesc instance at 0x7f430901de18>, <feature.featureDesc instance at 0x7f430356bf38>])
+('../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8', [<feature.featureDesc instance at 0x7f43046ca758>, <feature.featureDesc instance at 0x7f4303a02758>, <feature.featureDesc instance at 0x7f4303a023f8>])
+('../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8', [<feature.featureDesc instance at 0x7f43056b0dd0>, <feature.featureDesc instance at 0x7f43056b03b0>, <feature.featureDesc instance at 0x7f43056b0050>])
+('../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8', [<feature.featureDesc instance at 0x7f43063b7bd8>, <feature.featureDesc instance at 0x7f43063b7518>, <feature.featureDesc instance at 0x7f4310f59cf8>])
+('../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f430800eef0>, <feature.featureDesc instance at 0x7f4307a4d710>, <feature.featureDesc instance at 0x7f430ce8fcb0>])
+('../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f4309cfd560>, <feature.featureDesc instance at 0x7f4302a2de60>, <feature.featureDesc instance at 0x7f4302a2d8c0>])
+('../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f4309f9a4d0>, <feature.featureDesc instance at 0x7f4309f9a830>, <feature.featureDesc instance at 0x7f4309f9a1b8>])
+('../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430a804ea8>, <feature.featureDesc instance at 0x7f430068f488>, <feature.featureDesc instance at 0x7f430068f7e8>])
+('../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f42fef04488>, <feature.featureDesc instance at 0x7f4304e27368>])
+('../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f42ff7711b8>, <feature.featureDesc instance at 0x7f42ff771878>])
+('../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4300ace098>, <feature.featureDesc instance at 0x7f4300aceab8>])
+('../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4301ee3b00>, <feature.featureDesc instance at 0x7f4301ee3e60>])
+('../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f4302de3320>, <feature.featureDesc instance at 0x7f430302af80>])
+('../data/raw/Section_16/fullnews_id_2580879_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f4302de3e18>, <feature.featureDesc instance at 0x7f4302de3ab8>])
+('../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f43035e2128>, <feature.featureDesc instance at 0x7f42ffe0fef0>])
+('../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4303d81518>, <feature.featureDesc instance at 0x7f4303d817a0>])
+('../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8', [<feature.featureDesc instance at 0x7f4305713200>, <feature.featureDesc instance at 0x7f4305713560>])
+('../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f430571d440>, <feature.featureDesc instance at 0x7f43056ab680>])
+('../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8', [<feature.featureDesc instance at 0x7f4305731c68>, <feature.featureDesc instance at 0x7f430573e7e8>])
+('../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8', [<feature.featureDesc instance at 0x7f4305757b48>, <feature.featureDesc instance at 0x7f430575e5a8>])
+('../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4305d58998>, <feature.featureDesc instance at 0x7f4305d58ef0>])
+('../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f4306a479e0>, <feature.featureDesc instance at 0x7f4306a47680>])
+('../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f43087c4ab8>, <feature.featureDesc instance at 0x7f43087c4e18>])
+('../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4309722b90>, <feature.featureDesc instance at 0x7f4303d81ea8>])
+('../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430ff9bab8>, <feature.featureDesc instance at 0x7f430ff9b3f8>])
+('../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f43001f19e0>])
+('../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f43003c7680>])
+('../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430167b830>])
+('../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8', [<feature.featureDesc instance at 0x7f4304142c68>])
+('../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8', [<feature.featureDesc instance at 0x7f43041455f0>])
+('../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f43056b8440>])
+('../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8', [<feature.featureDesc instance at 0x7f43056f1e60>])
+('../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f430573eea8>])
+('../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8', [<feature.featureDesc instance at 0x7f4305745488>])
+('../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8', [<feature.featureDesc instance at 0x7f430574ba70>])
+('../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430605e368>])
+('../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8', [<feature.featureDesc instance at 0x7f4306c784d0>])
+('../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f4307797d88>])
+('../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430797a878>])
+('../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f4307db2170>])
+('../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f4308b4c0e0>])
+('../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f4309e155a8>])
+('../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8', [<feature.featureDesc instance at 0x7f4309f9ae18>])
+('../data/raw/Section_17/fullnews_id_2610170_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f430a2718c0>])
+('../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f430ac68ef0>])
+('../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430b6bbc68>])
+('../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f430c505050>])
+('../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn', [<feature.featureDesc instance at 0x7f430cab30e0>])
+('../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8', [<feature.featureDesc instance at 0x7f430cba6290>])
+('../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8', [<feature.featureDesc instance at 0x7f430d8fb3f8>])
+('../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f430dc07440>])
+('../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f430e154e60>])
+('../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8', [<feature.featureDesc instance at 0x7f430e156f38>])
+('../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8', [<feature.featureDesc instance at 0x7f430edbff80>])
+('../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8', [<feature.featureDesc instance at 0x7f430f618f80>])
+('../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8', [<feature.featureDesc instance at 0x7f430fdccd40>])
+('../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f43103fac20>])
+('../data/raw/Section_17/fullnews_id_2620695_date_24_7_2004.utf8', [<feature.featureDesc instance at 0x7f4310774dd0>])
+('../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8', [<feature.featureDesc instance at 0x7f43107803b0>])
+(4, [<feature.featureDesc instance at 0x7f430f618f80>, <feature.featureDesc instance at 0x7f4301c2b560>, <feature.featureDesc instance at 0x7f4305d58ef0>, <feature.featureDesc instance at 0x7f430800eef0>, <feature.featureDesc instance at 0x7f430167b830>, <feature.featureDesc instance at 0x7f430ff9b3f8>, <feature.featureDesc instance at 0x7f4309f9a1b8>, <feature.featureDesc instance at 0x7f43103fac20>, <feature.featureDesc instance at 0x7f430a2718c0>, <feature.featureDesc instance at 0x7f4310774dd0>, <feature.featureDesc instance at 0x7f43003c7680>])
+(13, [<feature.featureDesc instance at 0x7f43041455f0>, <feature.featureDesc instance at 0x7f4309f9a4d0>, <feature.featureDesc instance at 0x7f430c505050>, <feature.featureDesc instance at 0x7f430356bf38>, <feature.featureDesc instance at 0x7f4305713200>, <feature.featureDesc instance at 0x7f4309f9a830>, <feature.featureDesc instance at 0x7f430fdccd40>, <feature.featureDesc instance at 0x7f4300ace098>])
+(2, [<feature.featureDesc instance at 0x7f4304e27368>, <feature.featureDesc instance at 0x7f430c7837a0>, <feature.featureDesc instance at 0x7f4301c2b320>, <feature.featureDesc instance at 0x7f430a804ea8>, <feature.featureDesc instance at 0x7f430605e368>, <feature.featureDesc instance at 0x7f4308b4c0e0>, <feature.featureDesc instance at 0x7f43035e2128>, <feature.featureDesc instance at 0x7f4302a2d8c0>])
+(3, [<feature.featureDesc instance at 0x7f42ff7711b8>, <feature.featureDesc instance at 0x7f430574ba70>, <feature.featureDesc instance at 0x7f4305d58998>, <feature.featureDesc instance at 0x7f430571d440>, <feature.featureDesc instance at 0x7f4305745488>, <feature.featureDesc instance at 0x7f4302a2de60>, <feature.featureDesc instance at 0x7f43056b0050>])
+(8, [<feature.featureDesc instance at 0x7f43046ca758>, <feature.featureDesc instance at 0x7f430356b1b8>, <feature.featureDesc instance at 0x7f4309e155a8>, <feature.featureDesc instance at 0x7f430068f488>, <feature.featureDesc instance at 0x7f430c783a28>, <feature.featureDesc instance at 0x7f430e154e60>, <feature.featureDesc instance at 0x7f4306a47680>])
+(7, [<feature.featureDesc instance at 0x7f4304142c68>, <feature.featureDesc instance at 0x7f4309cfd560>, <feature.featureDesc instance at 0x7f430901de18>, <feature.featureDesc instance at 0x7f430797a878>, <feature.featureDesc instance at 0x7f4301ee3e60>, <feature.featureDesc instance at 0x7f4302de3ab8>])
+(5, [<feature.featureDesc instance at 0x7f4305731c68>, <feature.featureDesc instance at 0x7f4303d81518>, <feature.featureDesc instance at 0x7f4307f32098>, <feature.featureDesc instance at 0x7f430ff9bab8>, <feature.featureDesc instance at 0x7f4305757b48>, <feature.featureDesc instance at 0x7f42ff771878>])
+(9, [<feature.featureDesc instance at 0x7f43063b7518>, <feature.featureDesc instance at 0x7f430edbff80>, <feature.featureDesc instance at 0x7f430068f7e8>, <feature.featureDesc instance at 0x7f4309722b90>, <feature.featureDesc instance at 0x7f4301c2bc20>, <feature.featureDesc instance at 0x7f430575e5a8>])
+(10, [<feature.featureDesc instance at 0x7f430e156f38>, <feature.featureDesc instance at 0x7f43001f19e0>, <feature.featureDesc instance at 0x7f4306a479e0>, <feature.featureDesc instance at 0x7f4307f323f8>, <feature.featureDesc instance at 0x7f43107803b0>, <feature.featureDesc instance at 0x7f4307797d88>])
+(11, [<feature.featureDesc instance at 0x7f43087c4ab8>, <feature.featureDesc instance at 0x7f43063b7bd8>, <feature.featureDesc instance at 0x7f430a804488>, <feature.featureDesc instance at 0x7f4306c784d0>, <feature.featureDesc instance at 0x7f430573eea8>])
+(12, [<feature.featureDesc instance at 0x7f430a8047e8>, <feature.featureDesc instance at 0x7f4303a02758>, <feature.featureDesc instance at 0x7f4303a023f8>, <feature.featureDesc instance at 0x7f43056b8440>, <feature.featureDesc instance at 0x7f430ce8fcb0>])
+(1, [<feature.featureDesc instance at 0x7f430cab30e0>, <feature.featureDesc instance at 0x7f430ac68ef0>, <feature.featureDesc instance at 0x7f4310bc6e18>, <feature.featureDesc instance at 0x7f430dc07440>, <feature.featureDesc instance at 0x7f4303d81ea8>])
+(6, [<feature.featureDesc instance at 0x7f4301ee3b00>, <feature.featureDesc instance at 0x7f43056f1e60>, <feature.featureDesc instance at 0x7f430d8fb3f8>, <feature.featureDesc instance at 0x7f43056b03b0>])
+(14, [<feature.featureDesc instance at 0x7f4305713560>, <feature.featureDesc instance at 0x7f430cba6290>, <feature.featureDesc instance at 0x7f4307f32ab8>, <feature.featureDesc instance at 0x7f43087c4e18>])
+(17, [<feature.featureDesc instance at 0x7f430d7fb6c8>, <feature.featureDesc instance at 0x7f430302af80>, <feature.featureDesc instance at 0x7f4300aceab8>, <feature.featureDesc instance at 0x7f4307db2170>])
+(16, [<feature.featureDesc instance at 0x7f4303d817a0>, <feature.featureDesc instance at 0x7f4307f32e18>, <feature.featureDesc instance at 0x7f4302de3e18>])
+(19, [<feature.featureDesc instance at 0x7f43056b0dd0>, <feature.featureDesc instance at 0x7f43056ab680>, <feature.featureDesc instance at 0x7f4307a4d710>])
+(22, [<feature.featureDesc instance at 0x7f430b6bbc68>, <feature.featureDesc instance at 0x7f430573e7e8>])
+(21, [<feature.featureDesc instance at 0x7f430c9e8bd8>, <feature.featureDesc instance at 0x7f4302de3320>])
+(18, [<feature.featureDesc instance at 0x7f4310f59cf8>, <feature.featureDesc instance at 0x7f430c9e81b8>])
+(30, [<feature.featureDesc instance at 0x7f42fef04488>])
+(24, [<feature.featureDesc instance at 0x7f42ffe0fef0>])
+(27, [<feature.featureDesc instance at 0x7f430116e128>])
+(29, [<feature.featureDesc instance at 0x7f430116e488>])
+(33, [<feature.featureDesc instance at 0x7f4302549098>])
+(0, [<feature.featureDesc instance at 0x7f4309f9ae18>])
+(23, [<feature.featureDesc instance at 0x7f430b0fd2d8>])
+(32, [<feature.featureDesc instance at 0x7f430b0fdcf8>])
+('Single Connective Sense Identification', [<feature.featureDesc instance at 0x7f430b0fd2d8>, <feature.featureDesc instance at 0x7f430c9e8bd8>, <feature.featureDesc instance at 0x7f43056b0dd0>, <feature.featureDesc instance at 0x7f430b6bbc68>, <feature.featureDesc instance at 0x7f43046ca758>, <feature.featureDesc instance at 0x7f42ff7711b8>, <feature.featureDesc instance at 0x7f4302de3320>, <feature.featureDesc instance at 0x7f430b0fdcf8>, <feature.featureDesc instance at 0x7f43041455f0>, <feature.featureDesc instance at 0x7f4309f9a4d0>, <feature.featureDesc instance at 0x7f430a8047e8>, <feature.featureDesc instance at 0x7f430e156f38>, <feature.featureDesc instance at 0x7f430f618f80>, <feature.featureDesc instance at 0x7f43087c4ab8>, <feature.featureDesc instance at 0x7f430574ba70>, <feature.featureDesc instance at 0x7f43001f19e0>, <feature.featureDesc instance at 0x7f4305731c68>, <feature.featureDesc instance at 0x7f4303d81518>, <feature.featureDesc instance at 0x7f4304142c68>, <feature.featureDesc instance at 0x7f4306a479e0>, <feature.featureDesc instance at 0x7f42fef04488>, <feature.featureDesc instance at 0x7f4307f323f8>, <feature.featureDesc instance at 0x7f4309cfd560>, <feature.featureDesc instance at 0x7f43063b7bd8>, <feature.featureDesc instance at 0x7f4307f32098>, <feature.featureDesc instance at 0x7f430116e488>, <feature.featureDesc instance at 0x7f430c505050>, <feature.featureDesc instance at 0x7f4301ee3b00>, <feature.featureDesc instance at 0x7f43063b7518>, <feature.featureDesc instance at 0x7f430ff9bab8>, <feature.featureDesc instance at 0x7f4304e27368>, <feature.featureDesc instance at 0x7f430356b1b8>, <feature.featureDesc instance at 0x7f4301c2b560>, <feature.featureDesc instance at 0x7f4310f59cf8>, <feature.featureDesc instance at 0x7f430c7837a0>, <feature.featureDesc instance at 0x7f4305d58998>, <feature.featureDesc instance at 0x7f4301c2b320>, <feature.featureDesc instance at 0x7f4303d817a0>, <feature.featureDesc instance at 0x7f4309e155a8>, <feature.featureDesc instance at 0x7f430901de18>, <feature.featureDesc instance at 0x7f43056f1e60>, <feature.featureDesc instance at 0x7f430797a878>, <feature.featureDesc instance at 0x7f4309f9ae18>, <feature.featureDesc instance at 0x7f430a804488>, <feature.featureDesc instance at 0x7f43107803b0>, <feature.featureDesc instance at 0x7f430a804ea8>, <feature.featureDesc instance at 0x7f430356bf38>, <feature.featureDesc instance at 0x7f4305713200>, <feature.featureDesc instance at 0x7f4303a02758>, <feature.featureDesc instance at 0x7f430116e128>, <feature.featureDesc instance at 0x7f430068f488>, <feature.featureDesc instance at 0x7f4309f9a830>, <feature.featureDesc instance at 0x7f4305713560>, <feature.featureDesc instance at 0x7f430d7fb6c8>, <feature.featureDesc instance at 0x7f4305d58ef0>, <feature.featureDesc instance at 0x7f4306c784d0>, <feature.featureDesc instance at 0x7f430c9e81b8>, <feature.featureDesc instance at 0x7f4307f32e18>, <feature.featureDesc instance at 0x7f430fdccd40>, <feature.featureDesc instance at 0x7f430800eef0>, <feature.featureDesc instance at 0x7f430571d440>, <feature.featureDesc instance at 0x7f430d8fb3f8>, <feature.featureDesc instance at 0x7f430cab30e0>, <feature.featureDesc instance at 0x7f43056b03b0>, <feature.featureDesc instance at 0x7f4301ee3e60>, <feature.featureDesc instance at 0x7f43056ab680>, <feature.featureDesc instance at 0x7f4302549098>, <feature.featureDesc instance at 0x7f430167b830>, <feature.featureDesc instance at 0x7f4305745488>, <feature.featureDesc instance at 0x7f4307a4d710>, <feature.featureDesc instance at 0x7f430cba6290>, <feature.featureDesc instance at 0x7f430573e7e8>, <feature.featureDesc instance at 0x7f4302de3e18>, <feature.featureDesc instance at 0x7f4302a2de60>, <feature.featureDesc instance at 0x7f430edbff80>, <feature.featureDesc instance at 0x7f430605e368>, <feature.featureDesc instance at 0x7f430ac68ef0>, <feature.featureDesc instance at 0x7f4303a023f8>, <feature.featureDesc instance at 0x7f4310bc6e18>, <feature.featureDesc instance at 0x7f430068f7e8>, <feature.featureDesc instance at 0x7f4307f32ab8>, <feature.featureDesc instance at 0x7f43056b8440>, <feature.featureDesc instance at 0x7f430ff9b3f8>, <feature.featureDesc instance at 0x7f4305757b48>, <feature.featureDesc instance at 0x7f4300ace098>, <feature.featureDesc instance at 0x7f430302af80>, <feature.featureDesc instance at 0x7f4309f9a1b8>, <feature.featureDesc instance at 0x7f4309722b90>, <feature.featureDesc instance at 0x7f43103fac20>, <feature.featureDesc instance at 0x7f42ff771878>, <feature.featureDesc instance at 0x7f4301c2bc20>, <feature.featureDesc instance at 0x7f4302de3ab8>, <feature.featureDesc instance at 0x7f430c783a28>, <feature.featureDesc instance at 0x7f430a2718c0>, <feature.featureDesc instance at 0x7f4300aceab8>, <feature.featureDesc instance at 0x7f430dc07440>, <feature.featureDesc instance at 0x7f4307db2170>, <feature.featureDesc instance at 0x7f4307797d88>, <feature.featureDesc instance at 0x7f430e154e60>, <feature.featureDesc instance at 0x7f4308b4c0e0>, <feature.featureDesc instance at 0x7f4303d81ea8>, <feature.featureDesc instance at 0x7f4310774dd0>, <feature.featureDesc instance at 0x7f43087c4e18>, <feature.featureDesc instance at 0x7f43035e2128>, <feature.featureDesc instance at 0x7f43003c7680>, <feature.featureDesc instance at 0x7f430ce8fcb0>, <feature.featureDesc instance at 0x7f42ffe0fef0>, <feature.featureDesc instance at 0x7f43056b0050>, <feature.featureDesc instance at 0x7f4306a47680>, <feature.featureDesc instance at 0x7f4302a2d8c0>, <feature.featureDesc instance at 0x7f430573eea8>, <feature.featureDesc instance at 0x7f430575e5a8>])
+(u'Expansion.Conjunction', [<feature.featureDesc instance at 0x7f43056b0dd0>, <feature.featureDesc instance at 0x7f430b6bbc68>, <feature.featureDesc instance at 0x7f42ff7711b8>, <feature.featureDesc instance at 0x7f430b0fdcf8>, <feature.featureDesc instance at 0x7f4303d81518>, <feature.featureDesc instance at 0x7f430116e488>, <feature.featureDesc instance at 0x7f4301ee3b00>, <feature.featureDesc instance at 0x7f43063b7518>, <feature.featureDesc instance at 0x7f430ff9bab8>, <feature.featureDesc instance at 0x7f4301c2b560>, <feature.featureDesc instance at 0x7f4310f59cf8>, <feature.featureDesc instance at 0x7f430c7837a0>, <feature.featureDesc instance at 0x7f4305d58998>, <feature.featureDesc instance at 0x7f4303d817a0>, <feature.featureDesc instance at 0x7f430a804ea8>, <feature.featureDesc instance at 0x7f430116e128>, <feature.featureDesc instance at 0x7f4305713560>, <feature.featureDesc instance at 0x7f430d7fb6c8>, <feature.featureDesc instance at 0x7f430167b830>, <feature.featureDesc instance at 0x7f4302de3e18>, <feature.featureDesc instance at 0x7f430edbff80>, <feature.featureDesc instance at 0x7f430605e368>, <feature.featureDesc instance at 0x7f430ff9b3f8>, <feature.featureDesc instance at 0x7f4305757b48>, <feature.featureDesc instance at 0x7f4300ace098>, <feature.featureDesc instance at 0x7f430a2718c0>, <feature.featureDesc instance at 0x7f4308b4c0e0>, <feature.featureDesc instance at 0x7f430575e5a8>])
+(u'Temporal.Asynchronous.Succession', [<feature.featureDesc instance at 0x7f430b0fd2d8>, <feature.featureDesc instance at 0x7f430a8047e8>, <feature.featureDesc instance at 0x7f43063b7bd8>, <feature.featureDesc instance at 0x7f4307f32098>, <feature.featureDesc instance at 0x7f430c505050>, <feature.featureDesc instance at 0x7f430901de18>, <feature.featureDesc instance at 0x7f430356bf38>, <feature.featureDesc instance at 0x7f4305d58ef0>, <feature.featureDesc instance at 0x7f430c9e81b8>, <feature.featureDesc instance at 0x7f4307f32e18>, <feature.featureDesc instance at 0x7f430571d440>, <feature.featureDesc instance at 0x7f4310bc6e18>, <feature.featureDesc instance at 0x7f4307f32ab8>, <feature.featureDesc instance at 0x7f42ff771878>, <feature.featureDesc instance at 0x7f430e154e60>, <feature.featureDesc instance at 0x7f42ffe0fef0>])
+(u'Contingency.Cause.Result', [<feature.featureDesc instance at 0x7f43046ca758>, <feature.featureDesc instance at 0x7f43041455f0>, <feature.featureDesc instance at 0x7f430f618f80>, <feature.featureDesc instance at 0x7f430574ba70>, <feature.featureDesc instance at 0x7f4304142c68>, <feature.featureDesc instance at 0x7f4309e155a8>, <feature.featureDesc instance at 0x7f430797a878>, <feature.featureDesc instance at 0x7f4305713200>, <feature.featureDesc instance at 0x7f4306c784d0>, <feature.featureDesc instance at 0x7f430d8fb3f8>, <feature.featureDesc instance at 0x7f430302af80>, <feature.featureDesc instance at 0x7f4302de3ab8>])
+(u'Comparison.Contrast.Juxtaposition', [<feature.featureDesc instance at 0x7f4309f9a4d0>, <feature.featureDesc instance at 0x7f43001f19e0>, <feature.featureDesc instance at 0x7f42fef04488>, <feature.featureDesc instance at 0x7f4307f323f8>, <feature.featureDesc instance at 0x7f4301c2b320>, <feature.featureDesc instance at 0x7f43056f1e60>, <feature.featureDesc instance at 0x7f4303a02758>, <feature.featureDesc instance at 0x7f430fdccd40>, <feature.featureDesc instance at 0x7f43056b03b0>, <feature.featureDesc instance at 0x7f4303a023f8>, <feature.featureDesc instance at 0x7f430068f7e8>, <feature.featureDesc instance at 0x7f430dc07440>])
+(u'Contingency.Cause.Reason', [<feature.featureDesc instance at 0x7f4302de3320>, <feature.featureDesc instance at 0x7f430ac68ef0>, <feature.featureDesc instance at 0x7f4309f9a1b8>, <feature.featureDesc instance at 0x7f4309722b90>, <feature.featureDesc instance at 0x7f4301c2bc20>, <feature.featureDesc instance at 0x7f4307db2170>, <feature.featureDesc instance at 0x7f43087c4e18>, <feature.featureDesc instance at 0x7f430ce8fcb0>, <feature.featureDesc instance at 0x7f43056b0050>])
+(u'Temporal.Asynchronous.Precedence', [<feature.featureDesc instance at 0x7f430a804488>, <feature.featureDesc instance at 0x7f43107803b0>, <feature.featureDesc instance at 0x7f430068f488>, <feature.featureDesc instance at 0x7f4309f9a830>, <feature.featureDesc instance at 0x7f4310774dd0>, <feature.featureDesc instance at 0x7f43003c7680>, <feature.featureDesc instance at 0x7f430573eea8>])
+(u'Expansion.Restatement.Specification', [<feature.featureDesc instance at 0x7f430e156f38>, <feature.featureDesc instance at 0x7f4305731c68>, <feature.featureDesc instance at 0x7f430cab30e0>, <feature.featureDesc instance at 0x7f43103fac20>, <feature.featureDesc instance at 0x7f43035e2128>, <feature.featureDesc instance at 0x7f4302a2d8c0>])
+(u'Temporal.Synchrony', [<feature.featureDesc instance at 0x7f4309cfd560>, <feature.featureDesc instance at 0x7f43056ab680>, <feature.featureDesc instance at 0x7f430c783a28>, <feature.featureDesc instance at 0x7f4307797d88>, <feature.featureDesc instance at 0x7f4306a47680>])
+(u'Expansion.Exception', [<feature.featureDesc instance at 0x7f43087c4ab8>, <feature.featureDesc instance at 0x7f4301ee3e60>, <feature.featureDesc instance at 0x7f4302549098>, <feature.featureDesc instance at 0x7f4300aceab8>])
+(u'Comparison.Contrast.Opposition', [<feature.featureDesc instance at 0x7f430c9e8bd8>, <feature.featureDesc instance at 0x7f4304e27368>, <feature.featureDesc instance at 0x7f4307a4d710>])
+(u'Expansion.Instantiation', [<feature.featureDesc instance at 0x7f430573e7e8>, <feature.featureDesc instance at 0x7f43056b8440>])
+(u'Comparison.Pragmatic contrast', [<feature.featureDesc instance at 0x7f4306a479e0>, <feature.featureDesc instance at 0x7f4302a2de60>])
+(u'Expansion.Alternative.Chosen alternative', [<feature.featureDesc instance at 0x7f430cba6290>, <feature.featureDesc instance at 0x7f4303d81ea8>])
+(u'Contingency.Condition.Hypothetical', [<feature.featureDesc instance at 0x7f430356b1b8>])
+(u'Comparison.Concession.Contra-expectation', [<feature.featureDesc instance at 0x7f4305745488>])
+(u'Expansion.Restatement.Generalization', [<feature.featureDesc instance at 0x7f430800eef0>])
+(u'Comparison.Concession.Expectation', [<feature.featureDesc instance at 0x7f4309f9ae18>])
+(u'\u0914\u0930', [<feature.featureDesc instance at 0x7f430b0fd2d8>, <feature.featureDesc instance at 0x7f430c9e8bd8>, <feature.featureDesc instance at 0x7f43001f19e0>, <feature.featureDesc instance at 0x7f4307f323f8>, <feature.featureDesc instance at 0x7f4307f32098>, <feature.featureDesc instance at 0x7f4301c2b320>, <feature.featureDesc instance at 0x7f430901de18>, <feature.featureDesc instance at 0x7f430356bf38>, <feature.featureDesc instance at 0x7f4305d58ef0>, <feature.featureDesc instance at 0x7f430c9e81b8>, <feature.featureDesc instance at 0x7f4307f32e18>, <feature.featureDesc instance at 0x7f430571d440>, <feature.featureDesc instance at 0x7f4307a4d710>, <feature.featureDesc instance at 0x7f4310bc6e18>, <feature.featureDesc instance at 0x7f4307f32ab8>, <feature.featureDesc instance at 0x7f430302af80>, <feature.featureDesc instance at 0x7f42ff771878>, <feature.featureDesc instance at 0x7f43087c4e18>, <feature.featureDesc instance at 0x7f42ffe0fef0>])
+(u'\u0917\u094c\u0930\u0924\u0932\u092c \u0939\u0948 \u0915\u093f', [<feature.featureDesc instance at 0x7f430e156f38>, <feature.featureDesc instance at 0x7f4303d81518>, <feature.featureDesc instance at 0x7f430a804488>, <feature.featureDesc instance at 0x7f430068f488>, <feature.featureDesc instance at 0x7f430167b830>, <feature.featureDesc instance at 0x7f4309f9a1b8>, <feature.featureDesc instance at 0x7f4301c2bc20>, <feature.featureDesc instance at 0x7f4310774dd0>, <feature.featureDesc instance at 0x7f43003c7680>, <feature.featureDesc instance at 0x7f430ce8fcb0>, <feature.featureDesc instance at 0x7f430573eea8>])
+(u'\u0924\u0925\u093e', [<feature.featureDesc instance at 0x7f430b6bbc68>, <feature.featureDesc instance at 0x7f42ff7711b8>, <feature.featureDesc instance at 0x7f430b0fdcf8>, <feature.featureDesc instance at 0x7f4303a02758>, <feature.featureDesc instance at 0x7f4305713560>, <feature.featureDesc instance at 0x7f4300ace098>])
+(u'\u0906\u0917\u0947', [<feature.featureDesc instance at 0x7f43063b7bd8>, <feature.featureDesc instance at 0x7f4310f59cf8>, <feature.featureDesc instance at 0x7f4305757b48>, <feature.featureDesc instance at 0x7f430e154e60>, <feature.featureDesc instance at 0x7f430575e5a8>])
+(u'\u0932\u0947\u0915\u093f\u0928', [<feature.featureDesc instance at 0x7f43087c4ab8>, <feature.featureDesc instance at 0x7f4301ee3e60>, <feature.featureDesc instance at 0x7f4302549098>, <feature.featureDesc instance at 0x7f4309722b90>, <feature.featureDesc instance at 0x7f4300aceab8>])
+(u'\u092f\u0939\u093e\u0901 \u0924\u0915 \u0915\u093f', [<feature.featureDesc instance at 0x7f4305731c68>, <feature.featureDesc instance at 0x7f43063b7518>, <feature.featureDesc instance at 0x7f430edbff80>, <feature.featureDesc instance at 0x7f43056b0050>])
+(u'\u0916\u093e\u0938\u0915\u0930', [<feature.featureDesc instance at 0x7f43035e2128>, <feature.featureDesc instance at 0x7f4302a2d8c0>])
+(u'\u0924\u094b', [<feature.featureDesc instance at 0x7f43041455f0>, <feature.featureDesc instance at 0x7f430dc07440>])
+(u'\u0905\u0902\u0924\u0924\u0903', [<feature.featureDesc instance at 0x7f430574ba70>, <feature.featureDesc instance at 0x7f4308b4c0e0>])
+(u'\u0924\u092c', [<feature.featureDesc instance at 0x7f4309cfd560>, <feature.featureDesc instance at 0x7f4306a47680>])
+(u'\u092c\u0932\u094d\u0915\u093f', [<feature.featureDesc instance at 0x7f430cba6290>, <feature.featureDesc instance at 0x7f4303d81ea8>])
+(u'\u092d\u093e\u0932\u0947', [<feature.featureDesc instance at 0x7f42fef04488>])
+(u'\u0907\u0938\u0940 \u0924\u0930\u0939', [<feature.featureDesc instance at 0x7f430068f7e8>])
+(u'\u0926\u0942\u0938\u0930\u0947', [<feature.featureDesc instance at 0x7f430116e128>])
+(u'\u0909\u0938 \u092a\u0930', [<feature.featureDesc instance at 0x7f430116e488>])
+(u'\u0914\u0930 \u0907\u0938\u0940 \u0915\u0947 \u092c\u093e\u0926', [<feature.featureDesc instance at 0x7f4301c2b560>])
+(u'\u0914\u0930 \u0907\u0938\u0915\u0947 \u092c\u093e\u0926', [<feature.featureDesc instance at 0x7f4301ee3b00>])
+(u'\u0964 \u0935\u0948\u0938\u0947', [<feature.featureDesc instance at 0x7f4302a2de60>])
+(u'\u091a\u0942\u0901\u0915\u093f', [<feature.featureDesc instance at 0x7f4302de3320>])
+(u'\u0915\u093f \u0928\u094d\u092f\u0942\u0928\u0924\u092e', [<feature.featureDesc instance at 0x7f4302de3ab8>])
+(u'\u092f\u0942\u092a\u0940\u090f', [<feature.featureDesc instance at 0x7f4302de3e18>])
+(u'\u0907\u0938\u0915\u0947 \u092c\u093e\u0926 \u0939\u0940', [<feature.featureDesc instance at 0x7f430356b1b8>])
+(u'\u0907\u0938\u0940 \u092a\u094d\u0930\u0915\u093e\u0930', [<feature.featureDesc instance at 0x7f4303a023f8>])
+(u'\u0926\u0942\u0938\u0930\u0940 \u0913\u0930', [<feature.featureDesc instance at 0x7f4303d817a0>])
+(u'\u0907\u0938\u0915\u0947 \u092e\u0926\u094d\u0926\u0947\u0928\u091c\u0930', [<feature.featureDesc instance at 0x7f4304142c68>])
+(u'\u0932\u093f\u0939\u093e\u091c\u093e', [<feature.featureDesc instance at 0x7f43046ca758>])
+(u'\u0916\u0941\u0926', [<feature.featureDesc instance at 0x7f4304e27368>])
+(u'\u0907\u0938\u0940 \u0926\u093f\u0928', [<feature.featureDesc instance at 0x7f43056ab680>])
+(u'\u092e\u0947\u0902 ,', [<feature.featureDesc instance at 0x7f43056b03b0>])
+(u'\u0907\u0938 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902', [<feature.featureDesc instance at 0x7f43056b0dd0>])
+(u'\u092e\u0938\u0932\u0928 ,', [<feature.featureDesc instance at 0x7f43056b8440>])
+(u'\u0907\u0938\u0915\u0947 \u0905\u0932\u093e\u0935\u093e', [<feature.featureDesc instance at 0x7f43056f1e60>])
+(u'\u0907\u0938 \u092a\u094d\u0930\u0915\u093e\u0930', [<feature.featureDesc instance at 0x7f4305713200>])
+(u'\u0916\u093e\u0938\u0924\u094c\u0930 \u092a\u0930', [<feature.featureDesc instance at 0x7f430573e7e8>])
+(u'\u092c\u093e\u0935\u091c\u0942\u0926 \u0907\u0938\u0915\u0947', [<feature.featureDesc instance at 0x7f4305745488>])
+(u'\u0907\u0938\u0915\u0947 \u0905\u0924\u093f\u0930\u093f\u0915\u094d\u0924', [<feature.featureDesc instance at 0x7f4305d58998>])
+(u'\u0907\u0938 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902', [<feature.featureDesc instance at 0x7f430605e368>])
+(u'\u092e\u093e\u0932\u0942\u092e \u0939\u094b \u0915\u093f', [<feature.featureDesc instance at 0x7f4306a479e0>])
+(u'\u0910\u0938\u0947 \u092e\u0947\u0902', [<feature.featureDesc instance at 0x7f4306c784d0>])
+(u'\u091c\u0948\u0938\u0947 \u0939\u0940', [<feature.featureDesc instance at 0x7f4307797d88>])
+(u'\u0932\u094b\u0917\u094b\u0902', [<feature.featureDesc instance at 0x7f430797a878>])
+(u'\u0909\u0932\u094d\u0932\u0947\u0916\u0928\u0940\u092f \u0939\u0948 \u0915\u093f', [<feature.featureDesc instance at 0x7f4307db2170>])
+(u'\u0964 \u0926\u0930\u0905\u0938\u0932', [<feature.featureDesc instance at 0x7f430800eef0>])
+(u'\u0907\u0938\u0940 \u0921\u0930 \u0938\u0947', [<feature.featureDesc instance at 0x7f4309e155a8>])
+(u'\u092c\u0924\u093e\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948', [<feature.featureDesc instance at 0x7f4309f9a4d0>])
+(u'\u0907\u0938\u0915\u0947 \u092a\u0942\u0930\u094d\u0935', [<feature.featureDesc instance at 0x7f4309f9a830>])
+(u'\u0915\u0947 \u092c\u093e\u0935\u091c\u0942\u0926', [<feature.featureDesc instance at 0x7f4309f9ae18>])
+(u'\u0935', [<feature.featureDesc instance at 0x7f430a2718c0>])
+(u'\u0938\u092e\u091d\u093e \u091c\u093e\u0924\u093e \u0939\u0948 \u0915\u093f', [<feature.featureDesc instance at 0x7f430a8047e8>])
+(u'\u092f\u0939\u0940 \u0928\u0939\u0940\u0902', [<feature.featureDesc instance at 0x7f430a804ea8>])
+(u'\u0964 \u0917\u094c\u0930\u0924\u0932\u092c \u0939\u0948 \u0915\u093f', [<feature.featureDesc instance at 0x7f430ac68ef0>])
+(u'\u0914\u0930 \u0924\u092d\u0940', [<feature.featureDesc instance at 0x7f430c505050>])
+(u'\u0909\u0927\u0930', [<feature.featureDesc instance at 0x7f430c7837a0>])
+(u'\u0938\u093e\u0925 \u0939\u0940', [<feature.featureDesc instance at 0x7f430c783a28>])
+(u'\u0907\u0938\u0915\u093e', [<feature.featureDesc instance at 0x7f430cab30e0>])
+(u'\u0907\u0938\u0940 \u0924\u0930\u0939 \u0938\u0947', [<feature.featureDesc instance at 0x7f430d7fb6c8>])
+(u'\u0924\u094b \u0926\u0942\u0938\u0930\u0940 \u0913\u0930', [<feature.featureDesc instance at 0x7f430d8fb3f8>])
+(u'\u092f\u093e\u0928\u093f', [<feature.featureDesc instance at 0x7f430f618f80>])
+(u'\u0907\u0938 \u092c\u0940\u091a ,', [<feature.featureDesc instance at 0x7f430fdccd40>])
+(u'\u0935\u0939\u0940\u0902', [<feature.featureDesc instance at 0x7f430ff9b3f8>])
+(u'\u0935\u0939\u0940\u0902 \u092a\u0930', [<feature.featureDesc instance at 0x7f430ff9bab8>])
+(u'\u0964 \u092c\u0924\u093e\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948 \u0915\u093f', [<feature.featureDesc instance at 0x7f43103fac20>])
+(u'\u0907\u0938\u0938\u0947 \u092a\u0942\u0930\u094d\u0935', [<feature.featureDesc instance at 0x7f43107803b0>])

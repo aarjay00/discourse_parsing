@@ -23,6 +23,7 @@ def folderWalk(folderPath):
 
 def createDirectory(filePath):
 	dirPath=os.path.dirname(filePath)
+	print "here XXX",dirPath
 	if not os.path.exists(dirPath):
 		os.makedirs(dirPath)
 def findAllOccurences(delimList,inputString):

@@ -10,6 +10,7 @@ from ssf_api import *
 from letter import *
 from annotated_data import *
 from feature import *
+from analysis import *
 
 
 from sklearn.linear_model import LogisticRegression as maxent
@@ -26,7 +27,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.naive_bayes import MultinomialNB
 
 
-def genModel(classWeight):
+def genModel(classList):
 	classWeight={}
 	for classLabel in classList:
 		classWeight[classLabel]=1.0
@@ -40,6 +41,7 @@ def genModel(classWeight):
 #	model=SVC()
 #	model=LDA(solver='svd')
 #	model=QDA()
+	return model
 
 
 def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,noWt=1):
@@ -128,6 +130,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
 
+	basicAnalysis(errorCollection)
 
 #	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
 	exit()

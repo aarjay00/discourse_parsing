@@ -179,18 +179,27 @@ class featureDesc():
 		self.sentenceNum=sentence_num
 		self.description=description
 		self.classLabel=class_label
-		self.attrList=[]
+		self.attrList=["rawFileName","sentenceNum","description","classLabel"]
 		self.ID=identity
 	def addDescription(self,desc):
 		self.description=self.description+"\n"+desc
 	def addAttr(self,attr_name,attr_value):
 		setattr(self,attr_name,attr_value)
 		self.attrList.append(attr_name)
-	def printFeatureDesc(self):
+	def printFeatureDesc(self,FD,ignore_print=[]):
+		ignore_print.append("sentenceNum")
+		ignore_print.append("rawFileName")
+		ignore_print.append("description")
+		for attr in self.attrList:
+			if(attr in ignore_print):
+				continue
+			FD.write(attr+" : "+str(getattr(self,attr))+"\n")
+		return
 		print "FileName",self.rawFileName
 		print "Description",self.description
 		print "conn name",self.singleConnectiveName
 		print "class label",self.classLabel
+
 def convertDataSet(featureCollection):
 	data=[]
 	labels=[]
