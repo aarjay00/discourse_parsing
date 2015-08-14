@@ -25,6 +25,23 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.naive_bayes import MultinomialNB
 
+
+def genModel(classWeight):
+	classWeight={}
+	for classLabel in classList:
+		classWeight[classLabel]=1.0
+	model=maxent(solver='liblinear',class_weight=classWeight)
+#	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
+#	model=tree.DecisionTreeClassifier()
+#	model=AdaBoostClassifier(n_estimators=100)
+#	model=MultinomialNB()
+#	model=Perceptron(n_iter=10)
+#	model=SGDClassifier()
+#	model=SVC()
+#	model=LDA(solver='svd')
+#	model=QDA()
+
+
 def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,noWt=1):
 	combinedData=zip(featureCollection,featureDescCollection)
 	shuffle(combinedData)
@@ -32,7 +49,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 	avgPrecision={}
 	avgRecall={}
 	avgModelScore={}
-	errorDict={}
+	errorCollection=[]
 	
 	for classLabel in classList:
 		avgPrecision[classLabel]=0.0
@@ -41,32 +58,20 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 
 	fn={}
 	fp={}
-	for i in range(0,cycleLen):
-		print "Iteration",i,"-"*50
+	for iteration in range(0,cycleLen):
+		print "Iteration",iteration,"-"*50
 		size=len(featureCollection)/cycleLen
-		start=size*i
+		start=size*iteration
 		end=start+size
-#	print start,end
+#		print start,end
 		test=featureCollection[start:end]
 		testDesc=featureDescCollection[start:end]
 		train=featureCollection[:start]+featureCollection[end+1:]
-#	print len(test),len(train)
+#		print len(test),len(train)
 
 		dataSet,dataLabels=convertDataSet(train)
 
-#		model=maxent(dual=True,solver='lbfgs' , max_iter=200)
-		classWeight={}
-		for classLabel in classList:
-			classWeight[classLabel]=1.0
-		model=maxent(solver='liblinear',class_weight=classWeight)
-#		model=tree.DecisionTreeClassifier()
-#		model=AdaBoostClassifier(n_estimators=100)
-#		model=MultinomialNB()
-#		model=Perceptron(n_iter=10)
-#		model=SGDClassifier()
-#		model=SVC()
-#		model=LDA(solver='svd')
-#		model=QDA()
+		model=genModel(classList)
 		model.fit(dataSet,dataLabels)
 		
 		truePositives={}
@@ -94,48 +99,26 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 			else:
 			 	falsePositives[feature.classLabel]+=1
 			 	print "wrong here !!!"
-			 	if(testDesc[featureNum].ID in errorDict):
-			 		errorDict[testDesc[featureNum].ID]+=1
-				else:
-			 		errorDict[testDesc[featureNum].ID]=1
+			 	errorCollection.append(testDesc[featureNum])
 
 			gold[feature.classLabel]+=1
 			featureNum+=1	
-#			if(result==feature.classLabel):
-#				if(feature.classLabel=="Yes"):
-#					truePositives+=1
-#				else:
-#					trueNegatives+=1
-#			else:
-#				if(feature.classLabel=="Yes"):
-#					falseNegatives+=1
-#					if(feature.connective not in fn.keys()):
-#						fn[feature.connective]=[0,[]]
-#					fn[feature.connective][0]+=1
-#					fn[feature.connective][1].append(feature)
-#				else:
-#					falsePositives+=1
-#					if(feature.connective not in fp.keys()):
-#						fp[feature.connective]=[0,[]]
-#					fp[feature.connective][0]+=1
-#					fp[feature.connective][1].append(feature)
-#		print truePositives,falsePositives,trueNegatives,falseNegatives
 		for classLabel in classList:	
 			try:
 				precision[classLabel]=(1.0*truePositives[classLabel])/(truePositives[classLabel]+falsePositives[classLabel])
-				avgPrecision[classLabel]=(avgPrecision[classLabel]*i + precision[classLabel])/(i+1)
+				avgPrecision[classLabel]=(avgPrecision[classLabel]*iteration + precision[classLabel])/(iteration+1)
 			except:
 				print "e1"
 			try:
 				recall[classLabel]=(1.0*truePositives[classLabel])/(gold[classLabel])
-				avgRecall[classLabel]=(avgRecall[classLabel]*i + recall[classLabel])/(i+1)
+				avgRecall[classLabel]=(avgRecall[classLabel]*iteration + recall[classLabel])/(iteration+1)
 			except:
 				print "e2"
 			try:
 				print "Precision : %f Recall %f"%(precision[classLabel],recall[classLabel])
 			except:
 				print "e3"
-			avgModelScore[classLabel]=(avgModelScore[classLabel]*i+model.score(d,l))/(i+1)
+			avgModelScore[classLabel]=(avgModelScore[classLabel]*iteration+model.score(d,l))/(iteration+1)
 	print "Final",avgPrecision,avgRecall
 
 	FD=open("results.txt","a")
@@ -145,15 +128,12 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
 
-	print "-"*50,"issues"
-	for key,value in errorDict.items():
-		print value,"times"
-		featureDescInst=featureDescCollection[key]
-		featureDescInst.printFeatureDesc()
-
 
 #	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
 	exit()
+
+
+# USELESS STUFF not willing to delete yet :P--------------------------------------------------------------------
 
 	FD=open("issues","w")
 	sum=0
