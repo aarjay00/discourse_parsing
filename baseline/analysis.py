@@ -42,7 +42,7 @@ def printAttrMaps(attrMapList,folderName):
 				i.printFeatureDesc(FD)
 		FD.close()
 
-def basicAnalysis(errorList):
+def basicAnalysis(errorList,analysisFolderName):
 	attrList=errorList[0].attrList
 	attrMapList=genAttrMaps(attrList,errorList)
-	printAttrMaps(attrMapList,"sense")
+	printAttrMaps(attrMapList,analysisFolderName)

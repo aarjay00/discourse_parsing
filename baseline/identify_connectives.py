@@ -175,7 +175,10 @@ negativeSetSplit=[]
 fileNum=0
 featureCollectionSingle=[]
 featureCollectionSplit=[]
+featureCollectionDescSingle=[]
+featureCollectionDescSplit=[]
 for discourseFile in discourseFileCollection:
+	wordList=discourseFile.globalWordList
 	for sentence in discourseFile.sentenceList:
 		chunkNum=0
 		for chunk in sentence.chunkList:
@@ -187,12 +190,22 @@ for discourseFile in discourseFileCollection:
 	pSet,nSet,pSetSplit,nSetSplit=identifyConnectives(discourseFile,connList,connSplitList)
 	for conn in pSet:
 		featureCollectionSingle.append(genFeatureSingleConn(conn,"Yes",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","Yes",len(featureCollectionDescSingle))
+		featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
+		featureCollectionDescSingle.append(featureDescInst)
 	for conn in nSet:
 		featureCollectionSingle.append(genFeatureSingleConn(conn,"No",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","No",len(featureCollectionDescSingle))
+		featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
+		featureCollectionDescSingle.append(featureDescInst)
 	for conn in pSetSplit:
 		featureCollectionSplit.append(genFeatureSplitConn(conn,"Yes",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","Yes",len(featureCollectionDescSplit))
+		featureCollectionDescSplit.append(featureDescInst)
 	for conn in nSetSplit:
 		featureCollectionSplit.append(genFeatureSplitConn(conn,"No",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","No",len(featureCollectionDescSplit))
+		featureCollectionDescSplit.append(featureDescInst)
 	positiveSet.extend(pSet)
 	negativeSet.extend(nSet)
 	positiveSetSplit.extend(pSetSplit)
@@ -201,6 +214,12 @@ for discourseFile in discourseFileCollection:
 print len(positiveSetSplit),len(negativeSetSplit)
 print len(positiveSet),len(negativeSet)
 print len(featureCollectionSingle)
+
+classList=[]
+for feature in featureCollectionSingle:
+	classList.append(feature.classLabel)
+classList=list(set(classList))
+print classList
 
 
 a=0.0
@@ -214,7 +233,7 @@ min_precision=100
 time=100
 for i in range(0,time):
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z,l=runModel(featureCollectionSingle,15,1,1)
+	x,y,z,l=runModel(featureCollectionSingle,featureCollectionDescSingle,classList,"connective_identification",15,1,1)
 	a+=x
 	b+=y
 	c+=z

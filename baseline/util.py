@@ -72,6 +72,15 @@ def findIndexList(key,l):
 
 def getChunk(wordNum,wordList,sentenceList):
 	return sentenceList[wordList[wordNum].sentenceNum].chunkList[wordList[wordNum].chunkNum]
+
+
+
+def getSpan(posList,wordList):
+	span=""
+	for pos in posList:
+		span=span+" "+wordList[pos].word
+	span=span[1:]
+	return span
 def writeResults(discourseRelationList,filePath):
 	filePath=filePath.split("raw/")[1]
 	filePath="output/"+filePath

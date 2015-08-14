@@ -44,7 +44,7 @@ def genModel(classList):
 	return model
 
 
-def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,noWt=1):
+def runModel(featureCollection,featureDescCollection,classList,analysisFolderName,cycleLen,yesWt=1,noWt=1):
 	combinedData=zip(featureCollection,featureDescCollection)
 	shuffle(combinedData)
 	featureCollection,featureDescCollection=zip(*combinedData)
@@ -102,6 +102,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 			 	falsePositives[feature.classLabel]+=1
 			 	print "wrong here !!!"
 			 	errorCollection.append(testDesc[featureNum])
+			 	errorCollection[-1].classifiedAs=result
 
 			gold[feature.classLabel]+=1
 			featureNum+=1	
@@ -130,7 +131,7 @@ def runModel(featureCollection,featureDescCollection,classList,cycleLen,yesWt=1,
 	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
 
-	basicAnalysis(errorCollection)
+	basicAnalysis(errorCollection,analysisFolderName)
 
 #	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
 	exit()
