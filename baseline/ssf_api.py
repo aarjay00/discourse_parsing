@@ -41,9 +41,10 @@ class Sentence():
 		self.nodeDict[node.nodeName]=node
 
 class Chunk():
-	def __init__(self,tag,node_name,features_set,sentenceNum):
+	def __init__(self,tag,node_name,features_set,sentenceNum,chunk_num):
 #		print "-"*30,"new chunk with tag - %s and f = %s"%(tag,features_string)
 		self.chunkTag=tag
+		self.chunkNum=chunk_num
 		self.nodeName=node_name
 		self.featureSet=features_set
 		self.wordNumList=[]
@@ -155,7 +156,7 @@ def extractSSFannotations(filePath):
 #					continue
 				chunkNum+=1
 				featureSetInst=FeatureSet(columns[3])
-				chunkInst=Chunk(columns[2],featureSetInst.featureDict["name"],featureSetInst,sentenceNum)
+				chunkInst=Chunk(columns[2],featureSetInst.featureDict["name"],featureSetInst,sentenceNum,chunkNum)
 				try:
 					nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["drel"].split(":")[0],featureSetInst.featureDict["drel"].split(":")[1])
 				except:

@@ -74,6 +74,25 @@ def getChunk(wordNum,wordList,sentenceList):
 	return sentenceList[wordList[wordNum].sentenceNum].chunkList[wordList[wordNum].chunkNum]
 
 
+def getChunkSeq(posList,wordList,sentenceList,unique=True):
+	chunkSeq=[]
+	prevChunkNum="No"
+	for pos in posList:
+		chunk=getChunk(pos,wordList,sentenceList)
+		if(not unique or chunk.chunkTag!=prevChunkNum):
+			chunkSeq.append(chunk)
+			prevChunkNum=chunk.chunkTag
+	print "checking",len(posList),len(chunkSeq)
+	return chunkSeq
+
+def getDependencySeq(posList,wordList,sentenceList,unique=True):
+	chunkSeq=getChunkSeq(posList,wordList,sentenceList,unique)
+	dependencySeq=[]
+	for chunk in chunkSeq:
+		nodeName=chunk.nodeName
+		node=sentenceList[chunk.sentenceNum].nodeDict[nodeName]
+		dependencySeq.append(node.nodeRelation)
+	return dependencySeq
 
 def getSpan(posList,wordList):
 	span=""

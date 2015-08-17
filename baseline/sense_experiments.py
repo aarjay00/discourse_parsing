@@ -63,25 +63,32 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 	return (connSingleSet,connSplitSet)
 
 def genFeatureSingleConn(conn,label,discourseFile):
+		wordList=discourseFile.globalWordList
+		sentenceList=discourseFile.sentenceList
 		print "conn","-"*30,
 		for p in conn:
 			print discourseFile.globalWordList[p].word,
 		print "\n"
+	
 		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
 		feature.wordFeature(conn)
 		feature.tagFeature(conn)
-		feature.tagNeighbor(conn,-1)
-		feature.tagNeighbor(conn,1)
-		feature.tagNeighbor(conn,-2)
-		feature.tagNeighbor(conn,2)
+#		feature.chunkSeqFeature(getChunkSeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
+#		feature.chunkSeqFeature(getChunkSeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
+		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
+		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
+#		feature.tagNeighbor(conn,-1)
+#		feature.tagNeighbor(conn,1)
+#		feature.tagNeighbor(conn,-2)
+#		feature.tagNeighbor(conn,2)
 		feature.chunkFeature(conn)
-		feature.chunkNeighbor(conn,1)
-		feature.chunkNeighbor(conn,-1)
-		feature.chunkNeighbor(conn,2)
-		feature.chunkNeighbor(conn,-2)
+#		feature.chunkNeighbor(conn,1)
+#		feature.chunkNeighbor(conn,-1)
+#		feature.chunkNeighbor(conn,2)
+#		feature.chunkNeighbor(conn,-2)
 		feature.setClassLabel(label)
 #		feature.aurFeature(conn)
-		print feature.featureVector
+#		print feature.featureVector
 		return feature
 
 def genFeatureSplitConn(conn,label,discourseFile):
@@ -109,7 +116,6 @@ def genFeatureSplitConn(conn,label,discourseFile):
 		feature.setClassLabel(label)
 		return feature
 
-
 	
 connList=loadConnList("lists/compConnectiveList.list")
 connSplitList=loadConnList("lists/splitConnectiveList.list",True)
@@ -123,111 +129,64 @@ connSplitSet=[]
 fileNum=0
 featureCollectionSingle=[]
 featureCollectionSplit=[]
+featureDescSingleCollection=[]
+featureDescSplitCollection=[]
+chunkSeqLen1=0.0
+chunkSeqLen2=0.0
+max1=-1
+min1=100
+max2=-1
+min2=100
+i=0
 for discourseFile in discourseFileCollection:
-#	for sentence in discourseFile.sentenceList:
-#		chunkNum=0
-#		for chunk in sentence.chunkList:
-#			for word in chunk.wordNumList:
-#				print discourseFile.globalWordList[word].word,
-#			print chunk.chunkTag+"0",chunkNum,
-#			chunkNum+=1
-#		print "\n"
 	singleSet,splitSet=identifyConnectives(discourseFile,connList,connSplitList)
 	wordList=discourseFile.globalWordList
 	sentenceList=discourseFile.sentenceList
 	print discourseFile.rawFileName,"-"*100
 	for conn in singleSet:
+		chunkSeqLen1=(chunkSeqLen1*i+1.0*len(getChunkSeq(wordList[conn[0]].arg1Span,wordList,sentenceList)))/(i+1)
+		chunkSeqLen2=(chunkSeqLen2*i+1.0*len(getChunkSeq(wordList[conn[0]].arg2Span,wordList,sentenceList)))/(i+1)
+		i+=1
+		max1=max(max1,len(getChunkSeq(wordList[conn[0]].arg1Span,wordList,sentenceList)))
+		min1=min(min1,len(getChunkSeq(wordList[conn[0]].arg1Span,wordList,sentenceList)))
+		max2=max(max2,len(getChunkSeq(wordList[conn[0]].arg2Span,wordList,sentenceList)))
+		min2=min(min2,len(getChunkSeq(wordList[conn[0]].arg2Span,wordList,sentenceList)))
 		word=wordList[conn[0]]
-		chunk=getChunk(conn[0],wordList,sentenceList)
-		print "-"*60
-		print "connective","-"*10
-		for pos in conn:
-			print wordList[pos].word,wordList[pos].wordTag,
-		print ""
-		print chunk.chunkTag,chunk.nodeName
-		node=sentenceList[word.sentenceNum].nodeDict[chunk.nodeName]
-		print node.nodeName,node.nodeParent 
+		print word.word
 		arg1Span= word.arg1Span
 		arg2Span= word.arg2Span
 		chunkList=sentenceList[word.sentenceNum].chunkList
-#		print arg1Span
+		print "-"*60
 		print "arg1","-"*10
 		for pos in arg1Span:
 			print wordList[pos].word,wordList[pos].wordTag,
 		print ""
-		for pos in  arg1Span:
-#		print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,
-			if(wordList[pos].wordTag=="VM"):
-				print wordList[pos].word
-				try:
-					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos"),"----",wordList[pos].extraFeatureSet.featureDict.get("af")
-				except:
-					print "XXX"
-		print ""
+		
+		
 		print "arg2","-"*10
 		for pos in arg2Span:
 			print wordList[pos].word,
 		print ""
-		for pos in  arg2Span:
-			if(wordList[pos].wordTag=="VM"):
-				print wordList[pos].word
-				try:
-					print wordList[pos].featureSet.featureDict["af"],"----",wordList[pos].extraFeatureSet.featureDict.get("vpos"),"----",wordList[pos].extraFeatureSet.featureDict.get("af")
-				except:
-					print "XXX"
-#			print sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].chunkTag,wordList[pos].wordTag,
-		print ""
+
 		if(wordList[conn[0]].sense.split(".")[0]=="_Without_sense"):
 			continue
-#		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
+		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense,len(featureDescSingleCollection))
+		featureDescInst.addAttr("singleConnectiveName",getSpan(conn,wordList))
+		featureDescInst.addAttr("Arg1",getSpan(word.arg1Span,wordList))
+		featureDescInst.addAttr("Arg2",getSpan(word.arg2Span,wordList))
+		featureDescSingleCollection.append(featureDescInst)
 	connSingleSet.extend(singleSet)
 	connSplitSet.extend(splitSet)
 	fileNum+=1
 
 print len(connSingleSet),len(connSplitSet)
 
-category=[]
-gender=[]
-number=[]
-person=[]
-case=[]
+print "avgLen",chunkSeqLen1
+print "avgLen",chunkSeqLen2
+print "minmax",min1,max1
+print "minmax",min2,max2
 
-for discourseFile in discourseFileCollection:
-	wordList=discourseFile.globalWordList
-	for word in wordList:
-		tam=word.featureSet.featureDict["af"].split(",")
-		try:
-			if tam[1] not in category and tam[1]!="":
-				category.append(tam[1])
-			if tam[2] not in gender and tam[2]!="":
-				gender.append(tam[2])
-			if tam[3] not in number and tam[3]!="":
-				number.append(tam[3])
-			if tam[4] not in person and tam[4]!="":
-				person.append(tam[4])
-			if tam[5] not in case and tam[5]!="":
-				case.append(tam[5])
-		except:
-			print "here here"
-			print word.word,word.featureSet.featureDict["af"]
-print "category"
-for i in category:
-	print i
-print "gender"
-for i in gender:
-	print i
-print "number"
-for i in number:
-	print i
-print "person"
-for i in person:
-	print i
-print "case"
-for i in case:
-	print i
-
-
-exit()
 classList=[]
 for feature in featureCollectionSingle:
 	classList.append(feature.classLabel)
@@ -246,7 +205,7 @@ min_precision=100
 time=1
 for i in range(0,time):
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z,l=runModel(featureCollectionSingle,classList,10,1,1)
+	x,y,z,l=runModel(featureCollectionSingle,featureDescSingleCollection,classList,"sense_identification",10,1,1)
 	a+=x
 	b+=y
 	c+=z

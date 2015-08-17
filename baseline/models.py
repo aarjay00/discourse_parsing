@@ -31,7 +31,7 @@ def genModel(classList):
 	classWeight={}
 	for classLabel in classList:
 		classWeight[classLabel]=1.0
-	model=maxent(solver='liblinear',class_weight=classWeight)
+	model=maxent(solver='liblinear')
 #	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
 #	model=tree.DecisionTreeClassifier()
 #	model=AdaBoostClassifier(n_estimators=100)

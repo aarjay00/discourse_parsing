@@ -39,6 +39,7 @@ def printAttrMaps(attrMapList,folderName):
 			FD.write("-"*100 + "\n")
 			FD.write(str(item[0])+" Frequency: " +str(len(item[1])) +"\n")
 			for i in item[1]:
+				FD.write("------\n")
 				i.printFeatureDesc(FD)
 		FD.close()
 

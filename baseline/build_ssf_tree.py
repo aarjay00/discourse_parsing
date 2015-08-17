@@ -49,4 +49,4 @@ for discourseFileInst in discourseFileCollection:
 	  	if(nodeInst.nodeLevel==-1):
 			print "problem here ", nodeName
 
-exportModel("processedData/annotatedDataTree",discourseFileCollection)
+exportModel("processedData/annotatedData",discourseFileCollection)

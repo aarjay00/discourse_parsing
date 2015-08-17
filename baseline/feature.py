@@ -14,8 +14,9 @@ class Feature():
 		self.discourseFile=discourse_file
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])
-		self.chunkSet=self.loadSet(chunk_path,["First","Last"])
+		self.chunkSet=self.loadSet(chunk_path,["First","Last","Null"])
 		self.categorySet=self.loadSet("./lists/category.list")
+		self.dependencySet=self.loadSet("./lists/dependencySet.list",["Null","None"])
 		self.genderSet=self.loadSet("./lists/gender.list")
 		self.numberSet=self.loadSet("./lists/gender.list")
 		self.personSet=self.loadSet("./lists/person.list")
@@ -127,6 +128,30 @@ class Feature():
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 	def tamFeature(self,wordList):
 		print "tamFeature"
+	def chunkSeqFeature(self,chunkSeq):
+		print "ChunkSeqFeature",len(chunkSeq)
+		if(len(chunkSeq)>20):
+			print "ahem chunk"
+		for i in range(0,20):
+			if(i<len(chunkSeq)):
+				print chunkSeq[i].chunkTag,
+				feature=self.markItemsinList([chunkSeq[i].chunkTag],self.chunkSet)
+			else:
+				feature=self.markItemsinList(["Null"],self.chunkSet)
+		print ""
+	def dependencySeqFeature(self,dependencySeq):
+		print "dependencySeqFeature",len(dependencySeq)
+		if(len(dependencySeq)>80):
+			print "ahem depen"
+		for i in range(0,20):
+			if(i<len(dependencySeq)):
+				if(dependencySeq[i] not in self.dependencySet):
+					print "aaaaaaa"
+				print dependencySeq[i],
+				feature=self.markItemsinList([dependencySeq[i]],self.dependencySet)
+			else:
+				feature=self.markItemsinList(["Null"],self.dependencySet)
+		print ""
 
 	def markItemsinList(self,List,Set):
 		feature=[]

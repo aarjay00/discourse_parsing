@@ -115,7 +115,12 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 
 	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
 def genFeatureSingleConn(conn,label,discourseFile):
-		print "conn","-"*30,
+		
+		sentenceList=discourseFile.sentenceList
+		wordList=discourseFile.globalWordList
+		chunk=getChunk(conn[0],wordList,sentenceList)
+		node=sentenceList[chunk.sentenceNum].nodeDict[chunk.nodeName]
+		print "single conn","-"*30,node.nodeRelation,label
 		for p in conn:
 			print discourseFile.globalWordList[p].word,
 		print "\n"

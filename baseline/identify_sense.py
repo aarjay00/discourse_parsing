@@ -126,23 +126,11 @@ featureCollectionSplit=[]
 featureDescSingleCollection=[]
 featureDescSplitCollection=[]
 for discourseFile in discourseFileCollection:
-#	for sentence in discourseFile.sentenceList:
-#		chunkNum=0
-#		for chunk in sentence.chunkList:
-#			for word in chunk.wordNumList:
-#				print discourseFile.globalWordList[word].word,
-#			print chunk.chunkTag+"0",chunkNum,
-#			chunkNum+=1
-#		print "\n"
 	singleSet,splitSet=identifyConnectives(discourseFile,connList,connSplitList)
 	wordList=discourseFile.globalWordList
 	sentenceList=discourseFile.sentenceList
 	print discourseFile.rawFileName,"-"*100
 	for conn in singleSet:
-		connective=""
-		for pos in conn:
-			connective=connective+" "+wordList[pos].word
-		connective=connective[1:]
 		word=wordList[conn[0]]
 		print word.word
 		arg1Span= word.arg1Span
@@ -164,7 +152,7 @@ for discourseFile in discourseFileCollection:
 			continue
 		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
 		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense,len(featureDescSingleCollection))
-		featureDescInst.addAttr("singleConnectiveName",connective)
+		featureDescInst.addAttr("singleConnectiveName",getSpan(conn,wordList))
 		featureDescSingleCollection.append(featureDescInst)
 	connSingleSet.extend(singleSet)
 	connSplitSet.extend(splitSet)
