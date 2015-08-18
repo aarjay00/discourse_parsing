@@ -36,3 +36,13 @@ Accuracy 0.934666666667 - 0.930666666667 Avg- 0.93265
 
 nodeRelation,nodeParent+word + tag + tag1+tag2+chunk + chunk1 + chunk2
 Accuracy 0.934 - 0.931333333333 Avg- 0.93245
+
+
+nodeRelation,nodeParent+nodeRelationPrev+nodeRelationNext+word + tag + chunk + 1chunk
+Accuracy 0.932 - 0.929333333333 Avg- 0.930616666667
+
+nodeRelation,nodeParent+nodeRelationPrev+nodeRelationNext+word + tag + chunk + 1chunk +chunk2
+Accuracy 0.932666666667 - 0.928666666667 Avg- 0.930916666667
+
+nodeRelation,nodeParent+nodeRelationPrev+nodeRelationNext+nodeParentNext+nodeParentPrev+word + tag + chunk + 1chunk
+Accuracy 0.932333333333 - 0.929 Avg- 0.930816666667

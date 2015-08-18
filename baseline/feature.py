@@ -18,7 +18,11 @@ class Feature():
 		self.categorySet=self.loadSet("./lists/category.list")
 		self.dependencySet=self.loadSet("./lists/dependencySet.list",["Null","None"])
 		self.nodeRelationSet=self.loadSet("./lists/nodeRelation.list")
+		self.nodeRelationSetPrev=self.loadSet("./lists/nodeRelationPrev.list")
+		self.nodeRelationSetNext=self.loadSet("./lists/nodeRelationNext.list")
 		self.nodeParentSet=self.loadSet("./lists/nodeParent.list")
+		self.nodeParentSetPrev=self.loadSet("./lists/nodeParentPrev.list")
+		self.nodeParentSetNext=self.loadSet("./lists/nodeParentNext.list")
 		self.genderSet=self.loadSet("./lists/gender.list")
 		self.numberSet=self.loadSet("./lists/gender.list")
 		self.personSet=self.loadSet("./lists/person.list")
@@ -169,6 +173,12 @@ class Feature():
 		if(node_parent not in self.nodeParentSet):
 			print "ERROR !!!! nodeParent",node_parent
 		feature=self.markItemsinList([node_parent],self.nodeParentSet)
+	def nodeFeature(self,node_feature,nodeListName):
+	  	print nodeListName,"Feature"
+	  	nodeSet=getattr(self,nodeListName)
+	  	if(node_feature not in nodeSet):
+			print "ERROR !!!!",nodeListName
+		feature=self.markItemsinList([node_feature],nodeSet)
 	def markItemsinList(self,List,Set):
 		feature=[]
 		for item in Set:
