@@ -17,6 +17,8 @@ class Feature():
 		self.chunkSet=self.loadSet(chunk_path,["First","Last","Null"])
 		self.categorySet=self.loadSet("./lists/category.list")
 		self.dependencySet=self.loadSet("./lists/dependencySet.list",["Null","None"])
+		self.nodeRelationSet=self.loadSet("./lists/nodeRelation.list")
+		self.nodeParentSet=self.loadSet("./lists/nodeParent.list")
 		self.genderSet=self.loadSet("./lists/gender.list")
 		self.numberSet=self.loadSet("./lists/gender.list")
 		self.personSet=self.loadSet("./lists/person.list")
@@ -141,6 +143,11 @@ class Feature():
 		print ""
 	def dependencySeqFeature(self,dependencySeq):
 		print "dependencySeqFeature",len(dependencySeq)
+		for i in range(0,len(dependencySeq)):
+			if(dependencySeq[i].startswith("pof")):
+				dependencySeq[i]="pof"
+			elif(dependencySeq[i].startswith("nmod__") and dependencySeq[i]!="nmod__relc"):
+			 	dependencySeq[i]="nmod"
 		if(len(dependencySeq)>80):
 			print "ahem depen"
 		for i in range(0,20):
@@ -152,7 +159,16 @@ class Feature():
 			else:
 				feature=self.markItemsinList(["Null"],self.dependencySet)
 		print ""
-
+	def nodeRelationFeature(self,node_relation):
+		print "nodeRelationFeature"
+		if(node_relation not in self.nodeRelationSet):
+			print "ERROR !!!! nodeRelation",node_relation
+		feature=self.markItemsinList([node_relation],self.nodeRelationSet)
+	def nodeParentFeature(self,node_parent):
+		print "nodeParentFeature"
+		if(node_parent not in self.nodeParentSet):
+			print "ERROR !!!! nodeParent",node_parent
+		feature=self.markItemsinList([node_parent],self.nodeParentSet)
 	def markItemsinList(self,List,Set):
 		feature=[]
 		for item in Set:

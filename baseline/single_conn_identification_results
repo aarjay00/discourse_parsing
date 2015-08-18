@@ -1,4 +1,4 @@
-all features
+all syntactic features
 Accuracy 0.931993299832 - 0.92730318258
 F-measure 0.848730584809 - 0.834290300595
 0.834915143515 0.84915926255 0.929492462312 0.841972008742
@@ -10,3 +10,16 @@ no neighborhood POS and 2 chunk tags
 Accuracy 0.931993299832 - 0.926968174204
 F-measure 0.848481527037 - 0.833399254633
 0.834937403477 0.848373526114 0.929363484087 0.841597308965
+
+
+nodeRelation,nodeParent+word + tag + chunk + 1chunk
+Accuracy 0.934 - 0.93 Avg- 0.931783333333
+
+word+tag+chunk+chunk1
+Accuracy 0.93 - 0.925666666667 Avg- 0.9282
+word+tag+chunk+chunk2
+Accuracy 0.931666666667 - 0.928 Avg- 0.929766666667
+word+tag+tag1+chunk+chunk2
+Accuracy 0.931666666667 - 0.927333333333 Avg- 0.929666666667
+word+tag+tag2+chunk+chunk2
+Accuracy 0.931 - 0.928333333333 Avg- 0.929833333333

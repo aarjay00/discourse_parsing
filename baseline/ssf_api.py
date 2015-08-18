@@ -20,6 +20,12 @@ class Node():
 		self.nodeLevel=-1
 	def addChild(self,child):
 		self.childList.append(child)
+	def getChunkName(self,node_name):
+		i=len(node_name)
+		while (node_name[i-1]>="0" and node_name[i-1]<="9"):
+			i-=1
+#		print "qwe",node_name,node_name[:i]
+		return node_name[:i]
 
 
 class Sentence():

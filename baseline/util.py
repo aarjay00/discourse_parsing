@@ -73,7 +73,6 @@ def findIndexList(key,l):
 def getChunk(wordNum,wordList,sentenceList):
 	return sentenceList[wordList[wordNum].sentenceNum].chunkList[wordList[wordNum].chunkNum]
 
-
 def getChunkSeq(posList,wordList,sentenceList,unique=True):
 	chunkSeq=[]
 	prevChunkNum="No"

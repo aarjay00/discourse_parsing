@@ -122,7 +122,10 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 			except:
 				print "e3"
 			avgModelScore[classLabel]=(avgModelScore[classLabel]*iteration+model.score(d,l))/(iteration+1)
-	print "Final",avgPrecision,avgRecall
+		print "Final",avgPrecision,avgRecall
+#		FD=open("overall","a")
+#		FD.write(str(model.score(d,l))+"\n")
+#		FD.close()
 
 	FD=open("results.txt","a")
 	for classLabel in classList:
@@ -133,8 +136,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 
 	basicAnalysis(errorCollection,analysisFolderName)
 
-#	return (avgPrecision,avgRecall,avgModelScore,(2*avgPrecision*avgRecall)/(avgRecall+avgPrecision))
-	exit()
+	return (avgPrecision,avgRecall,avgModelScore)
 
 
 # USELESS STUFF not willing to delete yet :P--------------------------------------------------------------------
