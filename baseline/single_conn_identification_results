@@ -12,14 +12,27 @@ F-measure 0.848481527037 - 0.833399254633
 0.834937403477 0.848373526114 0.929363484087 0.841597308965
 
 
-nodeRelation,nodeParent+word + tag + chunk + 1chunk
-Accuracy 0.934 - 0.93 Avg- 0.931783333333
 
 word+tag+chunk+chunk1
 Accuracy 0.93 - 0.925666666667 Avg- 0.9282
-word+tag+chunk+chunk2
+
+word+tag+chunk+chunk1+chunk2
 Accuracy 0.931666666667 - 0.928 Avg- 0.929766666667
-word+tag+tag1+chunk+chunk2
+
+word+tag+tag1+chunk+chunk1+chunk2
 Accuracy 0.931666666667 - 0.927333333333 Avg- 0.929666666667
-word+tag+tag2+chunk+chunk2
+
+word+tag+tag1+tag2+chunk+chunk1+chunk2
 Accuracy 0.931 - 0.928333333333 Avg- 0.929833333333
+
+nodeRelation,nodeParent+word + tag + chunk + 1chunk
+Accuracy 0.934 - 0.93 Avg- 0.931783333333
+
+nodeRelation,nodeParent+word + tag + chunk + chunk1 + chunk2
+Accuracy 0.934333333333 - 0.930666666667 Avg- 0.932666666667
+
+nodeRelation,nodeParent+word + tag + tag1+chunk + chunk1 + chunk2
+Accuracy 0.934666666667 - 0.930666666667 Avg- 0.93265
+
+nodeRelation,nodeParent+word + tag + tag1+tag2+chunk + chunk1 + chunk2
+Accuracy 0.934 - 0.931333333333 Avg- 0.93245
