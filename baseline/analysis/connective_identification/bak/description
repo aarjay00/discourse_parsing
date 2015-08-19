@@ -1,0 +1,850 @@
+----------------------------------------------------------------------------------------------------
+Single connective identification Frequency: 212
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जैसे ही
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : साथ ही
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिसके चलते
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पहले
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वैसे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के कारण
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : खासतौर पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस दौरान
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी ओर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : दूसरे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी तरफ
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बावजूद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : तथा
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : क्योंकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : उसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस बारे में
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस दौरान
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसी प्रकार
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जबकि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस कारण
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस प्रकार
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : उस पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : ऐसे में
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसलिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिसके चलते
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : साथ ही
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसी प्रकार
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पहले
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसलिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : गौरतलब है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी ओर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस प्रकार
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : ऐसे में
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस बारे में
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और तभी
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर

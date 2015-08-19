@@ -110,16 +110,16 @@ def extractExtraSSF(filePath):
 		lines=re.split("\n",content)
 	 	wList=[]
 		for line in lines:
-			print line
+#			print line
 			columns=line.split("\t")
 			if(len(columns)<4):
 				continue
 			
 			f=FeatureSet(columns[3])
-			try:
-				print "XXX",f.featureDict["af"]
-			except:
-				print "XXXhere"
+#			try:
+#				print "XXX",f.featureDict["af"]
+#			except:
+#				print "XXXhere"
 			wList.append(f)
 		sList.append(wList)
 	return sList
@@ -170,7 +170,7 @@ def extractSSFannotations(filePath):
 					nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["drel"].split(":")[0],featureSetInst.featureDict["drel"].split(":")[1])
 				except:
 					nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
-					print "hohoh",line
+#					print "hohoh",line
 			elif(columns[1]=="))"):
 				sentenceInst.addNode(nodeInst)
 			  	if(len(chunkInst.wordNumList)!=0):

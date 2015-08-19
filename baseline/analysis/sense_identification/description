@@ -1,0 +1,830 @@
+----------------------------------------------------------------------------------------------------
+Single Connective Sense Identification Frequency: 138
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : कृषि क्षेत्र में ९.१ ९.१ फीसदी की दर से वृद्धि हुई है
+Arg2 : इसका जीडीपी में भारी योगदान रहा ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : अब एग्रो - फोरेस्टरी से आम लोगों की आर्थिक स्थिति बदलेगी
+Arg2 : उनकी खरीद क्षमता बढ़ सकती है
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : ३१ अक्टूबर ८४ को कमलनाथ गुरुद्वारा रकाबगंज में मौजूद थे
+Arg2 : वह भीड़ को शांत करने का प्रयास कर रहे थे ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : संघ ने दिल्ली में मौजूद सभी पदाधिकारियों की आपात बैठक बुलाई
+Arg2 : वाजपेयी के बयान के बाद स्थिति की समीक्षा की
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : कि न्यूनतम
+Arg1 : व्यय में १०,००० १०,००० १०,००० करोड़ रुपये की वृद्धि की गई है जिससे
+Arg2 : साझा कार्यक्रम के लक्ष्य को हासिल करने में मदद मिलेगी ।
+------
+classLabel : Temporal.Synchrony
+classifiedAs : Contingency
+singleConnectiveName : तब
+Arg1 : पाँच साल पहले मार्च 2001 को बेंगलौर में कांग्रेस महाधिवेशन हुआ था
+Arg2 : केंद्र में वाजपेयी सरकार सत्ता में थी और सभामंच से सोनिया ने तहलका मामले में सरकार पर तैश भरे आक्रमण किए थे ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : । वे चाहती हैं कि जांच एजेंसी नतीजे के बारे में जानकारी दे
+Arg2 : दोषियों को जल्द गिरफ्तार करे
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : आखिरकार
+Arg1 : इसके बावजूद मुकेश खेमे का रुख ठंडा रहा ।
+Arg2 : अनिल ने आईपीसीएल बोर्ड से इस्तीफा दे दिया
+------
+classLabel : Contingency.Goal
+classifiedAs : Comparison
+singleConnectiveName : ताकि
+Arg1 : वह विवादित ढाँचे को सम्मानपूर्वक किसी दूसरे नज़दीकी स्थान में स्थानांतरित करने के पक्ष में है ।
+Arg2 : उसी स्थान पर मंदिर निर्माण का रास्ता निकल सके ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : दूसरी ओर
+Arg1 : अनिल ने इसमें लिखा है कि आरोपों की गंभीरता को देखते हुए वह एक सक्षम सरकारी एजेंसी से मामले की तत्काल जांच के आदेश देने का अनुरोध करते हैं ।
+Arg2 : रिलायंस बंधुओं के बीच स्वामित्व के निपटाने के तहत अनिल को रिलायंस इंफोकॉम , रिलायंस एनर्जी और रिलायंस कैपिटल मिलने की संभावना की रिपोर्टो के बीच इस नए घटनाक्रम का बातचीत प्रक्रिया पर असर दिख सकता है
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : यानि
+Arg1 : जिन राज्यों में न्यूनतम मजदूरी ६० रुपये से अधिक है , वहां इस योजना में भी उस राज्य की न्यूनतम मजदूरी ही मान्य होगी ।
+Arg2 : देश के कई राज्यों के लोगों को अब बढ़ी हुई मजदूरी मिलेगी ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : और
+Arg1 : ढ़ाँचे को गिराया जाना दुर्भाग्यपूर्ण था
+Arg2 : पार्टी ढाँचे को किसी तरह का नुक़सान नहीं पहुँचाना चाहती थी ।
+------
+classLabel : Expansion.Restatement.Generalization
+classifiedAs : Comparison
+singleConnectiveName : । दरअसल
+Arg1 : २६ दिसंबर के बाद से प्रभाकरन को न तो टीवी पर देखा गया है और न ही लिट्टे के रेडियो पर उसकी आवाज सुनी गई है
+Arg2 : प्रभाकरन को लेकर २८ दिसंबर से अटकलें हैं
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : लिहाजा
+Arg1 : इन राज्यों में हिंदू अल्पसंख्या अल्पसंख्या में आ गए हैं
+Arg2 : उन्हें अल्पसंख्यक का दर्जा दिया जाना चाहिए
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : आग की विकरालता को देखते ही कारीगरों में अफरातफरी मच गई
+Arg2 : वे जान बचाने के लिए नीचे की ओर भागे ।
+------
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Contingency
+singleConnectiveName : गौरतलब है कि
+Arg1 : गृह मंत्री शिवराज पाटिल द्वारा हाल में ही प्रधानमंत्री को सौंपी रिपोर्ट पर उन्होंने कहा कि वह इसके लिए ब्लू प्रिंट तैयार कर चुके हैं ।
+Arg2 : पाटिल ने अपनी रिपोर्ट में कहा था कि जम्मू कश्मीर को अधिक स्वायत्तता देने के मसले पर समीक्षा और बहस की जरूरत है ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
+Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Contingency
+singleConnectiveName : यहाँ तक कि
+Arg1 : । यह योजना ज्यादातर राज्यों में कछुआ चाल से चल रही है ।
+Arg2 : कई राज्य इस योजना के लिए केंद्र से पैसा तक समय पर नहीं ले जा पा रहे हैं
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा
+Arg2 : गंभीर रूप से घायलों को 50 - 50 तथा तथा मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : इसीलिए
+Arg1 : भंग विधानसभा के भाजपा व जद ( यू ) विधायकों से मिलने के बाद नंद किशोर और विजेंद्र ने कहा कि २५ जून १९७५ को तत्कालीन प्रधानमंत्री इंदिरा गांधी ने आपातकाल की घोषणा की थी ।
+Arg2 : हमने भी इसी दिन को राज्यपाल बूटा सिंह की कार्रवाई का विरोध करने के लिए चुना है
+------
+classLabel : Contingency.Goal
+classifiedAs : Comparison
+singleConnectiveName : ताकि
+Arg1 : शायद प्रियंका इस अवसर पर उपस्थित न हों
+Arg2 : राहुल का आकर्षण बना रहे
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : यह भी कहा जा रहा है कि
+Arg1 : बहुत संभव है , राहुल गाँधी को इस मौके पर कांग्रेस कार्य - समिति का सदस्य बनाया जाए
+Arg2 : शायद प्रियंका इस अवसर पर उपस्थित न हों , ताकि राहुल का आकर्षण बना रहे ।
+------
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Expansion
+singleConnectiveName : हालांकि
+Arg1 : बिहार के विकास की गाड़ी पटरी से उतर गई थी , उसे अब वापस पटरी पर लाना है ।
+Arg2 : आपराधिक छवि वाले विधायकों को मंत्री न बनाने का अपना वादा उन्होंने आज दोहराने से परहेज किया
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : बल्कि
+Arg1 : वह मुख्यमंत्री के रूप में बदले की भावना से काम नहीं करेंगे ,
+Arg2 : सभी को साथ लेकर चलने की कोशिश करेंगे ।
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : इसके अलावा
+Arg1 : हरियाणा के अंबाला जिले में काफी तेज वर्षा हुई , जहाँ २३.५ २३.५ मिमी वर्षा दर्ज की गई है
+Arg2 : सुबह ८.३० ८.३० बजे तक कालका में ८ मिमी , छछरौली में ४० मिमी , जगाधरी में १५ मिमी और पंचकुला में २ मिमी वर्षा रिकॉर्ड की गई है ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : आगे
+Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
+Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : । गौरतलब है कि
+Arg1 : नटवर सिंह का यह दौरा दोनों देशों के बीच आर्थिक एवं राजनीतिक सहयोग की दृष्टि से काफी महत्वपूर्ण माना जा रहा है
+Arg2 : श्रीलंका की सुनामी पुनर्निर्माण परियोजना में भारत श्रीलंका को महत्वपूर्ण रूप से मदद प्रदान कर रहा है
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : कारण राज्य
+Arg1 : पूर्व मानसून हिमाचल प्रदेश में प्रवेश कर गया है इस
+Arg2 : में कहीं मध्यम और और कहीं भारी बारिश हो रही है ।
+------
+classLabel : Temporal.Synchrony
+classifiedAs : Contingency
+singleConnectiveName : तब
+Arg1 : भारत ने दोनों के बीच विश्वास बहाली के उपायों के तहत जम्मू - कश्मीर से सेना में कटौती की घोषणा की थी
+Arg2 : जम्मू डिवीजन और अनंतनाग से तकरीबन 6 हजार जवानों को वापस बुला लिया गया था
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : क्योंकि
+Arg1 : स्थानीय लोगों के लिए यह बारिश वरदान से कम नहीं मानी जा रही है
+Arg2 : सेब की अच्छी फसल के लिए समय - समय पर बारिश का होना जरूरी माना जाता है
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Contingency
+singleConnectiveName : तथा
+Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा और और गंभीर रूप से घायलों को 50 - 50 तथा
+Arg2 : मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : उल्लेखनीय है कि
+Arg1 : । कोलकाता में मौजूद मरांडी से जब फोन पर पूछा गया कि क्या वह यहाँ शुक्रवार को उस समारोह में शिरकत करेंगे जिसमें पांडेय प्रदेश अध्यक्ष का पदभार ग्रहण करेंगे , इस पर मरांडी ने कहा कि उन्हें इस बात से कोई मतलब नहीं ।
+Arg2 : भाजपा ने पार्टी विधायकों , सांसदों , जिलाध्यक्षों , वरिष्ठ पार्टी नेताओं व अन्य पदाधिकारियों को इस समारोह में शामिल होने का न्यौता दिया है ।
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : तथा
+Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है
+Arg2 : हिंदुओं की 29.6 29.6 फीसदी
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : इसी डर से
+Arg1 : । बिहार के दरभंगा जेल से कुछ दिनों पहले ही बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2 : खगड़िया और रोसड़ा के जेलों से कैदियों को स्थानांतरित कर दिया गया है
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : तथा
+Arg1 : नागालैंड में 90 फीसदी आबादी ईसाई हो चुकी है
+Arg2 : यहां 7.7 7.7 फीसदी ही हिंदू रह गए हैं
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Temporal
+singleConnectiveName : बताया जाता है
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Comparison
+singleConnectiveName : खासकर
+Arg1 : बुधवार को लोकसभा में आर्थिक सर्वेक्षण पेश करते हुए वित्त मंत्री पी. चिदंबरम ने अर्थव्यवस्था की सुनहरी तसवीर के साथ कुछ खतरों की ओर भी इशारा किया ।
+Arg2 : पेट्रोलियम पदार्थो की अंतर्राष्ट्रीय कीमतों में बढ़ोतरी रुझान को देखते हुए महंगाई और ब्याज दरों में तेजी आ सकती है ।
+------
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Expansion
+singleConnectiveName : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : एक मार्केट की ओर भागा
+Arg2 : एक की पिस्तौल व मोबाइल गिर गया
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Contingency
+singleConnectiveName : इसी तरह
+Arg1 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
+Arg2 : २००१ - ०२ के दौरान कारों का विशेष उत्पाद कर २४ फीसदी के बजाय १६ फीसदी कर दिया गया ।
+------
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Contingency
+singleConnectiveName : गौरतलब है कि
+Arg1 : दौरे के दौरान नटवर सिंह भारत - श्रीलंका संयुक्त आयोग की बैठक की श्रीलंका के विदेश मंत्री लक्ष्मण कादिर गमर के साथ मिलकर अध्यक्षता करेंगे
+Arg2 : 2003 में भारत - श्रीलंका संयुक्त आयोग की बैठक के बाद से ही दोनों देशों के बीच नए सहयोग के दौर की शुरुआत हुई है
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो
+Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
+Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : वजह
+Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए
+Arg2 : लंदन पर अलक़ायदा का आतंकी हमला
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : इसके अतिरिक्त
+Arg1 : इससे फसलों का न्यूनतम समर्थन मूल्य निर्धारण में आयोग को किसानों से पूरी जानकारी मिल पाएगी ।
+Arg2 : समिति ने किसानों को दिए जाने वाले ऋण पर ६ फीसदी ब्याज दर लागू करने की सिफारिश की है ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Comparison
+singleConnectiveName : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : उधर
+Arg1 : वह हिंदू रीति - रिवाज के मुताबिक वाराणसी में शव का अंतिम संस्कार करेगी ।
+Arg2 : उत्तर प्रदेश के पुलिस महानिदेशक यशपाल सिंह ने गुर्जर को ढेर करने वाले एसटीएफ के जवानों के लिए बारी से पहले प्रोन्नति देने की घोषणा की है ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : उस पर
+Arg1 : सीमा में इनके घुसने के एक - दो दिन के भीतर ही पता चल जाता है ।
+Arg2 : नागरिकों के इनके साथ असहयोग से इनकी साजिशें धरी की धरी रह जा रही हैं । आतंकी मारे जा रहे हैं ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+------
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Contingency
+singleConnectiveName : मालूम हो कि
+Arg1 : कश्मीर घाटी से बड़ी तादाद में सैनिकों की कटौती के बाद ही कश्मीरी लोगों का विश्वास जीता जा सकता है
+Arg2 : कश्मीर के सभी प्रतिनिधियों ने कश्मीर बस सेवा की शुरुआत का स्वागत किया है
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : इसी प्रकार
+Arg1 : अदालत ने कमेटी की इस रिपोर्ट को भी गंभीरता से लिया कि सस्ती दर पर भूमि लेने वाले २८ अस्पतालों का कोई पता नहीं है और बताए पते पर उनका कोई रिकार्ड ही नहीं है । अदालत ने इसकी विस्तृत रिपोर्ट पेश करने को कहा है
+Arg2 : खंडपीठ ने मुख्य सचिव को निर्देश दिया कि वे कमेटी की रिपोर्ट के अनुसार सभी अस्पतालों में नोटिस बोर्ड लगवाएँ जिसमें तय निशुल्क बेड की संख्या और अन्य प्रकार की जानकारी दी जाए ।
+------
+classLabel : Comparison.Concession.Contra-expectation
+classifiedAs : Contingency
+singleConnectiveName : बावजूद इसके
+Arg1 : दिल्ली पुलिस ने इसकी इजाज़त नहीं दी
+Arg2 : सॉलिडेरिटी कमेटी इन सपोर्ट ऑफ रिवोल्यूशनरी स्ट्रगल के बैनर तले सैकड़ों नक्सलियों ने विरोध प्रदर्शन की कोशिश की और इस सिलसिले में अपनी गिरफ्तारी दी
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : में ,
+Arg1 : २० लाख विज्ञान
+Arg2 : १८ लाख के करीब छात्र वाणिज्य और प्रबंधन की पढ़ाई पढ़ रहे हैं
+------
+classLabel : Contingency.Pragmatic cause
+classifiedAs : Expansion
+singleConnectiveName : इसके लिए
+Arg1 : हम कृषि , ग्रामीण अर्थव्यवस्था तथा ढांचागत सुविधाओं के क्षेत्र में पेश आने वाली समस्याओं को दूर करने का प्रयास कर रहे हैं
+Arg2 : हम काम के बदले अनाज कार्यक्रम जैसी योजनाएं शुरू कर रहे हैं
+------
+classLabel : Expansion.Restatement.Generalization
+classifiedAs : Comparison
+singleConnectiveName : यानि
+Arg1 : भारत निर्माण योजना में आने के बाद अब हर १२ हजार करोड़ रुपये खर्च करके ३५ हजार किमी सड़क बनानी होगी
+Arg2 : राज्यों को पहले से ज्यादा काम करना होगा
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Comparison
+singleConnectiveName : । बताया जाता है कि
+Arg1 : दिल्ली विश्वविद्यालय की तरह रैगिंग का साया अब गुड़गाँव के कॉलेजों पर भी पड़ने लगा है । गुड़गाँव के प्रतिष्ठित नेशनल लॉ कॉलेज में प्रथम वर्ष के एक छात्र के साथ वरिष्ठ छात्रों द्वारा रैगिंग करने का मामला प्रकाश में आया है । सीनियर छात्रों ने नए छात्र के साथ अभद्र तरीके से रैगिंग करने की कोशिश की । इसका विरोध करने पर उसे इतना पीटा कि वह लहू - लुहान हो गया और उसे अस्पताल में भर्ती करवाना पड़ा । अब कॉलेज प्रशासन इस मामले पर लीपा - पोती करने की कोशिश कर रहा है ।
+Arg2 : १७ अगस्त को विधि स्नातक के पहले वर्ष का छात्र प्रशांत टोकस सेक्टर - ४२ स्थित नेशनल लॉ कॉलेज गया था । प्रशांत दिल्ली से कॉलेज आया था । पहले ही दिन कॉलेज परिसर में आधा दर्जन से अधिक सीनियर छात्रों ने उसे घेर लिया । उन्होंने प्रशांत के साथ अभद्र व्यवहार शुरू कर दिया । प्रशांत ने इसका विरोध किया तो उन्होंने उसे जमकर पीटा । प्रशांत के अभिभावकों के अनुसार उसके चेहरे , गले व छाती पर जबरदस्त प्रहार किए गए । इसके चलते उसका चेहरा व गला सूज गया ।
+------
+classLabel : Expansion.Exception
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : खंडपीठ ने चुनाव आयोग के वकील एस. मुरलीधरन से पूछा कि अगर अदालत राष्ट्रपति शासन को अवैध करार देती है तो चुनाव प्रक्रिया का क्या होगा , इस पर मुरलीधरन ने कहा कि २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी और इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
+Arg2 : जवाब से संतुष्ट नहीं होने पर अदालत ने अटॅर्नी जनरल मिलन बनर्जी , एडिशनल सॉलीसिटर जनरल गोपाल सुब्रह्मण्यम् और पूर्व अटॅर्नी जनरल सोली जे. सोराबजी से राय ली ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : वहीं पर
+Arg1 : सेब की अच्छी फसल के लिए समय - समय पर बारिश का होना जरूरी माना जाता है ।
+Arg2 : पशुओं के चारे व अन्य फसलों की बिजाई के लिए यह बारिश अति उत्तम मानी जा रही है ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : साथ ही
+Arg1 : उसके कुछ घंटों बाद ही संघ प्रमुख सुदर्शन का वाजपेयी के बयान पर जवाब आया कि गुजरात की हिंसा भाजपा की हार का कारण नहीं थी
+Arg2 : विहिप नेता प्रवीण तोगड़िया का बयान आया कि वाजपेयी को संन्यास ले लेना चाहिए
+------
+classLabel : Contingency.Condition.Hypothetical
+classifiedAs : Temporal
+singleConnectiveName : इसके बाद ही
+Arg1 : इसकी जाँच की जाए
+Arg2 : सस्ती दर पर भूमि प्राप्त करने वाले अस्पताल किसी भी मरीज़ को भर्ती करने के दौरान उससे आय संबंधी कोई भी दस्तावेज या फिर बीपीएल कार्ड इत्यादि नहीं माँगेगा । दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है और इलाज शुरू कर दें
+------
+classLabel : Expansion.Restatement.Generalization
+classifiedAs : Comparison
+singleConnectiveName : यानि
+Arg1 : पिछले साल उत्तर प्रदेश सरकार ने धान के लिए ७२० रुपये प्रति क्विंटल मूल्य निर्धारित करने की सिफारिश आयोग से की थी । क्योंकि धान के लिए उत्तर प्रदेश में लागत मूल्य ६५० रुपये था । लेकिन आयोग ने धान के लिए ५६० रुपये प्रति क्विंटल का मूल्य निर्धारित किया ।
+Arg2 : प्रदेश सरकार की सिफारिशों से काफी कम मूल्य किसानों को मिला ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : समाधान प्रस्ताव सभी संबंधित पक्षों से विचार - विमर्श किया जाएगा
+Arg2 : अंतिम तौर पर शंकराचार्य जी महाराज और ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड के अध्यक्ष मौलाना नदवी साहब ही समाधान प्रस्ताव पर निर्णय करेंगे । वह
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : उन्होंने कहा कि कुछ लोगों को इस बात पर आश्चर्य हो सकता है कि गांधी परिवार का सदस्य होने के बावजूद मैं भाजपा में कैसे शामिल हो गया
+Arg2 : हम पार्टी नहीं विचार धारा का सम्मान करते हैं ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : । पांच कारीगर जान बचाने के लिए दूसरी मंजिल से कूद गए
+Arg2 : घायल हो गए
+------
+classLabel : Expansion.Restatement.Generalization
+classifiedAs : Comparison
+singleConnectiveName : अन्य
+Arg1 : वह तीर - कमान इस्तेमाल नहीं करते बल्कि भाले से मछलियों व सूअरों का शिकार करते हैं । ग्रेट अंडमानीज परंपरागत रूप से जड़ें , समुद्री भोज्य पदार्थ , कछुए व उनके अंडे खाते हैं । लेकिन , पिछले कुछ सालों में उन्होंने शेष भारतवासियों की तरह चावल , दाल व रोटी खाना शुरू किया है । नुकसान देह पेय पीकर वे तरह - तरह की बीमारियों को न्योता दे रहे हैं ।
+Arg2 : भारतीयों के संपर्क में आकर ग्रेट अंडमानीज अपने ही अस्तित्व को खतरे में डाल रहे हैं ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उन्होंने बत्रा , एस्कॉर्टस , जी. एम. मोदी , बिमला देवी , एमकेडब्ल्यू , दीपक मैमोरियल अस्पताल इत्यादि का दौरा किया
+Arg2 : पाया कि किसी भी अस्पताल में गरीब मरीज़ के इलाज के लिए तय नियमों का पालन नहीं हुआ ।
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Contingency
+singleConnectiveName : इसका
+Arg1 : इमराना बलात्कार कांड का विवाद अभी ठंडा भी नहीं पड़ा था कि असम के नागौन जिले में १९ वर्षीय महिला का इमराना जैसा मामला सामने आया है
+Arg2 : उसके ससुर ने बलात्कार किया
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : आगे
+Arg1 : पश्चिम बंगाल के बर्धवान जिले में आज पत्रकारों से बात करते हुए सोमनाथ ने कहा कि ' अगर संसद अपने कुछ सदस्यों की गलत हरकत पर कार्रवाई करता है और इस मामले में हस्तक्षेप करता है तो यह उसका अंदरूनी मामला है । '
+Arg2 : उन्होंने कहा कि उनके इस फैसले पर सभी राजनीतिक दलों ने उनका समर्थन किया है ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : इसके बाद
+Arg1 : टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई ।
+Arg2 : रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+------
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Contingency
+singleConnectiveName : गौरतलब है कि
+Arg1 : जोशीपुरा ने बताया कि अनिल भारद्वाज जल्द ही सरदार पटेल विश्वविद्यालय आने वाले हैं । उनके साथ में इस शोध परियोजना पर बात - चीत करेंगे ।
+Arg2 : जोशीपुरा को नासा के अलबामा स्थित हेंसविले रिसर्च सेंटर में व्याख्यान देने के लिए आमंत्रित किया गया था
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Comparison
+singleConnectiveName : यानि
+Arg1 : ये पढ़ाई तो कर रहे हैं लेकिन रोजगार भाग्य के ही भरोसे है ।
+Arg2 : यह खोटी शिक्षा इन्हें रोजी - रोटी की गारंटी नहीं दे सकती ।
+------
+classLabel : Expansion.Instantiation
+classifiedAs : Comparison
+singleConnectiveName : मसलन ,
+Arg1 : इस बैठक में देश की विदेश नीति के अलावा भी कई अन्य मुद्दे उठाए जाएँगे ।
+Arg2 : कश्मीर में जारी आतंकवाद , महँगाई , कृषि क्षेत्र का संकट आदि
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : व
+Arg1 : इस कानून को लेकर राज्यों के साथ विचार - विमर्श किया जाएगा
+Arg2 : इसके दिशा - निर्देश तैयार किए जाएंगे
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : उल्लेखनीय है कि
+Arg1 : गिलानी को 8 फरवरी को राजधानी के बसंत एंक्लेव इलाके में कुछ अज्ञात लोगों ने गोली मार कर घायल कर दिया था ।
+Arg2 : 13 दिसंबर 2001 को संसद पर आतंकवादी हमले की घटना के मामले में दिल्ली हाई कोर्ट ने गिलानी और नवजोत सिद्धू उर्फ अफशां गुरु को बरी कर दिया था ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : वहीं
+Arg1 : मनाली में घूमने आए पर्यटक अपने होटल के कमरों से बाहर होटल के प्रांगण में निकले और बारिश में भीगकर बारिश की भीनी - भीनी बूंदों का मजा लेने लगे
+Arg2 : स्थानीय लोगों के लिए यह बारिश वरदान से कम नहीं मानी जा रही है
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : क्योंकि
+Arg1 : मार्च में होने वाली सीबीटी बैठक में अतिरिक्त संसाधन जुटाने के मुद्दे पर विचार होगा
+Arg2 : अभी चुनाव आचार संहिता लागू होने के कारण इस संबंध में कोई घोषणा नहीं हो सकती ।
+------
+classLabel : Expansion.Alternative.Chosen alternative
+classifiedAs : Comparison
+singleConnectiveName : बल्कि
+Arg1 : देर तक सोने वाले सीईओ तड़के उठ कर निकल पड़ते हैं प्रातः भ्रमण के लिए नहीं
+Arg2 : आनंद योग के लिए
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : यहाँ तक कि
+Arg1 : पासवान उस वक्त केंद्र में मानव संसाधन विकास राज्य मंत्री थे और भाजपा को उनमें काफी संभावना नज़र आ रही थी ।
+Arg2 : संजय पासवान का प्रदेश भाजपा अध्यक्ष बनना भी तक़रीबन तय लग रहा था
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : चूँकि
+Arg1 : कृषि वानिकी में अपार संभावनाएं हैं
+Arg2 : भारत में हर साल ८ - ९ हजार करोड़ रुपये की लकड़ी आयात होती है
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Contingency
+singleConnectiveName : खासकर
+Arg1 : सबसे अहम् मुद्दा है , कुछ प्रमुख राज्यों के आसन्न विधानसभा चुनाव ।
+Arg2 : साझा सरकारों के इस नए राजनीतिक दौर में इन चुनावों को पार्टी काफी गंभीरता से ले रही है
+------
+classLabel : Expansion.Exception
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : गोस्वामी पहले कह चुके हैं कि पार्टी में किसी भी कीमत पर अनुशासन बनाए रखा जाएगा
+Arg2 : उन्होंने महंत और फूकन के कमजोर नेतृत्व के आरोप पर टिथी करने से इन्कार कर दिया
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उन्हें लोकतांत्रिक तरीके से चुना गया है
+Arg2 : उन्होंने पार्टी के नियमों का सख्ती से पालन किया है
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो दूसरी ओर
+Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
+Arg2 : दूसरी ओर आनंद जैन को बचाने में नाक़ामयाब रहे मुकेश अपने इस मित्र की बेटी की शादी में शामिल होने के लिए गोवा रवाना हो गए हैं
+------
+classLabel : Comparison.Concession.Contra-expectation
+classifiedAs : Contingency
+singleConnectiveName : मानसून
+Arg1 : पंजाब , हरियाणा और चंडीगढ़ में बुधवार सुबह हुई हल्की बारिश से लोगों के चेहरे खुशी से जरूर खिल उठे लेकिन
+Arg2 : के लिए अभी उन्हें कुछ दिन और इंतजार करना होगा । मौसम
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है
+Arg2 : इलाज शुरू कर दें ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो
+Arg1 : ' राजद में आने के बाद मैंने उनसे इसका कारण पूछा
+Arg2 : उन्होंने बताया कि उन्हें लगा कि इसके पीछे संघ की साजिश है
+------
+classLabel : Temporal.Synchrony
+classifiedAs : Expansion
+singleConnectiveName : जैसे ही
+Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
+Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : इससे आयोग सीधे किसानों के संपर्क में रहेगा
+Arg2 : उनकी समस्याओं को बेहतर तरीके से निपटाया जा सकेगा ।
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : क्योंकि
+Arg1 : वह सुप्रीम कोर्ट का नोटिस वापस कर देंगे
+Arg2 : संविधान में यह साफ - साफ लिखा है कि संसद की कार्यवाही में न्यायपालिका का कोई दखल नहीं है ।
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Comparison
+singleConnectiveName : । गौरतलब है कि
+Arg1 : झारखंड सरकार द्वारा उनके खिलाफ दर्ज मामला वापस लिए जाने के बाद उन्हें रिहा किया गया है ।
+Arg2 : १६ फरवरी को एक विरोध प्रदर्शन के दौर में सिन्हा सहित भाजपा के १५० कार्यकर्ताओं ने केंद्र सरकार के कार्यालयों पर ताला लगा दिया था ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : और इसलिए
+Arg1 : किसानों को उनकी फसल का पूरा मूल्य नहीं मिल पाता है
+Arg2 : इसलिए आयोग में किसानों का भी प्रतिनिधित्व होना चाहिए ।
+------
+classLabel : Comparison.Contrast.Opposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : पूरा देश इस समय दैवी आपदा से जूझ रहा है
+Arg2 : सरकार का जिम्मेदार मीडिया ही अफवाह फैलाकर लोगों को गुमराह करने में लगा है
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : दूसरे
+Arg1 : इस बदलाव के पीछे भारत और पाकिस्तान का संघर्ष विराम का पालन करना काम कर रहा है ।
+Arg2 : , बाड़ और सेंसर ने भी काफी मदद की है ।
+------
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Comparison
+singleConnectiveName : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+------
+classLabel : Temporal.Synchrony
+classifiedAs : Expansion
+singleConnectiveName : साथ ही
+Arg1 : शव को पोस्टमार्टम के लिए भेज दिया गया है ।
+Arg2 : पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : और इसके बाद
+Arg1 : २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी
+Arg2 : इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उनके मकानों की दीवारों में दरार आ गई
+Arg2 : ऊपरी हिस्सा टूट गया ।
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Temporal
+singleConnectiveName : इस बीच ,
+Arg1 : रविवार सुबह पार्टी की राज्य इकाई की आपात बैठक में इस मुद्दे पर भी चर्चा की गई । वयोवृद्ध नेता ज्योति बसु और मुख्यमंत्री बुद्धदेव बुद्धदेव भट्टाचार्य समेत कई नेता अपने चुनाव संबंधी कार्यक्रमों को स्थगित कर बैठक में शामिल हुए ।
+Arg2 : पार्टी के वरिष्ठ नेता बिमन बोस ने बताया कि बिस्वास की चुनावी सभा को अब पार्टी के अन्य नेता संबोधित करेंगे ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : दक्षिण
+Arg1 : में बुधवार को भारी वर्षा हुई है यहां यहां ४३.८ ४३.८ मिलीमीटर वर्षा हुई है ।
+Arg2 : पूर्व मानसून हिमाचल प्रदेश में प्रवेश कर गया है इस
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और तभी
+Arg1 : हर मामले की उपयोगिता को परखा जाए
+Arg2 : न्यूनतम साझा कार्यक्रम ( सीएमपी ) के तहत विनिवेश की सिफारिश की जाए
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : व
+Arg1 : मुठभेड़ में कुल चार सुरक्षाकर्मी शहीद हुए
+Arg2 : सात घायल हुए
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Comparison
+singleConnectiveName : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : यहाँ तक कि
+Arg1 : ये पढ़ाई तो कर रहे हैं लेकिन रोजगार भाग्य के ही भरोसे है । यानि यह खोटी शिक्षा इन्हें रोजी - रोटी की गारंटी नहीं दे सकती
+Arg2 : तमाम दावों के बावजूद मानव संसाधन विकास मंत्रालय अभी तक इस मामले में कोई ठोस कार्य योजना नहीं तैयार कर सका है ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : फलतः
+Arg1 : उन्होंने तत्कालीन प्रधानमंत्री राजीव गांधी की सलाह ली तो उन्होंने कहा कि विधानसभा के संकल्प का पूरा सम्मान होना चाहिए ।
+Arg2 : उन्होंने विधान परिषद को खत्म करने का विधेयक पेश किया था और वह पारित हो गया था ।
+------
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Expansion
+singleConnectiveName : गौरतलब है कि
+Arg1 : आतंकवाद कायरतापूर्ण कृत है और यह नफ़रत फैलाता है ।
+Arg2 : बृहस्पतिवार को लंदन में आतंकी हमला हुआ था ।
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : यही वजह है कि
+Arg1 : संघ की सामाजिक व सांस्कृतिक संस्था होने की हकीक़त खुलकर सामने आ गई है । संघ व भाजपा एक ही सिक्के के दो पहलू हैं ।
+Arg2 : जनसंख्या रिपोर्ट का धर्म , समुदाय व वर्ग के नजरिए से विश्लेषण किया गया है ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : एक कारीगर थिनर से कपड़े साफ कर रहा था कि अचानक एक मशीन में स्पार्क हो गया
+Arg2 : आग लग गई ।
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Temporal
+singleConnectiveName : गौरतलब है कि
+Arg1 : मल्होत्रा ने मांग की कि संसद के सेंट्रल हाल में उस जगह पर यादगार के तौर पर एक पट्टिका लगाई जाए जहां से भगत सिंह और उनके दो साथी क्रांतिकारियों ने बम फेंका था और जहां पर बम गिरा था । उन्होंने संसद में भगत सिंह की एक तस्वीर लगाने की भी मांग की ।
+Arg2 : तीनों क्रांतिकारियों को २३ मार्च , १९३१ में फांसी दे दी गई थी ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : और इसी के बाद
+Arg1 : इराक के प्रधानमंत्री इयाद अलावी ने अमेरिका के नेतृत्व वाली गठबंधन सेना को संदिग्ध आतंकियों के खिलाफ हमले की इजाज़त दी थी
+Arg2 : इसी के बाद कार्रवाई की गई
+------
+classLabel : Comparison.Concession.Expectation
+classifiedAs : Contingency
+singleConnectiveName : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+------
+classLabel : Comparison.Contrast.Opposition
+classifiedAs : Contingency
+singleConnectiveName : खुद
+Arg1 : के बचे इन दुलर्भ आदिवासियों को अब खतरा किसी अन्य से नहीं बल्कि
+Arg2 : की बदलती आदतों से है ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : प्रतिदिन की तरह सुबह कर्मचारी फैक्टरी पर पहुंचे
+Arg2 : काम में लग गए
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : इसी प्रकार
+Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है तथा हिंदुओं की 29.6 29.6 फीसदी ,
+Arg2 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं तथा 36.9 36.9 फीसदी हिंदू हैं ।
+------
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : उल्लेखनीय है कि
+Arg1 : शुक्रवार को प्रगति मैदान में चल रहे अंतर्राष्ट्रीय व्यापार मेला में सपा अध्यक्ष और उत्तर प्रदेश के मुख्यमंत्री मुलायम सिंह यादव ने संघ प्रमुख के. एस. सुदर्शन की हिंदुओं को कम से कम तीन बच्चे पैदा करने की सलाह की जमकर खिल्ली उड़ाई ।
+Arg2 : देश में जनसंख्या का सांप्रदायिक आधार पर विश्लेषण करते हुए संघ प्रमुख सुदर्शन ने बृहस्पतिवार को हिंदुओं से कहा था कि बहुसंख्यक - अल्पसंख्यकों की अवधारणा को खत्म करने के लिए उन्हें भी कम से कम तीन बच्चे पैदा करने चाहिए ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : ऐसे में
+Arg1 : इस मामले में और शिकायतों का अंबार लग सकता है
+Arg2 : आयोग के पास केवल एक ही तरह के मामले की भीड़ बढ़ जाएगी ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : आग पर काबू पाने के लिए दमकल की करीब तीन दर्जन गाड़ियां भेजी गई
+Arg2 : लगभग 75 से अधिक दमकलकर्मियों को चार घंटे तक जूझना पड़ा ।
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : इस हमले में ११ लोग मारे गए
+Arg2 : सात घायल हो गए ।
+------
+classLabel : Expansion.Alternative.Chosen alternative
+classifiedAs : Comparison
+singleConnectiveName : बल्कि
+Arg1 : वरुण के अनुसार उनका परिवार कांग्रेस पार्टी के प्रति नहीं
+Arg2 : विचार धाराओं के प्रति प्रतिबद्घ रहा है ।
+------
+classLabel : Temporal.Synchrony
+classifiedAs : Comparison
+singleConnectiveName : इसी दिन
+Arg1 : इधर वेंकैया नायडू अपने बयान से पलट गए और उन्होंने इस मुद्दे पर अलग से चर्चा की बात कही
+Arg2 : विहिप के नेता अशोक सिंघल ने कहा कि भाजपा वाजपेयी और आडवाणी के कारण हारी
+------
+classLabel : Expansion.Exception
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : राकेश ग्रोवर की और भी कई यूनिट हैं
+Arg2 : इस यूनिट का ठेकेदार हरिकिशन है ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : जब वे वहां पहुंचे थे तो वहां भारी पुलिस बल मौजूद था
+Arg2 : पुलिस आयुक्त भी तभी वहां पहुंच गये थे ।
+------
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : ऋण सीमा को ५० हजार रुपए से बढ़ाकर १.५ १.५ लाख किया जाना चाहिए
+Arg2 : इस पर ७ फीसदी के हिसाब से ब्याज दर लागू होनी चाहिए ।
+------
+classLabel : Comparison.Pragmatic concession
+classifiedAs : Expansion
+singleConnectiveName : अलबत्ता
+Arg1 : डॉ. सिंह के कथन से साफ है कि अब इस कानून को गाँधी जयंती से लागू कर पाना संभव नहीं है ।
+Arg2 : १४ नवंबर को नेहरू जयंती के मौके पर इसे लागू किए जाने की संभावना है ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : यह पूछे जाने पर कि
+Arg1 : राव ने कहा , सरकार इस पैसे का इंतजाम करेगी ।
+Arg2 : ईपीएफ ब्याज दर ९.५ ९.५ फीसदी करने के बाद ९२७ करोड़ के घाटे को सरकार किस तरह पूरा करेगी
+------
+classLabel : Comparison.Contrast.Opposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उसके साथ कमलेश , संजय , हरेंद्र , रवि और कृपाशंकर ने भी नीचे कूदकर जान बचाई
+Arg2 : शेष ऊपर ही फंस गए ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : अंततः
+Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए । वजह - लंदन पर अलक़ायदा का आतंकी हमला
+Arg2 : इन नेताओं को संशोधित घोषणा जारी करनी पड़ी , जिसमें आतंकवाद से लड़ने की चुनौती फेहरिस्त में सबसे ऊपर थी
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : आगे
+Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
+Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : यह प्रश्न किए जाने पर कि
+Arg1 : उन्होंने कहा कि वहाँ उप चुनाव हैं । इसलिए , कोंकण का कोई कार्यक्रम नहीं है ।
+Arg2 : क्या सोनिया गाँधी कोंकण भी जाएगीं
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : अगले वर्ष २००० - २००१ में छह अन्य अकाली नेताओं के बच्चों को एनआरआई कोटे के तहत दाखिला दिया गया
+Arg2 : बाद में उनसे सामान्य कोटे की दर से फीस की वसूली की गई
+------
+classLabel : Expansion.Exception
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : कच्चे मालों की दरों में कुछ बदलाव किया जा सकता है
+Arg2 : पीक रेट 20 फीसदी ही रहेगा ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : इसी प्रकार
+Arg1 : आयोग को ऐसा कोई साक्ष्य नहीं मिला है जिससे यह सिद्ध किया जा सके कि गुरुद्वारा रकाबगंज में मौजूदगी के दौरान कमलनाथ ने उत्तेजित भीड़ को भड़काया ।
+Arg2 : वसंत साठे की वहां मौजूदगी संबंधी दावे को आयोग ने भ्रामक माना है ।
+------
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Comparison
+singleConnectiveName : खासकर
+Arg1 : । बुधवार को लोकसभा में आर्थिक सर्वेक्षण पेश करते हुए वित्त मंत्री पी. चिदंबरम ने अर्थव्यवस्था की सुनहरी तसवीर के साथ कुछ खतरों की ओर भी इशारा किया । खासकर पेट्रोलियम पदार्थो की अंतर्राष्ट्रीय कीमतों में बढ़ोतरी रुझान को देखते हुए महंगाई और ब्याज दरों में तेजी आ सकती है । इससे सरकार के अनुमान धरे के धरे रह सकते हैं ।
+Arg2 : अंतर्राष्ट्रीय बाजार में तेल की बढ़ती कीमतों का देश की आर्थिक विकास दर पर पड़ने वाले असर को लेकर सर्वे काफी गंभीर है ।
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : वहीं
+Arg1 : यूपीए का प्रतिनिधित्व प्रधानमंत्री मनमोहन सिंह , यूपीए अध्यक्ष सोनिया गांधी , मंत्रिमंडल के वरिष्ठ मंत्री करेंगे ।
+Arg2 : वाम नेताओं में हरकिशन सिंह सुरजीत , प्रकाश करात , एबी बर्धन , डी. राजा , अबनी रॉय और देबदत्त बिस्वास मौजूद होंगे ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो
+Arg1 : उन्होंने तत्कालीन प्रधानमंत्री राजीव गांधी की सलाह ली
+Arg2 : उन्होंने कहा कि विधानसभा के संकल्प का पूरा सम्मान होना चाहिए ।
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : इस संबंध में
+Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
+Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : लोगों
+Arg1 : हुई हल्की बारिश से तापमान कम हुआ है और
+Arg2 : को गर्मी से राहत मिली है । अमृतसर
+------
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : दूसरी ओर ,
+Arg1 : उधर , गुजरात के ( गो - प्रजनन एवं संरक्षण ) सचिव डी. के. राव ने कहा कि ' मुर्गों को मारने का काम लगभग पूरा हो गया है । मगर अब हमारे सामने बहुत ही मुश्किल काम है कि वर्षों से जमे पक्षियों के मल को कैसे साफ किया जाए । '
+Arg2 : , रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी
+------
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : यही नहीं
+Arg1 : कैग की रिपोर्ट के मुताबिक २००१ से २००४ के दौरान वित्त मंत्रालय द्वारा कारों पर कर घटाने के बावजूद मारुति , टाटा मोटर्स , होंडा और महेंद्रा एंड महेंद्रा जैसी दिग्गज कंपनियों ने उपभोक्ताओं को किसी तरह की रियायत नहीं दी ।
+Arg2 : उत्पाद शुक्ल में कटौती के बावजूद इन कंपनियों ने कारों के दाम भी बढ़ा दिए ।
+------
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : लिहाजा
+Arg1 : ' मुझे प्रदेश अध्यक्ष इसलिए नहीं बनाया गया क्योंकि मेरे पास संघ का सर्टिफिकेट नहीं था
+Arg2 : उन्होंने लालू से तार जोड़ा और आज वे राजद के राष्ट्रीय प्रवक्ता हैं

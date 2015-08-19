@@ -1,0 +1,912 @@
+----------------------------------------------------------------------------------------------------
+1 Frequency: 17
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिसके चलते
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : साथ ही
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+----------------------------------------------------------------------------------------------------
+3 Frequency: 12
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी तरफ
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : ऐसे में
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+----------------------------------------------------------------------------------------------------
+8 Frequency: 12
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जिसके चलते
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : गौरतलब है कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+----------------------------------------------------------------------------------------------------
+7 Frequency: 12
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+----------------------------------------------------------------------------------------------------
+9 Frequency: 12
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वैसे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस प्रकार
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+----------------------------------------------------------------------------------------------------
+11 Frequency: 12
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : ऐसे में
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : की वजह से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+----------------------------------------------------------------------------------------------------
+0 Frequency: 11
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बावजूद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+----------------------------------------------------------------------------------------------------
+5 Frequency: 11
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+----------------------------------------------------------------------------------------------------
+2 Frequency: 11
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+----------------------------------------------------------------------------------------------------
+6 Frequency: 11
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पहले
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसलिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+----------------------------------------------------------------------------------------------------
+10 Frequency: 11
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : जैसे ही
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : साथ ही
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : आगे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस कारण
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+----------------------------------------------------------------------------------------------------
+13 Frequency: 10
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस बारे में
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस दौरान
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस प्रकार
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और तभी
+----------------------------------------------------------------------------------------------------
+14 Frequency: 10
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी ओर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : दूसरी ओर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+----------------------------------------------------------------------------------------------------
+4 Frequency: 9
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+----------------------------------------------------------------------------------------------------
+12 Frequency: 8
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : तथा
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इसी प्रकार
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसलिए
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+----------------------------------------------------------------------------------------------------
+16 Frequency: 5
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+----------------------------------------------------------------------------------------------------
+17 Frequency: 5
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : उसके बाद
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+----------------------------------------------------------------------------------------------------
+19 Frequency: 4
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के कारण
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके बाद
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इस बारे में
+----------------------------------------------------------------------------------------------------
+20 Frequency: 4
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+----------------------------------------------------------------------------------------------------
+22 Frequency: 3
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : खासतौर पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+----------------------------------------------------------------------------------------------------
+15 Frequency: 3
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : जबकि
+----------------------------------------------------------------------------------------------------
+32 Frequency: 3
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+----------------------------------------------------------------------------------------------------
+18 Frequency: 2
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : क्योंकि
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+----------------------------------------------------------------------------------------------------
+29 Frequency: 2
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : उस पर
+----------------------------------------------------------------------------------------------------
+21 Frequency: 2
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इस दौरान
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इसी प्रकार
+----------------------------------------------------------------------------------------------------
+42 Frequency: 2
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे पहले
+----------------------------------------------------------------------------------------------------
+23 Frequency: 2
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+----------------------------------------------------------------------------------------------------
+30 Frequency: 2
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+----------------------------------------------------------------------------------------------------
+34 Frequency: 1
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+----------------------------------------------------------------------------------------------------
+27 Frequency: 1
+------
+classLabel : Yes
+classifiedAs : No
+Single connective : दूसरे
+----------------------------------------------------------------------------------------------------
+26 Frequency: 1
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+----------------------------------------------------------------------------------------------------
+40 Frequency: 1
+------
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
