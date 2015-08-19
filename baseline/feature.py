@@ -239,8 +239,8 @@ class featureDesc():
 		setattr(self,attr_name,attr_value)
 		self.attrList.append(attr_name)
 	def printFeatureDesc(self,FD,ignore_print=[]):
-		ignore_print.append("sentenceNum")
-		ignore_print.append("rawFileName")
+#		ignore_print.append("sentenceNum")
+#		ignore_print.append("rawFileName")
 		ignore_print.append("description")
 		for attr in self.attrList:
 			if(attr in ignore_print):

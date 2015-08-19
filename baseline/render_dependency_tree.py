@@ -36,15 +36,46 @@ dataLocation = sys.argv[1]
 discourseFileCollection=loadModel(dataLocation)
 
 
-def create_graph(currNode , nodeDict , graph):
+def create_graph(currNode , nodeDict , graph,sentence,wordList):
 #	print "\t"*nodeDict[currNode].nodeLevel,currNode
 	for child in nodeDict[currNode].childList:
-		edge = pydot.Edge(currNode,child , label=" "+nodeDict[child].nodeRelation+" ")
+		vertexA=currNode+"_"+get_full_node_label(nodeDict[currNode],sentence,wordList)
+		vertexB=child+"_"+get_full_node_label(nodeDict[child],sentence,wordList)
+#		print vertexA,vertexB
+		edge = pydot.Edge(vertexA,vertexB , label=" "+nodeDict[child].nodeRelation+" ")
+#		print edge
 		graph.add_edge(edge)
 	for child in nodeDict[currNode].childList:
-		graph=create_graph(child,nodeDict,graph)
+		graph=create_graph(child,nodeDict,graph,sentence,wordList)
 	return graph
 
+def get_full_node_label(node,sentence,wordList):
+	chunkNum=node.chunkNum
+	if(chunkNum==-1):
+		return ""
+	label=""
+	chunk=sentence.chunkList[chunkNum]
+	i=0
+	for pos in chunk.wordNumList:
+		label=label+"_"+wordList[pos].word
+		i+=1
+	label=label.replace(" ","")
+	label=label.replace("/","")
+	label=label.replace("?","")
+	label=label.replace("'","")
+	label=label.replace("\"","")
+	label=label.replace(" ","")
+	label=label.replace(":","")
+	label=label.replace(";","")
+	label=label.replace("(","")
+	label=label.replace(")","")
+	label=label.replace(",","")
+	label=label.replace(".","")
+	label=label.replace("-","")
+	label=label.replace("\n","")
+	label=label.replace("\r","")
+#	print repr(label)
+	return label
 
 for discourseFileInst in discourseFileCollection:
 	print discourseFileInst.rawFileName
@@ -54,14 +85,15 @@ for discourseFileInst in discourseFileCollection:
 		if(part.startswith("Section") or filePath!="" ):
 			filePath=filePath+part+"/"
 	filePath="dependencyTreeGraph/"+filePath
-	print filePath
+	print "ahem",filePath
 	createDirectory(filePath)
 	sentenceList=discourseFileInst.sentenceList
+	wordList=discourseFileInst.globalWordList
 	for sentence in sentenceList:
 		graph = pydot.Dot(graph_type='graph')
 		rootNode=sentence.rootNode
 		nodeDict=sentence.nodeDict
 #		print rootNode
 		for node in rootNode:
-			graph=create_graph(node,nodeDict,graph)
-			graph.write_png(filePath+str(sentence.sentenceNum)+".png")
+			graph=create_graph(node,nodeDict,graph,sentence,wordList)
+			graph.write_png(filePath+"/"+str(sentence.sentenceNum)+".png")

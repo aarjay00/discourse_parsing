@@ -18,6 +18,7 @@ class Node():
 		self.nodeParent=node_parent
 		self.childList=[]
 		self.nodeLevel=-1
+		self.chunkNum=-1
 	def addChild(self,child):
 		self.childList.append(child)
 	def getChunkName(self,node_name):
@@ -45,6 +46,8 @@ class Sentence():
 		self.wordNumList.append(word)
 	def addNode(self,node):
 		self.nodeDict[node.nodeName]=node
+	def addChunkNumToNode(self,node_name,chunk_num):
+		self.nodeDict[node_name].chunkNum=chunk_num
 
 class Chunk():
 	def __init__(self,tag,node_name,features_set,sentenceNum,chunk_num):
@@ -172,6 +175,7 @@ def extractSSFannotations(filePath):
 				sentenceInst.addNode(nodeInst)
 			  	if(len(chunkInst.wordNumList)!=0):
 					sentenceInst.addChunk(chunkInst)
+					sentenceInst.addChunkNumToNode(nodeInst.nodeName,chunkInst.chunkNum)
 				else:
 					print "found file with empty chunk !!!",filePath
 					chunkNum-=1
