@@ -55,7 +55,14 @@ class discourseFile():
 			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 			print conn
 			print "---",
+			connective=getSpan(conn,self.globalWordList)
+			connList=connList=loadConnList("lists/compConnectiveList.list")
+			if(connective not in connList and not isSplitConn):
+				print "FIX THIS!!!!",connective
 			for pos in conn:
+			 	if(self.globalWordList[pos].word=="," or self.globalWordList[pos].word=="।"):
+			 		print "gagaga",connective
+					continue
 				relation.connList.append(pos)
 				if(isSplitConn):
 					print "huihui"

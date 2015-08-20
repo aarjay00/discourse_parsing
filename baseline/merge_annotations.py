@@ -178,7 +178,6 @@ def mappingBetweenFiles(wordList,rawData):
 #	def addSSFData(self,ssf):
 #		self.SSFData=ssf
 def getStartPos(rawData,wordList):
-	print rawData
 	startString=wordList[0].word
 	for i in range(1,5):
 		startString=startString+" "+wordList[i].word

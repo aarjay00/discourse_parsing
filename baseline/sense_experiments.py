@@ -75,8 +75,8 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		feature.tagFeature(conn)
 #		feature.chunkSeqFeature(getChunkSeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
 #		feature.chunkSeqFeature(getChunkSeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
-		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
-		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
+#		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
+#		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
 #		feature.tagNeighbor(conn,-1)
 #		feature.tagNeighbor(conn,1)
 #		feature.tagNeighbor(conn,-2)
@@ -167,9 +167,10 @@ for discourseFile in discourseFileCollection:
 		for pos in arg2Span:
 			print wordList[pos].word,
 		print ""
-
+		connective=getSpan(conn,wordList)
 		if(wordList[conn[0]].sense.split(".")[0]=="_Without_sense"):
 			continue
+		print "getaaa",connective.replace(" ","_"),wordList[conn[0]].sense.split(".")[0]
 		featureCollectionSingle.append(genFeatureSingleConn(conn,(wordList[conn[0]].sense).split(".")[0],discourseFile))
 		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense,len(featureDescSingleCollection))
 		featureDescInst.addAttr("singleConnectiveName",getSpan(conn,wordList))
@@ -202,18 +203,23 @@ max_acc=-1
 min_acc=100
 max_precision=-1
 min_precision=100
-time=1
-for i in range(0,time):
+time=20
+accuracyFinal={}
+accuracyMax={}
+accuracyMin={}
+for iteration in range(0,time):
+	print "running"
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z,l=runModel(featureCollectionSingle,featureDescSingleCollection,classList,"sense_identification",10,1,1)
-	a+=x
-	b+=y
-	c+=z
-	d+=l
-	max_acc=max(max_acc,z)
-	min_acc=min(min_acc,z)
-	max_precision=max(max_precision,l)
-	min_precision=min(min_precision,l)
-print "Accuracy",max_acc,"-",min_acc
-print "F-measure",max_precision,"-",min_precision
-print a/time,b/time,c/time,d/time
+	x,y,z=runModel(featureCollectionSingle,featureDescSingleCollection,classList,"sense_identification",15,1,1)
+	for key in x.keys():
+		if(key not in accuracyFinal):
+			accuracyFinal[key]=0.0
+			accuracyMax[key]=-1.0
+			accuracyMin[key]=101.0
+		accuracyFinal[key]=(accuracyFinal[key]*iteration+x[key])/(iteration+1)
+		accuracyMin[key]=min(accuracyMin[key],x[key])
+		accuracyMax[key]=max(accuracyMax[key],x[key])
+
+for key in accuracyFinal.keys():
+	print key
+	print accuracyMin[key],"-",accuracyMax[key]," Avg-",accuracyFinal[key]
