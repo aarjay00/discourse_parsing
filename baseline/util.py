@@ -129,6 +129,7 @@ def writeResults(discourseRelationList,filePath):
 			string+=(discourseRelation.arg2Span+"||||||")
 		outFD.write(string+"\n")
 	outFD.close()
+
 def exportModel(filePath,model):
 	fileFD=codecs.open(filePath,"w",encoding="utf-8")
 	pickle.dump(model,fileFD)

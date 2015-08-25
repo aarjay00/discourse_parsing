@@ -1,262 +1,262 @@
-Connective: लेकिन
-	Comparison -- 68
-	Expansion -- 4
-	Contingency -- 1
-Connective: पहले
-	Temporal -- 1
-Connective: वहीं_पर
-	Expansion -- 1
-Connective: उल्लेखनीय_है_कि
-	Expansion -- 4
-	Contingency -- 1
-Connective: ऐसे_में
-	Contingency -- 1
-Connective: और_इसके_बाद
-	Expansion -- 1
-Connective: इसका
-	Expansion -- 1
-Connective: बहरहाल
-	Comparison -- 8
-Connective: ऐसा_किए_जाने_से
-	Contingency -- 1
-Connective: जबकि
-	Comparison -- 34
-Connective: शायद_ही
-	Expansion -- 1
-Connective: जिससे
-	Contingency -- 4
-Connective: बावजूद_इसके
-	Comparison -- 1
-Connective: इससे_पहले
-	Temporal -- 4
-Connective: आखिरकार
-	Contingency -- 1
-Connective: की_वजह_से
-	Contingency -- 4
-Connective: लिहाज़ा
-	Contingency -- 1
-Connective: इसके_अलावा
-	Expansion -- 15
-	Comparison -- 1
-Connective: अंततः
-	Contingency -- 1
-	Expansion -- 1
-Connective: इसी_डर_से
-	Contingency -- 1
-Connective: इस_बात_पर
-	Contingency -- 1
-Connective: मगर
-	Comparison -- 4
-Connective: बताया_जाता_है_कि
-	Expansion -- 2
-Connective: साथ_ही
-	Expansion -- 14
-	Temporal -- 1
-Connective: पर
-	Comparison -- 8
-Connective: तो
-	Contingency -- 6
-	Comparison -- 2
-Connective: के_कारण
-	Contingency -- 3
-Connective: और_इसी_के_बाद
-	Expansion -- 1
-Connective: इसके_लिए
-	Contingency -- 3
-Connective: खासतौर_पर
-	Expansion -- 1
-Connective: इधर
-	Comparison -- 1
-Connective: और_तभी
-	Temporal -- 1
-Connective: नतीजतन
-	Contingency -- 1
-Connective: तो_दूसरी_ओर
-	Contingency -- 1
-Connective: तथा
-	Expansion -- 6
-	Comparison -- 4
-Connective: मालूम_हो_कि
-	Comparison -- 1
-Connective: से
-	Contingency -- 1
-Connective: जिसके_चलते
-	Contingency -- 2
-Connective: इसके_चलते
-	Contingency -- 3
-Connective: जिससे_कि
-	Contingency -- 1
-Connective: दूसरी_ओर
-	Comparison -- 9
-	Expansion -- 1
-Connective: यह_प्रश्न_किए_जाने_पर_कि
-	Contingency -- 1
-Connective: इस_संबंध_में
-	Expansion -- 1
-Connective: मसलन
-	Expansion -- 1
-Connective: इसी_तरह_से
-	Expansion -- 1
-Connective: या_फिर
-	Expansion -- 2
-Connective: और_इसलिए
-	Expansion -- 1
-Connective: और_उसके_बाद
-	Temporal -- 1
-Connective: इसीलिए
-	Contingency -- 2
-Connective: इस_तरह
-	Expansion -- 1
-Connective: में
-	Comparison -- 1
-Connective: दूसरी_तरफ
-	Comparison -- 2
-Connective: वहां_इस_दौरान
-	Temporal -- 1
-Connective: इसलिए
-	Contingency -- 18
-Connective: इस_प्रकार
-	Contingency -- 1
-Connective: इस_कारण
-	Contingency -- 1
-Connective: बताया_जाता_है
-	Comparison -- 1
-Connective: वजह
-	Contingency -- 1
-Connective: के_बावजूद
-	Comparison -- 1
-Connective: खासकर
-	Expansion -- 3
-Connective: इनके_अलावा
-	Expansion -- 1
-Connective: वैसे
-	Comparison -- 1
-Connective: इसी_दिन
-	Temporal -- 1
-Connective: और
-	Expansion -- 102
-	Temporal -- 13
-	Comparison -- 5
-	Contingency -- 3
-Connective: इसके_बाद_ही
-	Contingency -- 1
-Connective: इसके_पूर्व
-	Temporal -- 1
-Connective: इसी_प्रकार
-	Expansion -- 2
-	Comparison -- 1
-Connective: समझा_जाता_है_कि
-	Temporal -- 1
-Connective: क्योंकि
-	Contingency -- 9
-Connective: यानि
-	Expansion -- 4
-	Contingency -- 1
-Connective: और_इससे
-	Expansion -- 1
-Connective: इसी_के_बाद
-	Temporal -- 1
-Connective: गौरतलब_है_कि
-	Temporal -- 5
-	Contingency -- 4
-	Expansion -- 4
-	Comparison -- 1
-Connective: इसके_थोड़ी_देर_बाद
-	Temporal -- 1
-Connective: इसका_उद्देश्य
-	Contingency -- 1
-Connective: या
-	Expansion -- 9
-Connective: इसके_बाद
-	Temporal -- 11
-Connective: अलबत्ता
-	Comparison -- 2
-Connective: इतना_ही_नहीं
-	Expansion -- 1
-Connective: वहीं
-	Comparison -- 14
-	Expansion -- 1
-Connective: इससे
-	Contingency -- 6
-Connective: दरअसल
-	Contingency -- 2
-	Expansion -- 1
-Connective: फलतः
-	Contingency -- 1
-Connective: उसके_बाद
-	Temporal -- 2
-Connective: कुछ_दिनों_पहले_ही
-	Temporal -- 1
-Connective: ताकि
-	Contingency -- 6
-Connective: तब
-	Temporal -- 2
-Connective: बाद_में
-	Temporal -- 4
-Connective: इस_बीच
-	Temporal -- 8
-	Comparison -- 1
-Connective: यहाँ_तक_कि
-	Expansion -- 3
-	Contingency -- 1
-Connective: इसके_साथ_ही
-	Expansion -- 3
-Connective: उधर_एक
-	Comparison -- 1
-Connective: हालाकि
-	Comparison -- 1
-Connective: जिसकी_वजह_से
-	Contingency -- 1
-Connective: इसके_मद्देनजर
-	Contingency -- 1
-Connective: बल्कि
-	Comparison -- 5
-	Expansion -- 2
-Connective: उस_पर
-	Expansion -- 1
-Connective: के_बाद
-	Temporal -- 13
-Connective: लिहाजा
-	Contingency -- 2
-Connective: इससे_पूर्व
-	Temporal -- 1
-Connective: दूसरे
-	Expansion -- 1
-Connective: व
-	Expansion -- 2
-Connective: यह_भी_कहा_जा_रहा_है_कि
-	Expansion -- 1
-Connective: यही_नहीं
-	Expansion -- 2
-Connective: यही_वजह_है_कि
-	Contingency -- 2
-Connective: के_लिए
-	Contingency -- 5
-Connective: उधर
-	Comparison -- 28
-	Expansion -- 2
-Connective: इस_पर
-	Contingency -- 6
-Connective: यह_पूछे_जाने_पर_कि
-	Contingency -- 1
-Connective: इसी_तरह
-	Comparison -- 1
-Connective: आगे
-	Expansion -- 3
-	Temporal -- 2
-Connective: वहीं_दूसरी_ओर
-	Comparison -- 1
-Connective: इसके_अतिरिक्त
-	Expansion -- 1
-Connective: इस_बारे_में
-	Expansion -- 1
-Connective: चूँकि
-	Contingency -- 1
-Connective: इस_दौरान
-	Temporal -- 7
-Connective: हालांकि
-	Comparison -- 19
-Connective: इसके_बाद_से
-	Temporal -- 1
-Connective: जैसे_ही
-	Temporal -- 1
+Connective: और Total Instances- 123
+	Expansion --- Instances 102 --- Percentage 82.9268292683 %
+	Temporal --- Instances 13 --- Percentage 10.5691056911 %
+	Comparison --- Instances 5 --- Percentage 4.06504065041 %
+	Contingency --- Instances 3 --- Percentage 2.43902439024 %
+Connective: लेकिन Total Instances- 73
+	Comparison --- Instances 68 --- Percentage 93.1506849315 %
+	Expansion --- Instances 4 --- Percentage 5.47945205479 %
+	Contingency --- Instances 1 --- Percentage 1.3698630137 %
+Connective: जबकि Total Instances- 34
+	Comparison --- Instances 34 --- Percentage 100.0 %
+Connective: उधर Total Instances- 30
+	Comparison --- Instances 28 --- Percentage 93.3333333333 %
+	Expansion --- Instances 2 --- Percentage 6.66666666667 %
+Connective: हालांकि Total Instances- 19
+	Comparison --- Instances 19 --- Percentage 100.0 %
+Connective: इसलिए Total Instances- 18
+	Contingency --- Instances 18 --- Percentage 100.0 %
+Connective: इसके_अलावा Total Instances- 16
+	Expansion --- Instances 15 --- Percentage 93.75 %
+	Comparison --- Instances 1 --- Percentage 6.25 %
+Connective: साथ_ही Total Instances- 15
+	Expansion --- Instances 14 --- Percentage 93.3333333333 %
+	Temporal --- Instances 1 --- Percentage 6.66666666667 %
+Connective: वहीं Total Instances- 15
+	Comparison --- Instances 14 --- Percentage 93.3333333333 %
+	Expansion --- Instances 1 --- Percentage 6.66666666667 %
+Connective: गौरतलब_है_कि Total Instances- 14
+	Temporal --- Instances 5 --- Percentage 35.7142857143 %
+	Contingency --- Instances 4 --- Percentage 28.5714285714 %
+	Expansion --- Instances 4 --- Percentage 28.5714285714 %
+	Comparison --- Instances 1 --- Percentage 7.14285714286 %
+Connective: के_बाद Total Instances- 13
+	Temporal --- Instances 13 --- Percentage 100.0 %
+Connective: इसके_बाद Total Instances- 11
+	Temporal --- Instances 11 --- Percentage 100.0 %
+Connective: दूसरी_ओर Total Instances- 10
+	Comparison --- Instances 9 --- Percentage 90.0 %
+	Expansion --- Instances 1 --- Percentage 10.0 %
+Connective: तथा Total Instances- 10
+	Expansion --- Instances 6 --- Percentage 60.0 %
+	Comparison --- Instances 4 --- Percentage 40.0 %
+Connective: या Total Instances- 9
+	Expansion --- Instances 9 --- Percentage 100.0 %
+Connective: क्योंकि Total Instances- 9
+	Contingency --- Instances 9 --- Percentage 100.0 %
+Connective: इस_बीच Total Instances- 9
+	Temporal --- Instances 8 --- Percentage 88.8888888889 %
+	Comparison --- Instances 1 --- Percentage 11.1111111111 %
+Connective: बहरहाल Total Instances- 8
+	Comparison --- Instances 8 --- Percentage 100.0 %
+Connective: पर Total Instances- 8
+	Comparison --- Instances 8 --- Percentage 100.0 %
+Connective: तो Total Instances- 8
+	Contingency --- Instances 6 --- Percentage 75.0 %
+	Comparison --- Instances 2 --- Percentage 25.0 %
+Connective: बल्कि Total Instances- 7
+	Comparison --- Instances 5 --- Percentage 71.4285714286 %
+	Expansion --- Instances 2 --- Percentage 28.5714285714 %
+Connective: इस_दौरान Total Instances- 7
+	Temporal --- Instances 7 --- Percentage 100.0 %
+Connective: ताकि Total Instances- 6
+	Contingency --- Instances 6 --- Percentage 100.0 %
+Connective: इससे Total Instances- 6
+	Contingency --- Instances 6 --- Percentage 100.0 %
+Connective: इस_पर Total Instances- 6
+	Contingency --- Instances 6 --- Percentage 100.0 %
+Connective: यानि Total Instances- 5
+	Expansion --- Instances 4 --- Percentage 80.0 %
+	Contingency --- Instances 1 --- Percentage 20.0 %
+Connective: के_लिए Total Instances- 5
+	Contingency --- Instances 5 --- Percentage 100.0 %
+Connective: उल्लेखनीय_है_कि Total Instances- 5
+	Expansion --- Instances 4 --- Percentage 80.0 %
+	Contingency --- Instances 1 --- Percentage 20.0 %
+Connective: आगे Total Instances- 5
+	Expansion --- Instances 3 --- Percentage 60.0 %
+	Temporal --- Instances 2 --- Percentage 40.0 %
+Connective: यहाँ_तक_कि Total Instances- 4
+	Expansion --- Instances 3 --- Percentage 75.0 %
+	Contingency --- Instances 1 --- Percentage 25.0 %
+Connective: मगर Total Instances- 4
+	Comparison --- Instances 4 --- Percentage 100.0 %
+Connective: बाद_में Total Instances- 4
+	Temporal --- Instances 4 --- Percentage 100.0 %
+Connective: जिससे Total Instances- 4
+	Contingency --- Instances 4 --- Percentage 100.0 %
+Connective: की_वजह_से Total Instances- 4
+	Contingency --- Instances 4 --- Percentage 100.0 %
+Connective: इससे_पहले Total Instances- 4
+	Temporal --- Instances 4 --- Percentage 100.0 %
+Connective: दरअसल Total Instances- 3
+	Contingency --- Instances 2 --- Percentage 66.6666666667 %
+	Expansion --- Instances 1 --- Percentage 33.3333333333 %
+Connective: खासकर Total Instances- 3
+	Expansion --- Instances 3 --- Percentage 100.0 %
+Connective: के_कारण Total Instances- 3
+	Contingency --- Instances 3 --- Percentage 100.0 %
+Connective: इसी_प्रकार Total Instances- 3
+	Expansion --- Instances 2 --- Percentage 66.6666666667 %
+	Comparison --- Instances 1 --- Percentage 33.3333333333 %
+Connective: इसके_साथ_ही Total Instances- 3
+	Expansion --- Instances 3 --- Percentage 100.0 %
+Connective: इसके_लिए Total Instances- 3
+	Contingency --- Instances 3 --- Percentage 100.0 %
+Connective: इसके_चलते Total Instances- 3
+	Contingency --- Instances 3 --- Percentage 100.0 %
+Connective: व Total Instances- 2
+	Expansion --- Instances 2 --- Percentage 100.0 %
+Connective: लिहाजा Total Instances- 2
+	Contingency --- Instances 2 --- Percentage 100.0 %
+Connective: या_फिर Total Instances- 2
+	Expansion --- Instances 2 --- Percentage 100.0 %
+Connective: यही_वजह_है_कि Total Instances- 2
+	Contingency --- Instances 2 --- Percentage 100.0 %
+Connective: यही_नहीं Total Instances- 2
+	Expansion --- Instances 2 --- Percentage 100.0 %
+Connective: बताया_जाता_है_कि Total Instances- 2
+	Expansion --- Instances 2 --- Percentage 100.0 %
+Connective: दूसरी_तरफ Total Instances- 2
+	Comparison --- Instances 2 --- Percentage 100.0 %
+Connective: तब Total Instances- 2
+	Temporal --- Instances 2 --- Percentage 100.0 %
+Connective: जिसके_चलते Total Instances- 2
+	Contingency --- Instances 2 --- Percentage 100.0 %
+Connective: उसके_बाद Total Instances- 2
+	Temporal --- Instances 2 --- Percentage 100.0 %
+Connective: इसीलिए Total Instances- 2
+	Contingency --- Instances 2 --- Percentage 100.0 %
+Connective: अलबत्ता Total Instances- 2
+	Comparison --- Instances 2 --- Percentage 100.0 %
+Connective: अंततः Total Instances- 2
+	Contingency --- Instances 1 --- Percentage 50.0 %
+	Expansion --- Instances 1 --- Percentage 50.0 %
+Connective: हालाकि Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: से Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: समझा_जाता_है_कि Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: शायद_ही Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: वैसे Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: वहीं_पर Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: वहीं_दूसरी_ओर Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: वहां_इस_दौरान Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: वजह Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: लिहाज़ा Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: यह_भी_कहा_जा_रहा_है_कि Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: यह_प्रश्न_किए_जाने_पर_कि Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: यह_पूछे_जाने_पर_कि Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: में Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: मालूम_हो_कि Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: मसलन Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: बावजूद_इसके Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: बताया_जाता_है Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: फलतः Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: पहले Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: नतीजतन Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: दूसरे Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: तो_दूसरी_ओर Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: जैसे_ही Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: जिससे_कि Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: जिसकी_वजह_से Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: चूँकि Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: खासतौर_पर Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: के_बावजूद Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: कुछ_दिनों_पहले_ही Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: और_तभी Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: और_उसके_बाद Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: और_इसी_के_बाद Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: और_इससे Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: और_इसलिए Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: और_इसके_बाद Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: ऐसे_में Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: ऐसा_किए_जाने_से Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: उस_पर Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: उधर_एक Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: इसी_दिन Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इसी_तरह_से Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इसी_तरह Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: इसी_डर_से Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इसी_के_बाद Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इससे_पूर्व Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_मद्देनजर Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_बाद_ही Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_बाद_से Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_पूर्व Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_थोड़ी_देर_बाद Total Instances- 1
+	Temporal --- Instances 1 --- Percentage 100.0 %
+Connective: इसके_अतिरिक्त Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इसका_उद्देश्य Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इसका Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इस_संबंध_में Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इस_बारे_में Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इस_बात_पर Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इस_प्रकार Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इस_तरह Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इस_कारण Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %
+Connective: इनके_अलावा Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: इधर Total Instances- 1
+	Comparison --- Instances 1 --- Percentage 100.0 %
+Connective: इतना_ही_नहीं Total Instances- 1
+	Expansion --- Instances 1 --- Percentage 100.0 %
+Connective: आखिरकार Total Instances- 1
+	Contingency --- Instances 1 --- Percentage 100.0 %

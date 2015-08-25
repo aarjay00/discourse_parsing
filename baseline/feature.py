@@ -3,6 +3,7 @@
 import sys
 import codecs
 import numpy
+import itertools
 reload(sys)
 sys.setdefaultencoding("utf-8")
 from util import *
@@ -15,6 +16,7 @@ class Feature():
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])
 		self.chunkSet=self.loadSet(chunk_path,["First","Last","Null"])
+		self.loadCombo("chunkSet")
 		self.categorySet=self.loadSet("./lists/category.list")
 		self.dependencySet=self.loadSet("./lists/dependencySet.list",["Null","None"])
 		self.nodeRelationSet=self.loadSet("./lists/nodeRelation.list")
@@ -50,17 +52,29 @@ class Feature():
 		Set=[]
 		fileFD=codecs.open(filePath,"r",encoding="utf-8")
 		for line in fileFD.readlines():
-			line=line.split()
-			for word in line:
-				Set.append(word)
+			line=line.strip()
+			Set.append(line)
 		Set.extend(extra)
 		return Set
-	def wordFeature(self,wordList):
-		print "wordfeature"
+	def loadCombo(self,setName):
+		singleSet=getattr(self,setName)
+		setattr(self,setName+"Combo",[i[0]+" "+i[1] for i in itertools.product(singleSet,singleSet)])
+#		print "combo",getattr(self,setName+"Combo")
+	def wordFeature(self,wordList,wordList2=[]):
+		print "wordfeature",
 		words=[]
+		w=""
 		for word in wordList:
 			word=self.globalWordList[word].word
-			words.append(word)
+			w=w+word+" "
+#			words.append(word)
+		if(len(wordList2)!=0):
+			w=w[:-1]+".."
+		for word in wordList2:
+			word=self.globalWordList[word].word
+			w=w+word+" "
+		print w
+		words.append(w[:-1])
 		feature=self.markItemsinList(words,self.wordDictionary)
 		print feature
 		return feature
@@ -88,7 +102,7 @@ class Feature():
 			print word.wordTag,
 			tagList.append(word.wordTag)
 		print ""
-		feature=self.markItemsinList(tagList,self.tagSet)
+		feature=self.markItemsinList(list(set(tagList)),self.tagSet)
 		print feature
 		return feature
 	def tagNeighbor(self,wordList,offSet):
@@ -98,12 +112,15 @@ class Feature():
 			if(wordList[0]+offSet<0):
 				tagList.append("First")
 			else:
-				tagList.append(self.globalWordList[wordList[0]+offSet].word)
+				tagList.append(self.globalWordList[wordList[0]+offSet].wordTag)
 		else:
 			if(wordList[-1]+offSet>=len(self.globalWordList)):
 				tagList.append("Last")
 			else:
-			 	tagList.append(self.globalWordList[wordList[-1]+offSet].word)
+			 	tagList.append(self.globalWordList[wordList[-1]+offSet].wordTag)
+		for tag in tagList:
+			print tag,
+		print ""
 		feature=self.markItemsinList(tagList,self.tagSet)
 		print feature
 		return feature
@@ -115,8 +132,28 @@ class Feature():
 			print self.getChunkInfo(word,0).chunkTag,
 			chunkList.append(self.getChunkInfo(word,0).chunkTag)
 		print ""
+		chunkList=list(set(chunkList))
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
+	def chunkCombo(self,wordList,offSet):
+		print "chunkCombo",offSet
+		chunkList=[]
+		chunk=self.getChunkInfo(self.globalWordList[wordList[0]],0).chunkTag
+		if(offSet<0):
+			try:
+				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag
+			except AttributeError:
+				chunk=chunk+" First"
+		else:
+			try:
+				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag
+			except AttributeError:
+				chunk=chunk+" Last"
+		chunkList.append(chunk)
+		for chunk in chunkList:
+			print chunk
+		print ""
+		feature=self.markItemsinList(chunkList,self.chunkSetCombo)
 	def chunkNeighbor(self,wordList,offSet):
 		print "chunkNeighbor",offSet
 		chunkList=[]
@@ -130,7 +167,9 @@ class Feature():
 				chunkList.append(self.getChunkInfo(self.globalWordList[wordList[-1]],offSet).chunkTag)
 			except AttributeError:
 				chunkList.append("Last")
-		print chunkList
+		for chunk in chunkList:
+			print chunk
+		print ""
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 	def tamFeature(self,wordList):
 		print "tamFeature"
@@ -180,12 +219,18 @@ class Feature():
 			print "ERROR !!!!",nodeListName
 		feature=self.markItemsinList([node_feature],nodeSet)
 	def markItemsinList(self,List,Set):
+# 		set is universal set out of which marking objects contained in list
 		feature=[]
+		notMarked=0
 		for item in Set:
 			if(item in List):
+				print item,"marked"
 				feature.append(1)
+				notMarked+=1
 			else:
 				feature.append(0)
+		if(notMarked!=len(List)):
+			print "feature ERROR"
 		self.featureVector.extend(feature)
 		return feature
 	def getChunkInfo(self,word,offSet):
@@ -220,6 +265,12 @@ class Feature():
 			return [1]
 		self.featureVector.append(0)
 		return [0]
+	def cleanFeature(self,removeList):
+		removeList=sorted(removeList,reverse=True)
+		for pos in removeList:
+			val=self.featureVector.pop(pos)
+			if(val==1):
+				print "clean ERROR"
 
 	def setClassLabel(self,label):
 		self.classLabel=label
@@ -249,12 +300,30 @@ class featureDesc():
 		return
 
 def convertDataSet(featureCollection):
+	print "-"*50,"ConvertDataSet"
 	data=[]
 	labels=[]
 	for feature in featureCollection:
-		data.append(numpy.array(feature.featureVector))
+		numpyArr=numpy.array(feature.featureVector)
+		data.append(numpyArr)
 		labels.append(feature.classLabel)
 	labels=numpy.array(labels)
 	data=numpy.array(data)
 	return data,labels
-
+def removeExtraFeatures(featureCollection):
+	featureSize=len(featureCollection[0].featureVector)
+	featurePresent=[]
+	print "featureSize---",featureSize
+	for i in featureCollection[0].featureVector:
+		featurePresent.append(False)
+	for feature in featureCollection:
+		vector=feature.featureVector
+		for pos in range(0,featureSize):
+			if(vector[pos]==1):
+				featurePresent[pos]=True
+	remove=[]
+	for pos in range(0,featureSize):
+		if(not featurePresent[pos]):
+			remove.append(pos)
+	print "useless features",remove
+	return remove
