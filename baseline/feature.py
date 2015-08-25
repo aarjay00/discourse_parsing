@@ -109,12 +109,12 @@ class Feature():
 		print "tagNeighbor"
 		tagList=[]
 		if(offSet<0):
-			if(wordList[0]+offSet<0):
+			if(wordList[0]+offSet<0 or self.globalWordList[wordList[0]+offSet].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
 				tagList.append("First")
 			else:
 				tagList.append(self.globalWordList[wordList[0]+offSet].wordTag)
 		else:
-			if(wordList[-1]+offSet>=len(self.globalWordList)):
+			if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1]+offSet].sentenceNum):
 				tagList.append("Last")
 			else:
 			 	tagList.append(self.globalWordList[wordList[-1]+offSet].wordTag)
@@ -135,24 +135,36 @@ class Feature():
 		chunkList=list(set(chunkList))
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
-	def chunkCombo(self,wordList,offSet):
-		print "chunkCombo",offSet
+	def chunkCombo(self,wordList,offSet1,offSet2):
+		print "chunkCombo",offSet1,offSet2
 		chunkList=[]
-		chunk=self.getChunkInfo(self.globalWordList[wordList[0]],0).chunkTag
-		if(offSet<0):
+		chunk=""
+		if(offSet1==0):
+			chunk=self.getChunkInfo(self.globalWordList[wordList[0]],0).chunkTag
+		elif(offSet1<0):
 			try:
-				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag
+				chunk=self.getChunkInfo(self.globalWordList[wordList[0]],offSet1).chunkTag
 			except AttributeError:
-				chunk=chunk+" First"
+				chunk="First"
 		else:
 			try:
-				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag
+				chunk=self.getChunkInfo(self.globalWordList[wordList[0]],offSet1).chunkTag
 			except AttributeError:
-				chunk=chunk+" Last"
+				chunk="Last"
+		if(offSet2==0):
+			chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],0).chunkTag
+		elif(offSet2<0):
+			try:
+				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet2).chunkTag
+			except AttributeError:
+				chunk=chunk+" "+"First"
+		else:
+			try:
+				chunk=chunk+" "+self.getChunkInfo(self.globalWordList[wordList[0]],offSet2).chunkTag
+			except AttributeError:
+				chunk=chunk+" "+"Last"
 		chunkList.append(chunk)
-		for chunk in chunkList:
-			print chunk
-		print ""
+		print chunk
 		feature=self.markItemsinList(chunkList,self.chunkSetCombo)
 	def chunkNeighbor(self,wordList,offSet):
 		print "chunkNeighbor",offSet
@@ -240,31 +252,6 @@ class Feature():
 		else:
 			chunk=None
 		return chunk
-
-	def aurFeature(self,conn):
-		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
-			self.featureVector.append(0)
-			return [0]
-		chunkNum=0
-                before=False
-                after=False
-                middle=False
-		sentence=self.discourseFile.sentenceList[self.globalWordList[conn[0]].sentenceNum]
-                for chunk in sentence.chunkList:
-                        if(chunk.chunkTag[:2]=="VG"):
-                                if(middle==False):
-                                        before=True
-                                else:
-                                        after=True
-                        for word in chunk.wordNumList:
-                                if(self.discourseFile.globalWordList[word].word==u'\u0914\u0930'):
-                                        middle=True
-                        chunkNum+=1
-		if(before and after):
-			self.featureVector.append(1)
-			return [1]
-		self.featureVector.append(0)
-		return [0]
 	def cleanFeature(self,removeList):
 		removeList=sorted(removeList,reverse=True)
 		for pos in removeList:
