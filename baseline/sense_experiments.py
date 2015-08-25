@@ -78,13 +78,13 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg1Span,wordList,sentenceList))
 #		feature.dependencySeqFeature(getDependencySeq(wordList[conn[0]].arg2Span,wordList,sentenceList))
 #		feature.tagNeighbor(conn,-1)
-#		feature.tagNeighbor(conn,1)
+		feature.tagNeighbor(conn,1)
 #		feature.tagNeighbor(conn,-2)
-#		feature.tagNeighbor(conn,2)
+		feature.tagNeighbor(conn,2)
 		feature.chunkFeature(conn)
-#		feature.chunkNeighbor(conn,1)
+		feature.chunkNeighbor(conn,1)
 #		feature.chunkNeighbor(conn,-1)
-#		feature.chunkNeighbor(conn,2)
+		feature.chunkNeighbor(conn,2)
 #		feature.chunkNeighbor(conn,-2)
 		feature.setClassLabel(label)
 #		feature.aurFeature(conn)
@@ -182,6 +182,13 @@ for discourseFile in discourseFileCollection:
 	fileNum+=1
 
 print len(connSingleSet),len(connSplitSet)
+
+extraFeatureList=removeExtraFeatures(featureCollectionSingle)
+for featureNum in range(0,len(featureCollectionSingle)):
+	featureCollectionSingle[featureNum].cleanFeature(extraFeatureList)
+print "featureSize",len(featureCollectionSingle[0].featureVector)
+
+
 
 print "avgLen",chunkSeqLen1
 print "avgLen",chunkSeqLen2

@@ -1,5 +1,53 @@
 ----------------------------------------------------------------------------------------------------
-4 Frequency: 10
+4 Frequency: 11
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : बताया जाता है कि
+Arg1 : राज्य के पूर्व मुख्यमंत्री बेअंत सिंह की हत्या के आरोपी और बुड़ैल जेल से भागे आतंकवादी जगतार सिंह हवारा की गिरफ्तारी के बाद जहाँ दिल्ली पुलिस फूली नहीं समा रही है , वहीं पंजाब पुलिस ने चुप्पी साध ली है । दिल्ली पुलिस ने हवारा और उसके साथी को दिल्ली के ही किसी स्थान से गिरफ्तार करने का दावा किया है । जबकि कुछ प्रत्यक्षदर्शियों के मुताबिक हवारा और उसके साथी को दिल्ली पुलिस की स्पेशल ब्रांच ने पंजाब यूनीवर्सिटी के मुख्य द्वार से काबू किया है । हालांकि , जिला पुलिस इस बात की पुष्टि करने को तैयार नहीं है
+Arg2 : दिल्ली के सिनेमा घरों में हुए विस्फोटों के एक आरोपी को नवांशहर से धरने के बाद दिल्ली पुलिस को उससे पूछ - ताछ में हवारा और उसके साथी के ठिकाने के बारे में पता लगा
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 4
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Contingency
+singleConnectiveName : वैसे
+Arg1 : इसके अलावा कर्नाटक में बदलते राजनीतिक समीकरण , बोफोर्स का ताजा घटनाक्रम और केंद्र सरकार को सहयोग दे रहे वामदलों के दबाव इत्यादि मसले भी हैं , जिनके महाधिवेशन के दौरान चर्चा में छाए रहने की संभावना है
+Arg2 : पार्टी के इस महाधिवेशन का जोश कर्नाटक के नए राजनीतिक घटनाचक्र के कारण कुछ ठंडा जरूर पड़ा है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : यानि
+Arg1 : जिन राज्यों में न्यूनतम मजदूरी ६० रुपये से अधिक है , वहां इस योजना में भी उस राज्य की न्यूनतम मजदूरी ही मान्य होगी ।
+Arg2 : देश के कई राज्यों के लोगों को अब बढ़ी हुई मजदूरी मिलेगी ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Expansion
+singleConnectiveName : गौरतलब है कि
+Arg1 : आतंकवाद कायरतापूर्ण कृत है और यह नफ़रत फैलाता है ।
+Arg2 : बृहस्पतिवार को लंदन में आतंकी हमला हुआ था ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
+sentenceNum : 4
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : और इसी के बाद
+Arg1 : इराक के प्रधानमंत्री इयाद अलावी ने अमेरिका के नेतृत्व वाली गठबंधन सेना को संदिग्ध आतंकियों के खिलाफ हमले की इजाज़त दी थी
+Arg2 : इसी के बाद कार्रवाई की गई
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : गौरतलब है कि
+Arg1 : बिहार के जेलमंत्री राघवेंद्र प्रताप सिंह ने राजद के बाहुबली सांसद पप्पू यादव द्वारा बेउर जेलकर्मियों को जान से मारने की धमकी के आरोप की जाँच के आदेश दिए
+Arg2 : कि जेल प्रशासन ने जब इस बाहुबली नेता को उनसे मिलने आए लोगों से भेंट नहीं करने दी तो शनिवार को उन्होंने जेलकर्मियों को परिणाम भुगतने की धमकी
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 4
@@ -17,21 +65,13 @@ singleConnectiveName : वहीं
 Arg1 : मनाली में घूमने आए पर्यटक अपने होटल के कमरों से बाहर होटल के प्रांगण में निकले और बारिश में भीगकर बारिश की भीनी - भीनी बूंदों का मजा लेने लगे
 Arg2 : स्थानीय लोगों के लिए यह बारिश वरदान से कम नहीं मानी जा रही है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2610170_date_20_7_2004.utf8
 sentenceNum : 4
 classLabel : Expansion.Conjunction
-classifiedAs : Temporal
-singleConnectiveName : और इसी के बाद
-Arg1 : इराक के प्रधानमंत्री इयाद अलावी ने अमेरिका के नेतृत्व वाली गठबंधन सेना को संदिग्ध आतंकियों के खिलाफ हमले की इजाज़त दी थी
-Arg2 : इसी के बाद कार्रवाई की गई
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 4
-classLabel : Comparison.Pragmatic contrast
 classifiedAs : Contingency
-singleConnectiveName : वैसे
-Arg1 : इसके अलावा कर्नाटक में बदलते राजनीतिक समीकरण , बोफोर्स का ताजा घटनाक्रम और केंद्र सरकार को सहयोग दे रहे वामदलों के दबाव इत्यादि मसले भी हैं , जिनके महाधिवेशन के दौरान चर्चा में छाए रहने की संभावना है
-Arg2 : पार्टी के इस महाधिवेशन का जोश कर्नाटक के नए राजनीतिक घटनाचक्र के कारण कुछ ठंडा जरूर पड़ा है ।
+singleConnectiveName : व
+Arg1 : इस कानून को लेकर राज्यों के साथ विचार - विमर्श किया जाएगा
+Arg2 : इसके दिशा - निर्देश तैयार किए जाएंगे
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 4
@@ -41,79 +81,31 @@ singleConnectiveName : और
 Arg1 : ऋण सीमा को ५० हजार रुपए से बढ़ाकर १.५ १.५ लाख किया जाना चाहिए
 Arg2 : इस पर ७ फीसदी के हिसाब से ब्याज दर लागू होनी चाहिए ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 4
-classLabel : Temporal.Asynchronous.Precedence
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : आतंकवाद कायरतापूर्ण कृत है और यह नफ़रत फैलाता है ।
-Arg2 : बृहस्पतिवार को लंदन में आतंकी हमला हुआ था ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 4
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : बिहार के जेलमंत्री राघवेंद्र प्रताप सिंह ने राजद के बाहुबली सांसद पप्पू यादव द्वारा बेउर जेलकर्मियों को जान से मारने की धमकी के आरोप की जाँच के आदेश दिए
-Arg2 : कि जेल प्रशासन ने जब इस बाहुबली नेता को उनसे मिलने आए लोगों से भेंट नहीं करने दी तो शनिवार को उन्होंने जेलकर्मियों को परिणाम भुगतने की धमकी
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620695_date_24_7_2004.utf8
-sentenceNum : 4
-classLabel : Temporal.Asynchronous.Precedence
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : गृह मंत्री शिवराज पाटिल द्वारा हाल में ही प्रधानमंत्री को सौंपी रिपोर्ट पर उन्होंने कहा कि वह इसके लिए ब्लू प्रिंट तैयार कर चुके हैं ।
-Arg2 : पाटिल ने अपनी रिपोर्ट में कहा था कि जम्मू कश्मीर को अधिक स्वायत्तता देने के मसले पर समीक्षा और बहस की जरूरत है ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 4
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : यानि
-Arg1 : जिन राज्यों में न्यूनतम मजदूरी ६० रुपये से अधिक है , वहां इस योजना में भी उस राज्य की न्यूनतम मजदूरी ही मान्य होगी ।
-Arg2 : देश के कई राज्यों के लोगों को अब बढ़ी हुई मजदूरी मिलेगी ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610170_date_20_7_2004.utf8
-sentenceNum : 4
-classLabel : Expansion.Conjunction
+classLabel : Expansion.Restatement.Specification
 classifiedAs : Comparison
-singleConnectiveName : व
-Arg1 : इस कानून को लेकर राज्यों के साथ विचार - विमर्श किया जाएगा
-Arg2 : इसके दिशा - निर्देश तैयार किए जाएंगे
+singleConnectiveName : खासकर
+Arg1 : । बुधवार को लोकसभा में आर्थिक सर्वेक्षण पेश करते हुए वित्त मंत्री पी. चिदंबरम ने अर्थव्यवस्था की सुनहरी तसवीर के साथ कुछ खतरों की ओर भी इशारा किया । खासकर पेट्रोलियम पदार्थो की अंतर्राष्ट्रीय कीमतों में बढ़ोतरी रुझान को देखते हुए महंगाई और ब्याज दरों में तेजी आ सकती है । इससे सरकार के अनुमान धरे के धरे रह सकते हैं ।
+Arg2 : अंतर्राष्ट्रीय बाजार में तेल की बढ़ती कीमतों का देश की आर्थिक विकास दर पर पड़ने वाले असर को लेकर सर्वे काफी गंभीर है ।
 ----------------------------------------------------------------------------------------------------
 8 Frequency: 10
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
 sentenceNum : 8
 classLabel : Contingency.Cause.Result
-classifiedAs : Comparison
+classifiedAs : Expansion
 singleConnectiveName : लिहाजा
 Arg1 : इन राज्यों में हिंदू अल्पसंख्या अल्पसंख्या में आ गए हैं
 Arg2 : उन्हें अल्पसंख्यक का दर्जा दिया जाना चाहिए
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : इसी डर से
-Arg1 : । बिहार के दरभंगा जेल से कुछ दिनों पहले ही बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2 : खगड़िया और रोसड़ा के जेलों से कैदियों को स्थानांतरित कर दिया गया है
-------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 8
 classLabel : Contingency.Condition.Hypothetical
-classifiedAs : Temporal
+classifiedAs : Expansion
 singleConnectiveName : इसके बाद ही
 Arg1 : इसकी जाँच की जाए
 Arg2 : सस्ती दर पर भूमि प्राप्त करने वाले अस्पताल किसी भी मरीज़ को भर्ती करने के दौरान उससे आय संबंधी कोई भी दस्तावेज या फिर बीपीएल कार्ड इत्यादि नहीं माँगेगा । दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है और इलाज शुरू कर दें
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : Temporal.Synchrony
-classifiedAs : Expansion
-singleConnectiveName : साथ ही
-Arg1 : शव को पोस्टमार्टम के लिए भेज दिया गया है ।
-Arg2 : पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके ।
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
 sentenceNum : 8
@@ -123,6 +115,14 @@ singleConnectiveName : कुछ दिनों पहले ही
 Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
 Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
 ------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Temporal.Synchrony
+classifiedAs : Expansion
+singleConnectiveName : साथ ही
+Arg1 : शव को पोस्टमार्टम के लिए भेज दिया गया है ।
+Arg2 : पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके ।
+------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
 sentenceNum : 8
 classLabel : Temporal.Synchrony
@@ -130,14 +130,6 @@ classifiedAs : Contingency
 singleConnectiveName : तब
 Arg1 : भारत ने दोनों के बीच विश्वास बहाली के उपायों के तहत जम्मू - कश्मीर से सेना में कटौती की घोषणा की थी
 Arg2 : जम्मू डिवीजन और अनंतनाग से तकरीबन 6 हजार जवानों को वापस बुला लिया गया था
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : Temporal.Asynchronous.Precedence
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : मध्यम और लग्जरी सेगमेंट की कारों के मामले में उत्पाद शुल्क में कटौती का पूरा लाभ उपभोक्ताओं तक नहीं पहुँचा । इसके चलते सरकार को कार कंपनियों से मिलने वाले राजस्व में ३८ फीसदी का नुकसान हुआ ।
-Arg2 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
 sentenceNum : 8
@@ -155,6 +147,22 @@ singleConnectiveName : दरअसल
 Arg1 : आयोग का सबसे ज्यादा ध्यान पश्चिम बंगाल के विधानसभा चुनाव पर है ।
 Arg2 : तृणमूल कांग्रेस की सुप्रीमो ममता बनर्जी स्थानीय निकायों के चुनावों में हुई धांधली की शिकायत आयोग से कर चुकी हैं ।
 ------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : Expansion
+singleConnectiveName : गौरतलब है कि
+Arg1 : मध्यम और लग्जरी सेगमेंट की कारों के मामले में उत्पाद शुल्क में कटौती का पूरा लाभ उपभोक्ताओं तक नहीं पहुँचा । इसके चलते सरकार को कार कंपनियों से मिलने वाले राजस्व में ३८ फीसदी का नुकसान हुआ ।
+Arg2 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Expansion
+singleConnectiveName : अलबत्ता
+Arg1 : उन पर तो कोई कार्रवाई नहीं हुई
+Arg2 : उसे जरूर बर्खास्त कर दिया गया ।
+------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 8
 classLabel : Temporal.Asynchronous.Succession
@@ -163,15 +171,7 @@ singleConnectiveName : और
 Arg1 : इससे आयोग सीधे किसानों के संपर्क में रहेगा
 Arg2 : उनकी समस्याओं को बेहतर तरीके से निपटाया जा सकेगा ।
 ----------------------------------------------------------------------------------------------------
-13 Frequency: 10
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Contingency.Cause.Result
-classifiedAs : Comparison
-singleConnectiveName : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+13 Frequency: 8
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
 sentenceNum : 13
@@ -181,6 +181,22 @@ singleConnectiveName : और तभी
 Arg1 : हर मामले की उपयोगिता को परखा जाए
 Arg2 : न्यूनतम साझा कार्यक्रम ( सीएमपी ) के तहत विनिवेश की सिफारिश की जाए
 ------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : तथा
+Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
+Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो
+Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
+Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+------
 rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
 sentenceNum : 13
 classLabel : Comparison.Contrast.Juxtaposition
@@ -189,13 +205,13 @@ singleConnectiveName : तथा
 Arg1 : नागालैंड में 90 फीसदी आबादी ईसाई हो चुकी है
 Arg2 : यहां 7.7 7.7 फीसदी ही हिंदू रह गए हैं
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
 sentenceNum : 13
-classLabel : Temporal.Asynchronous.Precedence
-classifiedAs : Comparison
-singleConnectiveName : इसके पूर्व
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+classLabel : Contingency.Cause.Result
+classifiedAs : Expansion
+singleConnectiveName : लिहाज़ा
+Arg1 : उन्होंने अपनी यात्रा की जानकारी पार्टी नेताओं को दे दी है
+Arg2 : इस यात्रा के लिए पार्टी में किसी तरह का कोई विवाद नहीं है
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 13
@@ -205,6 +221,14 @@ singleConnectiveName : और
 Arg1 : उन्होंने बत्रा , एस्कॉर्टस , जी. एम. मोदी , बिमला देवी , एमकेडब्ल्यू , दीपक मैमोरियल अस्पताल इत्यादि का दौरा किया
 Arg2 : पाया कि किसी भी अस्पताल में गरीब मरीज़ के इलाज के लिए तय नियमों का पालन नहीं हुआ ।
 ------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Contingency
+singleConnectiveName : बताया जाता है
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+------
 rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
 sentenceNum : 13
 classLabel : Comparison.Contrast.Juxtaposition
@@ -212,40 +236,16 @@ classifiedAs : Temporal
 singleConnectiveName : इस बीच
 Arg1 : रविवार सुबह पार्टी की राज्य इकाई की आपात बैठक में इस मुद्दे पर भी चर्चा की गई । वयोवृद्ध नेता ज्योति बसु और मुख्यमंत्री बुद्धदेव बुद्धदेव भट्टाचार्य समेत कई नेता अपने चुनाव संबंधी कार्यक्रमों को स्थगित कर बैठक में शामिल हुए ।
 Arg2 : पार्टी के वरिष्ठ नेता बिमन बोस ने बताया कि बिस्वास की चुनावी सभा को अब पार्टी के अन्य नेता संबोधित करेंगे ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Contingency.Cause.Result
-classifiedAs : Comparison
-singleConnectiveName : तो
-Arg1 : ' राजद में आने के बाद मैंने उनसे इसका कारण पूछा
-Arg2 : उन्होंने बताया कि उन्हें लगा कि इसके पीछे संघ की साजिश है
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-sentenceNum : 13
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : दरअसल
-Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
-Arg2 : मुकेश और अनिल अंबानी के रिश्ते में आनंद जैन फाँस बन गए थे ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
-classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Temporal
-singleConnectiveName : बताया जाता है
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
 ----------------------------------------------------------------------------------------------------
-2 Frequency: 8
+2 Frequency: 7
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : अंततः
+Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए । वजह - लंदन पर अलक़ायदा का आतंकी हमला
+Arg2 : इन नेताओं को संशोधित घोषणा जारी करनी पड़ी , जिसमें आतंकवाद से लड़ने की चुनौती फेहरिस्त में सबसे ऊपर थी
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
 sentenceNum : 2
@@ -254,6 +254,30 @@ classifiedAs : Expansion
 singleConnectiveName : और
 Arg1 : इस हमले में ११ लोग मारे गए
 Arg2 : सात घायल हो गए ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : उधर
+Arg1 : वह हिंदू रीति - रिवाज के मुताबिक वाराणसी में शव का अंतिम संस्कार करेगी ।
+Arg2 : उत्तर प्रदेश के पुलिस महानिदेशक यशपाल सिंह ने गुर्जर को ढेर करने वाले एसटीएफ के जवानों के लिए बारी से पहले प्रोन्नति देने की घोषणा की है ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Reason
+classifiedAs : Temporal
+singleConnectiveName : गौरतलब है कि
+Arg1 : नटवर सिंह का यह दौरा दोनों देशों के बीच आर्थिक एवं राजनीतिक सहयोग की दृष्टि से काफी महत्वपूर्ण माना जा रहा है
+Arg2 : श्रीलंका की सुनामी पुनर्निर्माण परियोजना में भारत श्रीलंका को महत्वपूर्ण रूप से मदद प्रदान कर रहा है
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Comparison.Contrast.Opposition
+classifiedAs : Expansion
+singleConnectiveName : बल्कि
+Arg1 : गिनती के बचे इन दुलर्भ आदिवासियों को अब खतरा किसी अन्य से नहीं
+Arg2 : खुद की बदलती आदतों से है
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 2
@@ -270,104 +294,6 @@ classifiedAs : Temporal
 singleConnectiveName : गौरतलब है कि
 Arg1 : झारखंड सरकार द्वारा उनके खिलाफ दर्ज मामला वापस लिए जाने के बाद उन्हें रिहा किया गया है ।
 Arg2 : १६ फरवरी को एक विरोध प्रदर्शन के दौर में सिन्हा सहित भाजपा के १५० कार्यकर्ताओं ने केंद्र सरकार के कार्यालयों पर ताला लगा दिया था ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Expansion.Conjunction
-classifiedAs : Contingency
-singleConnectiveName : यही नहीं
-Arg1 : कैग की रिपोर्ट के मुताबिक २००१ से २००४ के दौरान वित्त मंत्रालय द्वारा कारों पर कर घटाने के बावजूद मारुति , टाटा मोटर्स , होंडा और महेंद्रा एंड महेंद्रा जैसी दिग्गज कंपनियों ने उपभोक्ताओं को किसी तरह की रियायत नहीं दी ।
-Arg2 : उत्पाद शुक्ल में कटौती के बावजूद इन कंपनियों ने कारों के दाम भी बढ़ा दिए ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Expansion.Conjunction
-classifiedAs : Contingency
-singleConnectiveName : अंततः
-Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए । वजह - लंदन पर अलक़ायदा का आतंकी हमला
-Arg2 : इन नेताओं को संशोधित घोषणा जारी करनी पड़ी , जिसमें आतंकवाद से लड़ने की चुनौती फेहरिस्त में सबसे ऊपर थी
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
-sentenceNum : 2
-classLabel : Contingency.Cause.Reason
-classifiedAs : Temporal
-singleConnectiveName : गौरतलब है कि
-Arg1 : नटवर सिंह का यह दौरा दोनों देशों के बीच आर्थिक एवं राजनीतिक सहयोग की दृष्टि से काफी महत्वपूर्ण माना जा रहा है
-Arg2 : श्रीलंका की सुनामी पुनर्निर्माण परियोजना में भारत श्रीलंका को महत्वपूर्ण रूप से मदद प्रदान कर रहा है
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : इसी प्रकार
-Arg1 : आयोग को ऐसा कोई साक्ष्य नहीं मिला है जिससे यह सिद्ध किया जा सके कि गुरुद्वारा रकाबगंज में मौजूदगी के दौरान कमलनाथ ने उत्तेजित भीड़ को भड़काया ।
-Arg2 : वसंत साठे की वहां मौजूदगी संबंधी दावे को आयोग ने भ्रामक माना है ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : उधर
-Arg1 : वह हिंदू रीति - रिवाज के मुताबिक वाराणसी में शव का अंतिम संस्कार करेगी ।
-Arg2 : उत्तर प्रदेश के पुलिस महानिदेशक यशपाल सिंह ने गुर्जर को ढेर करने वाले एसटीएफ के जवानों के लिए बारी से पहले प्रोन्नति देने की घोषणा की है ।
-----------------------------------------------------------------------------------------------------
-3 Frequency: 7
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 3
-classLabel : Temporal.Asynchronous.Succession
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : संघ ने दिल्ली में मौजूद सभी पदाधिकारियों की आपात बैठक बुलाई
-Arg2 : वाजपेयी के बयान के बाद स्थिति की समीक्षा की
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 3
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : व
-Arg1 : मुठभेड़ में कुल चार सुरक्षाकर्मी शहीद हुए
-Arg2 : सात घायल हुए
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 3
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : यहाँ तक कि
-Arg1 : ये पढ़ाई तो कर रहे हैं लेकिन रोजगार भाग्य के ही भरोसे है । यानि यह खोटी शिक्षा इन्हें रोजी - रोटी की गारंटी नहीं दे सकती
-Arg2 : तमाम दावों के बावजूद मानव संसाधन विकास मंत्रालय अभी तक इस मामले में कोई ठोस कार्य योजना नहीं तैयार कर सका है ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : तथा
-Arg1 : ३१ अक्टूबर ८४ को कमलनाथ गुरुद्वारा रकाबगंज में मौजूद थे
-Arg2 : वह भीड़ को शांत करने का प्रयास कर रहे थे ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : Expansion.Conjunction
-classifiedAs : Contingency
-singleConnectiveName : इसके अतिरिक्त
-Arg1 : इससे फसलों का न्यूनतम समर्थन मूल्य निर्धारण में आयोग को किसानों से पूरी जानकारी मिल पाएगी ।
-Arg2 : समिति ने किसानों को दिए जाने वाले ऋण पर ६ फीसदी ब्याज दर लागू करने की सिफारिश की है ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
-sentenceNum : 3
-classLabel : Comparison.Concession.Contra-expectation
-classifiedAs : Contingency
-singleConnectiveName : बावजूद इसके
-Arg1 : दिल्ली पुलिस ने इसकी इजाज़त नहीं दी
-Arg2 : सॉलिडेरिटी कमेटी इन सपोर्ट ऑफ रिवोल्यूशनरी स्ट्रगल के बैनर तले सैकड़ों नक्सलियों ने विरोध प्रदर्शन की कोशिश की और इस सिलसिले में अपनी गिरफ्तारी दी
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : अंततः
-Arg1 : लगभग एक साल पूर्व भाजपा के वरिष्ठ नेता एल. के. आडवाणी द्वारा जिन्ना की मज़ार पर दिए बयान से भाजपा में तूफान उठ गया था
-Arg2 : पार्टी के अध्यक्ष पद से आडवाणी को इस्तीफा देने पर मजबूर होना पड़ा
 ----------------------------------------------------------------------------------------------------
 5 Frequency: 7
 ------
@@ -379,29 +305,13 @@ singleConnectiveName : और
 Arg1 : जब वे वहां पहुंचे थे तो वहां भारी पुलिस बल मौजूद था
 Arg2 : पुलिस आयुक्त भी तभी वहां पहुंच गये थे ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
 sentenceNum : 5
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : वहीं पर
-Arg1 : सेब की अच्छी फसल के लिए समय - समय पर बारिश का होना जरूरी माना जाता है ।
-Arg2 : पशुओं के चारे व अन्य फसलों की बिजाई के लिए यह बारिश अति उत्तम मानी जा रही है ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 5
-classLabel : Expansion.Conjunction
-classifiedAs : Temporal
-singleConnectiveName : गौरतलब है कि
-Arg1 : राज्यसभा सांसद और रिलायंस समूह के उपाध्यक्ष अनिल अंबानी ने अपना फोन टैप किये जाने का सनसनीखेज आरोप लगाया है । उनका कहना है कि रिलायंस इंफोकॉम के एक निदेशक और दो अधिकारी मिल कर इस आपराधिक कृत्य को अंजाम दे रहे हैं । उन्होंने गृह मंत्री शिवराज पाटिल को लिख कर इस मामले की जांच की मांग की है । रिलायंस इंफोकॉम के अध्यक्ष मुकेश अंबानी हैं और कंपनी ने बृहस्पतिवार को इस आरोप का खंडन किया है । उन्होंने इसे आधारहीन और द्वेषपूर्ण बताया है ।
-Arg2 : रिलायंस समूह में स्वामित्व विवाद के निपटारे के लिए किसी फॉर्मूले पर अमल की बात चल रही है और ताजा घटनाक्रम को इससे जोड़कर भी देखा जा रहा है
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 5
-classLabel : Temporal.Asynchronous.Succession
+classLabel : Contingency.Cause.Result
 classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : आग पर काबू पाने के लिए दमकल की करीब तीन दर्जन गाड़ियां भेजी गई
-Arg2 : लगभग 75 से अधिक दमकलकर्मियों को चार घंटे तक जूझना पड़ा ।
+singleConnectiveName : इस बात पर
+Arg1 : जैश - ए - मोहम्मद के एक आतंकवादी ने अपने आका को सूचित किया कि स्थानीय लोग उसे देखते ही घरों के दरवाजे बंद कर ले रहे हैं । सहयोग के लिए राजी नहीं हैं ।
+Arg2 : दूर बैठे आतंकी सरगना ने कहा कि पहले जाओ , दरवाजा खटखटाओ और यदि सहयोग न करे तो सिविलियन के पैर में गोली मार दो ।
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
 sentenceNum : 5
@@ -411,6 +321,14 @@ singleConnectiveName : दरअसल
 Arg1 : २६ दिसंबर के बाद से प्रभाकरन को न तो टीवी पर देखा गया है और न ही लिट्टे के रेडियो पर उसकी आवाज सुनी गई है
 Arg2 : प्रभाकरन को लेकर २८ दिसंबर से अटकलें हैं
 ------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 5
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Temporal
+singleConnectiveName : गौरतलब है कि
+Arg1 : दौरे के दौरान नटवर सिंह भारत - श्रीलंका संयुक्त आयोग की बैठक की श्रीलंका के विदेश मंत्री लक्ष्मण कादिर गमर के साथ मिलकर अध्यक्षता करेंगे
+Arg2 : 2003 में भारत - श्रीलंका संयुक्त आयोग की बैठक के बाद से ही दोनों देशों के बीच नए सहयोग के दौर की शुरुआत हुई है
+------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
 sentenceNum : 5
 classLabel : Expansion.Conjunction
@@ -419,20 +337,52 @@ singleConnectiveName : आगे
 Arg1 : पश्चिम बंगाल के बर्धवान जिले में आज पत्रकारों से बात करते हुए सोमनाथ ने कहा कि ' अगर संसद अपने कुछ सदस्यों की गलत हरकत पर कार्रवाई करता है और इस मामले में हस्तक्षेप करता है तो यह उसका अंदरूनी मामला है । '
 Arg2 : उन्होंने कहा कि उनके इस फैसले पर सभी राजनीतिक दलों ने उनका समर्थन किया है ।
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 5
-classLabel : Comparison.Pragmatic contrast
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : वहीं पर
+Arg1 : सेब की अच्छी फसल के लिए समय - समय पर बारिश का होना जरूरी माना जाता है ।
+Arg2 : पशुओं के चारे व अन्य फसलों की बिजाई के लिए यह बारिश अति उत्तम मानी जा रही है ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
 classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : दौरे के दौरान नटवर सिंह भारत - श्रीलंका संयुक्त आयोग की बैठक की श्रीलंका के विदेश मंत्री लक्ष्मण कादिर गमर के साथ मिलकर अध्यक्षता करेंगे
-Arg2 : 2003 में भारत - श्रीलंका संयुक्त आयोग की बैठक के बाद से ही दोनों देशों के बीच नए सहयोग के दौर की शुरुआत हुई है
+singleConnectiveName : और
+Arg1 : आग पर काबू पाने के लिए दमकल की करीब तीन दर्जन गाड़ियां भेजी गई
+Arg2 : लगभग 75 से अधिक दमकलकर्मियों को चार घंटे तक जूझना पड़ा ।
 ----------------------------------------------------------------------------------------------------
 11 Frequency: 6
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 11
+classLabel : Expansion.Restatement.Generalization
+classifiedAs : Comparison
+singleConnectiveName : यानि
+Arg1 : उत्तरी राज्यों में हिमाचल प्रदेश में कुल २०४ मिमी बारिश हुई है जबकि अब तक २५४ मिमी होनी चाहिए । राज्य में २० फीसदी कम बारिश दर्ज की गई है । उत्तरांचल में ४१६ मिमी की तुलना में ३२५ मिमी बारिश हो पाई है जो औसत से २२ फीसदी कम है ।
+Arg2 : दोनों राज्य सूखे की चपेट में हैं ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : इसी प्रकार
+Arg1 : अदालत ने कमेटी की इस रिपोर्ट को भी गंभीरता से लिया कि सस्ती दर पर भूमि लेने वाले २८ अस्पतालों का कोई पता नहीं है और बताए पते पर उनका कोई रिकार्ड ही नहीं है । अदालत ने इसकी विस्तृत रिपोर्ट पेश करने को कहा है
+Arg2 : खंडपीठ ने मुख्य सचिव को निर्देश दिया कि वे कमेटी की रिपोर्ट के अनुसार सभी अस्पतालों में नोटिस बोर्ड लगवाएँ जिसमें तय निशुल्क बेड की संख्या और अन्य प्रकार की जानकारी दी जाए ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
+sentenceNum : 11
+classLabel : Expansion.Exception
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : गोस्वामी पहले कह चुके हैं कि पार्टी में किसी भी कीमत पर अनुशासन बनाए रखा जाएगा
+Arg2 : उन्होंने महंत और फूकन के कमजोर नेतृत्व के आरोप पर टिथी करने से इन्कार कर दिया
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8
 sentenceNum : 11
 classLabel : Temporal.Asynchronous.Precedence
-classifiedAs : Contingency
+classifiedAs : Expansion
 singleConnectiveName : गौरतलब है कि
 Arg1 : जोशीपुरा ने बताया कि अनिल भारद्वाज जल्द ही सरदार पटेल विश्वविद्यालय आने वाले हैं । उनके साथ में इस शोध परियोजना पर बात - चीत करेंगे ।
 Arg2 : जोशीपुरा को नासा के अलबामा स्थित हेंसविले रिसर्च सेंटर में व्याख्यान देने के लिए आमंत्रित किया गया था
@@ -445,14 +395,6 @@ singleConnectiveName : गौरतलब है कि
 Arg1 : मंगलवार को इटावा में पत्रकारों के साथ बात - चीत में सीमा ने कहा कि ' निर्भय को अपने पापों की सजा मिल चुकी है । उनकी पत्नी होने के नाते अब मुझे अपने कर्तव्य का पालन करना है । मैं उनके शव का अंतिम संस्कार काशी ( वाराणसी ) में करना चाहती हूँ । ' सीमा ने आगे कहा कि गुर्जर के शव के औपचारिक दावे के लिए मैं जिले के वरिष्ठ पुलिस अधीक्षक से मुलाकात करूँगी । उधर , पुलिस का कहना है कि शव को पोस्टमार्टम के लिए भेज दिया गया है । साथ ही पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके । पुलिस महानिदेशक यशपाल सिंह ने कहा कि मुठभेड़ में निर्भय गुर्जर को मारकर एसटीएफ टीम ने अदम्य साहस का परिचय दिया है और वे प्रशंसा के पात्र हैं । उन्होंने आगे कहा कि बहादुरी भरे कारनामों के मद्देनज़र पुलिसकर्मियों के लिए बारी से पहले प्रोन्नति देने का प्रावधान है ।
 Arg2 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
-sentenceNum : 11
-classLabel : Expansion.Exception
-classifiedAs : Comparison
-singleConnectiveName : लेकिन
-Arg1 : गोस्वामी पहले कह चुके हैं कि पार्टी में किसी भी कीमत पर अनुशासन बनाए रखा जाएगा
-Arg2 : उन्होंने महंत और फूकन के कमजोर नेतृत्व के आरोप पर टिथी करने से इन्कार कर दिया
-------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
 sentenceNum : 11
 classLabel : Temporal.Asynchronous.Succession
@@ -460,74 +402,82 @@ classifiedAs : Expansion
 singleConnectiveName : आगे
 Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
 Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : ऐसे में
-Arg1 : इस मामले में और शिकायतों का अंबार लग सकता है
-Arg2 : आयोग के पास केवल एक ही तरह के मामले की भीड़ बढ़ जाएगी ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : इसी प्रकार
-Arg1 : अदालत ने कमेटी की इस रिपोर्ट को भी गंभीरता से लिया कि सस्ती दर पर भूमि लेने वाले २८ अस्पतालों का कोई पता नहीं है और बताए पते पर उनका कोई रिकार्ड ही नहीं है । अदालत ने इसकी विस्तृत रिपोर्ट पेश करने को कहा है
-Arg2 : खंडपीठ ने मुख्य सचिव को निर्देश दिया कि वे कमेटी की रिपोर्ट के अनुसार सभी अस्पतालों में नोटिस बोर्ड लगवाएँ जिसमें तय निशुल्क बेड की संख्या और अन्य प्रकार की जानकारी दी जाए ।
 ----------------------------------------------------------------------------------------------------
-7 Frequency: 6
+6 Frequency: 6
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 7
-classLabel : Temporal.Synchrony
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : Expansion.Conjunction
 classifiedAs : Contingency
-singleConnectiveName : तब
-Arg1 : पाँच साल पहले मार्च 2001 को बेंगलौर में कांग्रेस महाधिवेशन हुआ था
-Arg2 : केंद्र में वाजपेयी सरकार सत्ता में थी और सभामंच से सोनिया ने तहलका मामले में सरकार पर तैश भरे आक्रमण किए थे ।
+singleConnectiveName : और इसलिए
+Arg1 : किसानों को उनकी फसल का पूरा मूल्य नहीं मिल पाता है
+Arg2 : इसलिए आयोग में किसानों का भी प्रतिनिधित्व होना चाहिए ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : Temporal.Asynchronous.Succession
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है
-Arg2 : इलाज शुरू कर दें ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
-sentenceNum : 7
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : इसके मद्देनजर
-Arg1 : रिजर्व बैंक ने डॉलरों की खरीद के जरिए २० हजार करोड़ रुपये की नकदी बाजार में उपलब्ध कराई है ।
-Arg2 : उत्पादक गतिविधियों के लिए लोन पर ब्याज दरें बढ़ाने की कोई वजह नहीं है ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : Contingency.Cause.Result
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : सुबह हुई हल्की बारिश से तापमान कम हुआ है
-Arg2 : लोगों को गर्मी से राहत मिली है ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 7
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 6
 classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Contingency
-singleConnectiveName : तो
-Arg1 : ' पॉवर योगा ' के तहत सूर्य नमस्कार को तेज गति से किया जाता है
-Arg2 : ' बीट योगा ' के तहत पॉप म्यूजिक की धुन पर अंगों को लय में लहराया जाता है
+classifiedAs : Expansion
+singleConnectiveName : इसके अलावा
+Arg1 : हरियाणा के अंबाला जिले में काफी तेज वर्षा हुई , जहाँ २३.५ २३.५ मिमी वर्षा दर्ज की गई है
+Arg2 : सुबह ८.३० ८.३० बजे तक कालका में ८ मिमी , छछरौली में ४० मिमी , जगाधरी में १५ मिमी और पंचकुला में २ मिमी वर्षा रिकॉर्ड की गई है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 6
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : तो दूसरी ओर
+Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
+Arg2 : दूसरी ओर आनंद जैन को बचाने में नाक़ामयाब रहे मुकेश अपने इस मित्र की बेटी की शादी में शामिल होने के लिए गोवा रवाना हो गए हैं
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : Expansion.Exception
-classifiedAs : Comparison
-singleConnectiveName : लेकिन
-Arg1 : खंडपीठ ने चुनाव आयोग के वकील एस. मुरलीधरन से पूछा कि अगर अदालत राष्ट्रपति शासन को अवैध करार देती है तो चुनाव प्रक्रिया का क्या होगा , इस पर मुरलीधरन ने कहा कि २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी और इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
-Arg2 : जवाब से संतुष्ट नहीं होने पर अदालत ने अटॅर्नी जनरल मिलन बनर्जी , एडिशनल सॉलीसिटर जनरल गोपाल सुब्रह्मण्यम् और पूर्व अटॅर्नी जनरल सोली जे. सोराबजी से राय ली ।
+sentenceNum : 6
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : और इसके बाद
+Arg1 : २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी
+Arg2 : इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
+sentenceNum : 6
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Temporal
+singleConnectiveName : उधर एक
+Arg1 : यहाँ बीएसएफ के असम , मेघालय , मणिपुर और नागालैंड मुख्यालय के वरिष्ठ अधिकारियों ने बताया कि सीमा पर संयुक्त निगरानी का काम जल्द ही शुरू हो जाएगा । पिछली १९ मई को बांग्लादेश के तांबिल क्षेत्र में डीआईजी स्तर की बैठक में इसका फैसला किया गया
+Arg2 : वरिष्ठ अधिकारी ने बताया कि कोई भी बांग्लादेशी सीमा पार से नहीं आ रहा है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 6
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Contingency
+singleConnectiveName : में
+Arg1 : २० लाख विज्ञान
+Arg2 : १८ लाख के करीब छात्र वाणिज्य और प्रबंधन की पढ़ाई पढ़ रहे हैं
 ----------------------------------------------------------------------------------------------------
 10 Frequency: 6
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Comparison.Pragmatic contrast
+classifiedAs : Expansion
+singleConnectiveName : मालूम हो कि
+Arg1 : कश्मीर घाटी से बड़ी तादाद में सैनिकों की कटौती के बाद ही कश्मीरी लोगों का विश्वास जीता जा सकता है
+Arg2 : कश्मीर के सभी प्रतिनिधियों ने कश्मीर बस सेवा की शुरुआत का स्वागत किया है
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
+sentenceNum : 10
+classLabel : Expansion.Restatement.Specification
+classifiedAs : Temporal
+singleConnectiveName : गौरतलब है कि
+Arg1 : मल्होत्रा ने मांग की कि संसद के सेंट्रल हाल में उस जगह पर यादगार के तौर पर एक पट्टिका लगाई जाए जहां से भगत सिंह और उनके दो साथी क्रांतिकारियों ने बम फेंका था और जहां पर बम गिरा था । उन्होंने संसद में भगत सिंह की एक तस्वीर लगाने की भी मांग की ।
+Arg2 : तीनों क्रांतिकारियों को २३ मार्च , १९३१ में फांसी दे दी गई थी ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Temporal.Synchrony
+classifiedAs : Expansion
+singleConnectiveName : जैसे ही
+Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
+Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 10
@@ -545,14 +495,6 @@ singleConnectiveName : तथा
 Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा और और गंभीर रूप से घायलों को 50 - 50 तथा
 Arg2 : मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 10
-classLabel : Temporal.Synchrony
-classifiedAs : Expansion
-singleConnectiveName : जैसे ही
-Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
-Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
-------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 10
 classLabel : Comparison.Contrast.Juxtaposition
@@ -560,40 +502,32 @@ classifiedAs : Expansion
 singleConnectiveName : और
 Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा
 Arg2 : गंभीर रूप से घायलों को 50 - 50 तथा तथा मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-sentenceNum : 10
-classLabel : Comparison.Pragmatic contrast
-classifiedAs : Expansion
-singleConnectiveName : मालूम हो कि
-Arg1 : कश्मीर घाटी से बड़ी तादाद में सैनिकों की कटौती के बाद ही कश्मीरी लोगों का विश्वास जीता जा सकता है
-Arg2 : कश्मीर के सभी प्रतिनिधियों ने कश्मीर बस सेवा की शुरुआत का स्वागत किया है
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : एक मार्केट की ओर भागा
-Arg2 : एक की पिस्तौल व मोबाइल गिर गया
 ----------------------------------------------------------------------------------------------------
 12 Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : यही वजह है कि
+Arg1 : प्रमुख उधारी दर में बढ़ोतरी के कारण महंगाई के भी बेलगाम होने की आशंका है ।
+Arg2 : वित्त मंत्रालय इस मामले में बैंकरों के किसी भी तर्क को सुनने के लिए तैयार नहीं है
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 12
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : इसी प्रकार
+Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है तथा हिंदुओं की 29.6 29.6 फीसदी ,
+Arg2 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं तथा 36.9 36.9 फीसदी हिंदू हैं ।
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
 sentenceNum : 12
 classLabel : Expansion.Instantiation
-classifiedAs : Contingency
+classifiedAs : Comparison
 singleConnectiveName : मसलन
 Arg1 : इस बैठक में देश की विदेश नीति के अलावा भी कई अन्य मुद्दे उठाए जाएँगे ।
 Arg2 : कश्मीर में जारी आतंकवाद , महँगाई , कृषि क्षेत्र का संकट आदि
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 12
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : प्रभाकरन को लेकर २८ दिसंबर से अटकलें हैं
-Arg2 : सुनामी के कहर से श्रीलंका का ७० फीसदी तटीय इलाका प्रभावित हुआ है । इसमें उत्तर की तरफ का वह इलाका भी है , जहाँ लिट्टे का कब्जा है । इसी इलाके के मुलातिवियू में प्रभाकरन का ठिकाना है
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 12
@@ -607,145 +541,103 @@ rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
 sentenceNum : 12
 classLabel : Comparison.Contrast.Juxtaposition
 classifiedAs : Expansion
-singleConnectiveName : इसी प्रकार
-Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है तथा हिंदुओं की 29.6 29.6 फीसदी ,
-Arg2 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं तथा 36.9 36.9 फीसदी हिंदू हैं ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-sentenceNum : 12
-classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Expansion
 singleConnectiveName : तथा
-Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है
-Arg2 : हिंदुओं की 29.6 29.6 फीसदी
+Arg1 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं
+Arg2 : 36.9 36.9 फीसदी हिंदू हैं
 ----------------------------------------------------------------------------------------------------
-6 Frequency: 5
+7 Frequency: 5
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : Expansion.Conjunction
-classifiedAs : Temporal
-singleConnectiveName : और इसके बाद
-Arg1 : २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी
-Arg2 : इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : Expansion.Conjunction
-classifiedAs : Contingency
-singleConnectiveName : और इसलिए
-Arg1 : किसानों को उनकी फसल का पूरा मूल्य नहीं मिल पाता है
-Arg2 : इसलिए आयोग में किसानों का भी प्रतिनिधित्व होना चाहिए ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 6
-classLabel : Comparison.Contrast.Juxtaposition
+rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Temporal.Asynchronous.Succession
 classifiedAs : Expansion
-singleConnectiveName : में
-Arg1 : २० लाख विज्ञान
-Arg2 : १८ लाख के करीब छात्र वाणिज्य और प्रबंधन की पढ़ाई पढ़ रहे हैं
+singleConnectiveName : और
+Arg1 : दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है
+Arg2 : इलाज शुरू कर दें ।
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 6
-classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Expansion
-singleConnectiveName : इसके अलावा
-Arg1 : हरियाणा के अंबाला जिले में काफी तेज वर्षा हुई , जहाँ २३.५ २३.५ मिमी वर्षा दर्ज की गई है
-Arg2 : सुबह ८.३० ८.३० बजे तक कालका में ८ मिमी , छछरौली में ४० मिमी , जगाधरी में १५ मिमी और पंचकुला में २ मिमी वर्षा रिकॉर्ड की गई है ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-sentenceNum : 6
+rawFileName : ../data/raw/Section_16/fullnews_id_2580879_date_9_7_2004.utf8
+sentenceNum : 7
 classLabel : Contingency.Cause.Result
-classifiedAs : Comparison
-singleConnectiveName : तो दूसरी ओर
-Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
-Arg2 : दूसरी ओर आनंद जैन को बचाने में नाक़ामयाब रहे मुकेश अपने इस मित्र की बेटी की शादी में शामिल होने के लिए गोवा रवाना हो गए हैं
-----------------------------------------------------------------------------------------------------
-9 Frequency: 4
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 9
-classLabel : Comparison.Contrast.Juxtaposition
 classifiedAs : Expansion
-singleConnectiveName : इसी तरह
-Arg1 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
-Arg2 : २००१ - ०२ के दौरान कारों का विशेष उत्पाद कर २४ फीसदी के बजाय १६ फीसदी कर दिया गया ।
+singleConnectiveName : जिससे कि
+Arg1 : योजनागत व्यय में १०,००० १०,००० १०,००० करोड़ रुपये की वृद्धि की गई है
+Arg2 : न्यूनतम साझा कार्यक्रम के लक्ष्य को हासिल करने में मदद मिलेगी
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 9
-classLabel : Expansion.Conjunction
-classifiedAs : Temporal
-singleConnectiveName : आगे
-Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
-Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
-sentenceNum : 9
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : गौरतलब है कि
-Arg1 : अमेरिकी वायु - सेना ने अल क़ायदा से संबद्ध आतंकी जरकावी को निशाना बना कर शनिवार रात अनेक हमले किए
-Arg2 : जरकावी ने इराक के न्याय मंत्री मलेक दोहान के खिलाफ आत्मघाती हमले की जिम्मेदारी ली थी
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 9
-classLabel : Contingency.Cause.Reason
-classifiedAs : Comparison
-singleConnectiveName : लेकिन
-Arg1 : उन्होंने कहा कि कुछ लोगों को इस बात पर आश्चर्य हो सकता है कि गांधी परिवार का सदस्य होने के बावजूद मैं भाजपा में कैसे शामिल हो गया
-Arg2 : हम पार्टी नहीं विचार धारा का सम्मान करते हैं ।
-----------------------------------------------------------------------------------------------------
-17 Frequency: 4
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 17
-classLabel : Expansion.Exception
-classifiedAs : Comparison
-singleConnectiveName : लेकिन
-Arg1 : कच्चे मालों की दरों में कुछ बदलाव किया जा सकता है
-Arg2 : पीक रेट 20 फीसदी ही रहेगा ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-sentenceNum : 17
-classLabel : Expansion.Conjunction
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : Temporal.Synchrony
 classifiedAs : Contingency
-singleConnectiveName : इसी तरह से
-Arg1 : दक्षिणी कश्मीर में सक्रिय लश्कर - ए - तैयबा का राजा पाकिस्तानी जिसका कोड नाम शकलेन , कंट्रोलिंग नंबर ४४ था , छह जुलाई को मारा गया । जैश - ए - मोहम्मद , लश्कर - ए - तैयबा और हिजबुल मुजाहिदीन का मुख्य संचालनकर्ता हबीबुल्लाह , कोड नाम - फुर्कान ०४ जुलाई को पंपोर में मारा गया ।
-Arg2 : हिजबुल मुजाहिदीन के डिस्टिक कमांडर ( रफिया बाग ) हासिम को ०३ जुलाई को मार गिराया गया । इसका कोड नाम हमजा और दिलावर था ।
+singleConnectiveName : तब
+Arg1 : पाँच साल पहले मार्च 2001 को बेंगलौर में कांग्रेस महाधिवेशन हुआ था
+Arg2 : केंद्र में वाजपेयी सरकार सत्ता में थी और सभामंच से सोनिया ने तहलका मामले में सरकार पर तैश भरे आक्रमण किए थे ।
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
-sentenceNum : 17
-classLabel : Contingency.Cause.Reason
-classifiedAs : Expansion
-singleConnectiveName : उल्लेखनीय है कि
-Arg1 : शुक्रवार को प्रगति मैदान में चल रहे अंतर्राष्ट्रीय व्यापार मेला में सपा अध्यक्ष और उत्तर प्रदेश के मुख्यमंत्री मुलायम सिंह यादव ने संघ प्रमुख के. एस. सुदर्शन की हिंदुओं को कम से कम तीन बच्चे पैदा करने की सलाह की जमकर खिल्ली उड़ाई ।
-Arg2 : देश में जनसंख्या का सांप्रदायिक आधार पर विश्लेषण करते हुए संघ प्रमुख सुदर्शन ने बृहस्पतिवार को हिंदुओं से कहा था कि बहुसंख्यक - अल्पसंख्यकों की अवधारणा को खत्म करने के लिए उन्हें भी कम से कम तीन बच्चे पैदा करने चाहिए ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-sentenceNum : 17
+rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
 classLabel : Contingency.Cause.Result
 classifiedAs : Expansion
 singleConnectiveName : और
-Arg1 : अब एग्रो - फोरेस्टरी से आम लोगों की आर्थिक स्थिति बदलेगी
-Arg2 : उनकी खरीद क्षमता बढ़ सकती है
-----------------------------------------------------------------------------------------------------
-1 Frequency: 4
+Arg1 : सुबह हुई हल्की बारिश से तापमान कम हुआ है
+Arg2 : लोगों को गर्मी से राहत मिली है ।
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
-sentenceNum : 1
-classLabel : Comparison.Contrast.Juxtaposition
-classifiedAs : Contingency
-singleConnectiveName : तो
-Arg1 : उन्होंने राजग के मुख्यमंत्री पद के उम्मीदवार नितीश कुमार को राहुल द्रविड़ की तरह मि. डिपेंडेबल बताया है
-Arg2 : लोक जनशक्ति पार्टी ( लोजपा ) के नेता रामविलास पासवान को पाकिस्तान के विवादित अंपायर शकूर राणा जैसा करार दिया ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : Expansion.Alternative.Chosen alternative
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Expansion.Exception
 classifiedAs : Comparison
-singleConnectiveName : बल्कि
-Arg1 : वरुण के अनुसार उनका परिवार कांग्रेस पार्टी के प्रति नहीं
-Arg2 : विचार धाराओं के प्रति प्रतिबद्घ रहा है ।
+singleConnectiveName : लेकिन
+Arg1 : खंडपीठ ने चुनाव आयोग के वकील एस. मुरलीधरन से पूछा कि अगर अदालत राष्ट्रपति शासन को अवैध करार देती है तो चुनाव प्रक्रिया का क्या होगा , इस पर मुरलीधरन ने कहा कि २३ सितंबर को अधिसूचना जारी होने के बाद चुनाव प्रक्रिया शुरू हो जाएगी और इसके बाद कोई भी अदालत इस मामले में हस्तक्षेप नहीं कर सकती ।
+Arg2 : जवाब से संतुष्ट नहीं होने पर अदालत ने अटॅर्नी जनरल मिलन बनर्जी , एडिशनल सॉलीसिटर जनरल गोपाल सुब्रह्मण्यम् और पूर्व अटॅर्नी जनरल सोली जे. सोराबजी से राय ली ।
+----------------------------------------------------------------------------------------------------
+3 Frequency: 5
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : इसके अतिरिक्त
+Arg1 : इससे फसलों का न्यूनतम समर्थन मूल्य निर्धारण में आयोग को किसानों से पूरी जानकारी मिल पाएगी ।
+Arg2 : समिति ने किसानों को दिए जाने वाले ऋण पर ६ फीसदी ब्याज दर लागू करने की सिफारिश की है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : संघ ने दिल्ली में मौजूद सभी पदाधिकारियों की आपात बैठक बुलाई
+Arg2 : वाजपेयी के बयान के बाद स्थिति की समीक्षा की
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 3
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : व
+Arg1 : मुठभेड़ में कुल चार सुरक्षाकर्मी शहीद हुए
+Arg2 : सात घायल हुए
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 3
+classLabel : Comparison.Concession.Contra-expectation
+classifiedAs : Contingency
+singleConnectiveName : बावजूद इसके
+Arg1 : दिल्ली पुलिस ने इसकी इजाज़त नहीं दी
+Arg2 : सॉलिडेरिटी कमेटी इन सपोर्ट ऑफ रिवोल्यूशनरी स्ट्रगल के बैनर तले सैकड़ों नक्सलियों ने विरोध प्रदर्शन की कोशिश की और इस सिलसिले में अपनी गिरफ्तारी दी
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 3
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : यहाँ तक कि
+Arg1 : ये पढ़ाई तो कर रहे हैं लेकिन रोजगार भाग्य के ही भरोसे है । यानि यह खोटी शिक्षा इन्हें रोजी - रोटी की गारंटी नहीं दे सकती
+Arg2 : तमाम दावों के बावजूद मानव संसाधन विकास मंत्रालय अभी तक इस मामले में कोई ठोस कार्य योजना नहीं तैयार कर सका है ।
+----------------------------------------------------------------------------------------------------
+1 Frequency: 5
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : । पांच कारीगर जान बचाने के लिए दूसरी मंजिल से कूद गए
+Arg2 : घायल हो गए
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 1
@@ -755,41 +647,81 @@ singleConnectiveName : इसका
 Arg1 : इमराना बलात्कार कांड का विवाद अभी ठंडा भी नहीं पड़ा था कि असम के नागौन जिले में १९ वर्षीय महिला का इमराना जैसा मामला सामने आया है
 Arg2 : उसके ससुर ने बलात्कार किया
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : वजह
+Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए
+Arg2 : लंदन पर अलक़ायदा का आतंकी हमला
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Expansion
+singleConnectiveName : वहीं दूसरी ओर
+Arg1 : चुनाव आयोग लाभ के पद को ले कर सांसदों और विधायकों के खिलाफ याचिकाओं की बाढ़ से निबटने की तैयारी कर रहा है ।
+Arg2 : चुनाव आयुक्त नवीन चावला का मामला भी आयोग के गले की फांस बना हुआ है ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Expansion.Alternative.Chosen alternative
+classifiedAs : Comparison
+singleConnectiveName : बल्कि
+Arg1 : वरुण के अनुसार उनका परिवार कांग्रेस पार्टी के प्रति नहीं
+Arg2 : विचार धाराओं के प्रति प्रतिबद्घ रहा है ।
+----------------------------------------------------------------------------------------------------
+17 Frequency: 5
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 17
 classLabel : Temporal.Asynchronous.Succession
 classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : । पांच कारीगर जान बचाने के लिए दूसरी मंजिल से कूद गए
-Arg2 : घायल हो गए
-----------------------------------------------------------------------------------------------------
-16 Frequency: 3
+singleConnectiveName : और उसके बाद
+Arg1 : हमने क्षेत्रों की जरूरतों पर विचार किया
+Arg2 : इस निष्कर्ष पर पहुंचे कि राष्ट्रहित में यह जरूरी है
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 16
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 17
 classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : दूसरी ओर
-Arg1 : अनिल ने इसमें लिखा है कि आरोपों की गंभीरता को देखते हुए वह एक सक्षम सरकारी एजेंसी से मामले की तत्काल जांच के आदेश देने का अनुरोध करते हैं ।
-Arg2 : रिलायंस बंधुओं के बीच स्वामित्व के निपटाने के तहत अनिल को रिलायंस इंफोकॉम , रिलायंस एनर्जी और रिलायंस कैपिटल मिलने की संभावना की रिपोर्टो के बीच इस नए घटनाक्रम का बातचीत प्रक्रिया पर असर दिख सकता है
+classifiedAs : Contingency
+singleConnectiveName : इसी तरह से
+Arg1 : दक्षिणी कश्मीर में सक्रिय लश्कर - ए - तैयबा का राजा पाकिस्तानी जिसका कोड नाम शकलेन , कंट्रोलिंग नंबर ४४ था , छह जुलाई को मारा गया । जैश - ए - मोहम्मद , लश्कर - ए - तैयबा और हिजबुल मुजाहिदीन का मुख्य संचालनकर्ता हबीबुल्लाह , कोड नाम - फुर्कान ०४ जुलाई को पंपोर में मारा गया ।
+Arg2 : हिजबुल मुजाहिदीन के डिस्टिक कमांडर ( रफिया बाग ) हासिम को ०३ जुलाई को मार गिराया गया । इसका कोड नाम हमजा और दिलावर था ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 16
-classLabel : Temporal.Asynchronous.Succession
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 17
+classLabel : Contingency.Cause.Result
 classifiedAs : Expansion
 singleConnectiveName : और
-Arg1 : एक कारीगर थिनर से कपड़े साफ कर रहा था कि अचानक एक मशीन में स्पार्क हो गया
-Arg2 : आग लग गई ।
+Arg1 : अब एग्रो - फोरेस्टरी से आम लोगों की आर्थिक स्थिति बदलेगी
+Arg2 : उनकी खरीद क्षमता बढ़ सकती है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 16
-classLabel : Expansion.Conjunction
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 17
+classLabel : Contingency.Cause.Reason
+classifiedAs : Expansion
+singleConnectiveName : उल्लेखनीय है कि
+Arg1 : शुक्रवार को प्रगति मैदान में चल रहे अंतर्राष्ट्रीय व्यापार मेला में सपा अध्यक्ष और उत्तर प्रदेश के मुख्यमंत्री मुलायम सिंह यादव ने संघ प्रमुख के. एस. सुदर्शन की हिंदुओं को कम से कम तीन बच्चे पैदा करने की सलाह की जमकर खिल्ली उड़ाई ।
+Arg2 : देश में जनसंख्या का सांप्रदायिक आधार पर विश्लेषण करते हुए संघ प्रमुख सुदर्शन ने बृहस्पतिवार को हिंदुओं से कहा था कि बहुसंख्यक - अल्पसंख्यकों की अवधारणा को खत्म करने के लिए उन्हें भी कम से कम तीन बच्चे पैदा करने चाहिए ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 17
+classLabel : Expansion.Exception
 classifiedAs : Comparison
-singleConnectiveName : तथा
-Arg1 : । वे चाहती हैं कि जांच एजेंसी नतीजे के बारे में जानकारी दे
-Arg2 : दोषियों को जल्द गिरफ्तार करे
+singleConnectiveName : लेकिन
+Arg1 : कच्चे मालों की दरों में कुछ बदलाव किया जा सकता है
+Arg2 : पीक रेट 20 फीसदी ही रहेगा ।
 ----------------------------------------------------------------------------------------------------
-19 Frequency: 3
+19 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Temporal.Synchrony
+classifiedAs : Contingency
+singleConnectiveName : इसी दिन
+Arg1 : इधर वेंकैया नायडू अपने बयान से पलट गए और उन्होंने इस मुद्दे पर अलग से चर्चा की बात कही
+Arg2 : विहिप के नेता अशोक सिंघल ने कहा कि भाजपा वाजपेयी और आडवाणी के कारण हारी
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
 sentenceNum : 19
@@ -807,15 +739,99 @@ singleConnectiveName : और
 Arg1 : पूरा देश इस समय दैवी आपदा से जूझ रहा है
 Arg2 : सरकार का जिम्मेदार मीडिया ही अफवाह फैलाकर लोगों को गुमराह करने में लगा है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
 sentenceNum : 19
-classLabel : Temporal.Synchrony
+classLabel : Contingency.Cause.Result
 classifiedAs : Comparison
-singleConnectiveName : इसी दिन
-Arg1 : इधर वेंकैया नायडू अपने बयान से पलट गए और उन्होंने इस मुद्दे पर अलग से चर्चा की बात कही
-Arg2 : विहिप के नेता अशोक सिंघल ने कहा कि भाजपा वाजपेयी और आडवाणी के कारण हारी
+singleConnectiveName : लिहाजा
+Arg1 : ' मुझे प्रदेश अध्यक्ष इसलिए नहीं बनाया गया क्योंकि मेरे पास संघ का सर्टिफिकेट नहीं था
+Arg2 : उन्होंने लालू से तार जोड़ा और आज वे राजद के राष्ट्रीय प्रवक्ता हैं
 ----------------------------------------------------------------------------------------------------
-14 Frequency: 3
+9 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : आगे
+Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
+Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : Temporal
+singleConnectiveName : गौरतलब है कि
+Arg1 : अमेरिकी वायु - सेना ने अल क़ायदा से संबद्ध आतंकी जरकावी को निशाना बना कर शनिवार रात अनेक हमले किए
+Arg2 : जरकावी ने इराक के न्याय मंत्री मलेक दोहान के खिलाफ आत्मघाती हमले की जिम्मेदारी ली थी
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Contingency
+singleConnectiveName : इसी तरह
+Arg1 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
+Arg2 : २००१ - ०२ के दौरान कारों का विशेष उत्पाद कर २४ फीसदी के बजाय १६ फीसदी कर दिया गया ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : लेकिन
+Arg1 : उन्होंने कहा कि कुछ लोगों को इस बात पर आश्चर्य हो सकता है कि गांधी परिवार का सदस्य होने के बावजूद मैं भाजपा में कैसे शामिल हो गया
+Arg2 : हम पार्टी नहीं विचार धारा का सम्मान करते हैं ।
+----------------------------------------------------------------------------------------------------
+18 Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 18
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : आग की विकरालता को देखते ही कारीगरों में अफरातफरी मच गई
+Arg2 : वे जान बचाने के लिए नीचे की ओर भागे ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
+classLabel : Expansion.Conjunction
+classifiedAs : Temporal
+singleConnectiveName : आगे
+Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
+Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 18
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : इनके अलावा
+Arg1 : राज्य - जम्मू - कश्मीर , उत्तरांचल , असम , गुजरात , कर्नाटक , केरल , महाराष्ट्र और पूर्वोत्तर के कुछ राज्यों समेत १५ राज्य तो समय पर पूरा पैसा न तो खर्च कर पा रहे हैं और न उसे ले ही जा रहे हैं ।
+Arg2 : केंद्र की चिंता उन १० राज्यों को लेकर भी है जहाँ सड़क संपर्क बहुत कम है ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 18
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : Temporal
+singleConnectiveName : इधर
+Arg1 : भाजपा प्रवक्ता मुख्तार अब्बास नक़वी ने फिर १६ जून को कहा कि गुजरात के मुद्दे पर अलग से बंद कमरे में चर्चा हो सकती है
+Arg2 : वेंकैया नायडू अपने बयान से पलट गए और उन्होंने इस मुद्दे पर अलग से चर्चा की बात कही
+----------------------------------------------------------------------------------------------------
+14 Frequency: 4
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Expansion.Alternative.Chosen alternative
+classifiedAs : Comparison
+singleConnectiveName : बल्कि
+Arg1 : देर तक सोने वाले सीईओ तड़के उठ कर निकल पड़ते हैं प्रातः भ्रमण के लिए नहीं
+Arg2 : आनंद योग के लिए
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : प्रतिदिन की तरह सुबह कर्मचारी फैक्टरी पर पहुंचे
+Arg2 : काम में लग गए
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
 sentenceNum : 14
@@ -832,16 +848,62 @@ classifiedAs : Comparison
 singleConnectiveName : तथा
 Arg1 : अगले वर्ष २००० - २००१ में छह अन्य अकाली नेताओं के बच्चों को एनआरआई कोटे के तहत दाखिला दिया गया
 Arg2 : बाद में उनसे सामान्य कोटे की दर से फीस की वसूली की गई
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : Expansion.Alternative.Chosen alternative
-classifiedAs : Comparison
-singleConnectiveName : बल्कि
-Arg1 : देर तक सोने वाले सीईओ तड़के उठ कर निकल पड़ते हैं प्रातः भ्रमण के लिए नहीं
-Arg2 : आनंद योग के लिए
 ----------------------------------------------------------------------------------------------------
-22 Frequency: 3
+23 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 23
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : आखिरकार
+Arg1 : इसके बावजूद मुकेश खेमे का रुख ठंडा रहा ।
+Arg2 : अनिल ने आईपीसीएल बोर्ड से इस्तीफा दे दिया
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उनके मकानों की दीवारों में दरार आ गई
+Arg2 : ऊपरी हिस्सा टूट गया ।
+----------------------------------------------------------------------------------------------------
+21 Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 21
+classLabel : Comparison.Contrast.Opposition
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : उसके साथ कमलेश , संजय , हरेंद्र , रवि और कृपाशंकर ने भी नीचे कूदकर जान बचाई
+Arg2 : शेष ऊपर ही फंस गए ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 21
+classLabel : Contingency.Cause.Reason
+classifiedAs : Comparison
+singleConnectiveName : चूँकि
+Arg1 : कृषि वानिकी में अपार संभावनाएं हैं
+Arg2 : भारत में हर साल ८ - ९ हजार करोड़ रुपये की लकड़ी आयात होती है
+----------------------------------------------------------------------------------------------------
+16 Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 16
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : Expansion
+singleConnectiveName : और
+Arg1 : एक कारीगर थिनर से कपड़े साफ कर रहा था कि अचानक एक मशीन में स्पार्क हो गया
+Arg2 : आग लग गई ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 16
+classLabel : Expansion.Conjunction
+classifiedAs : Comparison
+singleConnectiveName : दूसरी ओर
+Arg1 : अनिल ने इसमें लिखा है कि आरोपों की गंभीरता को देखते हुए वह एक सक्षम सरकारी एजेंसी से मामले की तत्काल जांच के आदेश देने का अनुरोध करते हैं ।
+Arg2 : रिलायंस बंधुओं के बीच स्वामित्व के निपटाने के तहत अनिल को रिलायंस इंफोकॉम , रिलायंस एनर्जी और रिलायंस कैपिटल मिलने की संभावना की रिपोर्टो के बीच इस नए घटनाक्रम का बातचीत प्रक्रिया पर असर दिख सकता है
+----------------------------------------------------------------------------------------------------
+22 Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 22
@@ -851,14 +913,6 @@ singleConnectiveName : तथा
 Arg1 : समाधान प्रस्ताव सभी संबंधित पक्षों से विचार - विमर्श किया जाएगा
 Arg2 : अंतिम तौर पर शंकराचार्य जी महाराज और ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड के अध्यक्ष मौलाना नदवी साहब ही समाधान प्रस्ताव पर निर्णय करेंगे । वह
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 22
-classLabel : Expansion.Conjunction
-classifiedAs : Contingency
-singleConnectiveName : यह भी कहा जा रहा है कि
-Arg1 : बहुत संभव है , राहुल गाँधी को इस मौके पर कांग्रेस कार्य - समिति का सदस्य बनाया जाए
-Arg2 : शायद प्रियंका इस अवसर पर उपस्थित न हों , ताकि राहुल का आकर्षण बना रहे ।
-------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
 sentenceNum : 22
 classLabel : Expansion.Instantiation
@@ -867,23 +921,45 @@ singleConnectiveName : खासतौर पर
 Arg1 : केंद्र की चिंता उन १० राज्यों को लेकर भी है जहाँ सड़क संपर्क बहुत कम है । इनमें उत्तर प्रदेश , हिमाचल प्रदेश , असम , पश्चिम बंगाल , बिहार , राजस्थान , झारखंड , उड़ीसा , छत्तीसगढ़ और मध्य प्रदेश हैं । वर्ष २००१ से २००३ तक आवंटित कुल ५१२६.०९ ५१२६.०९ करोड़ रुपये में ४३४८.४८ ४३४८.४८ करोड़ और वर्ष २००३ - ०४ के आवंटित ४३५३.८० ४३५३.८० करोड़ में ३२९६.५९ ३२९६.५९ करोड़ रुपए ही खर्च हो पाए । जबकि मौजूदा वित्तीय वर्ष के लिए आबंटित ३४८० करोड़ रुपये पाने के लिए अभी तक ज्यादातर राज्य अपने प्रस्ताव तक नहीं भेज पाए हैं ।
 Arg2 : उत्तरी क्षेत्र के लगभग सभी राज्यों की स्थिति संतोषजनक नहीं है
 ----------------------------------------------------------------------------------------------------
-21 Frequency: 2
+27 Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-sentenceNum : 21
-classLabel : Contingency.Cause.Reason
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 27
+classLabel : Expansion.Conjunction
 classifiedAs : Comparison
-singleConnectiveName : चूँकि
-Arg1 : कृषि वानिकी में अपार संभावनाएं हैं
-Arg2 : भारत में हर साल ८ - ९ हजार करोड़ रुपये की लकड़ी आयात होती है
+singleConnectiveName : दूसरे
+Arg1 : इस बदलाव के पीछे भारत और पाकिस्तान का संघर्ष विराम का पालन करना काम कर रहा है ।
+Arg2 : , बाड़ और सेंसर ने भी काफी मदद की है ।
+----------------------------------------------------------------------------------------------------
+29 Frequency: 1
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 21
-classLabel : Comparison.Contrast.Opposition
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 29
+classLabel : Expansion.Conjunction
+classifiedAs : Contingency
+singleConnectiveName : उस पर
+Arg1 : सीमा में इनके घुसने के एक - दो दिन के भीतर ही पता चल जाता है ।
+Arg2 : नागरिकों के इनके साथ असहयोग से इनकी साजिशें धरी की धरी रह जा रही हैं । आतंकी मारे जा रहे हैं ।
+----------------------------------------------------------------------------------------------------
+24 Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 24
+classLabel : Temporal.Asynchronous.Succession
 classifiedAs : Expansion
 singleConnectiveName : और
-Arg1 : उसके साथ कमलेश , संजय , हरेंद्र , रवि और कृपाशंकर ने भी नीचे कूदकर जान बचाई
-Arg2 : शेष ऊपर ही फंस गए ।
+Arg1 : कृषि क्षेत्र में ९.१ ९.१ फीसदी की दर से वृद्धि हुई है
+Arg2 : इसका जीडीपी में भारी योगदान रहा ।
+----------------------------------------------------------------------------------------------------
+20 Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Contingency.Cause.Result
+classifiedAs : Comparison
+singleConnectiveName : नतीजतन
+Arg1 : आर्थिक सर्वेक्षण २००४ में कहा गया है कि सामाजिक इन्फ्रास्ट्रक्चर को भौतिक इन्फ्रास्ट्रक्चर के बराबर महत्व देने की गरज से राष्ट्रीय साझा न्यूनतम कार्यक्रम के अनुरूप शिक्षा और स्वास्थ्य पर विशेष बल दिया जाएगा ।
+Arg2 : , बजट अनुमान २००३ - ०४ में शिक्षा और स्वास्थ्य पर सार्वजनिक व्यय को बढ़ा कर जीडीपी का क्रमशः ६ फीसदी और २ - ३ फीसदी करने का निर्णय लिया गया है ।
 ----------------------------------------------------------------------------------------------------
 32 Frequency: 1
 ------
@@ -910,7 +986,7 @@ Arg2 : इस यूनिट का ठेकेदार हरिकिशन
 rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
 sentenceNum : 0
 classLabel : Comparison.Concession.Expectation
-classifiedAs : Contingency
+classifiedAs : Expansion
 singleConnectiveName : के बावजूद
 Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
 Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
@@ -925,52 +1001,12 @@ singleConnectiveName : इस तरह
 Arg1 : अब वह तीर - कमान इस्तेमाल नहीं करते बल्कि भाले से मछलियों व सूअरों का शिकार करते हैं । ग्रेट अंडमानीज परंपरागत रूप से जड़ें , समुद्री भोज्य पदार्थ , कछुए व उनके अंडे खाते हैं । लेकिन , पिछले कुछ सालों में उन्होंने शेष भारतवासियों की तरह चावल , दाल व रोटी खाना शुरू किया है । नुकसान देह पेय पीकर वे तरह - तरह की बीमारियों को न्योता दे रहे हैं
 Arg2 : अन्य भारतीयों के संपर्क में आकर ग्रेट अंडमानीज अपने ही अस्तित्व को खतरे में डाल रहे हैं
 ----------------------------------------------------------------------------------------------------
-27 Frequency: 1
+43 Frequency: 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-sentenceNum : 27
-classLabel : Expansion.Conjunction
-classifiedAs : Comparison
-singleConnectiveName : दूसरे
-Arg1 : इस बदलाव के पीछे भारत और पाकिस्तान का संघर्ष विराम का पालन करना काम कर रहा है ।
-Arg2 : , बाड़ और सेंसर ने भी काफी मदद की है ।
-----------------------------------------------------------------------------------------------------
-29 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-sentenceNum : 29
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 43
 classLabel : Expansion.Conjunction
 classifiedAs : Contingency
-singleConnectiveName : उस पर
-Arg1 : सीमा में इनके घुसने के एक - दो दिन के भीतर ही पता चल जाता है ।
-Arg2 : नागरिकों के इनके साथ असहयोग से इनकी साजिशें धरी की धरी रह जा रही हैं । आतंकी मारे जा रहे हैं ।
-----------------------------------------------------------------------------------------------------
-23 Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 23
-classLabel : Temporal.Asynchronous.Succession
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : उनके मकानों की दीवारों में दरार आ गई
-Arg2 : ऊपरी हिस्सा टूट गया ।
-----------------------------------------------------------------------------------------------------
-24 Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 24
-classLabel : Temporal.Asynchronous.Succession
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : कृषि क्षेत्र में ९.१ ९.१ फीसदी की दर से वृद्धि हुई है
-Arg2 : इसका जीडीपी में भारी योगदान रहा ।
-----------------------------------------------------------------------------------------------------
-18 Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 18
-classLabel : Temporal.Asynchronous.Succession
-classifiedAs : Expansion
-singleConnectiveName : और
-Arg1 : आग की विकरालता को देखते ही कारीगरों में अफरातफरी मच गई
-Arg2 : वे जान बचाने के लिए नीचे की ओर भागे ।
+singleConnectiveName : यही नहीं
+Arg1 : वह कहते हैं बाहरी दुनिया के संपर्क में आकर अच्छा लग रहा है । इससे पहले हमारा सारा ध्यान शिकार पर था
+Arg2 : जिरोकी बताते हैं कि बाहरी दुनिया के संपर्क में आने से ही उन्हें फिल्मों के बारे में भी पता चला

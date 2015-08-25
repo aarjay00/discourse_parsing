@@ -15,6 +15,7 @@ class Feature():
 		self.discourseFile=discourse_file
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])
+		self.loadCombo("tagSet")
 		self.chunkSet=self.loadSet(chunk_path,["First","Last","Null"])
 		self.loadCombo("chunkSet")
 		self.categorySet=self.loadSet("./lists/category.list")
@@ -114,7 +115,7 @@ class Feature():
 			else:
 				tagList.append(self.globalWordList[wordList[0]+offSet].wordTag)
 		else:
-			if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1]+offSet].sentenceNum):
+			if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
 				tagList.append("Last")
 			else:
 			 	tagList.append(self.globalWordList[wordList[-1]+offSet].wordTag)
@@ -124,6 +125,35 @@ class Feature():
 		feature=self.markItemsinList(tagList,self.tagSet)
 		print feature
 		return feature
+	def tagCombo(self,wordList,offSet1,offSet2):
+		print "tagCombo",offSet1,offSet2
+		tag=""
+		if(offSet1==0):
+			tag=self.globalWordList[wordList[0]].wordTag
+		elif(offSet1<0):
+			if(wordList[0]+offSet1<0 or self.globalWordList[wordList[0]+offSet1].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
+				tag="First"
+			else:
+				tag=self.globalWordList[wordList[0]+offSet1].wordTag
+		else:
+			if(wordList[-1]+offSet1>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet1].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
+				tag="Last"
+			else:
+			 	tag=self.globalWordList[wordList[-1]+offSet1].wordTag
+		if(offSet2==0):
+			tag=self.globalWordList[wordList[-1]].wordTag
+		elif(offSet2<0):
+			if(wordList[0]+offSet2<0 or self.globalWordList[wordList[0]+offSet2].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
+				tag=tag+" First"
+			else:
+				tag=tag+" "+self.globalWordList[wordList[0]+offSet2].wordTag
+		else:
+			if(wordList[-1]+offSet2>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet2].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
+				tag=tag+" Last"
+			else:
+			 	tag=tag+" "+self.globalWordList[wordList[-1]+offSet2].wordTag
+		print tag
+		feature=self.markItemsinList([tag],self.tagSetCombo)
 	def chunkFeature(self,wordList):
 		print "chunkfeature"
 		chunkList=[]
@@ -135,6 +165,23 @@ class Feature():
 		chunkList=list(set(chunkList))
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
+	def chunkNeighbor(self,wordList,offSet):
+		print "chunkNeighbor",offSet
+		chunkList=[]
+		if(offSet<0):
+			try:
+				chunkList.append(self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag)
+			except AttributeError:
+				chunkList.append("First")
+		else:
+			try:
+				chunkList.append(self.getChunkInfo(self.globalWordList[wordList[-1]],offSet).chunkTag)
+			except AttributeError:
+				chunkList.append("Last")
+		for chunk in chunkList:
+			print chunk
+		print ""
+		feature=self.markItemsinList(chunkList,self.chunkSet)
 	def chunkCombo(self,wordList,offSet1,offSet2):
 		print "chunkCombo",offSet1,offSet2
 		chunkList=[]
@@ -166,30 +213,13 @@ class Feature():
 		chunkList.append(chunk)
 		print chunk
 		feature=self.markItemsinList(chunkList,self.chunkSetCombo)
-	def chunkNeighbor(self,wordList,offSet):
-		print "chunkNeighbor",offSet
-		chunkList=[]
-		if(offSet<0):
-			try:
-				chunkList.append(self.getChunkInfo(self.globalWordList[wordList[0]],offSet).chunkTag)
-			except AttributeError:
-				chunkList.append("First")
-		else:
-			try:
-				chunkList.append(self.getChunkInfo(self.globalWordList[wordList[-1]],offSet).chunkTag)
-			except AttributeError:
-				chunkList.append("Last")
-		for chunk in chunkList:
-			print chunk
-		print ""
-		feature=self.markItemsinList(chunkList,self.chunkSet)
 	def tamFeature(self,wordList):
 		print "tamFeature"
 	def chunkSeqFeature(self,chunkSeq):
 		print "ChunkSeqFeature",len(chunkSeq)
 		if(len(chunkSeq)>20):
 			print "ahem chunk"
-		for i in range(0,20):
+		for i in range(0,40):
 			if(i<len(chunkSeq)):
 				print chunkSeq[i].chunkTag,
 				feature=self.markItemsinList([chunkSeq[i].chunkTag],self.chunkSet)
