@@ -175,7 +175,9 @@ for discourseFile in discourseFileCollection:
 		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single Connective Sense Identification",wordList[conn[0]].sense,len(featureDescSingleCollection))
 		featureDescInst.addAttr("singleConnectiveName",getSpan(conn,wordList))
 		featureDescInst.addAttr("Arg1",getSpan(word.arg1Span,wordList))
+		featureDescInst.addAttr("Arg1SentenceNum",wordList[word.arg1Span[0]].sentenceNum)
 		featureDescInst.addAttr("Arg2",getSpan(word.arg2Span,wordList))
+		featureDescInst.addAttr("Arg2SentenceNum",wordList[word.arg2Span[0]].sentenceNum)
 		featureDescSingleCollection.append(featureDescInst)
 	connSingleSet.extend(singleSet)
 	connSplitSet.extend(splitSet)
@@ -189,6 +191,22 @@ for featureNum in range(0,len(featureCollectionSingle)):
 print "featureSize",len(featureCollectionSingle[0].featureVector)
 
 
+
+#code to print out filename wrt to sensese	
+#dic={}
+#for featureDescInst in featureDescSingleCollection:
+#	if(featureDescInst.classLabel.split(".")[0] not in dic):
+#		dic[featureDescInst.classLabel.split(".")[0]]=[]
+#	dic[featureDescInst.classLabel.split(".")[0]].append(featureDescInst)
+#for key in dic.keys():
+#	FD=open(key+"_files","w")
+#	for f in dic[key]:
+#		f.printFeatureDesc(FD)
+#		FD.write("-"*100+"\n")
+#	FD.close()
+#---------------------------------------------
+
+#exit()
 
 print "avgLen",chunkSeqLen1
 print "avgLen",chunkSeqLen2
