@@ -11,7 +11,7 @@ from letter import *
 from annotated_data import *
 from feature import *
 from analysis import *
-
+import numpy as np
 
 from sklearn.linear_model import LogisticRegression as maxent
 from sklearn.linear_model import Perceptron
@@ -46,7 +46,8 @@ def genModel(classList):
 
 def runModel(featureCollection,featureDescCollection,classList,analysisFolderName,cycleLen,yesWt=1,noWt=1):
 	combinedData=zip(featureCollection,featureDescCollection)
-	shuffle(combinedData)
+	for i in range(0,10):
+		np.random.shuffle(combinedData)
 	featureCollection,featureDescCollection=zip(*combinedData)
 	avgPrecision={}
 	avgRecall={}

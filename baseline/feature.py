@@ -8,6 +8,7 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 from util import *
 from letter import *
+from tree_api import *
 
 
 class Feature():
@@ -111,11 +112,14 @@ class Feature():
 		tagList=[]
 		if(offSet<0):
 			if(wordList[0]+offSet<0 or self.globalWordList[wordList[0]+offSet].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
+	#		if(wordList[0]+offSet<0):
 				tagList.append("First")
 			else:
 				tagList.append(self.globalWordList[wordList[0]+offSet].wordTag)
 		else:
-			if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
+			if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1] +offSet].sentenceNum):
+# This should be the correct line of code but above line giving better results :/ :/
+#		if(wordList[-1]+offSet>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
 				tagList.append("Last")
 			else:
 			 	tagList.append(self.globalWordList[wordList[-1]+offSet].wordTag)
@@ -260,6 +264,54 @@ class Feature():
 	  	if(node_feature not in nodeSet):
 			print "ERROR !!!!",nodeListName
 		feature=self.markItemsinList([node_feature],nodeSet)
+	def hasNodeRelation(self,nodeRelation,node,nodeDict,maxLevel):
+		if(findRelation(nodeRelation,node,nodeDict,0,maxLevel)):
+			self.featureVector.append(1)
+			print "nodeRelation found"
+		else:
+			self.featureVector.append(0)
+			print "nodeRelation not found"
+
+	def aurFeature(self,conn):
+		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
+			self.featureVector.append(0)
+			return [0]
+		chunkNum=0
+		before=False
+		after=False
+		middle=False
+		sentence=self.discourseFile.sentenceList[self.globalWordList[conn[0]].sentenceNum]
+                for chunk in sentence.chunkList:
+			if(chunk.chunkTag[:2]=="VG"):
+                                if(middle==False):
+                                        before=True
+                                else:
+                                        after=True
+                        for word in chunk.wordNumList:
+                                if(self.discourseFile.globalWordList[word].word==u'\u0914\u0930'):
+                                        middle=True
+                        chunkNum+=1
+		if(before and after):
+			self.featureVector.append(1)
+			return [1]
+		self.featureVector.append(0)
+		return [0]
+	def aurFeature2(self,conn,nodeName,nodeDict,c):
+		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
+			self.featureVector.append(0)
+			return [0]	
+		childList=nodeDict[nodeName].childList
+		childVGF=0
+		for child in nodeDict[nodeName].childList:
+			if(nodeDict[nodeName].getChunkName(child)[:2]=="VG"):
+				childVGF+=1
+		if(childVGF==2):
+			print "aurFeature2 yes",c
+			self.featureVector.append(1)
+		else:
+			print "aurFeature2 no",c
+			self.featureVector.append(0)
+		 	
 	def markItemsinList(self,List,Set):
 # 		set is universal set out of which marking objects contained in list
 		feature=[]
