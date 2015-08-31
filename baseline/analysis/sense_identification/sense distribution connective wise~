@@ -1,0 +1,262 @@
+Connective: और 123
+	Expansion -- 102 82.9268292683 %
+	Temporal -- 13 10.5691056911 %
+	Comparison -- 5 4.06504065041 %
+	Contingency -- 3 2.43902439024 %
+Connective: लेकिन 73
+	Comparison -- 68 93.1506849315 %
+	Expansion -- 4 5.47945205479 %
+	Contingency -- 1 1.3698630137 %
+Connective: जबकि 34
+	Comparison -- 34 100.0 %
+Connective: उधर 30
+	Comparison -- 28 93.3333333333 %
+	Expansion -- 2 6.66666666667 %
+Connective: हालांकि 19
+	Comparison -- 19 100.0 %
+Connective: इसलिए 18
+	Contingency -- 18 100.0 %
+Connective: इसके_अलावा 16
+	Expansion -- 15 93.75 %
+	Comparison -- 1 6.25 %
+Connective: साथ_ही 15
+	Expansion -- 14 93.3333333333 %
+	Temporal -- 1 6.66666666667 %
+Connective: वहीं 15
+	Comparison -- 14 93.3333333333 %
+	Expansion -- 1 6.66666666667 %
+Connective: गौरतलब_है_कि 14
+	Temporal -- 5 35.7142857143 %
+	Contingency -- 4 28.5714285714 %
+	Expansion -- 4 28.5714285714 %
+	Comparison -- 1 7.14285714286 %
+Connective: के_बाद 13
+	Temporal -- 13 100.0 %
+Connective: इसके_बाद 11
+	Temporal -- 11 100.0 %
+Connective: दूसरी_ओर 10
+	Comparison -- 9 90.0 %
+	Expansion -- 1 10.0 %
+Connective: तथा 10
+	Expansion -- 6 60.0 %
+	Comparison -- 4 40.0 %
+Connective: या 9
+	Expansion -- 9 100.0 %
+Connective: क्योंकि 9
+	Contingency -- 9 100.0 %
+Connective: इस_बीच 9
+	Temporal -- 8 88.8888888889 %
+	Comparison -- 1 11.1111111111 %
+Connective: बहरहाल 8
+	Comparison -- 8 100.0 %
+Connective: पर 8
+	Comparison -- 8 100.0 %
+Connective: तो 8
+	Contingency -- 6 75.0 %
+	Comparison -- 2 25.0 %
+Connective: बल्कि 7
+	Comparison -- 5 71.4285714286 %
+	Expansion -- 2 28.5714285714 %
+Connective: इस_दौरान 7
+	Temporal -- 7 100.0 %
+Connective: ताकि 6
+	Contingency -- 6 100.0 %
+Connective: इससे 6
+	Contingency -- 6 100.0 %
+Connective: इस_पर 6
+	Contingency -- 6 100.0 %
+Connective: यानि 5
+	Expansion -- 4 80.0 %
+	Contingency -- 1 20.0 %
+Connective: के_लिए 5
+	Contingency -- 5 100.0 %
+Connective: उल्लेखनीय_है_कि 5
+	Expansion -- 4 80.0 %
+	Contingency -- 1 20.0 %
+Connective: आगे 5
+	Expansion -- 3 60.0 %
+	Temporal -- 2 40.0 %
+Connective: यहाँ_तक_कि 4
+	Expansion -- 3 75.0 %
+	Contingency -- 1 25.0 %
+Connective: मगर 4
+	Comparison -- 4 100.0 %
+Connective: बाद_में 4
+	Temporal -- 4 100.0 %
+Connective: जिससे 4
+	Contingency -- 4 100.0 %
+Connective: की_वजह_से 4
+	Contingency -- 4 100.0 %
+Connective: इससे_पहले 4
+	Temporal -- 4 100.0 %
+Connective: दरअसल 3
+	Contingency -- 2 66.6666666667 %
+	Expansion -- 1 33.3333333333 %
+Connective: खासकर 3
+	Expansion -- 3 100.0 %
+Connective: के_कारण 3
+	Contingency -- 3 100.0 %
+Connective: इसी_प्रकार 3
+	Expansion -- 2 66.6666666667 %
+	Comparison -- 1 33.3333333333 %
+Connective: इसके_साथ_ही 3
+	Expansion -- 3 100.0 %
+Connective: इसके_लिए 3
+	Contingency -- 3 100.0 %
+Connective: इसके_चलते 3
+	Contingency -- 3 100.0 %
+Connective: व 2
+	Expansion -- 2 100.0 %
+Connective: लिहाजा 2
+	Contingency -- 2 100.0 %
+Connective: या_फिर 2
+	Expansion -- 2 100.0 %
+Connective: यही_वजह_है_कि 2
+	Contingency -- 2 100.0 %
+Connective: यही_नहीं 2
+	Expansion -- 2 100.0 %
+Connective: बताया_जाता_है_कि 2
+	Expansion -- 2 100.0 %
+Connective: दूसरी_तरफ 2
+	Comparison -- 2 100.0 %
+Connective: तब 2
+	Temporal -- 2 100.0 %
+Connective: जिसके_चलते 2
+	Contingency -- 2 100.0 %
+Connective: उसके_बाद 2
+	Temporal -- 2 100.0 %
+Connective: इसीलिए 2
+	Contingency -- 2 100.0 %
+Connective: अलबत्ता 2
+	Comparison -- 2 100.0 %
+Connective: अंततः 2
+	Contingency -- 1 50.0 %
+	Expansion -- 1 50.0 %
+Connective: हालाकि 1
+	Comparison -- 1 100.0 %
+Connective: से 1
+	Contingency -- 1 100.0 %
+Connective: समझा_जाता_है_कि 1
+	Temporal -- 1 100.0 %
+Connective: शायद_ही 1
+	Expansion -- 1 100.0 %
+Connective: वैसे 1
+	Comparison -- 1 100.0 %
+Connective: वहीं_पर 1
+	Expansion -- 1 100.0 %
+Connective: वहीं_दूसरी_ओर 1
+	Comparison -- 1 100.0 %
+Connective: वहां_इस_दौरान 1
+	Temporal -- 1 100.0 %
+Connective: वजह 1
+	Contingency -- 1 100.0 %
+Connective: लिहाज़ा 1
+	Contingency -- 1 100.0 %
+Connective: यह_भी_कहा_जा_रहा_है_कि 1
+	Expansion -- 1 100.0 %
+Connective: यह_प्रश्न_किए_जाने_पर_कि 1
+	Contingency -- 1 100.0 %
+Connective: यह_पूछे_जाने_पर_कि 1
+	Contingency -- 1 100.0 %
+Connective: में 1
+	Comparison -- 1 100.0 %
+Connective: मालूम_हो_कि 1
+	Comparison -- 1 100.0 %
+Connective: मसलन 1
+	Expansion -- 1 100.0 %
+Connective: बावजूद_इसके 1
+	Comparison -- 1 100.0 %
+Connective: बताया_जाता_है 1
+	Comparison -- 1 100.0 %
+Connective: फलतः 1
+	Contingency -- 1 100.0 %
+Connective: पहले 1
+	Temporal -- 1 100.0 %
+Connective: नतीजतन 1
+	Contingency -- 1 100.0 %
+Connective: दूसरे 1
+	Expansion -- 1 100.0 %
+Connective: तो_दूसरी_ओर 1
+	Contingency -- 1 100.0 %
+Connective: जैसे_ही 1
+	Temporal -- 1 100.0 %
+Connective: जिससे_कि 1
+	Contingency -- 1 100.0 %
+Connective: जिसकी_वजह_से 1
+	Contingency -- 1 100.0 %
+Connective: चूँकि 1
+	Contingency -- 1 100.0 %
+Connective: खासतौर_पर 1
+	Expansion -- 1 100.0 %
+Connective: के_बावजूद 1
+	Comparison -- 1 100.0 %
+Connective: कुछ_दिनों_पहले_ही 1
+	Temporal -- 1 100.0 %
+Connective: और_तभी 1
+	Temporal -- 1 100.0 %
+Connective: और_उसके_बाद 1
+	Temporal -- 1 100.0 %
+Connective: और_इसी_के_बाद 1
+	Expansion -- 1 100.0 %
+Connective: और_इससे 1
+	Expansion -- 1 100.0 %
+Connective: और_इसलिए 1
+	Expansion -- 1 100.0 %
+Connective: और_इसके_बाद 1
+	Expansion -- 1 100.0 %
+Connective: ऐसे_में 1
+	Contingency -- 1 100.0 %
+Connective: ऐसा_किए_जाने_से 1
+	Contingency -- 1 100.0 %
+Connective: उस_पर 1
+	Expansion -- 1 100.0 %
+Connective: उधर_एक 1
+	Comparison -- 1 100.0 %
+Connective: इसी_दिन 1
+	Temporal -- 1 100.0 %
+Connective: इसी_तरह_से 1
+	Expansion -- 1 100.0 %
+Connective: इसी_तरह 1
+	Comparison -- 1 100.0 %
+Connective: इसी_डर_से 1
+	Contingency -- 1 100.0 %
+Connective: इसी_के_बाद 1
+	Temporal -- 1 100.0 %
+Connective: इससे_पूर्व 1
+	Temporal -- 1 100.0 %
+Connective: इसके_मद्देनजर 1
+	Contingency -- 1 100.0 %
+Connective: इसके_बाद_ही 1
+	Contingency -- 1 100.0 %
+Connective: इसके_बाद_से 1
+	Temporal -- 1 100.0 %
+Connective: इसके_पूर्व 1
+	Temporal -- 1 100.0 %
+Connective: इसके_थोड़ी_देर_बाद 1
+	Temporal -- 1 100.0 %
+Connective: इसके_अतिरिक्त 1
+	Expansion -- 1 100.0 %
+Connective: इसका_उद्देश्य 1
+	Contingency -- 1 100.0 %
+Connective: इसका 1
+	Expansion -- 1 100.0 %
+Connective: इस_संबंध_में 1
+	Expansion -- 1 100.0 %
+Connective: इस_बारे_में 1
+	Expansion -- 1 100.0 %
+Connective: इस_बात_पर 1
+	Contingency -- 1 100.0 %
+Connective: इस_प्रकार 1
+	Contingency -- 1 100.0 %
+Connective: इस_तरह 1
+	Expansion -- 1 100.0 %
+Connective: इस_कारण 1
+	Contingency -- 1 100.0 %
+Connective: इनके_अलावा 1
+	Expansion -- 1 100.0 %
+Connective: इधर 1
+	Comparison -- 1 100.0 %
+Connective: इतना_ही_नहीं 1
+	Expansion -- 1 100.0 %
+Connective: आखिरकार 1
+	Contingency -- 1 100.0 %

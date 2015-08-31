@@ -140,7 +140,7 @@ class Feature():
 			else:
 				tag=self.globalWordList[wordList[0]+offSet1].wordTag
 		else:
-			if(wordList[-1]+offSet1>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet1].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
+			if(wordList[-1]+offSet1>=len(self.globalWordList) or self.globalWordList[wordList[-1]].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
 				tag="Last"
 			else:
 			 	tag=self.globalWordList[wordList[-1]+offSet1].wordTag
@@ -152,7 +152,7 @@ class Feature():
 			else:
 				tag=tag+" "+self.globalWordList[wordList[0]+offSet2].wordTag
 		else:
-			if(wordList[-1]+offSet2>=len(self.globalWordList) or self.globalWordList[wordList[-1]+offSet2].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
+			if(wordList[-1]+offSet2>=len(self.globalWordList) or self.globalWordList[wordList[-1]].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
 				tag=tag+" Last"
 			else:
 			 	tag=tag+" "+self.globalWordList[wordList[-1]+offSet2].wordTag
@@ -248,16 +248,18 @@ class Feature():
 			else:
 				feature=self.markItemsinList(["Null"],self.dependencySet)
 		print ""
-	def nodeRelationFeature(self,node_relation):
-		print "nodeRelationFeature"
-		if(node_relation not in self.nodeRelationSet):
-			print "ERROR !!!! nodeRelation",node_relation
-		feature=self.markItemsinList([node_relation],self.nodeRelationSet)
-	def nodeParentFeature(self,node_parent):
-		print "nodeParentFeature"
-		if(node_parent not in self.nodeParentSet):
-			print "ERROR !!!! nodeParent",node_parent
-		feature=self.markItemsinList([node_parent],self.nodeParentSet)
+	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
+		if(getSpan(conn,self.globalWordList)!=connective):
+			self.featureVector.append(0)
+			return [0]
+#		print "got ke baad"
+		for nodeRelation in nodeRelationList:
+			if(not findRelation(nodeRelation,node,nodeDict,0,maxLevel)):
+				self.featureVector.append(0)
+				return [0]
+		self.featureVector.append(1)
+		return [1]
+
 	def nodeFeature(self,node_feature,nodeListName):
 	  	print nodeListName,"Feature"
 	  	nodeSet=getattr(self,nodeListName)
@@ -311,7 +313,26 @@ class Feature():
 		else:
 			print "aurFeature2 no",c
 			self.featureVector.append(0)
-		 	
+	def parFeature(self,conn):
+		if(getSpan(conn,self.globalWordList)!=u'\u092a\u0930'):
+			self.featureVector.append(0)
+			return [0]
+		print "got par"
+		checkList=[u'\u0916\u093e\u0938\u0924\u094c\u0930',u'\u0935\u0939\u0940\u0902',u'\u0909\u0938',u'\u0907\u0938',u'\u0907\u0938 \u092c\u093e\u0924']
+		if(self.globalWordList[conn[0]-1].word in checkList):
+			self.featureVector.append(1)
+			print "found",self.globalWordList[conn[0]-1].word
+			return [1]
+		try:
+			if(self.globalWordList[conn[0]-2].word+" "+self.globalWordList[conn[0]-1].word in checkList):
+				self.featureVector.append(1)
+				print "found",self.globalWordList[conn[0]-2].word+" "+self.globalWordList[conn[0]-1].word
+				return [1]
+		except:
+			pass
+		print "not found"
+		self.featureVector.append(0)
+		return [0]
 	def markItemsinList(self,List,Set):
 # 		set is universal set out of which marking objects contained in list
 		feature=[]

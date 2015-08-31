@@ -137,7 +137,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 
 	basicAnalysis(errorCollection,analysisFolderName)
 
-	return (avgPrecision,avgRecall,avgModelScore)
+	return (avgPrecision,avgRecall,avgModelScore,errorCollection)
 
 
 # USELESS STUFF not willing to delete yet :P--------------------------------------------------------------------

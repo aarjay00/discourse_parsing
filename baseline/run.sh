@@ -1,6 +1,8 @@
 #!/bin/bash
-for i in `seq 1 20`;
+
+while [ 1 -eq 1 ]
 do
-	echo $i
-	time python  identify_connectives.py > o1
-done 
+	clear
+	grep "running" o1 | wc -l
+	sleep 1
+done
