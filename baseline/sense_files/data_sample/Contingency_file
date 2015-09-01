@@ -1,0 +1,61 @@
+rawFileName : fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : आयोग के पास केवल एक ही तरह के मामले की भीड़ बढ़ जाएगी ।
+Arg1SentenceNum : 11
+Arg2 : आयोग चाहता है कि तेजी से इन मामलों को निबटाया जाए ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : बिजली की अनियमित आपूर्ति से तबाह हो रहे उद्योगों को बचाने और लोगों को बिजली गुल से राहत दिलाने के लिए सरकार के पास एकमात्र एकमात्र यही रास्ता बचा है
+Arg1SentenceNum : 1
+Arg2 : सरकार अब ' कैप्टिव पॉवर प्लांट ' को बढ़ावा देने जा रही है ।
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Condition.Factual
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : शुक्रवार की रात को जब एक आतंकी के मारे जाने के बाद दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg1SentenceNum : 8
+Arg2 : सुरक्षा - बलों व अन्य सभी एजेंसियों ने मान लिया कि वह भी मारा गया है
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2620696_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
+Arg1SentenceNum : 13
+Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : बिहार के जेलमंत्री राघवेंद्र प्रताप सिंह ने राजद के बाहुबली सांसद पप्पू यादव द्वारा बेउर जेलकर्मियों को जान से मारने की धमकी के आरोप की जाँच के आदेश दिए
+Arg1SentenceNum : 0
+Arg2 : कि जेल प्रशासन ने जब इस बाहुबली नेता को उनसे मिलने आए लोगों से भेंट नहीं करने दी तो शनिवार को उन्होंने जेलकर्मियों को परिणाम भुगतने की धमकी
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : नटवर सिंह का यह दौरा दोनों देशों के बीच आर्थिक एवं राजनीतिक सहयोग की दृष्टि से काफी महत्वपूर्ण माना जा रहा है
+Arg1SentenceNum : 1
+Arg2 : श्रीलंका की सुनामी पुनर्निर्माण परियोजना में भारत श्रीलंका को महत्वपूर्ण रूप से मदद प्रदान कर रहा है
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,60 @@
+rawFileName : fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Comparison.Concession.Contra-expectation
+classifiedAs : 
+singleConnectiveName : लेकिन
+Arg1 : भारत की ओर से भले ही उसे एमएफएन का दर्जा मिला हुआ है
+Arg1SentenceNum : 14
+Arg2 : जमीनी हकीक़त यह है कि भारत ने अपने आर्थिक हितों को साधने के लिए द्विपक्षीय कारोबार में कई अवरोध खड़े कर दिए हैं
+Arg2SentenceNum : 14
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Comparison.Concession.Contra-expectation
+classifiedAs : 
+singleConnectiveName : लेकिन
+Arg1 : अखबार की रिपोर्ट के बाद विद्रोहियों की ओर से प्रभाकरन के नाम से श्रीलंका के सुनामी प्रभावित इलाकों में अंतर्राष्ट्रीय मदद की अपील की गई थी
+Arg1SentenceNum : 9
+Arg2 : आमतौर पर विद्रोहियों के रेडियो से अपने संदेश जारी करने वाले प्रभाकरन की आवाज तमिल विद्रोहियों के इलाकों में अब तक सुनाई नहीं दी
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 15
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : 
+singleConnectiveName : हालांकि
+Arg1 : एक ओर फिक्स्ड लाइन में सार्वजनिक उपक्रमों के ग्राहकों की संख्या में कमी आ रही है वहीं दूसरी ओर निजी क्षेत्र के उपक्रमों के ग्राहकों की संख्या में १०० फीसदी की वृद्धि दर्ज की है ।
+Arg1SentenceNum : 14
+Arg2 : मोबाइल फोन के मामले में सार्वजनिक क्षेत्र के ग्राहकों की संख्या २६.४ २६.४ लाख से बढ़कर ६० लाख हो गई है ।
+Arg2SentenceNum : 15
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Comparison.Concession
+classifiedAs : 
+singleConnectiveName : हालांकि
+Arg1 : उन्होंने भीड़ को तितर - बितर होने और कानून अपने हाथ में नहीं लेने के लिए राजी किया ।
+Arg1SentenceNum : 6
+Arg2 : आयोग ने इस बात पर आश्चर्य प्रकट किया कि कमलनाथ पुलिस अधिकारियों से संपर्क किये बगैर कानून व्यवस्था की चिंता के लिए गुरुद्वारा पहुंच गये ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 12
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : 
+singleConnectiveName : तथा
+Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है
+Arg1SentenceNum : 12
+Arg2 : हिंदुओं की 29.6 29.6 फीसदी
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 16
+classLabel : Comparison.Contrast.Juxtaposition
+classifiedAs : 
+singleConnectiveName : जबकि
+Arg1 : तेदेपा ने यह कहकर इसका विरोध किया कि इसके जरिए कांग्रेस सरकार अपने हारे हुए नेताओं और तथाकथित बुद्धिजीवियों को रोजगार देना चाहती है ।
+Arg1SentenceNum : 15
+Arg2 : भाजपा के वेंकैया नायडू ने इसका समर्थन करते हुए कहा कि ऊपरी सदन हमारी जरूरत भी है और मजबूरी भी
+Arg2SentenceNum : 16
+----------------------------------------------------------------------------------------------------

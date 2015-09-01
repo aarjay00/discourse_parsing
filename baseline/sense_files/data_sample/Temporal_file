@@ -1,0 +1,82 @@
+rawFileName : fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : जब वे वहां पहुंचे थे तो वहां भारी पुलिस बल मौजूद था
+Arg1SentenceNum : 5
+Arg2 : पुलिस आयुक्त भी तभी वहां पहुंच गये थे ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : आग पर काबू पाने के लिए दमकल की करीब तीन दर्जन गाड़ियां भेजी गई
+Arg1SentenceNum : 5
+Arg2 : लगभग 75 से अधिक दमकलकर्मियों को चार घंटे तक जूझना पड़ा ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
+Arg1SentenceNum : 8
+Arg2 : मीडिया से बातचीत में कहा कि १९६२ के मास्टर प्लान में डेढ़ सौ व्यक्तियों के बीच एक दुकान का प्रावधान किया गया था
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
+Arg1SentenceNum : 2
+Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2602791_date_18_7_2004.utf8
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : जोशीपुरा ने बताया कि अनिल भारद्वाज जल्द ही सरदार पटेल विश्वविद्यालय आने वाले हैं । उनके साथ में इस शोध परियोजना पर बात - चीत करेंगे ।
+Arg1SentenceNum : 9
+Arg2 : जोशीपुरा को नासा के अलबामा स्थित हेंसविले रिसर्च सेंटर में व्याख्यान देने के लिए आमंत्रित किया गया था
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : आतंकवाद कायरतापूर्ण कृत है और यह नफ़रत फैलाता है ।
+Arg1SentenceNum : 3
+Arg2 : बृहस्पतिवार को लंदन में आतंकी हमला हुआ था ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1SentenceNum : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg1SentenceNum : 7
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,850 @@
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg1SentenceNum : 8
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : पहले
+Arg1 : अलग मंत्रालय के गठन का उद्देश्य यह भी था कि पंचायती राज से संबंधित मुद्दों पर अलग से ध्यान दिया जा सके
+Arg1SentenceNum : 4
+Arg2 : यह ग्रामीण विकास मंत्रालय के तहत पूर्ण विभाग के रूप में काम कर रहा था
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : एक साल से ज्यादा समय बीतने
+Arg1SentenceNum : 7
+Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
+Arg1SentenceNum : 0
+Arg2 : इसे रद्द कर दिया गया है
+Arg2SentenceNum : 0
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और तभी
+Arg1 : हर मामले की उपयोगिता को परखा जाए
+Arg1SentenceNum : 13
+Arg2 : न्यूनतम साझा कार्यक्रम ( सीएमपी ) के तहत विनिवेश की सिफारिश की जाए
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
+Arg1SentenceNum : 8
+Arg2 : मीडिया से बातचीत में कहा कि १९६२ के मास्टर प्लान में डेढ़ सौ व्यक्तियों के बीच एक दुकान का प्रावधान किया गया था
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
+sentenceNum : 9
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : यहाँ नौ सेकेंड तक भूकंप के झटके महसूस किए गए । इसका केंद्र स्पोर्ट स्पोर्ट सिटी के ७३ किलोमीटर दूर स्थित था । मौसम विभाग के अनुसार अंडमान व निकोबार में शुक्रवार रात १२.२१ १२.२१ बजे रिक्टर पैमाने ५.२ ५.२ की तीव्रता के साथ भूकंप का झटका महसूस किया गया । इसका केंद्र ग्रेट निकोबार द्वीप के पश्चिमी तट की ओर था
+Arg1SentenceNum : 5
+Arg2 : शनिवार सुबह ८.१९ ८.१९ बजे रिक्टर पैमाने पर ५ की तीव्रता के साथ दूसरा झटका लगा जिसका केंद्र उत्तरी अंडमान था
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके थोड़ी देर बाद
+Arg1 : दिन में ११.०० ११.०० बजे के करीब ५.२ ५.२ की तीव्रता के साथ तीसरा झटका महसूस किया गया जिसका केंद्र लिटिल अंडमान का पश्चिमी तट था
+Arg1SentenceNum : 10
+Arg2 : सुमात्रा के पश्चिमी तट पर ५.० ५.० की तीव्रता का भूकंप रिकॉर्ड किया गया
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
+Arg1SentenceNum : 8
+Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : जैसे ही
+Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
+Arg1SentenceNum : 10
+Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : शनिवार की सुबह ९.०० ९.०० बजे सुरक्षा - बलों ने इमारत में तलाशी शुरू की । जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान जैसे ही इमारत में दाखिल हुए , दूसरे आतंकी ने फायरिंग शुरू कर दी । आतंकी ने जवानों पर पहले ग्रेनेड भी फेंका । इस अप्रत्याशित हमले में एसओजी का एक जवान मोहम्मद अशरफ खान मौके पर ही शहीद हो गया
+Arg1SentenceNum : 9
+Arg2 : सुबह ११.०० ११.०० बजे तक लगातार दोनों तरफ से फायरिंग होती रही
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : सुबह ११.०० ११.०० बजे तक लगातार दोनों तरफ से फायरिंग होती रही
+Arg1SentenceNum : 13
+Arg2 : आतंकी तभी फायर करता था , जब सुरक्षाकर्मी इमारत के उस हिस्से में दाखिल होने का प्रयास करते , जहाँ वह पोजीशन लिए हुए था
+Arg2SentenceNum : 14
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 16
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : कमरे में हथगोला फटने
+Arg1SentenceNum : 16
+Arg2 : आतंकी फायरिंग करता हुआ बाहर निकला
+Arg2SentenceNum : 16
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 22
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : पुंछ जिले के झाबी धोती इलाके में सुरक्षा बलों ने शनिवार सुबह मुठभेड़ में लश्कर - ए - ताइबा के एक पाकिस्तानी मूल के आतंकी को मार गिराया । दूसरी ओर , पुलवामा में आतंकियों के साथ मुठभेड़ में सेना का एक जवान शहीद हो गया । डोडा में हुई मुठभेड़ में भी सेना का एक जवान शहीद हुआ है
+Arg1SentenceNum : 19
+Arg2 : अनंतनाग जिले में आतंकियों ने सत्तारूढ़ पीडीपी के एक कार्यकर्ता की गोली मारकर हत्या कर दी
+Arg2SentenceNum : 22
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : हमारे पास थोड़ा सा चावल था , वह भी जल्द खत्म हो गया
+Arg1SentenceNum : 11
+Arg2 : हमें भूखे रहना पड़ा
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 19
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : झटके से उनके घर हिलने लगे
+Arg1SentenceNum : 18
+Arg2 : मैंने सभी को भागने के निर्देश दिए
+Arg2SentenceNum : 19
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 42
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इससे पहले
+Arg1 : बाहरी दुनिया के संपर्क में आकर अच्छा लग रहा है
+Arg1SentenceNum : 41
+Arg2 : हमारा सारा ध्यान शिकार पर था
+Arg2SentenceNum : 42
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
+Arg1SentenceNum : 2
+Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 17
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और उसके बाद
+Arg1 : हमने क्षेत्रों की जरूरतों पर विचार किया
+Arg1SentenceNum : 17
+Arg2 : इस निष्कर्ष पर पहुंचे कि राष्ट्रहित में यह जरूरी है
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने
+Arg1SentenceNum : 6
+Arg2 : सेना में कटौती पर विचार किया जाएगा
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इससे पहले
+Arg1 : भारत का कहना है कि पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने के बाद ही सेना में कटौती पर विचार किया जाएगा
+Arg1SentenceNum : 6
+Arg2 : भारत ने दोनों के बीच विश्वास बहाली के उपायों के तहत जम्मू - कश्मीर से सेना में कटौती की घोषणा की थी
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : तब
+Arg1 : भारत ने दोनों के बीच विश्वास बहाली के उपायों के तहत जम्मू - कश्मीर से सेना में कटौती की घोषणा की थी
+Arg1SentenceNum : 7
+Arg2 : जम्मू डिवीजन और अनंतनाग से तकरीबन 6 हजार जवानों को वापस बुला लिया गया था
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 15
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : अखबार की रिपोर्ट के बाद विद्रोहियों की ओर से प्रभाकरन के नाम से श्रीलंका के सुनामी प्रभावित इलाकों में अंतर्राष्ट्रीय मदद की अपील की गई थी । लेकिन , आमतौर पर विद्रोहियों के रेडियो से अपने संदेश जारी करने वाले प्रभाकरन की आवाज तमिल विद्रोहियों के इलाकों में अब तक सुनाई नहीं दी । एशियन ट्रिब्यून के मुताबिक वह सुनामी आपदा के मद्देनजर ३० दिसंबर को जाफना में बुलाई गई लिट्टे हाईकमान की बैठक में भी मौजूद नहीं था
+Arg1SentenceNum : 9
+Arg2 : समाचार - पत्र ' द आईलैंड ' में शनिवार को प्रकाशित एक रिपोर्ट में कहा गया है कि तमिल नियंत्रित उत्तरी इलाके में राहत सामग्री लेकर जा रहे कंटेनर के अंदर एक महंगा ताबूत भेजा गया है , जो ' लिट्टे के किसी शीर्ष नेता ' के लिए तैयार कराया गया है
+Arg2SentenceNum : 15
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसी के बाद
+Arg1 : दिल्ली पुलिस की विशेष सेल ने शनिवार रात राष्ट्रीय राजधानी में दो पाकिस्तानी आतंकियों समेत तीन को मुठभेड़ में ढेर कर दिया था और उनके दो साथी गिरफ्तार कर लिए गए थे
+Arg1SentenceNum : 4
+Arg2 : आईएमए , देहरादून और बंगलोर स्थित नामी सॉफ्टवेयर कंपनियों को उड़ाने की लश्कर की साजिश का भंडाफोड़ हुआ था
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 15
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : । इफ्तखार ने पुलिस को बताया कि उसने वर्ष २००३ में पटना के बीएलपी कॉलेज से १२वीं पास की
+Arg1SentenceNum : 13
+Arg2 : वह पटना के किराए के मकान में रहने के दौरान आतंकी शख्स के संपर्क में आया
+Arg2SentenceNum : 15
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 19
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : वर्ष २००३ में इफ्तखार देहरादून आया और उसने डॉलफिन इंस्टीटयूट ऑफ बायो मेडिकल ऐंड नेचुरल साइंस में बायो टेक्नालॅजी के चार वर्षीय कोर्स में प्रवेश लिया
+Arg1SentenceNum : 18
+Arg2 : उसका शख्स से संपर्क बरकरार रहा
+Arg2SentenceNum : 19
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : जब वे वहां पहुंचे थे तो वहां भारी पुलिस बल मौजूद था
+Arg1SentenceNum : 5
+Arg2 : पुलिस आयुक्त भी तभी वहां पहुंच गये थे ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : वहां इस दौरान
+Arg1 : साठे का जवाब है कि उस दिन ग्यारह बजे के आसपास वे तीन मूर्ति भवन में मौजूद थे जहां इंदिरा का पार्थिव शरीर रखा गया था ।
+Arg1SentenceNum : 12
+Arg2 : उन्होंने दूरदर्शन की टीम को साक्षात्कार भी दिया था और लोगों से शांति व्यवस्था बनाये रखने की अपील की थी ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : साथ ही
+Arg1 : शव को पोस्टमार्टम के लिए भेज दिया गया है ।
+Arg1SentenceNum : 7
+Arg2 : पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : मंगलवार को इटावा में पत्रकारों के साथ बात - चीत में सीमा ने कहा कि ' निर्भय को अपने पापों की सजा मिल चुकी है । उनकी पत्नी होने के नाते अब मुझे अपने कर्तव्य का पालन करना है । मैं उनके शव का अंतिम संस्कार काशी ( वाराणसी ) में करना चाहती हूँ । ' सीमा ने आगे कहा कि गुर्जर के शव के औपचारिक दावे के लिए मैं जिले के वरिष्ठ पुलिस अधीक्षक से मुलाकात करूँगी । उधर , पुलिस का कहना है कि शव को पोस्टमार्टम के लिए भेज दिया गया है । साथ ही पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है ताकि दाह संस्कार के लिए शव परिजनों को सौंपा जा सके । पुलिस महानिदेशक यशपाल सिंह ने कहा कि मुठभेड़ में निर्भय गुर्जर को मारकर एसटीएफ टीम ने अदम्य साहस का परिचय दिया है और वे प्रशंसा के पात्र हैं । उन्होंने आगे कहा कि बहादुरी भरे कारनामों के मद्देनज़र पुलिसकर्मियों के लिए बारी से पहले प्रोन्नति देने का प्रावधान है ।
+Arg1SentenceNum : 3
+Arg2 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg1SentenceNum : 11
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : मध्यम और लग्जरी सेगमेंट की कारों के मामले में उत्पाद शुल्क में कटौती का पूरा लाभ उपभोक्ताओं तक नहीं पहुँचा । इसके चलते सरकार को कार कंपनियों से मिलने वाले राजस्व में ३८ फीसदी का नुकसान हुआ ।
+Arg1SentenceNum : 6
+Arg2 : वित्त मंत्रालय ने २००० - ०१ के दौरान कारों पर १६ फीसदी उत्पाद शुल्क घटाया था ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : इसी तरह २००१ - ०२ के दौरान कारों का विशेष उत्पाद कर २४ फीसदी के बजाय १६ फीसदी कर दिया गया ।
+Arg1SentenceNum : 9
+Arg2 : २००२ - ०३ के दौरान इसमें आठ फीसदी की और कटौती की गई ।
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : पूछ - ताछ में दिल्ली पुलिस को पता लगा कि हवारा और उसका साथी पटियाला की पंजाब यूनीवर्सिटी में कुछ लोगों से मिलने गया है
+Arg1SentenceNum : 5
+Arg2 : दिल्ली पुलिस ने पूरी योजना के साथ पटियाला में डेरा डाला
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : उसके बाद
+Arg1 : इसका उसके ससुर ने बलात्कार किया ।
+Arg1SentenceNum : 1
+Arg2 : उस बांग्लादेशी आव्रजक युवती की शिकायत पर स्थानीय जमात ने उल्टे उसे उसके पति को तलाक देने का फरमान सुनाया है ।
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इससे पहले
+Arg1 : उसके बाद उस बांग्लादेशी आव्रजक युवती की शिकायत पर स्थानीय जमात ने उल्टे उसे उसके पति को तलाक देने का फरमान सुनाया है । नागौन के एसपी के. के. सरमा ने शुक्रवार को यहाँ बताया कि १९ वर्षीय एक मुस्लिम युवती यहाँ अपने मां - बाप के साथ रह रही है । उसने ढिंग पुलिस स्टेशन में कल बृहस्पतिवार को ही इस बारे में एफआईआर दर्ज कराई । सरमा के अनुसार उस युवती के साथ २५ मई को उसके पचास वर्षीय ससुर मोइनुद्दीन ने तब बलात्कार किया जब वह ढिंग पुलिस थानान्तर्गत दक्षिण जेरामाई गाँव के अपने घर में अकेली थी । उन्होंने बताया कि यह परिवार बांग्लादेशी आव्रजकों का है । इन लोगों ने इस बलात्कार की सूचना पुलिस को नहीं दी और स्थानीय धार्मिक बुजुर्गों के पास गए जिन्होंने युवती को उसके पति को तलाक देने का फरमान सुना दिया । जबकि ससुर को कोई सजा तो तो दूर उसे उसे ' आजादी ' बख्श दी । एक छोटी सी जमीन का मालिक उसके पति ने भी अपनी आठ माह की पत्नी को अपनाने से इनकार कर दिया । पुलिस अधिकारियों ने कहा कि उन्होंने एक पुलिस दल उस गाँव में भेजा जब उन्हें अज्ञात व्यक्ति से इस घटना के ब्यौरे के साथ इस बारे में शिकायत मिली । उन्होंने बताया कि पीड़िता का चिकित्सकीय परीक्षण करा कर मजिस्ट्रेट के समक्ष उसका बयान भी दर्ज कराया गया है । पुलिस अब फरार चल रहे मोइनुद्दीन की तलाश कर रही है ।
+Arg1SentenceNum : 2
+Arg2 : पिछले महीने दारुल उलूम देवबंद ने २८ वर्षीय पांच बच्चों की माँ से उसके ससुर के बलात्कार करने पर महिला को अपने पति के साथ नहीं रहने का फरमान सुनाया था ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : । पांच कारीगर जान बचाने के लिए दूसरी मंजिल से कूद गए
+Arg1SentenceNum : 0
+Arg2 : घायल हो गए
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : आग पर काबू पाने के लिए दमकल की करीब तीन दर्जन गाड़ियां भेजी गई
+Arg1SentenceNum : 5
+Arg2 : लगभग 75 से अधिक दमकलकर्मियों को चार घंटे तक जूझना पड़ा ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : प्रतिदिन की तरह सुबह कर्मचारी फैक्टरी पर पहुंचे
+Arg1SentenceNum : 14
+Arg2 : काम में लग गए
+Arg2SentenceNum : 14
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 16
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : एक कारीगर थिनर से कपड़े साफ कर रहा था कि अचानक एक मशीन में स्पार्क हो गया
+Arg1SentenceNum : 16
+Arg2 : आग लग गई ।
+Arg2SentenceNum : 16
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 18
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : आग की विकरालता को देखते ही कारीगरों में अफरातफरी मच गई
+Arg1SentenceNum : 18
+Arg2 : वे जान बचाने के लिए नीचे की ओर भागे ।
+Arg2SentenceNum : 18
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : उनके मकानों की दीवारों में दरार आ गई
+Arg1SentenceNum : 23
+Arg2 : ऊपरी हिस्सा टूट गया ।
+Arg2SentenceNum : 23
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 26
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : उसके बाद
+Arg1 : सूचना मिलने पर दमकल विभाग की करीब दो दर्जन गाड़ियां मौके पर भेजी गई
+Arg1SentenceNum : 26
+Arg2 : एक दर्जन गाड़ियां और मंगाई गई ।
+Arg2SentenceNum : 26
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580819_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : आतंकवाद कायरतापूर्ण कृत है और यह नफ़रत फैलाता है ।
+Arg1SentenceNum : 3
+Arg2 : बृहस्पतिवार को लंदन में आतंकी हमला हुआ था ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : ऋण सीमा को ५० हजार रुपए से बढ़ाकर १.५ १.५ लाख किया जाना चाहिए
+Arg1SentenceNum : 4
+Arg2 : इस पर ७ फीसदी के हिसाब से ब्याज दर लागू होनी चाहिए ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : इससे आयोग सीधे किसानों के संपर्क में रहेगा
+Arg1SentenceNum : 8
+Arg2 : उनकी समस्याओं को बेहतर तरीके से निपटाया जा सकेगा ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है
+Arg1SentenceNum : 7
+Arg2 : इलाज शुरू कर दें ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : उन्होंने बत्रा , एस्कॉर्टस , जी. एम. मोदी , बिमला देवी , एमकेडब्ल्यू , दीपक मैमोरियल अस्पताल इत्यादि का दौरा किया
+Arg1SentenceNum : 13
+Arg2 : पाया कि किसी भी अस्पताल में गरीब मरीज़ के इलाज के लिए तय नियमों का पालन नहीं हुआ ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : अच्छे मानसून के कारण खाद्यान्नों की पैदावार २००२ - ०३ के १७.४२ १७.४२ करोड़ टन से बढ़ कर २००३ - ०४ के २१.०८ २१.०८ करोड़ टन पहुंच गई ।
+Arg1SentenceNum : 11
+Arg2 : अनाज और दलहन दोनों की पैदावार में वृद्धि हुई ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 24
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : कृषि क्षेत्र में ९.१ ९.१ फीसदी की दर से वृद्धि हुई है
+Arg1SentenceNum : 24
+Arg2 : इसका जीडीपी में भारी योगदान रहा ।
+Arg2SentenceNum : 24
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
+sentenceNum : 12
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : गिलानी ने अपने ऊपर हुए हमले में दिल्ली पुलिस का हाथ बताया था
+Arg1SentenceNum : 10
+Arg2 : दोनों तरफ से मीडिया में आरोप - प्रत्यारोप चले ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
+sentenceNum : 16
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद से
+Arg1 : अखिल भारतीय आयुर्विज्ञान संस्थान से गिलानी को 2 दिन पूर्व छुट्टी मिल चुकी है
+Arg1SentenceNum : 15
+Arg2 : वह नंदिता हक्सर के ही घर पर रह रहे हैं ।
+Arg2SentenceNum : 16
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : पिछले साल ही वह पहली बार इस संस्था के सदस्य चुने गए थे ।
+Arg1SentenceNum : 1
+Arg2 : विधानसभा चुनावों में लुधियाना पश्चिम सीट से हरनामदास जौहर के हाथों पराजित होने
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 26
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : बारिश के हिसाब से पिछला सप्ताह देश देश के लिए बेहद खराब गुजरा है । इस दौरान सिर्फ ११ संभागों में सामान्य तथा २ संभागों में अधिक वर्षा हुई । जबकि २० संभागों में सूखा पड़ा और १३ संभागों में सूखे से भी बदतर हालत रही । सप्ताह के दौरान औसत से ३२ फीसदी कम पानी बरसा । इनमें हिमाचल में ६८ , पश्चिमी उ.प्र. में ३४ , हरियाणा , दिल्ली में ७० , पंजाब में २९ फीसदी कम बारिश हुई । जबकि राजस्थान , मध्य प्रदेश , तेलंगाना , विदर्भ , रायलसीमा , तमिलनाडु , मध्य महाराष्ट्र में भी बारिश कम हुई है ।
+Arg1SentenceNum : 20
+Arg2 : राजस्थान के सीमावर्ती इलाके जैसलमेर की तरफ मानसून अभी भी नहीं पहुँच सका है ।
+Arg2SentenceNum : 26
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 28
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : २० जुलाई को थोड़ी प्रगति के बाद आज मानसून आगे नहीं बढ़ा ।
+Arg1SentenceNum : 27
+Arg2 : मौसम विभाग ने पुनः मध्य भारत के कुछ हिस्सों में बारिश की संभावना व्यक्त की है
+Arg2SentenceNum : 28
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : बाद में
+Arg1 : प्रशांत लगभग दो घंटे तक कॉलेज में लहू - लुहान पड़ा रहा , लेकिन कॉलेज प्रशासन ने उसे फर्स्ट एड देने के बजाय मामले को रफा - दफा कराने का प्रयास किया ।
+Arg1SentenceNum : 12
+Arg2 : प्रशांत के पिता अजीत टोकस को यह जानकारी दी गई ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 17
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : बाद में
+Arg1 : प्रशांत १८ अगस्त तक अस्पताल में रहा
+Arg1SentenceNum : 16
+Arg2 : वहाँ से उसे डिस्चार्ज कराकर दिल्ली के एक निजी अस्पताल में दाखिल किया गया ।
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 23
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : प्रशांत ने कॉलेज के सीनियर छात्र रविंद्र यादव , सचिन सहरावत व प्रवीण नागर सहित सात छात्रों पर रैगिंग करने का आरोप लगाया है । उधर , सिविल अस्पताल ने मार - पीट का पर्चा सेक्टर - २९ थाना पुलिस को भेज दिया है ।
+Arg1SentenceNum : 21
+Arg2 : लॉ कॉलेज के निदेशक प्रो. जे. एल. कौल ने स्वीकार किया कि १७ अगस्त को कॉलेज परिसर में एक घटना हुई है ।
+Arg2SentenceNum : 23
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : सपा के रामजीलाल सुमन , बसपा के मित्रसेन यादव , जद यू के नितीश कुमार , शिवसेना के अनंत गीते ने भी घटना पर भारी विरोध जताते हुए केंद्र सरकार से हस्तक्षेप करने की माँग की ।
+Arg1SentenceNum : 12
+Arg2 : सत्ता पक्ष और विपक्ष के बीच कई बार नोक - झोंक हुई , जिससे सदन में हंगामे की स्थिति उत्पन्न हुई ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 15
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : बाद में
+Arg1 : सदस्यों ने प्रधानमंत्री से बयान देने की माँग की और सदन से बहिर्गमन किया ।
+Arg1SentenceNum : 14
+Arg2 : गृह मंत्री शिवराज पाटिल ने पहले लोकसभा में फिर राज्यसभा में बयान दिया ।
+Arg2SentenceNum : 15
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1SentenceNum : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : तब
+Arg1 : पाँच साल पहले मार्च 2001 को बेंगलौर में कांग्रेस महाधिवेशन हुआ था
+Arg1SentenceNum : 6
+Arg2 : केंद्र में वाजपेयी सरकार सत्ता में थी और सभामंच से सोनिया ने तहलका मामले में सरकार पर तैश भरे आक्रमण किए थे ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1SentenceNum : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 6
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : वित्त मंत्रालय का कहना है कि पिछले एक महीने में रिजर्व बैंक की सक्रियता के कारण अर्थव्यवस्था में नकदी की कमी की समस्या काफी हद तक दूर हो गई है
+Arg1SentenceNum : 5
+Arg2 : रिजर्व बैंक ने डॉलरों की खरीद के जरिए २० हजार करोड़ रुपये की नकदी बाजार में उपलब्ध कराई है ।
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 1
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इससे पहले
+Arg1 : मुगल सम्राट जहांगीर और शाहजहां के काल की सोने की दो बेशकीमती मोहरों को तस्करी कर भारत से बाहर पहुंचा दिया गया और अब ये एक विदेशी बैंक के खजाने की शोभा बढ़ा रही हैं ।
+Arg1SentenceNum : 0
+Arg2 : टीपू सुलतान की वस्तुओं की विदेशों में नीलामी काफी चर्चित हो चुकी है
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 10
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : इससे पूर्व
+Arg1 : भारद्वाज ने कहा कि विधान परिषद के जरिए मेधावी लोगों को विधायिका में आने का मौका मिलेगा । असम से भी ऐसा संकल्प सरकार को मिला है । हिमाचल के भाजपा सदस्यों ने भी राज्य में विधान परिषद की माँग की है । इसलिए सदन को इस विधेयक के सकारात्मक पहलुओं को ध्यान में रखा जाना चाहिए ।
+Arg1SentenceNum : 6
+Arg2 : चर्चा के दौरान आंध्र प्रदेश लेजिस्लेटिव काउंसिल बिल 2005 का तेलगुदेशम् पार्टी के सांसदों ने विरोध किया ।
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 13
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : विधेयक के समर्थन में 85 और विरोध में 35 मत पड़े
+Arg1SentenceNum : 12
+Arg2 : उप सभापति ने विधेयक को पारित करने की घोषणा की ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 1
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
+Arg1SentenceNum : 1
+Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 5
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : २००२ में सलेम और मोनिका के खिलाफ फर्जी पासपोर्ट मामले में आरोप दायर करने
+Arg1SentenceNum : 5
+Arg2 : अदालत ने दोनों के खिलाफ गिरफ्तारी वारंट जारी किया था
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620695_date_24_7_2004.utf8
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : गृह मंत्री शिवराज पाटिल द्वारा हाल में ही प्रधानमंत्री को सौंपी रिपोर्ट पर उन्होंने कहा कि वह इसके लिए ब्लू प्रिंट तैयार कर चुके हैं ।
+Arg1SentenceNum : 3
+Arg2 : पाटिल ने अपनी रिपोर्ट में कहा था कि जम्मू कश्मीर को अधिक स्वायत्तता देने के मसले पर समीक्षा और बहस की जरूरत है ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 10
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई ।
+Arg1SentenceNum : 8
+Arg2 : रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg1SentenceNum : 7
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610170_date_20_7_2004.utf8
+sentenceNum : 4
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : इस कानून को लागू करने के लिए उन्हें कम से कम दो माह का समय चाहिए ।
+Arg1SentenceNum : 3
+Arg2 : इस कानून को लेकर राज्यों के साथ विचार - विमर्श किया जाएगा व इसके दिशा - निर्देश तैयार किए जाएंगे ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+sentenceNum : 0
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
+Arg1SentenceNum : 0
+Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
+Arg2SentenceNum : 0
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 12
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : इसके बाद
+Arg1 : सुरक्षा कारणों की वजह से उन्हें रोका गया ।
+Arg1SentenceNum : 11
+Arg2 : आडवाणी ने उमा भारती और प्रमोद महाजन से वहाँ जाकर लोगों को रोकने का अनुरोध किया
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
+sentenceNum : 1
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : बिहार विधानसभा भंग किए जाने की सिफारिश को संविधान सम्मत करार देते हुए राज्यपाल बूटा सिंह ने बुधवार को कहा कि विधायकों की खरीद - फरोख्त के मामले में यदि उनके समक्ष शिकायत दर्ज हुई तो वे ऐसे लोगों के खिलाफ कार्रवाई करेंगे ।
+Arg1SentenceNum : 0
+Arg2 : राजग ने राज्यपाल बूटा सिंह के खिलाफ़ हमला तेज कर दिया है ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8
+sentenceNum : 11
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : जोशीपुरा ने बताया कि अनिल भारद्वाज जल्द ही सरदार पटेल विश्वविद्यालय आने वाले हैं । उनके साथ में इस शोध परियोजना पर बात - चीत करेंगे ।
+Arg1SentenceNum : 9
+Arg2 : जोशीपुरा को नासा के अलबामा स्थित हेंसविले रिसर्च सेंटर में व्याख्यान देने के लिए आमंत्रित किया गया था
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
+sentenceNum : 6
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस दौरान
+Arg1 : ३० जनवरी को शुरू होकर उनकी यात्रा एक हफ्ते में समाप्त होगी
+Arg1SentenceNum : 5
+Arg2 : वे शहबाज कलंदर की दरगाह पर भी जाएँगे और जागीर व उमरकोट में अपने संबंधियों से मिलेंगे ।
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 22
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा तो उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ । इस पर मजिस्ट्रेट ने कहा , डॉक्टर तो कह रहे हैं कि आपकी स्थिति सामान्य है । पर शंकराचार्य ने इससे इंकार किया ।
+Arg1SentenceNum : 19
+Arg2 : शंकराचार्य के वकील ने एक आवेदन दाखिल किया है कि जयेंद्र को पुलिस रिमांड पर दिए जाने पर उनके वकील की मौजदूगी में ही उनसे पूछ - ताछ की जाए
+Arg2SentenceNum : 22
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 4
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : बाद में
+Arg1 : सिन्हा को सीआरपीसी की धारा १५१ के तहत गिरफ्तार किया गया था
+Arg1SentenceNum : 3
+Arg2 : हजारीबाग के मुख्य न्यायायिक मजिस्ट्रेट ने उन्हें न्यायायिक हिरासत में भेज दिया था
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : १३ फरवरी को ही अपने विरोध प्रदर्शन स्थगित कर दिए थे
+Arg1SentenceNum : 8
+Arg2 : उन्होंने आयकर प्रशिक्षण संस्थान बंद करने के मुद्दे पर यूपीए सरकार की वार्ता के लिए राजी होने
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610160_date_20_7_2004.utf8
+sentenceNum : 4
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इस बीच
+Arg1 : विशेष जज पी. डी. कोडे ने कहा कि संजय शूटिंग के लिए जा सकते हैं , पर इस बीच यदि उन्हें सम्मन भेजा जाता है तो उन्हें हाजिर होना होगा । साथ ही उनकी ग़ैर मौजूदगी में उनके वकील कोर्ट में मौजूद रहेंगे ।
+Arg1SentenceNum : 2
+Arg2 : अदालत ने जमानत पर चल रहे अन्य आरोपियों को पेशी पर हाजिर होने के लिए ३ जनवरी तक की छूट दे दी ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Temporal.Asynchronous.Precedence
+classifiedAs : 
+singleConnectiveName : के बाद
+Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
+Arg1SentenceNum : 2
+Arg2 : वाजपेयी के बयान
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : Temporal.Asynchronous.Succession
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : संघ ने दिल्ली में मौजूद सभी पदाधिकारियों की आपात बैठक बुलाई
+Arg1SentenceNum : 3
+Arg2 : वाजपेयी के बयान के बाद स्थिति की समीक्षा की
+Arg2SentenceNum : 3
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Temporal.Synchrony
+classifiedAs : 
+singleConnectiveName : इसी दिन
+Arg1 : इधर वेंकैया नायडू अपने बयान से पलट गए और उन्होंने इस मुद्दे पर अलग से चर्चा की बात कही
+Arg1SentenceNum : 18
+Arg2 : विहिप के नेता अशोक सिंघल ने कहा कि भाजपा वाजपेयी और आडवाणी के कारण हारी
+Arg2SentenceNum : 19
+----------------------------------------------------------------------------------------------------

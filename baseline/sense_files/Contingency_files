@@ -1,0 +1,1160 @@
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : बिहार के जेलमंत्री राघवेंद्र प्रताप सिंह ने राजद के बाहुबली सांसद पप्पू यादव द्वारा बेउर जेलकर्मियों को जान से मारने की धमकी के आरोप की जाँच के आदेश दिए
+Arg1SentenceNum : 0
+Arg2 : कि जेल प्रशासन ने जब इस बाहुबली नेता को उनसे मिलने आए लोगों से भेंट नहीं करने दी तो शनिवार को उन्होंने जेलकर्मियों को परिणाम भुगतने की धमकी
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिसके चलते
+Arg1 : इन डेढ़ सालों में सरकार महज 17 पदों पर नियुक्ति कर पाई
+Arg1SentenceNum : 1
+Arg2 : मंत्रालय की योजनाएं धरातल पर तो दूर कागजों में भी ठीक से नहीं बन पा रही हैं
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : पिछले महीने हम लोगों को सर्वे बंद करने पर मजबूर कर दिया गया
+Arg1SentenceNum : 9
+Arg2 : माओवादियों की ओर से हमें कई बार धमकी दी गई हैं
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : इसके तहत राजधानी के ११८ मार्गों पर रिहायशी परिसरों के भूतल पर व्यावसायिक गतिविधियों को वैधता प्रदान की जाएगी
+Arg1SentenceNum : 1
+Arg2 : लगभग दो लाख दुकानदारों को राहत मिलने की संभावना है
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : आवश्यकता के मुताबिक अस्सी फीसदी दुकानों की कमी है
+Arg1SentenceNum : 11
+Arg2 : यह जरूरी हो जाता है कि दिल्ली में दुकानों की कमी पूरी करने के लिए मिश्रित भू उपयोग की नीति को लागू किया जाए
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Condition.Factual
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : शुक्रवार की रात को जब एक आतंकी के मारे जाने के बाद दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg1SentenceNum : 8
+Arg2 : सुरक्षा - बलों व अन्य सभी एजेंसियों ने मान लिया कि वह भी मारा गया है
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके चलते
+Arg1 : केवल पचास रह गए इन आदिवासियों ने अपनी पुरानी परंपराओं को खुद ही खुशी - खुशी छोड़ दिया है
+Arg1SentenceNum : 3
+Arg2 : इस आदिवासी जनजाति का क्षरण हो रहा है
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Pragmatic cause
+classifiedAs : 
+singleConnectiveName : इसके लिए
+Arg1 : हम कृषि , ग्रामीण अर्थव्यवस्था तथा ढांचागत सुविधाओं के क्षेत्र में पेश आने वाली समस्याओं को दूर करने का प्रयास कर रहे हैं
+Arg1SentenceNum : 3
+Arg2 : हम काम के बदले अनाज कार्यक्रम जैसी योजनाएं शुरू कर रहे हैं
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : नटवर सिंह का यह दौरा दोनों देशों के बीच आर्थिक एवं राजनीतिक सहयोग की दृष्टि से काफी महत्वपूर्ण माना जा रहा है
+Arg1SentenceNum : 1
+Arg2 : श्रीलंका की सुनामी पुनर्निर्माण परियोजना में भारत श्रीलंका को महत्वपूर्ण रूप से मदद प्रदान कर रहा है
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : एग्रो फोरेस्टरी रोजगार का बड़ा माध्यम बन रहा है
+Arg1SentenceNum : 13
+Arg2 : न सिर्फ किसानों को , बल्कि दूसरे लोगों को भी काम मिल रहा है
+Arg2SentenceNum : 14
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 17
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : अब एग्रो - फोरेस्टरी से आम लोगों की आर्थिक स्थिति बदलेगी
+Arg1SentenceNum : 17
+Arg2 : उनकी खरीद क्षमता बढ़ सकती है
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 21
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : चूँकि
+Arg1 : कृषि वानिकी में अपार संभावनाएं हैं
+Arg1SentenceNum : 21
+Arg2 : भारत में हर साल ८ - ९ हजार करोड़ रुपये की लकड़ी आयात होती है
+Arg2SentenceNum : 21
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580879_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिससे कि
+Arg1 : योजनागत व्यय में १०,००० १०,००० १०,००० करोड़ रुपये की वृद्धि की गई है
+Arg1SentenceNum : 7
+Arg2 : न्यूनतम साझा कार्यक्रम के लक्ष्य को हासिल करने में मदद मिलेगी
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : उन्हें लोकतांत्रिक तरीके से चुना गया है
+Arg1SentenceNum : 14
+Arg2 : उन्होंने पार्टी के नियमों का सख्ती से पालन किया है
+Arg2SentenceNum : 14
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : प्रभाकरन को लेकर २८ दिसंबर से अटकलें हैं
+Arg1SentenceNum : 5
+Arg2 : सुनामी के कहर से श्रीलंका का ७० फीसदी तटीय इलाका प्रभावित हुआ है । इसमें उत्तर की तरफ का वह इलाका भी है , जहाँ लिट्टे का कब्जा है । इसी इलाके के मुलातिवियू में प्रभाकरन का ठिकाना है
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिसकी वजह से
+Arg1 : अदालत ने कहा है कि इस बात की जाँच की जाएगी कि क्या राज्यपाल ने दुर्भावनाओं से ग्रस्त होकर केंद्र को रिपोर्ट भेजी थी ,
+Arg1SentenceNum : 1
+Arg2 : राष्ट्रपति शासन लगाया गया ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Contingency.Pragmatic cause
+classifiedAs : 
+singleConnectiveName : जिससे
+Arg1 : संदेह है कि इफ्तखार को आतंकी आर्थिक मदद भी दे रहे थे
+Arg1SentenceNum : 13
+Arg2 : दिल्ली पुलिस के सूत्रों के मुताबिक , मुठभेड़ में मारे गए पटना के आतंकी शख्स की डायरी में इफ्तखार के देहरादून स्थित बैंक खाते का नंबर का उल्लेख है
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 21
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : । शख्स ने उसे शाहिद नाम का कोड दिया
+Arg1SentenceNum : 20
+Arg2 : इफ्तखार की पहचान छिपी रह सके
+Arg2SentenceNum : 21
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : के कारण
+Arg1 : । ताजा हिमपात होने से घाटी के तापमान में गिरावट आने
+Arg1SentenceNum : 1
+Arg2 : लोगों ने गर्म वस्त्र पहनने शुरू कर दिए
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : स्थानीय लोगों के लिए यह बारिश वरदान से कम नहीं मानी जा रही है
+Arg1SentenceNum : 4
+Arg2 : सेब की अच्छी फसल के लिए समय - समय पर बारिश का होना जरूरी माना जाता है
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिससे
+Arg1 : घाटी के तापमान पर काफी गिरावट दर्ज की गई
+Arg1SentenceNum : 9
+Arg2 : घाटी के लोगों ने पुनः गर्म कपड़ों को पहनना शुरू कर दिया
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580806_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : विकासशील देशों में इस तरह के परिवर्तन ज्यादा हो रहे हैं ।
+Arg1SentenceNum : 7
+Arg2 : ऑडिटरों को बदलते माहौल में सार्वजनिक उपक्रमों का लेखा तैयार करने के लिए नए कौशल विकसित करने होंगे ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 18
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके लिए
+Arg1 : अयोध्या विवाद के हल के लिए नए सिरे से ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड से बातचीत की रणनीति भी है ।
+Arg1SentenceNum : 17
+Arg2 : प्रस्ताव पर चर्चा शुरू होने वाली है ।
+Arg2SentenceNum : 18
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : और
+Arg1 : सुबह हुई हल्की बारिश से तापमान कम हुआ है
+Arg1SentenceNum : 7
+Arg2 : लोगों को गर्मी से राहत मिली है ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस कारण
+Arg1 : दक्षिण पूर्व मानसून हिमाचल प्रदेश में प्रवेश कर गया है
+Arg1SentenceNum : 10
+Arg2 : राज्य में कहीं मध्यम और और कहीं भारी बारिश हो रही है
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिससे
+Arg1 : रिपोर्ट में कहा गया है कि आयोग को ऐसा कोई साक्ष्य नहीं मिला है
+Arg1SentenceNum : 1
+Arg2 : यह सिद्ध किया जा सके कि गुरुद्वारा रकाबगंज में मौजूदगी के दौरान कमलनाथ ने उत्तेजित भीड़ को भड़काया ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Contingency.Goal
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : वे कांग्रेस के एक जिम्मेदार नेता के रूप में वहां गये थे
+Arg1SentenceNum : 4
+Arg2 : कानून व्यवस्था की स्थिति बिगड़ नहीं पाये ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Contingency.Goal
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : पुलिस गुर्जर के परिजनों से भी संपर्क करने का प्रयास कर रही है
+Arg1SentenceNum : 8
+Arg2 : दाह संस्कार के लिए शव परिजनों को सौंपा जा सके ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके चलते
+Arg1 : मध्यम और लग्जरी सेगमेंट की कारों के मामले में उत्पाद शुल्क में कटौती का पूरा लाभ उपभोक्ताओं तक नहीं पहुँचा ।
+Arg1SentenceNum : 6
+Arg2 : सरकार को कार कंपनियों से मिलने वाले राजस्व में ३८ फीसदी का नुकसान हुआ ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : की वजह से
+Arg1 : घटनास्थल पर मौजूद लोगों ने बताया कि ऊपर से कूदने
+Arg1SentenceNum : 20
+Arg2 : संजय नामक कारीगर के पैरों में चोट आई ।
+Arg2SentenceNum : 20
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : की वजह से
+Arg1 : मकान नंबर 1993ए निवासी मंगल सेन जैन तथा 1993बी निवासी राजीव जैन ने बताया कि आग
+Arg1SentenceNum : 23
+Arg2 : उनके मकानों की दीवारों में दरार आ गई और ऊपरी हिस्सा टूट गया ।
+Arg2SentenceNum : 23
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 17
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : आर्थिक सर्वे में सीमा शुल्क को आसियान स्तर पर लाने की जरूरत पर बल दिया गया है ,
+Arg1SentenceNum : 17
+Arg2 : कच्चे मालों की दरों में कुछ बदलाव किया जा सकता है ,
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : पिछले साल उत्तर प्रदेश सरकार ने धान के लिए ७२० रुपये प्रति क्विंटल मूल्य निर्धारित करने की सिफारिश आयोग से की थी ।
+Arg1SentenceNum : 12
+Arg2 : धान के लिए उत्तर प्रदेश में लागत मूल्य ६५० रुपये था ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : कृषि में सबसे बड़ी समस्या निवेश ऋण पर लगने वाले ब्याज दर की है ।
+Arg1SentenceNum : 19
+Arg2 : वर्तमान में किसानों को दिए जाने वाले ऋणों की ब्याज दरें काफी ज्यादा हैं और इन ब्याज दरों को नाबार्ड द्वारा राज्यों को दिए जाने वाले ऋण पर लागू होने वाली ब्याज दर के समान ही होना चाहिए ।
+Arg2SentenceNum : 20
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : वजह
+Arg1 : अफ्रीका की गरीबी और मौसम परिवर्तन पर चर्चा करने आए दुनिया के ८ सबसे धनी देश ( जी - ८ ) आतंकवाद पर चर्चा करते नज़र आए
+Arg1SentenceNum : 0
+Arg2 : लंदन पर अलक़ायदा का आतंकी हमला
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578474_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : Contingency.Condition.Hypothetical
+classifiedAs : 
+singleConnectiveName : इसके बाद ही
+Arg1 : इसकी जाँच की जाए
+Arg1SentenceNum : 8
+Arg2 : सस्ती दर पर भूमि प्राप्त करने वाले अस्पताल किसी भी मरीज़ को भर्ती करने के दौरान उससे आय संबंधी कोई भी दस्तावेज या फिर बीपीएल कार्ड इत्यादि नहीं माँगेगा । दाखिले के समय मरीज़ से फार्म भराकर कि उसकी आय दो हजार रुपये मासिक से ज्यादा नहीं है और इलाज शुरू कर दें
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : इसका उद्देश्य
+Arg1 : देश में किसानों की स्थिति के बारे में जानकारी को लेकर सबसे पहले २००३ में सर्वेक्षण कराया गया था
+Arg1SentenceNum : 6
+Arg2 : रहन - सहन के आधार पर किसानों की स्थिति का आकलन करना था
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : नतीजतन
+Arg1 : आर्थिक सर्वेक्षण २००४ में कहा गया है कि सामाजिक इन्फ्रास्ट्रक्चर को भौतिक इन्फ्रास्ट्रक्चर के बराबर महत्व देने की गरज से राष्ट्रीय साझा न्यूनतम कार्यक्रम के अनुरूप शिक्षा और स्वास्थ्य पर विशेष बल दिया जाएगा ।
+Arg1SentenceNum : 19
+Arg2 : , बजट अनुमान २००३ - ०४ में शिक्षा और स्वास्थ्य पर सार्वजनिक व्यय को बढ़ा कर जीडीपी का क्रमशः ६ फीसदी और २ - ३ फीसदी करने का निर्णय लिया गया है ।
+Arg2SentenceNum : 20
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : लेकिन
+Arg1 : उन्होंने कहा कि कुछ लोगों को इस बात पर आश्चर्य हो सकता है कि गांधी परिवार का सदस्य होने के बावजूद मैं भाजपा में कैसे शामिल हो गया
+Arg1SentenceNum : 9
+Arg2 : हम पार्टी नहीं विचार धारा का सम्मान करते हैं ।
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 5
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : हमने वाजपेयी सरकार में नितीश के काम को देखा है ।
+Arg1SentenceNum : 4
+Arg2 : उन्हें मि. डिपेंडेबल की संज्ञा दी जा सकती है ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 0
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के लिए
+Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
+Arg1SentenceNum : 0
+Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
+Arg2SentenceNum : 0
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : से
+Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
+Arg1SentenceNum : 11
+Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Goal
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : याचिकाकर्ताओं को दस्तावेजी सबूत भी पेश करने को कहा गया है
+Arg1SentenceNum : 8
+Arg2 : यह पता किया जा सके कि विधायक या सांसद , जिनके खिलाफ आयोग में याचिका आई है , वे सांसद या विधायक बनने के बाद लाभ के पद पर आसीन हैं या उससे पहले से हैं ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : ऐसे में
+Arg1 : इस मामले में और शिकायतों का अंबार लग सकता है
+Arg1SentenceNum : 10
+Arg2 : आयोग के पास केवल एक ही तरह के मामले की भीड़ बढ़ जाएगी ।
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : आयोग के पास केवल एक ही तरह के मामले की भीड़ बढ़ जाएगी ।
+Arg1SentenceNum : 11
+Arg2 : आयोग चाहता है कि तेजी से इन मामलों को निबटाया जाए ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : । कोलकाता में मौजूद मरांडी से जब फोन पर पूछा गया कि क्या वह यहाँ शुक्रवार को उस समारोह में शिरकत करेंगे जिसमें पांडेय प्रदेश अध्यक्ष का पदभार ग्रहण करेंगे
+Arg1SentenceNum : 1
+Arg2 : मरांडी ने कहा कि उन्हें इस बात से कोई मतलब नहीं ।
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : वह पहले ही पार्टी हाई कमान को पांडेय की नियुक्ति रद्द करने को कह चुके हैं ।
+Arg1SentenceNum : 3
+Arg2 : उन्हें हाईकमान के जवाब का इंतजार है ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : गिलानी ने अपने ऊपर हुए हमले में दिल्ली पुलिस का हाथ बताया था ।
+Arg1SentenceNum : 10
+Arg2 : दिल्ली पुलिस सोच - समझ कर फैसला लेना चाहती है ।
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : गौरतलब है कि
+Arg1 : अमेरिकी वायु - सेना ने अल क़ायदा से संबद्ध आतंकी जरकावी को निशाना बना कर शनिवार रात अनेक हमले किए
+Arg1SentenceNum : 8
+Arg2 : जरकावी ने इराक के न्याय मंत्री मलेक दोहान के खिलाफ आत्मघाती हमले की जिम्मेदारी ली थी
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : बिजली की अनियमित आपूर्ति से तबाह हो रहे उद्योगों को बचाने और लोगों को बिजली गुल से राहत दिलाने के लिए सरकार के पास एकमात्र एकमात्र यही रास्ता बचा है
+Arg1SentenceNum : 1
+Arg2 : सरकार अब ' कैप्टिव पॉवर प्लांट ' को बढ़ावा देने जा रही है ।
+Arg2SentenceNum : 2
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : ऐसा किए जाने से
+Arg1 : अब नई ऊर्जा नीति में इस योजना को पूरी तरह से लाइसेंस मुक्त करने का प्रस्ताव है ।
+Arg1SentenceNum : 11
+Arg2 : सीमेंट , स्टील , केमिकल , इलेक्ट्रॉनिक्स , इंजीनियरिंग , जूट , मैटल व मिनरल , कागज , चीनी व कपड़ा समेत तमाम उद्योगों में कैप्टिव पॉवर प्लांट लगाया जाना आसान हो जाएगा ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625774_date_26_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : दरअसल
+Arg1 : आयोग का सबसे ज्यादा ध्यान पश्चिम बंगाल के विधानसभा चुनाव पर है ।
+Arg1SentenceNum : 7
+Arg2 : तृणमूल कांग्रेस की सुप्रीमो ममता बनर्जी स्थानीय निकायों के चुनावों में हुई धांधली की शिकायत आयोग से कर चुकी हैं ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 6
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो दूसरी ओर
+Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
+Arg1SentenceNum : 4
+Arg2 : दूसरी ओर आनंद जैन को बचाने में नाक़ामयाब रहे मुकेश अपने इस मित्र की बेटी की शादी में शामिल होने के लिए गोवा रवाना हो गए हैं
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : दरअसल
+Arg1 : अनिल के भारी दबाव के चलते मुकेश अंबानी के अत्यंत करीबी आनंद जैन को बाहर का रास्ता दिखा दिया गया ।
+Arg1SentenceNum : 4
+Arg2 : मुकेश और अनिल अंबानी के रिश्ते में आनंद जैन फाँस बन गए थे ।
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 23
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : आखिरकार
+Arg1 : इसके बावजूद मुकेश खेमे का रुख ठंडा रहा ।
+Arg1SentenceNum : 22
+Arg2 : अनिल ने आईपीसीएल बोर्ड से इस्तीफा दे दिया
+Arg2SentenceNum : 23
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : यह प्रश्न किए जाने पर कि
+Arg1 : उन्होंने कहा कि वहाँ उप चुनाव हैं । इसलिए , कोंकण का कोई कार्यक्रम नहीं है ।
+Arg1SentenceNum : 11
+Arg2 : क्या सोनिया गाँधी कोंकण भी जाएगीं
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Condition.Factual
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : प्रशांत ने इसका विरोध किया
+Arg1SentenceNum : 9
+Arg2 : उन्होंने उसे जमकर पीटा
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके चलते
+Arg1 : उसके चेहरे , गले व छाती पर जबरदस्त प्रहार किए गए ।
+Arg1SentenceNum : 10
+Arg2 : उसका चेहरा व गला सूज गया ।
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : सेना के खुफिया विभाग ने हंदवाड़ा और आस - पास के इलाकों से आतंकवादियों की अपने आकाओं से हुई बात - चीत को इंटरसेप्ट किया है ।
+Arg1SentenceNum : 0
+Arg2 : सेना के खुफिया विभाग की बाछें खिली हुई हैं ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 5
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस बात पर
+Arg1 : जैश - ए - मोहम्मद के एक आतंकवादी ने अपने आका को सूचित किया कि स्थानीय लोग उसे देखते ही घरों के दरवाजे बंद कर ले रहे हैं । सहयोग के लिए राजी नहीं हैं ।
+Arg1SentenceNum : 3
+Arg2 : दूर बैठे आतंकी सरगना ने कहा कि पहले जाओ , दरवाजा खटखटाओ और यदि सहयोग न करे तो सिविलियन के पैर में गोली मार दो ।
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : सेना के सूत्रों का मानना है कि इन दिनों इस तरह की बात - चीत ज्यादा इंटरसेप्ट हो रही है ।
+Arg1SentenceNum : 8
+Arg2 : साफ है कि आतंकवादियों की हताशा बढ़ रही है ।
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 11
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : आतंकवादियों की हताशा बढ़ रही है ।
+Arg1SentenceNum : 9
+Arg2 : आतंकवादी बच्चों , भीड़ - भाड़ वाले स्थानों को निशाना बना रहे हैं ।
+Arg2SentenceNum : 11
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 31
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : आतंकी मारे जा रहे हैं ।
+Arg1SentenceNum : 30
+Arg2 : शांति की उम्मीद बढ़ रही है
+Arg2SentenceNum : 31
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिससे
+Arg1 : सत्ता पक्ष और विपक्ष के बीच कई बार नोक - झोंक हुई
+Arg1SentenceNum : 13
+Arg2 : सदन में हंगामे की स्थिति उत्पन्न हुई
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 32
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : उन्होंने कहा कि असल सवाल यह है कि बल प्रयोग क्यों किया ?
+Arg1SentenceNum : 31
+Arg2 : पाटिल ने कहा कि जाँच में सब तथ्यों का खुलासा किया जाएगा ।
+Arg2SentenceNum : 32
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 34
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : लोकसभा में भोजनावकाश के बाद एक बार फिर इस मामले पर हंगामे के आसार पैदा हुए ।
+Arg1SentenceNum : 33
+Arg2 : गृहमंत्री ने पुनः सदन में बयान दिया
+Arg2SentenceNum : 34
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 0
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के लिए
+Arg1 : योजना तैयार की जा रही है ।
+Arg1SentenceNum : 0
+Arg2 : अमरनाथ गुफा में प्राकृतिक रूप से बने हिमलिंग को छह महीनों तक सहेजने
+Arg2SentenceNum : 0
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के कारण
+Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
+Arg1SentenceNum : 4
+Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के लिए
+Arg1 : यहाँ सेना तैनात की गई है
+Arg1SentenceNum : 4
+Arg2 : क्षेत्र में सामान्य स्थिति बहाल करने में राज्य सरकार को मदद करने
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसीलिए
+Arg1 : सेना ने राज्य के ८ से ९ उग्रवादी संगठनों के खिलाफ संघर्ष विराम की घोषणा कर रखी है ।
+Arg1SentenceNum : 7
+Arg2 : सेना ने इन संगठनों के खिलाफ अपना अभियान रोका हुआ है ।
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसी डर से
+Arg1 : । बिहार के दरभंगा जेल से कुछ दिनों पहले ही बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg1SentenceNum : 7
+Arg2 : खगड़िया और रोसड़ा के जेलों से कैदियों को स्थानांतरित कर दिया गया है
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 22
+classLabel : Contingency.Goal
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : शायद प्रियंका इस अवसर पर उपस्थित न हों
+Arg1SentenceNum : 22
+Arg2 : राहुल का आकर्षण बना रहे
+Arg2SentenceNum : 22
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615522_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके लिए
+Arg1 : ब्रिटिश अखबार ' फाइनेंशियल टाइम्स ' ने देश के अग्रणी बिजनेस समाचार बिजनेस स्टैंडर्ड में १३.८५ १३.८५ फीसदी हिस्सेदारी हासिल की है ।
+Arg1SentenceNum : 0
+Arg2 : फाइनेंशियल टाइम्स ने १४.१ १४.१ करोड़ रुपये का निवेश किया है ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 6
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : इस माँग को पूरा कराने के लिए ट्रेड यूनियनों को आंदोलन तेज करना चाहिए चाहिए
+Arg1SentenceNum : 6
+Arg2 : इससे पाँच करोड़ ईपीएफ उपभोक्ता और उनके दस करोड़ आश्रित प्रभावित हो रहे हैं ।
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
+Arg1SentenceNum : 13
+Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के कारण
+Arg1 : अर्थव्यवस्था में नकदी की कमी की समस्या काफी हद तक दूर हो गई है ।
+Arg1SentenceNum : 5
+Arg2 : पिछले एक महीने में रिजर्व बैंक की सक्रियता
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 7
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसके मद्देनजर
+Arg1 : रिजर्व बैंक ने डॉलरों की खरीद के जरिए २० हजार करोड़ रुपये की नकदी बाजार में उपलब्ध कराई है ।
+Arg1SentenceNum : 6
+Arg2 : उत्पादक गतिविधियों के लिए लोन पर ब्याज दरें बढ़ाने की कोई वजह नहीं है ।
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : यही वजह है कि
+Arg1 : प्रमुख उधारी दर में बढ़ोतरी के कारण महंगाई के भी बेलगाम होने की आशंका है ।
+Arg1SentenceNum : 11
+Arg2 : वित्त मंत्रालय इस मामले में बैंकरों के किसी भी तर्क को सुनने के लिए तैयार नहीं है
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 6
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : यही वजह है कि
+Arg1 : संघ की सामाजिक व सांस्कृतिक संस्था होने की हकीक़त खुलकर सामने आ गई है । संघ व भाजपा एक ही सिक्के के दो पहलू हैं ।
+Arg1SentenceNum : 4
+Arg2 : जनसंख्या रिपोर्ट का धर्म , समुदाय व वर्ग के नजरिए से विश्लेषण किया गया है ।
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : यह नसीहत जनता को नहीं लुभाने वाली
+Arg1SentenceNum : 12
+Arg2 : उनकी नज़र में मुद्दा सिर्फ विकास है ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 17
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : उल्लेखनीय है कि
+Arg1 : शुक्रवार को प्रगति मैदान में चल रहे अंतर्राष्ट्रीय व्यापार मेला में सपा अध्यक्ष और उत्तर प्रदेश के मुख्यमंत्री मुलायम सिंह यादव ने संघ प्रमुख के. एस. सुदर्शन की हिंदुओं को कम से कम तीन बच्चे पैदा करने की सलाह की जमकर खिल्ली उड़ाई ।
+Arg1SentenceNum : 11
+Arg2 : देश में जनसंख्या का सांप्रदायिक आधार पर विश्लेषण करते हुए संघ प्रमुख सुदर्शन ने बृहस्पतिवार को हिंदुओं से कहा था कि बहुसंख्यक - अल्पसंख्यकों की अवधारणा को खत्म करने के लिए उन्हें भी कम से कम तीन बच्चे पैदा करने चाहिए ।
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : उन्होंने तत्कालीन प्रधानमंत्री राजीव गांधी की सलाह ली
+Arg1SentenceNum : 3
+Arg2 : उन्होंने कहा कि विधानसभा के संकल्प का पूरा सम्मान होना चाहिए ।
+Arg2SentenceNum : 3
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : फलतः
+Arg1 : उन्होंने तत्कालीन प्रधानमंत्री राजीव गांधी की सलाह ली तो उन्होंने कहा कि विधानसभा के संकल्प का पूरा सम्मान होना चाहिए ।
+Arg1SentenceNum : 3
+Arg2 : उन्होंने विधान परिषद को खत्म करने का विधेयक पेश किया था और वह पारित हो गया था ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 5
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : अब वहाँ की राजशेखर रेड्डी सरकार ने विधानसभा में विधान परिषद की बहाली का संकल्प पारित कर उनके पास भेजा है
+Arg1SentenceNum : 5
+Arg2 : पुनः विधानसभा का सम्मान करते हुए परिषद की बहाली के लिए यह विधेयक लाया गया है
+Arg2SentenceNum : 5
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : विधान परिषद के जरिए मेधावी लोगों को विधायिका में आने का मौका मिलेगा । असम से भी ऐसा संकल्प सरकार को मिला है । हिमाचल के भाजपा सदस्यों ने भी राज्य में विधान परिषद की माँग की है ।
+Arg1SentenceNum : 6
+Arg2 : सदन को इस विधेयक के सकारात्मक पहलुओं को ध्यान में रखा जाना चाहिए ।
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 17
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : ऊपरी सदन हमारी जरूरत भी है और मजबूरी भी
+Arg1SentenceNum : 16
+Arg2 : दलगत राजनीति से ऊपर उठकर इस विधेयक को पारित किया जाना चाहिए ।
+Arg2SentenceNum : 17
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : लिहाजा
+Arg1 : इन राज्यों में हिंदू अल्पसंख्या अल्पसंख्या में आ गए हैं
+Arg1SentenceNum : 8
+Arg2 : उन्हें अल्पसंख्यक का दर्जा दिया जाना चाहिए
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इससे
+Arg1 : देश में बच्चों को लेकर इस तरह की स्थितियाँ मौजूद हैं ।
+Arg1SentenceNum : 3
+Arg2 : देश की बदनामी होती है ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : ' राजद में आने के बाद मैंने उनसे इसका कारण पूछा
+Arg1SentenceNum : 12
+Arg2 : उन्होंने बताया कि उन्हें लगा कि इसके पीछे संघ की साजिश है
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 19
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : लिहाजा
+Arg1 : ' मुझे प्रदेश अध्यक्ष इसलिए नहीं बनाया गया क्योंकि मेरे पास संघ का सर्टिफिकेट नहीं था
+Arg1SentenceNum : 18
+Arg2 : उन्होंने लालू से तार जोड़ा और आज वे राजद के राष्ट्रीय प्रवक्ता हैं
+Arg2SentenceNum : 19
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 22
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : ओझा - गुनी का विरोध करना सवर्णों को फायदा पहुँचाएगा
+Arg1SentenceNum : 22
+Arg2 : ज्यादातर ओझा - गुनी ग़ैर ब्राह्मण हैं ।
+Arg2SentenceNum : 22
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : यानि
+Arg1 : जिन राज्यों में न्यूनतम मजदूरी ६० रुपये से अधिक है , वहां इस योजना में भी उस राज्य की न्यूनतम मजदूरी ही मान्य होगी ।
+Arg1SentenceNum : 3
+Arg2 : देश के कई राज्यों के लोगों को अब बढ़ी हुई मजदूरी मिलेगी ।
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 7
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : न्यूनतम मजदूरी तय करना राज्य का अधिकार है ।
+Arg1SentenceNum : 6
+Arg2 : राज्यों में इसकी दर भी अलग - अलग है
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : योजना में परिवार में एक ही व्यक्ति को लाभ मिलेगा ,
+Arg1SentenceNum : 12
+Arg2 : इससे बड़े परिवार में आपसी मतभेद बढ़ेंगे ।
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 0
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के लिए
+Arg1 : कर्मचारी भविष्य निधि संगठन ( ईपीएफओ ) के बोर्ड ने सोमवार को अंतर्राष्ट्रीय सलाहकार फर्म मर्सर को नियुक्त किया है ।
+Arg1SentenceNum : 0
+Arg2 : अतिरिक्त संसाधन जुटाने की आवश्यकता और चार करोड़ लाभार्थियों को उनके निवेश का बेहतर रिटर्न देने
+Arg2SentenceNum : 0
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 6
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : यह पूछे जाने पर कि
+Arg1 : राव ने कहा , सरकार इस पैसे का इंतजाम करेगी ।
+Arg1SentenceNum : 6
+Arg2 : ईपीएफ ब्याज दर ९.५ ९.५ फीसदी करने के बाद ९२७ करोड़ के घाटे को सरकार किस तरह पूरा करेगी
+Arg2SentenceNum : 6
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : मार्च में होने वाली सीबीटी बैठक में अतिरिक्त संसाधन जुटाने के मुद्दे पर विचार होगा
+Arg1SentenceNum : 8
+Arg2 : अभी चुनाव आचार संहिता लागू होने के कारण इस संबंध में कोई घोषणा नहीं हो सकती ।
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Goal
+classifiedAs : 
+singleConnectiveName : ताकि
+Arg1 : वह विवादित ढाँचे को सम्मानपूर्वक किसी दूसरे नज़दीकी स्थान में स्थानांतरित करने के पक्ष में है ।
+Arg1SentenceNum : 8
+Arg2 : उसी स्थान पर मंदिर निर्माण का रास्ता निकल सके ।
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 18
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : भारी भीड़ की वजह से मीडियाकर्मियों पर हुई ज्यादतियों के लिए किसी को भी गिरफ्तार नहीं किया गया ।
+Arg1SentenceNum : 17
+Arg2 : यह पहचान करना मुश्किल था कि किसने पत्रकारों की पिटाई की ।
+Arg2SentenceNum : 18
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
+sentenceNum : 10
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसीलिए
+Arg1 : भंग विधानसभा के भाजपा व जद ( यू ) विधायकों से मिलने के बाद नंद किशोर और विजेंद्र ने कहा कि २५ जून १९७५ को तत्कालीन प्रधानमंत्री इंदिरा गांधी ने आपातकाल की घोषणा की थी ।
+Arg1SentenceNum : 9
+Arg2 : हमने भी इसी दिन को राज्यपाल बूटा सिंह की कार्रवाई का विरोध करने के लिए चुना है
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : के लिए
+Arg1 : केंन्द्र अब राज्यों की लगाम कसने की तैयारी में है ।
+Arg1SentenceNum : 1
+Arg2 : प्रधानमंत्री ग्राम सड़क योजना को ' भारत निर्माण ' योजना के दायरे में लाने के बाद अगले चार सालों में सभी गाँवों को सड़कों से जोड़ने
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 4
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : ऐसा करने पर इजाज़त मिलने की कम संभावना थी
+Arg1SentenceNum : 4
+Arg2 : इन्होंने नए बैनर के तले प्रदर्शन की योजना बनाई
+Arg2SentenceNum : 4
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 8
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : जिसके चलते
+Arg1 : पुलिस की तैनाती के बावजूद नक्सलियों ने विरोध प्रदर्शन की कोशिश की
+Arg1SentenceNum : 8
+Arg2 : पुलिस को उन्हें गिरफ्तार करना पड़ा
+Arg2SentenceNum : 8
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : अंततः
+Arg1 : लगभग एक साल पूर्व भाजपा के वरिष्ठ नेता एल. के. आडवाणी द्वारा जिन्ना की मज़ार पर दिए बयान से भाजपा में तूफान उठ गया था
+Arg1SentenceNum : 2
+Arg2 : पार्टी के अध्यक्ष पद से आडवाणी को इस्तीफा देने पर मजबूर होना पड़ा
+Arg2SentenceNum : 3
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612822_date_21_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : लिहाज़ा
+Arg1 : उन्होंने अपनी यात्रा की जानकारी पार्टी नेताओं को दे दी है
+Arg1SentenceNum : 12
+Arg2 : इस यात्रा के लिए पार्टी में किसी तरह का कोई विवाद नहीं है
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : क्योंकि
+Arg1 : वह सुप्रीम कोर्ट का नोटिस वापस कर देंगे
+Arg1SentenceNum : 1
+Arg2 : संविधान में यह साफ - साफ लिखा है कि संसद की कार्यवाही में न्यायपालिका का कोई दखल नहीं है ।
+Arg2SentenceNum : 1
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 12
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : इस मामले में दिए गए तर्क बहुत जटिल हैं
+Arg1SentenceNum : 12
+Arg2 : उन्हें थोड़ा और समय चाहिए
+Arg2SentenceNum : 12
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : तो
+Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
+Arg1SentenceNum : 19
+Arg2 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
+Arg2SentenceNum : 19
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 20
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
+Arg1SentenceNum : 19
+Arg2 : मजिस्ट्रेट ने कहा , डॉक्टर तो कह रहे हैं कि आपकी स्थिति सामान्य है
+Arg2SentenceNum : 20
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 7
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : की वजह से
+Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
+Arg1SentenceNum : 7
+Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
+Arg2SentenceNum : 7
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : की वजह से
+Arg1 : भारी नुकसान पहुँचा है
+Arg1SentenceNum : 9
+Arg2 : केदारनाथ यात्रा मार्ग में रुद्रप्रयाग जिले के अगस्त मुनि इलाके में भूस्खलन
+Arg2SentenceNum : 9
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 3
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : १६ फरवरी को एक विरोध प्रदर्शन के दौर में सिन्हा सहित भाजपा के १५० कार्यकर्ताओं ने केंद्र सरकार के कार्यालयों पर ताला लगा दिया था ।
+Arg1SentenceNum : 2
+Arg2 : सिन्हा को सीआरपीसी की धारा १५१ के तहत गिरफ्तार किया गया था ।
+Arg2SentenceNum : 3
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8
+sentenceNum : 10
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस पर
+Arg1 : राज्य में दूसरी बार चुनाव के लिए वे ही जिम्मेदार हैं
+Arg1SentenceNum : 10
+Arg2 : पासवान ने कहा कि चुनाव लोगों के हित में है , नेताओं के हित में नहीं
+Arg2SentenceNum : 10
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8
+sentenceNum : 15
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इसलिए
+Arg1 : बिहार की जनता विकास चाहती है
+Arg1SentenceNum : 15
+Arg2 : इस बार राज्य में त्रिशंकु विधानसभा नहीं होगी
+Arg2SentenceNum : 15
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
+sentenceNum : 13
+classLabel : Contingency.Cause.Result
+classifiedAs : 
+singleConnectiveName : इस प्रकार
+Arg1 : उनके कार्यकाल में १९९९ - २००० में एनआरआई कोटे से दाखिला लेने वालों की फीस ७५ हजार डॉलर से घटाकर ५० हजार डॉलर कर दी गई थी
+Arg1SentenceNum : 12
+Arg2 : शिरोमणि अकाली दल के तरनतारन से वर्तमान सांसद और राज्य के तत्कालीन पशु - पालन मंत्री डॉ. रतन सिंह अजनाला और एक अन्य को २५ हजार डॉलर की दर से छूट दी गई
+Arg2SentenceNum : 13
+----------------------------------------------------------------------------------------------------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 3
+classLabel : Contingency.Cause.Reason
+classifiedAs : 
+singleConnectiveName : यहाँ तक कि
+Arg1 : ये पढ़ाई तो कर रहे हैं लेकिन रोजगार भाग्य के ही भरोसे है । यानि यह खोटी शिक्षा इन्हें रोजी - रोटी की गारंटी नहीं दे सकती
+Arg1SentenceNum : 1
+Arg2 : तमाम दावों के बावजूद मानव संसाधन विकास मंत्रालय अभी तक इस मामले में कोई ठोस कार्य योजना नहीं तैयार कर सका है ।
+Arg2SentenceNum : 3
+----------------------------------------------------------------------------------------------------
