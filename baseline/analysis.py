@@ -35,7 +35,7 @@ def printAttrMaps(attrMapList,folderName):
 		sortedList=sorted(attrMap.items(), key=operator.itemgetter(1))
 		sortedList.sort(lambda x,y : -1*cmp(len(x[1]),len(y[1])))
 		for item in sortedList:
-			print item
+#			print item
 			FD.write("-"*100 + "\n")
 			FD.write(str(item[0])+" Frequency: " +str(len(item[1])) +"\n")
 			for i in item[1]:

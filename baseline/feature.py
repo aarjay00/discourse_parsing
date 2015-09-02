@@ -35,6 +35,7 @@ class Feature():
 		self.classLabel=None
 		self.globalWordList=global_word_list
 		self.sentenceList=sentence_list
+		self.description=""
 		if(conn!=None and isinstance(conn[0],int)):
 			self.connective=""
 			for i in conn:
@@ -63,6 +64,7 @@ class Feature():
 		setattr(self,setName+"Combo",[i[0]+" "+i[1] for i in itertools.product(singleSet,singleSet)])
 #		print "combo",getattr(self,setName+"Combo")
 	def wordFeature(self,wordList,wordList2=[]):
+		self.description=self.description+" wordFeature"
 		print "wordfeature",
 		words=[]
 		w=""
@@ -81,6 +83,7 @@ class Feature():
 		print feature
 		return feature
 	def wordNeighbor(self,wordList,offSet):
+		self.description=self.description+" wordNeighbor"
 		print "wordNeighbor"
 		words=[]
 		if(offSet<0):
@@ -97,6 +100,7 @@ class Feature():
 		print feature
 		return feature
 	def tagFeature(self,wordList):
+		self.description=self.description+" tagFeature"
 		print "tagfeature"
 		tagList=[]
 		for word in wordList:
@@ -108,6 +112,7 @@ class Feature():
 		print feature
 		return feature
 	def tagNeighbor(self,wordList,offSet):
+		self.description=self.description+" tagNeighbor-"+str(offSet)
 		print "tagNeighbor"
 		tagList=[]
 		if(offSet<0):
@@ -130,6 +135,7 @@ class Feature():
 		print feature
 		return feature
 	def tagCombo(self,wordList,offSet1,offSet2):
+		self.description=self.description+" tagCombo-"+str(offSet1)+"-"+str(offSet2)
 		print "tagCombo",offSet1,offSet2
 		tag=""
 		if(offSet1==0):
@@ -159,6 +165,7 @@ class Feature():
 		print tag
 		feature=self.markItemsinList([tag],self.tagSetCombo)
 	def chunkFeature(self,wordList):
+		self.description=self.description+" chunkFeature"
 		print "chunkfeature"
 		chunkList=[]
 		for word in wordList:
@@ -170,6 +177,7 @@ class Feature():
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
 	def chunkNeighbor(self,wordList,offSet):
+		self.description=self.description+" chunkNeighbor-"+str(offSet)
 		print "chunkNeighbor",offSet
 		chunkList=[]
 		if(offSet<0):
@@ -187,6 +195,7 @@ class Feature():
 		print ""
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 	def chunkCombo(self,wordList,offSet1,offSet2):
+		self.description=self.description+" chunkCombo-"+str(offSet1)+"-"+str(offSet2)
 		print "chunkCombo",offSet1,offSet2
 		chunkList=[]
 		chunk=""
@@ -220,6 +229,7 @@ class Feature():
 	def tamFeature(self,wordList):
 		print "tamFeature"
 	def chunkSeqFeature(self,chunkSeq):
+		self.description=self.description+" chunkSeqFeature" 
 		print "ChunkSeqFeature",len(chunkSeq)
 		if(len(chunkSeq)>20):
 			print "ahem chunk"
@@ -231,6 +241,7 @@ class Feature():
 				feature=self.markItemsinList(["Null"],self.chunkSet)
 		print ""
 	def dependencySeqFeature(self,dependencySeq):
+		self.description=self.description+" dependencySeqFeature" 
 		print "dependencySeqFeature",len(dependencySeq)
 		for i in range(0,len(dependencySeq)):
 			if(dependencySeq[i].startswith("pof")):
@@ -249,6 +260,7 @@ class Feature():
 				feature=self.markItemsinList(["Null"],self.dependencySet)
 		print ""
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
+		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)
 		if(getSpan(conn,self.globalWordList)!=connective):
 			self.featureVector.append(0)
 			return [0]
@@ -261,12 +273,14 @@ class Feature():
 		return [1]
 
 	def nodeFeature(self,node_feature,nodeListName):
+		self.description=self.description+" nodeFeature-" +str(nodeListName)
 	  	print nodeListName,"Feature"
 	  	nodeSet=getattr(self,nodeListName)
 	  	if(node_feature not in nodeSet):
 			print "ERROR !!!!",nodeListName
 		feature=self.markItemsinList([node_feature],nodeSet)
 	def hasNodeRelation(self,nodeRelation,node,nodeDict,maxLevel):
+		self.description=self.description+" hasNodeRelation-"+str(nodeRelationList)
 		if(findRelation(nodeRelation,node,nodeDict,0,maxLevel)):
 			self.featureVector.append(1)
 			print "nodeRelation found"
@@ -275,6 +289,7 @@ class Feature():
 			print "nodeRelation not found"
 
 	def aurFeature(self,conn):
+		self.description=self.description+" aurFeature"
 		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
 			self.featureVector.append(0)
 			return [0]
@@ -299,6 +314,7 @@ class Feature():
 		self.featureVector.append(0)
 		return [0]
 	def aurFeature2(self,conn,nodeName,nodeDict,c):
+		self.description=self.description+" aurFeature2"
 		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
 			self.featureVector.append(0)
 			return [0]	
@@ -314,6 +330,7 @@ class Feature():
 			print "aurFeature2 no",c
 			self.featureVector.append(0)
 	def parFeature(self,conn):
+		self.description=self.description+" parFeature"
 		if(getSpan(conn,self.globalWordList)!=u'\u092a\u0930'):
 			self.featureVector.append(0)
 			return [0]
@@ -333,6 +350,80 @@ class Feature():
 		print "not found"
 		self.featureVector.append(0)
 		return [0]
+	def lekinFeature(self,conn):
+		self.description=self.description+" lekinFeature"
+		print "lekinFeature",len(self.featureVector) 
+		if(getSpan(conn,self.globalWordList)!=u'\u0932\u0947\u0915\u093f\u0928'):
+			self.featureVector.append(0)
+			return [0]
+		sentencePrev=[]
+		sentenceNum=self.globalWordList[conn[0]].sentenceNum
+		pos=conn[0]-1
+		while(pos >=0 and self.globalWordList[pos].sentenceNum==sentenceNum):
+			sentencePrev.append(pos)
+			pos-=1
+		if(pos>=0):
+			sentencePrev.append(pos)
+			print "appending ",self.globalWordList[pos].word
+		sentencePrev.reverse()
+		sentencePrevSpan=getSpan(sentencePrev,self.globalWordList)
+		print sentencePrevSpan
+		checkList=[u'\u092f\u0942\u0902 \u0924\u094b',u'\u092d\u0932\u0947 \u0939\u0940',u'\u0939\u093e\u0932\u093e\u0902\u0915\u093f',u'\u092c\u0947\u0936\u0915',u'\u0939\u093e\u0932\u093e\u0901\u0915\u093f',u'\u0924\u094b']
+		for item in checkList:
+			if item in sentencePrevSpan:
+				print "found lekin",item
+				self.featureVector.append(1)
+				return [1]
+		self.featureVector.append(0)
+		return [0]
+	def toRootFeature(self,conn,node,nodeDict):
+		self.description=self.description+" toRootFeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0924\u094b'):
+#			self.featureVector.extend([0])
+			return [0]
+		print "toRootFeature"
+		if(node.nodeRelation!="None"):
+#			self.featureVector.append(0)
+			return [0]
+		sentencePrev=[]
+		sentenceNum=self.globalWordList[conn[0]].sentenceNum
+		pos=conn[0]-1
+		while(pos >=0 and self.globalWordList[pos].sentenceNum==sentenceNum):
+			sentencePrev.append(pos)
+			pos-=1
+		sentencePrev.reverse()
+		sentencePrevSpan=getSpan(sentencePrev,self.globalWordList)
+		print sentencePrevSpan
+		checkList=[u'\u091c\u0948\u0938\u0947 \u0939\u0940',u'\u092f\u0926\u093f',u'\u0905\u0917\u0930',u'\u091c\u092c',u'\u0935\u0939\u0940\u0902']
+		for item in checkList:
+			if item in sentencePrevSpan:
+				print "found toto",item
+#				self.featureVector.append(0)
+				return [0]
+		print "to works"
+#		self.featureVector.append(1)
+		return [1]
+	def tok7tFeature(self,conn,node,nodeDict):
+		self.description=self.description+" tok7tFeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0924\u094b'):
+#			self.featureVector.extend([0])
+			return [0]
+		print "tok7tFeature"
+		if(node.nodeRelation!="k7t" or len(node.childList)==0):
+#		 	self.featureVector.extend([0])
+			return [0]
+		sentencePrevSpan=self.getPrevSentenceSpan(conn)
+		print sentencePrevSpan
+		checkList=[u'\u091c\u0948\u0938\u0947 \u0939\u0940',u'\u092f\u0926\u093f',u'\u0905\u0917\u0930',u'\u091c\u092c',u'\u0935\u0939\u0940\u0902']
+		for item in checkList:
+			if item in sentencePrevSpan:
+				print "found toto1",item
+#				self.featureVector.append(0)
+				return [0]
+		print "to works k7t"
+#		self.featureVector.append(1)
+		return [1]
+
 	def markItemsinList(self,List,Set):
 # 		set is universal set out of which marking objects contained in list
 		feature=[]
@@ -355,6 +446,16 @@ class Feature():
 		else:
 			chunk=None
 		return chunk
+	def getPrevSentenceSpan(self,conn,):
+		sentencePrev=[]
+		sentenceNum=self.globalWordList[conn[0]].sentenceNum
+		pos=conn[0]-1
+		while(pos >=0 and self.globalWordList[pos].sentenceNum==sentenceNum):
+			sentencePrev.append(pos)
+			pos-=1
+		sentencePrev.reverse()
+		sentencePrevSpan=getSpan(sentencePrev,self.globalWordList)
+		return sentencePrevSpan
 	def cleanFeature(self,removeList):
 		removeList=sorted(removeList,reverse=True)
 		for pos in removeList:

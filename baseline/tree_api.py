@@ -41,5 +41,4 @@ def hasChildRelation(nodeName, nodeDict,childRelationTarget):
 	for child in node.childList:
 		if(nodeDict[child].nodeRelation==childRelationTarget):
 			return True
-	return False
-		
+	return False	

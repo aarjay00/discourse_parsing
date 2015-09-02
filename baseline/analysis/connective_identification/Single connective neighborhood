@@ -1,11 +1,235 @@
 ----------------------------------------------------------------------------------------------------
-। Frequency: 40
+। Frequency: 44
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
 sentenceNum : 3
 classLabel : No
 classifiedAs : Yes
 Single connective : ऐसे में
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : No
+Single connective : समझा जाता है कि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : वैसे
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : इस संबंध में
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : Yes
+Single connective : इसी प्रकार
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 27
+classLabel : Yes
+classifiedAs : No
+Single connective : दूसरे
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं पर
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : इस बारे में
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 23
+classLabel : No
+classifiedAs : Yes
+Single connective : इस संबंध में
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : तब
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
 Single connective neighborhood : ।
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -22,207 +246,11 @@ classifiedAs : Yes
 Single connective : गौरतलब है कि
 Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : बताया जाता है कि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके चलते
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 23
-classLabel : No
-classifiedAs : Yes
-Single connective : इस संबंध में
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इस पर
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 18
-classLabel : Yes
-classifiedAs : No
-Single connective : इसके लिए
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : हालांकि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : बताया जाता है कि
-Single connective neighborhood : ।
-------
 rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : वजह
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : उधर
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-sentenceNum : 17
-classLabel : No
-classifiedAs : Yes
-Single connective : हालांकि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : हालांकि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : No
-Single connective : तब
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : इस बारे में
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : बताया जाता है कि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 14
 classLabel : No
 classifiedAs : Yes
-Single connective : उधर
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : No
 Single connective : तब
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : फिलहाल
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं पर
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 12
-classLabel : Yes
-classifiedAs : No
-Single connective : समझा जाता है कि
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 21
-classLabel : No
-classifiedAs : Yes
-Single connective : इसी प्रकार
 Single connective neighborhood : ।
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
@@ -232,62 +260,69 @@ classifiedAs : Yes
 Single connective : इसलिए
 Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : इस संबंध में
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : इसका
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : No
-Single connective : इसका
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : वैसे
-Single connective neighborhood : ।
-------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
 sentenceNum : 21
 classLabel : No
 classifiedAs : Yes
 Single connective : इस दौरान
 Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : वजह
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
 , Frequency: 15
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
 Single connective : इस पर
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 0
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
 Single connective neighborhood : ,
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -297,32 +332,18 @@ classifiedAs : Yes
 Single connective : पर
 Single connective neighborhood : ,
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : No
-Single connective : पर
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
-sentenceNum : 9
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 11
 classLabel : No
 classifiedAs : Yes
 Single connective : लेकिन
 Single connective neighborhood : ,
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8
-sentenceNum : 5
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
 classLabel : No
 classifiedAs : Yes
-Single connective : तब
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : इस पर
+Single connective : दूसरे
 Single connective neighborhood : ,
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
@@ -339,6 +360,13 @@ classifiedAs : Yes
 Single connective : इस तरह
 Single connective neighborhood : ,
 ------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+Single connective neighborhood : ,
+------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
 sentenceNum : 17
 classLabel : No
@@ -346,22 +374,15 @@ classifiedAs : Yes
 Single connective : लेकिन
 Single connective neighborhood : ,
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-sentenceNum : 26
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 13
-classLabel : No
-classifiedAs : Yes
-Single connective : इस बारे में
+rawFileName : ../data/raw/Section_17/fullnews_id_2610160_date_20_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
 Single connective neighborhood : ,
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
-sentenceNum : 8
+sentenceNum : 10
 classLabel : Yes
 classifiedAs : No
 Single connective : पर
@@ -374,45 +395,66 @@ classifiedAs : No
 Single connective : इसी प्रकार
 Single connective neighborhood : ,
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 0
+rawFileName : ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8
+sentenceNum : 5
 classLabel : No
 classifiedAs : Yes
-Single connective : वहीं
+Single connective : तब
 Single connective neighborhood : ,
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-sentenceNum : 11
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 26
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 9
 classLabel : No
 classifiedAs : Yes
 Single connective : लेकिन
 Single connective neighborhood : ,
 ----------------------------------------------------------------------------------------------------
-है Frequency: 10
+है Frequency: 8
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
 classLabel : No
 classifiedAs : Yes
 Single connective : और
 Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : तो
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 9
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 12
 classLabel : No
 classifiedAs : Yes
-Single connective : इस प्रकार
+Single connective : तथा
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
 Single connective neighborhood : है
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
 sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
 classLabel : No
 classifiedAs : Yes
 Single connective : और
@@ -425,52 +467,24 @@ classifiedAs : Yes
 Single connective : और
 Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 9
 classLabel : No
 classifiedAs : Yes
-Single connective : जिससे
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : No
-Single connective : तो
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : तथा
+Single connective : इस प्रकार
 Single connective neighborhood : है
 ----------------------------------------------------------------------------------------------------
 करने Frequency: 5
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 5
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
 Single connective neighborhood : करने
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-sentenceNum : 6
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 5
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
@@ -483,8 +497,8 @@ classifiedAs : No
 Single connective : के लिए
 Single connective neighborhood : करने
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 2
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 6
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
@@ -499,27 +513,6 @@ Single connective neighborhood : करने
 ----------------------------------------------------------------------------------------------------
 नहीं Frequency: 5
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 4
-classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
-Single connective neighborhood : नहीं
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : बल्कि
-Single connective neighborhood : नहीं
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 0
-classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
-Single connective neighborhood : नहीं
-------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
 sentenceNum : 14
 classLabel : Yes
@@ -533,34 +526,32 @@ classLabel : Yes
 classifiedAs : No
 Single connective : बल्कि
 Single connective neighborhood : नहीं
-----------------------------------------------------------------------------------------------------
-होने Frequency: 3
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : होने
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+Single connective neighborhood : नहीं
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 1
 classLabel : Yes
 classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : होने
+Single connective : बल्कि
+Single connective neighborhood : नहीं
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : Yes
-classifiedAs : No
-Single connective : और
-Single connective neighborhood : होने
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+Single connective neighborhood : नहीं
 ----------------------------------------------------------------------------------------------------
 उन्होंने Frequency: 3
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 18
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 5
 classLabel : Yes
 classifiedAs : No
 Single connective : आगे
@@ -573,21 +564,37 @@ classifiedAs : No
 Single connective : आगे
 Single connective neighborhood : उन्होंने
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 5
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
 classLabel : Yes
 classifiedAs : No
 Single connective : आगे
 Single connective neighborhood : उन्होंने
 ----------------------------------------------------------------------------------------------------
-गया Frequency: 3
+होने Frequency: 3
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
+rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : होने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : होने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : No
 Single connective : और
-Single connective neighborhood : गया
+Single connective neighborhood : होने
+----------------------------------------------------------------------------------------------------
+गया Frequency: 3
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 8
@@ -602,18 +609,18 @@ classLabel : No
 classifiedAs : Yes
 Single connective : क्योंकि
 Single connective neighborhood : गया
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : गया
 ----------------------------------------------------------------------------------------------------
 जाने Frequency: 3
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 8
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : जाने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
-sentenceNum : 0
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
@@ -625,6 +632,29 @@ classLabel : Yes
 classifiedAs : No
 Single connective : से
 Single connective neighborhood : जाने
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : जाने
+----------------------------------------------------------------------------------------------------
+जाएगा Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 16
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : जाएगा
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : जाएगा
 ----------------------------------------------------------------------------------------------------
 था Frequency: 2
 ------
@@ -642,22 +672,6 @@ classifiedAs : Yes
 Single connective : और
 Single connective neighborhood : था
 ----------------------------------------------------------------------------------------------------
-देने Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के लिए
-Single connective neighborhood : देने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : Yes
-classifiedAs : No
-Single connective : और
-Single connective neighborhood : देने
-----------------------------------------------------------------------------------------------------
 पूछा Frequency: 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
@@ -674,6 +688,22 @@ classifiedAs : No
 Single connective : तो
 Single connective neighborhood : पूछा
 ----------------------------------------------------------------------------------------------------
+कि Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+Single connective neighborhood : कि
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+Single connective : इसके पूर्व
+Single connective neighborhood : कि
+----------------------------------------------------------------------------------------------------
 हैं Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -683,12 +713,28 @@ classifiedAs : Yes
 Single connective : और
 Single connective neighborhood : हैं
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
+rawFileName : ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : इस पर
 Single connective neighborhood : हैं
+----------------------------------------------------------------------------------------------------
+देने Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+Single connective neighborhood : देने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : देने
 ----------------------------------------------------------------------------------------------------
 ने Frequency: 2
 ------
@@ -708,51 +754,19 @@ Single connective neighborhood : ने
 ----------------------------------------------------------------------------------------------------
 आने Frequency: 2
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के कारण
-Single connective neighborhood : आने
-------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 13
 classLabel : Yes
 classifiedAs : No
 Single connective : तथा
 Single connective neighborhood : आने
-----------------------------------------------------------------------------------------------------
-जाएगा Frequency: 2
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Single connective neighborhood : जाएगा
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 16
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Single connective neighborhood : जाएगा
-----------------------------------------------------------------------------------------------------
-कि Frequency: 2
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
 classLabel : Yes
 classifiedAs : No
-Single connective : इसके पूर्व
-Single connective neighborhood : कि
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
-sentenceNum : 4
-classLabel : Yes
-classifiedAs : No
-Single connective : इससे
-Single connective neighborhood : कि
+Single connective : के कारण
+Single connective neighborhood : आने
 ----------------------------------------------------------------------------------------------------
 होगा Frequency: 1
 ------
@@ -817,15 +831,6 @@ classifiedAs : No
 Single connective : के लिए
 Single connective neighborhood : जोड़ने
 ----------------------------------------------------------------------------------------------------
-मिलने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : के बाद
-Single connective neighborhood : मिलने
-----------------------------------------------------------------------------------------------------
 रखने Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
@@ -835,6 +840,15 @@ classifiedAs : No
 Single connective : के बाद
 Single connective neighborhood : रखने
 ----------------------------------------------------------------------------------------------------
+थे Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : No
+Single connective : लेकिन
+Single connective neighborhood : थे
+----------------------------------------------------------------------------------------------------
 आदेश Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
@@ -843,15 +857,6 @@ classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
 Single connective neighborhood : आदेश
-----------------------------------------------------------------------------------------------------
-ली Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
-sentenceNum : 3
-classLabel : Yes
-classifiedAs : No
-Single connective : तो
-Single connective neighborhood : ली
 ----------------------------------------------------------------------------------------------------
 सक्रियता Frequency: 1
 ------
@@ -952,15 +957,6 @@ classifiedAs : Yes
 Single connective : इस पर
 Single connective neighborhood : |
 ----------------------------------------------------------------------------------------------------
-थी Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : तब
-Single connective neighborhood : थी
-----------------------------------------------------------------------------------------------------
 जाए Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
@@ -1033,6 +1029,15 @@ classifiedAs : Yes
 Single connective : लेकिन
 Single connective neighborhood : हो
 ----------------------------------------------------------------------------------------------------
+लगीं Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 22
+classLabel : No
+classifiedAs : Yes
+Single connective : तो
+Single connective neighborhood : लगीं
+----------------------------------------------------------------------------------------------------
 मुआवजा Frequency: 1
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -1042,15 +1047,6 @@ classifiedAs : No
 Single connective : और
 Single connective neighborhood : मुआवजा
 ----------------------------------------------------------------------------------------------------
-50 Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : No
-Single connective : तथा
-Single connective neighborhood : 50
-----------------------------------------------------------------------------------------------------
 मौत Frequency: 1
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -1059,6 +1055,15 @@ classLabel : Yes
 classifiedAs : No
 Single connective : तथा
 Single connective neighborhood : मौत
+----------------------------------------------------------------------------------------------------
+50 Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+Single connective neighborhood : 50
 ----------------------------------------------------------------------------------------------------
 कूदने Frequency: 1
 ------
@@ -1105,15 +1110,6 @@ classifiedAs : Yes
 Single connective : और
 Single connective neighborhood : फेंके
 ----------------------------------------------------------------------------------------------------
-जवान Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : No
-Single connective : जैसे ही
-Single connective neighborhood : जवान
-----------------------------------------------------------------------------------------------------
 फटने Frequency: 1
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
@@ -1123,14 +1119,14 @@ classifiedAs : No
 Single connective : के बाद
 Single connective neighborhood : फटने
 ----------------------------------------------------------------------------------------------------
-चुराएं Frequency: 1
+जवान Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : पर
-Single connective neighborhood : चुराएं
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : जैसे ही
+Single connective neighborhood : जवान
 ----------------------------------------------------------------------------------------------------
 बीतने Frequency: 1
 ------
