@@ -280,7 +280,7 @@ class Feature():
 			print "ERROR !!!!",nodeListName
 		feature=self.markItemsinList([node_feature],nodeSet)
 	def hasNodeRelation(self,nodeRelation,node,nodeDict,maxLevel):
-		self.description=self.description+" hasNodeRelation-"+str(nodeRelationList)
+		self.description=self.description+" hasNodeRelation-"+str(nodeRelation)
 		if(findRelation(nodeRelation,node,nodeDict,0,maxLevel)):
 			self.featureVector.append(1)
 			print "nodeRelation found"

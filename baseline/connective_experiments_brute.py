@@ -103,6 +103,7 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 #			 	print "No"
 	positiveSetSplit=[]
 	negativeSetSplit=[]
+	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
 	for conn in connSplitList:
 		conn1,conn2=conn[0],conn[1]
 		posList=searchSplitConn(conn1,conn2,wordList,sentenceList)
@@ -117,7 +118,7 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 			else:
 				positiveSetSplit.append((convert_span(i,conn1),convert_span(j,conn2)))
 
-	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
+#	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
 def genFeatureSingleConn(conn,label,discourseFile,runInst):
 		
 		sentenceList=discourseFile.sentenceList
@@ -244,6 +245,16 @@ connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 
 
 discourseFileCollection=loadModel("processedData/annotatedData")
+pSetC=[]
+nSetC=[]
+pSetSplitC=[]
+nSetSplitC=[]
+for discourseFile in discourseFileCollection:
+	p,n,ps,ns=identifyConnectives(discourseFile,connList,connSplitList)
+	pSetC.append(p)
+	nSetC.append(n)
+	pSetSplitC.append(ps)
+	nSetSplitC.append(ns)
 def run(runInst):	
 	print len(discourseFileCollection)
 	positiveSet=[]
@@ -257,7 +268,11 @@ def run(runInst):
 	featureCollectionDescSplit=[]
 	for discourseFile in discourseFileCollection:
 		wordList=discourseFile.globalWordList
-		pSet,nSet,pSetSplit,nSetSplit=identifyConnectives(discourseFile,connList,connSplitList)
+#		pSet,nSet,pSetSplit,nSetSplit=identifyConnectives(discourseFile,connList,connSplitList)
+		pSet=pSetC[fileNum]
+		nSet=nSetC[fileNum]
+		pSetSplit=pSetSplitC[fileNum]
+		nSetSplit=nSetSplitC[fileNum]
 		for conn in pSet:
 			featureCollectionSingle.append(genFeatureSingleConn(conn,"Yes",discourseFile,runInst))
 			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","Yes",len(featureCollectionDescSingle))
@@ -284,13 +299,13 @@ def run(runInst):
 			featureCollectionSplit.append(genFeatureSplitConn(conn,"No",discourseFile))
 			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","No",len(featureCollectionDescSplit))
 			featureCollectionDescSplit.append(featureDescInst)
-		positiveSet.extend(pSet)
-		negativeSet.extend(nSet)
-		positiveSetSplit.extend(pSetSplit)
-		negativeSetSplit.extend(nSetSplit)
+#		positiveSet.extend(pSet)
+#		negativeSet.extend(nSet)
+#		positiveSetSplit.extend(pSetSplit)
+#		negativeSetSplit.extend(nSetSplit)
 		fileNum+=1
-	print len(positiveSetSplit),len(negativeSetSplit)
-	print len(positiveSet),len(negativeSet)
+#	print len(positiveSetSplit),len(negativeSetSplit)
+#	print len(positiveSet),len(negativeSet)
 	print len(featureCollectionSingle)
 
 
@@ -321,7 +336,7 @@ def run(runInst):
 	max_precision=-1
 	min_precision=100
 	avg_accuracy=0.0
-	time=20
+	time=15
 
 	errorCollection=[]
 	for i in range(0,time):
@@ -333,11 +348,14 @@ def run(runInst):
 		max_acc=max(max_acc,z["Yes"])
 		min_acc=min(min_acc,z["Yes"])
 	print "Accuracy",round(min_acc*100,2),"-",round(max_acc*100,2),"-",round(avg_accuracy*100.0/time,2)
-	FD=open("accuracy_results","a")
+	FD=open("accuracy_results_brute","a")
 	FD.write(featureCollectionSingle[0].description+"\n")
 	FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
 	FD.close()
-runCollection = list(itertools.product([0, 1], repeat=7))
-for runInst in lst():
-	print "SeparateRun","-"*100
-	run(runInst)
+#runCollection = list(itertools.product([0, 1], repeat=10))
+#for runInst in runCollection:
+runInst=sys.argv[1]
+runInst=tuple([i for i in runInst])
+print runInst
+print "SeparateRun","-"*100
+run(runInst)
