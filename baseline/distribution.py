@@ -56,7 +56,7 @@ for i in onlyfiles:
 	if(p==0 or n==0):
 		FD=codecs.open("lists/connSpecDependency.list","a")
 		FD.write("conn:"+i+"\n")
-		for i in range(0,6):
+		for i in range(0,9):
 			FD.write("noFeature"+str(i)+"\n")
 		FD.close()
 		continue
@@ -86,7 +86,7 @@ for i in onlyfiles:
 #	print rfe.ranking_
 	iterator=0
 	for i in rfe.ranking_:
-		if(iterator<=5):
+		if(i<=7):
 			print featureslist[iterator],i,c2[iterator],pval[iterator]
 			FD.write(featureslist[iterator]+"\n")
 		iterator+=1

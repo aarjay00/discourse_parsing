@@ -195,29 +195,27 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		print feature.featureVector
 
 # study of feature distribution 
-		createDirectory("./featureDist/")
 		dependencyList=[]
-		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
-		FD.write("Label:"+label+"\n")
 		for relation in feature.nodeRelationSet:
 			dependencyList.append(relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation)))
-			FD.write(relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation))+"\n")
-		FD.write("ParentRelation:"+node.nodeRelation+"\n")
 		dependencyList.append("ParentRelation:"+node.nodeRelation)
-		FD.write("Parent:"+node.getChunkName(node.nodeParent)+"\n")
 		dependencyList.append("Parent:"+node.getChunkName(node.nodeParent))
-		FD.write("childlen:"+str(len(node.childList))+"\n")
 		dependencyList.append("childlen:"+str(len(node.childList)))
 		for tag in feature.tagSet:
 			dependencyList.append(tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
-			FD.write(tag+":"+str(hasChild(node.nodeName,nodeDict,False))+"\n")
-		FD.close()
-#		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'):
-		if(getSpan(conn,wordList)==u'\u0914\u0930'):
-			print "Speckebaad"
-			feature.dependencyFeature(conn,dependencyList)
-		else:
-			feature.featureVector.extend([0,0,0,0,0,0])
+#		createDirectory("./featureDist/")
+#		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
+#		FD.write("Label:"+label+"\n")
+#		for line in dependencyList:
+#			FD.write(line+"\n")
+#		FD.close()
+#		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'): #ke baad
+#		if(getSpan(conn,wordList)==u'\u0914\u0930'): # aur
+#		if(getSpan(conn,wordList)==u'\u0924\u094b'): 
+#			print "Speckebaad"
+#			feature.dependencyFeature(conn,dependencyList)
+#		else:
+#			feature.featureVector.extend([0,0,0,0,0,0,0,0,0])
 #		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'):
 #			print "ke baad",label
 #			print label,node.getChunkName(node.nodeName)
