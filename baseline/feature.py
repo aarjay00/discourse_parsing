@@ -36,6 +36,7 @@ class Feature():
 		self.globalWordList=global_word_list
 		self.sentenceList=sentence_list
 		self.description=""
+		self.connSpec={}
 		if(conn!=None and isinstance(conn[0],int)):
 			self.connective=""
 			for i in conn:
@@ -51,6 +52,16 @@ class Feature():
 			self.conn=conn
 		print len(self.tagSet)
 		print len(self.chunkSet)
+		FD=codecs.open("./lists/connSpecDependency.list","r")
+		currConn=""
+		for line in FD.readlines():
+			line=line[:-1]
+			if(line[:4]=="conn"):
+				self.connSpec[line.split(":")[1]]=[]
+				currConn=line.split(":")[1]
+			else:
+				self.connSpec[currConn].append(line)
+		FD.close()
 	def loadSet(self,filePath,extra=[]):
 		Set=[]
 		fileFD=codecs.open(filePath,"r",encoding="utf-8")
@@ -423,7 +434,13 @@ class Feature():
 		print "to works k7t"
 #		self.featureVector.append(1)
 		return [1]
-
+	def dependencyFeature(self,conn,dependencyList):
+		connective=getSpan(conn,self.globalWordList)
+		for feature in self.connSpec[connective.encode("utf-8")]:
+			if(feature in dependencyList):
+				self.featureVector.append(1)
+			else:
+				self.featureVector.append(0)
 	def markItemsinList(self,List,Set):
 # 		set is universal set out of which marking objects contained in list
 		feature=[]

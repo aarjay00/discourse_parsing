@@ -4,7 +4,6 @@ import sys
 import codecs
 reload(sys)
 sys.setdefaultencoding("utf-8")
-import itertools
 from util import *
 from extract_relations import *
 from ssf_api import *
@@ -118,7 +117,7 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 				positiveSetSplit.append((convert_span(i,conn1),convert_span(j,conn2)))
 
 	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
-def genFeatureSingleConn(conn,label,discourseFile,runInst):
+def genFeatureSingleConn(conn,label,discourseFile):
 		
 		sentenceList=discourseFile.sentenceList
 		wordList=discourseFile.globalWordList
@@ -160,26 +159,16 @@ def genFeatureSingleConn(conn,label,discourseFile,runInst):
 #		feature.tagNeighbor(conn,2)
 #		feature.tagCombo(conn,0,-1)
 		feature.chunkFeature(conn)
-		if(runInst[0]==1):
-			feature.hasNodeRelation("k1",node.nodeName,nodeDict,10)
-		if(runInst[1]==1):
-			feature.hasNodeRelation("k2",node.nodeName,nodeDict,10)
-		if(runInst[2]==1):
-			feature.hasNodeRelation("k3",node.nodeName,nodeDict,10)
-		if(runInst[3]==1):
-			feature.hasNodeRelation("k4",node.nodeName,nodeDict,10)
-		if(runInst[4]==1):
-			feature.hasNodeRelation("k5",node.nodeName,nodeDict,10)
-		if(runInst[5]==1):
-			feature.hasNodeRelation("k7t",node.nodeName,nodeDict,10)
-		if(runInst[6]==1):
-			feature.hasNodeRelation("r6",node.nodeName,nodeDict,10)
-		if(runInst[7]==1):
-			feature.hasNodeRelation("r6-k1",node.nodeName,nodeDict,10)
-		if(runInst[8]==1):
-			feature.hasNodeRelation("k7p",node.nodeName,nodeDict,10)
-		if(runInst[9]==1):
-			feature.hasNodeRelation("k7",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k1",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k2",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k3",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k4",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k5",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k7t",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("r6",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("r6-k1",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k7p",node.nodeName,nodeDict,10)
+#		feature.hasNodeRelation("k7",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k2","k7t"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k1"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k7t"],node.nodeName,nodeDict,10)
@@ -192,9 +181,9 @@ def genFeatureSingleConn(conn,label,discourseFile,runInst):
 #		feature.chunkNeighbor(conn,2)
 #		feature.chunkNeighbor(conn,-2)
 		feature.setClassLabel(label)
-		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn)
+#		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn)
 #		feature.aurFeature(conn)
-		feature.parFeature(conn)
+#		feature.parFeature(conn)
 		l1=feature.toRootFeature(conn,node,nodeDict)
 		l2=feature.tok7tFeature(conn,node,nodeDict)
 		if(l1==[1] or l2==[1]):
@@ -202,15 +191,55 @@ def genFeatureSingleConn(conn,label,discourseFile,runInst):
 			feature.featureVector.append(1)
 		else:
 			feature.featureVector.append(0)
-		feature.lekinFeature(conn)
+#		feature.lekinFeature(conn)
 		print feature.featureVector
+
+# study of feature distribution 
+		createDirectory("./featureDist/")
+		dependencyList=[]
+		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
+		FD.write("Label:"+label+"\n")
+		for relation in feature.nodeRelationSet:
+			dependencyList.append(relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation)))
+			FD.write(relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation))+"\n")
+		FD.write("ParentRelation:"+node.nodeRelation+"\n")
+		dependencyList.append("ParentRelation:"+node.nodeRelation)
+		FD.write("Parent:"+node.getChunkName(node.nodeParent)+"\n")
+		dependencyList.append("Parent:"+node.getChunkName(node.nodeParent))
+		FD.write("childlen:"+str(len(node.childList))+"\n")
+		dependencyList.append("childlen:"+str(len(node.childList)))
+		for tag in feature.tagSet:
+			dependencyList.append(tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
+			FD.write(tag+":"+str(hasChild(node.nodeName,nodeDict,False))+"\n")
+		FD.close()
 #		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'):
-#			print "ke baad",label,
-#			print node.getChunkName(node.nodeName)
-#			print len(node.childList)
+		if(getSpan(conn,wordList)==u'\u0914\u0930'):
+			print "Speckebaad"
+			feature.dependencyFeature(conn,dependencyList)
+		else:
+			feature.featureVector.extend([0,0,0,0,0,0])
+#		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'):
+#			print "ke baad",label
+#			print label,node.getChunkName(node.nodeName)
+#			print label,node.nodeRelation,node.getChunkName(node.nodeParent)
+#			print label,len(node.childList)
 #			for child in node.childList:
 #				print node.getChunkName(child),"-",nodeDict[child].nodeRelation,
 #			print ""
+#		if(getSpan(conn,wordList)==u'\u0914\u0930'):
+#			print "aur--",label
+#			print discourseFile.rawFileName,wordList[conn[0]].sentenceNum
+#			print label,"number of children",len(node.childList)
+#			print label,"noderelation and parent",node.nodeRelation,node.getChunkName(node.nodeParent)
+#			try:
+#				print label,nodeDict[node.nodeParent].nodeRelation,node.getChunkName(nodeDict[node.nodeParent].nodeParent)
+#			except:
+#				print label,"root"
+#			vgnum=0
+#			for child in node.childList:
+#				if(child[:2]=="VG"):
+#					vgnum+=1
+#			print label,"vgnum",vgnum
 		return feature
 
 def genFeatureSplitConn(conn,label,discourseFile):
@@ -244,61 +273,60 @@ connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 
 
 discourseFileCollection=loadModel("processedData/annotatedData")
-def run(runInst):	
-	print len(discourseFileCollection)
-	positiveSet=[]
-	negativeSet=[]
-	positiveSetSplit=[]
-	negativeSetSplit=[]
-	fileNum=0
-	featureCollectionSingle=[]
-	featureCollectionSplit=[]
-	featureCollectionDescSingle=[]
-	featureCollectionDescSplit=[]
-	for discourseFile in discourseFileCollection:
-		wordList=discourseFile.globalWordList
-		pSet,nSet,pSetSplit,nSetSplit=identifyConnectives(discourseFile,connList,connSplitList)
-		for conn in pSet:
-			featureCollectionSingle.append(genFeatureSingleConn(conn,"Yes",discourseFile,runInst))
-			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","Yes",len(featureCollectionDescSingle))
-			featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
-			try:
-				featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
-			except:
-				featureDescInst.addAttr("Single connective neighborhood","First")
-			featureCollectionDescSingle.append(featureDescInst)
-		for conn in nSet:
-			featureCollectionSingle.append(genFeatureSingleConn(conn,"No",discourseFile,runInst))
-			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","No",len(featureCollectionDescSingle))
-			featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
-			try:
-				featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
-			except:
-				featureDescInst.addAttr("Single connective neighborhood","First")
-			featureCollectionDescSingle.append(featureDescInst)
-		for conn in pSetSplit:
-			featureCollectionSplit.append(genFeatureSplitConn(conn,"Yes",discourseFile))
-			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","Yes",len(featureCollectionDescSplit))
-			featureCollectionDescSplit.append(featureDescInst)
-		for conn in nSetSplit:
-			featureCollectionSplit.append(genFeatureSplitConn(conn,"No",discourseFile))
-			featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","No",len(featureCollectionDescSplit))
-			featureCollectionDescSplit.append(featureDescInst)
-		positiveSet.extend(pSet)
-		negativeSet.extend(nSet)
-		positiveSetSplit.extend(pSetSplit)
-		negativeSetSplit.extend(nSetSplit)
-		fileNum+=1
-	print len(positiveSetSplit),len(negativeSetSplit)
-	print len(positiveSet),len(negativeSet)
-	print len(featureCollectionSingle)
+print len(discourseFileCollection)
+positiveSet=[]
+negativeSet=[]
+positiveSetSplit=[]
+negativeSetSplit=[]
+fileNum=0
+featureCollectionSingle=[]
+featureCollectionSplit=[]
+featureCollectionDescSingle=[]
+featureCollectionDescSplit=[]
+for discourseFile in discourseFileCollection:
+	wordList=discourseFile.globalWordList
+	pSet,nSet,pSetSplit,nSetSplit=identifyConnectives(discourseFile,connList,connSplitList)
+	for conn in pSet:
+		featureCollectionSingle.append(genFeatureSingleConn(conn,"Yes",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","Yes",len(featureCollectionDescSingle))
+		featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
+		try:
+			featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
+		except:
+			featureDescInst.addAttr("Single connective neighborhood","First")
+		featureCollectionDescSingle.append(featureDescInst)
+	for conn in nSet:
+		featureCollectionSingle.append(genFeatureSingleConn(conn,"No",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0]].sentenceNum,"Single connective identification","No",len(featureCollectionDescSingle))
+		featureDescInst.addAttr("Single connective",getSpan(conn,wordList))
+		try:
+			featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
+		except:
+			featureDescInst.addAttr("Single connective neighborhood","First")
+		featureCollectionDescSingle.append(featureDescInst)
+	for conn in pSetSplit:
+		featureCollectionSplit.append(genFeatureSplitConn(conn,"Yes",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","Yes",len(featureCollectionDescSplit))
+		featureCollectionDescSplit.append(featureDescInst)
+	for conn in nSetSplit:
+		featureCollectionSplit.append(genFeatureSplitConn(conn,"No",discourseFile))
+		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","No",len(featureCollectionDescSplit))
+		featureCollectionDescSplit.append(featureDescInst)
+	positiveSet.extend(pSet)
+	negativeSet.extend(nSet)
+	positiveSetSplit.extend(pSetSplit)
+	negativeSetSplit.extend(nSetSplit)
+	fileNum+=1
+print len(positiveSetSplit),len(negativeSetSplit)
+print len(positiveSet),len(negativeSet)
+print len(featureCollectionSingle)
 
 
-	extraFeatureList=removeExtraFeatures(featureCollectionSingle)
-	for featureNum in range(0,len(featureCollectionSingle)):
-		featureCollectionSingle[featureNum].cleanFeature(extraFeatureList)
+extraFeatureList=removeExtraFeatures(featureCollectionSingle)
+for featureNum in range(0,len(featureCollectionSingle)):
+	featureCollectionSingle[featureNum].cleanFeature(extraFeatureList)
 
-	print "featureSize",len(featureCollectionSingle[0].featureVector)
+print "featureSize",len(featureCollectionSingle[0].featureVector)
 
 
 
@@ -309,35 +337,33 @@ def run(runInst):
 #	if(getattr(featureDesc,"Single connective")==u'\u0924\u094b'):
 #		featureDesc.printFeatureDesc(FD)
 #FD.close()
+
 #exit()
 
-	classList=[]
-	for feature in featureCollectionSingle:
-		classList.append(feature.classLabel)
-	classList=list(set(classList))
-	print classList
-	max_acc=-1
-	min_acc=100
-	max_precision=-1
-	min_precision=100
-	avg_accuracy=0.0
-	time=20
+classList=[]
+for feature in featureCollectionSingle:
+	classList.append(feature.classLabel)
+classList=list(set(classList))
+print classList
+max_acc=-1
+min_acc=100
+max_precision=-1
+min_precision=100
+avg_accuracy=0.0
+time=20
 
-	errorCollection=[]
-	for i in range(0,time):
-		print "running"
-		#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-		x,y,z,err=runModel(featureCollectionSingle,featureCollectionDescSingle,classList,"connective_identification",15,1,1)
-		errorCollection.extend(err)
-		avg_accuracy+=z["Yes"]
-		max_acc=max(max_acc,z["Yes"])
-		min_acc=min(min_acc,z["Yes"])
-	print "Accuracy",round(min_acc*100,2),"-",round(max_acc*100,2),"-",round(avg_accuracy*100.0/time,2)
-	FD=open("accuracy_results","a")
-	FD.write(featureCollectionSingle[0].description+"\n")
-	FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
-	FD.close()
-runCollection = list(itertools.product([0, 1], repeat=7))
-for runInst in lst():
-	print "SeparateRun","-"*100
-	run(runInst)
+errorCollection=[]
+for i in range(0,time):
+	print "running"
+	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
+	x,y,z,err=runModel(featureCollectionSingle,featureCollectionDescSingle,classList,"connective_identification",15,1,1)
+	errorCollection.extend(err)
+	avg_accuracy+=z["Yes"]
+	max_acc=max(max_acc,z["Yes"])
+	min_acc=min(min_acc,z["Yes"])
+print "Accuracy",round(min_acc*100,2),"-",round(max_acc*100,2),"-",round(avg_accuracy*100.0/time,2)
+FD=open("accuracy_results","a")
+FD.write(featureCollectionSingle[0].description+"\n")
+FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
+FD.close()
+basicAnalysis(errorCollection,"conn_all_runs_w_connSpecd")

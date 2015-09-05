@@ -355,7 +355,6 @@ def run(runInst):
 #runCollection = list(itertools.product([0, 1], repeat=10))
 #for runInst in runCollection:
 runInst=sys.argv[1]
-runInst=tuple([i for i in runInst])
-print runInst
+runInst=tuple([int(i) for i in runInst])
 print "SeparateRun","-"*100
 run(runInst)
