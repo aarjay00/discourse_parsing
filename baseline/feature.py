@@ -61,6 +61,7 @@ class Feature():
 				currConn=line.split(":")[1]
 			else:
 				self.connSpec[currConn].append(line)
+		self.dependencyFeatureNum=len(self.connSpec[self.connSpec.keys()[0]])
 		FD.close()
 	def loadSet(self,filePath,extra=[]):
 		Set=[]
@@ -495,12 +496,15 @@ class featureDesc():
 	def addDescription(self,desc):
 		self.description=self.description+"\n"+desc
 	def addAttr(self,attr_name,attr_value):
+		if(attr_name in self.attrList):
+			return
 		setattr(self,attr_name,attr_value)
 		self.attrList.append(attr_name)
 	def printFeatureDesc(self,FD,ignore_print=[]):
 #		ignore_print.append("sentenceNum")
 #		ignore_print.append("rawFileName")
 		ignore_print.append("description")
+#		ignore_print.append("Probability")
 		for attr in self.attrList:
 			if(attr in ignore_print):
 				continue

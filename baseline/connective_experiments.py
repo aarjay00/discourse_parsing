@@ -26,7 +26,7 @@ def searchConn(conn,wordList):
 				found=False
 				break
 		if(found):
-			posList.append(pos)
+			posList.append((pos,pos+len(conn)-1))
 			pos+=len(conn)
 		else:
 			pos+=1
@@ -93,12 +93,15 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 #			for j in range(i,i+len(conn.split())):
 #				print wordList[j].chunkNum,
 #			print "\n"
-			if(wordList[i].conn and (i!=0 and not wordList[i-1].conn)):
+	#		if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)  and (i[1]==len(wordList)-1 or not wordList[i[1]+1].conn)):
+			if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)):
 #					print "lol error",conn
-				positiveSetSingle.append(convert_span(i,conn))
+				if(i[1]!=len(wordList)-1 and wordList[i[1]+1].conn):
+					print "lol error",conn
+				positiveSetSingle.append(convert_span(i[0],conn))
 #				print "Yes",wordList[i].sense
 			else:
-				negativeSetSingle.append(convert_span(i,conn))
+				negativeSetSingle.append(convert_span(i[0],conn))
 #			 	print "No"
 	positiveSetSplit=[]
 	negativeSetSplit=[]
@@ -173,8 +176,8 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k1"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k7t"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["r6"],node.nodeName,nodeDict,10)
-		feature.chunkCombo(conn,0,-1)
-		feature.chunkCombo(conn,0,1)
+#		feature.chunkCombo(conn,0,-1)
+#		feature.chunkCombo(conn,0,1)
 #		feature.chunkCombo(conn,0,-2)
 		feature.chunkNeighbor(conn,1)
 		feature.chunkNeighbor(conn,-1)
@@ -184,13 +187,13 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn)
 #		feature.aurFeature(conn)
 #		feature.parFeature(conn)
-		l1=feature.toRootFeature(conn,node,nodeDict)
-		l2=feature.tok7tFeature(conn,node,nodeDict)
-		if(l1==[1] or l2==[1]):
-			print "hohoho"
-			feature.featureVector.append(1)
-		else:
-			feature.featureVector.append(0)
+#		l1=feature.toRootFeature(conn,node,nodeDict)
+#		l2=feature.tok7tFeature(conn,node,nodeDict)
+#		if(l1==[1] or l2==[1]):
+#			print "hohoho"
+#			feature.featureVector.append(1)
+#		else:
+#			feature.featureVector.append(0)
 #		feature.lekinFeature(conn)
 		print feature.featureVector
 
@@ -201,16 +204,33 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		dependencyList.append("ParentRelation:"+node.nodeRelation)
 		dependencyList.append("Parent:"+node.getChunkName(node.nodeParent))
 		dependencyList.append("childlen:"+str(len(node.childList)))
+		dependencyList.append("VGchildren:"+str(findChild("VG",node.nodeName,nodeDict,0,10)))
 		for tag in feature.tagSet:
-			dependencyList.append(tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
+			dependencyList.append("Tag-"+tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
+
+
 #		createDirectory("./featureDist/")
 #		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
 #		FD.write("Label:"+label+"\n")
 #		for line in dependencyList:
 #			FD.write(line+"\n")
 #		FD.close()
+
+		return feature
+		done=False
+		for connective in feature.wordDictionary:
+			if(getSpan(conn,wordList)==connective):
+				feature.dependencyFeature(conn,dependencyList)
+				done=True
+			else:
+			 	for i in range(0,feature.dependencyFeatureNum):
+					feature.featureVector.append(0)
+		if(not done):
+			print "ERROR",getSpan(conn,wordList)
+
 #		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'): #ke baad
 #		if(getSpan(conn,wordList)==u'\u0914\u0930'): # aur
+#		if(getSpan(conn,wordList)==u'\u0932\u0947\u0915\u093f\u0928'): # lekin
 #		if(getSpan(conn,wordList)==u'\u0924\u094b'): 
 #			print "Speckebaad"
 #			feature.dependencyFeature(conn,dependencyList)
@@ -364,4 +384,4 @@ FD=open("accuracy_results","a")
 FD.write(featureCollectionSingle[0].description+"\n")
 FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
 FD.close()
-basicAnalysis(errorCollection,"conn_all_runs_w_connSpecd")
+#basicAnalysis(errorCollection,"conn_all_runs_w_connSpecd")

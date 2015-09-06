@@ -30,6 +30,15 @@ def findRelation(nodeRelation, node , nodeDict , level , maxLevel):
 		if(findRelation(nodeRelation,child,nodeDict,level+1,maxLevel)):
 			return True
 	return False
+def findChild(childTarget, node , nodeDict , level , maxLevel):
+	if(level==maxLevel):
+		return False
+	for child in nodeDict[node].childList:
+		if childTarget in nodeDict[child].getChunkName(child):
+			return True
+		if(findRelation(childTarget,child,nodeDict,level+1,maxLevel)):
+			return True
+	return False
 def hasChild(nodeName, nodeDict,childTarget,unique=True):
 	node=nodeDict[nodeName]
 	num=0

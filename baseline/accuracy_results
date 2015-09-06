@@ -24,3 +24,35 @@ Accuracy 95.21-95.5-95.34
 Accuracy 95.34-95.53-95.43
  wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature lekinFeature
 Accuracy 95.24-95.44-95.37
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 94.75-95.04-94.9
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.27-95.57-95.41
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.44-95.44-95.44
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.57-95.57-95.57
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.44-95.44-95.44
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.47-95.47-95.47
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.4-95.4-95.4
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature lekinFeature
+Accuracy 95.4-95.4-95.4
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature lekinFeature
+Accuracy 95.34-95.34-95.34
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1
+Accuracy 95.34-95.34-95.34
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1
+Accuracy 95.01-95.01-95.01
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1
+Accuracy 94.78-95.04-94.9
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1
+Accuracy 94.84-95.27-95.03
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkCombo-0--1 chunkCombo-0-1 chunkNeighbor-1 chunkNeighbor--1
+Accuracy 94.94-95.3-95.06
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1
+Accuracy 94.91-95.24-95.07
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1
+Accuracy 95.24-95.5-95.32

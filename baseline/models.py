@@ -97,6 +97,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 
 			arr=numpy.array(feature.featureVector)
 			result=model.predict(arr)[0]
+			prob=model.predict_proba(arr)
 			if(result==feature.classLabel):
 				truePositives[feature.classLabel]+=1
 			else:
@@ -104,6 +105,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 			 	print "wrong here !!!"
 			 	errorCollection.append(testDesc[featureNum])
 			 	errorCollection[-1].classifiedAs=result
+			 	errorCollection[-1].addAttr("Probability",(prob[0][1],prob[0][0]))
 
 			gold[feature.classLabel]+=1
 			featureNum+=1	
