@@ -187,46 +187,40 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn)
 #		feature.aurFeature(conn)
 #		feature.parFeature(conn)
-#		l1=feature.toRootFeature(conn,node,nodeDict)
-#		l2=feature.tok7tFeature(conn,node,nodeDict)
-#		if(l1==[1] or l2==[1]):
-#			print "hohoho"
-#			feature.featureVector.append(1)
-#		else:
-#			feature.featureVector.append(0)
+		l1=feature.toRootFeature(conn,node,nodeDict)
+		l2=feature.tok7tFeature(conn,node,nodeDict)
+		feature.featureVector.extend(l1)
+		feature.featureVector.extend(l2)
+		feature.keliyeFeature(conn,node,nodeDict,label)
+#		feature.aageFeature(conn,node,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum,label)
 #		feature.lekinFeature(conn)
-		print feature.featureVector
+	
 
 # study of feature distribution 
-		dependencyList=[]
-		for relation in feature.nodeRelationSet:
-			dependencyList.append(relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation)))
-		dependencyList.append("ParentRelation:"+node.nodeRelation)
-		dependencyList.append("Parent:"+node.getChunkName(node.nodeParent))
-		dependencyList.append("childlen:"+str(len(node.childList)))
-		dependencyList.append("VGchildren:"+str(findChild("VG",node.nodeName,nodeDict,0,10)))
-		for tag in feature.tagSet:
-			dependencyList.append("Tag-"+tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
+		dependencyList=genDependencyList(node,nodeDict,feature)
+		if(node.nodeParent!="None"):
+			parent=nodeDict[node.nodeParent]
+			dependencyList.extend(genDependencyList(parent,nodeDict,feature,"Parent--"))
+		write_dependency(conn,wordList,dependencyList,label)
 
 
-#		createDirectory("./featureDist/")
-#		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
-#		FD.write("Label:"+label+"\n")
-#		for line in dependencyList:
-#			FD.write(line+"\n")
-#		FD.close()
+#		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'): #ke baad
+#			f1=feature.featureVector[:len(feature.wordDictionary)]
+#			l=len(feature.featureVector)
+#			feature.featureVector=f1
+#			extra=[0]*(l-len(f1))
+#			f1.extend(extra)
+#			feature.featureVector=f1
+#			feature.dependencyFeature(conn,dependencyList)
+#		else:
+#			for i in range(0,feature.dependencyFeatureNum):
+#				feature.featureVector.append(0)
 
+#		print feature.featureVector
+#		return feature
+#		markDependency(feature,dependencyList)
+#		write_conn_info(conn,discourseFile,label)
 		return feature
-		done=False
-		for connective in feature.wordDictionary:
-			if(getSpan(conn,wordList)==connective):
-				feature.dependencyFeature(conn,dependencyList)
-				done=True
-			else:
-			 	for i in range(0,feature.dependencyFeatureNum):
-					feature.featureVector.append(0)
-		if(not done):
-			print "ERROR",getSpan(conn,wordList)
 
 #		if(getSpan(conn,wordList)==u'\u0915\u0947 \u092c\u093e\u0926'): #ke baad
 #		if(getSpan(conn,wordList)==u'\u0914\u0930'): # aur
@@ -259,6 +253,46 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #					vgnum+=1
 #			print label,"vgnum",vgnum
 		return feature
+
+def genDependencyList(node,nodeDict,feature,extraLabel=""):
+		dependencyList=[]
+		for relation in feature.nodeRelationSet:
+			dependencyList.append(extraLabel+relation+":"+str(hasChildRelation(node.nodeName,nodeDict,relation)))
+		dependencyList.append(extraLabel+"ParentRelation:"+node.nodeRelation)
+		dependencyList.append(extraLabel+"Parent:"+node.getChunkName(node.nodeParent))
+		dependencyList.append(extraLabel+"childlen:"+str(len(node.childList)))
+		dependencyList.append(extraLabel+"VGchildren:"+str(findChild("VG",node.nodeName,nodeDict,0,10)))
+		for tag in feature.tagSet:
+			dependencyList.append(extraLabel+"Tag-"+tag+":"+str(hasChild(node.nodeName,nodeDict,False)))
+		return dependencyList
+
+def markDependency(feature,dependencyList):
+	done=False
+	for connective in feature.wordDictionary:
+		if(getSpan(conn,wordList)==connective):
+			feature.dependencyFeature(conn,dependencyList)
+			done=True
+		else:
+			for i in range(0,feature.dependencyFeatureNum):
+				feature.featureVector.append(0)
+	if(not done):
+		print "ERROR",getSpan(conn,wordList)
+
+def write_dependency(conn,wordList,dependencyList,label):
+		createDirectory("./featureDist/")
+		FD=codecs.open("featureDist/"+getSpan(conn,wordList),"a")
+		FD.write("Label:"+label+"\n")
+		for line in dependencyList:
+			FD.write(line+"\n")
+		FD.close()
+def write_conn_info(conn,discourseFile,label):
+	connective=getSpan(conn,discourseFile.globalWordList)
+	createDirectory("./connInfo/")
+	FD=codecs.open("./connInfo/"+connective,"a")
+	FD.write("label:"+label+"\n")
+	FD.write("FileName:"+discourseFile.rawFileName+"\n")
+	FD.write("sentenceNum:"+str(discourseFile.globalWordList[conn[0]].sentenceNum)+"\n")
+	FD.close()
 
 def genFeatureSplitConn(conn,label,discourseFile):
 		print "conn","-"*30,
@@ -356,7 +390,7 @@ print "featureSize",len(featureCollectionSingle[0].featureVector)
 #		featureDesc.printFeatureDesc(FD)
 #FD.close()
 
-#exit()
+exit()
 
 classList=[]
 for feature in featureCollectionSingle:
@@ -384,4 +418,4 @@ FD=open("accuracy_results","a")
 FD.write(featureCollectionSingle[0].description+"\n")
 FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
 FD.close()
-#basicAnalysis(errorCollection,"conn_all_runs_w_connSpecd")
+basicAnalysis(errorCollection,"conn_all_runs")

@@ -42,7 +42,7 @@ print "-"*60,"traversing"
 for discourseFileInst in discourseFileCollection:
 	print "-"*30,"new file !!!",discourseFileInst.rawFileName
 	for sentence in discourseFileInst.sentenceList:
-	  print "-"*30," new sentencce"
+	  print "-"*30," new sentencce",discourseFileInst.rawFileName
 	  for root in sentence.rootNode:
 	  	traverseNode(0,root,sentence.nodeDict)
 	  for nodeName,nodeInst in sentence.nodeDict.items():

@@ -435,7 +435,37 @@ class Feature():
 		print "to works k7t"
 #		self.featureVector.append(1)
 		return [1]
+	def aageFeature(self,conn,node,nodeDict,a,b,c):
+		self.description=self.description+" aagefeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0906\u0917\u0947'):
+			self.featureVector.append(0)
+			return [0]
+		print "aage",node.nodeParent,nodeDict[node.nodeParent].childList
+		if(node.nodeRelation=="k7"):
+		 	for child in nodeDict[node.nodeParent].childList:
+		 		print "aage",child
+		 		if(child[:3]=="CCP" and hasChild(child,nodeDict,"VG",False)):
+					print "got aage",a,b,c,
+					for c in nodeDict[node.nodeParent].childList:
+						print c,"-",nodeDict[c].nodeRelation,
+					print ""
+					self.featureVector.append(1)
+					return [1]
+		self.featureVector.append(0)
+		return [0]
+	def keliyeFeature(self,conn,node,nodeDict,label):
+		self.description=self.description+ " keliyefeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0915\u0947 \u0932\u093f\u090f'):
+			self.featureVector.append(0)
+			return 0
+		print "ke liye",label,hasChildRelation(node.nodeName,nodeDict,"k3"),hasChildRelation(node.nodeName,nodeDict,"k7t"),hasChildRelation(node.nodeName,nodeDict,"k1")
+		if(hasChildRelation(node.nodeName,nodeDict,"k3") or hasChildRelation(node.nodeName,nodeDict,"k7t") or hasChildRelation(node.nodeName,nodeDict,"k1")):
+			self.featureVector.append(1)
+			return [1]
+		self.featureVector.append(0)
+		return [0]
 	def dependencyFeature(self,conn,dependencyList):
+		self.description=self.description+" dependency"
 		connective=getSpan(conn,self.globalWordList)
 		for feature in self.connSpec[connective.encode("utf-8")]:
 			if(feature in dependencyList):

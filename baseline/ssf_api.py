@@ -169,7 +169,13 @@ def extractSSFannotations(filePath):
 				try:
 					nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["drel"].split(":")[0],featureSetInst.featureDict["drel"].split(":")[1])
 				except:
-					nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
+#					nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
+					try:
+						nodeInst=Node(featureSetInst.featureDict["name"],featureSetInst.featureDict["dmrel"].split(":")[0],featureSetInst.featureDict["dmrel"].split(":")[1])
+						print "dmrel got"
+					except:
+						nodeInst=Node(featureSetInst.featureDict["name"],"None","None")
+						print "dmrel not got",featureSetInst.featureDict
 #					print "hohoh",line
 			elif(columns[1]=="))"):
 				sentenceInst.addNode(nodeInst)

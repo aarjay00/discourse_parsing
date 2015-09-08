@@ -55,7 +55,7 @@ for i in onlyfiles:
 	FD.close()
 
 
-	numberOfFeatures=3
+	numberOfFeatures=5
 	if(p==0 or n==0):
 		FD=codecs.open("lists/connSpecDependency.list","a")
 		FD.write("conn:"+i+"\n")
@@ -81,7 +81,7 @@ for i in onlyfiles:
 		arrC.append(numpy.array(arr))
 		labelC.append(c[0])
 	model=maxent(solver='liblinear')
-	rfe=RFE(model,numberOfFeatures)
+	rfe=RFE(model,1)
 	rfe=rfe.fit(arrC,labelC)
 	c2,pval=chi2(arrC,labelC)
 #	print c2
@@ -89,8 +89,8 @@ for i in onlyfiles:
 #	print rfe.ranking_
 	iterator=0
 	for i in rfe.ranking_:
-		if(i==1):
-			print featureslist[iterator],i,c2[iterator],pval[iterator]
+		if(i<=numberOfFeatures):
+			print i,"---",featureslist[iterator],c2[iterator],pval[iterator]
 			FD.write(featureslist[iterator]+"\n")
 		iterator+=1
 	FD.close()

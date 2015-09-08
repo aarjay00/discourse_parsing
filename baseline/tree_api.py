@@ -47,7 +47,7 @@ def hasChild(nodeName, nodeDict,childTarget,unique=True):
 			if(node.getChunkName(child)==childTarget):
 				num+=1
 		else:
-		  	if(childTarget in node.getChunkName):
+		  	if(childTarget in node.getChunkName(child)):
 				num+=1
 	return num
 def hasChildRelation(nodeName, nodeDict,childRelationTarget):
@@ -55,5 +55,5 @@ def hasChildRelation(nodeName, nodeDict,childRelationTarget):
 	num=0
 	for child in node.childList:
 		if(nodeDict[child].nodeRelation==childRelationTarget):
-			num+=1
-	return num
+			return True
+	return False
