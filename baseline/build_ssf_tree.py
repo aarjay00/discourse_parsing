@@ -13,7 +13,7 @@ from annotated_data import *
 from feature import *
 from models import *
 
-discourseFileCollection=loadModel("processedData/annotatedData")
+#discourseFileCollection=loadModel("processedData/annotatedData")
 
 
 def traverseNode(level,nodeName,nodeDict):
@@ -22,9 +22,13 @@ def traverseNode(level,nodeName,nodeDict):
 	for child in nodeDict[nodeName].childList:
 		traverseNode(level+1,child,nodeDict)
 
+from os import listdir
+from os.path import isfile, join
+discourseFileCollection = [ "./processedData/collection/"+str(f) for f in listdir("./processedData/collection/") if isfile(join("./processedData/collection",f)) ]
+print discourseFileCollection
 
-
-for discourseFileInst in discourseFileCollection:
+for discourseFileLocation in discourseFileCollection:
+	discourseFileInst=loadModel(discourseFileLocation)
 #	print "*"*60,"new file"
 	for sentence in discourseFileInst.sentenceList:
 #		print "\t","sentence"	
@@ -38,8 +42,8 @@ for discourseFileInst in discourseFileCollection:
 #				print "\t\there",nodeName,len(sentence.rootNode)
 #				for child in nodeInst.childList:
 #					print "\t\t\t",nodeDict[child].nodeName
-print "-"*60,"traversing"
-for discourseFileInst in discourseFileCollection:
+#print "-"*60,"traversing"
+#for discourseFileInst in discourseFileCollection:
 	print "-"*30,"new file !!!",discourseFileInst.rawFileName
 	for sentence in discourseFileInst.sentenceList:
 	  print "-"*30," new sentencce",discourseFileInst.rawFileName
@@ -48,5 +52,5 @@ for discourseFileInst in discourseFileCollection:
 	  for nodeName,nodeInst in sentence.nodeDict.items():
 	  	if(nodeInst.nodeLevel==-1):
 			print "problem here ", nodeName
-
-exportModel("processedData/annotatedData",discourseFileCollection)
+	exportModel(discourseFileLocation,discourseFileInst)
+#exportModel("processedData/annotatedData",discourseFileCollection)

@@ -17,7 +17,7 @@ then
 #	then
 	gedit "$file_path""/sentenceInfo" &
 #	else
-#	killall eog
+	killall eog
 	eog "$file_path""/""$sentence_num"".png" &
 #	fi
 else	

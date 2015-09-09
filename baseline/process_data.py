@@ -39,6 +39,7 @@ connList=loadConnList("lists/compConnectiveList.list")
 connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 discourseFileCollection=[]
 fileNum=0
+createDirectory("./processedData/collection/")
 for rawFile in rawFileList:
 	fd=codecs.open(rawFile,"r",encoding="utf-8")
 #	discourseFileInst=processRawFile(fd.read(),connList,connSplitList,[])
@@ -48,11 +49,12 @@ for rawFile in rawFileList:
 		continue
 	discourseFileInst=discourseFile(rawFile,sentenceList,globalWordList,fd.read())
 	discourseFileInst.addDiscourseRelationInfo(extractRelation(rawFile))
-	discourseFileCollection.append(discourseFileInst)
+#	discourseFileCollection.append(discourseFileInst)
+	exportModel("processedData/collection/"+str(fileNum),discourseFileInst)
 #	identifyConnectives(discourseFileInst,connList,connSplitList)
 	fd.close()
 	fileNum+=1
 	print "*"*90,fileNum,"files done"
 
-exportModel("processedData/annotatedData",discourseFileCollection)
+#exportModel("processedData/annotatedData",discourseFileCollection)
 print "processed %d files correctly"%(fileNum)

@@ -13,7 +13,7 @@ from tree_api import *
 
 class Feature():
 	def __init__(self,word_dictionary_path,tag_path,chunk_path,discourse_file,global_word_list,sentence_list,conn=None):
-		self.discourseFile=discourse_file
+#		self.discourseFile=discourse_file
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])
 		self.loadCombo("tagSet")
@@ -77,15 +77,20 @@ class Feature():
 #		print "combo",getattr(self,setName+"Combo")
 	def wordFeature(self,wordList,wordList2=[]):
 		self.description=self.description+" wordFeature"
-		print "wordfeature",
+		print "wordfeature"
 		words=[]
 		w=""
+		print "w1",wordList
+		print "w2",wordList2
+
 		for word in wordList:
 			word=self.globalWordList[word].word
 			w=w+word+" "
 #			words.append(word)
+		print w,
 		if(len(wordList2)!=0):
 			w=w[:-1]+".."
+		print w,
 		for word in wordList2:
 			word=self.globalWordList[word].word
 			w=w+word+" "
@@ -309,7 +314,7 @@ class Feature():
 		before=False
 		after=False
 		middle=False
-		sentence=self.discourseFile.sentenceList[self.globalWordList[conn[0]].sentenceNum]
+		sentence=self.sentenceList[self.globalWordList[conn[0]].sentenceNum]
                 for chunk in sentence.chunkList:
 			if(chunk.chunkTag[:2]=="VG"):
                                 if(middle==False):
@@ -317,7 +322,7 @@ class Feature():
                                 else:
                                         after=True
                         for word in chunk.wordNumList:
-                                if(self.discourseFile.globalWordList[word].word==u'\u0914\u0930'):
+                                if(self.globalWordList[word].word==u'\u0914\u0930'):
                                         middle=True
                         chunkNum+=1
 		if(before and after):
@@ -325,7 +330,7 @@ class Feature():
 			return [1]
 		self.featureVector.append(0)
 		return [0]
-	def aurFeature2(self,conn,nodeName,nodeDict,c):
+	def aurFeature2(self,conn,nodeName,nodeDict,c,a,b):
 		self.description=self.description+" aurFeature2"
 		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
 			self.featureVector.append(0)
@@ -333,14 +338,21 @@ class Feature():
 		childList=nodeDict[nodeName].childList
 		childVGF=0
 		for child in nodeDict[nodeName].childList:
-			if(nodeDict[nodeName].getChunkName(child)[:2]=="VG"):
+			if("VG" in nodeDict[nodeName].getChunkName(child)):
 				childVGF+=1
 		if(childVGF==2):
-			print "aurFeature2 yes",c
+			print "aurFeature2 yes",c,a,b
 			self.featureVector.append(1)
-		else:
-			print "aurFeature2 no",c
-			self.featureVector.append(0)
+			return [1]
+		elif(childVGF==1):
+			for child in nodeDict[nodeName].childList:
+				if(nodeDict[nodeName].getChunkName(child)=="CCP" and hasChild(child,nodeDict,"VG",False)>0):
+					print "aurFeature2 yes",c,a,b
+					self.featureVector.append(1)
+					return [1]
+		print "aurFeature2 no",c,a,b,childVGF
+		self.featureVector.append(0)
+		return [0]
 	def parFeature(self,conn):
 		self.description=self.description+" parFeature"
 		if(getSpan(conn,self.globalWordList)!=u'\u092a\u0930'):
@@ -464,6 +476,43 @@ class Feature():
 			return [1]
 		self.featureVector.append(0)
 		return [0]
+	def tathaFeature(self,conn,node,nodeDict,label,rawFileName,sentenceNum):
+		self.description=self.description+ " tathaefeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0924\u0925\u093e'):
+			self.featureVector.append(0)
+			return [0]
+		childVGF=hasChild(node.nodeName,nodeDict,"VG",False)
+		if(childVGF>=1):
+			print "got tatha yes",label,rawFileName,sentenceNum
+			self.featureVector.append(1)
+			return [1]
+		else:
+			print "got tatha no",label,rawFileName,sentenceNum
+			self.featureVector.append(0)
+			return [0]
+	def halankiFeature(self,conn):
+		self.description=self.description+ " halankifeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0939\u093e\u0932\u093e\u0902\u0915\u093f'):
+			self.featureVector.append(0)
+			return [0]
+		sentencePos=[]
+		pos=conn[0]+1
+		print "halanki",pos
+		while(pos < len(self.globalWordList) and self.globalWordList[pos].sentenceNum==self.globalWordList[conn[0]].sentenceNum):
+			sentencePos.append(pos)
+			pos+=1
+		print pos
+		sentence=getSpan(sentencePos,self.globalWordList)
+		checkList=[u'\u0932\u0947\u0915\u093f\u0928',u'\u092a\u0930']
+		for item in checkList:
+			if(item in sentence):
+				print "found something",item
+				self.featureVector.append(1)
+				return [1]
+		print "found nothing"
+		self.featureVector.append(0)
+		return [0]
+
 	def dependencyFeature(self,conn,dependencyList):
 		self.description=self.description+" dependency"
 		connective=getSpan(conn,self.globalWordList)

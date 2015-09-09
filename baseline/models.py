@@ -137,7 +137,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 	#	FD.write(str(avgPrecision[classLabel])+" "+str(avgRecall[classLabel])+" "+str(avgModelScore[classLabel])+"\n")
 	FD.close()
 
-	basicAnalysis(errorCollection,analysisFolderName)
+#	basicAnalysis(errorCollection,analysisFolderName)
 
 	return (avgPrecision,avgRecall,avgModelScore,errorCollection)
 

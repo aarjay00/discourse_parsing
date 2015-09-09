@@ -141,3 +141,9 @@ def loadModel(filePath):
 	return model
 def analyzeResults(goldFilePath,outputFilePath):
 	print "hah"
+import cherrypy
+import dowser
+def memAnal(port=2000):
+	cherrypy.tree.mount(dowser.Root())
+	cherrypy.config.update({'environment': 'embedded','server.socket_port': port})
+    	cherrypy.engine.start()

@@ -100,3 +100,38 @@ Accuracy 95.21-95.47-95.34
 Accuracy 95.24-95.53-95.43
  wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature aagefeature
 Accuracy 95.24-95.53-95.39
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 toRootFeature tok7tFeature
+Accuracy 95.24-95.53-95.41
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+Accuracy 95.27-95.63-95.4
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+Accuracy 95.3-95.53-95.41
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature tathaFeature
+Accuracy 95.34-95.6-95.42
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature halankifeature
+Accuracy 95.27-95.53-95.4
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature halankifeature
+Accuracy 95.21-95.6-95.41
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature halankifeature
+Accuracy 95.24-95.57-95.39
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+Accuracy 81.25-87.5-84.25
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+Accuracy 81.25-86.25-83.63
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+Accuracy 82.5-87.5-84.81
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
+ wordFeature
+Accuracy 70.24-78.57-75.38
+ wordFeature tagFeature tagFeature
+Accuracy 80.95-86.9-84.69
+ wordFeature tagFeature tagFeature
+Accuracy 80.95-86.9-84.55
+ wordFeature tagFeature tagFeature chunkFeature chunkFeature
+Accuracy 82.14-86.9-84.9
+ wordFeature tagFeature tagFeature chunkFeature chunkFeature
+Accuracy 79.76-86.9-84.57
+ wordFeature tagFeature tagFeature chunkFeature chunkFeature
+Accuracy 80.95-86.9-84.33
+ wordFeature tagFeature tagFeature chunkFeature chunkFeature
+Accuracy 76.19-88.1-83.83
