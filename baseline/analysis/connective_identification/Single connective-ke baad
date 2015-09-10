@@ -1,100 +1,158 @@
 ----------------------------------------------------------------------------------------------------
-के बाद Frequency: 14
+के बाद Frequency: 13
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 0
-classLabel : No
-classifiedAs : Yes
-Single connective : के बाद
-Single connective neighborhood : होने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 8
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8      probably draw a connection between supreme court and police
+sentenceNum : 1
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
-Single connective neighborhood : करने
+Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
+Arg1num : 1
+Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
+Arg2num : 1
+Single connective neighborhood : आदेश
+Probability : (0.035478046682350363, 0.96452195331764967)
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
 sentenceNum : 0
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
+Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
+Arg1num : 0
+Arg2 : इसे रद्द कर दिया गया है
+Arg2num : 0
 Single connective neighborhood : जाने
+Probability : (0.23258656436209901, 0.76741343563790099)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8 talkinf about the same thing -- hadtaal also matching children wrt to arguments
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
+Arg1num : 0
+Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
+Arg2num : 0
+Single connective neighborhood : रखने
+Probability : (0.30050036604627861, 0.69949963395372139)
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
 sentenceNum : 6
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
+Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने realtion between terrorist and army 
+Arg1num : 6
+Arg2 : सेना में कटौती पर विचार किया जाएगा
+Arg2num : 6
 Single connective neighborhood : करने
+Probability : (0.20204356965109113, 0.79795643034890884)
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : आदेश
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : होने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : रखने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : बयान
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 5
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
-Single connective neighborhood : होने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 16
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : फटने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Single connective neighborhood : जाने
+Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
+Arg1num : 8
+Arg2 : मीडिया से बातचीत में कहा कि १९६२ के मास्टर प्लान में डेढ़ सौ व्यक्तियों के बीच एक दुकान का प्रावधान किया गया था
+Arg2num : 8
+Single connective neighborhood : करने
+Probability : (0.23424227454469257, 0.7657577254553074)
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
 sentenceNum : 7
 classLabel : Yes
 classifiedAs : No
 Single connective : के बाद
+Arg1 : एक साल से ज्यादा समय बीतने
+Arg1num : 7
+Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
+Arg2num : 7
 Single connective neighborhood : बीतने
+Probability : (0.14207819751047257, 0.85792180248952743)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 5
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : २००२ में सलेम और मोनिका के खिलाफ फर्जी पासपोर्ट मामले में आरोप दायर करने
+Arg1num : 5
+Arg2 : अदालत ने दोनों के खिलाफ गिरफ्तारी वारंट जारी किया था
+Arg2num : 5
+Single connective neighborhood : करने
+Probability : (0.2011110586176417, 0.79888894138235833)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
+Arg1num : 2
+Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
+Arg2num : 2
+Single connective neighborhood : करने
+Probability : (0.21960990506994874, 0.78039009493005129)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : १३ फरवरी को ही अपने विरोध प्रदर्शन स्थगित कर दिए थे
+Arg1num : 8
+Arg2 : उन्होंने आयकर प्रशिक्षण संस्थान बंद करने के मुद्दे पर यूपीए सरकार की वार्ता के लिए राजी होने
+Arg2num : 8
+Single connective neighborhood : होने
+Probability : (0.32300481242520984, 0.67699518757479016)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : पिछले साल ही वह पहली बार इस संस्था के सदस्य चुने गए थे ।
+Arg1num : 1
+Arg2 : विधानसभा चुनावों में लुधियाना पश्चिम सीट से हरनामदास जौहर के हाथों पराजित होने
+Arg2num : 1
+Single connective neighborhood : होने
+Probability : (0.19371565270832303, 0.80628434729167697)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 16
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : कमरे में हथगोला फटने
+Arg1num : 16
+Arg2 : आतंकी फायरिंग करता हुआ बाहर निकला
+Arg2num : 16
+Single connective neighborhood : फटने
+Probability : (0.21431852916130134, 0.78568147083869866)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
+Arg1num : 2
+Arg2 : वाजपेयी के बयान
+Arg2num : 2
+Single connective neighborhood : बयान
+Probability : (0.0153772501171444, 0.98462274988285559)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
+Arg1num : 8
+Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg2num : 8
+Single connective neighborhood : जाने
+Probability : (0.14212134644691335, 0.85787865355308668)

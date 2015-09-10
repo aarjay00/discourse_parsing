@@ -32,10 +32,10 @@ def genModel(classList):
 	for classLabel in classList:
 		classWeight[classLabel]=1.0
 	model=maxent(solver='liblinear')
-#	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
+	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
 #	model=tree.DecisionTreeClassifier()
 #	model=AdaBoostClassifier(n_estimators=100)
-#	model=MultinomialNB()
+	model=MultinomialNB()
 #	model=Perceptron(n_iter=10)
 #	model=SGDClassifier()
 #	model=SVC()
@@ -53,14 +53,17 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 	avgRecall={}
 	avgModelScore={}
 	errorCollection=[]
+	correctCollection=[]
 	
 	for classLabel in classList:
 		avgPrecision[classLabel]=0.0
 		avgRecall[classLabel]=0.0
 		avgModelScore[classLabel]=0.0
 
-	fn={}
-	fp={}
+	
+	avg_p=0.0
+	avg_r=0.0
+	avg_f=0.0
 	for iteration in range(0,cycleLen):
 		print "Iteration",iteration,"-"*50
 		size=len(featureCollection)/cycleLen
@@ -93,14 +96,27 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 		d,l=convertDataSet(test)
 		print "model score",model.score(d,l)
 		featureNum=0
+		tp=0
+		tn=0
+		fp=0
+		fn=0
 		for feature in test:
 
 			arr=numpy.array(feature.featureVector)
 			result=model.predict(arr)[0]
 			prob=model.predict_proba(arr)
 			if(result==feature.classLabel):
+				if(feature.classLabel=="Yes" and not getattr(testDesc[featureNum],"remove")):
+					tp+=1
+				elif(feature.classLabel=="No" and not getattr(testDesc[featureNum],"remove")):
+					tn+1
 				truePositives[feature.classLabel]+=1
+			 	correctCollection.append(testDesc[featureNum])
 			else:
+				if(feature.classLabel=="Yes" and not getattr(testDesc[featureNum],"remove")):
+					fn+=1
+				elif(feature.classLabel=="No" and not getattr(testDesc[featureNum],"remove")):
+					fp+=1
 			 	falsePositives[feature.classLabel]+=1
 			 	print "wrong here !!!"
 			 	errorCollection.append(testDesc[featureNum])
@@ -109,6 +125,12 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 
 			gold[feature.classLabel]+=1
 			featureNum+=1	
+		p=1.0*tp/(tp+fn)
+		r=1.0*tp/(tp+fp)
+		f=2.0*p*r/(p+r)
+		avg_p=(avg_p*iteration+p)/(iteration+1)
+		avg_r=(avg_r*iteration+r)/(iteration+1)
+		avg_f=(avg_f*iteration+f)/(iteration+1)
 		for classLabel in classList:	
 			try:
 				precision[classLabel]=(1.0*truePositives[classLabel])/(truePositives[classLabel]+falsePositives[classLabel])
@@ -139,7 +161,7 @@ def runModel(featureCollection,featureDescCollection,classList,analysisFolderNam
 
 #	basicAnalysis(errorCollection,analysisFolderName)
 
-	return (avgPrecision,avgRecall,avgModelScore,errorCollection)
+	return (avgPrecision,avgRecall,avgModelScore,errorCollection,correctCollection,(avg_p,avg_r,avg_f))
 
 
 # USELESS STUFF not willing to delete yet :P--------------------------------------------------------------------

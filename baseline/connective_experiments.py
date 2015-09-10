@@ -178,8 +178,9 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k1"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k7t"],node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["r6"],node.nodeName,nodeDict,10)
-#		feature.chunkCombo(conn,0,-1)
-#		feature.chunkCombo(conn,0,1)
+		feature.chunkCombo(conn,0,-1)
+		feature.chunkCombo(conn,0,1)
+		feature.chunkCombo(conn,-1,1)
 #		feature.chunkCombo(conn,0,-2)
 		feature.chunkNeighbor(conn,1)
 		feature.chunkNeighbor(conn,-1)
@@ -193,6 +194,7 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		l2=feature.tok7tFeature(conn,node,nodeDict)
 		feature.featureVector.extend(l1)
 		feature.featureVector.extend(l2)
+#		feature.kebaadFeature(conn,node,nodeDict,label)
 #		feature.keliyeFeature(conn,node,nodeDict,label)
 #		feature.aageFeature(conn,node,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum,label)
 #		feature.lekinFeature(conn)
@@ -372,6 +374,8 @@ for discourseFileLocation in discourseFileCollection:
 		featureDescInst.addAttr("Arg1num",wordList[wordList[conn[0]].arg1Span[0]].sentenceNum)
 		featureDescInst.addAttr("Arg2",getSpan(wordList[conn[0]].arg2Span,wordList))
 		featureDescInst.addAttr("Arg2num",wordList[wordList[conn[0]].arg2Span[0]].sentenceNum)
+		featureDescInst.addAttr("connSpan",conn)
+		featureDescInst.addAttr("remove",False)
 		try:
 			featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
 		except:
@@ -385,6 +389,8 @@ for discourseFileLocation in discourseFileCollection:
 		featureDescInst.addAttr("Arg1num","None")
 		featureDescInst.addAttr("Arg2","None")
 		featureDescInst.addAttr("Arg2num","None")
+		featureDescInst.addAttr("connSpan",conn)
+		featureDescInst.addAttr("remove",False)
 		try:
 			featureDescInst.addAttr("Single connective neighborhood",wordList[conn[0]-1].word)
 		except:
@@ -394,11 +400,15 @@ for discourseFileLocation in discourseFileCollection:
 		featureCollectionSplit.append(genFeatureSplitConn(conn,"Yes",discourseFile))
 		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","Yes",len(featureCollectionDescSplit))
 		featureDescInst.addAttr("connective",getSpan(conn[0],wordList)+"-"+getSpan(conn[1],wordList))
+		featureDescInst.addAttr("connSpan",conn)
+		featureDescInst.addAttr("remove",False)
 		featureCollectionDescSplit.append(featureDescInst)
 	for conn in nSetSplit:
 		featureCollectionSplit.append(genFeatureSplitConn(conn,"No",discourseFile))
 		featureDescInst=featureDesc(discourseFile.rawFileName,wordList[conn[0][0]].sentenceNum,"Split connective identification","No",len(featureCollectionDescSplit))
 		featureDescInst.addAttr("connective",getSpan(conn[0],wordList)+"-"+getSpan(conn[1],wordList))
+		featureDescInst.addAttr("connSpan",conn)
+		featureDescInst.addAttr("remove",False)
 		featureCollectionDescSplit.append(featureDescInst)
 	positiveSet.extend(pSet)
 	negativeSet.extend(nSet)
@@ -410,9 +420,9 @@ print len(positiveSet),len(negativeSet)
 print len(featureCollectionSingle)
 
 
-extraFeatureList=removeExtraFeatures(featureCollectionSingle)
-for featureNum in range(0,len(featureCollectionSingle)):
-	featureCollectionSingle[featureNum].cleanFeature(extraFeatureList)
+#extraFeatureList=removeExtraFeatures(featureCollectionSingle)
+#for featureNum in range(0,len(featureCollectionSingle)):
+#	featureCollectionSingle[featureNum].cleanFeature(extraFeatureList)
 
 print "featureSize",len(featureCollectionSingle[0].featureVector)
 
@@ -447,26 +457,92 @@ if(len(sys.argv)<2):
 	exit()
 time =int(sys.argv[1])
 
+
+
+x,y,z,err,corr,extra=runModel(featureCollectionSplit,featureCollectionDescSplit,classList,"connective_split_identification",6,1,1)
+
+
+
+
+
+
+remove=[]
+for c in corr:
+	connSpan=getattr(c,"connSpan")
+	sentenceNum=getattr(c,"sentenceNum")
+	rawFileName=getattr(c,"rawFileName")
+	ss=getattr(c,"connSpan")
+	splitSpan=ss[0]
+	splitSpan.extend(ss[1])
+	print "comparing",getattr(c,"connective"),splitSpan,rawFileName,sentenceNum
+	num=0
+	for f in featureCollectionDescSingle:
+#		if(getattr(f,"Single connective")==u'\u0932\u0947\u0915\u093f\u0928'):
+#			print "\tlekin",getattr(f,"rawFileName"),getattr(f,"sentenceNum"),getattr(f,"rawFileName")==rawFileName,getattr(f,"sentenceNum")==sentenceNum
+		if(getattr(f,"rawFileName")!=rawFileName or getattr(f,"sentenceNum")!=sentenceNum):
+			num+=1
+			continue
+		cspan=getattr(f,"connSpan")
+		print "\t",getattr(f,"Single connective"),cspan,f.classLabel
+		rem=True
+		for pos in cspan:
+			if(pos not  in splitSpan):
+				rem=False
+				break
+		if(rem):
+			remove.append(num)
+			setattr(f,"remove",True)
+			if(f.classLabel=="Yes"):
+				print "removing this"
+				f.classLabel="No"
+			else:
+				print "moving from no to yes ??"
+		num+=1
+print remove
+remove=list(set(remove))
+remove.sort(reverse=True)
+print remove
+print "removal size",len(remove)
+FD=codecs.open("removed instances due to split conn",'w')
+for i in remove:
+	f=featureCollectionSingle.pop(i)
+	f=featureCollectionDescSingle.pop(i)
+	f.printFeatureDesc(FD)
+	if(not getattr(f,"remove")):
+		print "useless fellow :/"
+		print getattr(f,"Single connective")
+FD.close()
+
+
+
+
+fcollec=[]
+
+for fs in featureCollectionSingle:
+	print "f1",fs.featureList
+	fcollec.append((fs.featureList,fs.classLabel))
+exportModel("./fList",fcollec)
+
+
 if(time==0):
 	exit()
-
-
 
 
 errorCollection=[]
 err=[]
 for i in range(0,time):
 	print "running"
-	x,y,z,err=runModel(featureCollectionSplit,featureCollectionDescSplit,classList,"connective_split_identification",6,1,1)
-	#x,y,z,err=runModel(featureCollectionSingle,featureCollectionDescSingle,classList,"connective_identification",15,1,1)
+	#x,y,z,err=runModel(featureCollectionSplit,featureCollectionDescSplit,classList,"connective_split_identification",6,1,1)
+	x,y,z,err,corr,extra=runModel(featureCollectionSingle,featureCollectionDescSingle,classList,"connective_identification",15,1,1)
 	errorCollection.extend(err)
 	avg_accuracy+=z["Yes"]
 	max_acc=max(max_acc,z["Yes"])
 	min_acc=min(min_acc,z["Yes"])
+	print "Information--",extra[0],extra[1],extra[2]
 print "Accuracy",round(min_acc*100,2),"-",round(max_acc*100,2),"-",round(avg_accuracy*100.0/time,2)
 FD=open("accuracy_results","a")
-FD.write(featureCollectionSplit[0].description+"\n")
+FD.write(featureCollectionSingle[0].description+"\n")
 FD.write("Accuracy "+str(round(min_acc*100,2))+"-"+str(round(max_acc*100,2))+"-"+str(round(avg_accuracy*100.0/time,2))+"\n")
 FD.close()
-basicAnalysis(err,"connective_split_identification")
+basicAnalysis(err,"connective_identification")
 #basicAnalysis(errorCollection,"conn_all_runs")
