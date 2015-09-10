@@ -1,0 +1,1246 @@
+----------------------------------------------------------------------------------------------------
+और Frequency: 21
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : होगा
+Probability : (0.78914196930523695, 0.21085803069476305)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : दी
+Probability : (0.87927613838043928, 0.12072386161956072)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+Probability : (0.92976003246288697, 0.070239967537113035)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 15
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : फेंके
+Probability : (0.84868335744566392, 0.15131664255433608)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : हैं
+Probability : (0.85741390536734607, 0.14258609463265393)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+Probability : (0.87149845824449235, 0.12850154175550765)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : हुए
+Probability : (0.85800165845727205, 0.14199834154272795)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+Single connective neighborhood : देने
+Probability : (0.27832534727889957, 0.72167465272110043)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+Single connective neighborhood : होने
+Probability : (0.19557705118256682, 0.80442294881743315)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+Probability : (0.83117392442572935, 0.16882607557427065)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : की
+Probability : (0.85800165845727205, 0.14199834154272795)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : था
+Probability : (0.87283474684150664, 0.12716525315849336)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : हुई
+Probability : (0.88817424285109881, 0.11182575714890119)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : और
+Single connective neighborhood : मुआवजा
+Probability : (0.016829333681803203, 0.98317066631819683)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+Probability : (0.80147831641898226, 0.19852168358101774)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : गया
+Probability : (0.86412140151029782, 0.13587859848970218)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : है
+Probability : (0.81523814610834222, 0.18476185389165778)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 16
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : था
+Probability : (0.73302907555455066, 0.26697092444544934)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 16
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : जाएगा
+Probability : (0.74259800662242825, 0.25740199337757175)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : जाए
+Probability : (0.77992319986119985, 0.22007680013880015)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : और
+Single connective neighborhood : करेगा
+Probability : (0.6811949433559451, 0.3188050566440549)
+----------------------------------------------------------------------------------------------------
+के बाद Frequency: 14
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+Single connective neighborhood : होने
+Probability : (0.51120730468277342, 0.48879269531722658)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : होने
+Probability : (0.23616868232812263, 0.7638313176718774)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : बीतने
+Probability : (0.018644388168299053, 0.98135561183170095)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : रखने
+Probability : (0.30101685591174676, 0.69898314408825324)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : करने
+Probability : (0.37234329600005417, 0.62765670399994589)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+Single connective neighborhood : करने
+Probability : (0.60171340563796483, 0.39828659436203517)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : जाने
+Probability : (0.21090468489989095, 0.789095315100109)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : जाने
+Probability : (0.18527665442489949, 0.81472334557510051)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 16
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : फटने
+Probability : (0.14486017882223143, 0.85513982117776854)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : करने
+Probability : (0.249810803872341, 0.750189196127659)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : आदेश
+Probability : (0.0058401515390170168, 0.99415984846098293)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : बयान
+Probability : (0.0031732914295818202, 0.99682670857041822)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : के बाद
+Single connective neighborhood : करने
+Probability : (0.33075370482597205, 0.66924629517402789)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : के बाद
+Single connective neighborhood : जाने
+Probability : (0.64963802147813476, 0.35036197852186524)
+----------------------------------------------------------------------------------------------------
+लेकिन Frequency: 11
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : जाएगा
+Probability : (0.85546946694400738, 0.14453053305599262)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 26
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+Probability : (0.82636870281207653, 0.17363129718792347)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+Probability : (0.82906151878816492, 0.17093848121183508)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+Probability : (0.82401343053341647, 0.17598656946658353)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+Probability : (0.83095754459958049, 0.16904245540041951)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ।
+Probability : (0.96045881607750472, 0.039541183922495282)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ।
+Probability : (0.8910803890784621, 0.1089196109215379)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 15
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : मिला
+Probability : (0.8679091703772307, 0.1320908296227693)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : हैं
+Probability : (0.85224037649130457, 0.14775962350869543)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : ,
+Probability : (0.82394574510829721, 0.17605425489170279)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : लेकिन
+Single connective neighborhood : हो
+Probability : (0.83444897030405862, 0.16555102969594138)
+----------------------------------------------------------------------------------------------------
+तो Frequency: 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : किया
+Probability : (0.11747085658654013, 0.88252914341345989)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : ।
+Probability : (0.25039806564797162, 0.74960193435202838)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : पूछा
+Probability : (0.29297372491318358, 0.70702627508681637)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : पूछा
+Probability : (0.096697470131383398, 0.90330252986861659)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : है
+Probability : (0.30705245205868614, 0.69294754794131386)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : ली
+Probability : (0.30274310984662145, 0.69725689015337855)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : जताई
+Probability : (0.16599177725288583, 0.83400822274711417)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : है
+Probability : (0.28719626724089647, 0.71280373275910347)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : तो
+Single connective neighborhood : गया
+Probability : (0.039800756325744931, 0.96019924367425502)
+----------------------------------------------------------------------------------------------------
+बल्कि Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+Single connective neighborhood : नहीं
+Probability : (0.52484288884869146, 0.47515711115130854)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : Yes
+Single connective : बल्कि
+Single connective neighborhood : नहीं
+Probability : (0.5385968501832521, 0.4614031498167479)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+Single connective neighborhood : नहीं
+Probability : (0.4942552143087115, 0.50574478569128845)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+Single connective neighborhood : नहीं
+Probability : (0.27329934168642034, 0.72670065831357966)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : बल्कि
+Single connective neighborhood : नहीं
+Probability : (0.43874704922538943, 0.56125295077461057)
+----------------------------------------------------------------------------------------------------
+आगे Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+Single connective neighborhood : ने
+Probability : (0.24625974005666815, 0.75374025994333183)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+Single connective neighborhood : उन्होंने
+Probability : (0.17448342976204154, 0.82551657023795844)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+Single connective neighborhood : उन्होंने
+Probability : (0.20166556495278479, 0.79833443504721524)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 5
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+Single connective neighborhood : उन्होंने
+Probability : (0.17591273682616101, 0.82408726317383896)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : No
+Single connective : आगे
+Single connective neighborhood : में
+Probability : (0.2362763410505091, 0.7637236589494909)
+----------------------------------------------------------------------------------------------------
+के लिए Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : बनाने
+Probability : (0.088766901373240101, 0.91123309862675994)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : देने
+Probability : (0.044152827323102294, 0.95584717267689767)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : जोड़ने
+Probability : (0.030056780376646677, 0.96994321962335328)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : सहेजने
+Probability : (0.032287477008313699, 0.96771252299168631)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : के लिए
+Single connective neighborhood : करने
+Probability : (0.049140031372734184, 0.95085996862726585)
+----------------------------------------------------------------------------------------------------
+इससे Frequency: 5
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+Probability : (0.81489846779947273, 0.18510153220052727)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+Probability : (0.84570753556239964, 0.15429246443760036)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : इससे
+Single connective neighborhood : कि
+Probability : (0.015862981709591575, 0.98413701829040845)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+Probability : (0.81214747788281416, 0.18785252211718584)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : इससे
+Single connective neighborhood : ।
+Probability : (0.85657145436069726, 0.14342854563930274)
+----------------------------------------------------------------------------------------------------
+की वजह से Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+Single connective neighborhood : वर्षा
+Probability : (0.052741325310434045, 0.94725867468956593)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+Single connective neighborhood : भूस्खलन
+Probability : (0.020925940457975654, 0.97907405954202431)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+Single connective neighborhood : कूदने
+Probability : (0.19200248882626306, 0.80799751117373697)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Yes
+classifiedAs : No
+Single connective : की वजह से
+Single connective neighborhood : आग
+Probability : (0.053252481917759435, 0.94674751808224056)
+----------------------------------------------------------------------------------------------------
+हालांकि Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+Probability : (0.86905867882838017, 0.13094132117161983)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : '
+Probability : (0.90522479811699241, 0.094775201883007587)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+Probability : (0.85663571382020898, 0.14336428617979102)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : हालांकि
+Single connective neighborhood : ।
+Probability : (0.84621557640046274, 0.15378442359953726)
+----------------------------------------------------------------------------------------------------
+इस पर Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+Single connective neighborhood : ।
+Probability : (0.73541296722937666, 0.26458703277062334)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+Single connective neighborhood : ,
+Probability : (0.63443131357413762, 0.36556868642586238)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : इस पर
+Single connective neighborhood : |
+Probability : (0.76411151280518175, 0.23588848719481825)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607693_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : इस पर
+Single connective neighborhood : ,
+Probability : (0.45064229979661641, 0.54935770020338359)
+----------------------------------------------------------------------------------------------------
+वहीं Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ।
+Probability : (0.86990839108120355, 0.13009160891879645)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ।
+Probability : (0.88164913050508831, 0.11835086949491169)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ।
+Probability : (0.56081094040372137, 0.43918905959627863)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 0
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं
+Single connective neighborhood : ,
+Probability : (0.81847641811720129, 0.18152358188279871)
+----------------------------------------------------------------------------------------------------
+तथा Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+Single connective neighborhood : आने
+Probability : (0.30913340206656642, 0.69086659793343363)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : तथा
+Single connective neighborhood : है
+Probability : (0.91781080378333602, 0.082189196216663984)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+Single connective neighborhood : 50
+Probability : (0.085868759181389892, 0.91413124081861008)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 32
+classLabel : Yes
+classifiedAs : No
+Single connective : तथा
+Single connective neighborhood : मौत
+Probability : (0.02768450459181002, 0.97231549540818996)
+----------------------------------------------------------------------------------------------------
+बताया जाता है कि Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+Probability : (0.46454992281447871, 0.53545007718552129)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+Probability : (0.65779679507809685, 0.34220320492190315)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+Probability : (0.79437693010215471, 0.20562306989784529)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : बताया जाता है कि
+Single connective neighborhood : ।
+Probability : (0.68445342345802496, 0.31554657654197504)
+----------------------------------------------------------------------------------------------------
+इसके लिए Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
+Probability : (0.65259665676623835, 0.34740334323376165)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
+Probability : (0.60577810648361863, 0.39422189351638137)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके लिए
+Single connective neighborhood : ।
+Probability : (0.74382455120723801, 0.25617544879276199)
+----------------------------------------------------------------------------------------------------
+तब Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+Single connective neighborhood : ।
+Probability : (0.37050523500149807, 0.62949476499850188)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : तब
+Single connective neighborhood : ।
+Probability : (0.36762443092461539, 0.63237556907538461)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : तब
+Single connective neighborhood : थी
+Probability : (0.51580932443865635, 0.48419067556134365)
+----------------------------------------------------------------------------------------------------
+या Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+Single connective neighborhood : चाहिए
+Probability : (0.68285366536515213, 0.31714633463484787)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+Single connective neighborhood : गए
+Probability : (0.86730850226706979, 0.13269149773293021)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : Yes
+Single connective : या
+Single connective neighborhood : खुलेगा
+Probability : (0.70565332992862684, 0.29434667007137316)
+----------------------------------------------------------------------------------------------------
+के कारण Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+Single connective neighborhood : पाने
+Probability : (0.091069601674883399, 0.90893039832511657)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+Single connective neighborhood : सक्रियता
+Probability : (0.0093426307201734463, 0.99065736927982651)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : के कारण
+Single connective neighborhood : आने
+Probability : (0.10774713066247631, 0.89225286933752368)
+----------------------------------------------------------------------------------------------------
+इस संबंध में Frequency: 3
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : इस संबंध में
+Single connective neighborhood : ।
+Probability : (0.73098478922169685, 0.26901521077830315)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : No
+Single connective : इस संबंध में
+Single connective neighborhood : ने
+Probability : (0.0073570440526887588, 0.99264295594731122)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 23
+classLabel : No
+classifiedAs : Yes
+Single connective : इस संबंध में
+Single connective neighborhood : ।
+Probability : (0.80828469439584716, 0.19171530560415284)
+----------------------------------------------------------------------------------------------------
+पर Frequency: 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+Single connective neighborhood : चुराएं
+Probability : (0.65141508299821638, 0.34858491700178362)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : No
+Single connective : पर
+Single connective neighborhood : ,
+Probability : (0.48544054909410972, 0.51455945090589028)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 17
+classLabel : No
+classifiedAs : Yes
+Single connective : पर
+Single connective neighborhood : ,
+Probability : (0.67737210607052001, 0.32262789392947999)
+----------------------------------------------------------------------------------------------------
+इस बारे में Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : इस बारे में
+Single connective neighborhood : ।
+Probability : (0.67129479006731696, 0.32870520993268304)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : Yes
+Single connective : इस बारे में
+Single connective neighborhood : ,
+Probability : (0.50906284841726812, 0.49093715158273188)
+----------------------------------------------------------------------------------------------------
+इसी प्रकार Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : No
+Single connective : इसी प्रकार
+Single connective neighborhood : ,
+Probability : (0.04263222999473204, 0.95736777000526796)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : Yes
+Single connective : इसी प्रकार
+Single connective neighborhood : ।
+Probability : (0.92790586521674201, 0.07209413478325799)
+----------------------------------------------------------------------------------------------------
+इसका Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+Single connective neighborhood : ।
+Probability : (0.34909147641851973, 0.65090852358148021)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : No
+Single connective : इसका
+Single connective neighborhood : ।
+Probability : (0.28446581048263098, 0.71553418951736902)
+----------------------------------------------------------------------------------------------------
+उधर Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+Single connective neighborhood : ।
+Probability : (0.98577198628581786, 0.014228013714182142)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : उधर
+Single connective neighborhood : ।
+Probability : (0.98577198628581786, 0.014228013714182142)
+----------------------------------------------------------------------------------------------------
+फिलहाल Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+Single connective neighborhood : ।
+Probability : (0.85346160757470368, 0.14653839242529632)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : Yes
+Single connective : फिलहाल
+Single connective neighborhood : ।
+Probability : (0.84304366722883195, 0.15695633277116805)
+----------------------------------------------------------------------------------------------------
+उस पर Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : उस पर
+Single connective neighborhood : लिया
+Probability : (0.815942511048386, 0.184057488951614)
+----------------------------------------------------------------------------------------------------
+वजह Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : Yes
+Single connective : वजह
+Single connective neighborhood : ।
+Probability : (0.81617587177339401, 0.18382412822660599)
+----------------------------------------------------------------------------------------------------
+क्योंकि Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 18
+classLabel : No
+classifiedAs : Yes
+Single connective : क्योंकि
+Single connective neighborhood : गया
+Probability : (0.93454913347662205, 0.065450866523377949)
+----------------------------------------------------------------------------------------------------
+ऐसे में Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+Single connective : ऐसे में
+Single connective neighborhood : ।
+Probability : (0.75749074270758809, 0.24250925729241191)
+----------------------------------------------------------------------------------------------------
+गौरतलब है कि Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : गौरतलब है कि
+Single connective neighborhood : ।
+Probability : (0.97207871101420606, 0.027921288985793935)
+----------------------------------------------------------------------------------------------------
+कुछ दिनों पहले ही Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : No
+Single connective : कुछ दिनों पहले ही
+Single connective neighborhood : से
+Probability : (0.11330628321931241, 0.88669371678068765)
+----------------------------------------------------------------------------------------------------
+इसके चलते Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : Yes
+Single connective : इसके चलते
+Single connective neighborhood : ।
+Probability : (0.77204742847052721, 0.22795257152947279)
+----------------------------------------------------------------------------------------------------
+इस दौरान Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : Yes
+Single connective : इस दौरान
+Single connective neighborhood : ।
+Probability : (0.96442453504329062, 0.035575464956709379)
+----------------------------------------------------------------------------------------------------
+इस तरह Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : Yes
+Single connective : इस तरह
+Single connective neighborhood : ,
+Probability : (0.54079137174115677, 0.45920862825884323)
+----------------------------------------------------------------------------------------------------
+इसलिए Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+Single connective : इसलिए
+Single connective neighborhood : ।
+Probability : (0.96401107509365525, 0.035988924906344755)
+----------------------------------------------------------------------------------------------------
+से Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : No
+Single connective : से
+Single connective neighborhood : जाने
+Probability : (0.0094752898930269957, 0.99052471010697296)
+----------------------------------------------------------------------------------------------------
+वैसे Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : वैसे
+Single connective neighborhood : ।
+Probability : (0.85411301337678391, 0.14588698662321609)
+----------------------------------------------------------------------------------------------------
+वहीं पर Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+Single connective : वहीं पर
+Single connective neighborhood : ।
+Probability : (0.74999978790108335, 0.25000021209891665)
+----------------------------------------------------------------------------------------------------
+जिससे Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+Single connective : जिससे
+Single connective neighborhood : है
+Probability : (0.7898738200274058, 0.2101261799725942)
+----------------------------------------------------------------------------------------------------
+जैसे ही Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : No
+Single connective : जैसे ही
+Single connective neighborhood : जवान
+Probability : (0.022428147273291621, 0.97757185272670832)
+----------------------------------------------------------------------------------------------------
+इस प्रकार Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+Single connective : इस प्रकार
+Single connective neighborhood : है
+Probability : (0.85915225179043275, 0.14084774820956725)
+----------------------------------------------------------------------------------------------------
+के बावजूद Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+Single connective : के बावजूद
+Single connective neighborhood : निर्णय
+Probability : (0.007346448365784841, 0.9926535516342152)
+----------------------------------------------------------------------------------------------------
+इसके पूर्व Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+Single connective : इसके पूर्व
+Single connective neighborhood : कि
+Probability : (0.076773735295311271, 0.92322626470468871)

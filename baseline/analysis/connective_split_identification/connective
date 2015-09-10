@@ -1,0 +1,100 @@
+----------------------------------------------------------------------------------------------------
+अगर-तो Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : Yes
+connective : अगर-तो
+Probability : (0.91491281734469165, 0.085087182655308347)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+connective : अगर-तो
+Probability : (0.91491281734469165, 0.085087182655308347)
+----------------------------------------------------------------------------------------------------
+यदि-तो Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+connective : यदि-तो
+Probability : (0.85521536449932356, 0.14478463550067644)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : Yes
+connective : यदि-तो
+Probability : (0.85894993129099084, 0.14105006870900916)
+----------------------------------------------------------------------------------------------------
+जब-तो Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : No
+classifiedAs : Yes
+connective : जब-तो
+Probability : (0.88257896068795194, 0.11742103931204806)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : Yes
+connective : जब-तो
+Probability : (0.50653377955751244, 0.49346622044248756)
+----------------------------------------------------------------------------------------------------
+तो-लेकिन Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : No
+connective : तो-लेकिन
+Probability : (0.2156864864700874, 0.78431351352991263)
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : No
+connective : तो-लेकिन
+Probability : (0.25071462282972229, 0.74928537717027766)
+----------------------------------------------------------------------------------------------------
+एक तरफ-और दूसरी तरफ Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : Yes
+connective : एक तरफ-और दूसरी तरफ
+Probability : (0.55695173859235159, 0.44304826140764841)
+----------------------------------------------------------------------------------------------------
+पहले-और बाद में Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 15
+classLabel : Yes
+classifiedAs : No
+connective : पहले-और बाद में
+Probability : (0.18415893558461957, 0.8158410644153804)
+----------------------------------------------------------------------------------------------------
+यूं तो-लेकिन Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
+classLabel : No
+classifiedAs : Yes
+connective : यूं तो-लेकिन
+Probability : (0.63312858823253515, 0.36687141176746485)
+----------------------------------------------------------------------------------------------------
+जहाँ-वहीं Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : No
+connective : जहाँ-वहीं
+Probability : (0.41773093792921612, 0.58226906207078388)

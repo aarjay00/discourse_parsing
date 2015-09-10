@@ -14,8 +14,8 @@ from sklearn.linear_model import LogisticRegression as maxent
 
 def genModel(corpus):
 	classifier = nltk.classify.NaiveBayesClassifier.train(corpus)
-	classifier = nltk.classify.MaxentClassifier.train(corpus,"GIS", trace=0, max_iter=100)
-	classifier=SklearnClassifier(maxent()).train(corpus)
+#	classifier = nltk.classify.MaxentClassifier.train(corpus,"GIS", trace=0, max_iter=100)
+#	classifier=SklearnClassifier(maxent()).train(corpus)
 	return classifier
 
 def runModel(corpus,corpus_f,corpus_l,cycleLen):
@@ -67,13 +67,18 @@ def runModel(corpus,corpus_f,corpus_l,cycleLen):
 		avg_f=(avg_f*iteration+f)/(iteration+1)
 		avg_acc=(avg_acc*iteration+acc)/(iteration+1)
 	print avg_p,avg_r,avg_f,avg_acc
+	return (avg_p,avg_r,avg_f,avg_acc)
 
 			
 
 
 
+if(len(sys.argv)<3):
+	print "<fListnum> <iterations>"
+	exit()
 
-filePath="./fList"
+
+filePath=sys.argv[1]
 fileFD=codecs.open(filePath,"rb")
 fcollec=pickle.load(fileFD)
 fileFD.close()
@@ -82,6 +87,13 @@ fileFD.close()
 corpus=[]
 corpus_f=[]
 corpus_l=[]
+
+print "Features Used"
+featureDesc=""
+for feat in fcollec[0][0]:
+	print feat[0],
+	featureDesc=featureDesc+" "+feat[0]
+print ""
 
 for f in fcollec:
 	d={}
@@ -93,8 +105,8 @@ for f in fcollec:
 	corpus_f.append(d)
 	corpus_l.append(label)
 
-
-runModel(corpus,corpus_f,corpus_l,10)
-
-
-
+iterations=int(sys.argv[2])
+a,b,c,d=runModel(corpus,corpus_f,corpus_l,15)
+FD=open("nltk_accuracy","a")
+FD.write(featureDesc+"\n")
+FD.write(str(a)+" "+str(b)+" "+str(c)+" "+str(d)+"\n")
