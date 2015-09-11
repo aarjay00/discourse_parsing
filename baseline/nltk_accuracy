@@ -48,3 +48,53 @@
 0.920013572151 0.891508430037 0.904423235909 0.958249158249
  wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 wordFeature--tagNeighbor_-1 wordFeature--chunkNeighbor_1 wordFeature--chunkNeighbor_-1 tagNeighbor_1--tagNeighbor_-1 tagNeighbor_1--chunkNeighbor_-1
 0.903988647029 0.885386873289 0.893305035072 0.953872053872
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.920025054476 0.889929219653 0.903635507147 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1
+0.919996822571 0.888633529969 0.902764958423 0.957575757576
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.914981837571 0.891127298571 0.901586837975 0.957239057239
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.914981837571 0.891127298571 0.901586837975 0.957239057239
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.911685371917 0.889500241331 0.89947054351 0.956228956229
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.915533621839 0.89211367122 0.902528252979 0.957152496626
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.914981837571 0.891127298571 0.901586837975 0.957239057239
+ wordFeature tagNeighbor_1 parFeature tagNeighbor_-1 chunkFeature toRootFeature tagFeature tok7tFeature aurFeature2 chunkNeighbor_1 chunkNeighbor_-1
+0.918940328338 0.89020670256 0.903235783795 0.957575757576
+ wordFeature tagNeighbor_1 parFeature tagNeighbor_-1 chunkFeature toRootFeature tagFeature tok7tFeature aurFeature2 chunkNeighbor_1 chunkNeighbor_-1
+0.918940328338 0.89020670256 0.903235783795 0.957575757576
+ wordFeature tagNeighbor_1 parFeature tagNeighbor_-1 chunkFeature toRootFeature tagFeature tok7tFeature aurFeature2 chunkNeighbor_1 chunkNeighbor_-1
+0.918940328338 0.89020670256 0.903235783795 0.957575757576
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.915534652378 0.892802635804 0.902623492437 0.957575757576
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.914974451777 0.888198058958 0.900033840776 0.956565656566
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.916682309815 0.889868902683 0.901760091747 0.957239057239
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.913523135572 0.889034519315 0.899574693295 0.956565656566
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.913523135572 0.889034519315 0.899574693295 0.956565656566
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature wordFeature--tagNeighbor_1 chunkNeighbor_1--chunkNeighbor_-1
+0.913523135572 0.889034519315 0.899574693295 0.956565656566
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.918883089325 0.89053047439 0.903266959686 0.957575757576
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.918883089325 0.89053047439 0.903266959686 0.957575757576
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.919988979632 0.889989284194 0.903531880937 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.916193785565 0.887966963819 0.900806578835 0.956902356902
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.919988979632 0.889989284194 0.903531880937 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.920057610745 0.89015006263 0.903738731926 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.920057610745 0.89015006263 0.903738731926 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.920057610745 0.89015006263 0.903738731926 0.957912457912
+ wordFeature tagFeature tagNeighbor_-1 tagNeighbor_1 chunkFeature chunkNeighbor_1 chunkNeighbor_-1 aurFeature2 parFeature toRootFeature tok7tFeature
+0.920057610745 0.89015006263 0.903738731926 0.957912457912

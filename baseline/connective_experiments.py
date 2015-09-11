@@ -200,7 +200,6 @@ def genFeatureSingleConn(conn,label,discourseFile):
 			d[f[0]]=f[1]
 		
 			
-		return feature
 			
 			
 		li2=[
@@ -216,6 +215,7 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		for i in li2:
 			feature.featureList.append((i[0]+"--"+i[1],str(d[i[0]])+"__"+str(d[i[1]])))
 
+		return feature
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","tagNeighbor_2","tagNeighbor_-2","chunkNeighbor_2","chunkNeighbor_-2"]
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","chunkNeighbor_2"]
 		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1"]
@@ -541,14 +541,27 @@ remove.sort(reverse=True)
 print remove
 print "removal size",len(remove)
 FD=codecs.open("removed instances due to split conn",'w')
-for i in remove:
+#FD1=open("removal_list",'w')
+
+
+FD2=open("removal_list",'r')
+
+
+remove=[]
+for i in FD2.readlines():
+	remove.append(int(i[:-1]))
+for i in remove:		
 	f=featureCollectionSingle.pop(i)
 	f=featureCollectionDescSingle.pop(i)
 	f.printFeatureDesc(FD)
 	if(not getattr(f,"remove")):
 		print "useless fellow :/"
 		print getattr(f,"Single connective")
+	#FD1.write(str(i)+"\n")
+	
 FD.close()
+#FD1.close()
+FD2.close()
 
 
 
@@ -561,6 +574,15 @@ for fs in featureCollectionSingle:
 exportModel("./fList",fcollec)
 
 
+
+#fcollec=[]
+
+#for fs in featureCollectionSingle:
+#	print "f1",fs.featureList
+#	d={}
+#	for f in fs.featureList:
+#		d[f[0]]=f[1]
+#	fcollec.append((d,fs.classLabel))
 if(time==0):
 	exit()
 
