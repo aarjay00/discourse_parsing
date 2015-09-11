@@ -13,9 +13,10 @@ from sklearn.linear_model import LogisticRegression as maxent
 
 
 def genModel(corpus):
-	classifier = nltk.classify.NaiveBayesClassifier.train(corpus)
+#	classifier = nltk.classify.NaiveBayesClassifier.train(corpus)
 #	classifier = nltk.classify.MaxentClassifier.train(corpus,"GIS", trace=0, max_iter=100)
-#	classifier=SklearnClassifier(maxent()).train(corpus)
+	classifier=SklearnClassifier(maxent()).train(corpus)
+#	classifier.show_most_informative_features(50)
 	return classifier
 
 def runModel(corpus,corpus_f,corpus_l,cycleLen):
@@ -90,10 +91,13 @@ corpus_l=[]
 
 print "Features Used"
 featureDesc=""
+fnum=0
 for feat in fcollec[0][0]:
 	print feat[0],
 	featureDesc=featureDesc+" "+feat[0]
+	fnum+=1
 print ""
+print fnum
 
 for f in fcollec:
 	d={}
@@ -106,7 +110,7 @@ for f in fcollec:
 	corpus_l.append(label)
 
 iterations=int(sys.argv[2])
-a,b,c,d=runModel(corpus,corpus_f,corpus_l,15)
+a,b,c,d=runModel(corpus,corpus_f,corpus_l,iterations)
 FD=open("nltk_accuracy","a")
 FD.write(featureDesc+"\n")
 FD.write(str(a)+" "+str(b)+" "+str(c)+" "+str(d)+"\n")

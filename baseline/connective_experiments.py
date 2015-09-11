@@ -171,7 +171,7 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.hasNodeRelation("k5",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelation("k7t",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelation("r6",node.nodeName,nodeDict,10)
-#		feature.hasNodeRelation("r6-k1",node.nodeName,nodeDict,10)
+	#	feature.hasNodeRelation("r6-k1",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelation("k7p",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelation("k7",node.nodeName,nodeDict,10)
 #		feature.hasNodeRelationSpecific(conn,u'\u0915\u0947 \u092c\u093e\u0926',["k2","k7t"],node.nodeName,nodeDict,10)
@@ -184,16 +184,53 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.chunkCombo(conn,0,-2)
 		feature.chunkNeighbor(conn,1)
 		feature.chunkNeighbor(conn,-1)
-		feature.chunkNeighbor(conn,2)
-		feature.chunkNeighbor(conn,-2)
+#		feature.chunkNeighbor(conn,2)
+#		feature.chunkNeighbor(conn,-2)
 		feature.setClassLabel(label)
 		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		feature.aurFeature(conn)
-#		feature.parFeature(conn)
+		feature.parFeature(conn)
 		l1=feature.toRootFeature(conn,node,nodeDict)
 		l2=feature.tok7tFeature(conn,node,nodeDict)
 		feature.featureVector.extend(l1)
 		feature.featureVector.extend(l2)
+
+		d={}
+		for f in feature.featureList:
+			d[f[0]]=f[1]
+		
+			
+		return feature
+			
+			
+		li2=[
+		("wordFeature","tagNeighbor_1"),
+		("wordFeature","tagNeighbor_-1"),
+		("wordFeature","chunkNeighbor_1"),
+		("wordFeature","chunkNeighbor_-1"),
+		("tagNeighbor_1","tagNeighbor_-1"),
+		("tagNeighbor_1","chunkNeighbor_-1"),
+		("tagNeighbor_-1","chunkNeighbor_1"),
+		("chunkNeighbor_1","chunkNeighbor_-1"),
+		]
+		for i in li2:
+			feature.featureList.append((i[0]+"--"+i[1],str(d[i[0]])+"__"+str(d[i[1]])))
+
+#		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","tagNeighbor_2","tagNeighbor_-2","chunkNeighbor_2","chunkNeighbor_-2"]
+#		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","chunkNeighbor_2"]
+		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1"]
+		
+		for i in li:
+			feature.featureList.append(("Connective--"+i,d["wordFeature"]+"__"+str(d[i])))
+		
+		sz=len(li)
+		for x in range(0,sz):
+			for y in range(x+1,sz):
+				i=li[x]
+				j=li[y]
+				feature.featureList.append((i+"--"+j,str(d[i])+"__"+str(d[j])))
+
+
 #		feature.kebaadFeature(conn,node,nodeDict,label)
 #		feature.keliyeFeature(conn,node,nodeDict,label)
 #		feature.aageFeature(conn,node,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum,label)

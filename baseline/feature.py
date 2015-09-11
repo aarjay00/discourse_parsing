@@ -312,9 +312,11 @@ class Feature():
 		self.description=self.description+" hasNodeRelation-"+str(nodeRelation)
 		if(findRelation(nodeRelation,node,nodeDict,0,maxLevel)):
 			self.featureVector.append(1)
+			self.featureList.append(("hasnodeRelation"+nodeRelation,1))
 			print "nodeRelation found"
 		else:
 			self.featureVector.append(0)
+			self.featureList.append(("hasnodeRelation"+nodeRelation,1))
 			print "nodeRelation not found"
 	def aurFeature(self,conn):
 		self.description=self.description+" aurFeature"
