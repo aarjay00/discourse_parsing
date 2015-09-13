@@ -288,6 +288,55 @@ class Feature():
 			else:
 				feature=self.markItemsinList(["Null"],self.dependencySet)
 		print ""
+
+	def getCommonParent(self,node,nodePrev,nodeNext,nodeDict):
+
+		if(nodePrev==None):
+			commonParent1="NoCommonParentFirst"
+		else:
+			commonParent1=getCommonParent(nodePrev,node,nodeDict)
+		if(nodeNext==None):
+			commonParent2="NoCommonParentLast"
+		else:
+			commonParent2=getCommonParent(nodeNext,node,nodeDict)
+		feature.featureList.append(("commonParentPrev",node.getChunkName(commonParent[0])))
+		feature.featureList.append(("commonParentNext",node.getChunkName(commonParent[1])))
+		return (commonParent1,commonParent2)
+	def rightWordLocation(self,conn,node,nodeNext,nodeDict,a,b):
+#conn is already last word
+	  	if(conn[-1]+1==len(self.globalWordList)-1):
+			self.featureList.append(("rightWordLocation","Last"))
+			return
+	  	word=self.globalWordList[conn[-1]]
+	  	wordNext=self.globalWordList[conn[-1]+1]
+#same node
+		if(word.chunkNum==wordNext.chunkNum):
+			self.featureList.append(("rightWordLocation","sameNode"))
+			return
+	  	if(nodeNext==None):
+			print "ERROR"
+#same parent i.e commonparent should be connective parent
+		if(node.nodeParent==nodeNext.nodeParent):
+			self.featureList.append(("rightWordLocation","directParent"))
+			return
+		commonParent=getCommonParent(node,nodeNext,nodeDict)
+# word is in connective tree
+		if(commonParent==node.nodeName):
+			self.featureList.append(("rightWordLocation","nextPartofConnTree"))
+			return
+# connective is in word tree
+		if(commonParent==nodeNext.nodeName):
+			self.featureList.append(("rightWordLocation","connPartofnextTree"))
+			return
+		if(commonParent==node.nodeParent):
+			self.featureList.append(("rightWordLocation","indirectParent"))
+			return
+# common parent is root but only single VGF tree
+#common parent is root but conn has another VG* as tree
+		self.featureList.append(("rightWordLocation","NoIdea"))
+		print "no idea",a,b
+		return
+
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
 		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)
 		if(getSpan(conn,self.globalWordList)!=connective):

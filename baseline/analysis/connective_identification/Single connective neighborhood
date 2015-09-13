@@ -1,270 +1,10 @@
 ----------------------------------------------------------------------------------------------------
-। Frequency: 57
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.90943139849638077, 0.090568601503621379)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.86204716607754595, 0.13795283392245519)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99988057383496665, 0.00011942616503201116)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : तब
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.9858632394354615, 0.014136760564539731)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 4
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.88741047487097846, 0.11258952512902264)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : बताया जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99999969221805196, 3.0778194582634404e-07)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : इस संबंध में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.94161870869732434, 0.058381291302676067)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : तब
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.98733869415259745, 0.012661305847403428)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.999978508618663, 2.149138133613956e-05)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.91750073361314666, 0.082499266386852704)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : पहले
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.63107544889252432, 0.36892455110747385)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99992865975207512, 7.1340247924053606e-05)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.910199308436759, 0.089800691563243509)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 23
-classLabel : No
-classifiedAs : Yes
-Single connective : इस संबंध में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.95385962674027081, 0.046140373259730208)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.7989201534881456, 0.20107984651185254)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : वजह
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.95080162480737263, 0.049198375192626119)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.9999976851330713, 2.3148669296742101e-06)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.98523977931252793, 0.014760220687471773)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.59485863017076712, 0.40514136982923454)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.78434336970526675, 0.21565663029473356)
+। Frequency: 33
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 3
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : इससे
 Arg1 : None
 Arg1num : None
@@ -272,12 +12,11 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.98414188754874632, 0.015858112451252959)
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 8
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : वहीं पर
 Arg1 : None
 Arg1num : None
@@ -285,376 +24,11 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.96442727997326982, 0.035572720026730953)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 16
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.91188608854300124, 0.088113911456999913)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : पहले
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.6948481800892331, 0.30515181991076712)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 21
-classLabel : No
-classifiedAs : Yes
-Single connective : इसी प्रकार
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99797679148856766, 0.0020232085114345942)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-sentenceNum : 18
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.95374874811245547, 0.046251251887545038)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-sentenceNum : 27
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.92178751930346692, 0.078212480696533193)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.9999742386904108, 2.5761309590600497e-05)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99150747587199961, 0.0084925241280018691)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99576015611256741, 0.0042398438874326353)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 19
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.6913997014172526, 0.30860029858274785)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : वहीं
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99987510565472082, 0.0001248943452799845)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : इससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.97374142737238301, 0.026258572627617955)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : गौरतलब है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99999999981091037, 1.8909292980210101e-10)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : Yes
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99865001072803183, 0.0013499892719669102)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.78668834895794637, 0.21331165104205194)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.90991170020138656, 0.090088299798614158)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-sentenceNum : 21
-classLabel : No
-classifiedAs : Yes
-Single connective : इस दौरान
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99825651535435689, 0.0017434846456460113)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99795641958641423, 0.00204358041358626)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.8856636199935406, 0.11433638000645897)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 13
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.89421479878574728, 0.10578520121425203)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : ऐसे में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.98802878599851329, 0.011971214001486027)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.92028677506394418, 0.079713224936056315)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : बताया जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99999905644997711, 9.4355002566222194e-07)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके चलते
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.98419973618454049, 0.015800263815462831)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.91669835933680555, 0.08330164066319598)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इसलिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.99994480587916779, 5.5194120833978389e-05)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.87055142549701225, 0.12944857450298658)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.93522755011879799, 0.064772449881202968)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.93138801514027447, 0.068611984859723987)
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 9
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : वैसे
 Arg1 : None
 Arg1num : None
@@ -662,64 +36,23 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.99666308258233582, 0.0033369174176641849)
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 11
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
 classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
+classifiedAs : 
+Single connective : उधर
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.83247610498159585, 0.16752389501840562)
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 7
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
 classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.92922077982480256, 0.070779220175199206)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 15
-classLabel : No
-classifiedAs : Yes
-Single connective : इसका
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.89276347679204515, 0.10723652320795581)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : इसमें
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-Probability : (0.93747629755487805, 0.062523702445121898)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : बताया जाता है कि
 Arg1 : None
 Arg1num : None
@@ -727,131 +60,373 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.99999816151690513, 1.8384830961356665e-06)
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 3
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
 classLabel : No
-classifiedAs : Yes
-Single connective : इसका
+classifiedAs : 
+Single connective : इस संबंध में
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-Probability : (0.89276347679204515, 0.10723652320795581)
-----------------------------------------------------------------------------------------------------
-है Frequency: 10
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
 classLabel : No
-classifiedAs : Yes
-Single connective : तो
+classifiedAs : 
+Single connective : इससे
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-Probability : (0.99237576018115203, 0.0076242398188490464)
+Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8
 sentenceNum : 3
 classLabel : No
-classifiedAs : Yes
-Single connective : और
+classifiedAs : 
+Single connective : लेकिन
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-Probability : (0.99824692230260825, 0.0017530776973916386)
+Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 9
+rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 18
+classLabel : Yes
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : अयोध्या विवाद के हल के लिए नए सिरे से ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड से बातचीत की रणनीति भी है ।
+Arg1num : 17
+Arg2 : प्रस्ताव पर चर्चा शुरू होने वाली है ।
+Arg2num : 18
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 21
 classLabel : No
-classifiedAs : Yes
-Single connective : इस प्रकार
+classifiedAs : 
+Single connective : इस दौरान
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-Probability : (0.9680898530596006, 0.031910146940402694)
+Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-Probability : (0.99942770116084223, 0.0005722988391585346)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-Probability : (0.98904763985863731, 0.010952360141362404)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-Probability : (0.99986113139556521, 0.00013886860443558039)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
 sentenceNum : 12
 classLabel : No
-classifiedAs : Yes
-Single connective : तथा
+classifiedAs : 
+Single connective : इसलिए
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-Probability : (0.97336366303692634, 0.026636336963073343)
+Single connective neighborhood : ।
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
+rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
+sentenceNum : 8
 classLabel : No
-classifiedAs : Yes
-Single connective : तो
+classifiedAs : 
+Single connective : गौरतलब है कि
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-Probability : (0.99784723993490465, 0.002152760065096803)
+Single connective neighborhood : ।
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 10
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : इसके चलते
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : लेकिन
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : इस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : बताया जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : उधर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : तब
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : वजह
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : 
+Single connective : इसी प्रकार
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 23
+classLabel : No
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : तब
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : ऐसे में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : इससे
+Arg1 : सेना के सूत्रों का मानना है कि इन दिनों इस तरह की बात - चीत ज्यादा इंटरसेप्ट हो रही है ।
+Arg1num : 8
+Arg2 : साफ है कि आतंकवादियों की हताशा बढ़ रही है ।
+Arg2num : 9
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : बताया जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : इससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : वहीं
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : इससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
+है Frequency: 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
 Single connective : जिससे
 Arg1 : None
 Arg1num : None
@@ -859,12 +434,11 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
-Probability : (0.99872932895178246, 0.0012706710482175278)
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 10
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : और
 Arg1 : None
 Arg1num : None
@@ -872,105 +446,73 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
-Probability : (0.99812474351868519, 0.0018752564813136934)
-----------------------------------------------------------------------------------------------------
-, Frequency: 8
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ,
-Probability : (0.99421554781266008, 0.0057844521873393851)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : खासकर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ,
-Probability : (0.88256419685650833, 0.11743580314349192)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 6
 classLabel : No
-classifiedAs : Yes
-Single connective : इस पर
+classifiedAs : 
+Single connective : और
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
-Probability : (0.95453711955469578, 0.045462880445303597)
+Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 10
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 9
 classLabel : No
-classifiedAs : Yes
-Single connective : दूसरे
+classifiedAs : 
+Single connective : इस प्रकार
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
-Probability : (0.89376638539719522, 0.10623361460280629)
+Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
-sentenceNum : 13
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 12
 classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
+classifiedAs : 
+Single connective : तथा
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
-Probability : (0.98080328430166974, 0.019196715698329495)
+Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
-sentenceNum : 2
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
 classLabel : No
-classifiedAs : Yes
-Single connective : इस तरह
+classifiedAs : 
+Single connective : तो
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
-Probability : (0.94357209928425623, 0.056427900715740734)
+Single connective neighborhood : है
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 13
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
 classLabel : No
-classifiedAs : Yes
-Single connective : इस बारे में
+classifiedAs : 
+Single connective : तो
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
-Probability : (0.75152297898036924, 0.24847702101963345)
+Single connective neighborhood : है
+----------------------------------------------------------------------------------------------------
+, Frequency: 6
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 0
 classLabel : No
-classifiedAs : Yes
+classifiedAs : 
 Single connective : वहीं
 Arg1 : None
 Arg1num : None
@@ -978,40 +520,73 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
-Probability : (0.99991285896999405, 8.7141030006213509e-05)
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : 
+Single connective : इस बारे में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : दूसरे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : इस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : 
+Single connective : इसी प्रकार
+Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है तथा हिंदुओं की 29.6 29.6 फीसदी ,
+Arg1num : 12
+Arg2 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं तथा 36.9 36.9 फीसदी हिंदू हैं ।
+Arg2num : 12
+remove : False
+Single connective neighborhood : ,
 ----------------------------------------------------------------------------------------------------
 करने Frequency: 5
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
-Arg1num : 2
-Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
-Arg2num : 2
-remove : False
-Single connective neighborhood : करने
-Probability : (0.011881185605079718, 0.98811881439492322)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-sentenceNum : 6
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने
-Arg1num : 6
-Arg2 : सेना में कटौती पर विचार किया जाएगा
-Arg2num : 6
-remove : False
-Single connective neighborhood : करने
-Probability : (0.0021519165981135377, 0.99784808340188513)
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
 sentenceNum : 5
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के बाद
 Arg1 : २००२ में सलेम और मोनिका के खिलाफ फर्जी पासपोर्ट मामले में आरोप दायर करने
 Arg1num : 5
@@ -1019,12 +594,23 @@ Arg2 : अदालत ने दोनों के खिलाफ गिर�
 Arg2num : 5
 remove : False
 Single connective neighborhood : करने
-Probability : (0.0038224397587220396, 0.9961775602412748)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने
+Arg1num : 6
+Arg2 : सेना में कटौती पर विचार किया जाएगा
+Arg2num : 6
+remove : False
+Single connective neighborhood : करने
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के बाद
 Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
 Arg1num : 8
@@ -1032,12 +618,23 @@ Arg2 : मीडिया से बातचीत में कहा कि �
 Arg2num : 8
 remove : False
 Single connective neighborhood : करने
-Probability : (0.0059136491873593737, 0.99408635081264229)
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
+Arg1num : 2
+Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
+Arg2num : 2
+remove : False
+Single connective neighborhood : करने
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
 sentenceNum : 4
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के लिए
 Arg1 : यहाँ सेना तैनात की गई है
 Arg1num : 4
@@ -1045,148 +642,13 @@ Arg2 : क्षेत्र में सामान्य स्थिति 
 Arg2num : 4
 remove : False
 Single connective neighborhood : करने
-Probability : (0.00027483934592631583, 0.99972516065407258)
-----------------------------------------------------------------------------------------------------
-हुए Frequency: 4
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 3
-classLabel : Yes
-classifiedAs : No
-Single connective : व
-Arg1 : मुठभेड़ में कुल चार सुरक्षाकर्मी शहीद हुए
-Arg1num : 3
-Arg2 : सात घायल हुए
-Arg2num : 3
-remove : False
-Single connective neighborhood : हुए
-Probability : (0.45263983585357587, 0.54736016414642463)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हुए
-Probability : (0.95466580497725295, 0.045334195022747638)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हुए
-Probability : (0.99767591642072129, 0.002324083579279523)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 16
-classLabel : No
-classifiedAs : Yes
-Single connective : समझा जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हुए
-Probability : (0.99993748166590746, 6.2518334089972131e-05)
-----------------------------------------------------------------------------------------------------
-जाने Frequency: 4
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
-Arg1num : 0
-Arg2 : इसे रद्द कर दिया गया है
-Arg2num : 0
-remove : False
-Single connective neighborhood : जाने
-Probability : (0.021549886292070164, 0.97845011370793067)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : तथा
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : जाने
-Probability : (0.89194695615084674, 0.1080530438491529)
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
-Arg1num : 8
-Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
-Arg2num : 8
-remove : False
-Single connective neighborhood : जाने
-Probability : (0.024318603856821261, 0.97568139614317895)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Yes
-classifiedAs : No
-Single connective : से
-Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
-Arg1num : 11
-Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
-Arg2num : 11
-remove : False
-Single connective neighborhood : जाने
-Probability : (1.5223594153918907e-05, 0.99998477640584704)
 ----------------------------------------------------------------------------------------------------
 उन्होंने Frequency: 3
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Yes
-classifiedAs : No
-Single connective : आगे
-Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
-Arg1num : 7
-Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
-Arg2num : 11
-remove : False
-Single connective neighborhood : उन्होंने
-Probability : (9.337554596925206e-05, 0.99990662445402911)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 18
-classLabel : Yes
-classifiedAs : No
-Single connective : आगे
-Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
-Arg1num : 17
-Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
-Arg2num : 18
-remove : False
-Single connective neighborhood : उन्होंने
-Probability : (4.1148949802531004e-05, 0.99995885105019633)
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
 sentenceNum : 5
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : आगे
 Arg1 : पश्चिम बंगाल के बर्धवान जिले में आज पत्रकारों से बात करते हुए सोमनाथ ने कहा कि ' अगर संसद अपने कुछ सदस्यों की गलत हरकत पर कार्रवाई करता है और इस मामले में हस्तक्षेप करता है तो यह उसका अंदरूनी मामला है । '
 Arg1num : 4
@@ -1194,264 +656,37 @@ Arg2 : उन्होंने कहा कि उनके इस फैस�
 Arg2num : 5
 remove : False
 Single connective neighborhood : उन्होंने
-Probability : (4.1148949802531004e-05, 0.99995885105019633)
-----------------------------------------------------------------------------------------------------
-इसके Frequency: 3
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : साथ ही
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : इसके
-Probability : (0.92593470025690194, 0.07406529974309646)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : साथ ही
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : इसके
-Probability : (0.82986029742276368, 0.17013970257723685)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : साथ ही
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : इसके
-Probability : (0.94499011802060562, 0.055009881979394749)
-----------------------------------------------------------------------------------------------------
-हैं Frequency: 3
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हैं
-Probability : (0.99994029137345219, 5.9708626546262753e-05)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : तब
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हैं
-Probability : (0.96137340685399153, 0.038626593146008074)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हैं
-Probability : (0.99746273832738508, 0.0025372616726137566)
-----------------------------------------------------------------------------------------------------
-और Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : इसके बाद
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : और
-Probability : (0.65295591150802368, 0.34704408849197393)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : आखिरकार
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : और
-Probability : (0.57141330074150509, 0.4285866992584923)
-----------------------------------------------------------------------------------------------------
-बनाने Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 0
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
 classLabel : Yes
-classifiedAs : No
-Single connective : के लिए
-Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
-Arg1num : 0
-Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
-Arg2num : 0
+classifiedAs : 
+Single connective : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg1num : 7
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+Arg2num : 11
 remove : False
-Single connective neighborhood : बनाने
-Probability : (0.0010886266913982643, 0.99891137330860136)
+Single connective neighborhood : उन्होंने
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : बनाने
-Probability : (0.88248084114715597, 0.1175191588528432)
-----------------------------------------------------------------------------------------------------
-के Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-sentenceNum : 10
-classLabel : No
-classifiedAs : Yes
-Single connective : साथ ही
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : के
-Probability : (0.65261586818047834, 0.34738413181952116)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : साथ ही
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : के
-Probability : (0.78281787200699904, 0.21718212799299871)
-----------------------------------------------------------------------------------------------------
-कि Frequency: 2
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
 classLabel : Yes
-classifiedAs : No
-Single connective : इसके पूर्व
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg1num : 8
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
-Arg2num : 13
+classifiedAs : 
+Single connective : आगे
+Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
+Arg1num : 17
+Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
+Arg2num : 18
 remove : False
-Single connective neighborhood : कि
-Probability : (0.03498915152154583, 0.96501084847845331)
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
-sentenceNum : 4
-classLabel : Yes
-classifiedAs : No
-Single connective : इससे
-Arg1 : देश में बच्चों को लेकर इस तरह की स्थितियाँ मौजूद हैं ।
-Arg1num : 3
-Arg2 : देश की बदनामी होती है ।
-Arg2num : 4
-remove : False
-Single connective neighborhood : कि
-Probability : (0.0035272782361830115, 0.99647272176381885)
+Single connective neighborhood : उन्होंने
 ----------------------------------------------------------------------------------------------------
-आने Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के कारण
-Arg1 : । ताजा हिमपात होने से घाटी के तापमान में गिरावट आने
-Arg1num : 1
-Arg2 : लोगों ने गर्म वस्त्र पहनने शुरू कर दिए
-Arg2num : 2
-remove : False
-Single connective neighborhood : आने
-Probability : (0.00033764077636596679, 0.99966235922363522)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : No
-Single connective : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg1num : 13
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-Arg2num : 13
-remove : False
-Single connective neighborhood : आने
-Probability : (0.26519380732516373, 0.73480619267483571)
-----------------------------------------------------------------------------------------------------
-नहीं Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 0
-classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : नहीं
-Probability : (0.94981521522764034, 0.050184784772360991)
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 4
-classLabel : No
-classifiedAs : Yes
-Single connective : बल्कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : नहीं
-Probability : (0.98139334377410692, 0.018606656225892262)
-----------------------------------------------------------------------------------------------------
-होने Frequency: 2
+होने Frequency: 3
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के बाद
 Arg1 : १३ फरवरी को ही अपने विरोध प्रदर्शन स्थगित कर दिए थे
 Arg1num : 8
@@ -1459,12 +694,11 @@ Arg2 : उन्होंने आयकर प्रशिक्षण सं�
 Arg2num : 8
 remove : False
 Single connective neighborhood : होने
-Probability : (0.005942596384808015, 0.99405740361519412)
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8
 sentenceNum : 1
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के बाद
 Arg1 : पिछले साल ही वह पहली बार इस संस्था के सदस्य चुने गए थे ।
 Arg1num : 1
@@ -1472,42 +706,101 @@ Arg2 : विधानसभा चुनावों में लुधिय�
 Arg2num : 1
 remove : False
 Single connective neighborhood : होने
-Probability : (0.0034089414314897163, 0.99659105856851116)
-----------------------------------------------------------------------------------------------------
-गया Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : 
 Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
+Arg1 : उन्होंने भीड़ को तितर - बितर होने
+Arg1num : 6
+Arg2 : कानून अपने हाथ में नहीं लेने के लिए राजी किया ।
+Arg2num : 6
 remove : False
-Single connective neighborhood : गया
-Probability : (0.99989545763623555, 0.00010454236376521091)
+Single connective neighborhood : होने
+----------------------------------------------------------------------------------------------------
+नहीं Frequency: 3
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
-sentenceNum : 10
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 0
 classLabel : No
-classifiedAs : Yes
-Single connective : तो
+classifiedAs : 
+Single connective : बल्कि
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : गया
-Probability : (0.99766917582951453, 0.0023308241704836103)
+Single connective neighborhood : नहीं
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : वरुण के अनुसार उनका परिवार कांग्रेस पार्टी के प्रति नहीं
+Arg1num : 1
+Arg2 : विचार धाराओं के प्रति प्रतिबद्घ रहा है ।
+Arg2num : 1
+remove : False
+Single connective neighborhood : नहीं
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : गिनती के बचे इन दुलर्भ आदिवासियों को अब खतरा किसी अन्य से नहीं
+Arg1num : 2
+Arg2 : खुद की बदलती आदतों से है
+Arg2num : 2
+remove : False
+Single connective neighborhood : नहीं
+----------------------------------------------------------------------------------------------------
+जाने Frequency: 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
+Arg1num : 0
+Arg2 : इसे रद्द कर दिया गया है
+Arg2num : 0
+remove : False
+Single connective neighborhood : जाने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : 
+Single connective : से
+Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
+Arg1num : 11
+Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
+Arg2num : 11
+remove : False
+Single connective neighborhood : जाने
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
+Arg1num : 8
+Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg2num : 8
+remove : False
+Single connective neighborhood : जाने
 ----------------------------------------------------------------------------------------------------
 ने Frequency: 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : आगे
 Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
 Arg1num : 7
@@ -1515,12 +808,11 @@ Arg2 : पंढे ने कहा कि कर्मचारियों �
 Arg2num : 8
 remove : False
 Single connective neighborhood : ने
-Probability : (6.9328223315583051e-05, 0.99993067177668593)
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 2
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : इस संबंध में
 Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
 Arg1num : 1
@@ -1528,314 +820,51 @@ Arg2 : प्रधानमंत्री ने परमाणु ऊर्�
 Arg2num : 2
 remove : False
 Single connective neighborhood : ने
-Probability : (0.00024311634021123208, 0.99975688365979143)
 ----------------------------------------------------------------------------------------------------
-| Frequency: 1
+आने Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : Yes
-Single connective : इस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : |
-Probability : (0.9068468289810625, 0.093153171018938594)
-----------------------------------------------------------------------------------------------------
-खुलेगा Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
-sentenceNum : 7
-classLabel : No
-classifiedAs : Yes
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : खुलेगा
-Probability : (0.99884963995369602, 0.0011503600463055289)
-----------------------------------------------------------------------------------------------------
-चाहिए Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : चाहिए
-Probability : (0.9997781884870186, 0.00022181151297785156)
-----------------------------------------------------------------------------------------------------
-वसूलने Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : वसूलने
-Probability : (0.90041117081110722, 0.099588829188893196)
-----------------------------------------------------------------------------------------------------
-जाए Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : जाए
-Probability : (0.99980345614768951, 0.00019654385230928964)
-----------------------------------------------------------------------------------------------------
-था Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : था
-Probability : (0.99987541410042968, 0.00012458589956859995)
-----------------------------------------------------------------------------------------------------
-जोड़ने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-sentenceNum : 1
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 13
 classLabel : Yes
-classifiedAs : No
-Single connective : के लिए
-Arg1 : केंन्द्र अब राज्यों की लगाम कसने की तैयारी में है ।
-Arg1num : 1
-Arg2 : प्रधानमंत्री ग्राम सड़क योजना को ' भारत निर्माण ' योजना के दायरे में लाने के बाद अगले चार सालों में सभी गाँवों को सड़कों से जोड़ने
-Arg2num : 1
+classifiedAs : 
+Single connective : तथा
+Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
+Arg1num : 13
+Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
+Arg2num : 13
 remove : False
-Single connective neighborhood : जोड़ने
-Probability : (0.00013204340355354744, 0.99986795659644634)
-----------------------------------------------------------------------------------------------------
-करेगा Frequency: 1
+Single connective neighborhood : आने
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : करेगा
-Probability : (0.99444210802293564, 0.0055578919770656668)
-----------------------------------------------------------------------------------------------------
-होगा Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : होगा
-Probability : (0.99977771370714419, 0.00022228629285737868)
-----------------------------------------------------------------------------------------------------
-लेने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
-sentenceNum : 15
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : लेने
-Probability : (0.90371906920215339, 0.096280930797847997)
-----------------------------------------------------------------------------------------------------
-फेंके Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 15
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : फेंके
-Probability : (0.99822610499950626, 0.001773895000494793)
-----------------------------------------------------------------------------------------------------
-फटने Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 16
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
 classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : कमरे में हथगोला फटने
-Arg1num : 16
-Arg2 : आतंकी फायरिंग करता हुआ बाहर निकला
-Arg2num : 16
-remove : False
-Single connective neighborhood : फटने
-Probability : (0.0012109044814117632, 0.9987890955185873)
-----------------------------------------------------------------------------------------------------
-जवान Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : No
-Single connective : जैसे ही
-Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
-Arg1num : 10
-Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
-Arg2num : 10
-remove : False
-Single connective neighborhood : जवान
-Probability : (0.0045492963634933929, 0.99545070363650301)
-----------------------------------------------------------------------------------------------------
-करते Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 17
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : करते
-Probability : (0.72981629432473627, 0.2701837056752644)
-----------------------------------------------------------------------------------------------------
-सक्रियता Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
-sentenceNum : 5
-classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के कारण
-Arg1 : अर्थव्यवस्था में नकदी की कमी की समस्या काफी हद तक दूर हो गई है ।
-Arg1num : 5
-Arg2 : पिछले एक महीने में रिजर्व बैंक की सक्रियता
-Arg2num : 5
+Arg1 : । ताजा हिमपात होने से घाटी के तापमान में गिरावट आने
+Arg1num : 1
+Arg2 : लोगों ने गर्म वस्त्र पहनने शुरू कर दिए
+Arg2num : 2
 remove : False
-Single connective neighborhood : सक्रियता
-Probability : (4.6605654026689523e-06, 0.99999533943459773)
+Single connective neighborhood : आने
 ----------------------------------------------------------------------------------------------------
-जाएगा Frequency: 1
+देने Frequency: 2
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : लेकिन
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : जाएगा
-Probability : (0.99995232882913077, 4.7671170867608872e-05)
-----------------------------------------------------------------------------------------------------
-मध्यम Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : Yes
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : 
 Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
+Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
+Arg1num : 14
+Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
+Arg2num : 14
 remove : False
-Single connective neighborhood : मध्यम
-Probability : (0.70504769764971376, 0.29495230235028513)
-----------------------------------------------------------------------------------------------------
-पहुँची Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610171_date_20_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : Yes
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : पहुँची
-Probability : (0.94652534772720187, 0.053474652272797657)
-----------------------------------------------------------------------------------------------------
-दूसरे Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 9
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : दूसरे
-Probability : (0.52997602723960668, 0.47002397276039665)
-----------------------------------------------------------------------------------------------------
-हुई Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हुई
-Probability : (0.99151493402146429, 0.0084850659785370621)
-----------------------------------------------------------------------------------------------------
-देने Frequency: 1
+Single connective neighborhood : देने
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
 sentenceNum : 0
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : के लिए
 Arg1 : कर्मचारी भविष्य निधि संगठन ( ईपीएफओ ) के बोर्ड ने सोमवार को अंतर्राष्ट्रीय सलाहकार फर्म मर्सर को नियुक्त किया है ।
 Arg1num : 0
@@ -1843,389 +872,91 @@ Arg2 : अतिरिक्त संसाधन जुटाने की आ
 Arg2num : 0
 remove : False
 Single connective neighborhood : देने
-Probability : (6.6555982605180018e-05, 0.99993344401739515)
 ----------------------------------------------------------------------------------------------------
-देखने Frequency: 1
+गया Frequency: 2
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : देखने
-Probability : (0.90890154423155611, 0.091098455768442513)
-----------------------------------------------------------------------------------------------------
-की Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : की
-Probability : (0.99803761840517458, 0.0019623815948270522)
-----------------------------------------------------------------------------------------------------
-बयान Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
-Arg1num : 2
-Arg2 : वाजपेयी के बयान
-Arg2num : 2
-remove : False
-Single connective neighborhood : बयान
-Probability : (3.545531712417364e-05, 0.99996454468287654)
-----------------------------------------------------------------------------------------------------
-रखने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
-Arg1num : 0
-Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
-Arg2num : 0
-remove : False
-Single connective neighborhood : रखने
-Probability : (0.004551146231030867, 0.99544885376896974)
-----------------------------------------------------------------------------------------------------
-बीतने Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : एक साल से ज्यादा समय बीतने
-Arg1num : 7
-Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
-Arg2num : 7
-remove : False
-Single connective neighborhood : बीतने
-Probability : (0.00068149480678218949, 0.99931850519321697)
-----------------------------------------------------------------------------------------------------
-ज्यादा Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ज्यादा
-Probability : (0.53655091352200057, 0.46344908647799776)
-----------------------------------------------------------------------------------------------------
-करे Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 18
-classLabel : No
-classifiedAs : Yes
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : करे
-Probability : (0.84740314423431995, 0.15259685576568349)
-----------------------------------------------------------------------------------------------------
-लगीं Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 22
-classLabel : No
-classifiedAs : Yes
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : लगीं
-Probability : (0.99948330903151195, 0.00051669096848586788)
-----------------------------------------------------------------------------------------------------
-मुआवजा Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : No
-Single connective : और
-Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा
-Arg1num : 10
-Arg2 : गंभीर रूप से घायलों को 50 - 50 तथा तथा मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
-Arg2num : 10
-remove : False
-Single connective neighborhood : मुआवजा
-Probability : (0.016795192015862152, 0.98320480798413767)
-----------------------------------------------------------------------------------------------------
-मौत Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 32
-classLabel : Yes
-classifiedAs : No
-Single connective : तथा
-Arg1 : इस संबंध में फैक्टरी मालिक राकेश ग्रोवर तथा ठेकेदार के खिलाफ लापरवाही से हुई मौत
-Arg1num : 32
-Arg2 : आगजनी की धारा 304ए तथा 337 के तहत मामला दर्ज किया गया है ।
-Arg2num : 32
-remove : False
-Single connective neighborhood : मौत
-Probability : (0.0019558869214592019, 0.99804411307854157)
-----------------------------------------------------------------------------------------------------
-50 Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : No
-Single connective : तथा
-Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा और और गंभीर रूप से घायलों को 50 - 50 तथा
-Arg1num : 10
-Arg2 : मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
-Arg2num : 10
-remove : False
-Single connective neighborhood : 50
-Probability : (0.066826864013596027, 0.93317313598640472)
-----------------------------------------------------------------------------------------------------
-आग Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 23
-classLabel : Yes
-classifiedAs : No
-Single connective : की वजह से
-Arg1 : मकान नंबर 1993ए निवासी मंगल सेन जैन तथा 1993बी निवासी राजीव जैन ने बताया कि आग
-Arg1num : 23
-Arg2 : उनके मकानों की दीवारों में दरार आ गई और ऊपरी हिस्सा टूट गया ।
-Arg2num : 23
-remove : False
-Single connective neighborhood : आग
-Probability : (8.4618326740485873e-05, 0.99991538167325811)
-----------------------------------------------------------------------------------------------------
-कूदने Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 20
-classLabel : Yes
-classifiedAs : No
-Single connective : की वजह से
-Arg1 : घटनास्थल पर मौजूद लोगों ने बताया कि ऊपर से कूदने
-Arg1num : 20
-Arg2 : संजय नामक कारीगर के पैरों में चोट आई ।
-Arg2num : 20
-remove : False
-Single connective neighborhood : कूदने
-Probability : (0.0016857087871411439, 0.99831429121285953)
-----------------------------------------------------------------------------------------------------
-हो Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : Yes
-Single connective : पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हो
-Probability : (0.77024898323016777, 0.22975101676982923)
-----------------------------------------------------------------------------------------------------
-भूस्खलन Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : No
-Single connective : की वजह से
-Arg1 : भारी नुकसान पहुँचा है
-Arg1num : 9
-Arg2 : केदारनाथ यात्रा मार्ग में रुद्रप्रयाग जिले के अगस्त मुनि इलाके में भूस्खलन
-Arg2num : 9
-remove : False
-Single connective neighborhood : भूस्खलन
-Probability : (1.4289931509179074e-05, 0.99998571006849046)
-----------------------------------------------------------------------------------------------------
-वर्षा Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : No
-Single connective : की वजह से
-Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
-Arg1num : 7
-Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
-Arg2num : 7
-remove : False
-Single connective neighborhood : वर्षा
-Probability : (0.00011153430966650815, 0.99988846569033207)
-----------------------------------------------------------------------------------------------------
-दी Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : दी
-Probability : (0.99987542069596691, 0.00012457930403388809)
-----------------------------------------------------------------------------------------------------
-आदेश Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : No
-Single connective : के बाद
-Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
-Arg1num : 1
-Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
-Arg2num : 1
-remove : False
-Single connective neighborhood : आदेश
-Probability : (0.00022113714401721099, 0.99977886285598416)
-----------------------------------------------------------------------------------------------------
-बचाने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : Yes
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : बचाने
-Probability : (0.91303242971812837, 0.086967570281870618)
-----------------------------------------------------------------------------------------------------
-लिया Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
 sentenceNum : 3
 classLabel : No
-classifiedAs : Yes
-Single connective : उस पर
+classifiedAs : 
+Single connective : और
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : लिया
-Probability : (0.87014808097192275, 0.12985191902807625)
-----------------------------------------------------------------------------------------------------
-में Frequency: 1
+Single connective neighborhood : गया
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : No
-Single connective : आगे
-Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
-Arg1num : 8
-Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
-Arg2num : 9
-remove : False
-Single connective neighborhood : में
-Probability : (6.3039125162459882e-05, 0.99993696087483608)
-----------------------------------------------------------------------------------------------------
-निर्णय Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के बावजूद
-Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
-Arg1num : 0
-Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
-Arg2num : 0
-remove : False
-Single connective neighborhood : निर्णय
-Probability : (5.1600823178036688e-05, 0.99994839917682243)
-----------------------------------------------------------------------------------------------------
-गए Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 20
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 10
 classLabel : No
-classifiedAs : Yes
-Single connective : या
+classifiedAs : 
+Single connective : तो
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : गए
-Probability : (0.99860120384043927, 0.0013987961595603321)
+Single connective neighborhood : गया
 ----------------------------------------------------------------------------------------------------
-सहेजने Frequency: 1
+हैं Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : No
-Single connective : के लिए
-Arg1 : योजना तैयार की जा रही है ।
-Arg1num : 0
-Arg2 : अमरनाथ गुफा में प्राकृतिक रूप से बने हिमलिंग को छह महीनों तक सहेजने
-Arg2num : 0
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : लेकिन
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
-Single connective neighborhood : सहेजने
-Probability : (5.0812356623945294e-05, 0.99994918764337659)
-----------------------------------------------------------------------------------------------------
-पाने Frequency: 1
+Single connective neighborhood : हैं
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हैं
+----------------------------------------------------------------------------------------------------
+कि Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : 
+Single connective : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg1num : 8
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+Arg2num : 13
+remove : False
+Single connective neighborhood : कि
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8
 sentenceNum : 4
 classLabel : Yes
-classifiedAs : No
-Single connective : के कारण
-Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
-Arg1num : 4
-Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
+classifiedAs : 
+Single connective : इससे
+Arg1 : देश में बच्चों को लेकर इस तरह की स्थितियाँ मौजूद हैं ।
+Arg1num : 3
+Arg2 : देश की बदनामी होती है ।
 Arg2num : 4
 remove : False
-Single connective neighborhood : पाने
-Probability : (0.00098016984925860823, 0.99901983015074081)
+Single connective neighborhood : कि
 ----------------------------------------------------------------------------------------------------
 से Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
-classifiedAs : No
+classifiedAs : 
 Single connective : कुछ दिनों पहले ही
 Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
 Arg1num : 4
@@ -2233,4 +964,577 @@ Arg2 : । बिहार के दरभंगा जेल से बाढ़ 
 Arg2num : 7
 remove : False
 Single connective neighborhood : से
-Probability : (0.0073668028720912859, 0.99263319712790887)
+----------------------------------------------------------------------------------------------------
+हुए Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हुए
+----------------------------------------------------------------------------------------------------
+पाने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : 
+Single connective : के कारण
+Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
+Arg1num : 4
+Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
+Arg2num : 4
+remove : False
+Single connective neighborhood : पाने
+----------------------------------------------------------------------------------------------------
+गए Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गए
+----------------------------------------------------------------------------------------------------
+सहेजने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : योजना तैयार की जा रही है ।
+Arg1num : 0
+Arg2 : अमरनाथ गुफा में प्राकृतिक रूप से बने हिमलिंग को छह महीनों तक सहेजने
+Arg2num : 0
+remove : False
+Single connective neighborhood : सहेजने
+----------------------------------------------------------------------------------------------------
+निर्णय Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg1num : 0
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+Arg2num : 0
+remove : False
+Single connective neighborhood : निर्णय
+----------------------------------------------------------------------------------------------------
+वर्षा Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
+Arg1num : 7
+Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
+Arg2num : 7
+remove : False
+Single connective neighborhood : वर्षा
+----------------------------------------------------------------------------------------------------
+भूस्खलन Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : भारी नुकसान पहुँचा है
+Arg1num : 9
+Arg2 : केदारनाथ यात्रा मार्ग में रुद्रप्रयाग जिले के अगस्त मुनि इलाके में भूस्खलन
+Arg2num : 9
+remove : False
+Single connective neighborhood : भूस्खलन
+----------------------------------------------------------------------------------------------------
+कूदने Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : घटनास्थल पर मौजूद लोगों ने बताया कि ऊपर से कूदने
+Arg1num : 20
+Arg2 : संजय नामक कारीगर के पैरों में चोट आई ।
+Arg2num : 20
+remove : False
+Single connective neighborhood : कूदने
+----------------------------------------------------------------------------------------------------
+आग Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : मकान नंबर 1993ए निवासी मंगल सेन जैन तथा 1993बी निवासी राजीव जैन ने बताया कि आग
+Arg1num : 23
+Arg2 : उनके मकानों की दीवारों में दरार आ गई और ऊपरी हिस्सा टूट गया ।
+Arg2num : 23
+remove : False
+Single connective neighborhood : आग
+----------------------------------------------------------------------------------------------------
+50 Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : 
+Single connective : तथा
+Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा और और गंभीर रूप से घायलों को 50 - 50 तथा
+Arg1num : 10
+Arg2 : मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
+Arg2num : 10
+remove : False
+Single connective neighborhood : 50
+----------------------------------------------------------------------------------------------------
+मौत Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 32
+classLabel : Yes
+classifiedAs : 
+Single connective : तथा
+Arg1 : इस संबंध में फैक्टरी मालिक राकेश ग्रोवर तथा ठेकेदार के खिलाफ लापरवाही से हुई मौत
+Arg1num : 32
+Arg2 : आगजनी की धारा 304ए तथा 337 के तहत मामला दर्ज किया गया है ।
+Arg2num : 32
+remove : False
+Single connective neighborhood : मौत
+----------------------------------------------------------------------------------------------------
+मुआवजा Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : 
+Single connective : और
+Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा
+Arg1num : 10
+Arg2 : गंभीर रूप से घायलों को 50 - 50 तथा तथा मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
+Arg2num : 10
+remove : False
+Single connective neighborhood : मुआवजा
+----------------------------------------------------------------------------------------------------
+लगीं Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 22
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लगीं
+----------------------------------------------------------------------------------------------------
+में Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
+Arg1num : 8
+Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
+Arg2num : 9
+remove : False
+Single connective neighborhood : में
+----------------------------------------------------------------------------------------------------
+लिया Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : उस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लिया
+----------------------------------------------------------------------------------------------------
+आदेश Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
+Arg1num : 1
+Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
+Arg2num : 1
+remove : False
+Single connective neighborhood : आदेश
+----------------------------------------------------------------------------------------------------
+दी Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : दी
+----------------------------------------------------------------------------------------------------
+हो Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हो
+----------------------------------------------------------------------------------------------------
+किया Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : तो
+Arg1 : प्रशांत ने इसका विरोध किया
+Arg1num : 9
+Arg2 : उन्होंने उसे जमकर पीटा
+Arg2num : 9
+remove : False
+Single connective neighborhood : किया
+----------------------------------------------------------------------------------------------------
+जताई Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : 
+Single connective : तो
+Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
+Arg1num : 13
+Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
+Arg2num : 13
+remove : False
+Single connective neighborhood : जताई
+----------------------------------------------------------------------------------------------------
+बीतने Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : एक साल से ज्यादा समय बीतने
+Arg1num : 7
+Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
+Arg2num : 7
+remove : False
+Single connective neighborhood : बीतने
+----------------------------------------------------------------------------------------------------
+सकने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : सकने
+----------------------------------------------------------------------------------------------------
+रखने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
+Arg1num : 0
+Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
+Arg2num : 0
+remove : False
+Single connective neighborhood : रखने
+----------------------------------------------------------------------------------------------------
+बयान Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
+Arg1num : 2
+Arg2 : वाजपेयी के बयान
+Arg2num : 2
+remove : False
+Single connective neighborhood : बयान
+----------------------------------------------------------------------------------------------------
+प्रतियोगिता Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : प्रतियोगिता
+----------------------------------------------------------------------------------------------------
+की Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : की
+----------------------------------------------------------------------------------------------------
+हुई Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हुई
+----------------------------------------------------------------------------------------------------
+जाएगा Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : लेकिन
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : जाएगा
+----------------------------------------------------------------------------------------------------
+पूछा Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Yes
+classifiedAs : 
+Single connective : तो
+Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
+Arg1num : 19
+Arg2 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
+Arg2num : 19
+remove : False
+Single connective neighborhood : पूछा
+----------------------------------------------------------------------------------------------------
+सक्रियता Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : Yes
+classifiedAs : 
+Single connective : के कारण
+Arg1 : अर्थव्यवस्था में नकदी की कमी की समस्या काफी हद तक दूर हो गई है ।
+Arg1num : 5
+Arg2 : पिछले एक महीने में रिजर्व बैंक की सक्रियता
+Arg2num : 5
+remove : False
+Single connective neighborhood : सक्रियता
+----------------------------------------------------------------------------------------------------
+बनाने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
+Arg1num : 0
+Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
+Arg2num : 0
+remove : False
+Single connective neighborhood : बनाने
+----------------------------------------------------------------------------------------------------
+जवान Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : Yes
+classifiedAs : 
+Single connective : जैसे ही
+Arg1 : जम्मू - कश्मीर पुलिस के एसओजी दस्ते के जवान इमारत में दाखिल हुए
+Arg1num : 10
+Arg2 : दूसरे आतंकी ने फायरिंग शुरू कर दी
+Arg2num : 10
+remove : False
+Single connective neighborhood : जवान
+----------------------------------------------------------------------------------------------------
+फटने Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 16
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : कमरे में हथगोला फटने
+Arg1num : 16
+Arg2 : आतंकी फायरिंग करता हुआ बाहर निकला
+Arg2num : 16
+remove : False
+Single connective neighborhood : फटने
+----------------------------------------------------------------------------------------------------
+फेंके Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 15
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : फेंके
+----------------------------------------------------------------------------------------------------
+होगा Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : होगा
+----------------------------------------------------------------------------------------------------
+करेगा Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करेगा
+----------------------------------------------------------------------------------------------------
+जोड़ने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : केंन्द्र अब राज्यों की लगाम कसने की तैयारी में है ।
+Arg1num : 1
+Arg2 : प्रधानमंत्री ग्राम सड़क योजना को ' भारत निर्माण ' योजना के दायरे में लाने के बाद अगले चार सालों में सभी गाँवों को सड़कों से जोड़ने
+Arg2num : 1
+remove : False
+Single connective neighborhood : जोड़ने
+----------------------------------------------------------------------------------------------------
+था Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : था
+----------------------------------------------------------------------------------------------------
+जाए Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : जाए
+----------------------------------------------------------------------------------------------------
+चाहिए Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : चाहिए
+----------------------------------------------------------------------------------------------------
+खुलेगा Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : खुलेगा

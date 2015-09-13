@@ -57,3 +57,34 @@ def hasChildRelation(nodeName, nodeDict,childRelationTarget):
 		if(nodeDict[child].nodeRelation==childRelationTarget):
 			return True
 	return False
+def getPathToRoot(node,nodeDict):
+	path=[]
+	while(1):
+		path.append(node.nodeName)
+		parent=node.nodeParent
+		if(parent=="None"):
+			break
+		node=nodeDict[parent]
+	return path
+def getCommonParent(node1,node2,nodeDict):
+	path1=getPathToRoot(node1,nodeDict)
+	path2=getPathToRoot(node2,nodeDict)
+	i=len(path1)-1
+	j=len(path2)-1
+	if(i==0):
+		print "commonparent-node1"
+		return node1.nodeName
+	elif(j==0):
+		print "commonparent-node2"
+		return node2.nodeName
+	commonParent="None"
+	while(i>=0 and j>=0):
+		if(path1[i]==path2[j]):
+			commonParent=path1[i]
+		else:
+			break
+		i-=1
+		j-=1
+	print "commonparent",commonParent
+	return commonParent
+

@@ -96,12 +96,16 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 #			for j in range(i,i+len(conn.split())):
 #				print wordList[j].chunkNum,
 #			print "\n"
-	#		if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)  and (i[1]==len(wordList)-1 or not wordList[i[1]+1].conn)):
-			if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)):
-#					print "lol error",conn
+#			if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)):
+			if(wordList[i[0]].conn):
+			#if(wordList[i[0]].conn and (i[0]==0 or not wordList[i[0]-1].conn)  and (i[1]==len(wordList)-1 or not wordList[i[1]+1].conn)):
 				if(i[1]!=len(wordList)-1 and wordList[i[1]+1].conn):
 					print "lol error",conn
-				positiveSetSingle.append(convert_span(i[0],conn))
+				if((i[0]!=0 and wordList[i[0]-1].conn)  or (i[1]!=len(wordList)-1 and wordList[i[1]+1].conn)):
+					print "conned",i[0]==0,conn,wordList[i[0]-1].conn,i[1]==len(wordList)-1,wordList[i[1]+1].conn
+#					print "lol error",conn
+				else:
+					positiveSetSingle.append(convert_span(i[0],conn))
 #				print "Yes",wordList[i].sense
 			else:
 				negativeSetSingle.append(convert_span(i[0],conn))
@@ -124,32 +128,30 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 
 	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
 def genFeatureSingleConn(conn,label,discourseFile):
+		
 		sentenceList=discourseFile.sentenceList
 		wordList=discourseFile.globalWordList
-		chunk=getChunk(conn[0],wordList,sentenceList)
-		prevChunk=sentenceList[chunk.sentenceNum].chunkList[chunk.chunkNum-1]
-		nxtChunk=sentenceList[chunk.sentenceNum].chunkList[chunk.chunkNum+1]
-		print "hh",prevChunk.nodeName,nxtChunk.nodeName
+		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
+		
+		
+		
+		chunk=feature.getChunkInfo(wordList[conn[0]],0)
+		prevChunk=feature.getChunkInfo(wordList[conn[0]],-1)
+		nxtChunk=feature.getChunkInfo(wordList[conn[-1]],1)
+#		print "hh",prevChunk.nodeName,nxtChunk.nodeName
+		
 		node=sentenceList[chunk.sentenceNum].nodeDict[chunk.nodeName]
 		nodeDict=sentenceList[chunk.sentenceNum].nodeDict
-		prevNode=sentenceList[prevChunk.sentenceNum].nodeDict[prevChunk.nodeName]
-		nxtNode=sentenceList[nxtChunk.sentenceNum].nodeDict[nxtChunk.nodeName]
-		if(getSpan(conn,wordList)==u'\u0924\u094b'):
-			print discourseFile.rawFileName,wordList[conn[0]].sentenceNum
-			print "get to",label
-			print node.nodeRelation
-			print node.getChunkName(node.nodeParent)
-			for child in node.childList:
-				print node.getChunkName(child),nodeDict[child].nodeRelation,
-			if(len(node.childList)==0):
-				print "None"
-			else:
-				print ""
-		print "single conn","-"*30,node.getChunkName(nxtNode.nodeRelation),label
-		for p in conn:
-			print discourseFile.globalWordList[p].word,
-		print "\n"
-		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
+		
+		if(prevChunk!=None):
+			prevNode=sentenceList[prevChunk.sentenceNum].nodeDict[prevChunk.nodeName]
+		else:
+		 	prevNode=None
+		if(nxtChunk!=None):
+			nxtNode=sentenceList[nxtChunk.sentenceNum].nodeDict[nxtChunk.nodeName]
+		else:
+		 	nxtNode=None
+		
 		feature.wordFeature(conn)
 		feature.tagFeature(conn)
 #		feature.nodeFeature(node.nodeRelation,"nodeRelationSet")
@@ -194,12 +196,28 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		l2=feature.tok7tFeature(conn,node,nodeDict)
 		feature.featureVector.extend(l1)
 		feature.featureVector.extend(l2)
+		feature.rightWordLocation(conn,node,nxtNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+		print "rightWordLocation",feature.featureList[-1][1]
+#		commonParent=feature.getCommonParent(node,prevNode,nxtNode,nodeDict)
+#		print "commonParent",commonParent
+#		feature.featureList.append(("nodeParentRelation",node.nodeRelation))
+#		if(prevNode!=None):
+#			feature.featureList.append(("nodePrevParentRelation",prevNode.nodeRelation))
+#		else:	
+#			feature.featureList.append(("nodePrevParentRelation","None"))
+#		if(nxtNode!=None):
+#			feature.featureList.append(("nodeNextParentRelation",nxtNode.nodeRelation))
+#		else:	
+#			feature.featureList.append(("nodeNextParentRelation","None"))
+
 
 		d={}
 		for f in feature.featureList:
 			d[f[0]]=f[1]
 		
+		write_conn_info(conn,discourseFile,label)
 			
+		return feature
 			
 			
 		li2=[
@@ -215,7 +233,6 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		for i in li2:
 			feature.featureList.append((i[0]+"--"+i[1],str(d[i[0]])+"__"+str(d[i[1]])))
 
-		return feature
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","tagNeighbor_2","tagNeighbor_-2","chunkNeighbor_2","chunkNeighbor_-2"]
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","chunkNeighbor_2"]
 		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1"]
@@ -557,7 +574,7 @@ for i in remove:
 	if(not getattr(f,"remove")):
 		print "useless fellow :/"
 		print getattr(f,"Single connective")
-	#FD1.write(str(i)+"\n")
+#	FD1.write(str(i)+"\n")
 	
 FD.close()
 #FD1.close()
@@ -568,9 +585,14 @@ FD2.close()
 
 fcollec=[]
 
+
+fsNum=0
+createDirectory("./processedData/featureCollection/")
 for fs in featureCollectionSingle:
-	print "f1",fs.featureList
-	fcollec.append((fs.featureList,fs.classLabel))
+#	print "f1",fs.featureList
+	fcollec.append((fsNum,fs.featureList,fs.classLabel))
+	exportModel("./processedData/featureCollection/"+str(fsNum),featureCollectionDescSingle[fsNum])
+	fsNum+=1
 exportModel("./fList",fcollec)
 
 
