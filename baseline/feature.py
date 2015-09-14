@@ -299,9 +299,30 @@ class Feature():
 			commonParent2="NoCommonParentLast"
 		else:
 			commonParent2=getCommonParent(nodeNext,node,nodeDict)
-		feature.featureList.append(("commonParentPrev",node.getChunkName(commonParent[0])))
-		feature.featureList.append(("commonParentNext",node.getChunkName(commonParent[1])))
+		self.featureList.append(("commonParentPrev",node.getChunkName(commonParent1)))
+		self.featureList.append(("commonParentNext",node.getChunkName(commonParent2)))
 		return (commonParent1,commonParent2)
+	def dependencyPathToRoot(self,node,nodeDict):
+		path=getPathToRoot(node,nodeDict)
+		fullPath="".join(nodeDict[i].nodeRelation+"//" for i in path)
+		shortPath=""
+		vgf=0
+		for i in range(0,8):
+			try:
+				if(path[i][:2]=="VG"):
+					vgf+=1
+				if( i!= len(path)-1 and path[i][:2]==path[i+1][:2]):
+					print "skipping"
+					continue
+				shortPath=shortPath+nodeDict[path[i]].nodeRelation+"\\"
+			except:
+				break
+			if(vgf==2):
+				print "deplen broke out"
+				break
+		self.featureList.append(("dependencyPathToRoot",shortPath))
+		
+		return (shortPath,fullPath)
 	def rightWordLocation(self,conn,node,nodeNext,nodeDict,a,b):
 #conn is already last word
 	  	if(conn[-1]+1==len(self.globalWordList)-1):
@@ -329,11 +350,53 @@ class Feature():
 			self.featureList.append(("rightWordLocation","connPartofnextTree"))
 			return
 		if(commonParent==node.nodeParent):
-			self.featureList.append(("rightWordLocation","indirectParent"))
+			self.featureList.append(("rightWordLocation","indirectConnParent"))
 			return
+		if(commonParent==nodeNext.nodeParent):
+			self.featureList.append(("rightWordLocation","indirectNextParent"))
+			return
+
 # common parent is root but only single VGF tree
 #common parent is root but conn has another VG* as tree
 		self.featureList.append(("rightWordLocation","NoIdea"))
+		print "no idea",a,b
+		return
+	def leftWordLocation(self,conn,node,nodePrev,nodeDict,a,b):
+#conn is already last word
+	  	if(conn[0]==0 or self.globalWordList[conn[0]].sentenceNum!=self.globalWordList[conn[0]-1].sentenceNum):
+			self.featureList.append(("leftWordLocation","first"))
+			return
+	  	word=self.globalWordList[conn[0]]
+	  	wordPrev=self.globalWordList[conn[0]-1]
+#same node
+		if(word.chunkNum==wordPrev.chunkNum):
+			self.featureList.append(("leftWordLocation","sameNode"))
+			return
+	  	if(nodePrev==None):
+			print "ERROR"
+#same parent i.e commonparent should be connective parent
+		if(node.nodeParent==nodePrev.nodeParent):
+			self.featureList.append(("leftWordLocation","directParent"))
+			return
+		commonParent=getCommonParent(node,nodePrev,nodeDict)
+# word is in connective tree
+		if(commonParent==node.nodeName):
+			self.featureList.append(("leftWordLocation","prevPartofConnTree"))
+			return
+# connective is in word tree
+		if(commonParent==nodePrev.nodeName):
+			self.featureList.append(("leftWordLocation","connPartofPrevTree"))
+			return
+		if(commonParent==node.nodeParent):
+			self.featureList.append(("leftWordLocation","indirectConnParent"))
+			return
+		if(commonParent==nodePrev.nodeParent):
+			self.featureList.append(("leftWordLocation","indirectPrevParent"))
+			return
+
+# common parent is root but only single VGF tree
+#common parent is root but conn has another VG* as tree
+		self.featureList.append(("leftWordLocation","NoIdea"))
 		print "no idea",a,b
 		return
 
@@ -393,6 +456,7 @@ class Feature():
 		self.featureVector.append(0)
 		return [0]
 	def aurFeature2(self,conn,nodeName,nodeDict,c,a,b):
+		d=getSpan(conn,self.globalWordList)
 		self.description=self.description+" aurFeature2"
 		if(self.globalWordList[conn[0]].word != u'\u0914\u0930'):
 			self.featureVector.append(0)
@@ -404,20 +468,51 @@ class Feature():
 			if("VG" in nodeDict[nodeName].getChunkName(child)):
 				childVGF+=1
 		if(childVGF==2):
-			print "aurFeature2 yes",c,a,b
+			print "aurFeature2 yes",c,d,a,b
 			self.featureVector.append(1)
 			self.featureList.append(("aurFeature2",1))
 			return [1]
 		elif(childVGF==1):
 			for child in nodeDict[nodeName].childList:
 				if(nodeDict[nodeName].getChunkName(child)=="CCP" and hasChild(child,nodeDict,"VG",False)>0):
-					print "aurFeature2 yes",c,a,b
+					print "aurFeature2 yes",c,d,a,b
 					self.featureVector.append(1)
 					self.featureList.append(("aurFeature2",1))
 					return [1]
-		print "aurFeature2 no",c,a,b,childVGF
+		print "aurFeature2 no",c,d,a,b,childVGF
 		self.featureVector.append(0)
 		self.featureList.append(("aurFeature2",0))
+		return [0]
+	def tathaFeature2(self,conn,nodeName,nodeDict,c,a,b):
+		d=getSpan(conn,self.globalWordList)
+		self.description=self.description+" tathaFeature2"
+		if(self.globalWordList[conn[0]].word != u'\u0924\u0925\u093e'):
+			self.featureVector.append(0)
+			self.featureList.append(("tathaFeature2",0))
+			return [0]
+		qc=False
+		if((self.globalWordList[conn[0]-1].wordTag=="QC" or self.globalWordList[conn[0]-2].wordTag=="QC"or self.globalWordList[conn[0]-3].wordTag=="QC") and (self.globalWordList[conn[0]+1].wordTag=="QC" or self.globalWordList[conn[0]+2].wordTag=="QC"or self.globalWordList[conn[0]+3].wordTag=="QC")):
+			qc=True
+		childList=nodeDict[nodeName].childList
+		childVGF=0
+		for child in nodeDict[nodeName].childList:
+			if("VG" in nodeDict[nodeName].getChunkName(child)):
+				childVGF+=1
+		if(childVGF==2 and not qc):
+			print "tathaFeature2 yes",c,d,a,b,qc
+			self.featureVector.append(1)
+			self.featureList.append(("tathaFeature2",1))
+			return [1]
+		elif(childVGF==1 and not qc):
+			for child in nodeDict[nodeName].childList:
+				if(nodeDict[nodeName].getChunkName(child)=="CCP" and hasChild(child,nodeDict,"VG",False)>0):
+					print "tathaFeature2 yes",c,d,a,b,qc
+					self.featureVector.append(1)
+					self.featureList.append(("tathaFeature2",1))
+					return [1]
+		print "tathaFeature2 no",c,d,a,b,qc,childVGF
+		self.featureVector.append(0)
+		self.featureList.append(("tathaFeature2",0))
 		return [0]
 	def parFeature(self,conn):
 		self.description=self.description+" parFeature"

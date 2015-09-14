@@ -265,6 +265,18 @@ Arg2num : None
 remove : False
 Single connective neighborhood : सकने
 ------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करने
+------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
 sentenceNum : 8
 classLabel : No
@@ -300,18 +312,6 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : नहीं
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : प्रतियोगिता
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 10
@@ -817,7 +817,7 @@ Arg2num : None
 remove : False
 Single connective neighborhood : खुलेगा
 ----------------------------------------------------------------------------------------------------
-Yes Frequency: 51
+Yes Frequency: 50
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
 sentenceNum : 8
@@ -1095,18 +1095,6 @@ Arg2num : 7
 remove : False
 Single connective neighborhood : बीतने
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg1num : 13
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-Arg2num : 13
-remove : False
-Single connective neighborhood : आने
-------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
 sentenceNum : 0
 classLabel : Yes
@@ -1179,6 +1167,18 @@ Arg2num : 0
 remove : False
 Single connective neighborhood : देने
 ------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : 
+Single connective : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg1num : 11
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+Arg2num : 12
+remove : False
+Single connective neighborhood : ।
+------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 8
 classLabel : Yes
@@ -1238,18 +1238,6 @@ Arg2 : पिछले एक महीने में रिजर्व ब�
 Arg2num : 5
 remove : False
 Single connective neighborhood : सक्रियता
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
-Arg1num : 0
-Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
-Arg2num : 0
-remove : False
-Single connective neighborhood : बनाने
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
 sentenceNum : 11

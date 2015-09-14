@@ -535,80 +535,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
-की वजह से Frequency: 6
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
-Arg1num : 7
-Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
-Arg2num : 7
-remove : False
-Single connective neighborhood : वर्षा
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : भारी नुकसान पहुँचा है
-Arg1num : 9
-Arg2 : केदारनाथ यात्रा मार्ग में रुद्रप्रयाग जिले के अगस्त मुनि इलाके में भूस्खलन
-Arg2num : 9
-remove : False
-Single connective neighborhood : भूस्खलन
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 20
-classLabel : Yes
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : घटनास्थल पर मौजूद लोगों ने बताया कि ऊपर से कूदने
-Arg1num : 20
-Arg2 : संजय नामक कारीगर के पैरों में चोट आई ।
-Arg2num : 20
-remove : False
-Single connective neighborhood : कूदने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 23
-classLabel : Yes
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : मकान नंबर 1993ए निवासी मंगल सेन जैन तथा 1993बी निवासी राजीव जैन ने बताया कि आग
-Arg1num : 23
-Arg2 : उनके मकानों की दीवारों में दरार आ गई और ऊपरी हिस्सा टूट गया ।
-Arg2num : 23
-remove : False
-Single connective neighborhood : आग
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : सकने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : प्रतियोगिता
-----------------------------------------------------------------------------------------------------
 आगे Frequency: 5
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
@@ -671,7 +597,69 @@ Arg2num : 18
 remove : False
 Single connective neighborhood : उन्होंने
 ----------------------------------------------------------------------------------------------------
-के लिए Frequency: 5
+की वजह से Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
+Arg1num : 7
+Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
+Arg2num : 7
+remove : False
+Single connective neighborhood : वर्षा
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : भारी नुकसान पहुँचा है
+Arg1num : 9
+Arg2 : केदारनाथ यात्रा मार्ग में रुद्रप्रयाग जिले के अगस्त मुनि इलाके में भूस्खलन
+Arg2num : 9
+remove : False
+Single connective neighborhood : भूस्खलन
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 20
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : घटनास्थल पर मौजूद लोगों ने बताया कि ऊपर से कूदने
+Arg1num : 20
+Arg2 : संजय नामक कारीगर के पैरों में चोट आई ।
+Arg2num : 20
+remove : False
+Single connective neighborhood : कूदने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 23
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : मकान नंबर 1993ए निवासी मंगल सेन जैन तथा 1993बी निवासी राजीव जैन ने बताया कि आग
+Arg1num : 23
+Arg2 : उनके मकानों की दीवारों में दरार आ गई और ऊपरी हिस्सा टूट गया ।
+Arg2num : 23
+remove : False
+Single connective neighborhood : आग
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : सकने
+----------------------------------------------------------------------------------------------------
+के लिए Frequency: 4
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
 sentenceNum : 0
@@ -696,18 +684,6 @@ Arg2 : अतिरिक्त संसाधन जुटाने की आ
 Arg2num : 0
 remove : False
 Single connective neighborhood : देने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
-Arg1num : 0
-Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
-Arg2num : 0
-remove : False
-Single connective neighborhood : बनाने
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
 sentenceNum : 1
@@ -760,16 +736,16 @@ remove : False
 Single connective neighborhood : मौत
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Yes
+sentenceNum : 4
+classLabel : No
 classifiedAs : 
 Single connective : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg1num : 13
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-Arg2num : 13
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
-Single connective neighborhood : आने
+Single connective neighborhood : करने
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
 sentenceNum : 12
@@ -933,6 +909,44 @@ Arg2num : 2
 remove : False
 Single connective neighborhood : नहीं
 ----------------------------------------------------------------------------------------------------
+इस संबंध में Frequency: 3
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
+Arg1num : 1
+Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
+Arg2num : 2
+remove : False
+Single connective neighborhood : ने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 23
+classLabel : No
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
 के कारण Frequency: 3
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
@@ -1040,44 +1054,6 @@ sentenceNum : 5
 classLabel : No
 classifiedAs : 
 Single connective : बताया जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-इस संबंध में Frequency: 3
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : इस संबंध में
-Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
-Arg1num : 1
-Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
-Arg2num : 2
-remove : False
-Single connective neighborhood : ने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : इस संबंध में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 23
-classLabel : No
-classifiedAs : 
-Single connective : इस संबंध में
 Arg1 : None
 Arg1num : None
 Arg2 : None
@@ -1241,20 +1217,6 @@ Arg2num : 12
 remove : False
 Single connective neighborhood : ,
 ----------------------------------------------------------------------------------------------------
-कुछ दिनों पहले ही Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : कुछ दिनों पहले ही
-Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
-Arg1num : 4
-Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2num : 7
-remove : False
-Single connective neighborhood : से
-----------------------------------------------------------------------------------------------------
 के बावजूद Frequency: 1
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
@@ -1268,6 +1230,20 @@ Arg2 : अमेरिका के पाकिस्तान को एफ - 
 Arg2num : 0
 remove : False
 Single connective neighborhood : निर्णय
+----------------------------------------------------------------------------------------------------
+उस पर Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : उस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लिया
 ----------------------------------------------------------------------------------------------------
 वहीं पर Frequency: 1
 ------
@@ -1283,19 +1259,19 @@ Arg2num : None
 remove : False
 Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
-उस पर Frequency: 1
+कुछ दिनों पहले ही Frequency: 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : No
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
 classifiedAs : 
-Single connective : उस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
+Single connective : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1num : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2num : 7
 remove : False
-Single connective neighborhood : लिया
+Single connective neighborhood : से
 ----------------------------------------------------------------------------------------------------
 वैसे Frequency: 1
 ------
@@ -1422,6 +1398,20 @@ Arg2 : मधेपुरा से राजद के सांसद पप�
 Arg2num : 13
 remove : False
 Single connective neighborhood : कि
+----------------------------------------------------------------------------------------------------
+समझा जाता है कि Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : 
+Single connective : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg1num : 11
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+Arg2num : 12
+remove : False
+Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
 वजह Frequency: 1
 ------

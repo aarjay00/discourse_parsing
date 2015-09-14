@@ -385,44 +385,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : नहीं
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 3
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : प्रतियोगिता
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : 
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : 
-Single connective : जिससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 3
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -499,84 +461,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : करेगा
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
-Arg1num : 7
-Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
-Arg2num : 8
-remove : False
-Single connective neighborhood : ने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हुए
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : Yes
-classifiedAs : 
-Single connective : और
-Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
-Arg1num : 14
-Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
-Arg2num : 14
-remove : False
-Single connective neighborhood : देने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : No
-classifiedAs : 
-Single connective : इससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-sentenceNum : 4
-classLabel : Yes
-classifiedAs : 
-Single connective : के कारण
-Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
-Arg1num : 4
-Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
-Arg2num : 4
-remove : False
-Single connective neighborhood : पाने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : योजना तैयार की जा रही है ।
-Arg1num : 0
-Arg2 : अमरनाथ गुफा में प्राकृतिक रूप से बने हिमलिंग को छह महीनों तक सहेजने
-Arg2num : 0
-remove : False
-Single connective neighborhood : सहेजने
-----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -629,6 +513,84 @@ Arg2num : 5
 remove : False
 Single connective neighborhood : करने
 ----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1num : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2num : 8
+remove : False
+Single connective neighborhood : ने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हुए
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : 
+Single connective : के कारण
+Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
+Arg1num : 4
+Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
+Arg2num : 4
+remove : False
+Single connective neighborhood : पाने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : योजना तैयार की जा रही है ।
+Arg1num : 0
+Arg2 : अमरनाथ गुफा में प्राकृतिक रूप से बने हिमलिंग को छह महीनों तक सहेजने
+Arg2num : 0
+remove : False
+Single connective neighborhood : सहेजने
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : 
+Single connective : और
+Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
+Arg1num : 14
+Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
+Arg2num : 14
+remove : False
+Single connective neighborhood : देने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : इससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8 Frequency: 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
@@ -654,6 +616,32 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : गया
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : जिससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 Frequency: 2
 ------
@@ -733,6 +721,32 @@ Arg2num : None
 remove : False
 Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : 
+Single connective : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg1num : 11
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+Arg2num : 12
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : उधर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8 Frequency: 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
@@ -758,32 +772,6 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
-Arg1num : 0
-Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
-Arg2num : 0
-remove : False
-Single connective neighborhood : बनाने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Yes
-classifiedAs : 
-Single connective : से
-Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
-Arg1num : 11
-Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
-Arg2num : 11
-remove : False
-Single connective neighborhood : जाने
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8 Frequency: 2
 ------
@@ -993,48 +981,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : चाहिए
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg1num : 13
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-Arg2num : 13
-remove : False
-Single connective neighborhood : आने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : कुछ दिनों पहले ही
-Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
-Arg1num : 4
-Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2num : 7
-remove : False
-Single connective neighborhood : से
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 20
-classLabel : No
-classifiedAs : 
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : गए
-----------------------------------------------------------------------------------------------------
 ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8 Frequency: 1
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
@@ -1062,6 +1008,48 @@ Arg2 : प्रधानमंत्री ने परमाणु ऊर्�
 Arg2num : 2
 remove : False
 Single connective neighborhood : ने
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1num : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2num : 7
+remove : False
+Single connective neighborhood : से
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करने
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गए
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 Frequency: 1
 ------
@@ -1301,20 +1289,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : No
-classifiedAs : 
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -1398,6 +1372,20 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : 
+Single connective : से
+Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
+Arg1num : 11
+Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
+Arg2num : 11
+remove : False
+Single connective neighborhood : जाने
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8 Frequency: 1
 ------

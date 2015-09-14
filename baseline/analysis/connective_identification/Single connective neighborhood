@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------
-। Frequency: 33
+। Frequency: 34
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 3
@@ -214,6 +214,18 @@ Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 12
+classLabel : Yes
+classifiedAs : 
+Single connective : समझा जाता है कि
+Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
+Arg1num : 11
+Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
+Arg2num : 12
 remove : False
 Single connective neighborhood : ।
 ------
@@ -581,7 +593,7 @@ Arg2num : 12
 remove : False
 Single connective neighborhood : ,
 ----------------------------------------------------------------------------------------------------
-करने Frequency: 5
+करने Frequency: 6
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
 sentenceNum : 5
@@ -604,6 +616,18 @@ Arg1 : पाकिस्तान के नियंत्रण वाले 
 Arg1num : 6
 Arg2 : सेना में कटौती पर विचार किया जाएगा
 Arg2num : 6
+remove : False
+Single connective neighborhood : करने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 4
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
 Single connective neighborhood : करने
 ------
@@ -821,32 +845,6 @@ Arg2num : 2
 remove : False
 Single connective neighborhood : ने
 ----------------------------------------------------------------------------------------------------
-आने Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तथा
-Arg1 : वैश्विक स्तर पर ब्याज दरों में उछाल आने
-Arg1num : 13
-Arg2 : पिछले कुछ हफ्तों में मुद्रास्फीती बढ़ने के मद्देनजर बजट में लघु बचत दरों को 8 - 8.5 8.5 फीसदी ही रखे जाने की उम्मीद है ।
-Arg2num : 13
-remove : False
-Single connective neighborhood : आने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : के कारण
-Arg1 : । ताजा हिमपात होने से घाटी के तापमान में गिरावट आने
-Arg1num : 1
-Arg2 : लोगों ने गर्म वस्त्र पहनने शुरू कर दिए
-Arg2num : 2
-remove : False
-Single connective neighborhood : आने
-----------------------------------------------------------------------------------------------------
 देने Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -951,19 +949,61 @@ Arg2num : 4
 remove : False
 Single connective neighborhood : कि
 ----------------------------------------------------------------------------------------------------
-से Frequency: 1
+निर्णय Frequency: 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
 classLabel : Yes
 classifiedAs : 
-Single connective : कुछ दिनों पहले ही
-Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
-Arg1num : 4
-Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2num : 7
+Single connective : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg1num : 0
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+Arg2num : 0
 remove : False
-Single connective neighborhood : से
+Single connective neighborhood : निर्णय
+----------------------------------------------------------------------------------------------------
+में Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
+Arg1num : 8
+Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
+Arg2num : 9
+remove : False
+Single connective neighborhood : में
+----------------------------------------------------------------------------------------------------
+लिया Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : उस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लिया
+----------------------------------------------------------------------------------------------------
+आदेश Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
+Arg1num : 1
+Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
+Arg2num : 1
+remove : False
+Single connective neighborhood : आदेश
 ----------------------------------------------------------------------------------------------------
 हुए Frequency: 1
 ------
@@ -993,20 +1033,6 @@ Arg2num : 4
 remove : False
 Single connective neighborhood : पाने
 ----------------------------------------------------------------------------------------------------
-गए Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 20
-classLabel : No
-classifiedAs : 
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : गए
-----------------------------------------------------------------------------------------------------
 सहेजने Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
@@ -1021,19 +1047,61 @@ Arg2num : 0
 remove : False
 Single connective neighborhood : सहेजने
 ----------------------------------------------------------------------------------------------------
-निर्णय Frequency: 1
+से Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
-sentenceNum : 0
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
 classLabel : Yes
 classifiedAs : 
-Single connective : के बावजूद
-Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
-Arg1num : 0
-Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
-Arg2num : 0
+Single connective : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1num : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2num : 7
 remove : False
-Single connective neighborhood : निर्णय
+Single connective neighborhood : से
+----------------------------------------------------------------------------------------------------
+गए Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गए
+----------------------------------------------------------------------------------------------------
+दी Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : दी
+----------------------------------------------------------------------------------------------------
+हो Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हो
 ----------------------------------------------------------------------------------------------------
 वर्षा Frequency: 1
 ------
@@ -1147,76 +1215,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : लगीं
 ----------------------------------------------------------------------------------------------------
-में Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : सुप्रीम कोर्ट का नोटिस स्वीकार न करने का मतलब यह है कि कानून के नियमों के सिद्घांतों की अवहेलना की गई ।
-Arg1num : 8
-Arg2 : विज्ञप्ति में कहा है कि इस कार्यक्रम में नलसार के कुलपति प्रोफेसर रणबीर सिंह ने भी अपने विचार रखे ।
-Arg2num : 9
-remove : False
-Single connective neighborhood : में
-----------------------------------------------------------------------------------------------------
-लिया Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : 
-Single connective : उस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : लिया
-----------------------------------------------------------------------------------------------------
-आदेश Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
-Arg1num : 1
-Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
-Arg2num : 1
-remove : False
-Single connective neighborhood : आदेश
-----------------------------------------------------------------------------------------------------
-दी Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : दी
-----------------------------------------------------------------------------------------------------
-हो Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : 
-Single connective : पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हो
-----------------------------------------------------------------------------------------------------
 किया Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
@@ -1301,20 +1299,6 @@ Arg2num : 2
 remove : False
 Single connective neighborhood : बयान
 ----------------------------------------------------------------------------------------------------
-प्रतियोगिता Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : प्रतियोगिता
-----------------------------------------------------------------------------------------------------
 की Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
@@ -1328,6 +1312,20 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : की
+----------------------------------------------------------------------------------------------------
+आने Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : के कारण
+Arg1 : । ताजा हिमपात होने से घाटी के तापमान में गिरावट आने
+Arg1num : 1
+Arg2 : लोगों ने गर्म वस्त्र पहनने शुरू कर दिए
+Arg2num : 2
+remove : False
+Single connective neighborhood : आने
 ----------------------------------------------------------------------------------------------------
 हुई Frequency: 1
 ------
@@ -1384,20 +1382,6 @@ Arg2 : पिछले एक महीने में रिजर्व ब�
 Arg2num : 5
 remove : False
 Single connective neighborhood : सक्रियता
-----------------------------------------------------------------------------------------------------
-बनाने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
-Arg1num : 0
-Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
-Arg2num : 0
-remove : False
-Single connective neighborhood : बनाने
 ----------------------------------------------------------------------------------------------------
 जवान Frequency: 1
 ------

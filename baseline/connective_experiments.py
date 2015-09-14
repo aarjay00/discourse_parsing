@@ -191,36 +191,67 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		feature.setClassLabel(label)
 		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		feature.aurFeature(conn)
-		feature.parFeature(conn)
+#		feature.parFeature(conn)
 		l1=feature.toRootFeature(conn,node,nodeDict)
 		l2=feature.tok7tFeature(conn,node,nodeDict)
 		feature.featureVector.extend(l1)
 		feature.featureVector.extend(l2)
 		feature.rightWordLocation(conn,node,nxtNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
-		print "rightWordLocation",feature.featureList[-1][1]
+		print "rightWordLocation",feature.featureList[-1][1],label
+#		fullPath,fullPath1=feature.dependencyPathToRoot(node,nodeDict)
+#		print "deplen",len(fullPath.split("\\")),label,fullPath,"---",fullPath1
+
+		feature.tathaFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+#		feature.leftWordLocation(conn,node,prevNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+#		print "leftWordLocation",feature.featureList[-1][1],label
 #		commonParent=feature.getCommonParent(node,prevNode,nxtNode,nodeDict)
 #		print "commonParent",commonParent
-#		feature.featureList.append(("nodeParentRelation",node.nodeRelation))
-#		if(prevNode!=None):
-#			feature.featureList.append(("nodePrevParentRelation",prevNode.nodeRelation))
-#		else:	
-#			feature.featureList.append(("nodePrevParentRelation","None"))
-#		if(nxtNode!=None):
-#			feature.featureList.append(("nodeNextParentRelation",nxtNode.nodeRelation))
-#		else:	
-#			feature.featureList.append(("nodeNextParentRelation","None"))
+		feature.featureList.append(("nodeParentRelation",node.nodeRelation))
+		if(prevNode!=None):
+			feature.featureList.append(("nodePrevParentRelation",prevNode.nodeRelation))
+		else:	
+			feature.featureList.append(("nodePrevParentRelation","None"))
+		if(nxtNode!=None):
+			feature.featureList.append(("nodeNextParentRelation",nxtNode.nodeRelation))
+		else:	
+			feature.featureList.append(("nodeNextParentRelation","None"))
 
 
 		d={}
+
 		for f in feature.featureList:
 			d[f[0]]=f[1]
 		
-		write_conn_info(conn,discourseFile,label)
+
+		if(d["wordFeature"]==u'\u0915\u0947 \u0932\u093f\u090f' and d["nodePrevParentRelation"]in["k7t","k3","fragof"]):
+			print "speeec",label
+			feature.featureList.append(("SpecDependencyFeatureKeLiye","Yes"))
+		else:
+			feature.featureList.append(("SpecDependencyFeatureKeLiye","No"))
+
+#		if(d["wordFeature"]==u'\u0915\u0940 \u0935\u091c\u0939 \u0938\u0947' and d["nodePrevParentRelation"] in ["k5","nmod__k2inv","k2"]):
+#			print "speeec1",label
+#			feature.featureList.append(("SpecDependencyFeatureKiVajahSe","Yes"))
+#		else:
+#			feature.featureList.append(("SpecDependencyFeatureKiVajahSe","No"))
+
+#		if(d["wordFeature"]==u'\u0914\u0930' and d["nodePrevParentRelation"] in ["k1s","nmod","k1","r6"]):
+#			print "speeecaur",label,d["nodePrevParentRelation"]
+#			feature.featureList.append(("SpecDependencyFeatureAur","Yes"))
+#		else:
+#			feature.featureList.append(("SpecDependencyFeatureAur","No"))
+
+#		feature.featureList.append(("wordFeature--nodeRelation",d["wordFeature"]+"__"+node.nodeRelation))
+
+#		write_conn_info(conn,discourseFile,label)
 			
 		return feature
 			
 			
 		li2=[
+		("wordFeature","nodeParentRelation"),
+		("wordFeature","nodePrevParentRelation"),
+		("wordFeature","nodeNextParentRelation"),
 		("wordFeature","tagNeighbor_1"),
 		("wordFeature","tagNeighbor_-1"),
 		("wordFeature","chunkNeighbor_1"),
@@ -232,7 +263,7 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		]
 		for i in li2:
 			feature.featureList.append((i[0]+"--"+i[1],str(d[i[0]])+"__"+str(d[i[1]])))
-
+		return feature
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","tagNeighbor_2","tagNeighbor_-2","chunkNeighbor_2","chunkNeighbor_-2"]
 #		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1","chunkNeighbor_2"]
 		li=["wordFeature","chunkFeature","tagFeature","tagNeighbor_1","tagNeighbor_-1","chunkNeighbor_1","chunkNeighbor_-1"]

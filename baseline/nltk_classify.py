@@ -105,21 +105,28 @@ corpus_l=[]
 corpus_n=[]
 
 print "Features Used"
-featureDesc=""
+featureDesc=[]
+featureDescNot=[]
 fnum=0
 for feat in fcollec[0][1]:
-	print feat[0],
-	featureDesc=featureDesc+" "+feat[0]
+	takeFeature=raw_input("Include:"+feat[0]+"?")
+	if(takeFeature=='y'):
+		featureDesc.append(feat[0])
+	else:
+		featureDescNot.append(feat[0])
 	fnum+=1
 print ""
 print fnum
+
+print "featureDesc ","".join(i+" " for i in featureDesc)
 
 for f in fcollec:
 	d={}
 	label=f[2]
 	features=f[1]
 	for feature in features:
-		d[feature[0]]=feature[1]
+		if(feature[0] in featureDesc):
+			d[feature[0]]=feature[1]
 	corpus.append((d,label))
 	corpus_f.append(d)
 	corpus_l.append(label)
@@ -137,5 +144,5 @@ for i in e:
 basicAnalysis(descCollection,"connective_identification")
 
 FD=open("nltk_accuracy","a")
-FD.write(featureDesc+"\n")
-FD.write(str(a)+" "+str(b)+" "+str(c)+" "+str(d)+"\n")
+FD.write("".join(i+" " for i in featureDesc)+"\n")
+FD.write(str(round(a*100,2))+" "+str(round(b*100,2))+" "+str(round(c*100,2))+" "+str(round(d*100,2))+"\n")

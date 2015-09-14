@@ -55,7 +55,7 @@ for i in onlyfiles:
 	FD.close()
 
 
-	numberOfFeatures=15
+	numberOfFeatures=25
 	if(p==0 or n==0):
 		FD=codecs.open("lists/connSpecDependency.list","a")
 		FD.write("conn:"+i+"\n")
