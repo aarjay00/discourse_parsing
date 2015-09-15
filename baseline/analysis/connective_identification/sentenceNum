@@ -1,126 +1,4 @@
 ----------------------------------------------------------------------------------------------------
-8 Frequency: 10
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
-Arg1num : 7
-Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
-Arg2num : 8
-remove : False
-Single connective neighborhood : ने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : कुछ दिनों पहले ही
-Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
-Arg1num : 4
-Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2num : 7
-remove : False
-Single connective neighborhood : से
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : वहीं पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : इस संबंध में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : १३ फरवरी को ही अपने विरोध प्रदर्शन स्थगित कर दिए थे
-Arg1num : 8
-Arg2 : उन्होंने आयकर प्रशिक्षण संस्थान बंद करने के मुद्दे पर यूपीए सरकार की वार्ता के लिए राजी होने
-Arg2num : 8
-remove : False
-Single connective neighborhood : होने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : गौरतलब है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
-Arg1num : 8
-Arg2 : मीडिया से बातचीत में कहा कि १९६२ के मास्टर प्लान में डेढ़ सौ व्यक्तियों के बीच एक दुकान का प्रावधान किया गया था
-Arg2num : 8
-remove : False
-Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
-Arg1num : 8
-Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
-Arg2num : 8
-remove : False
-Single connective neighborhood : जाने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : होगा
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
-sentenceNum : 8
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : था
-----------------------------------------------------------------------------------------------------
 9 Frequency: 10
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
@@ -242,6 +120,128 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : करेगा
+----------------------------------------------------------------------------------------------------
+8 Frequency: 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1num : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2num : 8
+remove : False
+Single connective neighborhood : ने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1num : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2num : 7
+remove : False
+Single connective neighborhood : से
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : वहीं पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : १३ फरवरी को ही अपने विरोध प्रदर्शन स्थगित कर दिए थे
+Arg1num : 8
+Arg2 : उन्होंने आयकर प्रशिक्षण संस्थान बंद करने के मुद्दे पर यूपीए सरकार की वार्ता के लिए राजी होने
+Arg2num : 8
+remove : False
+Single connective neighborhood : होने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : गौरतलब है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : केंद्रीय शहरी विकास राज्य मंत्री अजय माकन ने अधिसूचना जारी करने
+Arg1num : 8
+Arg2 : मीडिया से बातचीत में कहा कि १९६२ के मास्टर प्लान में डेढ़ सौ व्यक्तियों के बीच एक दुकान का प्रावधान किया गया था
+Arg2num : 8
+remove : False
+Single connective neighborhood : करने
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : शुक्रवार की रात को एक आतंकी के मारे जाने
+Arg1num : 8
+Arg2 : दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
+Arg2num : 8
+remove : False
+Single connective neighborhood : जाने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : होगा
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : था
 ----------------------------------------------------------------------------------------------------
 3 Frequency: 9
 ------
@@ -831,92 +831,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : जाए
 ----------------------------------------------------------------------------------------------------
-14 Frequency: 7
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : Yes
-classifiedAs : 
-Single connective : और
-Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
-Arg1num : 14
-Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
-Arg2num : 14
-remove : False
-Single connective neighborhood : देने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : की
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : बताया जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : तब
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : बल्कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
 0 Frequency: 7
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
@@ -1002,6 +916,92 @@ Arg2 : इसे रद्द कर दिया गया है
 Arg2num : 0
 remove : False
 Single connective neighborhood : जाने
+----------------------------------------------------------------------------------------------------
+14 Frequency: 7
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : Yes
+classifiedAs : 
+Single connective : और
+Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
+Arg1num : 14
+Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
+Arg2num : 14
+remove : False
+Single connective neighborhood : देने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : उधर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : की
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : बताया जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : तब
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
 6 Frequency: 6
 ------
@@ -1251,44 +1251,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : खुलेगा
 ----------------------------------------------------------------------------------------------------
-13 Frequency: 3
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 13
-classLabel : No
-classifiedAs : 
-Single connective : इस बारे में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : इसके पूर्व
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg1num : 8
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
-Arg2num : 13
-remove : False
-Single connective neighborhood : कि
-----------------------------------------------------------------------------------------------------
 20 Frequency: 2
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
@@ -1392,6 +1354,32 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
+13 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : 
+Single connective : इस बारे में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : 
+Single connective : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg1num : 8
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+Arg2num : 13
+remove : False
+Single connective neighborhood : कि
 ----------------------------------------------------------------------------------------------------
 32 Frequency: 1
 ------

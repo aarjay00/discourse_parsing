@@ -819,32 +819,6 @@ Arg2num : 8
 remove : False
 Single connective neighborhood : जाने
 ----------------------------------------------------------------------------------------------------
-ने Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
-Arg1num : 7
-Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
-Arg2num : 8
-remove : False
-Single connective neighborhood : ने
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : इस संबंध में
-Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
-Arg1num : 1
-Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
-Arg2num : 2
-remove : False
-Single connective neighborhood : ने
-----------------------------------------------------------------------------------------------------
 देने Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -870,6 +844,32 @@ Arg2 : अतिरिक्त संसाधन जुटाने की आ
 Arg2num : 0
 remove : False
 Single connective neighborhood : देने
+----------------------------------------------------------------------------------------------------
+ने Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1num : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2num : 8
+remove : False
+Single connective neighborhood : ने
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
+Arg1num : 1
+Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
+Arg2num : 2
+remove : False
+Single connective neighborhood : ने
 ----------------------------------------------------------------------------------------------------
 गया Frequency: 2
 ------
@@ -949,19 +949,19 @@ Arg2num : 4
 remove : False
 Single connective neighborhood : कि
 ----------------------------------------------------------------------------------------------------
-निर्णय Frequency: 1
+लिया Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
+rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
 classifiedAs : 
-Single connective : के बावजूद
-Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
-Arg1num : 0
-Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
-Arg2num : 0
+Single connective : उस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
-Single connective neighborhood : निर्णय
+Single connective neighborhood : लिया
 ----------------------------------------------------------------------------------------------------
 में Frequency: 1
 ------
@@ -977,19 +977,19 @@ Arg2num : 9
 remove : False
 Single connective neighborhood : में
 ----------------------------------------------------------------------------------------------------
-लिया Frequency: 1
+निर्णय Frequency: 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
-sentenceNum : 3
-classLabel : No
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
 classifiedAs : 
-Single connective : उस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
+Single connective : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg1num : 0
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+Arg2num : 0
 remove : False
-Single connective neighborhood : लिया
+Single connective neighborhood : निर्णय
 ----------------------------------------------------------------------------------------------------
 आदेश Frequency: 1
 ------
@@ -1019,20 +1019,6 @@ Arg2num : None
 remove : False
 Single connective neighborhood : हुए
 ----------------------------------------------------------------------------------------------------
-पाने Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
-sentenceNum : 4
-classLabel : Yes
-classifiedAs : 
-Single connective : के कारण
-Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
-Arg1num : 4
-Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
-Arg2num : 4
-remove : False
-Single connective neighborhood : पाने
-----------------------------------------------------------------------------------------------------
 सहेजने Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
@@ -1046,6 +1032,20 @@ Arg2 : अमरनाथ गुफा में प्राकृतिक र
 Arg2num : 0
 remove : False
 Single connective neighborhood : सहेजने
+----------------------------------------------------------------------------------------------------
+पाने Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : 
+Single connective : के कारण
+Arg1 : कई बार तीर्थ - यात्रियों को निराश होकर लौटना पड़ता है
+Arg1num : 4
+Arg2 : वर्तमान समय में दो तीन सप्ताह के लिए ही दर्शन हो पाने
+Arg2num : 4
+remove : False
+Single connective neighborhood : पाने
 ----------------------------------------------------------------------------------------------------
 से Frequency: 1
 ------
@@ -1228,20 +1228,6 @@ Arg2 : उन्होंने उसे जमकर पीटा
 Arg2num : 9
 remove : False
 Single connective neighborhood : किया
-----------------------------------------------------------------------------------------------------
-जताई Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
 ----------------------------------------------------------------------------------------------------
 बीतने Frequency: 1
 ------

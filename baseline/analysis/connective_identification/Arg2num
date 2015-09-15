@@ -1295,32 +1295,6 @@ Arg2num : 6
 remove : False
 Single connective neighborhood : होने
 ----------------------------------------------------------------------------------------------------
-13 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : इसके पूर्व
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg1num : 8
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
-Arg2num : 13
-remove : False
-Single connective neighborhood : कि
-----------------------------------------------------------------------------------------------------
 12 Frequency: 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -1428,6 +1402,20 @@ Arg2 : आगजनी की धारा 304ए तथा 337 के तहत
 Arg2num : 32
 remove : False
 Single connective neighborhood : मौत
+----------------------------------------------------------------------------------------------------
+13 Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : 
+Single connective : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg1num : 8
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+Arg2num : 13
+remove : False
+Single connective neighborhood : कि
 ----------------------------------------------------------------------------------------------------
 19 Frequency: 1
 ------

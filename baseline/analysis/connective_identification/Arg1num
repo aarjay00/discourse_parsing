@@ -1027,56 +1027,6 @@ Arg2num : 0
 remove : False
 Single connective neighborhood : जाने
 ----------------------------------------------------------------------------------------------------
-7 Frequency: 4
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
-Arg1num : 7
-Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
-Arg2num : 8
-remove : False
-Single connective neighborhood : ने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : 
-Single connective : की वजह से
-Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
-Arg1num : 7
-Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
-Arg2num : 7
-remove : False
-Single connective neighborhood : वर्षा
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : एक साल से ज्यादा समय बीतने
-Arg1num : 7
-Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
-Arg2num : 7
-remove : False
-Single connective neighborhood : बीतने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
-Arg1num : 7
-Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
-Arg2num : 11
-remove : False
-Single connective neighborhood : उन्होंने
-----------------------------------------------------------------------------------------------------
 4 Frequency: 4
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
@@ -1126,6 +1076,56 @@ Arg2 : क्षेत्र में सामान्य स्थिति 
 Arg2num : 4
 remove : False
 Single connective neighborhood : करने
+----------------------------------------------------------------------------------------------------
+7 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : उन्होंने यह भी कहा कि संसद के बजट सत्र तक यह विरोध जारी रहेगा ।
+Arg1num : 7
+Arg2 : पंढे ने कहा कि कर्मचारियों ने राष्ट्रीय राजधानी और आस - पास के इलाकों मसलन गाज़ियाबाद , फरीदाबाद , बल्लभगढ़ , नोएडा और गुड़गाँव में भी विरोध - प्रदर्शन किया ।
+Arg2num : 8
+remove : False
+Single connective neighborhood : ने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : इसके आसपास और निचले इलाकों में बाढ़ की स्थिति पैदा हो गई और कई सड़कों , विशेषकर विशेषकर दक्षिणी सेक्टरों में स्थिति काफी बिगड़ गई है
+Arg1num : 7
+Arg2 : चंडीगढ़ में बृहस्पतिवार की सुबह हुई भारी वर्षा
+Arg2num : 7
+remove : False
+Single connective neighborhood : वर्षा
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : एक साल से ज्यादा समय बीतने
+Arg1num : 7
+Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
+Arg2num : 7
+remove : False
+Single connective neighborhood : बीतने
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg1num : 7
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+Arg2num : 11
+remove : False
+Single connective neighborhood : उन्होंने
 ----------------------------------------------------------------------------------------------------
 10 Frequency: 3
 ------
@@ -1388,20 +1388,6 @@ Arg2 : आगजनी की धारा 304ए तथा 337 के तहत
 Arg2num : 32
 remove : False
 Single connective neighborhood : मौत
-----------------------------------------------------------------------------------------------------
-13 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
 ----------------------------------------------------------------------------------------------------
 19 Frequency: 1
 ------

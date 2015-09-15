@@ -785,7 +785,8 @@ CCP
 
 CCP marked
 commonparent NP15
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605262_date_18_7_2004.utf8 6
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -1154,10 +1155,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-यदि घुसपैठ में इजाफा होता है या स्थिति बिगड़ती है ,
-found toto यदि
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -1827,8 +1824,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -1863,8 +1858,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -2804,7 +2797,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580818_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 13
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -2837,8 +2831,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent NP3
 rightWordLocation connPartofnextTree No
 38
@@ -4133,8 +4125,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -5254,7 +5244,8 @@ CCP
 
 CCP marked
 commonparent VGNN3
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 0
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -5455,7 +5446,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 19
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -5489,7 +5481,8 @@ CCP
 
 CCP marked
 commonparent VGNF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 20
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -6242,7 +6235,8 @@ VGNN
 
 VGNN marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 12
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -6610,7 +6604,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 8
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -7426,6 +7421,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 1 False 1
 38
 14
 wordfeature
@@ -7460,6 +7457,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 11 False 1
 38
 14
 wordfeature
@@ -7596,7 +7595,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 3
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -8332,8 +8332,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -8571,6 +8569,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 3 False 1
 38
 14
 wordfeature
@@ -8604,6 +8604,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 10 False 1
 38
 14
 wordfeature
@@ -9686,8 +9688,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -9721,8 +9721,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -10530,7 +10528,8 @@ NP
 
 NP marked
 commonparent VGF3
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8 6
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -10804,6 +10803,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8 1 False
 38
 14
 wordfeature
@@ -12687,8 +12692,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -12785,6 +12788,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2617887_date_23_7_2004.utf8 11 False 1
 38
 14
 wordfeature
@@ -12819,6 +12824,14 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP3
+got a lekin with parent
+	halanki और
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2617887_date_23_7_2004.utf8 15 False
 38
 14
 wordfeature
@@ -13495,6 +13508,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 7 False 1
 38
 14
 wordfeature
@@ -13529,6 +13544,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 11 False 1
 38
 14
 wordfeature
@@ -13735,7 +13752,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 1
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -13940,6 +13958,11 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree No
+lekinParent CCP
+got a lekin with parent
+	halanki हालांकि
+got a halankiparent
+lekinFeature2 no False लेकिन ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 9 True 2
 38
 14
 wordfeature
@@ -14140,7 +14163,8 @@ CCP
 
 CCP marked
 commonparent VGNN2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 10
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -15226,7 +15250,8 @@ NP
 
 NP marked
 commonparent VGNN
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580827_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 16
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -16916,7 +16941,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8 4
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -17087,6 +17113,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 5 False 1
 38
 14
 wordfeature
@@ -17121,6 +17149,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 13 False
 38
 14
 wordfeature
@@ -17459,6 +17489,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree No
+lekinParent None
+lekinFeature2 yes False लेकिन ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14 False
 38
 14
 wordfeature
@@ -17493,6 +17525,11 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
+lekinParent CCP
+got a lekin with parent
+	halanki हालाँकि
+got a halankiparent
+lekinFeature2 no False लेकिन ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 15 True 2
 38
 14
 wordfeature
@@ -18402,10 +18439,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-अगर लंदन में धमाके नहीं होते
-found toto अगर
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -18440,8 +18473,6 @@ chunkNeighbor -1
 First
 
 First marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -18836,10 +18867,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-' पॉवर योगा ' के तहत सूर्य नमस्कार को तेज गति से किया जाता है
-to works
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
 38
@@ -18977,7 +19004,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 14
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -19447,8 +19475,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -19483,10 +19509,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-यदि आप लोगों के तन को चुस्त और मन को दुरूस्त रखना चाहते हैं , उन्हें आरोग्य का उपहार देना चाहते हैं
-found toto यदि
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -21208,6 +21230,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8 6 False 1
 38
 14
 wordfeature
@@ -21242,6 +21266,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605257_date_18_7_2004.utf8 10 False
 38
 14
 wordfeature
@@ -21550,8 +21576,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF
 rightWordLocation connPartofnextTree No
 conn ------------------------------ तो --- लेकिन 
@@ -21721,6 +21745,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 33 False
 38
 14
 wordfeature
@@ -23431,10 +23457,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-फैक्टरी से आग की लपटें बराबर के मकानों तक पहुंचने लगीं
-to works
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -23469,8 +23491,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -23962,6 +23982,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8 12 False
 38
 14
 wordfeature
@@ -24027,10 +24049,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-प्रशांत ने इसका विरोध किया
-to works k7t
 rightWordLocation directParent Yes
 38
 14
@@ -24498,7 +24516,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8 10
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -24912,6 +24931,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 16 False 1
 38
 14
 wordfeature
@@ -25586,8 +25607,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -25900,6 +25919,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 11 False 1
 38
 14
 wordfeature
@@ -25933,6 +25954,8 @@ VGF
 
 VGF marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 15 False
 38
 14
 wordfeature
@@ -26310,6 +26333,8 @@ First
 
 First marked
 rightWordLocation sameNode No
+lekinParent None
+lekinFeature2 no False लेकिन ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 3 False 1
 38
 14
 wordfeature
@@ -26344,6 +26369,11 @@ VGF
 VGF marked
 commonparent CCP
 rightWordLocation nextPartofConnTree No
+lekinParent VGF
+got a lekin with parent
+	halanki रहे
+	halanki ,
+lekinFeature2 no False लेकिन ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 26 False 1
 38
 14
 wordfeature
@@ -26845,10 +26875,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-और मामला जब देश के सबसे बड़े औद्योगिक साम्राज्य का हो
-found toto1 जब
 commonparent VGF2
 rightWordLocation indirectConnParent No
 38
@@ -27722,6 +27748,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8 16 False 1
 38
 14
 wordfeature
@@ -27756,6 +27784,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8 18 False 1
 38
 14
 wordfeature
@@ -27994,6 +28024,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree No
+lekinParent None
+lekinFeature2 yes False लेकिन ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8 1 False
 38
 14
 wordfeature
@@ -28195,8 +28227,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF
 rightWordLocation connPartofnextTree No
 38
@@ -28231,8 +28261,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 rightWordLocation sameNode No
 38
 14
@@ -30010,7 +30038,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 24
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -30376,6 +30405,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8 29 False 1
 38
 14
 wordfeature
@@ -31058,7 +31089,8 @@ NP
 
 NP marked
 commonparent NP6
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8 3
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -31640,6 +31672,14 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहना
+got a lekin with parent
+	halanki है
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 14 False
 38
 14
 wordfeature
@@ -32281,7 +32321,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 8
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -32446,8 +32487,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -32639,6 +32678,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8 11 False
 38
 14
 wordfeature
@@ -32705,10 +32746,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-to works
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
 38
@@ -33250,10 +33287,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-मगर देर शाम तक जब न हेमंत लौटा और न प्रमोद उर्फ योगेंद्र का कुछ पता चला
-found toto1 जब
 commonparent VGF3
 rightWordLocation indirectConnParent No
 conn ------------------------------ जब --- तो 
@@ -34088,6 +34121,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 0 False
 38
 14
 wordfeature
@@ -34122,6 +34157,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 7 False 1
 38
 14
 wordfeature
@@ -34255,7 +34292,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 6
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -34924,8 +34962,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -34959,8 +34995,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent NP9
 rightWordLocation connPartofnextTree No
 38
@@ -35266,6 +35300,12 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 3 False
 38
 14
 wordfeature
@@ -35300,6 +35340,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 10 False
 38
 14
 wordfeature
@@ -35334,6 +35380,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 11 False
 38
 14
 wordfeature
@@ -35878,6 +35926,11 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree No
+lekinParent CCP
+got a lekin with parent
+	halanki हालांकि
+got a halankiparent
+lekinFeature2 no False लेकिन ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 17 True 2
 38
 14
 wordfeature
@@ -36385,8 +36438,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -36420,8 +36471,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF2
 rightWordLocation indirectConnParent No
 38
@@ -36839,6 +36888,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki बताया
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 16 False
 38
 14
 wordfeature
@@ -36873,6 +36928,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 17 False
 38
 14
 wordfeature
@@ -37517,7 +37574,8 @@ CCP
 
 CCP marked
 commonparent VGNN
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 1
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -39083,6 +39141,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8 3 False 1
 38
 14
 wordfeature
@@ -40251,6 +40311,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 5 False 1
 38
 14
 wordfeature
@@ -40285,6 +40347,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 14 False 1
 38
 14
 wordfeature
@@ -41128,8 +41192,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -42238,8 +42300,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -42273,8 +42333,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -42642,6 +42700,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 2 False
 38
 14
 wordfeature
@@ -43854,7 +43914,8 @@ NP
 
 NP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 23
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -44020,10 +44081,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-पुलिस ने जब स्थिति को नियत्रंण से बाहर होते देखा
-found toto1 जब
 rightWordLocation directParent No
 38
 14
@@ -44398,6 +44455,13 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+	halanki था
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8 8 False
 38
 14
 wordfeature
@@ -44939,8 +45003,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -46052,7 +46114,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -47808,10 +47871,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-गौरतलब है कि जेल प्रशासन ने जब इस बाहुबली नेता को उनसे मिलने आए लोगों से भेंट नहीं करने दी
-found toto1 जब
 rightWordLocation directParent No
 38
 14
@@ -48315,6 +48374,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8 4 False 1
 38
 14
 wordfeature
@@ -48552,6 +48613,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree No
+lekinParent None
+lekinFeature2 no False लेकिन ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8 2 False 1
 38
 14
 wordfeature
@@ -48718,8 +48781,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF
 rightWordLocation indirectConnParent No
 38
@@ -48896,6 +48957,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 10 False
 38
 14
 wordfeature
@@ -48930,6 +48997,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 11 False
 38
 14
 wordfeature
@@ -49631,10 +49700,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-अगर परिवार के एक भाई को काम मिल गया
-found toto अगर
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -49669,8 +49734,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -51513,8 +51576,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -52500,10 +52561,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-समझा जाता है कि बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया
-found toto1 जब
 commonparent VGF3
 rightWordLocation indirectConnParent No
 conn ------------------------------ जब --- तो 
@@ -53038,8 +53095,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -53926,7 +53981,8 @@ CCP
 
 CCP marked
 commonparent VGNN
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 9
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -54332,8 +54388,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP
 rightWordLocation nextPartofConnTree Yes
 38
@@ -55646,6 +55700,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2610171_date_20_7_2004.utf8 6 False 1
 38
 14
 wordfeature
@@ -55680,6 +55736,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2610171_date_20_7_2004.utf8 12 False
 38
 14
 wordfeature
@@ -56181,10 +56243,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-रैली जैसे ही संसद मार्ग थाने पहुँची
-found toto जैसे ही
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -56420,6 +56478,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 0 False
 38
 14
 wordfeature
@@ -57200,6 +57260,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8 15 False 1
 38
 14
 wordfeature
@@ -57234,6 +57296,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8 24 False 1
 38
 14
 wordfeature
@@ -57640,6 +57704,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree No
+lekinParent None
+lekinFeature2 yes False लेकिन ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8 6 False
 38
 14
 wordfeature
@@ -59999,6 +60065,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8 11 False 1
 38
 14
 wordfeature
@@ -60032,6 +60100,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8 15 False 1
 38
 14
 wordfeature
@@ -60198,10 +60268,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
-to works k7t
 rightWordLocation directParent Yes
 38
 14
@@ -61754,8 +61820,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent VGF2
 rightWordLocation connPartofnextTree No
 38
@@ -62135,7 +62199,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8 5
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -62540,7 +62605,8 @@ NP
 
 NP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8 14
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -62674,8 +62740,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -62907,6 +62971,12 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 9 False
 38
 14
 wordfeature
@@ -63309,8 +63379,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 commonparent VGF2
 rightWordLocation indirectConnParent No
 38
@@ -63345,8 +63413,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -63719,6 +63785,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8 2 False
 38
 14
 wordfeature
@@ -63753,6 +63821,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8 5 False 1
 38
 14
 wordfeature
@@ -64841,7 +64911,8 @@ NP
 
 NP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2580879_date_9_7_2004.utf8 12
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -65077,7 +65148,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2580879_date_9_7_2004.utf8 13
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -65587,6 +65659,15 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP2
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki यह
+	halanki सोच
+got a lekin with parent
+	halanki थी
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 5 False
 38
 14
 wordfeature
@@ -65621,6 +65702,12 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 16 False
 38
 14
 wordfeature
@@ -66028,6 +66115,15 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
+lekinParent CCP2
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki माना
+got a lekin with parent
+	halanki हालांकि
+got a halankiparent
+lekinFeature2 no False लेकिन ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 11 True 2
 38
 14
 wordfeature
@@ -66628,8 +66724,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -66664,8 +66758,6 @@ chunkNeighbor -1
 First
 
 First marked
-toRootFeature
-tok7tFeature
 commonparent VGF
 rightWordLocation indirectConnParent No
 38
@@ -66700,8 +66792,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -68649,7 +68739,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8 26
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -69242,6 +69333,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8 2 False 0
 38
 14
 wordfeature
@@ -69275,6 +69368,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8 32 False 1
 38
 14
 wordfeature
@@ -69308,6 +69403,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8 40 False 1
 38
 14
 wordfeature
@@ -70019,8 +70116,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -71452,10 +71547,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-शुक्रवार की रात को जब एक आतंकी के मारे जाने के बाद दूसरा आतंकी भी कुछ देर फायरिंग करने के बाद इमारत के एक कमरे में छिपकर बैठ गया
-found toto1 जब
 commonparent VGF2
 rightWordLocation indirectConnParent Yes
 38
@@ -71733,6 +71824,18 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
+lekinParent CCP2
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki माना
+	halanki जा
+	halanki रहा
+	halanki था
+got a lekin with parent
+	halanki हालांकि
+got a halankiparent
+lekinFeature2 no False लेकिन ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1 True 2
 38
 14
 wordfeature
@@ -72164,10 +72267,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-हालांकि पहले माना जा रहा था कि दूसरा आतंकी भी मारा गया है , लेकिन शनिवार सुबह जब जवान इमारत में दाखिल हुए
-found toto1 जब
 rightWordLocation directParent No
 38
 14
@@ -72907,7 +73006,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8 4
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -73961,6 +74061,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8 1 False
 38
 14
 wordfeature
@@ -73995,6 +74097,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8 6 False 1
 38
 14
 wordfeature
@@ -75130,7 +75234,8 @@ NP
 
 NP marked
 commonparent NP9
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8 0
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -75331,8 +75436,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -76428,6 +76531,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 13 False
 38
 14
 wordfeature
@@ -76965,7 +77070,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 13
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -77267,10 +77373,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-वहीं पंजी प्रावधान के मामले में थल सेना की अनदेखी की गई है
-found toto वहीं
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -77305,10 +77407,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-अगर पूँजी प्रावधानों पर नजर दौड़ाई जाए
-found toto अगर
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -77639,6 +77737,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580824_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6 False 1
 38
 14
 wordfeature
@@ -77673,6 +77773,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580824_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 8 False 1
 38
 14
 wordfeature
@@ -77905,7 +78007,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580824_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 5
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -78650,8 +78753,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 conn ------------------------------ यदि --- तो 
@@ -79611,6 +79712,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 7 False 1
 38
 14
 wordfeature
@@ -79947,7 +80050,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 7
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -80113,8 +80217,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -80149,8 +80251,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -81723,7 +81823,8 @@ First
 
 First marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8 5
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -82732,10 +82833,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-अगर केंद्र ईरान के खिलाफ मतदान करना चाहता है
-found toto अगर
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -83147,6 +83244,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8 4 False 1
 38
 14
 wordfeature
@@ -83890,7 +83989,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8 15
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -84392,8 +84492,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -84428,8 +84526,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -84463,8 +84559,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP6
 rightWordLocation nextPartofConnTree No
 38
@@ -84913,6 +85007,15 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki इसे
+got a lekin with parent
+	halanki कहा
+	halanki जाएगा
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8 0 False
 38
 14
 wordfeature
@@ -84947,6 +85050,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8 5 False 1
 38
 14
 wordfeature
@@ -85146,10 +85251,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-उन्होंने तत्कालीन प्रधानमंत्री राजीव गांधी की सलाह ली
-to works
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
 38
@@ -85797,6 +85898,14 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहना
+got a lekin with parent
+	halanki है
+lekinFeature2 yes True लेकिन ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8 11 False
 38
 14
 wordfeature
@@ -86507,8 +86616,6 @@ chunkNeighbor -1
 CCP
 
 CCP marked
-toRootFeature
-tok7tFeature
 commonparent VGF2
 rightWordLocation indirectConnParent No
 38
@@ -86815,6 +86922,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8 14 False 1
 38
 14
 wordfeature
@@ -86849,6 +86958,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8 16 False 1
 38
 14
 wordfeature
@@ -87960,8 +88071,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -87995,8 +88104,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF
 rightWordLocation connPartofnextTree No
 38
@@ -89968,6 +90075,8 @@ VGF
 VGF marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8 8 False
 38
 14
 wordfeature
@@ -91143,10 +91252,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-यदि इससे ( ४९ ) विदेशी निवेशकों को आकर्षित किया जा सकता है
-found toto यदि
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -91820,10 +91925,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-अगर प्रधानमंत्री श्रद्घांजलि में शामिल नहीं होते हैं
-found toto अगर
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree No
 38
@@ -92231,6 +92332,8 @@ First
 
 First marked
 rightWordLocation sameNode Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8 3 False 1
 38
 14
 wordfeature
@@ -93391,6 +93494,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14 False 1
 38
 14
 wordfeature
@@ -94584,6 +94689,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8 1 False 1
 38
 14
 wordfeature
@@ -95389,8 +95496,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP4
 rightWordLocation nextPartofConnTree No
 38
@@ -95425,8 +95530,6 @@ chunkNeighbor -1
 NP
 
 NP marked
-toRootFeature
-tok7tFeature
 commonparent VGF4
 rightWordLocation connPartofnextTree No
 38
@@ -95869,6 +95972,15 @@ VGF
 VGF marked
 commonparent CCP2
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki यह
+got a lekin with parent
+	halanki चाहती
+	halanki है
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8 9 False
 38
 14
 wordfeature
@@ -96301,8 +96413,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 conn ------------------------------ अगर --- तो 
@@ -96570,7 +96680,8 @@ NP
 
 NP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2620695_date_24_7_2004.utf8 0
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -97010,6 +97121,12 @@ VGF
 VGF marked
 commonparent CCP3
 rightWordLocation nextPartofConnTree Yes
+lekinParent CCP
+got a lekin with parent
+	halanki कि
+got a lekin with parent
+	halanki कहा
+lekinFeature2 yes True लेकिन ../data/raw/Section_16/fullnews_id_2580832_date_8_7_2004.utf8 4 False
 38
 14
 wordfeature
@@ -97686,7 +97803,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8 5
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -98258,8 +98376,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 rightWordLocation directParent No
 38
 14
@@ -98539,7 +98655,8 @@ CCP
 
 CCP marked
 commonparent VGF2
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2620698_date_24_7_2004.utf8 11
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -99773,7 +99890,8 @@ JJP
 
 JJP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8 8
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -100177,7 +100295,8 @@ CCP
 
 CCP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8 5
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -100829,6 +100948,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 8 False 1
 38
 14
 wordfeature
@@ -100863,6 +100984,8 @@ First
 First marked
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
+lekinParent None
+lekinFeature2 no True लेकिन ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 11 False 1
 38
 14
 wordfeature
@@ -101138,7 +101261,8 @@ NP
 
 NP marked
 commonparent VGF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -101304,10 +101428,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
-जब वे वहां पहुंचे थे
-found toto1 जब
 rightWordLocation directParent No
 38
 14
@@ -102673,8 +102793,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-tok7tFeature
 commonparent CCP3
 rightWordLocation nextPartofConnTree No
 38
@@ -103075,10 +103193,6 @@ chunkNeighbor -1
 VGF
 
 VGF marked
-toRootFeature
-उन्होंने राजग के मुख्यमंत्री पद के उम्मीदवार नितीश कुमार को राहुल द्रविड़ की तरह मि. डिपेंडेबल बताया है
-to works
-tok7tFeature
 commonparent-node1
 rightWordLocation nextPartofConnTree Yes
 38
@@ -103147,7 +103261,8 @@ CCP
 
 CCP marked
 commonparent VGNF
-rightWordLocation indirectNextParent No
+no idea ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8 0
+rightWordLocation NoIdea No
 38
 14
 wordfeature
@@ -103798,42 +103913,16 @@ rightWordLocation nextPartofConnTree No
 53 32
 635 2351
 2986
-featureSize 288
+featureSize 287
 ['Yes', 'No']
 Iteration 0 --------------------------------------------------
 -------------------------------------------------- ConvertDataSet
 -------------------------------------------------- ConvertDataSet
-model score 0.785714285714
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 0.777778 Recall 0.777778
-Precision : 0.800000 Recall 0.800000
-Final {'Yes': 0.7777777777777778, 'No': 0.8} {'Yes': 0.7777777777777778, 'No': 0.8}
+model score 1.0
+Precision : 1.000000 Recall 1.000000
+Precision : 1.000000 Recall 1.000000
+Final {'Yes': 1.0, 'No': 1.0} {'Yes': 1.0, 'No': 1.0}
 Iteration 1 --------------------------------------------------
--------------------------------------------------- ConvertDataSet
--------------------------------------------------- ConvertDataSet
-model score 0.5
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-wrong here !!!
-Precision : 1.000000 Recall 1.000000
-Precision : 0.300000 Recall 0.300000
-Final {'Yes': 0.8888888888888888, 'No': 0.55} {'Yes': 0.8888888888888888, 'No': 0.55}
-Iteration 2 --------------------------------------------------
--------------------------------------------------- ConvertDataSet
--------------------------------------------------- ConvertDataSet
-model score 0.857142857143
-wrong here !!!
-wrong here !!!
-Precision : 1.000000 Recall 1.000000
-Precision : 0.600000 Recall 0.600000
-Final {'Yes': 0.9259259259259259, 'No': 0.5666666666666668} {'Yes': 0.9259259259259259, 'No': 0.5666666666666668}
-Iteration 3 --------------------------------------------------
 -------------------------------------------------- ConvertDataSet
 -------------------------------------------------- ConvertDataSet
 model score 0.714285714286
@@ -103841,42 +103930,69 @@ wrong here !!!
 wrong here !!!
 wrong here !!!
 wrong here !!!
-Precision : 0.666667 Recall 0.666667
-Precision : 0.800000 Recall 0.800000
-Final {'Yes': 0.861111111111111, 'No': 0.625} {'Yes': 0.861111111111111, 'No': 0.625}
+Precision : 0.875000 Recall 0.875000
+Precision : 0.500000 Recall 0.500000
+Final {'Yes': 0.9375, 'No': 0.75} {'Yes': 0.9375, 'No': 0.75}
+Iteration 2 --------------------------------------------------
+-------------------------------------------------- ConvertDataSet
+-------------------------------------------------- ConvertDataSet
+model score 0.857142857143
+wrong here !!!
+wrong here !!!
+Precision : 0.857143 Recall 0.857143
+Precision : 0.857143 Recall 0.857143
+Final {'Yes': 0.9107142857142857, 'No': 0.7857142857142857} {'Yes': 0.9107142857142857, 'No': 0.7857142857142857}
+Iteration 3 --------------------------------------------------
+-------------------------------------------------- ConvertDataSet
+-------------------------------------------------- ConvertDataSet
+model score 0.571428571429
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.857143 Recall 0.857143
+Precision : 0.285714 Recall 0.285714
+Final {'Yes': 0.8973214285714286, 'No': 0.6607142857142857} {'Yes': 0.8973214285714286, 'No': 0.6607142857142857}
 Iteration 4 --------------------------------------------------
 -------------------------------------------------- ConvertDataSet
 -------------------------------------------------- ConvertDataSet
-model score 0.928571428571
+model score 0.642857142857
 wrong here !!!
-Precision : 1.000000 Recall 1.000000
-Precision : 0.750000 Recall 0.750000
-Final {'Yes': 0.888888888888889, 'No': 0.65} {'Yes': 0.888888888888889, 'No': 0.65}
+wrong here !!!
+wrong here !!!
+wrong here !!!
+wrong here !!!
+Precision : 0.777778 Recall 0.777778
+Precision : 0.400000 Recall 0.400000
+Final {'Yes': 0.8734126984126984, 'No': 0.6085714285714285} {'Yes': 0.8734126984126984, 'No': 0.6085714285714285}
 Iteration 5 --------------------------------------------------
 -------------------------------------------------- ConvertDataSet
 -------------------------------------------------- ConvertDataSet
-model score 0.928571428571
+model score 0.714285714286
+wrong here !!!
+wrong here !!!
+wrong here !!!
 wrong here !!!
 Precision : 1.000000 Recall 1.000000
-Precision : 0.666667 Recall 0.666667
-Final {'Yes': 0.9074074074074074, 'No': 0.6527777777777778} {'Yes': 0.9074074074074074, 'No': 0.6527777777777778}
-comparing जैसे ही-तो [94, 95, 100] ../data/raw/Section_17/fullnews_id_2610171_date_20_7_2004.utf8 5
-	जैसे ही [94, 95] No
+Precision : 0.000000 Recall 0.000000
+Final {'Yes': 0.894510582010582, 'No': 0.5071428571428571} {'Yes': 0.894510582010582, 'No': 0.5071428571428571}
+comparing जब-तो [53, 59] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1
+	हालांकि [36] No
+	लेकिन [50] No
+	पहले [37] No
+	पर [61] No
+	तो [59] No
 moving from no to yes ??
-	तो [100] No
+comparing जब-तो [13, 22] ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 1
+	और [11] Yes
+	के बाद [30, 31] No
+	तो [22] No
 moving from no to yes ??
-comparing अगर-तो [183, 193] ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8 6
-	से [170] No
-	से [176] No
-	तो [193] No
-moving from no to yes ??
-	तो [198] No
-	इस संबंध में [177, 178, 179] No
-comparing यदि-तो [87, 94] ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8 4
-	लेकिन [75] Yes
-	या [106] Yes
-	पर [92] No
-	तो [94] No
+comparing अगर-तो [52, 60] ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 2
+	पर [72] No
+	तो [60] No
 moving from no to yes ??
 comparing वहीं-तो [40, 53] ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 2
 	वहीं [40] No
@@ -103884,89 +104000,110 @@ moving from no to yes ??
 	तो [53] No
 moving from no to yes ??
 	और [55] No
-comparing यदि-तो [29, 35] ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8 0
-	तो [35] No
-moving from no to yes ??
-comparing हालांकि-पर [36, 61] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1
-	हालांकि [36] No
-moving from no to yes ??
-	लेकिन [50] No
-	पहले [37] No
-	पर [61] No
-moving from no to yes ??
-	तो [59] No
-comparing यूं तो-लेकिन [319, 320, 337] ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 13
-	लेकिन [337] Yes
-removing this
-	के बाद [339, 340] No
-	पर [328] No
-	तो [320] No
-moving from no to yes ??
 comparing यदि-तो [82, 88] ../data/raw/Section_17/fullnews_id_2610160_date_20_7_2004.utf8 2
 	पर [79] Yes
 	के लिए [73, 74] No
 	इस बीच [80, 81] No
 	तो [88] No
 moving from no to yes ??
-comparing तो-लेकिन [372, 379] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 16
-	लेकिन [379] Yes
-removing this
-	के लिए [387, 388] No
-	से [381] No
-	तो [372] No
-moving from no to yes ??
-comparing जब-तब [207, 213] ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8 8
-	अलबत्ता [231] Yes
-	लेकिन [223] Yes
-	पर [225] No
-	तो [226] No
-	तब [213] No
-moving from no to yes ??
-comparing अगर-तो [109, 117] ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
-	और [123] Yes
-	तो [117] No
-moving from no to yes ??
-	और [114] No
-comparing अगर-तो [52, 60] ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 2
-	पर [72] No
-	तो [60] No
-moving from no to yes ??
-comparing भले ही-पर [26, 27, 30] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
-	से [24] No
-	पर [30] No
-moving from no to yes ??
-	पर [39] No
-	और [33] No
-comparing जब-तो [80, 94] ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8 4
-	गौरतलब है कि [74, 75, 76] Yes
-	से [89] No
-	तो [94] No
-moving from no to yes ??
-comparing भले ही-लेकिन [450, 451, 460] ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 26
-	लेकिन [460] No
-moving from no to yes ??
-comparing अगर-तो [235, 242] ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8 8
-	पर [211] No
-	तो [242] No
-moving from no to yes ??
-	व [218] No
 comparing भले ही-लेकिन [365, 366, 372] ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14
 	लेकिन [372] No
 moving from no to yes ??
 	उधर [352] No
 	से [364] No
 	से [378] No
-comparing अगर-तो [140, 159] ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8 4
-	और [152] Yes
-	से [131] No
-	पर [148] No
-	तो [159] No
+comparing हालांकि-लेकिन [36, 50] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1
+	हालांकि [36] No
 moving from no to yes ??
-comparing अगर-तो [287, 293] ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 12
-	और [304] Yes
-	इस पर [305, 306] No
-	पर [306] No
-	तो [293] No
+	लेकिन [50] No
+moving from no to yes ??
+	पहले [37] No
+	पर [61] No
+	तो [59] No
+comparing यदि-तो [147, 153] ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 4
+	के बाद [132, 133] No
+	से [150] No
+	तो [153] No
+moving from no to yes ??
+comparing यदि-तो [29, 35] ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8 0
+	तो [35] No
+moving from no to yes ??
+comparing अगर-तो [235, 242] ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8 8
+	पर [211] No
+	तो [242] No
+moving from no to yes ??
+	व [218] No
+comparing एक ओर-वहीं दूसरी ओर [375, 376, 391, 392, 393] ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14
+	वहीं दूसरी ओर [391, 392, 393] Yes
+removing this
+	वहीं [391] Yes
+removing this
+	दूसरी ओर [392, 393] No
+moving from no to yes ??
+comparing अगर-तो [245, 252] ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 9
+	जबकि [263] Yes
+	के लिए [255, 256] No
+	के लिए [268, 269] No
+	पर [248] No
+	तो [252] No
+moving from no to yes ??
+	और [265] No
+comparing भले ही-लेकिन [360, 361, 370] ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 14
+	लेकिन [370] Yes
+removing this
+	के लिए [383, 384] No
+	से [359] No
+comparing अगर-तो [85, 90] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 3
+	से [69] No
+	तो [90] No
+moving from no to yes ??
+	व [71] No
+comparing जब-तब [130, 161] ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8 5
+	से [138] No
+	से [167] No
+	से [171] No
+	पर [155] No
+	तब [161] No
+moving from no to yes ??
+comparing अगर-तो [223, 232] ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
+	और इसके बाद [258, 259, 260] Yes
+	के बाद [251, 252] No
+	इस पर [239, 240] No
+	से [220] No
+	पर [240] No
+	तो [232] No
+moving from no to yes ??
+comparing यदि-तो [263, 271] ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 13
+	बल्कि [277] No
+	पर [281] No
+	तो [271] No
+moving from no to yes ??
+comparing न तो-और न ही [344, 345, 351, 352, 353] ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 16
+	तो [345] No
+moving from no to yes ??
+	और [351] No
+moving from no to yes ??
+comparing एक तरफ-और दूसरी तरफ [78, 79, 87, 88, 89] ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8 3
+	दूसरी तरफ [88, 89] No
+moving from no to yes ??
+	से [70] No
+	और [87] No
+moving from no to yes ??
+	इस तरह [95, 96] No
+comparing यदि-तो [315, 337] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 16
+	से [341] No
+	तो [337] No
+moving from no to yes ??
+	और [322] No
+comparing अगर-तो [184, 193] ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8 8
+	तो [193] No
+moving from no to yes ??
+comparing जब-तब [136, 146] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 4
+	के लिए [149, 150] No
+	दूसरे [151] No
+	से [123] No
+	से [141] No
+	तब [146] No
 moving from no to yes ??
 comparing तो-लेकिन [19, 26] ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 0
 	लेकिन [26] Yes
@@ -103977,21 +104114,46 @@ removing this
 	से [34] No
 	तो [19] No
 moving from no to yes ??
-comparing जब-तो [456, 464] ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 17
-	से [460] No
-	पर [467] No
-	तो [464] No
+comparing यदि-तो [410, 423] ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8 20
+	इससे [411] No
+	तो [423] No
 moving from no to yes ??
-comparing न तो-और न ही [35, 36, 38, 39, 40] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 1
-	साथ ही [23, 24] Yes
-	तो [36] No
+comparing भले-पर [26, 39] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
+	से [24] No
+	पर [30] No
+	पर [39] No
 moving from no to yes ??
-	और [38] No
+	और [33] No
+comparing भले ही-लेकिन [450, 451, 460] ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 26
+	लेकिन [460] No
 moving from no to yes ??
-comparing यदि-तो [147, 153] ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 4
-	के बाद [132, 133] No
-	से [150] No
-	तो [153] No
+comparing तो-लेकिन [372, 379] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 16
+	लेकिन [379] Yes
+removing this
+	के लिए [387, 388] No
+	से [381] No
+	तो [372] No
+moving from no to yes ??
+comparing हालांकि-लेकिन [272, 281] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 11
+	हालांकि [272] No
+moving from no to yes ??
+	लेकिन [281] No
+moving from no to yes ??
+comparing जब-तब [231, 237] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 8
+	पहले [230] No
+	तब [237] No
+moving from no to yes ??
+comparing न तो-और न ही [429, 430, 441, 442, 443] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 16
+	के लिए [435, 436] No
+	से [447] No
+	तो [430] No
+moving from no to yes ??
+	और [441] No
+moving from no to yes ??
+comparing यदि-तो [237, 246] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 12
+	के लिए [228, 229] No
+	पर [236] No
+	तो [246] No
 moving from no to yes ??
 comparing न तो-और न ही [95, 96, 102, 103, 104] ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 4
 	और [102] Yes
@@ -104002,130 +104164,51 @@ removing this
 	पर [108] No
 	तो [96] No
 moving from no to yes ??
-comparing यदि-तो [69, 80] ../data/raw/Section_17/fullnews_id_2605262_date_18_7_2004.utf8 2
-	या [75] Yes
-	तो [80] No
-moving from no to yes ??
-comparing यद्यपि-पर [351, 371] ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 17
-	के कारण [376, 377] No
-	पर [371] No
-moving from no to yes ??
-	और [355] No
-	और [363] No
 comparing जब-तो [175, 188] ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8 7
 	मगर [171] Yes
 	और [179] Yes
 	पर [191] No
 	तो [188] No
 moving from no to yes ??
-comparing तभी-जब [612, 616] ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 24
-	से [621] No
-	पर [611] No
-	पर [627] No
-comparing यदि-तो [315, 337] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 16
-	से [341] No
-	तो [337] No
+comparing अगर-तो [109, 117] ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
+	और [123] Yes
+	तो [117] No
 moving from no to yes ??
-	और [322] No
-comparing अगर-तो [184, 193] ../data/raw/Section_17/fullnews_id_2615430_date_22_7_2004.utf8 8
-	तो [193] No
+	और [114] No
+comparing अगर-तो [97, 110] ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8 3
+	के लिए [106, 107] No
+	के लिए [114, 115] No
+	तो [110] No
 moving from no to yes ??
-comparing अगर-तो [245, 252] ../data/raw/Section_11/fullnews_id_2580814_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 9
-	जबकि [263] Yes
-	के लिए [255, 256] No
-	के लिए [268, 269] No
-	पर [248] No
-	तो [252] No
-moving from no to yes ??
-	और [265] No
 comparing भले-पर [26, 30] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
 	से [24] No
 	पर [30] No
 moving from no to yes ??
 	पर [39] No
 	और [33] No
+comparing यदि-तो [367, 376] ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 18
+	तो [376] No
+moving from no to yes ??
+comparing जब-तो [186, 211] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 8
+	के बाद [192, 193] Yes
+	तो [211] Yes
+removing this
+	के बाद [201, 202] No
+	व [215] No
 comparing अगर-तो [141, 149] ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8 7
 	और [164] Yes
 	तो [149] No
 moving from no to yes ??
-comparing अगर-तो [85, 90] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 3
-	से [69] No
-	तो [90] No
+comparing न तो-और न ही [35, 36, 38, 39, 40] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 1
+	साथ ही [23, 24] Yes
+	तो [36] No
 moving from no to yes ??
-	व [71] No
-comparing अगर-तो [250, 259] ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 13
-	इससे [264] No
-	पर [270] No
-	तो [259] No
+	और [38] No
 moving from no to yes ??
-comparing न तो-और न ही [429, 430, 441, 442, 443] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 16
-	के लिए [435, 436] No
-	से [447] No
-	तो [430] No
+comparing इसलिए-क्योंकि [383, 387] ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8 18
+	क्योंकि [387] No
 moving from no to yes ??
-	और [441] No
-moving from no to yes ??
-comparing एक ओर-वहीं दूसरी ओर [375, 376, 391, 392, 393] ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14
-	वहीं दूसरी ओर [391, 392, 393] Yes
-removing this
-	वहीं [391] Yes
-removing this
-	दूसरी ओर [392, 393] No
-moving from no to yes ??
-comparing यदि-तो [237, 246] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 12
-	के लिए [228, 229] No
-	पर [236] No
-	तो [246] No
-moving from no to yes ??
-comparing यदि-तो [263, 271] ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 13
-	बल्कि [277] No
-	पर [281] No
-	तो [271] No
-moving from no to yes ??
-comparing भले ही-पर [26, 27, 39] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
-	से [24] No
-	पर [30] No
-	पर [39] No
-moving from no to yes ??
-	और [33] No
-comparing यदि-तो [367, 376] ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 18
-	तो [376] No
-moving from no to yes ??
-comparing अगर-तो [116, 125] ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8 4
-	से [139] No
-	तो [125] No
-moving from no to yes ??
-comparing भले-पर [26, 39] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
-	से [24] No
-	पर [30] No
-	पर [39] No
-moving from no to yes ??
-	और [33] No
-comparing तो-लेकिन [269, 278] ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8 11
-	लेकिन [278] Yes
-removing this
-	से [283] No
-	तो [269] No
-moving from no to yes ??
-comparing हालांकि-लेकिन [36, 50] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1
-	हालांकि [36] No
-moving from no to yes ??
-	लेकिन [50] No
-moving from no to yes ??
-	पहले [37] No
-	पर [61] No
-	तो [59] No
-comparing जब-तो [53, 59] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 1
-	हालांकि [36] No
-	लेकिन [50] No
-	पहले [37] No
-	पर [61] No
-	तो [59] No
-moving from no to yes ??
-comparing हालांकि-लेकिन [196, 218] ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 9
-	हालांकि [196] No
-moving from no to yes ??
-	लेकिन [218] No
+	इसलिए [383] No
 moving from no to yes ??
 comparing हालांकि-लेकिन [456, 471] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 17
 	की वजह से [474, 475, 476] No
@@ -104138,6 +104221,98 @@ moving from no to yes ??
 	से [476] No
 	पर [478] No
 	वजह [475] No
+comparing जब-तब [39, 55] ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8 1
+	पर [41] No
+	तब [55] No
+moving from no to yes ??
+comparing भले ही-पर [26, 27, 30] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
+	से [24] No
+	पर [30] No
+moving from no to yes ??
+	पर [39] No
+	और [33] No
+comparing जब-तो [80, 94] ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8 4
+	गौरतलब है कि [74, 75, 76] Yes
+	से [89] No
+	तो [94] No
+moving from no to yes ??
+comparing जैसे ही-तो [94, 95, 100] ../data/raw/Section_17/fullnews_id_2610171_date_20_7_2004.utf8 5
+	जैसे ही [94, 95] No
+moving from no to yes ??
+	तो [100] No
+moving from no to yes ??
+comparing अगर-तो [183, 193] ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8 6
+	से [170] No
+	से [176] No
+	तो [193] No
+moving from no to yes ??
+	तो [198] No
+	इस संबंध में [177, 178, 179] No
+comparing अगर-तो [250, 259] ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 13
+	इससे [264] No
+	पर [270] No
+	तो [259] No
+moving from no to yes ??
+comparing भले ही-पर [26, 27, 39] ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 1
+	से [24] No
+	पर [30] No
+	पर [39] No
+moving from no to yes ??
+	और [33] No
+comparing जब-तो [140, 145] ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 5
+	और [152] Yes
+	तो [145] No
+moving from no to yes ??
+comparing यदि-तो [337, 345] ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14
+	पर [356] No
+	तो [345] No
+moving from no to yes ??
+	और [351] No
+	और [363] No
+comparing जब-तब [207, 213] ../data/raw/Section_17/fullnews_id_2605267_date_18_7_2004.utf8 8
+	अलबत्ता [231] Yes
+	लेकिन [223] Yes
+	पर [225] No
+	तो [226] No
+	तब [213] No
+moving from no to yes ??
+comparing तभी-जब [612, 616] ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 24
+	से [621] No
+	पर [611] No
+	पर [627] No
+comparing तभी-जब [312, 317] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 14
+	इसके बाद [309, 310] Yes
+comparing यदि-तो [69, 80] ../data/raw/Section_17/fullnews_id_2605262_date_18_7_2004.utf8 2
+	या [75] Yes
+	तो [80] No
+moving from no to yes ??
+comparing जब-तो [456, 464] ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 17
+	से [460] No
+	पर [467] No
+	तो [464] No
+moving from no to yes ??
+comparing यद्यपि-पर [351, 371] ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 17
+	के कारण [376, 377] No
+	पर [371] No
+moving from no to yes ??
+	और [355] No
+	और [363] No
+comparing यदि-तो [136, 140] ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8 5
+	और [135] Yes
+	इस बात पर [120, 121, 122] Yes
+	पहले [130] No
+	तो [140] No
+moving from no to yes ??
+comparing अगर-तो [116, 125] ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8 4
+	से [139] No
+	तो [125] No
+moving from no to yes ??
+comparing अगर-तो [140, 159] ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8 4
+	और [152] Yes
+	से [131] No
+	पर [148] No
+	तो [159] No
+moving from no to yes ??
 comparing हालाँकि-लेकिन [394, 404] ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 15
 	हालाँकि [394] No
 moving from no to yes ??
@@ -104149,114 +104324,30 @@ moving from no to yes ??
 	पर [393] No
 	पर [418] No
 	और [397] No
-comparing हालांकि-लेकिन [272, 281] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 11
-	हालांकि [272] No
+comparing हालांकि-लेकिन [196, 218] ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 9
+	हालांकि [196] No
 moving from no to yes ??
-	लेकिन [281] No
+	लेकिन [218] No
 moving from no to yes ??
-comparing भले ही-लेकिन [360, 361, 370] ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 14
-	लेकिन [370] Yes
-removing this
-	के लिए [383, 384] No
-	से [359] No
-comparing तभी-जब [312, 317] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 14
-	इसके बाद [309, 310] Yes
-comparing जब-तो [13, 22] ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 1
-	और [11] Yes
-	के बाद [30, 31] No
-	तो [22] No
+comparing अगर-तो [287, 293] ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 12
+	और [304] Yes
+	इस पर [305, 306] No
+	पर [306] No
+	तो [293] No
 moving from no to yes ??
-comparing जब-तो [140, 145] ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 5
-	और [152] Yes
-	तो [145] No
-moving from no to yes ??
-comparing हालांकि-पर [456, 478] ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 17
-	की वजह से [474, 475, 476] No
-	हालांकि [456] No
-moving from no to yes ??
-	के लिए [481, 482] No
-	लेकिन [471] No
-	से [465] No
-	से [476] No
-	पर [478] No
-moving from no to yes ??
-	वजह [475] No
-comparing जब-तब [136, 146] ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 4
-	के लिए [149, 150] No
-	दूसरे [151] No
-	से [123] No
-	से [141] No
-	तब [146] No
-moving from no to yes ??
-comparing जब-तब [39, 55] ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8 1
-	पर [41] No
-	तब [55] No
-moving from no to yes ??
-comparing अगर-तो [223, 232] ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 6
-	और इसके बाद [258, 259, 260] Yes
-	के बाद [251, 252] No
-	इस पर [239, 240] No
-	से [220] No
-	पर [240] No
-	तो [232] No
-moving from no to yes ??
-comparing यदि-तो [410, 423] ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8 20
-	इससे [411] No
-	तो [423] No
-moving from no to yes ??
-comparing यदि-तो [337, 345] ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn 14
-	पर [356] No
-	तो [345] No
-moving from no to yes ??
-	और [351] No
-	और [363] No
-comparing यदि-तो [136, 140] ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8 5
-	और [135] Yes
-	इस बात पर [120, 121, 122] Yes
-	पहले [130] No
-	तो [140] No
-moving from no to yes ??
-comparing न तो-और न ही [344, 345, 351, 352, 353] ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 16
-	तो [345] No
-moving from no to yes ??
-	और [351] No
-moving from no to yes ??
-comparing जब-तब [130, 161] ../data/raw/Section_17/fullnews_id_2602791_date_18_7_2004.utf8 5
-	से [138] No
-	से [167] No
-	से [171] No
-	पर [155] No
-	तब [161] No
-moving from no to yes ??
-comparing अगर-तो [97, 110] ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8 3
-	के लिए [106, 107] No
-	के लिए [114, 115] No
-	तो [110] No
-moving from no to yes ??
-comparing इसलिए-क्योंकि [383, 387] ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8 18
-	क्योंकि [387] No
-moving from no to yes ??
-	इसलिए [383] No
-moving from no to yes ??
-comparing जब-तो [186, 211] ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 8
-	के बाद [192, 193] Yes
-	तो [211] Yes
-removing this
-	के बाद [201, 202] No
-	व [215] No
-[1600, 1614, 2743, 2426, 2214, 2222, 52, 2060, 2075, 495, 534, 2261, 1889, 1921, 1290, 1823, 931, 553, 1372, 754, 53, 505, 367, 533, 977, 1002, 1263, 1044, 1046, 1213, 252, 280, 33, 156, 953, 560, 1804, 2223, 553, 2639, 1919, 1425, 1045, 1049, 1184, 1188, 1190, 559, 241, 554, 1426, 2378, 554, 2464, 2485, 2060, 2065, 2078, 395, 403, 1025, 1029, 499, 506, 1894, 1901, 907, 769, 2914, 1025, 1043, 1922, 2562, 2304, 2620, 1523, 2166, 1180, 1182, 1697, 2953, 1567, 1571, 2057]
-[2953, 2914, 2743, 2639, 2620, 2562, 2485, 2464, 2426, 2378, 2304, 2261, 2223, 2222, 2214, 2166, 2078, 2075, 2065, 2060, 2057, 1922, 1921, 1919, 1901, 1894, 1889, 1823, 1804, 1697, 1614, 1600, 1571, 1567, 1523, 1426, 1425, 1372, 1290, 1263, 1213, 1190, 1188, 1184, 1182, 1180, 1049, 1046, 1045, 1044, 1043, 1029, 1025, 1002, 977, 953, 931, 907, 769, 754, 560, 559, 554, 553, 534, 533, 506, 505, 499, 495, 403, 395, 367, 280, 252, 241, 156, 53, 52, 33]
-removal size 80
+[2078, 769, 931, 2214, 2222, 2261, 505, 2060, 2065, 1213, 52, 53, 1184, 1188, 1190, 2223, 907, 1919, 1697, 2304, 241, 1180, 1182, 2342, 2354, 560, 1804, 1922, 977, 1002, 2620, 554, 754, 1889, 1921, 1894, 1901, 1923, 1045, 1049, 559, 252, 280, 953, 1823, 2953, 553, 1426, 2057, 2639, 1044, 1046, 1567, 1571, 1025, 1029, 2562, 553, 1372, 1600, 1614, 2743, 1425, 554, 2914, 1523, 1290, 33, 1263, 156, 2166, 2378, 367, 499, 506, 395, 403, 533]
+[2953, 2914, 2743, 2639, 2620, 2562, 2378, 2354, 2342, 2304, 2261, 2223, 2222, 2214, 2166, 2078, 2065, 2060, 2057, 1923, 1922, 1921, 1919, 1901, 1894, 1889, 1823, 1804, 1697, 1614, 1600, 1571, 1567, 1523, 1426, 1425, 1372, 1290, 1263, 1213, 1190, 1188, 1184, 1182, 1180, 1049, 1046, 1045, 1044, 1029, 1025, 1002, 977, 953, 931, 907, 769, 754, 560, 559, 554, 553, 533, 506, 505, 499, 403, 395, 367, 280, 252, 241, 156, 53, 52, 33]
+removal size 76
 useless fellow :/
 पर
 useless fellow :/
 हालांकि
 useless fellow :/
-और
+तो
 useless fellow :/
-दूसरी तरफ
+तो
 useless fellow :/
-तब
+लेकिन
 useless fellow :/
 तो
 useless fellow :/

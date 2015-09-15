@@ -17,7 +17,8 @@ from analysis import *
 def genModel(corpus):
 #	classifier = nltk.classify.NaiveBayesClassifier.train(corpus)
 #	classifier = nltk.classify.MaxentClassifier.train(corpus,"GIS", trace=0, max_iter=100)
-	classifier=SklearnClassifier(maxent()).train(corpus)
+#	classifier=SklearnClassifier(maxent(class_weight={1:1.1,0:1.0})).train(corpus)
+	classifier=SklearnClassifier(maxent(solver="liblinear")).train(corpus)
 #	classifier.show_most_informative_features(50)
 	return classifier
 

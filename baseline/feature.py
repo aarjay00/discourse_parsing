@@ -352,9 +352,9 @@ class Feature():
 		if(commonParent==node.nodeParent):
 			self.featureList.append(("rightWordLocation","indirectConnParent"))
 			return
-		if(commonParent==nodeNext.nodeParent):
-			self.featureList.append(("rightWordLocation","indirectNextParent"))
-			return
+#		if(commonParent==nodeNext.nodeParent):
+#			self.featureList.append(("rightWordLocation","indirectNextParent"))
+#			return
 
 # common parent is root but only single VGF tree
 #common parent is root but conn has another VG* as tree
@@ -513,6 +513,48 @@ class Feature():
 		print "tathaFeature2 no",c,d,a,b,qc,childVGF
 		self.featureVector.append(0)
 		self.featureList.append(("tathaFeature2",0))
+		return [0]
+	def lekinFeature2(self,conn,nodeName,nodeDict,c,a,b):
+		d=getSpan(conn,self.globalWordList)
+		self.description=self.description+" lekinFeature2"
+		if(self.globalWordList[conn[0]].word != u'\u0932\u0947\u0915\u093f\u0928'):
+			self.featureVector.append(0)
+			self.featureList.append(("lekinFeature2",0))
+			return [0]
+		halankiParent=False
+		node=nodeDict[nodeName]
+		print "lekinParent",node.nodeParent
+
+		while(node.nodeParent!="None"):
+		 	print "got a lekin with parent"
+		 	nodeParent=nodeDict[node.nodeParent]
+		 	chunkNum=nodeParent.chunkNum
+		 	for wordNum in self.sentenceList[self.globalWordList[conn[0]].sentenceNum].chunkList[nodeParent.chunkNum].wordNumList:
+				print "\thalanki",self.globalWordList[wordNum].word
+		 		if(self.globalWordList[wordNum].word==u'\u0939\u093e\u0932\u093e\u0902\u0915\u093f' or self.globalWordList[wordNum].word==u'\u0939\u093e\u0932\u093e\u0901\u0915\u093f'):
+					halankiParent=True
+					print "got a halankiparent"
+			node=nodeParent
+		childList=nodeDict[nodeName].childList
+		childVGF=0
+		for child in nodeDict[nodeName].childList:
+			if("VG" in nodeDict[nodeName].getChunkName(child)):
+				childVGF+=1
+		if(childVGF==2 and not halankiParent):
+			print "lekinFeature2 yes",c,d,a,b,halankiParent
+			self.featureVector.append(1)
+			self.featureList.append(("lekinFeature2",1))
+			return [1]
+		elif(childVGF==1 and not halankiParent):
+			for child in nodeDict[nodeName].childList:
+				if(nodeDict[nodeName].getChunkName(child)=="CCP" and hasChild(child,nodeDict,"VG",False)>0):
+					print "lekinFeature2 yes",c,d,a,b,halankiParent
+					self.featureVector.append(1)
+					self.featureList.append(("lekinFeature2",1))
+					return [1]
+		print "lekinFeature2 no",c,d,a,b,halankiParent,childVGF
+		self.featureVector.append(0)
+		self.featureList.append(("lekinFeature2",0))
 		return [0]
 	def parFeature(self,conn):
 		self.description=self.description+" parFeature"

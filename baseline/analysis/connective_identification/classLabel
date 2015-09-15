@@ -817,7 +817,7 @@ Arg2num : None
 remove : False
 Single connective neighborhood : खुलेगा
 ----------------------------------------------------------------------------------------------------
-Yes Frequency: 50
+Yes Frequency: 49
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
 sentenceNum : 8
@@ -1070,18 +1070,6 @@ Arg2 : सेना में कटौती पर विचार किय�
 Arg2num : 6
 remove : False
 Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
 sentenceNum : 7

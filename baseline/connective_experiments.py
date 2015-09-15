@@ -192,16 +192,17 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		feature.aurFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		feature.aurFeature(conn)
 #		feature.parFeature(conn)
-		l1=feature.toRootFeature(conn,node,nodeDict)
-		l2=feature.tok7tFeature(conn,node,nodeDict)
-		feature.featureVector.extend(l1)
-		feature.featureVector.extend(l2)
+#		l1=feature.toRootFeature(conn,node,nodeDict)
+#		l2=feature.tok7tFeature(conn,node,nodeDict)
+#		feature.featureVector.extend(l1)
+#		feature.featureVector.extend(l2)
 		feature.rightWordLocation(conn,node,nxtNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 		print "rightWordLocation",feature.featureList[-1][1],label
 #		fullPath,fullPath1=feature.dependencyPathToRoot(node,nodeDict)
 #		print "deplen",len(fullPath.split("\\")),label,fullPath,"---",fullPath1
 
 		feature.tathaFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+		feature.lekinFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		feature.leftWordLocation(conn,node,prevNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		print "leftWordLocation",feature.featureList[-1][1],label
 #		commonParent=feature.getCommonParent(node,prevNode,nxtNode,nodeDict)
@@ -378,11 +379,28 @@ def write_dependency(conn,wordList,dependencyList,label):
 		FD.close()
 def write_conn_info(conn,discourseFile,label):
 	connective=getSpan(conn,discourseFile.globalWordList)
+	wordList=discourseFile.globalWordList
+	if(label):
+		try:
+			arg1=getSpan(wordList[conn[0]].arg1Span,wordList)
+			arg2=getSpan(wordList[conn[0]].arg2Span,wordList)
+			Arg1num=wordList[wordList[conn[0]].arg1Span[0]].sentenceNum
+			Arg2num=wordList[wordList[conn[0]].arg2Span[0]].sentenceNum
+		except:
+			pass
+	
 	createDirectory("./connInfo/")
 	FD=codecs.open("./connInfo/"+connective,"a")
 	FD.write("label:"+label+"\n")
 	FD.write("FileName:"+discourseFile.rawFileName+"\n")
 	FD.write("sentenceNum:"+str(discourseFile.globalWordList[conn[0]].sentenceNum)+"\n")
+	if(label):
+		try:
+			FD.write("arg1==arg2"+str(Arg1num==Arg2num)+"\n")
+			FD.write(arg1+"\n")
+			FD.write(arg2+"\n")
+		except:
+			pass
 	FD.close()
 
 def genFeatureSplitConn(conn,label,discourseFile):

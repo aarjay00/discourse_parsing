@@ -375,92 +375,6 @@ Arg2num : 2
 remove : False
 Single connective neighborhood : करने
 ----------------------------------------------------------------------------------------------------
-तो Frequency: 7
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 22
-classLabel : No
-classifiedAs : 
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : लगीं
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : प्रशांत ने इसका विरोध किया
-Arg1num : 9
-Arg2 : उन्होंने उसे जमकर पीटा
-Arg2num : 9
-remove : False
-Single connective neighborhood : किया
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2620696_date_24_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : इस बार परिजन ने ढाई लाख रुपये देने में अपनी असमर्थता जताई
-Arg1num : 13
-Arg2 : एक लाख अस्सी हजार रुपये में मामला तय हो गया
-Arg2num : 13
-remove : False
-Single connective neighborhood : जताई
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-sentenceNum : 19
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
-Arg1num : 19
-Arg2 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
-Arg2num : 19
-remove : False
-Single connective neighborhood : पूछा
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
-classLabel : No
-classifiedAs : 
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : 
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
-sentenceNum : 10
-classLabel : No
-classifiedAs : 
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : गया
-----------------------------------------------------------------------------------------------------
 इससे Frequency: 6
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
@@ -534,6 +448,80 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+----------------------------------------------------------------------------------------------------
+तो Frequency: 6
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 22
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लगीं
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : Yes
+classifiedAs : 
+Single connective : तो
+Arg1 : प्रशांत ने इसका विरोध किया
+Arg1num : 9
+Arg2 : उन्होंने उसे जमकर पीटा
+Arg2num : 9
+remove : False
+Single connective neighborhood : किया
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 19
+classLabel : Yes
+classifiedAs : 
+Single connective : तो
+Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
+Arg1num : 19
+Arg2 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
+Arg2num : 19
+remove : False
+Single connective neighborhood : पूछा
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गया
 ----------------------------------------------------------------------------------------------------
 आगे Frequency: 5
 ------
@@ -1217,19 +1205,19 @@ Arg2num : 12
 remove : False
 Single connective neighborhood : ,
 ----------------------------------------------------------------------------------------------------
-के बावजूद Frequency: 1
+वहीं पर Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
 classifiedAs : 
-Single connective : के बावजूद
-Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
-Arg1num : 0
-Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
-Arg2num : 0
+Single connective : वहीं पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
-Single connective neighborhood : निर्णय
+Single connective neighborhood : ।
 ----------------------------------------------------------------------------------------------------
 उस पर Frequency: 1
 ------
@@ -1245,19 +1233,19 @@ Arg2num : None
 remove : False
 Single connective neighborhood : लिया
 ----------------------------------------------------------------------------------------------------
-वहीं पर Frequency: 1
+के बावजूद Frequency: 1
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
-classLabel : No
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
 classifiedAs : 
-Single connective : वहीं पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
+Single connective : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg1num : 0
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+Arg2num : 0
 remove : False
-Single connective neighborhood : ।
+Single connective neighborhood : निर्णय
 ----------------------------------------------------------------------------------------------------
 कुछ दिनों पहले ही Frequency: 1
 ------
