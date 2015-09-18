@@ -118,7 +118,7 @@ class Feature():
 		feature=self.markItemsinList(words,self.wordDictionary)
 		print feature
 		return feature
-	def tagFeature(self,wordList):
+	def tagFeature(self,wordList,num=None):
 		self.description=self.description+" tagFeature"
 		print "tagfeature"
 		tagList=[]
@@ -131,7 +131,10 @@ class Feature():
 		for t in tagList:
 			completeTag=completeTag+" "+t
 		completeTag=completeTag[1:]
-		self.featureList.append(("tagFeature",completeTag.replace(" ","-")))
+		if(num==None):
+			self.featureList.append(("tagFeature",completeTag.replace(" ","-")))
+		else:
+			self.featureList.append(("tagFeature"+str(num),completeTag.replace(" ","-")))
 		feature=self.markItemsinList(list(set(tagList)),self.tagSet)
 		print feature
 		return feature
@@ -190,7 +193,7 @@ class Feature():
 		print tag
 		self.featureList.append(("tagCombo_"+str(offSet1)+"_"+str(offSet2),tag.replace(" ","-")))
 		feature=self.markItemsinList([tag],self.tagSetCombo)
-	def chunkFeature(self,wordList):
+	def chunkFeature(self,wordList,num=None):
 		self.description=self.description+" chunkFeature"
 		print "chunkfeature"
 		chunkList=[]
@@ -200,7 +203,10 @@ class Feature():
 			chunkList.append(self.getChunkInfo(word,0).chunkTag)
 		print ""
 		chunkList=list(set(chunkList))
-		self.featureList.append(("chunkFeature",chunkList[0]))
+		if(num==None):
+			self.featureList.append(("chunkFeature",chunkList[0]))
+		else:
+			self.featureList.append(("chunkFeature"+str(num),chunkList[0]))
 		feature=self.markItemsinList(chunkList,self.chunkSet)
 		print feature
 	def chunkNeighbor(self,wordList,offSet):
@@ -362,36 +368,52 @@ class Feature():
 		print "no idea",a,b
 		return
 	def leftWordLocation(self,conn,node,nodePrev,nodeDict,a,b):
+		checkList=[
+		u'\u0914\u0930',#aur
+#		u'\u092c\u0932\u094d\u0915\u093f'#balki,
+#		u'\u0924\u0925\u093e',#tatha
+	#	u'\u0924\u094b',#to
+#		u'\u092f\u093e',#ya
+	#	u'\u0915\u0947 \u0915\u093e\u0930\u0923',#ke karan
+#		u'\u0915\u0940 \u0935\u091c\u0939 \u0938\u0947',#ki vajah se
+#		u'\u0915\u0947 \u0932\u093f\u090f',# ke liye
+		u'\u0915\u0947 \u092c\u093e\u0926' # ke baad
+		]
+#		if(getSpan(conn,self.globalWordList) not in checkList):
+#			self.featureList.append(("leftWordLocation","None1"))
+#			return
 #conn is already last word
 	  	if(conn[0]==0 or self.globalWordList[conn[0]].sentenceNum!=self.globalWordList[conn[0]-1].sentenceNum):
-			self.featureList.append(("leftWordLocation","first"))
+			self.featureList.append(("leftWordLocation","first1"))
 			return
 	  	word=self.globalWordList[conn[0]]
 	  	wordPrev=self.globalWordList[conn[0]-1]
 #same node
 		if(word.chunkNum==wordPrev.chunkNum):
-			self.featureList.append(("leftWordLocation","sameNode"))
+			self.featureList.append(("leftWordLocation","sameNode1"))
 			return
+#		self.featureList.append(("leftWordLocation","Other"))
+#		return
 	  	if(nodePrev==None):
 			print "ERROR"
 #same parent i.e commonparent should be connective parent
 		if(node.nodeParent==nodePrev.nodeParent):
-			self.featureList.append(("leftWordLocation","directParent"))
+			self.featureList.append(("leftWordLocation","directParent1"))
 			return
 		commonParent=getCommonParent(node,nodePrev,nodeDict)
 # word is in connective tree
 		if(commonParent==node.nodeName):
-			self.featureList.append(("leftWordLocation","prevPartofConnTree"))
+			self.featureList.append(("leftWordLocation","prevPartofConnTree1"))
 			return
 # connective is in word tree
 		if(commonParent==nodePrev.nodeName):
-			self.featureList.append(("leftWordLocation","connPartofPrevTree"))
+			self.featureList.append(("leftWordLocation","connPartofPrevTree1"))
 			return
 		if(commonParent==node.nodeParent):
-			self.featureList.append(("leftWordLocation","indirectConnParent"))
+			self.featureList.append(("leftWordLocation","indirectConnParent1"))
 			return
 		if(commonParent==nodePrev.nodeParent):
-			self.featureList.append(("leftWordLocation","indirectPrevParent"))
+			self.featureList.append(("leftWordLocation","indirectPrevParent1"))
 			return
 
 # common parent is root but only single VGF tree
@@ -514,6 +536,23 @@ class Feature():
 		self.featureVector.append(0)
 		self.featureList.append(("tathaFeature2",0))
 		return [0]
+	def isseFeature(self,conn,nodeName,nodeDict,c,a,b):
+		node=nodeDict[nodeName]
+		self.description=self.description+" isseFeature"
+		if(getSpan(conn,self.globalWordList)!=u'\u0907\u0938\u0938\u0947'):
+			self.featureList.append(("isseFeature","No"))
+			return
+		if(hasChild(nodeName,nodeDict,"CCP") or node.getChunkName(node.nodeParent)=="CCP" or (node.nodeParent!="None" and node.getChunkName(nodeDict[node.nodeParent].nodeParent)=="CCP")):
+			if(self.globalWordList[conn[0]-1].word==u'\u0915\u094d\u092f\u094b\u0902\u0915\u093f' or node.nodeRelation!="rh"):
+				self.featureList.append(("isseFeature","No"))
+				print "isseFeature no",c,a,b,node.nodeRelation
+			else:
+				self.featureList.append(("isseFeature","Yes"))
+				print "isseFeature yes",c,a,b,node.nodeRelation
+		else:
+			print "isseFeature no",c,a,b,node.nodeRelation
+			self.featureList.append(("isseFeature","No"))
+		return
 	def lekinFeature2(self,conn,nodeName,nodeDict,c,a,b):
 		d=getSpan(conn,self.globalWordList)
 		self.description=self.description+" lekinFeature2"

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 8
+../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 7
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 20
@@ -12,6 +12,7 @@ Arg2 : संजय नामक कारीगर के पैरों म�
 Arg2num : 20
 remove : False
 Single connective neighborhood : कूदने
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 23
@@ -24,18 +25,7 @@ Arg2 : उनके मकानों की दीवारों में �
 Arg2num : 23
 remove : False
 Single connective neighborhood : आग
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : Yes
-classifiedAs : 
-Single connective : तथा
-Arg1 : मुख्यमंत्री ने मृतकों के परिजनों को एक - एक लाख रुपये मुआवजा और और गंभीर रूप से घायलों को 50 - 50 तथा
-Arg1num : 10
-Arg2 : मामूली रूप से घायलों को 25 - 25 हजार रुपये देने की घोषणा की है ।
-Arg2num : 10
-remove : False
-Single connective neighborhood : 50
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 32
@@ -48,6 +38,7 @@ Arg2 : आगजनी की धारा 304ए तथा 337 के तहत
 Arg2num : 32
 remove : False
 Single connective neighborhood : मौत
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 10
@@ -60,6 +51,7 @@ Arg2 : गंभीर रूप से घायलों को 50 - 50 तथ
 Arg2num : 10
 remove : False
 Single connective neighborhood : मुआवजा
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 12
@@ -72,6 +64,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 22
@@ -84,6 +77,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : लगीं
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578415_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 8
@@ -96,8 +90,9 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 2
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8 Frequency: 5
+../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8 Frequency: 7
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 8
@@ -110,6 +105,7 @@ Arg2 : मीडिया से बातचीत में कहा कि �
 Arg2num : 8
 remove : False
 Single connective neighborhood : करने
+iteration : 6
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 21
@@ -122,6 +118,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 6
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 9
@@ -134,6 +131,20 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
+iteration : 6
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 19
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 6
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 6
@@ -146,6 +157,20 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : जाएगा
+iteration : 6
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 6
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580877_date_9_7_2004.utf8
 sentenceNum : 23
@@ -158,6 +183,141 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 6
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8 Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : लेकिन
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हैं
+iteration : 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 18
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करे
+iteration : 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ज्यादा
+iteration : 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : बने
+iteration : 3
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 Frequency: 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : इसके चलते
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : साथ ही
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : के
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : जाने
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : कराने
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : की
+iteration : 4
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8 Frequency: 5
 ------
@@ -172,6 +332,7 @@ Arg2 : दूसरे आतंकी ने फायरिंग शुरू
 Arg2num : 10
 remove : False
 Single connective neighborhood : जवान
+iteration : 7
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 8
@@ -184,6 +345,7 @@ Arg2 : दूसरा आतंकी भी कुछ देर फायर�
 Arg2num : 8
 remove : False
 Single connective neighborhood : जाने
+iteration : 7
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 16
@@ -196,6 +358,7 @@ Arg2 : आतंकी फायरिंग करता हुआ बाहर
 Arg2num : 16
 remove : False
 Single connective neighborhood : फटने
+iteration : 7
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 10
@@ -208,6 +371,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
+iteration : 7
 ------
 rawFileName : ../data/raw/Section_16/fullnews_id_2580883_date_9_7_2004.utf8
 sentenceNum : 15
@@ -220,6 +384,169 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : फेंके
+iteration : 7
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
+Arg1num : 2
+Arg2 : वाजपेयी के बयान
+Arg2num : 2
+remove : False
+Single connective neighborhood : बयान
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : 
+Single connective : इस बारे में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 4
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : नहीं
+iteration : 4
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : की वजह से
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : प्रतियोगिता
+iteration : 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : जिससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+iteration : 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : खासकर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+iteration : 4
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 4
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : जैसे ही
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लेकिन
+iteration : 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : वैसे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : उधर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : दी
+iteration : 1
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8 Frequency: 4
 ------
@@ -234,6 +561,7 @@ Arg2 : चंडीगढ़ में बृहस्पतिवार की स
 Arg2num : 7
 remove : False
 Single connective neighborhood : वर्षा
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
 sentenceNum : 9
@@ -246,6 +574,7 @@ Arg2 : केदारनाथ यात्रा मार्ग में र
 Arg2num : 9
 remove : False
 Single connective neighborhood : भूस्खलन
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
 sentenceNum : 3
@@ -258,6 +587,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
+iteration : 2
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612814_date_21_7_2004.utf8
 sentenceNum : 10
@@ -270,6 +600,495 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
+iteration : 2
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : कर्मचारी भविष्य निधि संगठन ( ईपीएफओ ) के बोर्ड ने सोमवार को अंतर्राष्ट्रीय सलाहकार फर्म मर्सर को नियुक्त किया है ।
+Arg1num : 0
+Arg2 : अतिरिक्त संसाधन जुटाने की आवश्यकता और चार करोड़ लाभार्थियों को उनके निवेश का बेहतर रिटर्न देने
+Arg2num : 0
+remove : False
+Single connective neighborhood : देने
+iteration : 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : बताया जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
+sentenceNum : 15
+classLabel : No
+classifiedAs : 
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 5
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : बताया जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+iteration : 8
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : इससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : तो
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : है
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : तब
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हैं
+iteration : 8
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करेगा
+iteration : 8
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
+Arg1num : 2
+Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
+Arg2num : 2
+remove : False
+Single connective neighborhood : करने
+iteration : 9
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 14
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 9
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 16
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 9
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : प्रत्यक्ष
+iteration : 9
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 4
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : यहाँ सेना तैनात की गई है
+Arg1num : 4
+Arg2 : क्षेत्र में सामान्य स्थिति बहाल करने में राज्य सरकार को मदद करने
+Arg2num : 4
+remove : False
+Single connective neighborhood : करने
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : इस बारे में
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : नहीं
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : चाहिए
+iteration : 10
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8 Frequency: 4
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 7
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : खुलेगा
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : )
+iteration : 10
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : )
+iteration : 10
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 Frequency: 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 7
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : एक साल से ज्यादा समय बीतने
+Arg1num : 7
+Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
+Arg2num : 7
+remove : False
+Single connective neighborhood : बीतने
+iteration : 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : बनाने
+iteration : 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : चलाने
+iteration : 3
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8 Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : 
+Single connective : इस दौरान
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
+sentenceNum : 21
+classLabel : No
+classifiedAs : 
+Single connective : तथा
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : सामान्य
+iteration : 3
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 Frequency: 3
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 0
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : फैलाने
+iteration : 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गए
+iteration : 1
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 3
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : वहीं पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 0
+classLabel : No
+classifiedAs : 
+Single connective : वहीं
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+iteration : 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : वहीं
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 1
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8 Frequency: 3
 ------
@@ -284,6 +1103,7 @@ Arg2 : उन्होंने कहा कि उनके इस फैस�
 Arg2num : 5
 remove : False
 Single connective neighborhood : उन्होंने
+iteration : 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
 sentenceNum : 9
@@ -296,6 +1116,7 @@ Arg2 : विज्ञप्ति में कहा है कि इस क�
 Arg2num : 9
 remove : False
 Single connective neighborhood : में
+iteration : 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2612821_date_21_7_2004.utf8
 sentenceNum : 3
@@ -308,82 +1129,48 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : लिया
+iteration : 1
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 3
+../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 Frequency: 3
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 9
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 11
 classLabel : No
 classifiedAs : 
-Single connective : वैसे
+Single connective : इसके लिए
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 5
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580808_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : No
-classifiedAs : 
-Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : दी
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8 Frequency: 3
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
 sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : पार्टी मुख्यालय से भाजपा के सभी नेता भूमिगत हो गए
-Arg1num : 2
-Arg2 : वाजपेयी के बयान
-Arg2num : 2
-remove : False
-Single connective neighborhood : बयान
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 13
 classLabel : No
 classifiedAs : 
-Single connective : इस बारे में
+Single connective : इसमें
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : ,
+Single connective neighborhood : ।
+iteration : 5
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2602792_date_18_7_2004.utf8
-sentenceNum : 0
+rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
+sentenceNum : 12
 classLabel : No
 classifiedAs : 
-Single connective : बल्कि
+Single connective : इस पर
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : नहीं
+Single connective neighborhood : ।
+iteration : 5
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 3
 ------
@@ -398,6 +1185,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : हैं
+iteration : 5
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 5
@@ -410,6 +1198,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
+iteration : 5
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2578414_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 11
@@ -422,11 +1211,163 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : हुई
+iteration : 5
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8 Frequency: 3
+../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8 Frequency: 3
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 2
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : तब
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 7
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 17
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करते
+iteration : 7
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
+sentenceNum : 16
+classLabel : No
+classifiedAs : 
+Single connective : समझा जाता है कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हुए
+iteration : 7
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8 Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 1
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : केंन्द्र अब राज्यों की लगाम कसने की तैयारी में है ।
+Arg1num : 1
+Arg2 : प्रधानमंत्री ग्राम सड़क योजना को ' भारत निर्माण ' योजना के दायरे में लाने के बाद अगले चार सालों में सभी गाँवों को सड़कों से जोड़ने
+Arg2num : 1
+remove : False
+Single connective neighborhood : जोड़ने
+iteration : 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
+sentenceNum : 20
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करोड़
+iteration : 9
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8 Frequency: 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
+Arg1num : 7
+Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
+Arg2num : 11
+remove : False
+Single connective neighborhood : उन्होंने
+iteration : 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
+classLabel : Yes
+classifiedAs : 
+Single connective : आगे
+Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
+Arg1num : 17
+Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
+Arg2num : 18
+remove : False
+Single connective neighborhood : उन्होंने
+iteration : 9
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
+sentenceNum : 18
+classLabel : No
+classifiedAs : 
+Single connective : फिलहाल
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : '
+iteration : 9
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : गया
+iteration : 2
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
 classLabel : No
 classifiedAs : 
 Single connective : इससे
@@ -436,21 +1377,10 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
-classLabel : No
-classifiedAs : 
-Single connective : तो
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : है
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625772_date_26_7_2004.utf8
-sentenceNum : 9
+rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
 classLabel : No
 classifiedAs : 
 Single connective : और
@@ -459,59 +1389,120 @@ Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : करेगा
+Single connective neighborhood : नियंत्रक
+iteration : 2
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8 Frequency: 2
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 8
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
+Arg1num : 0
+Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
+Arg2num : 0
+remove : False
+Single connective neighborhood : रखने
+iteration : 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
+sentenceNum : 2
 classLabel : No
 classifiedAs : 
-Single connective : वहीं पर
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : )
+iteration : 4
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : No
+classifiedAs : 
+Single connective : इसका
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 4
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580803_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 0
+rawFileName : ../data/raw/Section_16/fullnews_id_2580873_date_9_7_2004.utf8
+sentenceNum : 8
 classLabel : No
 classifiedAs : 
-Single connective : वहीं
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 4
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : इसलिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 3
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : इस तरह
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
+iteration : 3
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8 Frequency: 2
+../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8 Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 1
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 0
 classLabel : Yes
 classifiedAs : 
-Single connective : के बाद
-Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
-Arg1num : 1
-Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
-Arg2num : 1
+Single connective : के बावजूद
+Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
+Arg1num : 0
+Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
+Arg2num : 0
 remove : False
-Single connective neighborhood : आदेश
+Single connective neighborhood : निर्णय
+iteration : 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
-sentenceNum : 5
-classLabel : Yes
+rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
+sentenceNum : 4
+classLabel : No
 classifiedAs : 
-Single connective : के बाद
-Arg1 : २००२ में सलेम और मोनिका के खिलाफ फर्जी पासपोर्ट मामले में आरोप दायर करने
-Arg1num : 5
-Arg2 : अदालत ने दोनों के खिलाफ गिरफ्तारी वारंट जारी किया था
-Arg2num : 5
+Single connective : इससे पहले
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
-Single connective neighborhood : करने
+Single connective neighborhood : कि
+iteration : 1
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8 Frequency: 2
 ------
@@ -526,6 +1517,7 @@ Arg2 : वर्तमान समय में दो तीन सप्त�
 Arg2num : 4
 remove : False
 Single connective neighborhood : पाने
+iteration : 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2600316_date_17_7_2004.utf8
 sentenceNum : 0
@@ -538,32 +1530,147 @@ Arg2 : अमरनाथ गुफा में प्राकृतिक र
 Arg2num : 0
 remove : False
 Single connective neighborhood : सहेजने
+iteration : 1
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
+../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8 Frequency: 2
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 14
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 1
 classLabel : Yes
 classifiedAs : 
-Single connective : और
-Arg1 : सर्वे में कहा गया है कि कृषि क्षेत्र में कार्य कर रहे अतिरिक्त श्रमिकों को उद्योग में रोजगार देने
-Arg1num : 14
-Arg2 : इसके लिए कृषि प्रसंस्करण उद्योगों को बढ़ावा देने के लिए विशेष अभियान चलाया जाएगा ।
-Arg2num : 14
+Single connective : के बाद
+Arg1 : फर्जी पासपोर्ट मामले में अदालत द्वारा मोनिका बेदी को पेश किए जाने के आदेश
+Arg1num : 1
+Arg2 : पुलिस उपाधीक्षक के नेतृत्व में एक टीम हैदराबाद रवाना हो गई है
+Arg2num : 1
 remove : False
-Single connective neighborhood : देने
+Single connective neighborhood : आदेश
+iteration : 1
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 3
+rawFileName : ../data/raw/Section_17/fullnews_id_2605259_date_18_7_2004.utf8
+sentenceNum : 5
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : २००२ में सलेम और मोनिका के खिलाफ फर्जी पासपोर्ट मामले में आरोप दायर करने
+Arg1num : 5
+Arg2 : अदालत ने दोनों के खिलाफ गिरफ्तारी वारंट जारी किया था
+Arg2num : 5
+remove : False
+Single connective neighborhood : करने
+iteration : 1
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 14
 classLabel : No
 classifiedAs : 
-Single connective : इससे
+Single connective : इसमें
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605260_date_18_7_2004.utf8
+sentenceNum : 1
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : बचाने
+iteration : 1
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : या
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : जलाकर
+iteration : 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : हो
+iteration : 2
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : Yes
+classifiedAs : 
+Single connective : इसके पूर्व
+Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
+Arg1num : 8
+Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
+Arg2num : 13
+remove : False
+Single connective neighborhood : कि
+iteration : 4
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : देखने
+iteration : 5
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 5
+classLabel : No
+classifiedAs : 
+Single connective : आखिरकार
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : और
+iteration : 5
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : लेकिन
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 5
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8 Frequency: 2
 ------
@@ -578,6 +1685,7 @@ Arg2 : पंढे ने कहा कि कर्मचारियों �
 Arg2num : 8
 remove : False
 Single connective neighborhood : ने
+iteration : 0
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2610163_date_20_7_2004.utf8
 sentenceNum : 9
@@ -590,75 +1698,25 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : हुए
+iteration : 0
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8 Frequency: 2
+../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : प्रशांत ने इसका विरोध किया
-Arg1num : 9
-Arg2 : उन्होंने उसे जमकर पीटा
-Arg2num : 9
-remove : False
-Single connective neighborhood : किया
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610162_date_20_7_2004.utf8
-sentenceNum : 3
+rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 6
 classLabel : No
 classifiedAs : 
 Single connective : और
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : गया
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : 
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578418_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 10
-classLabel : No
-classifiedAs : 
-Single connective : जिससे
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8 Frequency: 2
+iteration : 5
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 5
-classLabel : No
-classifiedAs : 
-Single connective : इसके चलते
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625775_date_26_7_2004.utf8
-sentenceNum : 14
+rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 9
 classLabel : No
 classifiedAs : 
 Single connective : और
@@ -667,85 +1725,8 @@ Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : की
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2617899_date_23_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : 
-Single connective : इस पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : कर्मचारी भविष्य निधि संगठन ( ईपीएफओ ) के बोर्ड ने सोमवार को अंतर्राष्ट्रीय सलाहकार फर्म मर्सर को नियुक्त किया है ।
-Arg1num : 0
-Arg2 : अतिरिक्त संसाधन जुटाने की आवश्यकता और चार करोड़ लाभार्थियों को उनके निवेश का बेहतर रिटर्न देने
-Arg2num : 0
-remove : False
-Single connective neighborhood : देने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612820_date_21_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : बताया जाता है कि
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 12
-classLabel : Yes
-classifiedAs : 
-Single connective : समझा जाता है कि
-Arg1 : सीमा जब लालाराम गिरोह में थी तभी उसने गुर्जर से शादी रचाई थी ।
-Arg1num : 11
-Arg2 : बाद में जब लालाराम ने सीमा के साथ जबरन शारीरिक संबंध बनाया तो गुस्साए गुर्जर ने लालाराम गिरोह से अलग होकर अपना एक अलग गिरोह बना लिया
-Arg2num : 12
-remove : False
-Single connective neighborhood : ।
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 7
-classLabel : No
-classifiedAs : 
-Single connective : उधर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
+Single connective neighborhood : दूसरे
+iteration : 5
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8 Frequency: 2
 ------
@@ -760,6 +1741,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 5
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2620699_date_24_7_2004.utf8
 sentenceNum : 1
@@ -772,32 +1754,147 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 5
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8 Frequency: 2
+../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 5
+rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
 classLabel : No
 classifiedAs : 
-Single connective : बताया जाता है कि
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : २.७
+iteration : 6
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578420_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : मध्यम
+iteration : 6
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
+Arg1num : 0
+Arg2 : इसे रद्द कर दिया गया है
+Arg2num : 0
+remove : False
+Single connective neighborhood : जाने
+iteration : 6
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
+sentenceNum : 9
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : शोध
+iteration : 6
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 10
+classLabel : No
+classifiedAs : 
+Single connective : साथ ही
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : के
+iteration : 6
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
+sentenceNum : 27
+classLabel : No
+classifiedAs : 
+Single connective : इसका
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 6
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8 Frequency: 2
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2615431_date_22_7_2004.utf8
-sentenceNum : 12
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 0
+classLabel : Yes
+classifiedAs : 
+Single connective : के लिए
+Arg1 : सरकार विशेषज्ञ समिति की रिपोर्ट का इंतजार कर रही है ।
+Arg1num : 0
+Arg2 : देश के सात बेहतरीन संस्थानों को उन्नत रूप देकर भारतीय प्रौद्योगिकी संस्थानों ( आईआईटी ) के समकक्ष बनाने
+Arg2num : 0
+remove : False
+Single connective neighborhood : बनाने
+iteration : 7
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+sentenceNum : 11
+classLabel : Yes
+classifiedAs : 
+Single connective : से
+Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
+Arg1num : 11
+Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
+Arg2num : 11
+remove : False
+Single connective neighborhood : जाने
+iteration : 7
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8 Frequency: 2
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+sentenceNum : 3
 classLabel : No
 classifiedAs : 
-Single connective : तथा
+Single connective : ऐसे में
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
+Single connective neighborhood : ।
+iteration : 7
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
+sentenceNum : 15
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : लेने
+iteration : 7
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
 ------
@@ -812,6 +1909,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
+iteration : 8
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580813_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 3
@@ -824,110 +1922,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : है
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-sentenceNum : 12
-classLabel : Yes
-classifiedAs : 
-Single connective : इसी प्रकार
-Arg1 : 2001 की जनगणना के आँकड़ों के अनुसार जम्मू कश्मीर में मुस्लिमों की आबादी 67 फीसदी है तथा हिंदुओं की 29.6 29.6 फीसदी ,
-Arg1num : 12
-Arg2 : पंजाब में 59.9 59.9 फीसदी सिक्ख हैं तथा 36.9 36.9 फीसदी हिंदू हैं ।
-Arg2num : 12
-remove : False
-Single connective neighborhood : ,
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
-sentenceNum : 2
-classLabel : No
-classifiedAs : 
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-sentenceNum : 1
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : केंन्द्र अब राज्यों की लगाम कसने की तैयारी में है ।
-Arg1num : 1
-Arg2 : प्रधानमंत्री ग्राम सड़क योजना को ' भारत निर्माण ' योजना के दायरे में लाने के बाद अगले चार सालों में सभी गाँवों को सड़कों से जोड़ने
-Arg2num : 1
-remove : False
-Single connective neighborhood : जोड़ने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625776_date_26_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : 
-Single connective : इसके लिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : वर्ष २००४ - ०५ के लिए यूपीए सरकार के पहले बजट को पेश करने
-Arg1num : 2
-Arg2 : चिदंबरम ने कहा कि हमने यह दिखा दिया है कि हमारी सरकार को जनता के हितों का पूरा ध्यान है और वह साहसी फैसले लेने से पीछे नहीं हटती
-Arg2num : 2
-remove : False
-Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580871_date_9_7_2004.utf8
-sentenceNum : 14
-classLabel : No
-classifiedAs : 
-Single connective : फिलहाल
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 11
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : । लातूर में रविवार को अखिल भारतीय कृषि , मवेशी और दुग्ध विकास प्रदर्शनी का उद्घाटन करते हुए शरद पवार ने कहा कि टीवी चैनलों पर बर्ड फ्लू की खबरें देखने के बाद हमने चिकन और अंडे खाने बंद कर दिए । यहाँ तक कि पार्लियामेंट कैंटीन में भी चिकन पर पाबंदी लग गई । इसके बाद रेलों , विमानों और सेना में चिकन पर पाबंदी लग गई ।
-Arg1num : 7
-Arg2 : उन्होंने कहा कि शाकाहारी बेशक़ शाक - सब्जी अथवा घास खाएँ
-Arg2num : 11
-remove : False
-Single connective neighborhood : उन्होंने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625770_date_26_7_2004.utf8
-sentenceNum : 18
-classLabel : Yes
-classifiedAs : 
-Single connective : आगे
-Arg1 : रोशे इंडिया के प्रबंध निदेशक गिरीश तेलंग ने कहा है कि कंपनी सरकार को अप्रैल तक टेमीफ्लू के 30 हजार पैकेट उपलब्ध कराएगी ।
-Arg1num : 17
-Arg2 : उन्होंने कहा कि ' फिलहाल जरूरत इस बात की है कि जिस जगह टेमीफ्लू की आवश्यकता है वहाँ इसे कैसे उपलब्ध कराया जाए ।
-Arg2num : 18
-remove : False
-Single connective neighborhood : उन्होंने
+iteration : 8
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 2
 ------
@@ -942,6 +1937,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 9
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580810_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 11
@@ -954,74 +1950,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8 Frequency: 2
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
-sentenceNum : 4
-classLabel : Yes
-classifiedAs : 
-Single connective : के लिए
-Arg1 : यहाँ सेना तैनात की गई है
-Arg1num : 4
-Arg2 : क्षेत्र में सामान्य स्थिति बहाल करने में राज्य सरकार को मदद करने
-Arg2num : 4
-remove : False
-Single connective neighborhood : करने
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612813_date_21_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : 
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : चाहिए
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : इस संबंध में
-Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
-Arg1num : 1
-Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
-Arg2num : 2
-remove : False
-Single connective neighborhood : ने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580833_date_8_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के बावजूद
-Arg1 : भारत - अमेरिकी संबंध इतने बेहतर कभी नहीं थे
-Arg1num : 0
-Arg2 : अमेरिका के पाकिस्तान को एफ - १६ विमान बेचने के निर्णय
-Arg2num : 0
-remove : False
-Single connective neighborhood : निर्णय
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
-sentenceNum : 8
-classLabel : Yes
-classifiedAs : 
-Single connective : कुछ दिनों पहले ही
-Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
-Arg1num : 4
-Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
-Arg2num : 7
-remove : False
-Single connective neighborhood : से
+iteration : 9
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2578407_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
@@ -1036,48 +1965,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : करने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580884_date_9_7_2004.utf8
-sentenceNum : 20
-classLabel : No
-classifiedAs : 
-Single connective : या
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : गए
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580867_date_9_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : 
-Single connective : पर
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हो
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580817_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 11
-classLabel : No
-classifiedAs : 
-Single connective : इससे
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
+iteration : 3
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2605251_date_18_7_2004.utf8 Frequency: 1
 ------
@@ -1092,90 +1980,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607702_date_19_7_2004.utf8
-sentenceNum : 1
-classLabel : No
-classifiedAs : 
-Single connective : लेकिन
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : हैं
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
-------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 18
-classLabel : Yes
-classifiedAs : 
-Single connective : इसके लिए
-Arg1 : अयोध्या विवाद के हल के लिए नए सिरे से ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड से बातचीत की रणनीति भी है ।
-Arg1num : 17
-Arg2 : प्रस्ताव पर चर्चा शुरू होने वाली है ।
-Arg2num : 18
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612815_date_21_7_2004.utf8
-sentenceNum : 21
-classLabel : No
-classifiedAs : 
-Single connective : इस दौरान
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
-sentenceNum : 6
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने
-Arg1num : 6
-Arg2 : सेना में कटौती पर विचार किया जाएगा
-Arg2num : 6
-remove : False
-Single connective neighborhood : करने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2612823_date_21_7_2004.utf8
-sentenceNum : 12
-classLabel : No
-classifiedAs : 
-Single connective : इसलिए
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583220_date_9_7_2004.utf8
-sentenceNum : 7
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : एक साल से ज्यादा समय बीतने
-Arg1num : 7
-Arg2 : अब तक केवल 17 पदों पर नियुक्ति हो सकी है
-Arg2num : 7
-remove : False
-Single connective neighborhood : बीतने
+iteration : 2
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2605265_date_18_7_2004.utf8 Frequency: 1
 ------
@@ -1190,20 +1995,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : सकने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610159_date_20_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : अपनी अनिश्चितकालीन हड़ताल वापस लेने का फैसला किया है
-Arg1num : 0
-Arg2 : पश्चिम बंगाल में टैक्सी मालिकों ने किराया वृद्धि की माँग को लेकर मंगलवार को एक दिन की हड़ताल रखने
-Arg2num : 0
-remove : False
-Single connective neighborhood : रखने
+iteration : 3
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2617886_date_23_7_2004.utf8 Frequency: 1
 ------
@@ -1218,6 +2010,7 @@ Arg2 : उन्होंने आयकर प्रशिक्षण सं�
 Arg2num : 8
 remove : False
 Single connective neighborhood : होने
+iteration : 4
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2625773_date_26_7_2004.utf8 Frequency: 1
 ------
@@ -1232,6 +2025,112 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 4
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 11
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 3
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583221_date_9_7_2004.utf8
+sentenceNum : 6
+classLabel : Yes
+classifiedAs : 
+Single connective : के बाद
+Arg1 : पाकिस्तान के नियंत्रण वाले कश्मीर से आंतकवादी कैंपों को खत्म करने
+Arg1num : 6
+Arg2 : सेना में कटौती पर विचार किया जाएगा
+Arg2num : 6
+remove : False
+Single connective neighborhood : करने
+iteration : 3
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2623354_date_25_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : व
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : करने
+iteration : 0
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2583215_date_9_7_2004.utf8
+sentenceNum : 13
+classLabel : No
+classifiedAs : 
+Single connective : बल्कि
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ,
+iteration : 0
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605266_date_18_7_2004.utf8
+sentenceNum : 8
+classLabel : Yes
+classifiedAs : 
+Single connective : कुछ दिनों पहले ही
+Arg1 : राज्य में बाढ़ का पानी कई जेलों में घुस जाने के कारण कैदियों को स्थानांतरित किया गया है ।
+Arg1num : 4
+Arg2 : । बिहार के दरभंगा जेल से बाढ़ का फायदा उठा ३४ कैदी फरार हो गए थे ,
+Arg2num : 7
+remove : False
+Single connective neighborhood : से
+iteration : 0
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578421_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : इससे
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 0
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2578475_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 2
+classLabel : Yes
+classifiedAs : 
+Single connective : इस संबंध में
+Arg1 : प्रतिनिधिमंडल ने बिहार में बिजली की स्थिति से प्रधानमंत्री को अवगत कराते हुए राज्य में परमाणु रिएक्टर की स्थापना की माँग रखी
+Arg1num : 1
+Arg2 : प्रधानमंत्री ने परमाणु ऊर्जा आयोग को लिखने का भरोसा दिया है
+Arg2num : 2
+remove : False
+Single connective neighborhood : ने
+iteration : 1
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
@@ -1246,90 +2145,52 @@ Arg2 : लोगों ने गर्म वस्त्र पहनने �
 Arg2num : 2
 remove : False
 Single connective neighborhood : आने
+iteration : 4
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8 Frequency: 1
+../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583223_date_9_7_2004.utf8
-sentenceNum : 13
-classLabel : Yes
-classifiedAs : 
-Single connective : इसके पूर्व
-Arg1 : कि माकपा विधायक अजित सरकार की हत्या के मामले में जेल में बंद पप्पू यादव ने मुलाकातियों से मिलने से मना करने पर उन्हें जान से मारने की धमकी
-Arg1num : 8
-Arg2 : मधेपुरा से राजद के सांसद पप्पू यादव की उनसे मिलने बड़ी संख्या में आने वाले अनाधिकृत मुलाकातियों को रोकने के मामले में जेल महानिरीक्षक से भी नोक - झोंक हो चुकी
-Arg2num : 13
-remove : False
-Single connective neighborhood : कि
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2623353_date_25_7_2004.utf8
-sentenceNum : 2
+rawFileName : ../data/raw/Section_11/fullnews_id_2580820_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 7
 classLabel : No
 classifiedAs : 
-Single connective : लेकिन
+Single connective : उधर
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 5
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+../data/raw/Section_11/fullnews_id_2580811_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2578422_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+rawFileName : ../data/raw/Section_11/fullnews_id_2580811_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
 sentenceNum : 6
 classLabel : No
 classifiedAs : 
-Single connective : और
+Single connective : मसलन
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : है
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2583219_date_9_7_2004.utf8
-sentenceNum : 0
-classLabel : Yes
-classifiedAs : 
-Single connective : के बाद
-Arg1 : छत्तीसगढ़ में माओवादियों के कारण खतरे में पड़े आदिवासी समूहों के सर्वे पर प्रतिबंध लगाए जाने
-Arg1num : 0
-Arg2 : इसे रद्द कर दिया गया है
-Arg2num : 0
-remove : False
-Single connective neighborhood : जाने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2605274_date_18_7_2004.utf8
-sentenceNum : 19
-classLabel : Yes
-classifiedAs : 
-Single connective : तो
-Arg1 : सुनवाई के दौरान मजिस्ट्रेट ने शंकराचार्य से उनके स्वास्थ्य के बारे में पूछा
-Arg1num : 19
-Arg2 : उन्होंने कहा , मैं कह नहीं सकता कि ठीक हूँ ।
-Arg2num : 19
-remove : False
-Single connective neighborhood : पूछा
+Single connective neighborhood : मसलों
+iteration : 6
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
 rawFileName : ../data/raw/Section_11/fullnews_id_2580823_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 1
-classLabel : Yes
+sentenceNum : 4
+classLabel : No
 classifiedAs : 
 Single connective : बल्कि
-Arg1 : वरुण के अनुसार उनका परिवार कांग्रेस पार्टी के प्रति नहीं
-Arg1num : 1
-Arg2 : विचार धाराओं के प्रति प्रतिबद्घ रहा है ।
-Arg2num : 1
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
 Single connective neighborhood : नहीं
+iteration : 6
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2615432_date_22_7_2004.utf8 Frequency: 1
 ------
@@ -1344,6 +2205,7 @@ Arg2 : पिछले एक महीने में रिजर्व ब�
 Arg2num : 5
 remove : False
 Single connective neighborhood : सक्रियता
+iteration : 6
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_16/fullnews_id_2580882_date_9_7_2004.utf8 Frequency: 1
 ------
@@ -1358,76 +2220,52 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ,
+iteration : 7
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8 Frequency: 1
+../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
 ------
-rawFileName : ../data/raw/Section_17/fullnews_id_2625777_date_26_7_2004.utf8
+rawFileName : ../data/raw/Section_11/fullnews_id_2580812_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : इसमें
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 7
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607701_date_19_7_2004.utf8
 sentenceNum : 11
-classLabel : Yes
-classifiedAs : 
-Single connective : से
-Arg1 : मौजूदा आईआईटी की प्रतिष्ठा को लेकर खतरा उत्पन्न हो जायेगा
-Arg1num : 11
-Arg2 : इन्हें आईआईटी के समकक्ष बनाये जाने
-Arg2num : 11
-remove : False
-Single connective neighborhood : जाने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610164_date_20_7_2004.utf8
-sentenceNum : 9
 classLabel : No
 classifiedAs : 
-Single connective : तब
+Single connective : पहले
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : ।
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_16/fullnews_id_2580872_date_9_7_2004.utf8
-sentenceNum : 2
-classLabel : Yes
-classifiedAs : 
-Single connective : बल्कि
-Arg1 : गिनती के बचे इन दुलर्भ आदिवासियों को अब खतरा किसी अन्य से नहीं
-Arg1num : 2
-Arg2 : खुद की बदलती आदतों से है
-Arg2num : 2
-remove : False
-Single connective neighborhood : नहीं
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2607700_date_19_7_2004.utf8
-sentenceNum : 3
-classLabel : No
-classifiedAs : 
-Single connective : ऐसे में
-Arg1 : None
-Arg1num : None
-Arg2 : None
-Arg2num : None
-remove : False
-Single connective neighborhood : ।
+iteration : 7
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8 Frequency: 1
 ------
 rawFileName : ../data/raw/Section_17/fullnews_id_2623355_date_25_7_2004.utf8
-sentenceNum : 9
-classLabel : Yes
+sentenceNum : 18
+classLabel : No
 classifiedAs : 
-Single connective : इससे
-Arg1 : सेना के सूत्रों का मानना है कि इन दिनों इस तरह की बात - चीत ज्यादा इंटरसेप्ट हो रही है ।
-Arg1num : 8
-Arg2 : साफ है कि आतंकवादियों की हताशा बढ़ रही है ।
-Arg2num : 9
+Single connective : इसका
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
 remove : False
 Single connective neighborhood : ।
+iteration : 7
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2617898_date_23_7_2004.utf8 Frequency: 1
 ------
@@ -1442,6 +2280,7 @@ Arg2 : विधानसभा चुनावों में लुधिय�
 Arg2num : 1
 remove : False
 Single connective neighborhood : होने
+iteration : 8
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2605273_date_18_7_2004.utf8 Frequency: 1
 ------
@@ -1456,6 +2295,7 @@ Arg2 : देश की बदनामी होती है ।
 Arg2num : 4
 remove : False
 Single connective neighborhood : कि
+iteration : 8
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2610172_date_20_7_2004.utf8 Frequency: 1
 ------
@@ -1470,6 +2310,52 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : होगा
+iteration : 8
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2610167_date_20_7_2004.utf8
+sentenceNum : 12
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : 85
+iteration : 9
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2607696_date_19_7_2004.utf8
+sentenceNum : 2
+classLabel : No
+classifiedAs : 
+Single connective : इसके लिए
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : ।
+iteration : 9
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2605272_date_18_7_2004.utf8
+sentenceNum : 0
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : देने
+iteration : 9
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2617897_date_23_7_2004.utf8 Frequency: 1
 ------
@@ -1484,6 +2370,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : था
+iteration : 9
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_17/fullnews_id_2620700_date_24_7_2004.utf8 Frequency: 1
 ------
@@ -1498,6 +2385,7 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : जाए
+iteration : 10
 ----------------------------------------------------------------------------------------------------
 ../data/raw/Section_16/fullnews_id_2583218_date_9_7_2004.utf8 Frequency: 1
 ------
@@ -1512,31 +2400,64 @@ Arg2 : None
 Arg2num : None
 remove : False
 Single connective neighborhood : गया
+iteration : 10
 ----------------------------------------------------------------------------------------------------
-../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8 Frequency: 1
 ------
-rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
-sentenceNum : 6
-classLabel : Yes
-classifiedAs : 
-Single connective : और
-Arg1 : उन्होंने भीड़ को तितर - बितर होने
-Arg1num : 6
-Arg2 : कानून अपने हाथ में नहीं लेने के लिए राजी किया ।
-Arg2num : 6
-remove : False
-Single connective neighborhood : होने
-----------------------------------------------------------------------------------------------------
-../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8 Frequency: 1
-------
-rawFileName : ../data/raw/Section_17/fullnews_id_2610165_date_20_7_2004.utf8
-sentenceNum : 7
+rawFileName : ../data/raw/Section_17/fullnews_id_2616569_date_23_7_2004.utf8
+sentenceNum : 14
 classLabel : No
 classifiedAs : 
-Single connective : या
+Single connective : खासकर
 Arg1 : None
 Arg1num : None
 Arg2 : None
 Arg2num : None
 remove : False
-Single connective neighborhood : खुलेगा
+Single connective neighborhood : कि
+iteration : 10
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_16/fullnews_id_2580878_date_9_7_2004.utf8
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : वसूलने
+iteration : 10
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn Frequency: 1
+------
+rawFileName : ../data/raw/Section_11/fullnews_id_2580825_date_8_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn
+sentenceNum : 8
+classLabel : No
+classifiedAs : 
+Single connective : और
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : कब
+iteration : 10
+----------------------------------------------------------------------------------------------------
+../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8 Frequency: 1
+------
+rawFileName : ../data/raw/Section_17/fullnews_id_2612812_date_21_7_2004.utf8
+sentenceNum : 3
+classLabel : No
+classifiedAs : 
+Single connective : इस पर
+Arg1 : None
+Arg1num : None
+Arg2 : None
+Arg2num : None
+remove : False
+Single connective neighborhood : |
+iteration : 10

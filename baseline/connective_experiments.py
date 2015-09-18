@@ -127,6 +127,7 @@ def identifyConnectives(discourseFileInst,connList,connSplitList):
 				positiveSetSplit.append((convert_span(i,conn1),convert_span(j,conn2)))
 
 	return (positiveSetSingle,negativeSetSingle,positiveSetSplit,negativeSetSplit)
+leftDic={}
 def genFeatureSingleConn(conn,label,discourseFile):
 		
 		sentenceList=discourseFile.sentenceList
@@ -197,17 +198,31 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.featureVector.extend(l1)
 #		feature.featureVector.extend(l2)
 		feature.rightWordLocation(conn,node,nxtNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
-		print "rightWordLocation",feature.featureList[-1][1],label
+#		feature.leftWordLocation(conn,node,nxtNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+#		print "rightWordLocation",getSpan(conn,wordList),feature.featureList[-1][1],label
 #		fullPath,fullPath1=feature.dependencyPathToRoot(node,nodeDict)
 #		print "deplen",len(fullPath.split("\\")),label,fullPath,"---",fullPath1
 
 		feature.tathaFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
-		feature.lekinFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+#		feature.isseFeature(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
+#		feature.lekinFeature2(conn,node.nodeName,nodeDict,wordList[conn[0]].conn,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		feature.leftWordLocation(conn,node,prevNode,nodeDict,discourseFile.rawFileName,wordList[conn[0]].sentenceNum)
 #		print "leftWordLocation",feature.featureList[-1][1],label
 #		commonParent=feature.getCommonParent(node,prevNode,nxtNode,nodeDict)
 #		print "commonParent",commonParent
 		feature.featureList.append(("nodeParentRelation",node.nodeRelation))
+#		feature.featureList.append(("nodeParent",node.getChunkName(node.nodeParent)))
+#		try:
+#			feature.featureList.append(("nodeParentParent",node.getChunkName(nodeDict[node.nodeParent].nodeParent)))
+#		except:
+#			feature.featureList.append(("nodeParentParent","None"))
+#		try:
+#			feature.featureList.append(("nodeParentParentRelation",nodeDict[node.nodeParent].nodeRelation))
+#		except:
+#			feature.featureList.append(("nodeParentParentRelation","NoRel"))
+#		feature.featureList.append(("VGChildNum2",hasChild(node.nodeName,nodeDict,"VG")==2))
+#		feature.featureList.append(("VGChildNum",hasChild(node.nodeName,nodeDict,"VG")))
+#		feature.featureList.append(("VGChildBool",hasChild(node.nodeName,nodeDict,"VG")>0))
 		if(prevNode!=None):
 			feature.featureList.append(("nodePrevParentRelation",prevNode.nodeRelation))
 		else:	
@@ -222,8 +237,29 @@ def genFeatureSingleConn(conn,label,discourseFile):
 
 		for f in feature.featureList:
 			d[f[0]]=f[1]
-		
 
+		feature.featureList.append(("wordFeature_chunkFeature_",d["wordFeature"]+"__"+d["chunkFeature"]))
+		feature.featureList.append(("wordFeature__chunkNeighbor_1",d["wordFeature"]+"__"+d["chunkNeighbor_1"]))
+		feature.featureList.append(("wordFeature__chunkNeighbor_-1",d["wordFeature"]+"__"+d["chunkNeighbor_-1"]))
+		feature.featureList.append(("chunkFeature__chunkNeighbor_-1",d["chunkFeature"]+"__"+d["chunkNeighbor_-1"]))
+		feature.featureList.append(("chunkFeature__chunkNeighbor_1",d["chunkFeature"]+"__"+d["chunkNeighbor_1"]))
+		feature.featureList.append(("chunkNeighbor_-1__chunkNeighbor_1",d["chunkNeighbor_-1"]+"__"+d["chunkNeighbor_1"]))
+
+# Lins feature begin	
+		feature.featureList.append(("PrevWord_wordFeature",wordList[conn[0]-1].word+"__"+d["wordFeature"]))
+		feature.featureList.append(("prevPOS__POS",d["tagNeighbor_-1"]+"__"+d["tagFeature"]))
+		feature.featureList.append(("wordFeature__NextWord",d["wordFeature"]+"__"+wordList[conn[-1]+1].word))
+		feature.featureList.append(("POS__NextPOS",d["tagFeature"]+"__"+d["tagNeighbor_1"]))
+# Lins feature end	
+#		feature.featureList.append(("LeftWordLocation__CONN",d["leftWordLocation"]+"__"+d["wordFeature"]))		
+
+#		feature.featureList.append(("wordFeature__nodePrevParentRelation",d["wordFeature"]+"__"+d["nodePrevParentRelation"]))
+#		feature.featureList.append(("wordFeature__nodeNextParentRelation",d["wordFeature"]+"__"+d["nodeNextParentRelation"]))
+#		feature.featureList.append(("wordFeature__nodeParentRelation",d["wordFeature"]+"__"+d["nodeParentRelation"]))
+#		feature.featureList.append(("wordFeature__nodeParentParentRelation",d["wordFeature"]+"__"+d["nodeParentParentRelation"]))
+#		feature.featureList.append(("wordFeature__VGChilBool",d["wordFeature"]+"__"+str(d["VGChildBool"])))
+#		feature.featureList.append(("wordFeature__nodeParent",d["wordFeature"]+"__"+d["nodeParent"]))
+#		feature.featureList.append(("wordFeature__nodeParentParent",d["wordFeature"]+"__"+d["nodeParentParent"]))
 		if(d["wordFeature"]==u'\u0915\u0947 \u0932\u093f\u090f' and d["nodePrevParentRelation"]in["k7t","k3","fragof"]):
 			print "speeec",label
 			feature.featureList.append(("SpecDependencyFeatureKeLiye","Yes"))
@@ -245,7 +281,22 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		feature.featureList.append(("wordFeature--nodeRelation",d["wordFeature"]+"__"+node.nodeRelation))
 
 #		write_conn_info(conn,discourseFile,label)
-			
+		
+		if(label=="Yes"):
+			if(getSpan(conn,wordList) not in leftDic):
+				leftDic[getSpan(conn,wordList)]=[0,0]
+			arg1=getSpan(wordList[conn[0]].arg1Span,wordList)
+			arg2=getSpan(wordList[conn[0]].arg2Span,wordList)
+			s1=wordList[conn[0]].arg1Span
+			s2=wordList[conn[0]].arg2Span
+			Arg1num=wordList[wordList[conn[0]].arg1Span[0]].sentenceNum
+			Arg2num=wordList[wordList[conn[0]].arg2Span[0]].sentenceNum
+			print "leftWord",getSpan(conn,wordList),wordList[s1[-1]].sentenceNum==wordList[s2[0]].sentenceNum,s1,s2
+			if(wordList[s1[-1]].sentenceNum==wordList[s2[0]].sentenceNum):
+				leftDic[getSpan(conn,wordList)][0]+=1
+			else:
+				leftDic[getSpan(conn,wordList)][1]+=1
+
 		return feature
 			
 			
@@ -380,27 +431,21 @@ def write_dependency(conn,wordList,dependencyList,label):
 def write_conn_info(conn,discourseFile,label):
 	connective=getSpan(conn,discourseFile.globalWordList)
 	wordList=discourseFile.globalWordList
-	if(label):
-		try:
-			arg1=getSpan(wordList[conn[0]].arg1Span,wordList)
-			arg2=getSpan(wordList[conn[0]].arg2Span,wordList)
-			Arg1num=wordList[wordList[conn[0]].arg1Span[0]].sentenceNum
-			Arg2num=wordList[wordList[conn[0]].arg2Span[0]].sentenceNum
-		except:
-			pass
+	if(label=="Yes"):
+		arg1=getSpan(wordList[conn[0]].arg1Span,wordList)
+		arg2=getSpan(wordList[conn[0]].arg2Span,wordList)
+		Arg1num=wordList[wordList[conn[0]].arg1Span[0]].sentenceNum
+		Arg2num=wordList[wordList[conn[0]].arg2Span[0]].sentenceNum
 	
 	createDirectory("./connInfo/")
 	FD=codecs.open("./connInfo/"+connective,"a")
 	FD.write("label:"+label+"\n")
 	FD.write("FileName:"+discourseFile.rawFileName+"\n")
 	FD.write("sentenceNum:"+str(discourseFile.globalWordList[conn[0]].sentenceNum)+"\n")
-	if(label):
-		try:
-			FD.write("arg1==arg2"+str(Arg1num==Arg2num)+"\n")
-			FD.write(arg1+"\n")
-			FD.write(arg2+"\n")
-		except:
-			pass
+	if(label=="Yes"):
+		FD.write("arg1==arg2"+str(Arg1num==Arg2num)+"\n")
+		FD.write(arg1+"\n")
+		FD.write(arg2+"\n")
 	FD.close()
 
 def genFeatureSplitConn(conn,label,discourseFile):
@@ -416,18 +461,22 @@ def genFeatureSplitConn(conn,label,discourseFile):
 #		print c
 		feature=Feature("lists/splitConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
 		feature.wordFeature(conn[0],conn[1])
-		feature.tagFeature(conn[0])
-		feature.tagFeature(conn[1])
+		feature.tagFeature(conn[0],1)
+		feature.tagFeature(conn[1],2)
 #		feature.tagNeighbor(conn[0],-1)
 #		feature.tagNeighbor(conn[0],1)
 #		feature.tagNeighbor(conn[1],-1)
 #		feature.tagNeighbor(conn[1],1)
-		feature.chunkFeature(conn[0])
-		feature.chunkFeature(conn[1])
-#		feature.chunkNeighbor(conn[0],1)
-#		feature.chunkNeighbor(conn[0],-1)
-#		feature.chunkNeighbor(conn[1],1)
-#		feature.chunkNeighbor(conn[1],-1)
+		feature.chunkFeature(conn[0],1)
+		feature.chunkFeature(conn[1],2)
+		feature.chunkNeighbor(conn[0],1)
+		feature.featureList[-1]=(feature.featureList[-1][0]+"1",feature.featureList[-1][1])
+		feature.chunkNeighbor(conn[0],-1)
+		feature.featureList[-1]=(feature.featureList[-1][0]+"1",feature.featureList[-1][1])
+		feature.chunkNeighbor(conn[1],1)
+		feature.featureList[-1]=(feature.featureList[-1][0]+"2",feature.featureList[-1][1])
+		feature.chunkNeighbor(conn[1],-1)
+		feature.featureList[-1]=(feature.featureList[-1][0]+"2",feature.featureList[-1][1])
 #		feature.chunkNeighbor(conn[0],2)
 #		feature.chunkNeighbor(conn[1],-1)
 #		feature.chunkNeighbor(conn[1],-2)
@@ -632,6 +681,10 @@ FD2.close()
 
 
 
+
+
+
+
 fcollec=[]
 
 
@@ -644,7 +697,15 @@ for fs in featureCollectionSingle:
 	fsNum+=1
 exportModel("./fList",fcollec)
 
-
+fcollec=[]
+fsNum=0
+createDirectory("./processedData/featureCollection/")
+for fs in featureCollectionSplit:
+#	print "f1",fs.featureList
+	fcollec.append((fsNum,fs.featureList,fs.classLabel))
+#	exportModel("./processedData/featureCollection/"+str(fsNum),featureCollectionDescSingle[fsNum])
+	fsNum+=1
+exportModel("./fListSplit",fcollec)
 
 #fcollec=[]
 
@@ -654,6 +715,12 @@ exportModel("./fList",fcollec)
 #	for f in fs.featureList:
 #		d[f[0]]=f[1]
 #	fcollec.append((d,fs.classLabel))
+
+FD=codecs.open("leftWord","w")
+for x,y in leftDic.iteritems():
+	FD.write(x+":"+str(y[0])+"-"+str(y[1])+"\n")
+FD.close()
+
 if(time==0):
 	exit()
 
