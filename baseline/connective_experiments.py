@@ -221,8 +221,8 @@ def genFeatureSingleConn(conn,label,discourseFile):
 #		except:
 #			feature.featureList.append(("nodeParentParentRelation","NoRel"))
 #		feature.featureList.append(("VGChildNum2",hasChild(node.nodeName,nodeDict,"VG")==2))
-#		feature.featureList.append(("VGChildNum",hasChild(node.nodeName,nodeDict,"VG")))
-#		feature.featureList.append(("VGChildBool",hasChild(node.nodeName,nodeDict,"VG")>0))
+		feature.featureList.append(("VGChildNum",hasChild(node.nodeName,nodeDict,"VG")))
+		feature.featureList.append(("VGChildBool",hasChild(node.nodeName,nodeDict,"VG")>0))
 		if(prevNode!=None):
 			feature.featureList.append(("nodePrevParentRelation",prevNode.nodeRelation))
 		else:	
@@ -238,18 +238,18 @@ def genFeatureSingleConn(conn,label,discourseFile):
 		for f in feature.featureList:
 			d[f[0]]=f[1]
 
-		feature.featureList.append(("wordFeature_chunkFeature_",d["wordFeature"]+"__"+d["chunkFeature"]))
-		feature.featureList.append(("wordFeature__chunkNeighbor_1",d["wordFeature"]+"__"+d["chunkNeighbor_1"]))
-		feature.featureList.append(("wordFeature__chunkNeighbor_-1",d["wordFeature"]+"__"+d["chunkNeighbor_-1"]))
-		feature.featureList.append(("chunkFeature__chunkNeighbor_-1",d["chunkFeature"]+"__"+d["chunkNeighbor_-1"]))
-		feature.featureList.append(("chunkFeature__chunkNeighbor_1",d["chunkFeature"]+"__"+d["chunkNeighbor_1"]))
-		feature.featureList.append(("chunkNeighbor_-1__chunkNeighbor_1",d["chunkNeighbor_-1"]+"__"+d["chunkNeighbor_1"]))
+#		feature.featureList.append(("wordFeature_chunkFeature_",d["wordFeature"]+"__"+d["chunkFeature"]))
+#		feature.featureList.append(("wordFeature__chunkNeighbor_1",d["wordFeature"]+"__"+d["chunkNeighbor_1"]))
+#		feature.featureList.append(("wordFeature__chunkNeighbor_-1",d["wordFeature"]+"__"+d["chunkNeighbor_-1"]))
+#		feature.featureList.append(("chunkFeature__chunkNeighbor_-1",d["chunkFeature"]+"__"+d["chunkNeighbor_-1"]))
+#		feature.featureList.append(("chunkFeature__chunkNeighbor_1",d["chunkFeature"]+"__"+d["chunkNeighbor_1"]))
+#		feature.featureList.append(("chunkNeighbor_-1__chunkNeighbor_1",d["chunkNeighbor_-1"]+"__"+d["chunkNeighbor_1"]))
 
 # Lins feature begin	
-		feature.featureList.append(("PrevWord_wordFeature",wordList[conn[0]-1].word+"__"+d["wordFeature"]))
-		feature.featureList.append(("prevPOS__POS",d["tagNeighbor_-1"]+"__"+d["tagFeature"]))
-		feature.featureList.append(("wordFeature__NextWord",d["wordFeature"]+"__"+wordList[conn[-1]+1].word))
-		feature.featureList.append(("POS__NextPOS",d["tagFeature"]+"__"+d["tagNeighbor_1"]))
+#		feature.featureList.append(("PrevWord_wordFeature",wordList[conn[0]-1].word+"__"+d["wordFeature"]))
+#		feature.featureList.append(("prevPOS__POS",d["tagNeighbor_-1"]+"__"+d["tagFeature"]))
+#		feature.featureList.append(("wordFeature__NextWord",d["wordFeature"]+"__"+wordList[conn[-1]+1].word))
+#		feature.featureList.append(("POS__NextPOS",d["tagFeature"]+"__"+d["tagNeighbor_1"]))
 # Lins feature end	
 #		feature.featureList.append(("LeftWordLocation__CONN",d["leftWordLocation"]+"__"+d["wordFeature"]))		
 
