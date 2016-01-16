@@ -50,7 +50,7 @@ class discourseFile():
 				relation.arg2List.append(pos)
 				self.globalWordList[pos].arg2=True
 				self.globalWordList[pos].relationNum=relationNum
-			print "connective",relation.connSpan
+			print "connectivez",relation.connSpan
 			isSplitConn=printSpan(relation.connSpan,self.rawData)
 			conn=getSpanFromAnn(relation.connSpan,self.rawData,self.globalWordList,self.annToRawMapping,self.rawToAnnMapping)
 			print conn
