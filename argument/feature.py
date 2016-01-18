@@ -189,6 +189,20 @@ class Feature():
 		print chunkN
 		self.featureList.append(("chunkNeighbor_"+str(offSet),chunkN))
 
+
+
+	def connectivePosInSentence(self,wordList):
+		self.description=self.description+" connectivePosinSentence"
+		connSentenceNum=self.globalWordList[wordList[0]].sentenceNum
+		prevSentenceNum1=self.globalWordList[wordList[0]-1].sentenceNum
+		prevSentenceNum2=self.globalWordList[wordList[0]-2].sentenceNum
+		if(connSentenceNum!=prevSentenceNum1 or connSentenceNum!=prevSentenceNum2):
+			self.featureList.append(("connectivePosInSentence","Start"))
+		else:
+			self.featureList.append(("connectivePosInSentence","Middle"))
+
+
+
 	def getCommonParent(self,node,nodePrev,nodeNext,nodeDict):
 
 		if(nodePrev==None):
