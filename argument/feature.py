@@ -12,7 +12,7 @@ from tree_api import *
 
 
 class Feature():
-	def __init__(self,word_dictionary_path,tag_path,chunk_path,discourse_file,global_word_list,sentence_list,conn=None):
+	def __init__(self,word_dictionary_path,tag_path,chunk_path,global_word_list,sentence_list,conn=None):
 #		self.discourseFile=discourse_file
 		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
 		self.tagSet=self.loadSet(tag_path,["First","Last"])

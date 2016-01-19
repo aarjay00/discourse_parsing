@@ -139,7 +139,7 @@ def arg1Pos(conn,discourseFile):
 def generateArg1PositionFeatures(conn,discourseFile):
 	sentenceList=discourseFile.sentenceList
 	wordList=discourseFile.globalWordList
-	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile,discourseFile.globalWordList,discourseFile.sentenceList,conn)
+	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
 
 	feature.wordFeature(conn)
 	feature.tagFeature(conn)
@@ -162,11 +162,10 @@ def generateArg1PositionFeatures(conn,discourseFile):
 
 num=0;
 
-featureCollection={}
+arg1PosFeatureCollection=[]
 for discourseFileLocation in discourseFileCollection:
 	discourseFile=loadModel(discourseFileLocation)
 	wordList=discourseFile.globalWordList
-	arg1PosFeatureCollection=[]
 	connList=findConnectives(discourseFile.globalWordList)
 	print len(connList)
 	num+=len(connList)
