@@ -156,6 +156,11 @@ def generateArg1PositionFeatures(conn,discourseFile):
 		feature.setClassLabel("Same-Sentence")
 	else:
 	 	feature.setClassLabel("Prev-Sentence")
+#setting sample descritption:
+
+	feature.sampleDescription["connective"]=getSpan(conn,wordList)
+	feature.sampleDescription["connective label"]=feature.classLabel
+	 
 	return feature
 
 

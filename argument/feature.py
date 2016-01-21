@@ -13,24 +13,6 @@ from tree_api import *
 
 class Feature():
 	def __init__(self,word_dictionary_path,tag_path,chunk_path,global_word_list,sentence_list,conn=None):
-#		self.discourseFile=discourse_file
-		self.wordDictionary=self.loadSet(word_dictionary_path,["First","Last"])
-		self.tagSet=self.loadSet(tag_path,["First","Last"])
-		self.loadCombo("tagSet")
-		self.chunkSet=self.loadSet(chunk_path,["First","Last","Null"])
-		self.loadCombo("chunkSet")
-		self.categorySet=self.loadSet("./lists/category.list")
-		self.dependencySet=self.loadSet("./lists/dependencySet.list",["Null","None"])
-		self.nodeRelationSet=self.loadSet("./lists/nodeRelation.list")
-		self.nodeRelationSetPrev=self.loadSet("./lists/nodeRelationPrev.list")
-		self.nodeRelationSetNext=self.loadSet("./lists/nodeRelationNext.list")
-		self.nodeParentSet=self.loadSet("./lists/nodeParent.list")
-		self.nodeParentSetPrev=self.loadSet("./lists/nodeParentPrev.list")
-		self.nodeParentSetNext=self.loadSet("./lists/nodeParentNext.list")
-		self.genderSet=self.loadSet("./lists/gender.list")
-		self.numberSet=self.loadSet("./lists/gender.list")
-		self.personSet=self.loadSet("./lists/person.list")
-		self.caseSet=self.loadSet("./lists/case.list")
 		self.featureVector=[]
 		self.featureList=[]
 		self.classLabel=None
@@ -38,6 +20,7 @@ class Feature():
 		self.sentenceList=sentence_list
 		self.description=""
 		self.connSpec={}
+		self.sampleDescription={}
 		if(conn!=None and isinstance(conn[0],int)):
 			self.connective=""
 			for i in conn:
@@ -51,8 +34,6 @@ class Feature():
 					self.connective=self.connective+" "+self.globalWordList[j].word
 			self.connective=self.connective[1:]
 			self.conn=conn
-		print len(self.tagSet)
-		print len(self.chunkSet)
 		FD=codecs.open("./lists/connSpecDependency.list","r")
 		currConn=""
 		for line in FD.readlines():
@@ -64,18 +45,6 @@ class Feature():
 				self.connSpec[currConn].append(line)
 		self.dependencyFeatureNum=len(self.connSpec[self.connSpec.keys()[0]])
 		FD.close()
-	def loadSet(self,filePath,extra=[]):
-		Set=[]
-		fileFD=codecs.open(filePath,"r",encoding="utf-8")
-		for line in fileFD.readlines():
-			line=line.strip()
-			Set.append(line)
-		Set.extend(extra)
-		return Set
-	def loadCombo(self,setName):
-		singleSet=getattr(self,setName)
-		setattr(self,setName+"Combo",[i[0]+" "+i[1] for i in itertools.product(singleSet,singleSet)])
-#		print "combo",getattr(self,setName+"Combo")
 	def wordFeature(self,wordList,wordList2=[]):
 		self.description=self.description+" wordFeature"
 		print "wordfeature"
