@@ -136,7 +136,7 @@ def arg1Pos(conn,discourseFile):
 	arg2Span=wordList[conn[0]].arg2Span
 
 
-def generateArg1PositionFeatures(conn,discourseFile):
+def generateArg1PositionFeatures(conn,discourseFile,relationNum):
 	sentenceList=discourseFile.sentenceList
 	wordList=discourseFile.globalWordList
 	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
@@ -144,13 +144,20 @@ def generateArg1PositionFeatures(conn,discourseFile):
 	feature.wordFeature(conn)
 	feature.tagFeature(conn)
 	feature.chunkFeature(conn)
-	feature.connectivePosInSentence(conn)
-	print "pos-",feature.featureList[-1]
-	
+	p=feature.connectivePosInSentence(conn)
+	c=feature.numberOfChunksBeforeConn(conn)
 
+	if(getSpan(conn,wordList)==u'\u0906\u0917\u0947'):
+		print "aage Feature",feature.featureList
 	
 #Setting feature class label
-	arg1SentenceNum=wordList[wordList[conn[0]].arg1Span[-1]].sentenceNum
+	arg1Span=wordList[conn[0]].arg1Span
+	arg2Span=wordList[conn[0]].arg2Span
+	argPos=studyArgumentPos(arg1Span,arg2Span)
+	if(argPos=="arg2Before"):
+		arg1SentenceNum=wordList[arg2Span[-1]].sentenceNum
+	else:
+		arg1SentenceNum=wordList[arg1Span[-1]].sentenceNum
 	connSentenceNum=wordList[conn[0]].sentenceNum
 	if(arg1SentenceNum==connSentenceNum):	
 		feature.setClassLabel("Same-Sentence")
@@ -160,6 +167,10 @@ def generateArg1PositionFeatures(conn,discourseFile):
 
 	feature.sampleDescription["connective"]=getSpan(conn,wordList)
 	feature.sampleDescription["connective label"]=feature.classLabel
+	feature.sampleDescription["rawFileName"]=discourseFile.rawFileName
+	feature.sampleDescription["relationNum"]=relationNum
+	feature.sampleDescription["number of chunks before conn"]=c
+	feature.sampleDescription["connPos"]=p
 	 
 	return feature
 
@@ -174,6 +185,7 @@ for discourseFileLocation in discourseFileCollection:
 	connList=findConnectives(discourseFile.globalWordList)
 	print len(connList)
 	num+=len(connList)
+	relationNum=0
 	for conn in connList:
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -189,10 +201,10 @@ for discourseFileLocation in discourseFileCollection:
 #		print "arg1",studyArgumentContinuity(wordList[conn[0]].arg1Span,wordList)
 #		print "arg2",studyArgumentContinuity(wordList[conn[0]].arg2Span,wordList)
 #		print studyArgumentPos(wordList[conn[0]].arg1Span,wordList[conn[0]].arg2Span)
-		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile)
+		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 		arg1PosFeatureCollection.append(arg1PosFeature)
+		relationNum+=1
 
 exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
-
 
 print num

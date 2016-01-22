@@ -11,9 +11,7 @@ from letter import *
 from merge_annotations import *
 from annotated_data import *
 from feature import *
-from models import *
 
-#discourseFileCollection=loadModel("processedData/annotatedData")
 
 
 def traverseNode(level,nodeName,nodeDict):
@@ -22,10 +20,16 @@ def traverseNode(level,nodeName,nodeDict):
 	for child in nodeDict[nodeName].childList:
 		traverseNode(level+1,child,nodeDict)
 
+if len(sys.argv)<2:
+	print "Please give location of proccessed data"
+	exit()
+
+dataLocation = sys.argv[1]
+
 from os import listdir
 from os.path import isfile, join
-discourseFileCollection = [ "./processedData/collection/"+str(f) for f in listdir("./processedData/collection/") if isfile(join("./processedData/collection",f)) ]
-print discourseFileCollection
+discourseFileCollection= [ dataLocation+str(f) for f in listdir(dataLocation) if isfile(join(dataLocation,f)) ]
+discourseFileCollection=folderWalk(dataLocation)
 
 for discourseFileLocation in discourseFileCollection:
 	discourseFileInst=loadModel(discourseFileLocation)
@@ -53,4 +57,3 @@ for discourseFileLocation in discourseFileCollection:
 	  	if(nodeInst.nodeLevel==-1):
 			print "problem here ", nodeName
 	exportModel(discourseFileLocation,discourseFileInst)
-#exportModel("processedData/annotatedData",discourseFileCollection)

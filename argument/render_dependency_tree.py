@@ -33,7 +33,12 @@ if len(sys.argv)<2:
 
 dataLocation = sys.argv[1]
 
-discourseFileCollection=loadModel(dataLocation)
+from os import listdir
+from os.path import isfile, join
+discourseFileCollection= [ dataLocation+str(f) for f in listdir(dataLocation) if isfile(join(dataLocation,f)) ]
+discourseFileCollection=folderWalk(dataLocation)
+
+
 
 
 def create_graph(currNode , nodeDict , graph,sentence,wordList):
@@ -77,7 +82,8 @@ def get_full_node_label(node,sentence,wordList):
 #	print repr(label)
 	return label
 
-for discourseFileInst in discourseFileCollection:
+for discourseFileLocation in discourseFileCollection:
+	discourseFileInst=loadModel(discourseFileLocation)
 	print discourseFileInst.rawFileName
 	rawFileName=discourseFileInst.rawFileName.split("/")
 	filePath=""
@@ -85,7 +91,6 @@ for discourseFileInst in discourseFileCollection:
 		if(part.startswith("Section") or filePath!="" ):
 			filePath=filePath+part+"/"
 	filePath="dependencyTreeGraph/"+filePath
-	print "ahem",filePath
 	createDirectory(filePath)
 	sentenceList=discourseFileInst.sentenceList
 	wordList=discourseFileInst.globalWordList
@@ -93,7 +98,8 @@ for discourseFileInst in discourseFileCollection:
 		graph = pydot.Dot(graph_type='graph')
 		rootNode=sentence.rootNode
 		nodeDict=sentence.nodeDict
-#		print rootNode
+		print rootNode
 		for node in rootNode:
+			print "creating"
 			graph=create_graph(node,nodeDict,graph,sentence,wordList)
 			graph.write_png(filePath+"/"+str(sentence.sentenceNum)+".png")

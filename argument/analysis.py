@@ -1,4 +1,3 @@
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import sys
@@ -42,7 +41,7 @@ def printAttrMaps(attrMapList,folderName):
 			for i in item[1]:
 				FD.write("------\n")
 				for key,value in i.sampleDescription.iteritems():
-					FD.write(key+" : "+value+"\n")
+					FD.write(str(key)+" : "+str(value)+"\n")
 		FD.close()
 
 def studyErrors(errorSamples,analysisFolderName):

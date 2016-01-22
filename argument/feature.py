@@ -97,36 +97,7 @@ class Feature():
 			 	tagN=self.globalWordList[wordList[-1]+offSet].wordTag
 		print tagN
 		self.featureList.append(("tagNeighbor_"+str(offSet),tagList[0]))
-	def tagCombo(self,wordList,offSet1,offSet2):
-		self.description=self.description+" tagCombo-"+str(offSet1)+"-"+str(offSet2)
-		print "tagCombo",offSet1,offSet2
-		tag=""
-		if(offSet1==0):
-			tag=self.globalWordList[wordList[0]].wordTag
-		elif(offSet1<0):
-			if(wordList[0]+offSet1<0 or self.globalWordList[wordList[0]+offSet1].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
-				tag="First"
-			else:
-				tag=self.globalWordList[wordList[0]+offSet1].wordTag
-		else:
-			if(wordList[-1]+offSet1>=len(self.globalWordList) or self.globalWordList[wordList[-1]].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
-				tag="Last"
-			else:
-			 	tag=self.globalWordList[wordList[-1]+offSet1].wordTag
-		if(offSet2==0):
-			tag=self.globalWordList[wordList[-1]].wordTag
-		elif(offSet2<0):
-			if(wordList[0]+offSet2<0 or self.globalWordList[wordList[0]+offSet2].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
-				tag=tag+" First"
-			else:
-				tag=tag+" "+self.globalWordList[wordList[0]+offSet2].wordTag
-		else:
-			if(wordList[-1]+offSet2>=len(self.globalWordList) or self.globalWordList[wordList[-1]].sentenceNum!=self.globalWordList[wordList[-1]].sentenceNum):
-				tag=tag+" Last"
-			else:
-			 	tag=tag+" "+self.globalWordList[wordList[-1]+offSet2].wordTag
-		print tag
-		self.featureList.append(("tagCombo_"+str(offSet1)+"_"+str(offSet2),tag.replace(" ","-")))
+
 	def chunkFeature(self,wordList,num=None):
 		self.description=self.description+" chunkFeature"
 		print "chunkfeature"
@@ -164,13 +135,34 @@ class Feature():
 		self.description=self.description+" connectivePosinSentence"
 		connSentenceNum=self.globalWordList[wordList[0]].sentenceNum
 		prevSentenceNum1=self.globalWordList[wordList[0]-1].sentenceNum
-		prevSentenceNum2=self.globalWordList[wordList[0]-2].sentenceNum
-		if(connSentenceNum!=prevSentenceNum1 or connSentenceNum!=prevSentenceNum2):
+#		prevSentenceNum2=self.globalWordList[wordList[0]-2].sentenceNum
+		if(connSentenceNum!=prevSentenceNum1): #or connSentenceNum!=prevSentenceNum2):
 			self.featureList.append(("connectivePosInSentence","Start"))
+			return "start"
 		else:
 			self.featureList.append(("connectivePosInSentence","Middle"))
+			return "middle"
+	
+	def numberOfChunksBeforeConn(self,wordList):
+		if(getSpan(wordList,self.globalWordList)!=u'\u0906\u0917\u0947'):
+			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
+			return "notaage" 
+		chunkNum=0
+		pos=wordList[0]-1
+		prevChunkNum=self.globalWordList[wordList[0]].chunkNum
+		while(pos>0 and self.globalWordList[pos].sentenceNum==self.globalWordList[wordList[0]].sentenceNum):
+			if(self.globalWordList[pos].chunkNum!=prevChunkNum):
+				chunkNum+=1
+			prevChunkNum=self.globalWordList[pos].chunkNum
+			pos-=1
+		if(chunkNum==1):
+			print "aage 1"
+			self.featureList.append(("numberOfChunksBeforeConnAage","1"))
+		else:
+			print "aage 0"
+			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
 
-
+		return chunkNum
 
 	def getCommonParent(self,node,nodePrev,nodeNext,nodeDict):
 

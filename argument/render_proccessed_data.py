@@ -19,10 +19,16 @@ if len(sys.argv)<2:
 
 dataLocation = sys.argv[1]
 
-discourseFileCollection=loadModel(dataLocation)
+from os import listdir
+from os.path import isfile, join
+discourseFileCollection= [ dataLocation+str(f) for f in listdir(dataLocation) if isfile(join(dataLocation,f)) ]
+discourseFileCollection=folderWalk(dataLocation)
 
 
-for discourseFileInst in discourseFileCollection:
+
+
+for discourseFileLocation in discourseFileCollection:
+	discourseFileInst=loadModel(discourseFileLocation)
 	print discourseFileInst.rawFileName
 	rawFileName=discourseFileInst.rawFileName.split("/")
 	filePath=""
@@ -38,7 +44,7 @@ for discourseFileInst in discourseFileCollection:
 	for sentence in sentenceList:
 	  	FD.write("Sentence"+str(sentence.sentenceNum)+"-"*50+"\n")
 	  	for pos in sentence.wordNumList:
-	  		FD.write(" "+wordList[pos].word+"-"+wordList[pos].wordTag.replace("\n",""))
+	  		FD.write(" "+wordList[pos].word+"-"+wordList[pos].wordTag.replace("\n","")+"-"+str(wordList[pos].chunkNum))
 	  		if(wordList[pos].conn):
 				FD.write("-cn")
 			elif(wordList[pos].splitConn):
