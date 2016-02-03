@@ -61,9 +61,6 @@ def generate_baseline(conn,wordList):
 		genArg1Span.append(pos)
 		pos-=1
 	return (genArg1Span,genArg2Span)
-	
-
-
 def studyArgumentPos(arg1Span,arg2Span):
 
 	arg1Before=True
@@ -175,6 +172,56 @@ def generateArg1PositionFeatures(conn,discourseFile,relationNum):
 	return feature
 
 
+d={}
+
+def studyConnPos(conn,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	connective=getSpan(conn,wordList)
+	connSentenceNum=wordList[conn[0]].sentenceNum
+	connChunkNum=wordList[conn[0]].chunkNum
+	connSentence=sentenceList[connSentenceNum]
+	connChunk=connSentence.chunkList[connChunkNum]
+	node=connSentence.nodeDict[connChunk.nodeName]
+	c=len(node.childList)
+	print c,connective,node.nodeName
+	if(connective not in d.keys()):
+		d[connective]={}
+	if(c not in d[connective].keys()):
+		d[connective][c]=0
+	d[connective][len(node.childList)]+=1
+
+
+def studyconnArg2Pos(conn,arg2Span,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	connective=getSpan(conn,wordList)
+	connSentenceNum=wordList[conn[0]].sentenceNum
+	connChunkNum=wordList[conn[0]].chunkNum
+	connSentence=sentenceList[connSentenceNum]
+	connChunk=connSentence.chunkList[connChunkNum]
+	connNode=connSentence.nodeDict[connChunk.nodeName]
+	arg2Nodes=[]
+	for pos in arg2Span:
+		word=wordList[pos]
+		sentence=sentenceList[word.sentenceNum]
+		node=sentence.nodeDict[sentence.chunkList[word.chunkNum].nodeName]
+		arg2Nodes.append(node)
+	arg2Nodes=set(arg2Nodes)
+	children=0
+	parent=0
+	for node in arg2Nodes:
+		if(isParent(connNode,node,connSentence.nodeDict)):
+			children+=1
+		try:
+			if(isParent(node,connNode,connSentence.nodeDict)):
+				parent+=1
+		except:
+		  	print "hmm"
+	print "connarg2-",getSpan(conn,wordList),len(arg2Nodes),children,parent
+
+
+
 
 num=0;
 
@@ -183,10 +230,13 @@ for discourseFileLocation in discourseFileCollection:
 	discourseFile=loadModel(discourseFileLocation)
 	wordList=discourseFile.globalWordList
 	connList=findConnectives(discourseFile.globalWordList)
-	print len(connList)
+#	print len(connList)
 	num+=len(connList)
 	relationNum=0
 	for conn in connList:
+		studyConnPos(conn,discourseFile)
+		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
+		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
 #		print "arg1",result[0]
@@ -204,6 +254,14 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
+
+FD=open("connPos","w")
+for connective,pos in d.iteritems():
+	FD.write(connective+" num: "+str(len(pos.keys()))+"\n")
+	for k,v in pos.iteritems():
+		FD.write(str(k)+"-"+str(v)+" ")
+	FD.write("\n")
+FD.close()
 
 exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 

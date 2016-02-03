@@ -144,9 +144,9 @@ class Feature():
 			return "middle"
 	
 	def numberOfChunksBeforeConn(self,wordList):
-		if(getSpan(wordList,self.globalWordList)!=u'\u0906\u0917\u0947'):
-			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
-			return "notaage" 
+#		if(getSpan(wordList,self.globalWordList)!=u'\u0906\u0917\u0947'):
+#			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
+#			return "notaage" 
 		chunkNum=0
 		pos=wordList[0]-1
 		prevChunkNum=self.globalWordList[wordList[0]].chunkNum

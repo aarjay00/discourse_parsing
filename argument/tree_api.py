@@ -87,4 +87,8 @@ def getCommonParent(node1,node2,nodeDict):
 		j-=1
 	print "commonparent",commonParent
 	return commonParent
+def isParent(node1,node2,nodeDict):
+	
+	p=hasChild(node1.nodeName,nodeDict,node2.nodeName)
 
+	return p

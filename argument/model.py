@@ -100,7 +100,7 @@ if(len(sys.argv)< 3 ):
 	
 featureCollection=loadModel(sys.argv[1])
 
-#featureCombinations(featureCollection)	
+featureCombinations(featureCollection)	
 	
 chooseFeatures=False
 chosenFeatureSet=[]
