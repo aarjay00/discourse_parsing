@@ -41,13 +41,33 @@ discourseFileCollection=folderWalk(dataLocation)
 
 
 
+def isNodeArg2(node,sentence,wordList):
+
+	chunk=sentence.chunkList[node.chunkNum]
+	for pos in chunk.wordNumList:
+		if(wordList[pos].arg2):
+			return True
+	return False
+
+
+	
+
 def create_graph(currNode , nodeDict , graph,sentence,wordList):
 #	print "\t"*nodeDict[currNode].nodeLevel,currNode
+
+	for nodeName,node in nodeDict.iteritems():
+		var=isNodeArg2(node,sentence,wordList)
+		graphNodeName=nodeName+"_"+get_full_node_label(node,sentence,wordList)
+		if(var):
+			graphNode=pydot.Node(graphNodeName,fillcolor="red",style="filled")
+		else:
+			graphNode=pydot.Node(graphNodeName)
+		graph.add_node(graphNode)
+
 	for child in nodeDict[currNode].childList:
 		vertexA=currNode+"_"+get_full_node_label(nodeDict[currNode],sentence,wordList)
 		vertexB=child+"_"+get_full_node_label(nodeDict[child],sentence,wordList)
-#		print vertexA,vertexB
-		edge = pydot.Edge(vertexA,vertexB , label=" "+nodeDict[child].nodeRelation+" ")
+		edge = pydot.Edge(vertexA,vertexB , label=" "+nodeDict[child].nodeRelation+" " , fillcolor="red")
 #		print edge
 		graph.add_edge(edge)
 	for child in nodeDict[currNode].childList:
