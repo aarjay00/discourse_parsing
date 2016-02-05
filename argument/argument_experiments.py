@@ -4,6 +4,8 @@ import sys
 import codecs
 reload(sys)
 sys.setdefaultencoding("utf-8")
+import subprocess
+import operator
 from util import *
 from extract_relations import *
 from ssf_api import *
@@ -11,7 +13,7 @@ from letter import *
 from merge_annotations import *
 from annotated_data import *
 from feature import *
-
+from render_dependency_tree_api import *
 from tree_api import *
 
 from argument_match_accuracy import *
@@ -220,8 +222,27 @@ def studyconnArg2Pos(conn,arg2Span,discourseFile):
 		  	print "hmm"
 	print "connarg2-",getSpan(conn,wordList),len(arg2Nodes),children,parent
 
+connD={}
 
-
+def createConnWiseFolder(conn,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	sentenceNum=wordList[conn[0]].sentenceNum
+	connective=getSpan(conn,wordList)
+	arg2Span=wordList[conn[0]].arg2Span
+	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
+	arg2NodeList=[sentenceList[sentenceNum].chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
+	global connD
+	if(connective not in connD):
+		connD[connective]=0
+	createDirectory("./connwiseArgument2/"+connective+"/")
+	rootNode=sentenceList[sentenceNum].rootNode
+	nodeDict=sentenceList[sentenceNum].nodeDict
+	graph = pydot.Dot(graph_type='graph')
+	if(len(rootNode)>1):
+		print connective
+	render_dependency_tree_highlighted(rootNode[0],nodeDict,graph,sentenceList[sentenceNum],wordList,arg2NodeList,"./connwiseArgument2/"+connective+"/"+str(connD[connective]))
+	connD[connective]+=1
 
 num=0;
 
@@ -234,8 +255,9 @@ for discourseFileLocation in discourseFileCollection:
 	num+=len(connList)
 	relationNum=0
 	for conn in connList:
-		studyConnPos(conn,discourseFile)
-		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
+		createConnWiseFolder(conn,discourseFile)
+#		studyConnPos(conn,discourseFile)
+#		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -254,6 +276,15 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
+
+sortedList=sorted(connD.items(), key=operator.itemgetter(1))
+sortedList.reverse()
+
+n=0
+for i in sortedList:
+	print i[0],i[1]
+	n+=i[1]
+print n
 
 FD=open("connPos","w")
 for connective,pos in d.iteritems():
