@@ -84,6 +84,75 @@ def generateArg1PositionFeatures(conn,discourseFile,relationNum):
 	feature.sampleDescription["connPos"]=p
 	 
 	return feature
+
+def arg2TreePosition(arg2NodeList,connNode,nodeDict):
+
+	arg2InConnSubTree=False
+	arg2InInImmediateParent=False
+	arg2InHigherLevel=False
+
+	for node in arg2NodeList:
+		if(findNode(node,connNode,nodeDict,0,15)):
+			arg2InConnSubTree=True
+	currNode=connNode
+	iterationNum=0
+	while(1):           
+		parentNode=nodeDict[currNode].nodeParent
+		print "parent",iterationNum,parentNode
+		if(parentNode=="None"):
+			break
+		for node in arg2NodeList:
+			if(findNode(node,parentNode,nodeDict,0,10,currNode)):
+				if(iterationNum==0):
+					arg2InInImmediateParent=True
+				else:
+					arg2InHigherLevel=True
+		iterationNum+=1
+		currNode=parentNode
+	return (arg2InConnSubTree,arg2InInImmediateParent,arg2InHigherLevel)
+
+
+def arg2SubTreeExtraction(conn,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	sentenceNum=wordList[conn[0]].sentenceNum
+	sentence=sentenceList[sentenceNum]
+	nodeDict=sentenceList[sentenceNum].nodeDict
+	connective=getSpan(conn,wordList)
+	print sentenceNum,discourseFile.rawFileName
+	arg2Span=wordList[conn[0]].arg2Span
+	arg1Span=wordList[conn[0]].arg1Span
+	argPos=studyArgumentPos(arg1Span,arg2Span)
+	if(argPos=="arg2Before"):
+		print "changed",getSpan(conn,wordList)
+		arg2Span=arg1Span
+#	for pos in arg2Span:
+#		print wordList[pos].word,
+#	print ""
+	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
+#	for pos in arg2ChunkSpan:
+#		print sentence.chunkList[pos].chunkTag,
+#	print ""
+	arg2NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
+	connNodeList=[sentence.chunkList[wordList[pos].chunkNum].nodeName for pos in conn]
+	arg2NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg2NodeList)
+	for node in arg2NodeList:
+		print node,
+	print ""	
+	connNode=sentence.chunkList[wordList[conn[-1]].chunkNum].nodeName
+
+	print connNode
+	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
+
+#	feature.wordFeature(conn)
+	feature.connectivePosInSentence(conn)
+	feature.connLeafNode(connNode,nodeDict)
+	feature.connSubTreeHasVGF(connNode,nodeDict)
+	feature.connHasParentVGF(connNode,nodeDict)
+	print nodeDict[connNode].childList	
+	p=arg2TreePosition(arg2NodeList,connNode,nodeDict)
+	print connective,p
+	
 connD={}
 
 
@@ -101,6 +170,7 @@ for discourseFileLocation in discourseFileCollection:
 #		createConnWiseFolder(conn,discourseFile)
 #		studyConnPos(conn,discourseFile)
 #		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
+		arg2SubTreeExtraction(conn,discourseFile)
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)

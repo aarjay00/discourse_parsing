@@ -291,6 +291,34 @@ class Feature():
 		print "no idea",a,b
 		return
 
+# argument specific features  -------------------------------------------------------------
+
+
+	def connLeafNode(self,connNode,nodeDict):
+		if(isLeafNode(connNode,nodeDict)):
+			self.featureVector.append(("connLeafNode","False"))
+		else:
+			self.featureVector.append(("connLeafNode","True"))
+
+	def connSubTreeHasVGF(self,connNode,nodeDict):
+		
+		if(findChild("VGF",connNode,nodeDict,0,10)):
+			self.featureVector.append(("connSubTreeHasVGF","True"))
+		else:
+			self.featureVector.append(("connSubTreeHasVGF","False"))
+
+	def connHasParentVGF(self,connNode,nodeDict):
+		node=nodeDict[connNode]
+		nodeParent=node.nodeParent
+		if("VGF" in nodeParent):
+			self.featureVector.append(("connHasParentVGF","True"))
+		else:
+			self.featureVector.append(("connHasParentVGF","False"))
+
+# argument specific features ended -------------------------------------------------------------
+
+			
+			
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
 		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)
 		if(getSpan(conn,self.globalWordList)!=connective):

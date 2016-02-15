@@ -15,7 +15,8 @@ def traverseNode(level,nodeName,nodeDict):
 	nodeDict[nodeName].nodeLevel=level
 	for child in nodeDict[nodeName].childList:
 		traverseNode(level+1,child,nodeDict)
-
+def isLeafNode(nodeName,nodeDict):
+	return len(nodeDict[nodeName].childList)==0
 
 def getLCA(argSpan,discourseFileInst):
 	wordList=discourseFileInst.globalWordList
@@ -36,7 +37,19 @@ def findChild(childTarget, node , nodeDict , level , maxLevel):
 	for child in nodeDict[node].childList:
 		if childTarget in nodeDict[child].getChunkName(child):
 			return True
-		if(findRelation(childTarget,child,nodeDict,level+1,maxLevel)):
+		if(findChild(childTarget,child,nodeDict,level+1,maxLevel)):
+			return True
+	return False
+def findNode(nodeTarget, node , nodeDict , level , maxLevel,excludeNode=""):
+	print "\t"*level,"finding",nodeTarget,"in",node,nodeDict[node].childList
+	if(level==maxLevel):
+		return False
+	for child in nodeDict[node].childList:
+	 	if(excludeNode!="" and excludeNode==child):
+			continue
+		if nodeTarget == child:
+			return True
+		if(findNode(nodeTarget,child,nodeDict,level+1,maxLevel)):
 			return True
 	return False
 def hasChild(nodeName, nodeDict,childTarget,unique=True):
@@ -50,6 +63,13 @@ def hasChild(nodeName, nodeDict,childTarget,unique=True):
 		  	if(childTarget in node.getChunkName(child)):
 				num+=1
 	return num
+
+def isChild(childNode, parentNode,nodeDict):
+	for child in nodeDict[parentNode].childList:
+		if(child==childNode):
+			return True
+		isChild(childNode,child,nodeDict)
+	return False
 def hasChildRelation(nodeName, nodeDict,childRelationTarget):
 	node=nodeDict[nodeName]
 	num=0
