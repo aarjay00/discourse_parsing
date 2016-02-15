@@ -18,14 +18,10 @@ from tree_api import *
 
 from argument_match_accuracy import *
 
-connList=loadConnList("lists/compConnectiveList.list")
-connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 
 
 from os import listdir
 from os.path import isfile, join
-discourseFileCollection= [ "./processedData/collection/"+str(f) for f in listdir("./processedData/collection/") if isfile(join("./processedData/collection",f)) ]
-discourseFileCollection=folderWalk("./processedData/collection/")
 
 
 
@@ -129,11 +125,6 @@ def studyArgumentContinuity(argSpan,wordList):
 	return "continuos"
 
 
-def arg1Pos(conn,discourseFile):
-	wordList=discourseFile.globalWordList
-	arg1Span=wordList[conn[0]].arg1Span
-	arg2Span=wordList[conn[0]].arg2Span
-
 
 def generateArg1PositionFeatures(conn,discourseFile,relationNum):
 	sentenceList=discourseFile.sentenceList
@@ -230,11 +221,18 @@ def createConnWiseFolder(conn,discourseFile):
 	sentenceNum=wordList[conn[0]].sentenceNum
 	connective=getSpan(conn,wordList)
 	arg2Span=wordList[conn[0]].arg2Span
+	arg1Span=wordList[conn[0]].arg1Span
+	argPos=studyArgumentPos(arg1Span,arg2Span)
+	if(argPos=="arg2Before"):
+		print "changed",getSpan(conn,wordList)
+		arg2Span=arg1Span
 	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
 	arg2NodeList=[sentenceList[sentenceNum].chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
 	global connD
 	if(connective not in connD):
 		connD[connective]=0
+		FD=open("./connwiseArgument2/"+connective+"/desc","w")
+		FD.close()
 	createDirectory("./connwiseArgument2/"+connective+"/")
 	rootNode=sentenceList[sentenceNum].rootNode
 	nodeDict=sentenceList[sentenceNum].nodeDict
@@ -242,9 +240,21 @@ def createConnWiseFolder(conn,discourseFile):
 	if(len(rootNode)>1):
 		print connective
 	render_dependency_tree_highlighted(rootNode[0],nodeDict,graph,sentenceList[sentenceNum],wordList,arg2NodeList,"./connwiseArgument2/"+connective+"/"+str(connD[connective]))
+	FD=open("./connwiseArgument2/"+connective+"/desc","a")
+	FD.write(str(connD[connective])+" - "+str(sentenceNum)+" "+discourseFile.rawFileName+"\n")
+	FD.close()
 	connD[connective]+=1
 
 num=0;
+
+'''
+
+connList=loadConnList("lists/compConnectiveList.list")
+connSplitList=loadConnList("lists/splitConnectiveList.list",True)
+
+
+discourseFileCollection= [ "./processedData/collection/"+str(f) for f in listdir("./processedData/collection/") if isfile(join("./processedData/collection",f)) ]
+discourseFileCollection=folderWalk("./processedData/collection/")
 
 arg1PosFeatureCollection=[]
 for discourseFileLocation in discourseFileCollection:
@@ -297,3 +307,4 @@ FD.close()
 exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 
 print num
+'''
