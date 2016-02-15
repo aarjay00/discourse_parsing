@@ -198,7 +198,7 @@ class Feature():
 		self.featureList.append(("dependencyPathToRoot",shortPath))
 		
 		return (shortPath,fullPath)
-	def rightWordLocation(self,conn,node,nodeNext,nodeDict,a,b):
+	def rightWordLocation(self,conn,node,nodeNext,nodeDict,a="",b=""):
 #conn is already last word
 	  	if(conn[-1]+1==len(self.globalWordList)-1):
 			self.featureList.append(("rightWordLocation","Last"))
@@ -296,24 +296,24 @@ class Feature():
 
 	def connLeafNode(self,connNode,nodeDict):
 		if(isLeafNode(connNode,nodeDict)):
-			self.featureVector.append(("connLeafNode","False"))
+			self.featureList.append(("connLeafNode","False"))
 		else:
-			self.featureVector.append(("connLeafNode","True"))
+			self.featureList.append(("connLeafNode","True"))
 
 	def connSubTreeHasVGF(self,connNode,nodeDict):
 		
 		if(findChild("VGF",connNode,nodeDict,0,10)):
-			self.featureVector.append(("connSubTreeHasVGF","True"))
+			self.featureList.append(("connSubTreeHasVGF","True"))
 		else:
-			self.featureVector.append(("connSubTreeHasVGF","False"))
+			self.featureList.append(("connSubTreeHasVGF","False"))
 
 	def connHasParentVGF(self,connNode,nodeDict):
 		node=nodeDict[connNode]
 		nodeParent=node.nodeParent
 		if("VGF" in nodeParent):
-			self.featureVector.append(("connHasParentVGF","True"))
+			self.featureList.append(("connHasParentVGF","True"))
 		else:
-			self.featureVector.append(("connHasParentVGF","False"))
+			self.featureList.append(("connHasParentVGF","False"))
 
 # argument specific features ended -------------------------------------------------------------
 

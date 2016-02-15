@@ -144,14 +144,61 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	print connNode
 	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
 
-#	feature.wordFeature(conn)
+	feature.wordFeature(conn)
 	feature.connectivePosInSentence(conn)
 	feature.connLeafNode(connNode,nodeDict)
 	feature.connSubTreeHasVGF(connNode,nodeDict)
 	feature.connHasParentVGF(connNode,nodeDict)
+	feature.rightWordLocation(conn,nodeDict[connNode],nodeDict[arg2NodeList[0]],nodeDict)
 	print nodeDict[connNode].childList	
+	
+
+
+	#setting class label
+	
 	p=arg2TreePosition(arg2NodeList,connNode,nodeDict)
 	print connective,p
+
+
+	feature.setClassLabel(str(p[0])+str(p[1])+str(p[2]))	
+	feature.sampleDescription["connective"]=connective
+	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
+	feature.sampleDescription["label"]=feature.classLabel
+	return feature	
+
+	if p[0] and p[1] :
+		print "HERE"
+
+	if(p[0] and not p[1]): #and not p[1] and not p[2]'''):
+		feature.setClassLabel("ConnSubTree")
+#	elif(p[1] and p[1] and not p[2]):
+#		feature.setClassLabel("ConSubTreeExtra")
+	elif(not p[0] and p[1]):
+		feature.setClassLabel("ParentSubTree")
+	elif(p[0] and p[1]):
+#		feature.setClassLabel("ConnAndParentSubTree")
+		feature.setClassLabel("ConnSubTree")
+	elif(not p[0] and not p[1] and p[2]):
+		feature.setClassLabel("OtherSubTree")
+	else:
+		feature.setClassLabel("Other")
+		print "nooooo"
+#	elif(not p[0] and p[1] and p[2]):
+#		feature.setClassLabel("ParentSubTreeExtra")
+#	else:
+#		feature.setClassLabel("Other")
+	
+	#setting up feature description
+
+	feature.sampleDescription["connective"]=connective
+	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
+	feature.sampleDescription["label"]=feature.classLabel
+
+
+		
+
+	return feature
+
 	
 connD={}
 
@@ -159,6 +206,8 @@ connD={}
 num=0;
 
 arg1PosFeatureCollection=[]
+arg2SubTreePosFeatureCollection=[]
+
 for discourseFileLocation in discourseFileCollection:
 	discourseFile=loadModel(discourseFileLocation)
 	wordList=discourseFile.globalWordList
@@ -170,7 +219,8 @@ for discourseFileLocation in discourseFileCollection:
 #		createConnWiseFolder(conn,discourseFile)
 #		studyConnPos(conn,discourseFile)
 #		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
-		arg2SubTreeExtraction(conn,discourseFile)
+		arg2SubTreePosFeature=arg2SubTreeExtraction(conn,discourseFile)
+		arg2SubTreePosFeatureCollection.append(arg2SubTreePosFeature)
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -189,7 +239,7 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
-
+'''
 sortedList=sorted(connD.items(), key=operator.itemgetter(1))
 sortedList.reverse()
 
@@ -208,5 +258,7 @@ for connective,pos in d.iteritems():
 FD.close()
 
 exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
+'''
+exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
 
 print num

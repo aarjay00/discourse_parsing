@@ -10,7 +10,7 @@ import itertools
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.linear_model import LogisticRegression as maxent
 from sklearn.svm import SVC
-
+import operator
 
 from util import *
 from feature import *
@@ -78,8 +78,7 @@ def simpleClassify(dataSet,foldNum):
 		accuracy=1.0*positive/(positive+negative)
 #		print "accuracy for round %d is %f"%(iteration,accuracy)
 		averageAcc=(averageAcc*iteration+accuracy)/(iteration+1)
-	print "avgAccuracy is ",averageAcc
-	return negativeSamples
+	return (averageAcc,negativeSamples)
 
 
 
@@ -87,10 +86,16 @@ def featureCombinations(featureCollection):
 	featureSet=[f[0] for f in featureCollection[0].featureList]
 	featureCombo=[combo for x in range(1,len(featureSet)+1) for combo in itertools.combinations(featureSet,x) ]
 	print len(featureCombo)
+	resultCollection=[]
 	for featureSet in featureCombo:
-		print featureSet
 		dataSet=convertFeatureCollection(featureCollection,True,featureSet)
-		simpleClassify(dataSet,10)
+		acc,err=simpleClassify(dataSet,10)
+		resultCollection.append((acc,featureSet,err))
+	resultCollection=sorted(resultCollection,key=operator.itemgetter(0))
+	for i in resultCollection:
+		print i[0],i[1]
+	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
+	studyErrors(errorCollection,"arg2SubTreePos")
 		
 
 	   
@@ -101,7 +106,9 @@ if(len(sys.argv)< 3 ):
 featureCollection=loadModel(sys.argv[1])
 
 featureCombinations(featureCollection)	
-	
+
+exit()
+
 chooseFeatures=False
 chosenFeatureSet=[]
 if(sys.argv[2]=="y" or sys.argv[2]=="Y"):
@@ -111,8 +118,9 @@ if(sys.argv[2]=="y" or sys.argv[2]=="Y"):
 featureSet=[f[0] for f in featureCollection[0].featureList]
 
 dataSet=convertFeatureCollection(featureCollection,chooseFeatures,chosenFeatureSet)
-errorSamplesNum=simpleClassify(dataSet,10)
+avgAccuracy,errorSamplesNum=simpleClassify(dataSet,10)
 
 
 errorSamples=[featureCollection[num] for num in errorSamplesNum]
-studyErrors(errorSamples,"arg1Pos")
+print "avgAccuracy is ",averageAcc
+studyErrors(errorSamples,"arg2SubTreePos")
