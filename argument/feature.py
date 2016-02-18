@@ -47,10 +47,10 @@ class Feature():
 		FD.close()
 	def wordFeature(self,wordList,wordList2=[]):
 		self.description=self.description+" wordFeature"
-		print "wordfeature"
+#		print "wordfeature"
 		w=""
-		print "w1",wordList
-		print "w2",wordList2
+#		print "w1",wordList
+#		print "w2",wordList2
 
 		for word in wordList:
 			word=self.globalWordList[word].word

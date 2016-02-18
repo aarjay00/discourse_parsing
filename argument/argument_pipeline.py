@@ -19,6 +19,7 @@ from tree_api import *
 from argument_match_accuracy import *
 from argument_experiments import *
 
+from model_api import *
 
 connList=loadConnList("lists/compConnectiveList.list")
 connSplitList=loadConnList("lists/splitConnectiveList.list",True)
@@ -164,7 +165,6 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	feature.sampleDescription["connective"]=connective
 	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
 	feature.sampleDescription["label"]=feature.classLabel
-	return feature	
 
 	if p[0] and p[1] :
 		print "HERE"
@@ -195,9 +195,7 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	feature.sampleDescription["label"]=feature.classLabel
 
 
-		
-
-	return feature
+	return feature,arg2NodeList,connNode
 
 	
 connD={}
@@ -207,6 +205,10 @@ num=0;
 
 arg1PosFeatureCollection=[]
 arg2SubTreePosFeatureCollection=[]
+
+arg2NodeCollection=[]
+
+discourseFileNum=0
 
 for discourseFileLocation in discourseFileCollection:
 	discourseFile=loadModel(discourseFileLocation)
@@ -219,8 +221,9 @@ for discourseFileLocation in discourseFileCollection:
 #		createConnWiseFolder(conn,discourseFile)
 #		studyConnPos(conn,discourseFile)
 #		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
-		arg2SubTreePosFeature=arg2SubTreeExtraction(conn,discourseFile)
+		arg2SubTreePosFeature,arg2NodeList,connNode=arg2SubTreeExtraction(conn,discourseFile)
 		arg2SubTreePosFeatureCollection.append(arg2SubTreePosFeature)
+		arg2NodeCollection.append((arg2NodeList,connNode,discourseFileNum))
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -239,16 +242,15 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
+	discourseFileNum+=1
 '''
 sortedList=sorted(connD.items(), key=operator.itemgetter(1))
 sortedList.reverse()
-
 n=0
 for i in sortedList:
 	print i[0],i[1]
 	n+=i[1]
 print n
-
 FD=open("connPos","w")
 for connective,pos in d.iteritems():
 	FD.write(connective+" num: "+str(len(pos.keys()))+"\n")
@@ -256,9 +258,11 @@ for connective,pos in d.iteritems():
 		FD.write(str(k)+"-"+str(v)+" ")
 	FD.write("\n")
 FD.close()
-
-exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 '''
-exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
 
-print num
+
+#exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
+#exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
+
+for i in range(0,10):
+	classifier=getModel(arg2SubTreePosFeatureCollection,i,10)

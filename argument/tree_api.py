@@ -41,7 +41,6 @@ def findChild(childTarget, node , nodeDict , level , maxLevel):
 			return True
 	return False
 def findNode(nodeTarget, node , nodeDict , level , maxLevel,excludeNode=""):
-	print "\t"*level,"finding",nodeTarget,"in",node,nodeDict[node].childList
 	if(level==maxLevel):
 		return False
 	for child in nodeDict[node].childList:
