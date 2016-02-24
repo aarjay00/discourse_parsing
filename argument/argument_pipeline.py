@@ -196,6 +196,55 @@ def arg2SubTreeExtraction(conn,discourseFile):
 
 
 	return feature,arg2NodeList,connNode
+def extractSubtree(connNode,position,nodeDict):
+
+
+	nodes=[keys for keys,values in nodeDict ]
+	
+	subTree=[]
+	if(position=="ConnSubTree"):
+		for node in nodes:
+			if(findNode(node,connNode,nodeDict,0,15)):
+				subTree.append(node)
+		return subTree
+
+	elif(position=="ParentSubTree"):
+		parentNode=nodeDict[connNode].nodeParent
+		for node in nodes:
+			if(findNode(node,parentNode,nodeDict,0,15) and not findNode(node,connNodeList,nodeDict,0,15)):
+				subTree.append(node)
+		return subTree
+	
+
+def arg2SubTreeRefinement(conn,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	sentenceNum=wordList[conn[0]].sentenceNum
+	sentence=sentenceList[sentenceNum]
+	nodeDict=sentenceList[sentenceNum].nodeDict
+	connective=getSpan(conn,wordList)
+	print sentenceNum,discourseFile.rawFileName
+	arg2Span=wordList[conn[0]].arg2Span
+	arg1Span=wordList[conn[0]].arg1Span
+	argPos=studyArgumentPos(arg1Span,arg2Span)
+	if(argPos=="arg2Before"):
+		print "changed",getSpan(conn,wordList)
+		arg2Span=arg1Span
+#	for pos in arg2Span:
+#		print wordList[pos].word,
+#	print ""
+	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
+#	for pos in arg2ChunkSpan:
+#		print sentence.chunkList[pos].chunkTag,
+#	print ""
+	arg2NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
+	connNodeList=[sentence.chunkList[wordList[pos].chunkNum].nodeName for pos in conn]
+	arg2NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg2NodeList)
+	for node in arg2NodeList:
+		print node,
+	print ""	
+	connNode=sentence.chunkList[wordList[conn[-1]].chunkNum].nodeName
+
 
 	
 connD={}
@@ -224,6 +273,8 @@ for discourseFileLocation in discourseFileCollection:
 		arg2SubTreePosFeature,arg2NodeList,connNode=arg2SubTreeExtraction(conn,discourseFile)
 		arg2SubTreePosFeatureCollection.append(arg2SubTreePosFeature)
 		arg2NodeCollection.append((arg2NodeList,connNode,discourseFileNum))
+		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
+		arg1PosFeatureCollection.append(arg1PosFeature)
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -239,8 +290,6 @@ for discourseFileLocation in discourseFileCollection:
 #		print "arg1",studyArgumentContinuity(wordList[conn[0]].arg1Span,wordList)
 #		print "arg2",studyArgumentContinuity(wordList[conn[0]].arg2Span,wordList)
 #		print studyArgumentPos(wordList[conn[0]].arg1Span,wordList[conn[0]].arg2Span)
-		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
-		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
 	discourseFileNum+=1
 '''
@@ -260,8 +309,13 @@ for connective,pos in d.iteritems():
 FD.close()
 '''
 
+exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 
-#exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
+coll=loadModel("./features/arg1PosFeatureCollection")
+for feature in coll:
+	print "arg1",feature.classLabel
+
+
 #exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
 
 for i in range(0,10):
