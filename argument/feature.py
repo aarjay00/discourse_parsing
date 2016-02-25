@@ -47,11 +47,7 @@ class Feature():
 		FD.close()
 	def wordFeature(self,wordList,wordList2=[]):
 		self.description=self.description+" wordFeature"
-#		print "wordfeature"
 		w=""
-#		print "w1",wordList
-#		print "w2",wordList2
-
 		for word in wordList:
 			word=self.globalWordList[word].word
 			w=w+word+" "
@@ -128,42 +124,6 @@ class Feature():
 				chunkN="Last"
 		print chunkN
 		self.featureList.append(("chunkNeighbor_"+str(offSet),chunkN))
-
-
-
-	def connectivePosInSentence(self,wordList):
-		self.description=self.description+" connectivePosinSentence"
-		connSentenceNum=self.globalWordList[wordList[0]].sentenceNum
-		prevSentenceNum1=self.globalWordList[wordList[0]-1].sentenceNum
-#		prevSentenceNum2=self.globalWordList[wordList[0]-2].sentenceNum
-		if(connSentenceNum!=prevSentenceNum1): #or connSentenceNum!=prevSentenceNum2):
-			self.featureList.append(("connectivePosInSentence","Start"))
-			return "start"
-		else:
-			self.featureList.append(("connectivePosInSentence","Middle"))
-			return "middle"
-	
-	def numberOfChunksBeforeConn(self,wordList):
-#		if(getSpan(wordList,self.globalWordList)!=u'\u0906\u0917\u0947'):
-#			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
-#			return "notaage" 
-		chunkNum=0
-		pos=wordList[0]-1
-		prevChunkNum=self.globalWordList[wordList[0]].chunkNum
-		while(pos>0 and self.globalWordList[pos].sentenceNum==self.globalWordList[wordList[0]].sentenceNum):
-			if(self.globalWordList[pos].chunkNum!=prevChunkNum):
-				chunkNum+=1
-			prevChunkNum=self.globalWordList[pos].chunkNum
-			pos-=1
-		if(chunkNum==1):
-			print "aage 1"
-			self.featureList.append(("numberOfChunksBeforeConnAage","1"))
-		else:
-			print "aage 0"
-			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
-
-		return chunkNum
-
 	def getCommonParent(self,node,nodePrev,nodeNext,nodeDict):
 
 		if(nodePrev==None):
@@ -291,6 +251,42 @@ class Feature():
 		print "no idea",a,b
 		return
 
+# arg1 postion specific features ---------------------------------------------------
+
+	def connectivePosInSentence(self,wordList):
+		self.description=self.description+" connectivePosinSentence"
+		connSentenceNum=self.globalWordList[wordList[0]].sentenceNum
+		prevSentenceNum1=self.globalWordList[wordList[0]-1].sentenceNum
+#		prevSentenceNum2=self.globalWordList[wordList[0]-2].sentenceNum
+		if(connSentenceNum!=prevSentenceNum1): #or connSentenceNum!=prevSentenceNum2):
+			self.featureList.append(("connectivePosInSentence","Start"))
+			return "start"
+		else:
+			self.featureList.append(("connectivePosInSentence","Middle"))
+			return "middle"
+	
+	def numberOfChunksBeforeConn(self,wordList):
+#		if(getSpan(wordList,self.globalWordList)!=u'\u0906\u0917\u0947'):
+#			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
+#			return "notaage" 
+		chunkNum=0
+		pos=wordList[0]-1
+		prevChunkNum=self.globalWordList[wordList[0]].chunkNum
+		while(pos>0 and self.globalWordList[pos].sentenceNum==self.globalWordList[wordList[0]].sentenceNum):
+			if(self.globalWordList[pos].chunkNum!=prevChunkNum):
+				chunkNum+=1
+			prevChunkNum=self.globalWordList[pos].chunkNum
+			pos-=1
+		if(chunkNum==1):
+			print "aage 1"
+			self.featureList.append(("numberOfChunksBeforeConnAage","1"))
+		else:
+			print "aage 0"
+			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
+
+		return chunkNum
+# arg1 postion specific features ended ---------------------------------------------------
+
 # argument specific features  -------------------------------------------------------------
 
 
@@ -317,7 +313,52 @@ class Feature():
 
 # argument specific features ended -------------------------------------------------------------
 
-			
+# arg2 paritality features ---------------------------------------------------------------------
+	def connRelativePostion(self,connNode ,node):
+		connChunkNum=connNode.chunkNum
+		nodeChunkNum=node.chunkNum
+		if(nodeChunkNum< connChunkNum):
+			self.featureList.append(("connRelativePostion","Before"))
+		elif(nodeChunkNum > connChunkNum):
+			self.featureList.append(("connRelativePostion","After"))
+		else:
+			self.featureList.append(("connRelativePostion","Same"))
+	def isConn(self,node,sentenceNum):
+		nodeChunkNum=node.chunkNum
+		sentence=self.sentenceList[sentenceNum]
+		wordNumList=sentence.chunkList[nodeChunkNum].wordNumList
+		found=False
+		for pos in wordNumList:
+			if self.globalWordList[pos].conn:
+				found=True
+		if(found):
+			self.featureList.append(("isConn","True"))
+		else:
+			self.featureList.append(("isConn","False"))
+	def clauseEnd(self,node,sentenceNum):
+		nodeChunkNum=node.chunkNum
+		sentence=self.sentenceList[sentenceNum]
+		wordNumList=sentence.chunkList[nodeChunkNum].wordNumList
+		
+		comma=False
+
+		for pos in wordNumList:
+			if(self.globalWordList[pos].word==","):
+				comma=True
+		if(comma):
+			self.featureList.append(("clauseEnd","True"))
+		else:
+			self.featureList.append(("clauseEnd","False"))
+	def firstArg2(self,connNode,node,first):
+		connChunkNum=connNode.chunkNum
+		nodeChunkNum=node.chunkNum
+		if(connChunkNum<=nodeChunkNum and first):
+			self.featureList.append(("firstArg2","True"))
+		else:
+			self.featureList.append(("firstArg2","False"))
+
+
+# arg2 paritality features ended ---------------------------------------------------------------	
 			
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
 		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)

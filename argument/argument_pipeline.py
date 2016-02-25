@@ -20,7 +20,7 @@ from argument_match_accuracy import *
 from argument_experiments import *
 
 from model_api import *
-
+from crf_api import *
 connList=loadConnList("lists/compConnectiveList.list")
 connSplitList=loadConnList("lists/splitConnectiveList.list",True)
 
@@ -199,18 +199,18 @@ def arg2SubTreeExtraction(conn,discourseFile):
 def extractSubtree(connNode,position,nodeDict):
 
 
-	nodes=[keys for keys,values in nodeDict.items() ]
+	nodeList=[keys for keys,values in nodeDict.items() ]
 	
 	subTree=[]
 	if(position=="ConnSubTree"):
-		for node in nodes:
+		for node in nodeList:
 			if(node!=connNode and findNode(node,connNode,nodeDict,0,15,connNode)):
 				subTree.append(node)
 		return subTree
 
 	elif(position=="ParentSubTree"):
 		parentNode=nodeDict[connNode].nodeParent
-		for node in nodes:
+		for node in nodeList:
 			if(node!=connNode and findNode(node,parentNode,nodeDict,0,15,connNode) and not findNode(node,connNode,nodeDict,0,15)):
 				subTree.append(node)
 		return subTree
@@ -249,8 +249,31 @@ def arg2SubTreeRefinement(conn,discourseFile):
 	connNode=sentence.chunkList[wordList[conn[-1]].chunkNum].nodeName
 
 
+def arg2Partiality(arg2Result,arg2Gold,connNode,nodeDict,sentenceNum,discourseFileNum):
+	discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+	sentenceList=discourseFile.sentenceList
+	sentence=sentenceList[sentenceNum]
+	wordList=discourseFile.globalWordList
+	connNode=nodeDict[connNode]
+	conn=sentence.chunkList[connNode.chunkNum].wordNumList
+	featureSeq=[]
+	first=True
+	for node in arg2Result:
+		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
+		feature.connRelativePostion(connNode,node)
+		feature.isConn(node,sentenceNum)
+		feature.clauseEnd(node,sentenceNum)
+		feature.firstArg2(connNode,node,first)
+		first=False
+		if(node in arg2Gold):
+			feature.setClassLabel("Yes")
+		else:
+		 	feature.setClassLabel("No")
+		featureSeq.append(feature)
+	return featureSeq
+
 	
-connD={}
+	connD={}
 
 
 num=0;
@@ -261,7 +284,6 @@ arg2SubTreePosFeatureCollection=[]
 arg2NodeCollection=[]
 
 discourseFileNum=0
-
 
 connD={}
 for discourseFileLocation in discourseFileCollection:
@@ -278,11 +300,12 @@ for discourseFileLocation in discourseFileCollection:
 		arg2SubTreePosFeature,arg2NodeList,connNode,nodeDict=arg2SubTreeExtraction(conn,discourseFile)
 		arg2SubTreePosFeatureCollection.append(arg2SubTreePosFeature)
 		connective=getSpan(conn,wordList)
+		sentenceNum=wordList[conn[-1]].sentenceNum
 		if(connective not in connD):
 			connD[connective]=0
 		else:
 		 	connD[connective]+=1
-		arg2NodeCollection.append((arg2NodeList,connNode,nodeDict,connective,connD[connective]))
+		arg2NodeCollection.append((arg2NodeList,connNode,nodeDict,connective,connD[connective],sentenceNum,discourseFileNum))
 #		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
 #		arg1PosFeatureCollection.append(arg1PosFeature)
 		continue
@@ -319,32 +342,88 @@ for connective,pos in d.iteritems():
 FD.close()
 '''
 
-exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
+#exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 
-coll=loadModel("./features/arg1PosFeatureCollection")
-for feature in coll:
-	print "arg1",feature.classLabel
+#coll=loadModel("./features/arg1PosFeatureCollection")
+#for feature in coll:
+#	print "arg1",feature.classLabel
 
 
-exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
+#exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
 
 dataSize=len(arg2SubTreePosFeatureCollection)
+
+arg2PartialityFeatureSeqCollection=[]
+arg2SubTreeResultCollection=[]
 for iterationNum in range(0,10):
 	start=iterationNum*(dataSize/10)
 	end=start+(dataSize/10)
-	results=getModel(arg2SubTreePosFeatureCollection,iterationNum,10)
+	results=singleIterationClassify(arg2SubTreePosFeatureCollection,iterationNum,10)
 	for sampleNum in range(start,end):
-		arg2NodeList=arg2NodeCollection[sampleNum][0]
+		
+		arg2Gold=arg2NodeCollection[sampleNum][0]
 		connNode=arg2NodeCollection[sampleNum][1]
 		nodeDict=arg2NodeCollection[sampleNum][2]
 		connective=arg2NodeCollection[sampleNum][3]
 		connNum=arg2NodeCollection[sampleNum][4]
-		nodes=extractSubtree(connNode,results[sampleNum-start],nodeDict)
-		nodes=filter(lambda x: x!="BLK",nodes)
-		print sampleNum,"*"*50
-		print sorted(nodes)
-		print sorted(arg2NodeList)
-		print "resulted",sorted(nodes)==sorted(arg2NodeList)
-		print "result1",results[sampleNum-start]==arg2SubTreePosFeatureCollection[sampleNum].classLabel
-		print results[sampleNum-start]
-		print connective,connNum
+		sentenceNum=arg2NodeCollection[sampleNum][5]
+		discourseFileNum=arg2NodeCollection[sampleNum][6]
+		
+		arg2Result=extractSubtree(connNode,results[sampleNum-start],nodeDict)
+		
+		arg2Result=filter(lambda x: x!="BLK",arg2Result)
+		arg2Result = [nodeDict[node] for node in arg2Result]
+		arg2Result.sort(key=lambda x: x.chunkNum)
+		arg2Gold = filter(lambda x: x!="BLK",arg2Gold)
+		arg2Gold = [nodeDict[node] for node in arg2Gold]
+		arg2Gold.sort(key=lambda x : x.chunkNum)
+	
+		arg2SubTreeResultCollection.append(arg2Result)
+		arg2PartialityFeatureSeq=arg2Partiality(arg2Result,arg2Gold,connNode,nodeDict,sentenceNum,discourseFileNum)
+		arg2PartialityFeatureSeqCollection.append(arg2PartialityFeatureSeq)
+#		print sampleNum,"*"*50
+#		print [node.nodeName for node in arg2Result]
+#		print [node.nodeName for node in arg2Gold]
+#		print "resulted",[ node.nodeName for node in arg2Result] == [node.nodeName for node in arg2Gold]
+#		print "result1",results[sampleNum-start]==arg2SubTreePosFeatureCollection[sampleNum].classLabel
+#		print results[sampleNum-start]
+#		print connective,connNum
+#exportModel("./features/arg2PartialityFeatureSeqCollection",arg2PartialityFeatureSeqCollection)
+
+for iterationNum in range(0,10):
+	print "iteration",iterationNum,"-"*30
+	
+	genCRFModel(arg2PartialityFeatureSeqCollection,iterationNum,10,"./crfModel")
+	resultSeqCollection=runCRFModel(arg2PartialityFeatureSeqCollection,iterationNum,10,"./crfModel")
+
+	start=iterationNum*(dataSize/10)
+	end=start+(dataSize/10)
+
+	for sampleNum in range(start,end):
+
+		arg2Gold=arg2NodeCollection[sampleNum][0]
+		connNode=arg2NodeCollection[sampleNum][1]
+		nodeDict=arg2NodeCollection[sampleNum][2]
+		connective=arg2NodeCollection[sampleNum][3]
+		connNum=arg2NodeCollection[sampleNum][4]
+		sentenceNum=arg2NodeCollection[sampleNum][5]
+		discourseFileNum=arg2NodeCollection[sampleNum][6]
+
+		resultSeq=resultSeqCollection[sampleNum-start]
+		
+		arg2Gold = filter(lambda x: x!="BLK",arg2Gold)
+		arg2Gold = [nodeDict[node] for node in arg2Gold]
+		arg2Gold.sort(key=lambda x : x.chunkNum)
+		
+		arg2SubTreeResult=arg2SubTreeResultCollection[sampleNum]
+		arg2PartialResult=[]
+		for i in range(0,len(resultSeq)):
+			if(resultSeq[i]=="Yes"):
+				arg2PartialResult.append(arg2SubTreeResult[i])
+				
+		print "lenmatch",len(arg2SubTreeResult)==len(resultSeq)
+		print "original",arg2Gold==arg2SubTreeResult
+		print "partial",arg2Gold==arg2PartialResult
+		print [node.nodeName for node in arg2SubTreeResult]
+		print [node.nodeName for node in arg2PartialResult]
+		print[node.nodeName for node in  arg2Gold]

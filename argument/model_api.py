@@ -143,7 +143,7 @@ def simpleModelRun(featureCollectionLocation):
 	studyErrors(errorSamples,"arg2SubTreePos")
 
 
-def getModel(featureCollection,iterationNum,foldNum):
+def singleIterationClassify(featureCollection,iterationNum,foldNum):
 	
 	featureSet=[f[0] for f in featureCollection[0].featureList]
 	dataSet=convertFeatureCollection(featureCollection,False,featureSet)
