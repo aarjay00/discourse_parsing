@@ -64,16 +64,30 @@ def simpleClassify(dataSet,foldNum):
 		positive=0
 		negative=0
 		sampleNum=0
-		for sample in testDataSet:
-			sampleLabel=sample[1]
-			sampleFeature=sample[0]
-			result=classifier.prob_classify(sampleFeature)
-			if(result.prob(sampleLabel)>.5):
+		testf=[sample[0] for sample in testDataSet]
+		testl=[sample[1] for sample in testDataSet]
+		results=classifier.classify_many(testf)
+#		print "iterationNum",iteration
+#		for i in range(0,len(results)):
+#			print testl[i],results[i],testl[i]==results[i]
+#		print testl
+#		print results
+		for sampleNum in range(0,len(results)):
+			if(results[sampleNum]==testl[sampleNum]):
 				positive+=1
 			else:
-			 	negative+=1
+				negative+=1
 			 	negativeSamples.append(sampleNum+start)
-			sampleNum+=1
+#		for sample in testDataSet:
+#			sampleLabel=sample[1]
+#			sampleFeature=sample[0]
+#			result=classifier.prob_classify(sampleFeature)
+#			if(result.prob(sampleLabel)>.5):
+#				positive+=1
+#			else:
+#			 	negative+=1
+#			 	negativeSamples.append(sampleNum+start)
+#			sampleNum+=1
 		accuracy=1.0*positive/(positive+negative)
 #		print "accuracy for round %d is %f"%(iteration,accuracy)
 		averageAcc=(averageAcc*iteration+accuracy)/(iteration+1)
@@ -125,7 +139,7 @@ def simpleModelRun(featureCollectionLocation):
 	avgAccuracy,errorSamplesNum=simpleClassify(dataSet,10)
 
 	errorSamples=[featureCollection[num] for num in errorSamplesNum]
-	print "avgAccuracy is ",averageAcc
+	print "avgAccuracy is ",avgAccuracy
 	studyErrors(errorSamples,"arg2SubTreePos")
 
 
@@ -140,4 +154,6 @@ def getModel(featureCollection,iterationNum,foldNum):
 	testDataSet=dataSet[start:end]
 	trainDataSet=dataSet[:start]+dataSet[end+1:]
 	classifier=genClassifer(trainDataSet)
-	return classifier
+	testDataSet=[sample[0] for sample in testDataSet]
+	return classifier.classify_many(testDataSet)
+#	return classifier

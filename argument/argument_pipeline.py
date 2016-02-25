@@ -161,10 +161,10 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	print connective,p
 
 
-	feature.setClassLabel(str(p[0])+str(p[1])+str(p[2]))	
-	feature.sampleDescription["connective"]=connective
-	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
-	feature.sampleDescription["label"]=feature.classLabel
+#	feature.setClassLabel(str(p[0])+str(p[1])+str(p[2]))	
+#	feature.sampleDescription["connective"]=connective
+#	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
+#	feature.sampleDescription["label"]=feature.classLabel
 
 	if p[0] and p[1] :
 		print "HERE"
@@ -195,25 +195,28 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	feature.sampleDescription["label"]=feature.classLabel
 
 
-	return feature,arg2NodeList,connNode
+	return feature,arg2NodeList,connNode,nodeDict
 def extractSubtree(connNode,position,nodeDict):
 
 
-	nodes=[keys for keys,values in nodeDict ]
+	nodes=[keys for keys,values in nodeDict.items() ]
 	
 	subTree=[]
 	if(position=="ConnSubTree"):
 		for node in nodes:
-			if(findNode(node,connNode,nodeDict,0,15)):
+			if(node!=connNode and findNode(node,connNode,nodeDict,0,15,connNode)):
 				subTree.append(node)
 		return subTree
 
 	elif(position=="ParentSubTree"):
 		parentNode=nodeDict[connNode].nodeParent
 		for node in nodes:
-			if(findNode(node,parentNode,nodeDict,0,15) and not findNode(node,connNodeList,nodeDict,0,15)):
+			if(node!=connNode and findNode(node,parentNode,nodeDict,0,15,connNode) and not findNode(node,connNode,nodeDict,0,15)):
 				subTree.append(node)
 		return subTree
+	else:
+		print position,"ERROR"
+		return []
 	
 
 def arg2SubTreeRefinement(conn,discourseFile):
@@ -259,6 +262,8 @@ arg2NodeCollection=[]
 
 discourseFileNum=0
 
+
+connD={}
 for discourseFileLocation in discourseFileCollection:
 	discourseFile=loadModel(discourseFileLocation)
 	wordList=discourseFile.globalWordList
@@ -270,11 +275,16 @@ for discourseFileLocation in discourseFileCollection:
 #		createConnWiseFolder(conn,discourseFile)
 #		studyConnPos(conn,discourseFile)
 #		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
-		arg2SubTreePosFeature,arg2NodeList,connNode=arg2SubTreeExtraction(conn,discourseFile)
+		arg2SubTreePosFeature,arg2NodeList,connNode,nodeDict=arg2SubTreeExtraction(conn,discourseFile)
 		arg2SubTreePosFeatureCollection.append(arg2SubTreePosFeature)
-		arg2NodeCollection.append((arg2NodeList,connNode,discourseFileNum))
-		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
-		arg1PosFeatureCollection.append(arg1PosFeature)
+		connective=getSpan(conn,wordList)
+		if(connective not in connD):
+			connD[connective]=0
+		else:
+		 	connD[connective]+=1
+		arg2NodeCollection.append((arg2NodeList,connNode,nodeDict,connective,connD[connective]))
+#		arg1PosFeature=generateArg1PositionFeatures(conn,discourseFile,relationNum)
+#		arg1PosFeatureCollection.append(arg1PosFeature)
 		continue
 		genArg1Span,genArg2Span=generate_baseline(conn,discourseFile.globalWordList)
 		result=checkArgumentMatch(conn,genArg1Span,genArg2Span,discourseFile.globalWordList)
@@ -316,7 +326,25 @@ for feature in coll:
 	print "arg1",feature.classLabel
 
 
-#exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
+exportModel("./features/arg2SubTreePosFeatureCollection",arg2SubTreePosFeatureCollection)
 
-for i in range(0,10):
-	classifier=getModel(arg2SubTreePosFeatureCollection,i,10)
+dataSize=len(arg2SubTreePosFeatureCollection)
+for iterationNum in range(0,10):
+	start=iterationNum*(dataSize/10)
+	end=start+(dataSize/10)
+	results=getModel(arg2SubTreePosFeatureCollection,iterationNum,10)
+	for sampleNum in range(start,end):
+		arg2NodeList=arg2NodeCollection[sampleNum][0]
+		connNode=arg2NodeCollection[sampleNum][1]
+		nodeDict=arg2NodeCollection[sampleNum][2]
+		connective=arg2NodeCollection[sampleNum][3]
+		connNum=arg2NodeCollection[sampleNum][4]
+		nodes=extractSubtree(connNode,results[sampleNum-start],nodeDict)
+		nodes=filter(lambda x: x!="BLK",nodes)
+		print sampleNum,"*"*50
+		print sorted(nodes)
+		print sorted(arg2NodeList)
+		print "resulted",sorted(nodes)==sorted(arg2NodeList)
+		print "result1",results[sampleNum-start]==arg2SubTreePosFeatureCollection[sampleNum].classLabel
+		print results[sampleNum-start]
+		print connective,connNum

@@ -43,12 +43,14 @@ def findChild(childTarget, node , nodeDict , level , maxLevel):
 def findNode(nodeTarget, node , nodeDict , level , maxLevel,excludeNode=""):
 	if(level==maxLevel):
 		return False
+	if(node==nodeTarget):
+		return True
 	for child in nodeDict[node].childList:
 	 	if(excludeNode!="" and excludeNode==child):
 			continue
 		if nodeTarget == child:
 			return True
-		if(findNode(nodeTarget,child,nodeDict,level+1,maxLevel)):
+		if(findNode(nodeTarget,child,nodeDict,level+1,maxLevel,excludeNode)):
 			return True
 	return False
 def hasChild(nodeName, nodeDict,childTarget,unique=True):
