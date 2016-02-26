@@ -107,14 +107,16 @@ def featureCombinations(featureCollection):
 	for i in resultCollection:
 		print i[0],i[1]
 	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
-	studyErrors(errorCollection,"arg2SubTreePos")
+	studyErrors(errorCollection,"arg2ExtenderBool")
 	return resultCollection[-1]
 
 
 
-def runFeatureCombination(featureCollectionLocation):	   
-	
-	featureCollection=loadModel(sys.argv[1])
+def runFeatureCombination(featureCollectionLocation,loadCollection=True):	   
+	if(loadCollection):
+		featureCollection=loadModel(featureCollectionLocation)
+	else:
+		featureCollection=featureCollectionLocation
 
 	return featureCombinations(featureCollection)	
 def chooseFeatures(featureCollectionLocation):
@@ -130,8 +132,11 @@ def chooseFeatures(featureCollectionLocation):
 	errorSamples=[featureCollection[num] for num in errorSamplesNum]
 	print "avgAccuracy is ",averageAcc
 	studyErrors(errorSamples,"arg2SubTreePos")
-def simpleModelRun(featureCollectionLocation):
-	featureCollection=loadModel(sys.argv[1])
+def simpleModelRun(featureCollectionLocation,loadCollection=True):
+	if(loadCollection):
+		featureCollection=loadModel(sys.argv[1])
+	else:
+		featureCollection=featureCollectionLocation
 
 	featureSet=[f[0] for f in featureCollection[0].featureList]
 

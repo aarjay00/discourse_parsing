@@ -213,9 +213,9 @@ def studyconnArg2Pos(conn,arg2Span,discourseFile):
 		  	print "hmm"
 	print "connarg2-",getSpan(conn,wordList),len(arg2Nodes),children,parent
 
-connD={}
+connDict={}
 
-def createConnWiseFolder(conn,discourseFile):
+def createConnWiseFolderArg2(conn,discourseFile):
 	wordList=discourseFile.globalWordList
 	sentenceList=discourseFile.sentenceList
 	sentenceNum=wordList[conn[0]].sentenceNum
@@ -228,22 +228,58 @@ def createConnWiseFolder(conn,discourseFile):
 		arg2Span=arg1Span
 	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
 	arg2NodeList=[sentenceList[sentenceNum].chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
-	global connD
-	if(connective not in connD):
-		connD[connective]=0
+	global connDict
+	createDirectory("./connwiseArgument2/"+connective+"/")
+	if(connective not in connDict):
+		connDict[connective]=0
 		FD=open("./connwiseArgument2/"+connective+"/desc","w")
 		FD.close()
-	createDirectory("./connwiseArgument2/"+connective+"/")
 	rootNode=sentenceList[sentenceNum].rootNode
 	nodeDict=sentenceList[sentenceNum].nodeDict
 	graph = pydot.Dot(graph_type='graph')
 	if(len(rootNode)>1):
 		print connective
-	render_dependency_tree_highlighted(rootNode[0],nodeDict,graph,sentenceList[sentenceNum],wordList,arg2NodeList,"./connwiseArgument2/"+connective+"/"+str(connD[connective]))
+	render_dependency_tree_highlighted(rootNode[0],nodeDict,graph,sentenceList[sentenceNum],wordList,arg2NodeList,"./connwiseArgument2/"+connective+"/"+str(connDict[connective]))
 	FD=open("./connwiseArgument2/"+connective+"/desc","a")
-	FD.write(str(connD[connective])+" - "+str(sentenceNum)+" "+discourseFile.rawFileName+"\n")
+	FD.write(str(connDict[connective])+" - "+str(sentenceNum)+" "+discourseFile.rawFileName+"\n")
 	FD.close()
-	connD[connective]+=1
+	connDict[connective]+=1
+
+def createConnWiseFolderArg1(conn,discourseFile):
+	wordList=discourseFile.globalWordList
+	sentenceList=discourseFile.sentenceList
+	sentenceNum=wordList[conn[0]].sentenceNum
+	connective=getSpan(conn,wordList)
+	arg2Span=wordList[conn[0]].arg2Span
+	arg1Span=wordList[conn[0]].arg1Span
+	argPos=studyArgumentPos(arg1Span,arg2Span)
+	if(argPos=="arg2Before"):
+		print "changed",getSpan(conn,wordList)
+		arg1Span=arg2Span
+	for pos in arg1Span:
+		if wordList[pos].sentenceNum!=sentenceNum:
+			return
+	print "arg1 in same sentence"
+
+	arg1ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg1Span]))
+	arg1NodeList=[sentenceList[sentenceNum].chunkList[chunkNum].nodeName for chunkNum in arg1ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
+	global connDict
+	createDirectory("./connwiseArgument1/"+connective+"/")
+	if(connective not in connDict):
+		connDict[connective]=0
+		FD=open("./connwiseArgument1/"+connective+"/desc","w")
+		FD.close()
+	rootNode=sentenceList[sentenceNum].rootNode
+	nodeDict=sentenceList[sentenceNum].nodeDict
+	graph = pydot.Dot(graph_type='graph')
+	if(len(rootNode)>1):
+		print connective
+	render_dependency_tree_highlighted(rootNode[0],nodeDict,graph,sentenceList[sentenceNum],wordList,arg1NodeList,"./connwiseArgument1/"+connective+"/"+str(connDict[connective]))
+	FD=open("./connwiseArgument1/"+connective+"/desc","a")
+	FD.write(str(connDict[connective])+" - "+str(sentenceNum)+" "+discourseFile.rawFileName+"\n")
+	FD.close()
+	connDict[connective]+=1
+
 
 num=0;
 
@@ -287,7 +323,7 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		relationNum+=1
 
-sortedList=sorted(connD.items(), key=operator.itemgetter(1))
+sortedList=sorted(connDict.items(), key=operator.itemgetter(1))
 sortedList.reverse()
 
 n=0

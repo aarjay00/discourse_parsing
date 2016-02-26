@@ -359,7 +359,65 @@ class Feature():
 
 
 # arg2 paritality features ended ---------------------------------------------------------------	
+	
+# arg2 extender features begin ----------------------------------------------------------------
+
+	def hasParent(self,connNode,nodeDict):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+		except:
+			parent=None
+		if(parent==None):
+			self.featureList.append(("connParent","No"))
+		else:
+			self.featureList.append(("connParent","Yes"))
+	def hasParentParent(self,connNode,nodeDict):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+		except:
+			parent=None
+		if(parent==None):
+			self.featureList.append(("connParentParent","No"))
+			return
+		try:
+			parentParent=nodeDict[parent.nodeName]
+		except:
+			parentParent=None
+		if(parentParent==None):
+			self.featureList.append(("connParentParent","No"))
+		else:
+			self.featureList.append(("connParentParent","Yes"))
 			
+	def connRelativePosParentParent(self,connNode,nodeDict):
+
+		try:
+			parentParent=nodeDict[nodeDict[connNode.nodeParent].nodeParent]
+		except:
+			parentParent=None
+		if(parentParent==None):
+			self.featureList.append(("connRelativePosParentParent","DoesNotExist"))
+			return
+		
+		connChunkNum=connNode.chunkNum
+		parentChunkNum=parentParent.chunkNum
+
+		if(parentChunkNum>connChunkNum):
+			self.featureList.append(("connRelativePosParentParent","After"))
+		else:
+			self.featureList.append(("connRelativePosParentParent","Before"))
+	def chunkComboName(self,connNode,nodeDict):
+		try:
+			parentNode=nodeDict[connNode.nodeParent]
+			extendNode=nodeDict[parentNode.nodeParent]
+		except:
+			parentNode=None
+			extendNode=None
+		if(parentNode==None or extendNode==None):
+			self.featureList.append(("chunkComboName","None"))
+		else:
+			self.featureList.append(("chunkComboName",connNode.getChunkName(parentNode.nodeName),connNode.getChunkName(extendNode.nodeName)))
+# arg2 extender features ended ----------------------------------------------------------------
+
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
 		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)
 		if(getSpan(conn,self.globalWordList)!=connective):
