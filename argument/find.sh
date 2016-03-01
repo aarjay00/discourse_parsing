@@ -18,7 +18,7 @@ then
 	gedit "$file_path""/sentenceInfo" &
 #	else
 #	killall eog
-	eog "$file_path""/""$sentence_num"".png" &
+#	eog "$file_path""/""$sentence_num"".png" &
 #	fi
 else	
 	file_path="$(tree -if -L 2 ../data/$dat_type | grep $file_name)"

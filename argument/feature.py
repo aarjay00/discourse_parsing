@@ -357,7 +357,6 @@ class Feature():
 		else:
 			self.featureList.append(("firstArg2","False"))
 
-
 # arg2 paritality features ended ---------------------------------------------------------------	
 	
 # arg2 extender features begin ----------------------------------------------------------------

@@ -283,6 +283,18 @@ def createConnWiseFolderArg1(conn,discourseFile):
 
 num=0;
 
+
+def getPartialMatchArgAccuracy(argResult,argGold):
+	
+	size=len(argGold)
+	score=0
+
+	common=set(argResult) & set(argGold)
+	score+=len(common)
+	score = score - .5*abs(len(set(argGold)) - len(common)) # nodes not included in final arg
+	score = score - .5*abs(len(set(argResult)) - len(common)) # nodes extra in final arg
+	score=(score*1.0)/size
+	return score
 '''
 
 connList=loadConnList("lists/compConnectiveList.list")

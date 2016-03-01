@@ -214,6 +214,13 @@ def extractSubtree(connNode,position,nodeDict):
 			if(node!=connNode and findNode(node,parentNode,nodeDict,0,15,connNode) and not findNode(node,connNode,nodeDict,0,15)):
 				subTree.append(node)
 		return subTree
+	elif(position=="ExtendSubTree"):
+	   	parentNode=nodeDict[connNode].nodeParent
+	   	extendNode=nodeDict[parentNode].nodeParent
+	   	for node in nodeList:
+	   		if(node!=connNode and node!=parentNode and findNode(node,extendNode,nodeDict,0,15,parentNode)):
+				subTree.append(node)
+		return subTree
 	else:
 		print position,"ERROR"
 		return []
@@ -263,7 +270,7 @@ def arg2Partiality(arg2Result,arg2Gold,connNode,nodeDict,sentenceNum,discourseFi
 		feature.connRelativePostion(connNode,node)
 		feature.isConn(node,sentenceNum)
 		feature.clauseEnd(node,sentenceNum)
-		feature.firstArg2(connNode,node,first)
+#		feature.firstArg2(connNode,node,first)
 		first=False
 		if(node in arg2Gold):
 			feature.setClassLabel("Yes")
@@ -303,11 +310,11 @@ def arg2Extender(arg2Result,arg2Gold,connNode,nodeDict,arg2SubTreePos,sentenceNu
 	else:
 	 	print "need no extension",extendNode
 	 	feature.setClassLabel("No")
-	feature.wordFeature(conn)
+#	feature.wordFeature(conn)
 	feature.hasParent(connNode,nodeDict)
 	feature.hasParentParent(connNode,nodeDict)
 	feature.connRelativePosParentParent(connNode,nodeDict)
-	feature.chunkComboName(connNode,nodeDict)
+#	feature.chunkComboName(connNode,nodeDict)
 
 	if(parentVGF!=None):
 		feature.featureList.append(("parentNode",connNode.getChunkName(parentVGF.nodeName)))
@@ -444,7 +451,7 @@ for iterationNum in range(0,10):
 arg2PartialResultCollection=[]
 arg2ExtenderFeatureCollection=[]
 
-
+subTreeModuleAcc=0.0
 for iterationNum in range(0,10):
 	print "iteration",iterationNum,"-"*30
 	
@@ -485,4 +492,55 @@ for iterationNum in range(0,10):
 		print [node.nodeName for node in arg2SubTreeResult]
 		print [node.nodeName for node in arg2PartialResult]
 		print[node.nodeName for node in arg2Gold]
-runFeatureCombination(arg2ExtenderFeatureCollection,False)
+		
+		subTreeModuleAcc+=getPartialMatchArgAccuracy(arg2SubTreeResult,arg2Gold)
+
+#arg2ExtenderResultCollection=runFeatureCombination(arg2ExtenderFeatureCollection,False)
+#print len(arg2ExtenderResultCollection)
+
+#exit()
+# running classifier to check for extension in arg2 
+
+
+print "-"*50,"EXTENDING"
+
+partialModuleAcc=0.0
+extendedModuleAcc=0.0
+for iterationNum in range(0,10):
+	start=iterationNum*(dataSize/10)
+	end=start+(dataSize/10)
+	results=singleIterationClassify(arg2ExtenderFeatureCollection,iterationNum,10)
+	for sampleNum in range(start,end):
+		arg2Gold=arg2NodeCollection[sampleNum][0]
+		connNode=arg2NodeCollection[sampleNum][1]
+		nodeDict=arg2NodeCollection[sampleNum][2]
+		connective=arg2NodeCollection[sampleNum][3]
+		connNum=arg2NodeCollection[sampleNum][4]
+		sentenceNum=arg2NodeCollection[sampleNum][5]
+		discourseFileNum=arg2NodeCollection[sampleNum][6]
+		
+		arg2Partial=arg2PartialResultCollection[sampleNum]
+		
+		arg2Gold = filter(lambda x: x!="BLK" and  "NULL" not in x,arg2Gold)
+		arg2Gold = [nodeDict[node] for node in arg2Gold]
+		arg2Gold.sort(key=lambda x : x.chunkNum)
+
+		arg2Extended=[]
+		if(results[sampleNum-start]=="Yes"):
+			print "Extending :)",arg2ExtenderFeatureCollection[sampleNum].classLabel,connective,connNum
+			arg2Extended=extractSubtree(connNode,"ExtendSubTree",nodeDict)
+			arg2Extended = [nodeDict[node] for node in arg2Extended]
+		arg2Extended.extend(arg2Partial)
+		
+		arg2Extended = filter(lambda x: x.nodeName!="BLK" and "NULL" not in x.nodeName,arg2Extended)
+		arg2Extended.sort(key=lambda x : x.chunkNum)
+
+		print "extended",arg2Extended==arg2Gold
+		print [node.nodeName for node in arg2Extended]
+		print [node.nodeName for node in arg2Partial]
+		print [node.nodeName for node in arg2Gold]
+		partialModuleAcc+=getPartialMatchArgAccuracy(arg2Partial,arg2Gold)
+		extendedModuleAcc+=getPartialMatchArgAccuracy(arg2Extended,arg2Gold)
+print subTreeModuleAcc/640
+print partialModuleAcc/640
+print extendedModuleAcc/640
