@@ -150,27 +150,15 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 
 	arg1Presence=argTreePosition(arg1NodeList,connNode,nodeDict)
 
-	'''
-	if(arg1Presence[0] and not arg1Presence[1] and not arg1Presence[2]):
-		print getSpan(conn,wordList),"ConnSubTree"
-		feature.setClassLabel("ConnSubTree")
-	elif(not arg1Presence[0] and arg1Presence[1] and not arg1Presence[2]):
-		print getSpan(conn,wordList),"ParentSubTree"
-		feature.setClassLabel("ParentVGF")
-	elif(arg1Presence[2]):
-		print getSpan(conn,wordList),"ParentParentSubTree"
-		feature.setClassLabel("ParentParentVGF")
-	'''
-
 	if(arg1Presence[0]):
 		feature.setClassLabel("ConnSubTree")
 		print getSpan(conn,wordList),"ConnSubTree"
 	elif(arg1Presence[1]):
 		print getSpan(conn,wordList),"ParentSubTree"
-		feature.setClassLabel("ParentVGF")
+		feature.setClassLabel("ParentSubTree")
 	else:
 		print getSpan(conn,wordList),"ParentParentSubTree"
-		feature.setClassLabel("ParentParentVGF")
+		feature.setClassLabel("ParentParentSubTree")
 
 
 	for f in feature.featureList:
@@ -178,10 +166,46 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 
 	return feature
 
+
+def extractArg1SubTree(subTreePos,connNode,nodeDict):
+
+	nodeList=nodeDict.keys()
+	connNode=nodeDict[connNode]	
+	subTree=[]
+	if(subTreePos=="ParentParentSubTree"):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+		except:
+			return extractArg1SubTree("ConnSubTree",connNode,nodeDict)
+		try:
+			pParent=nodeDict[parent.nodeParent]
+		except:
+			return extractArg1SubTree("ParentSubTree",connNode.nodeName,nodeDict)
+
+		for node in nodeList:
+			if(findNode(node,pParent.nodeName,nodeDict,0,15)):
+				subTree.append(node)
+
+	elif(subTreePos=="ParentSubTree"):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+		except:
+			return extractArg1SubTree("ConnSubTree",connNode.nodeName,nodeDict)
+		for node in nodeList:
+			if(findNode(node,parent.nodeName,nodeDict,0,15)):
+				subTree.append(node)
+	elif(subTreePos=="ConnSubTree"):
+	   for node in nodeList:
+	   	if(findNode(node,connNode.nodeName,nodeDict,0,15)):
+			subTree.append(node)
+	return subTree
+
 discourseFileNum=0
 
 connD={}
 
+
+# generating arg1pos features-------------------------------------------------------------------
 arg1PosFeatureCollection=[]
 arg1ConnInfoCollection=[]
 for discourseFileLocation in discourseFileCollection:
@@ -204,7 +228,7 @@ for discourseFileLocation in discourseFileCollection:
 	discourseFileNum+=1
 
 
-
+# training classifier on arg1 pos features and separating arg1 set into two sets
 arg1SSInfoCollection=[]
 arg1PSInfoCollection=[]
 for iterationNum in range(0,10):
@@ -252,6 +276,8 @@ for fileNum in range(0,len(arg1PSInfoCollection)):
 	exportModel("processedData/arg1PSInfoCollection/"+str(fileNum),arg1PSInfoCollection[fileNum])
 '''
 
+
+# generating arg1SS features collection -----------------------------------------------------
 arg1SSSubTreeFeatureCollection=[]
 
 for num in range(0,len(arg1SSInfoCollection)):
@@ -263,4 +289,46 @@ for num in range(0,len(arg1SSInfoCollection)):
 	arg1SSSubTreeFeature=arg1SubTreeExtraction(relationNum,discourseFileNum)
 	arg1SSSubTreeFeatureCollection.append(arg1SSSubTreeFeature)
 
-runFeatureCombination(arg1SSSubTreeFeatureCollection,False)
+
+
+
+#running classifier on arg1 SS features , extracting tree and generating linear tagging features
+
+subTreeModuleAcc=0.0
+
+arg1SSPartialityFeatureCollection=[]
+dataSize=len(arg1SSSubTreeFeatureCollection)
+for iterationNum in range(0,5):
+
+	start=iterationNum*(dataSize/5)
+	end=start + dataSize/5
+	results=singleIterationClassify(arg1SSSubTreeFeatureCollection,iterationNum,5)
+
+	for num in range(start,end):
+		arg1Gold=arg1SSInfoCollection[num][0]
+		sampleNum=arg1SSInfoCollection[num][1]
+		
+		
+		discourseFileNum=arg1ConnInfoCollection[sampleNum][0]
+		relationNum=arg1ConnInfoCollection[sampleNum][1]
+		discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+		conn=findConnectives(discourseFile.globalWordList)[relationNum]
+		
+		sentenceNum=discourseFile.globalWordList[conn[-1]].sentenceNum
+		connNode=discourseFile.sentenceList[sentenceNum].chunkList[discourseFile.globalWordList[conn[-1]].chunkNum].nodeName
+		nodeDict=discourseFile.sentenceList[sentenceNum].nodeDict
+
+
+		arg1Gold=set([node[0] for node in arg1Gold])
+
+		arg1SubTree=extractArg1SubTree(results[num-start],connNode,nodeDict)
+
+		arg1SubTree=[nodeDict[node] for node in arg1SubTree]
+
+		subTreeModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1SubTree],[node.nodeName for node in arg1Gold])
+		print results[num-start],getSpan(conn,discourseFile.globalWordList)
+		print [node.nodeName for node in arg1SubTree]
+		print [node.nodeName for node in arg1Gold]
+
+print 100.0*subTreeModuleAcc/len(arg1SSSubTreeFeatureCollection)
+#runFeatureCombination(arg1SSSubTreeFeatureCollection,False)
