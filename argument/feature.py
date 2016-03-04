@@ -279,10 +279,10 @@ class Feature():
 			pos-=1
 		if(chunkNum==1):
 			print "aage 1"
-			self.featureList.append(("numberOfChunksBeforeConnAage","1"))
+			self.featureList.append(("numberOfChunksBeforeConn","1"))
 		else:
 			print "aage 0"
-			self.featureList.append(("numberOfChunksBeforeConnAage","0"))
+			self.featureList.append(("numberOfChunksBeforeConn","0"))
 
 		return chunkNum
 # arg1 postion specific features ended ---------------------------------------------------
@@ -416,6 +416,52 @@ class Feature():
 		else:
 			self.featureList.append(("chunkComboName",connNode.getChunkName(parentNode.nodeName),connNode.getChunkName(extendNode.nodeName)))
 # arg2 extender features ended ----------------------------------------------------------------
+
+# arg1 same sentence position features beginning ---------------------------------------------------------
+
+	def arg2Position(self,connNode,arg2Presence):
+		if(arg2Presence[0] and not arg2Presence[1]): #and not p[1] and not p[2]'''):
+			self.featureList.append(("arg2Position","ConnSubTree"))
+		elif(not arg2Presence[0] and arg2Presence[1]):
+			self.featureList.append(("arg2Position","ParentSubTree"))
+		elif(arg2Presence[0] and arg2Presence[1]):
+			self.featureList.append(("arg2Position","ConnSubTree"))
+		elif(not arg2Presence[0] and not arg2Presence[1] and arg2Presence[2]):
+			self.featureList.append(("arg2Position","OtherSubTree"))
+		else:
+			self.featureList.append(("arg2Position","Other"))
+
+	def connParent(self,connNode,nodeDict):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+			self.featureList.append(("connParent",parent.nodeName))
+		except:
+			self.featureList.append(("connParent","None"))
+	def connParentParent(self,connNode,nodeDict):
+		try:
+			parent=nodeDict[connNode.nodeParent]
+		except:
+			self.featureList.append(("connParentParent","None"))
+			return
+		try:
+			pParent=nodeDict[parent.nodeParent]
+			self.featureList.append(("connParentParent",pParent.nodeName))
+		except:
+			self.featureList.append(("connParentParent","None"))
+			
+	def connTwoClause(self,connNode,nodeDict):
+		
+
+		childGVF=0
+		for child in connNode.childList:
+			if(findChild("VG",connNode,nodeDict,0,15)):
+				childVGF+=1
+		if(childVGf>=2):
+			self.featureList.append(("connTwoClause","Yes"))
+		else:
+			self.featureList.append(("connTwoClause","No"))
+
+# arg1 same sentence position features ended -------------------------------------------------------------
 
 	def hasNodeRelationSpecific(self,conn,connective,nodeRelationList,node,nodeDict,maxLevel):
 		self.description=self.description+" hasNodeRelationSpecific-" +getSpan(conn,self.globalWordList)+"-"+str(nodeRelationList)

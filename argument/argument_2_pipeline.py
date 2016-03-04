@@ -154,7 +154,6 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	print nodeDict[connNode].childList	
 	
 
-
 	#setting class label
 	
 	p=arg2TreePosition(arg2NodeList,connNode,nodeDict)
@@ -345,7 +344,8 @@ for discourseFileLocation in discourseFileCollection:
 	num+=len(connList)
 	relationNum=0
 	for conn in connList:
-#		createConnWiseFolderArg1(conn,discourseFile)
+		createConnWiseFolderArg1PrevSentence(conn,discourseFile)
+		continue
 #		studyConnPos(conn,discourseFile)
 #		studyconnArg2Pos(conn,wordList[conn[0]].arg2Span,discourseFile)
 		arg2SubTreePosFeature,arg2NodeList,connNode,nodeDict=arg2SubTreeExtraction(conn,discourseFile)
@@ -376,14 +376,14 @@ for discourseFileLocation in discourseFileCollection:
 #		print studyArgumentPos(wordList[conn[0]].arg1Span,wordList[conn[0]].arg2Span)
 		relationNum+=1
 	discourseFileNum+=1
-'''
 sortedList=sorted(connDict.items(), key=operator.itemgetter(1))
 sortedList.reverse()
 n=0
 for i in sortedList:
-	print i[0],i[1]
+	print "ahem",i[0],i[1]
 	n+=i[1]
 print n
+'''
 FD=open("connPos","w")
 for connective,pos in d.iteritems():
 	FD.write(connective+" num: "+str(len(pos.keys()))+"\n")
@@ -392,7 +392,7 @@ for connective,pos in d.iteritems():
 	FD.write("\n")
 FD.close()
 '''
-
+exit()
 #exportModel("./features/arg1PosFeatureCollection",arg1PosFeatureCollection)
 
 #coll=loadModel("./features/arg1PosFeatureCollection")

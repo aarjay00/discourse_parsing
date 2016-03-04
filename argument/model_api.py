@@ -107,7 +107,7 @@ def featureCombinations(featureCollection):
 	for i in resultCollection:
 		print i[0],i[1]
 	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
-	studyErrors(errorCollection,"arg2ExtenderBool")
+	studyErrors(errorCollection,"arg1Pos")
 	return resultCollection[-1]
 
 
