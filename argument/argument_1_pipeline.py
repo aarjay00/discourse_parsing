@@ -97,7 +97,6 @@ def argTreePosition(argNodeList,connNode,nodeDict):
 	iterationNum=0
 	while(1):           
 		parentNode=nodeDict[currNode].nodeParent
-		print "parent",iterationNum,parentNode
 		if(parentNode=="None"):
 			break
 		for node in argNodeList:
@@ -123,18 +122,19 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 	arg1Span=wordList[conn[0]].arg1Span
 	argPos=studyArgumentPos(arg1Span,arg2Span)
 	if(argPos=="arg2Before"):
-		print "changed",getSpan(conn,wordList)
+#		print "changed",getSpan(conn,wordList)
 		arg1Span,arg2Span=arg2Span,arg1Span
-
-	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
-	arg2NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
-	arg2NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg2NodeList)
 
 	connNodeList=[sentence.chunkList[wordList[pos].chunkNum].nodeName for pos in conn]
 	
+	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
+	arg2NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentence.chunkList)]
+	arg2NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg2NodeList)
+
+	
 	
 	arg1ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg1Span]))
-	arg1NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg1ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
+	arg1NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg1ChunkSpan if chunkNum < len(sentence.chunkList)]
 	arg1NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg1NodeList)
 	
 	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
@@ -145,101 +145,38 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 	feature.connParent(connNode,nodeDict)
 	feature.connParentParent(connNode,nodeDict)
 	feature.connTwoClause(connNode,nodeDict)
+	feature.hasParent(nodeDict[connNode],nodeDict)
+	feature.hasParentParent(nodeDict[connNode],nodeDict)
 
 	arg1Presence=argTreePosition(arg1NodeList,connNode,nodeDict)
 
-
+	'''
 	if(arg1Presence[0] and not arg1Presence[1] and not arg1Presence[2]):
+		print getSpan(conn,wordList),"ConnSubTree"
 		feature.setClassLabel("ConnSubTree")
 	elif(not arg1Presence[0] and arg1Presence[1] and not arg1Presence[2]):
+		print getSpan(conn,wordList),"ParentSubTree"
 		feature.setClassLabel("ParentVGF")
 	elif(arg1Presence[2]):
+		print getSpan(conn,wordList),"ParentParentSubTree"
+		feature.setClassLabel("ParentParentVGF")
+	'''
+
+	if(arg1Presence[0]):
+		feature.setClassLabel("ConnSubTree")
+		print getSpan(conn,wordList),"ConnSubTree"
+	elif(arg1Presence[1]):
+		print getSpan(conn,wordList),"ParentSubTree"
+		feature.setClassLabel("ParentVGF")
+	else:
+		print getSpan(conn,wordList),"ParentParentSubTree"
 		feature.setClassLabel("ParentParentVGF")
 
-def arg2SubTreeExtraction(conn,discourseFile):
-	wordList=discourseFile.globalWordList
-	sentenceList=discourseFile.sentenceList
-	sentenceNum=wordList[conn[0]].sentenceNum
-	sentence=sentenceList[sentenceNum]
-	nodeDict=sentenceList[sentenceNum].nodeDict
-	connective=getSpan(conn,wordList)
-	print sentenceNum,discourseFile.rawFileName
-	arg2Span=wordList[conn[0]].arg2Span
-	arg1Span=wordList[conn[0]].arg1Span
-	argPos=studyArgumentPos(arg1Span,arg2Span)
-	if(argPos=="arg2Before"):
-		print "changed",getSpan(conn,wordList)
-		arg2Span=arg1Span
-#	for pos in arg2Span:
-#		print wordList[pos].word,
-#	print ""
-	arg2ChunkSpan=sorted(set([wordList[i].chunkNum for i in arg2Span]))
-#	for pos in arg2ChunkSpan:
-#		print sentence.chunkList[pos].chunkTag,
-#	print ""
-	arg2NodeList=[sentence.chunkList[chunkNum].nodeName for chunkNum in arg2ChunkSpan if chunkNum < len(sentenceList[sentenceNum].chunkList)]
-	connNodeList=[sentence.chunkList[wordList[pos].chunkNum].nodeName for pos in conn]
-	arg2NodeList=filter(lambda x: x!="BLK" and x not in connNodeList,arg2NodeList)
-	for node in arg2NodeList:
-		print node,
-	print ""	
-	connNode=sentence.chunkList[wordList[conn[-1]].chunkNum].nodeName
 
-	print connNode
-	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
+	for f in feature.featureList:
+		feature.sampleDescription[f[0]]=f[1]
 
-	feature.wordFeature(conn)
-	feature.connectivePosInSentence(conn)
-	feature.connLeafNode(connNode,nodeDict)
-	feature.connSubTreeHasVGF(connNode,nodeDict)
-	feature.connHasParentVGF(connNode,nodeDict)
-	feature.rightWordLocation(conn,nodeDict[connNode],nodeDict[arg2NodeList[0]],nodeDict)
-	print nodeDict[connNode].childList	
-	
-
-
-	#setting class label
-	
-	p=argTreePosition(arg2NodeList,connNode,nodeDict)
-	print connective,p
-
-
-#	feature.setClassLabel(str(p[0])+str(p[1])+str(p[2]))	
-#	feature.sampleDescription["connective"]=connective
-#	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
-#	feature.sampleDescription["label"]=feature.classLabel
-
-	if p[0] and p[1] :
-		print "HERE"
-
-	if(p[0] and not p[1]): #and not p[1] and not p[2]'''):
-		feature.setClassLabel("ConnSubTree")
-#	elif(p[1] and p[1] and not p[2]):
-#		feature.setClassLabel("ConSubTreeExtra")
-	elif(not p[0] and p[1]):
-		feature.setClassLabel("ParentSubTree")
-	elif(p[0] and p[1]):
-#		feature.setClassLabel("ConnAndParentSubTree")
-		feature.setClassLabel("ConnSubTree")
-	elif(not p[0] and not p[1] and p[2]):
-		feature.setClassLabel("OtherSubTree")
-	else:
-		feature.setClassLabel("Other")
-		print "nooooo"
-#	elif(not p[0] and p[1] and p[2]):
-#		feature.setClassLabel("ParentSubTreeExtra")
-#	else:
-#		feature.setClassLabel("Other")
-	
-	#setting up feature description
-
-	feature.sampleDescription["connective"]=connective
-	feature.sampleDescription["leafNode"]=len(nodeDict[connNode].childList)
-	feature.sampleDescription["label"]=feature.classLabel
-
-
-	return feature,arg2NodeList,connNode,nodeDict
-
+	return feature
 
 discourseFileNum=0
 
@@ -292,7 +229,7 @@ for iterationNum in range(0,10):
 		arg2Span=wordList[conn[0]].arg2Span
 		argPos=studyArgumentPos(arg1Span,arg2Span)
 	        if(argPos=="arg2Before"):
-			print "changed",getSpan(conn,wordList)
+#			print "changed",getSpan(conn,wordList)
 			arg1Span,arg2Span=arg2Span,arg1Span
 
 		arg1NodeList=[(sentenceList[wordList[pos].sentenceNum].chunkList[wordList[pos].chunkNum].nodeName,pos) for pos in arg1Span]
@@ -306,10 +243,24 @@ for iterationNum in range(0,10):
 			arg1PSInfoCollection.append((arg1NodeList,sampleNum))
 		else:
 			arg1SSInfoCollection.append((arg1NodeList,sampleNum))
-
+'''
 createDirectory("./processedData/arg1SSInfoCollection/")
 for fileNum in range(0,len(arg1SSInfoCollection)):
 	exportModel("./processedData/arg1SSInfoCollection/"+str(fileNum),arg1SSInfoCollection[fileNum])
 createDirectory("./processedData/arg1PSInfoCollection/")
 for fileNum in range(0,len(arg1PSInfoCollection)):
 	exportModel("processedData/arg1PSInfoCollection/"+str(fileNum),arg1PSInfoCollection[fileNum])
+'''
+
+arg1SSSubTreeFeatureCollection=[]
+
+for num in range(0,len(arg1SSInfoCollection)):
+	
+
+	sampleNum=arg1SSInfoCollection[num][1]
+	discourseFileNum=arg1ConnInfoCollection[sampleNum][0]
+	relationNum=arg1ConnInfoCollection[sampleNum][1]
+	arg1SSSubTreeFeature=arg1SubTreeExtraction(relationNum,discourseFileNum)
+	arg1SSSubTreeFeatureCollection.append(arg1SSSubTreeFeature)
+
+runFeatureCombination(arg1SSSubTreeFeatureCollection,False)

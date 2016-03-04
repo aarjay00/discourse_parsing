@@ -107,9 +107,8 @@ def featureCombinations(featureCollection):
 	for i in resultCollection:
 		print i[0],i[1]
 	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
-	studyErrors(errorCollection,"arg1Pos")
+	studyErrors(errorCollection,"arg1SSSubtreePos")
 	return resultCollection[-1]
-
 
 
 def runFeatureCombination(featureCollectionLocation,loadCollection=True):	   

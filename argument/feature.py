@@ -51,24 +51,18 @@ class Feature():
 		for word in wordList:
 			word=self.globalWordList[word].word
 			w=w+word+" "
-		print w,
 		if(len(wordList2)!=0):
 			w=w[:-1]+".."
-		print w,
 		for word in wordList2:
 			word=self.globalWordList[word].word
 			w=w+word+" "
-		print w
 		self.featureList.append(("wordFeature",w[:-1]))
 	def tagFeature(self,wordList,num=None):
 		self.description=self.description+" tagFeature"
-		print "tagfeature"
 		completeTag=""
 		for word in wordList:
 			word=self.globalWordList[word]
-			print word.wordTag,
 			completeTag=completeTag+" "+word.wordTag
-		print ""
 		completeTag=completeTag[1:]
 		if(num==None):
 			self.featureList.append(("tagFeature",completeTag.replace(" ","-")))
@@ -76,7 +70,6 @@ class Feature():
 			self.featureList.append(("tagFeature"+str(num),completeTag.replace(" ","-")))
 	def tagNeighbor(self,wordList,offSet):
 		self.description=self.description+" tagNeighbor-"+str(offSet)
-		print "tagNeighbor"
 		tagN=""
 		if(offSet<0):
 			if(wordList[0]+offSet<0 or self.globalWordList[wordList[0]+offSet].sentenceNum!=self.globalWordList[wordList[0]].sentenceNum):
@@ -91,18 +84,14 @@ class Feature():
 				tagN="Last"
 			else:
 			 	tagN=self.globalWordList[wordList[-1]+offSet].wordTag
-		print tagN
 		self.featureList.append(("tagNeighbor_"+str(offSet),tagList[0]))
 
 	def chunkFeature(self,wordList,num=None):
 		self.description=self.description+" chunkFeature"
-		print "chunkfeature"
 		chunkList=[]
 		for word in wordList:
 			word=self.globalWordList[word]
-			print self.getChunkInfo(word,0).chunkTag,
 			chunkList.append(self.getChunkInfo(word,0).chunkTag)
-		print ""
 		chunkList=list(set(chunkList))
 		if(num==None):
 			self.featureList.append(("chunkFeature",chunkList[0]))
@@ -110,7 +99,6 @@ class Feature():
 			self.featureList.append(("chunkFeature"+str(num),chunkList[0]))
 	def chunkNeighbor(self,wordList,offSet):
 		self.description=self.description+" chunkNeighbor-"+str(offSet)
-		print "chunkNeighbor",offSet
 		chunkN=""
 		if(offSet<0):
 			try:
@@ -122,7 +110,6 @@ class Feature():
 				chunkN=self.getChunkInfo(self.globalWordList[wordList[-1]],offSet).chunkTag
 			except AttributeError:
 				chunkN="Last"
-		print chunkN
 		self.featureList.append(("chunkNeighbor_"+str(offSet),chunkN))
 	def getCommonParent(self,node,nodePrev,nodeNext,nodeDict):
 
@@ -278,10 +265,8 @@ class Feature():
 			prevChunkNum=self.globalWordList[pos].chunkNum
 			pos-=1
 		if(chunkNum==1):
-			print "aage 1"
 			self.featureList.append(("numberOfChunksBeforeConn","1"))
 		else:
-			print "aage 0"
 			self.featureList.append(("numberOfChunksBeforeConn","0"))
 
 		return chunkNum
@@ -367,25 +352,25 @@ class Feature():
 		except:
 			parent=None
 		if(parent==None):
-			self.featureList.append(("connParent","No"))
+			self.featureList.append(("hasConnParent","No"))
 		else:
-			self.featureList.append(("connParent","Yes"))
+			self.featureList.append(("hasConnParent","Yes"))
 	def hasParentParent(self,connNode,nodeDict):
 		try:
 			parent=nodeDict[connNode.nodeParent]
 		except:
 			parent=None
 		if(parent==None):
-			self.featureList.append(("connParentParent","No"))
+			self.featureList.append(("hasConnParentParent","No"))
 			return
 		try:
 			parentParent=nodeDict[parent.nodeName]
 		except:
 			parentParent=None
 		if(parentParent==None):
-			self.featureList.append(("connParentParent","No"))
+			self.featureList.append(("hasConnParentParent","No"))
 		else:
-			self.featureList.append(("connParentParent","Yes"))
+			self.featureList.append(("hasConnParentParent","Yes"))
 			
 	def connRelativePosParentParent(self,connNode,nodeDict):
 
@@ -432,12 +417,14 @@ class Feature():
 			self.featureList.append(("arg2Position","Other"))
 
 	def connParent(self,connNode,nodeDict):
+		connNode=nodeDict[connNode]
 		try:
 			parent=nodeDict[connNode.nodeParent]
-			self.featureList.append(("connParent",parent.nodeName))
+			self.featureList.append(("connParent",connNode.getChunkName(parent.nodeName)))
 		except:
 			self.featureList.append(("connParent","None"))
 	def connParentParent(self,connNode,nodeDict):
+		connNode=nodeDict[connNode]
 		try:
 			parent=nodeDict[connNode.nodeParent]
 		except:
@@ -445,18 +432,19 @@ class Feature():
 			return
 		try:
 			pParent=nodeDict[parent.nodeParent]
-			self.featureList.append(("connParentParent",pParent.nodeName))
+			self.featureList.append(("connParentParent",connNode.getChunkName(pParent.nodeName)))
 		except:
 			self.featureList.append(("connParentParent","None"))
 			
 	def connTwoClause(self,connNode,nodeDict):
 		
 
-		childGVF=0
+		connNode=nodeDict[connNode]
+		childVGF=0
 		for child in connNode.childList:
-			if(findChild("VG",connNode,nodeDict,0,15)):
+			if(findChild("VG",child,nodeDict,0,15)):
 				childVGF+=1
-		if(childVGf>=2):
+		if(childVGF>=2):
 			self.featureList.append(("connTwoClause","Yes"))
 		else:
 			self.featureList.append(("connTwoClause","No"))
