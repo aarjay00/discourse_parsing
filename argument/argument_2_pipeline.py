@@ -266,7 +266,7 @@ def arg2Partiality(arg2Result,arg2Gold,connNode,nodeDict,sentenceNum,discourseFi
 	first=True
 	for node in arg2Result:
 		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
-		feature.connRelativePostion(connNode,node)
+		feature.connRelativePosition(connNode,node)
 		feature.isConn(node,sentenceNum)
 		feature.clauseEnd(node,sentenceNum)
 #		feature.firstArg2(connNode,node,first)

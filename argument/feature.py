@@ -299,7 +299,7 @@ class Feature():
 # argument specific features ended -------------------------------------------------------------
 
 # arg2 paritality features ---------------------------------------------------------------------
-	def connRelativePostion(self,connNode ,node):
+	def connRelativePosition(self,connNode ,node):
 		connChunkNum=connNode.chunkNum
 		nodeChunkNum=node.chunkNum
 		if(nodeChunkNum< connChunkNum):

@@ -200,6 +200,29 @@ def extractArg1SubTree(subTreePos,connNode,nodeDict):
 			subTree.append(node)
 	return subTree
 
+def arg1SSPartiality(arg1SubTree,arg1Gold,connNode,nodeDict,sentenceNum,discourseFileNum):
+
+	discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+	wordList=discourseFile.globalWordList
+	sentence=discourseFile.sentenceList[sentenceNum]
+
+	connNode=nodeDict[connNode]
+	conn=sentence.chunkList[connNode.chunkNum].wordNumList
+
+	featureSeq=[]
+	for node in arg1SubTree:
+		feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
+		feature.connRelativePosition(connNode,node)
+		feature.isConn(node,sentenceNum)
+		feature.clauseEnd(node,sentenceNum)
+
+		if(node.nodeName in [node.nodeName for node in arg1Gold]):
+			feature.setClassLabel("Yes")
+		else:
+		 	feature.setClassLabel("No")
+		featureSeq.append(feature)	
+	return featureSeq
+
 discourseFileNum=0
 
 connD={}
@@ -296,6 +319,8 @@ for num in range(0,len(arg1SSInfoCollection)):
 
 subTreeModuleAcc=0.0
 
+
+arg1SSSubTreeResultCollection=[]
 arg1SSPartialityFeatureCollection=[]
 dataSize=len(arg1SSSubTreeFeatureCollection)
 for iterationNum in range(0,5):
@@ -322,13 +347,65 @@ for iterationNum in range(0,5):
 		arg1Gold=set([node[0] for node in arg1Gold])
 
 		arg1SubTree=extractArg1SubTree(results[num-start],connNode,nodeDict)
-
 		arg1SubTree=[nodeDict[node] for node in arg1SubTree]
 
+		arg1SSPartialityFeature=arg1SSPartiality(arg1SubTree,arg1Gold,connNode,nodeDict,sentenceNum,discourseFileNum)
+		arg1SSPartialityFeatureCollection.append(arg1SSPartialityFeature)
+		arg1SSSubTreeResultCollection.append(arg1SubTree)
 		subTreeModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1SubTree],[node.nodeName for node in arg1Gold])
 		print results[num-start],getSpan(conn,discourseFile.globalWordList)
 		print [node.nodeName for node in arg1SubTree]
 		print [node.nodeName for node in arg1Gold]
 
+
+arg1SSPartialResultCollection=[]
+partialModuleAcc=0.0
+for iterationNum in range(0,5):
+
+	start=iterationNum*(dataSize/5)
+	end=start + (dataSize/5)
+
+	genCRFModel(arg1SSPartialityFeatureCollection,iterationNum,5,"./crfModel")
+	resultSeqCollection=runCRFModel(arg1SSPartialityFeatureCollection,iterationNum,5,"./crfModel")
+
+	for num in range(start,end):
+		arg1Gold=arg1SSInfoCollection[num][0]
+
+		arg1Gold=list(set([node[0] for node in arg1Gold]))
+		sampleNum=arg1SSInfoCollection[num][1]
+		
+		
+		discourseFileNum=arg1ConnInfoCollection[sampleNum][0]
+		relationNum=arg1ConnInfoCollection[sampleNum][1]
+		discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+		conn=findConnectives(discourseFile.globalWordList)[relationNum]
+		
+		sentenceNum=discourseFile.globalWordList[conn[-1]].sentenceNum
+		connNode=discourseFile.sentenceList[sentenceNum].chunkList[discourseFile.globalWordList[conn[-1]].chunkNum].nodeName
+		nodeDict=discourseFile.sentenceList[sentenceNum].nodeDict
+
+		arg1SubTreeResult=arg1SSSubTreeResultCollection[num]
+		resultSeq=resultSeqCollection[num-start]
+
+		arg1PartialResult=[]
+		for i in range(0,len(resultSeq)):
+			if(resultSeq[i]=="Yes"):
+				arg1PartialResult.append(arg1SubTreeResult[i])
+		arg1SSPartialResultCollection.append(arg1PartialResult)
+		partialModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1PartialResult],[node.nodeName for node in arg1Gold])
+
+		arg1Gold.sort(key=lambda x: x.chunkNum)
+		arg1SubTreeResult.sort(key=lambda x: x.chunkNum)
+		arg1PartialResult.sort(key=lambda x:x.chunkNum)
+		print "subTreeExact",[node.nodeName for node in arg1SubTreeResult]==[node.nodeName for node in arg1Gold]
+		print "partialTreeExact",[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold]
+		print getSpan(conn,discourseFile.globalWordList)
+		print [node.nodeName for node in arg1SubTreeResult]
+		print [node.nodeName for node in arg1PartialResult]
+		print [node.nodeName for node in arg1Gold]
+		 
+
+
 print 100.0*subTreeModuleAcc/len(arg1SSSubTreeFeatureCollection)
+print 100.0*partialModuleAcc/len(arg1SSSubTreeFeatureCollection)
 #runFeatureCombination(arg1SSSubTreeFeatureCollection,False)
