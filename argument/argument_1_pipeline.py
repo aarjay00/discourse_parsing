@@ -225,7 +225,8 @@ def arg1SSPartiality(arg1SubTree,arg1Gold,connNode,nodeDict,sentenceNum,discours
 
 discourseFileNum=0
 
-connD={}
+connDSS={}
+connDPS={}
 
 
 # generating arg1pos features-------------------------------------------------------------------
@@ -241,12 +242,20 @@ for discourseFileLocation in discourseFileCollection:
 		arg1PosFeatureCollection.append(arg1PosFeature)
 		connective=getSpan(conn,wordList)
 		sentenceNum=wordList[conn[-1]].sentenceNum
-		if(connective not in connD):
-			connD[connective]=0
+		if(arg1PosFeature.classLabel=="Same-Sentence"):
+			if(connective not in connDSS):
+				connDSS[connective]=0
+			else:
+			 	connDSS[connective]+=1
+			arg1ConnInfoCollection.append((discourseFileNum,relationNum,connDSS[connective]))
+			createConnWiseFolderArg1(conn,discourseFile)
 		else:
-		 	connD[connective]+=1
-
-		arg1ConnInfoCollection.append((discourseFileNum,relationNum))
+			if(connective not in connDPS):
+				connDPS[connective]=0
+			else:
+			 	connDPS[connective]+=1
+			arg1ConnInfoCollection.append((discourseFileNum,relationNum,connDPS[connective]))
+		  
 		relationNum+=1
 	discourseFileNum+=1
 
@@ -289,6 +298,7 @@ for iterationNum in range(0,10):
 		if(results[sampleNum-start]=="Prev-Sentence"):
 			arg1PSInfoCollection.append((arg1NodeList,sampleNum))
 		else:
+			print "Same-Sentence",getSpan(conn,wordList)
 			arg1SSInfoCollection.append((arg1NodeList,sampleNum))
 '''
 createDirectory("./processedData/arg1SSInfoCollection/")
@@ -349,6 +359,9 @@ for iterationNum in range(0,5):
 		arg1SubTree=extractArg1SubTree(results[num-start],connNode,nodeDict)
 		arg1SubTree=[nodeDict[node] for node in arg1SubTree]
 
+		arg1SubTree.sort(key=lambda x:x.chunkNum)
+		arg1SubTree.reverse()
+
 		arg1SSPartialityFeature=arg1SSPartiality(arg1SubTree,arg1Gold,connNode,nodeDict,sentenceNum,discourseFileNum)
 		arg1SSPartialityFeatureCollection.append(arg1SSPartialityFeature)
 		arg1SSSubTreeResultCollection.append(arg1SubTree)
@@ -377,6 +390,7 @@ for iterationNum in range(0,5):
 		
 		discourseFileNum=arg1ConnInfoCollection[sampleNum][0]
 		relationNum=arg1ConnInfoCollection[sampleNum][1]
+		connNum=arg1ConnInfoCollection[sampleNum][2]
 		discourseFile=loadModel(discourseFileCollection[discourseFileNum])
 		conn=findConnectives(discourseFile.globalWordList)[relationNum]
 		
@@ -397,9 +411,13 @@ for iterationNum in range(0,5):
 		arg1Gold.sort(key=lambda x: x.chunkNum)
 		arg1SubTreeResult.sort(key=lambda x: x.chunkNum)
 		arg1PartialResult.sort(key=lambda x:x.chunkNum)
+
+		arg1Gold=filter(lambda x : "NULL" not in x.nodeName,arg1Gold)
+		arg1SubTreeResult=filter(lambda x : "NULL" not in x.nodeName,arg1SubTreeResult)
+		arg1PartialResult=filter(lambda x : "NULL" not in x.nodeName,arg1PartialResult)
 		print "subTreeExact",[node.nodeName for node in arg1SubTreeResult]==[node.nodeName for node in arg1Gold]
 		print "partialTreeExact",[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold]
-		print getSpan(conn,discourseFile.globalWordList)
+		print getSpan(conn,discourseFile.globalWordList),[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold],connNum
 		print [node.nodeName for node in arg1SubTreeResult]
 		print [node.nodeName for node in arg1PartialResult]
 		print [node.nodeName for node in arg1Gold]

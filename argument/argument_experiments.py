@@ -256,8 +256,14 @@ def createConnWiseFolderArg1(conn,discourseFile):
 	if(argPos=="arg2Before"):
 		print "changed",getSpan(conn,wordList)
 		arg1Span=arg2Span
+	if(wordList[arg1Span[0]].word=='।' or (wordList[arg1Span[0]].sentenceNum!=sentenceNum and wordList[arg1Span[1]].sentenceNum==sentenceNum)):
+		arg1Span=arg1Span[1:]
 	for pos in arg1Span:
 		if wordList[pos].sentenceNum!=sentenceNum:
+			for pos1 in arg1Span:
+				print wordList[pos1].word,wordList[pos1].wordTag
+			print ""
+			print "arg1 not in same sentence",sentenceNum,getSpan(conn,discourseFile.globalWordList),discourseFile.rawFileName
 			return
 	print "arg1 in same sentence"
 
@@ -278,7 +284,6 @@ def createConnWiseFolderArg1(conn,discourseFile):
 	FD=open("./connwiseArgument1/"+connective+"/desc","a")
 	FD.write(str(connDict[connective])+" - "+str(sentenceNum)+" "+discourseFile.rawFileName+"\n")
 	FD.close()
-	connDict[connective]+=1
 	connDict[connective]+=1
 
 def createConnWiseFolderArg1PrevSentence(conn,discourseFile):
