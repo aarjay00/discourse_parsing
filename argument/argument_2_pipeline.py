@@ -148,8 +148,7 @@ def arg2SubTreeExtraction(conn,discourseFile):
 	feature.wordFeature(conn)
 	feature.connectivePosInSentence(conn)
 	feature.connLeafNode(connNode,nodeDict)
-	feature.connSubTreeHasVGF(connNode,nodeDict)
-	feature.connHasParentVGF(connNode,nodeDict)
+	feature.connSubTreeHasVGF(connNode,nodeDict.connHasParentVGF(connNode,nodeDict)
 	feature.rightWordLocation(conn,nodeDict[connNode],nodeDict[arg2NodeList[0]],nodeDict)
 	print nodeDict[connNode].childList	
 	

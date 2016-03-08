@@ -101,13 +101,13 @@ def featureCombinations(featureCollection):
 	resultCollection=[]
 	for featureSet in featureCombo:
 		dataSet=convertFeatureCollection(featureCollection,True,featureSet)
-		acc,err=simpleClassify(dataSet,10)
+		acc,err=simpleClassify(dataSet,5)
 		resultCollection.append((acc,featureSet,err))
 	resultCollection=sorted(resultCollection,key=operator.itemgetter(0))
 	for i in resultCollection:
 		print i[0],i[1]
 	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
-	studyErrors(errorCollection,"arg1SSSubtreePos")
+	studyErrors(errorCollection,"arg1SSExtender")
 	return resultCollection[-1]
 
 

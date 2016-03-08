@@ -122,7 +122,8 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 	arg1Span=wordList[conn[0]].arg1Span
 	argPos=studyArgumentPos(arg1Span,arg2Span)
 	if(argPos=="arg2Before"):
-#		print "changed",getSpan(conn,wordList)
+		print "changed",getSpan(conn,wordList)
+		print wordList[conn[-1]].sense,relationNum,discourseFile.rawFileName
 		arg1Span,arg2Span=arg2Span,arg1Span
 
 	connNodeList=[sentence.chunkList[wordList[pos].chunkNum].nodeName for pos in conn]
@@ -150,15 +151,15 @@ def arg1SubTreeExtraction(relationNum,discourseFileNum):
 
 	arg1Presence=argTreePosition(arg1NodeList,connNode,nodeDict)
 
-	if(arg1Presence[0]):
-		feature.setClassLabel("ConnSubTree")
-		print getSpan(conn,wordList),"ConnSubTree"
+	if(arg1Presence[2]):
+		print getSpan(conn,wordList),"ParentParentSubTree"
+		feature.setClassLabel("ParentParentSubTree")
 	elif(arg1Presence[1]):
 		print getSpan(conn,wordList),"ParentSubTree"
 		feature.setClassLabel("ParentSubTree")
 	else:
-		print getSpan(conn,wordList),"ParentParentSubTree"
-		feature.setClassLabel("ParentParentSubTree")
+		feature.setClassLabel("ConnSubTree")
+		print getSpan(conn,wordList),"ConnSubTree"
 
 
 	for f in feature.featureList:
@@ -198,6 +199,13 @@ def extractArg1SubTree(subTreePos,connNode,nodeDict):
 	   for node in nodeList:
 	   	if(findNode(node,connNode.nodeName,nodeDict,0,15)):
 			subTree.append(node)
+	elif(subTreePos=="ExtendSubTree"):
+	  	parent=nodeDict[connNode.nodeParent]
+	  	pParent=nodeDict[parent.nodeParent]
+	  	for node in nodeList:
+	  		if(not findNode(node,connNode.nodeName,nodeDict,0,15) and not findNode(node,parent.nodeName,nodeDict,0,15) and findNode(node,pParent.nodeName,nodeDict,0,15)):
+				subTree.append(node)
+	
 	return subTree
 
 def arg1SSPartiality(arg1SubTree,arg1Gold,connNode,nodeDict,sentenceNum,discourseFileNum):
@@ -228,6 +236,43 @@ discourseFileNum=0
 connDSS={}
 connDPS={}
 
+
+
+def arg1SSExtender(arg1Gold,connNode,nodeDict,sentenceNum,discourseFileNum,connNum):
+	discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+	sentence=discourseFile.sentenceList[sentenceNum]
+	connNode=nodeDict[connNode]
+	conn=sentence.chunkList[connNode.chunkNum].wordNumList
+	feature=Feature("lists/compConnectiveList.list","lists/tagSet.list","lists/chunkSet.list",discourseFile.globalWordList,discourseFile.sentenceList,conn)
+
+	try:
+		parentNode=nodeDict[connNode.nodeParent]
+		feature.featureList.append(("connParent",parentNode.nodeName))
+	except:
+		parentNode=None
+		print "no parent node"
+		feature.featureList.append(("connParent","None"))
+	try:
+		pParentNode=nodeDict[parentNode.nodeParent]
+		feature.featureList.append(("connpParent",pParentNode.nodeName))
+	except:
+		pParentNode=None
+		feature.featureList.append(("connpParent","None"))
+		print "no pparent node"
+	
+	if(pParentNode !=None and pParentNode.nodeName in arg1Gold):
+		print "need extension",getSpan(conn,discourseFile.globalWordList),connNum
+		feature.setClassLabel("Yes")
+	else:
+		print "no need extension",getSpan(conn,discourseFile.globalWordList),connNum
+	 	feature.setClassLabel("No")
+
+	feature.wordFeature(conn)
+#	feature.hasParent(connNode,nodeDict)
+#	feature.hasParentParent(connNode,nodeDict)
+	feature.connRelativePosParentParent(connNode,nodeDict)
+	feature.chunkComboName(connNode,nodeDict)
+	return feature
 
 # generating arg1pos features-------------------------------------------------------------------
 arg1PosFeatureCollection=[]
@@ -372,6 +417,7 @@ for iterationNum in range(0,5):
 
 
 arg1SSPartialResultCollection=[]
+arg1SSExtenderFeatureCollection=[]
 partialModuleAcc=0.0
 for iterationNum in range(0,5):
 
@@ -406,7 +452,6 @@ for iterationNum in range(0,5):
 			if(resultSeq[i]=="Yes"):
 				arg1PartialResult.append(arg1SubTreeResult[i])
 		arg1SSPartialResultCollection.append(arg1PartialResult)
-		partialModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1PartialResult],[node.nodeName for node in arg1Gold])
 
 		arg1Gold.sort(key=lambda x: x.chunkNum)
 		arg1SubTreeResult.sort(key=lambda x: x.chunkNum)
@@ -415,6 +460,11 @@ for iterationNum in range(0,5):
 		arg1Gold=filter(lambda x : "NULL" not in x.nodeName,arg1Gold)
 		arg1SubTreeResult=filter(lambda x : "NULL" not in x.nodeName,arg1SubTreeResult)
 		arg1PartialResult=filter(lambda x : "NULL" not in x.nodeName,arg1PartialResult)
+		
+		partialModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1PartialResult],[node.nodeName for node in arg1Gold])
+		
+		arg1SSExtenderFeature=arg1SSExtender([node.nodeName for node in arg1Gold],connNode,nodeDict,sentenceNum,discourseFileNum,connNum)
+		arg1SSExtenderFeatureCollection.append(arg1SSExtenderFeature)
 		print "subTreeExact",[node.nodeName for node in arg1SubTreeResult]==[node.nodeName for node in arg1Gold]
 		print "partialTreeExact",[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold]
 		print getSpan(conn,discourseFile.globalWordList),[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold],connNum
@@ -423,7 +473,69 @@ for iterationNum in range(0,5):
 		print [node.nodeName for node in arg1Gold]
 		 
 
+#print 100.0*subTreeModuleAcc/len(arg1SSSubTreeFeatureCollection)
+#print 100.0*partialModuleAcc/len(arg1SSSubTreeFeatureCollection)
+
+#runFeatureCombination(arg1SSExtenderFeatureCollection,False)
+
+#exit()
+
+
+extendModuleAcc=0.0
+
+dataSize=len(arg1SSExtenderFeatureCollection)
+for iterationNum in range(0,5):
+
+	start=iterationNum*(dataSize/5)
+	end=start + (dataSize/5)
+	results=singleIterationClassify(arg1SSExtenderFeatureCollection,iterationNum,5)
+	for num in range(start,end):
+		arg1Gold=arg1SSInfoCollection[num][0]
+
+		arg1Gold=list(set([node[0] for node in arg1Gold]))
+		sampleNum=arg1SSInfoCollection[num][1]
+		
+		
+		discourseFileNum=arg1ConnInfoCollection[sampleNum][0]
+		relationNum=arg1ConnInfoCollection[sampleNum][1]
+		connNum=arg1ConnInfoCollection[sampleNum][2]
+		discourseFile=loadModel(discourseFileCollection[discourseFileNum])
+		conn=findConnectives(discourseFile.globalWordList)[relationNum]
+		
+		sentenceNum=discourseFile.globalWordList[conn[-1]].sentenceNum
+		connNode=discourseFile.sentenceList[sentenceNum].chunkList[discourseFile.globalWordList[conn[-1]].chunkNum].nodeName
+		nodeDict=discourseFile.sentenceList[sentenceNum].nodeDict
+
+
+		arg1PartialResult=arg1SSPartialResultCollection[num]
+
+		arg1ExtendedResult=[]
+		if(results[num-start]=="Yes"):
+			print "extending"
+			arg1ExtendedResult=extractArg1SubTree("ExtendSubTree",connNode,nodeDict)
+			print arg1ExtendedResult
+			arg1ExtendedResult=[nodeDict[node] for node in arg1ExtendedResult]
+		arg1ExtendedResult.extend(arg1PartialResult)
+
+		arg1Gold.sort(key=lambda x : x.chunkNum)
+		arg1ExtendedResult.sort(key=lambda x:x.chunkNum)
+		arg1PartialResult.sort(key=lambda x : x.chunkNum)
+		
+
+		arg1Gold=filter(lambda x : "NULL" not in x.nodeName , arg1Gold)
+		arg1ExtendedResult=filter(lambda x : "NULL" not in x.nodeName , arg1ExtendedResult)
+		arg1PartialResult=filter(lambda x : "NULL" not in x.nodeName , arg1PartialResult)
+		
+	
+		extendModuleAcc+=getPartialMatchArgAccuracy([node.nodeName for node in arg1ExtendedResult],[node.nodeName for node in arg1Gold])	
+		
+		print "partialTreeExact",[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold]
+		print "ExtendedTreeExact",[node.nodeName for node in arg1ExtendedResult] == [node.nodeName for node in arg1Gold]
+		print getSpan(conn,discourseFile.globalWordList),[node.nodeName for node in arg1PartialResult]==[node.nodeName for node in arg1Gold],connNum
+		print [node.nodeName for node in arg1PartialResult]
+		print [node.nodeName for node in arg1ExtendedResult]
+		print [node.nodeName for node in arg1Gold]
 
 print 100.0*subTreeModuleAcc/len(arg1SSSubTreeFeatureCollection)
 print 100.0*partialModuleAcc/len(arg1SSSubTreeFeatureCollection)
-#runFeatureCombination(arg1SSSubTreeFeatureCollection,False)
+print 100.0*extendModuleAcc/len(arg1SSSubTreeFeatureCollection)
