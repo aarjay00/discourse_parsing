@@ -1,0 +1,10 @@
+#python compiled files
+*.pyc
+vim files
+*.swp
+*.swo
+#misc files
+*.txt
+*.png
+*.tgz
+conll16st*
