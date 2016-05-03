@@ -5,6 +5,9 @@ import sys
 import codecs
 import json
 
+from util import *
+from feature import *
+from model_api import *
 
 def readDocuments(documentLocation,relationLocation):
 	
@@ -26,7 +29,38 @@ def divideRelations(relationList):
 			implicitRelationList.append(relation)
 		else:
 			explicitRelationList.append(relation)
+			if(relation['Type']!="Explicit" and relation['Type']!="AltLex"):
+				print "hmmma",relation['Type']
 	return implicitRelationList,explicitRelationList
+
+
+def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
+
+
+	print "number of explicit relations",len(explicitRelationList)
+
+
+	featureCollection=[]
+	for explicitRelation in explicitRelationList :
+		parseFile=documentList[explicitRelation["DocID"]]
+		feature=Feature()
+
+		feature.connectiveString(explicitRelation)
+		feature.connectivePOS(parseFile,explicitRelation)
+		feature.previousWordandConnective(parseFile,explicitRelation)
+		feature.connectiveSelfCategory(parseFile,explicitRelation)	
+		feature.connectiveLeftSiblingSelfCategory(parseFile,explicitRelation)
+		feature.connectiveRightSiblingSelfCategory(parseFile,explicitRelation)
+		feature.connectiveSyntaxInteraction()
+		feature.syntaxSyntaxInteraction()
+		feature.setClassLabel(explicitRelation["Sense"][0])
+		featureCollection.append(feature)
+
+	createDirectory("featureCollection/explicitRelation/")
+	for featureNum in range(0,len(featureCollection)):
+		exportModel("featureCollection/explicitRelation/"+str(featureNum),featureCollection[featureNum])
+		
+	simpleModelRun(featureCollection,10,"explicitRelation/",False)
 
 if __name__=='__main__':
 	if(len(sys.argv)<2):
@@ -50,6 +84,10 @@ if __name__=='__main__':
 
 
 	implicitRelationList,explicitRelationList=divideRelations(relationList)
+
+
+	explicitConnectiveFeatureGeneration(documentList,explicitRelationList)
+
 
 	print implicitRelationList[0]['Arg1']['RawText']
 

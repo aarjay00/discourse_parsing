@@ -8,3 +8,5 @@ vim files
 *.png
 *.tgz
 conll16st*
+analysis/*
+featureCollection/*

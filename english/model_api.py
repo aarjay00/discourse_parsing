@@ -33,7 +33,7 @@ def convertFeatureCollection(featureCollection,chooseFeatures=False,chosenFeatur
 	for feature in featureCollection:
 		featureVector=feature.featureVector
 		for f in featureVector.keys():
-			if chosenFeatures and f not in in chosenFeatures:
+			if chosenFeatures and f not in chosenFeatures:
 				del featureVector[f]
 		dataSet.append((featureVector,feature.classLabel))
 	return dataSet
@@ -53,6 +53,7 @@ def simpleClassify(dataSet,foldNum,weight=False):
 	averageAcc=0.0
 	dataSize=len(dataSet)
 	negativeSamples=[]
+	negativeSampleLabels=[]
 	for iteration in range(foldNum):
 		start=iteration*(dataSize/foldNum)
 		end=start+(dataSize/foldNum)
@@ -72,10 +73,11 @@ def simpleClassify(dataSet,foldNum,weight=False):
 			else:
 				negative+=1
 			 	negativeSamples.append(sampleNum+start)
+			 	negativeSampleLabels.append(results[sampleNum])
 		accuracy=1.0*positive/(positive+negative)
 #		print "accuracy for round %d is %f"%(iteration,accuracy)
 		averageAcc=(averageAcc*iteration+accuracy)/(iteration+1)
-	return (averageAcc,negativeSamples)
+	return (averageAcc,negativeSamples,negativeSampleLabels)
 
 
 def featureCombinations(featureCollection,analysisLocation,weight=False):
@@ -87,13 +89,15 @@ def featureCombinations(featureCollection,analysisLocation,weight=False):
 	for featureSet in featureCombo:
 		print num
 		dataSet=convertFeatureCollection(featureCollection,True,featureSet)
-		acc,err=simpleClassify(dataSet,5,weight)
-		resultCollection.append((acc,featureSet,err))
+		acc,err,errLabel=simpleClassify(dataSet,5,weight)
+		resultCollection.append((acc,featureSet,err,errLabel))
 		num+=1
 	resultCollection=sorted(resultCollection,key=operator.itemgetter(0))
 	for i in resultCollection:
 		print i[0],i[1]
 	errorCollection = [featureCollection[num] for num in resultCollection[-1][2]]
+	for errorNum in range(0,len(errorCollection)):
+	 	errorCollection[errorNum].featureVector["classifiedAs"]=resultCollection[-1][3][errorNum]
 	studyErrors(errorCollection,analysisLocation)
 	return resultCollection[-1]
 
@@ -127,9 +131,11 @@ def simpleModelRun(featureCollectionLocation,foldNum,analysisLocation,loadCollec
 	featureSet=featureCollection[0].featureVector.keys()
 
 	dataSet=convertFeatureCollection(featureCollection,False,featureSet)
-	avgAccuracy,errorSamplesNum=simpleClassify(dataSet,foldNum)
+	avgAccuracy,errorSamplesNum,errorSampleLabels=simpleClassify(dataSet,foldNum)
 
 	errorSamples=[featureCollection[num] for num in errorSamplesNum]
+	for errorSampleNum in range(0,len(errorSamples)):
+		errorSamples[errorSampleNum].featureVector["classifiedAs"]=errorSampleLabels[errorSampleNum]
 	print "avgAccuracy is ",avgAccuracy
 	studyErrors(errorSamples,analysisLocation)
 

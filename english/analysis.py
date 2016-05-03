@@ -7,11 +7,11 @@ sys.setdefaultencoding("utf-8")
 import operator
 
 from util import *
-from extract_relations import *
-from ssf_api import *
-from letter import *
-from merge_annotations import *
-from annotated_data import *
+#from extract_relations import *
+#from ssf_api import *
+#from letter import *
+#from merge_annotations import *
+#from annotated_data import *
 from feature import *
 
 

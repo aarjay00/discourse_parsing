@@ -8,7 +8,7 @@ import codecs
 import  cPickle as pickle
 
 import re
-from extract_relations import *
+#from extract_relations import *
 import os.path
 
 def fileExists(filePath):
