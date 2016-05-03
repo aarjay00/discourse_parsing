@@ -10,6 +10,8 @@ import itertools
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.linear_model import LogisticRegression as maxent
 from sklearn.svm import SVC
+from sklearn.pipeline import Pipeline
+from sklearn.feature_selection import RFE
 import operator
 
 from util import *
@@ -20,7 +22,10 @@ from analysis import *
 
 def genClassifer(corpus,weight=False):
 	if(not weight):
-		classifier=SklearnClassifier(maxent()).train(corpus)
+		logistic=maxent()
+#		featureselector=RFE(logistic,step=10)
+#		pipeline=Pipeline([('rfe',featureselector),('maxent',logistic)])
+		classifier=SklearnClassifier(logistic).train(corpus)
 	else:
 		classifier=SklearnClassifier(maxent(class_weight={1:2,0:1})).train(corpus)
 		print "weighted"
@@ -32,10 +37,11 @@ def convertFeatureCollection(featureCollection,chooseFeatures=False,chosenFeatur
 	dataSet=[]
 	for feature in featureCollection:
 		featureVector=feature.featureVector
+		chosenFeatureVector={}
 		for f in featureVector.keys():
-			if chosenFeatures and f not in chosenFeatures:
-				del featureVector[f]
-		dataSet.append((featureVector,feature.classLabel))
+			if chosenFeatures and f in chosenFeatures:
+				chosenFeatureVector[f]=featureVector[f]
+		dataSet.append((chosenFeatureVector,feature.classLabel))
 	return dataSet
 def featureSelection(featureCollection):
 	featureSet=featureCollection[0].featureVector.keys()
@@ -86,6 +92,7 @@ def featureCombinations(featureCollection,analysisLocation,weight=False):
 	print "feature sizes",len(featureCombo)
 	resultCollection=[]
 	num=0
+	exit()
 	for featureSet in featureCombo:
 		print num
 		dataSet=convertFeatureCollection(featureCollection,True,featureSet)

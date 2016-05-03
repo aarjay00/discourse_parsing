@@ -18,7 +18,6 @@ class Feature():
 		connString=discourseRelation["Connective"]["RawText"]
 		self.featureVector["connectiveString"]=connString
 		
-		return
 
 	def connectivePOS(self,parseFile,discourseRelation):
 
@@ -48,9 +47,28 @@ class Feature():
 		else:
 		 	prevWord="X-Start-X"
 		
-		word=prevWord+"+"+" ".join(connString)
+		word=prevWord+"__"+" ".join(connString)
 
-		self.featureVector["previousWordandConnective"]=word
+		self.featureVector["previousWordandConnective"]=prevWord
+
+	def nextWordandConnective(self,parseFile,discourseRelation):
+
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
+
+		connString=[]
+		nextWord=""
+		for token in discourseRelation["Connective"]["TokenList"]:
+			wordNum=token[4]
+			connString.append(parseFile["sentences"][sentenceNum]["words"][wordNum][0])
+		wordNum=discourseRelation["Connective"]["TokenList"][0][4]
+		try:
+			nextWord=parseFile["sentences"][sentenceNum]["words"][wordNum+1][0]
+		except:
+		 	nextWord="X-End-X"
+		
+		word=nextWord+"__"+" ".join(connString)
+
+		self.featureVector["nextWordandConnective"]=nextWord
 
 	def connectiveSelfCategory(self,parseFile,discourseRelation):
 
@@ -72,6 +90,8 @@ class Feature():
 		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
 
 		self.featureVector["connectiveSelfCategory"]=connectiveTree.label()
+
+		self.featureVector["connectiveParentSelfCategory"]=connectiveTree.parent().label()
 
 	def connectiveLeftSiblingSelfCategory(self,parseFile,discourseRelation):
 
@@ -140,3 +160,9 @@ class Feature():
 				if(feature_1==feature_2):
 					continue
 				self.featureVector[feature_1+"__"+feature_2]=self.featureVector[feature_1]+"__"+self.featureVector[feature_2]
+
+	def parentLinkedContext(self,parseFile,discourseRelation):
+
+		sentenceNum=discourseFile["Connective"]["TokenList"][0][3]
+		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
+		parseTree=tree.ParentedTree.fromstring(parseTree)

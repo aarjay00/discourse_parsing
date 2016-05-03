@@ -10,3 +10,5 @@ vim files
 conll16st*
 analysis/*
 featureCollection/*
+*.pdf
+*.ps

@@ -48,19 +48,30 @@ def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
 		feature.connectiveString(explicitRelation)
 		feature.connectivePOS(parseFile,explicitRelation)
 		feature.previousWordandConnective(parseFile,explicitRelation)
+		feature.nextWordandConnective(parseFile,explicitRelation)
 		feature.connectiveSelfCategory(parseFile,explicitRelation)	
 		feature.connectiveLeftSiblingSelfCategory(parseFile,explicitRelation)
 		feature.connectiveRightSiblingSelfCategory(parseFile,explicitRelation)
 		feature.connectiveSyntaxInteraction()
-		feature.syntaxSyntaxInteraction()
+#		feature.syntaxSyntaxInteraction()
 		feature.setClassLabel(explicitRelation["Sense"][0])
 		featureCollection.append(feature)
+
+
+	for key in featureCollection[0].featureVector.keys():
+		print key
 
 	createDirectory("featureCollection/explicitRelation/")
 	for featureNum in range(0,len(featureCollection)):
 		exportModel("featureCollection/explicitRelation/"+str(featureNum),featureCollection[featureNum])
 		
+
 	simpleModelRun(featureCollection,10,"explicitRelation/",False)
+	
+#	print len(featureCollection[0].featureVector.keys())
+
+
+	#runFeatureCombination(featureCollection,"explictRelationCombo",False)    
 
 if __name__=='__main__':
 	if(len(sys.argv)<2):
@@ -73,14 +84,14 @@ if __name__=='__main__':
 
 	documentList,relationList=readDocuments(documentLocation,relationLocation)
 
-	print len(relationList)
+	print "total number of relations:",len(relationList)
 
-	senses=[]
-	for relation in relationList:
-		senses.append(relation["Sense"][0])
-	senses=sorted(set(senses))
-	for s in senses:
-		print s
+#	senses=[]
+#	for relation in relationList:
+#		senses.append(relation["Sense"][0])
+#	senses=sorted(set(senses))
+#	for s in senses:
+#		print s
 
 
 	implicitRelationList,explicitRelationList=divideRelations(relationList)
@@ -89,13 +100,13 @@ if __name__=='__main__':
 	explicitConnectiveFeatureGeneration(documentList,explicitRelationList)
 
 
-	print implicitRelationList[0]['Arg1']['RawText']
+#	print implicitRelationList[0]['Arg1']['RawText']
 
-	doc_id=implicitRelationList[0]['DocID']
+#	doc_id=implicitRelationList[0]['DocID']
 	
-	for w in implicitRelationList[0]['Arg1']['TokenList']:
-		print  documentList[doc_id]['sentences'][w[3]]['words'][w[4]][0],
-	print ""
+#	for w in implicitRelationList[0]['Arg1']['TokenList']:
+#		print  documentList[doc_id]['sentences'][w[3]]['words'][w[4]][0],
+#	print ""
 
 #	print documentList[doc_id]['sentences'][0]['parsetree']
 #	print documentList[doc_id]['sentences'][0]['dependencies']
