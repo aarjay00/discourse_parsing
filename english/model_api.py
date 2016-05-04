@@ -7,11 +7,20 @@ import nltk
 import numpy as np
 import time
 import itertools
+import matplotlib.pyplot as plt
+
+
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.linear_model import LogisticRegression as maxent
 from sklearn.svm import SVC
 from sklearn.pipeline import Pipeline
 from sklearn.feature_selection import RFE
+from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import confusion_matrix
+
 import operator
 
 from util import *
@@ -60,6 +69,9 @@ def simpleClassify(dataSet,foldNum,weight=False):
 	dataSize=len(dataSet)
 	negativeSamples=[]
 	negativeSampleLabels=[]
+
+	classifier=genClassifer(dataSet,weight)
+	exportModel("./completeModel",classifier)
 	for iteration in range(foldNum):
 		start=iteration*(dataSize/foldNum)
 		end=start+(dataSize/foldNum)
@@ -146,7 +158,6 @@ def simpleModelRun(featureCollectionLocation,foldNum,analysisLocation,loadCollec
 	print "avgAccuracy is ",avgAccuracy
 	studyErrors(errorSamples,analysisLocation)
 
-
 def singleIterationClassify(featureCollection,iterationNum,foldNum,weight=False):
 	
 	featureSet=featureCollection[0].featureVector.keys()
@@ -194,3 +205,65 @@ def singleIterationClassifyExpand(featureCollection,iterationNum,foldNum,weight=
 		results.append(r[i:i+len(f)])
 		i+=len(f)
 	return results
+def trainModel(featureCollection,modelLocation):
+
+	featureSet=featureCollection[0].featureVector.keys()
+	dataSet=convertFeatureCollection(featureCollection,False,featureSet)
+	classifier=genClassifer(dataSet,False)
+	exportModel(modelLocation,classifier)
+
+def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation):
+
+	featureSet=featureCollection[0].featureVector.keys()
+	dataSet=convertFeatureCollection(featureCollection,False,featureSet)
+	classifier=loadModel(modelLocation)
+	
+	
+	dataSetFeature=[sample[0] for sample in dataSet]
+	dataSetLabel=[sample[1] for sample in dataSet]
+
+	results=classifier.classify_many(dataSetFeature)
+
+	sampleNum=0
+	positive=0
+	negative=0
+	errorSamples=[]
+	errorSampleLabels=[]
+
+	print(classification_report(dataSetLabel,results))
+	print accuracy_score(dataSetLabel,results)
+	print precision_score(dataSetLabel,results,average="weighted")
+	print recall_score(dataSetLabel,results , average="weighted")
+	
+	cm=confusion_matrix(dataSetLabel,results)
+	np.set_printoptions(precision=2)
+	print('Confusion matrix, without normalization')
+	print(cm)
+	plt.figure()
+	plot_confusion_matrix(cm,classifier.labels())
+	plt.show()
+
+	for result in results:
+		if(result==dataSetLabel[sampleNum]):
+			positive+=1
+		else:
+		 	negative+=1
+		 	errorSamples.append(featureCollection[sampleNum])
+		 	errorSampleLabels.append(result)
+		sampleNum+=1
+	avgAccuracy=1.0*positive/(positive+negative)
+	for errorSampleNum in range(0,len(errorSamples)):
+		errorSamples[errorSampleNum].featureVector["classifiedAs"]=errorSampleLabels[errorSampleNum]
+	print "avgAccuracy is ",avgAccuracy
+	studyErrors(errorSamples,analysisLocation)
+def plot_confusion_matrix(cm,labels, title='Confusion matrix', cmap=plt.cm.Blues):
+	plt.imshow(cm, interpolation='nearest', cmap=cmap)
+	plt.title(title)
+	plt.colorbar()
+	tick_marks = np.arange(len(labels))
+	plt.xticks(tick_marks,labels, rotation=90)
+	plt.yticks(tick_marks, labels)
+	plt.tight_layout()
+	plt.ylabel('True label')
+	plt.xlabel('Predicted label')
+

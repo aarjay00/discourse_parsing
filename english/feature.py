@@ -17,7 +17,7 @@ class Feature():
 		
 		connString=discourseRelation["Connective"]["RawText"]
 		self.featureVector["connectiveString"]=connString
-		
+		connString=connString.split()
 
 	def connectivePOS(self,parseFile,discourseRelation):
 
@@ -32,7 +32,7 @@ class Feature():
 		
 		self.featureVector["connectivePOS"]=posTag
 
-	def previousWordandConnective(self,parseFile,discourseRelation):
+	def previousWord(self,parseFile,discourseRelation):
 
 		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
 
@@ -49,9 +49,9 @@ class Feature():
 		
 		word=prevWord+"__"+" ".join(connString)
 
-		self.featureVector["previousWordandConnective"]=prevWord
+		self.featureVector["previousWord"]=prevWord
 
-	def nextWordandConnective(self,parseFile,discourseRelation):
+	def nextWord(self,parseFile,discourseRelation):
 
 		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
 
@@ -68,7 +68,7 @@ class Feature():
 		
 		word=nextWord+"__"+" ".join(connString)
 
-		self.featureVector["nextWordandConnective"]=nextWord
+		self.featureVector["nextWord"]=nextWord
 
 	def connectiveSelfCategory(self,parseFile,discourseRelation):
 
@@ -91,8 +91,29 @@ class Feature():
 
 		self.featureVector["connectiveSelfCategory"]=connectiveTree.label()
 
-		self.featureVector["connectiveParentSelfCategory"]=connectiveTree.parent().label()
 
+
+	def connectiveParentSelfCategory(self,parseFile,discourseRelation):
+
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
+		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
+		parseTree=tree.ParentedTree.fromstring(parseTree)
+
+		connectiveIndices=[]
+
+		for token in discourseRelation["Connective"]["TokenList"]:
+			connectiveIndices.append(token[4])
+		try:
+			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
+		except:
+			print "self category issues"
+			self.featureVector["connectiveParentSelfCategory"]="Bug"
+			return
+
+		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
+
+
+		self.featureVector["connectiveParentSelfCategory"]=connectiveTree.parent().label()
 	def connectiveLeftSiblingSelfCategory(self,parseFile,discourseRelation):
 
 		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
@@ -108,7 +129,7 @@ class Feature():
 			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
 		except:
 			print "left category issues"
-			self.featureVector["connectiveSelfCategory"]="Bug"
+			self.featureVector["connectiveLeftSiblingSelfCategory"]="Bug"
 			return
 
 		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
@@ -132,7 +153,7 @@ class Feature():
 			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
 		except:
 			print "right category issues"
-			self.featureVector["connectiveSelfCategory"]="Bug"
+			self.featureVector["connectiveRightSiblingSelfCategory"]="Bug"
 			return
 		
 		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
@@ -141,6 +162,57 @@ class Feature():
 			self.featureVector["connectiveRightSiblingSelfCategory"]=connectiveTree.right_sibling().label()
 		except:
 			self.featureVector["connectiveRightSiblingSelfCategory"]="None"
+
+
+	def connectiveParentLeftSiblingSelfCategory(self,parseFile,discourseRelation):
+
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
+		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
+		parseTree=tree.ParentedTree.fromstring(parseTree)
+
+		connectiveIndices=[]
+
+		for token in discourseRelation["Connective"]["TokenList"]:
+			connectiveIndices.append(token[4])
+
+		try:
+			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
+		except:
+			print "parent left category issues"
+			self.featureVector["connectiveParentLeftSiblingSelfCategory"]="Bug"
+			return
+
+		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
+
+		try:
+			self.featureVector["connectiveParentLeftSiblingSelfCategory"]=connectiveTree.parent.left_sibling().label()
+		except:
+			self.featureVector["connectiveParentLeftSiblingSelfCategory"]="None"
+
+	def connectiveParentRightSiblingSelfCategory(self,parseFile,discourseRelation):
+
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
+		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
+		parseTree=tree.ParentedTree.fromstring(parseTree)
+
+		connectiveIndices=[]
+
+		for token in discourseRelation["Connective"]["TokenList"]:
+			connectiveIndices.append(token[4])
+
+		try:
+			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
+		except:
+			print "parent right category issues"
+			self.featureVector["connectiveParentRightSiblingSelfCategory"]="Bug"
+			return
+
+		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
+
+		try:
+			self.featureVector["connectiveParentRightSiblingSelfCategory"]=connectiveTree.parent.right_sibling().label()
+		except:
+			self.featureVector["connectiveParentRightSiblingSelfCategory"]="None"
 	def connectiveSyntaxInteraction(self):
 			
 		features=self.featureVector.keys()
@@ -148,7 +220,7 @@ class Feature():
 		features=filter(lambda x: "__" not in x and x!="connectiveString", features)
 
 		for feature in features:
-			self.featureVector[feature+"__connectiveString"]=feature+"__"+self.featureVector["connectiveString"]
+			self.featureVector[feature+"__connectiveString"]=self.featureVector[feature]+"__"+self.featureVector["connectiveString"]
 	def syntaxSyntaxInteraction(self):
 
 		syntaxFeatures=self.featureVector.keys()
@@ -163,6 +235,34 @@ class Feature():
 
 	def parentLinkedContext(self,parseFile,discourseRelation):
 
-		sentenceNum=discourseFile["Connective"]["TokenList"][0][3]
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
 		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
 		parseTree=tree.ParentedTree.fromstring(parseTree)
+		connectiveIndices=[]
+		
+
+		for token in discourseRelation["Connective"]["TokenList"]:
+			connectiveIndices.append(token[4])
+
+		try:
+			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
+		except:
+			print "parent linked context issues"
+			self.featureVector["parentLinkedContext__"]="Bug"
+			return
+
+		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree).parent()
+		linkedContext=""
+		try:
+			linkedContext=connectiveTree.parent().label()+"_"
+		except:
+			linkedContext="None_"
+		linkedContext=linkedContext+connectiveTree.label()+"_"
+
+		for child in connectiveTree:
+			if(not isinstance(child,unicode)):
+				linkedContext=linkedContext+child.label()+"_"
+			else:
+				linkedContext=linkedContext+child+"_"
+
+		self.featureVector["parentLinkedContext__"]=linkedContext

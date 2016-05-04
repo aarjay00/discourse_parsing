@@ -28,7 +28,8 @@ def divideRelations(relationList):
 		if(len(connective)==0):
 			implicitRelationList.append(relation)
 		else:
-			explicitRelationList.append(relation)
+			if(relation['Type']=="Explicit"):
+				explicitRelationList.append(relation)
 			if(relation['Type']!="Explicit" and relation['Type']!="AltLex"):
 				print "hmmma",relation['Type']
 	return implicitRelationList,explicitRelationList
@@ -47,12 +48,16 @@ def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
 
 		feature.connectiveString(explicitRelation)
 		feature.connectivePOS(parseFile,explicitRelation)
-		feature.previousWordandConnective(parseFile,explicitRelation)
-		feature.nextWordandConnective(parseFile,explicitRelation)
+		feature.previousWord(parseFile,explicitRelation)
+		feature.nextWord(parseFile,explicitRelation)
 		feature.connectiveSelfCategory(parseFile,explicitRelation)	
+		feature.connectiveParentSelfCategory(parseFile,explicitRelation)	
 		feature.connectiveLeftSiblingSelfCategory(parseFile,explicitRelation)
 		feature.connectiveRightSiblingSelfCategory(parseFile,explicitRelation)
 		feature.connectiveSyntaxInteraction()
+#		feature.connectiveParentLeftSiblingSelfCategory(parseFile,explicitRelation)
+#		feature.connectiveParentRightSiblingSelfCategory(parseFile,explicitRelation)
+		feature.parentLinkedContext(parseFile,explicitRelation)
 #		feature.syntaxSyntaxInteraction()
 		feature.setClassLabel(explicitRelation["Sense"][0])
 		featureCollection.append(feature)
@@ -60,57 +65,41 @@ def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
 
 	for key in featureCollection[0].featureVector.keys():
 		print key
-
-	createDirectory("featureCollection/explicitRelation/")
-	for featureNum in range(0,len(featureCollection)):
-		exportModel("featureCollection/explicitRelation/"+str(featureNum),featureCollection[featureNum])
-		
-
-	simpleModelRun(featureCollection,10,"explicitRelation/",False)
-	
-#	print len(featureCollection[0].featureVector.keys())
-
-
-	#runFeatureCombination(featureCollection,"explictRelationCombo",False)    
+	return featureCollection
 
 if __name__=='__main__':
-	if(len(sys.argv)<2):
-		print "Please input document parses and relation data folder location"
+	if(len(sys.argv)<3):
+		print "Please train and test document parses and relation data folder location"
 		exit()
 
-	documentLocation=sys.argv[1]+"parses.json"
-#	relationLocation=sys.argv[1]+"relations-no-senses.json"
-	relationLocation=sys.argv[1]+"relations.json"
+	trainDocumentLocation=sys.argv[1]+"parses.json"
+#	trainRelationLocation=sys.argv[1]+"relations-no-senses.json"
+	trainRelationLocation=sys.argv[1]+"relations.json"
 
-	documentList,relationList=readDocuments(documentLocation,relationLocation)
-
-	print "total number of relations:",len(relationList)
-
-#	senses=[]
-#	for relation in relationList:
-#		senses.append(relation["Sense"][0])
-#	senses=sorted(set(senses))
-#	for s in senses:
-#		print s
-
-
-	implicitRelationList,explicitRelationList=divideRelations(relationList)
-
-
-	explicitConnectiveFeatureGeneration(documentList,explicitRelationList)
-
-
-#	print implicitRelationList[0]['Arg1']['RawText']
-
-#	doc_id=implicitRelationList[0]['DocID']
+	testDocumentLocation=sys.argv[2]+"parses.json"
+#	testRelationLocation=sys.argv[2]+"relations-no-senses.json"
+	testRelationLocation=sys.argv[2]+"relations.json"
 	
-#	for w in implicitRelationList[0]['Arg1']['TokenList']:
-#		print  documentList[doc_id]['sentences'][w[3]]['words'][w[4]][0],
-#	print ""
-
-#	print documentList[doc_id]['sentences'][0]['parsetree']
-#	print documentList[doc_id]['sentences'][0]['dependencies']
-#	print documentList[doc_id]['sentences'][0]['words']
+	trainDocumentList,trainRelationList=readDocuments(trainDocumentLocation,trainRelationLocation)
+	testDocumentList,testRelationList=readDocuments(testDocumentLocation,testRelationLocation)
 
 
-	print len(implicitRelationList),len(explicitRelationList)
+	trainImplicitRelationList,trainExplicitRelationList=divideRelations(trainRelationList)
+	testImplicitRelationList,testExplicitRelationList=divideRelations(testRelationList)
+
+
+	trainExplicitFeatureCollection=explicitConnectiveFeatureGeneration(trainDocumentList,trainExplicitRelationList)
+
+#	createDirectory("featureCollection/explicitRelation/")
+#	for featureNum in range(0,len(trainExplicitFeatureCollection)):
+#		exportModel("featureCollection/explicitRelation/"+str(featureNum),trainExplicitFeatureCollection[featureNum])
+
+	trainModel(trainExplicitFeatureCollection,"explicitModel")
+
+	testExplicitFeatureCollection=explicitConnectiveFeatureGeneration(testDocumentList,testExplicitRelationList)
+	
+	simpleTrainedModelRun(testExplicitFeatureCollection,"explicitModel","explicitRelation")
+
+#	simpleModelRun(featureCollection,10,"explicitRelation/",False)
+	
+	#runFeatureCombination(featureCollection,"explictRelationCombo",False)    
