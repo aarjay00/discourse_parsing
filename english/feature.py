@@ -13,6 +13,9 @@ class Feature():
 	def setClassLabel(self,classLabel):
 		self.classLabel=classLabel
 
+
+#-----------------------------------------Explicit Features-------------------------------------------------------------
+
 	def connectiveString(self,discourseRelation):
 		
 		connString=discourseRelation["Connective"]["RawText"]
@@ -266,3 +269,37 @@ class Feature():
 				linkedContext=linkedContext+child+"_"
 
 		self.featureVector["parentLinkedContext__"]=linkedContext
+	def connectiveToRootPath(self,parseFile,discourseRelation):
+		sentenceNum=discourseRelation["Connective"]["TokenList"][0][3]
+		parseTree=parseFile["sentences"][sentenceNum]["parsetree"]
+		parseTree=tree.ParentedTree.fromstring(parseTree)
+		connectiveIndices=[]
+		for token in discourseRelation["Connective"]["TokenList"]:
+			connectiveIndices.append(token[4])
+		try:
+			connectiveTreePosition=parseTree.treeposition_spanning_leaves(connectiveIndices[0],connectiveIndices[-1]+1)
+		except:
+			print "connective to root path issues"
+			self.featureVector["connectiveToRootPath__"]="Bug"
+			return
+
+		connectiveTree=getNodeFromTreePostion(connectiveTreePosition,parseTree)
+
+		path=""
+		while(connectiveTree!=None):
+			path+=connectiveTree.label()+"_"
+			connectiveTree=connectiveTree.parent()
+		self.featureVector["connectiveToRootPath__"]=path
+#-----------------------------------------Implicit Features-------------------------------------------------------------
+
+	def firstWordArg1(self,parseFile,discourseRelation):
+		self.featureVector["firstWordArg1"]=discourseRelation["Arg1"]["RawText"].split()[0]
+
+	def firstWordArg2(self,parseFile,discourseRelation):
+		self.featureVector["firstWordArg2"]=discourseRelation["Arg2"]["RawText"].split()[0]
+
+	def lastWordArg1(self,parseFile,discourseRelation):
+		self.featureVector["firstWordArg1"]=discourseRelation["Arg1"]["RawText"].split()[-1]
+
+	def lastWordArg2(self,parseFile,discourseRelation):
+		self.featureVector["firstWordArg2"]=discourseRelation["Arg2"]["RawText"].split()[-1]

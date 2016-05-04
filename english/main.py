@@ -35,7 +35,7 @@ def divideRelations(relationList):
 	return implicitRelationList,explicitRelationList
 
 
-def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
+def explictFeatureGeneration(documentList,explicitRelationList):
 
 
 	print "number of explicit relations",len(explicitRelationList)
@@ -58,13 +58,34 @@ def explicitConnectiveFeatureGeneration(documentList,explicitRelationList):
 #		feature.connectiveParentLeftSiblingSelfCategory(parseFile,explicitRelation)
 #		feature.connectiveParentRightSiblingSelfCategory(parseFile,explicitRelation)
 		feature.parentLinkedContext(parseFile,explicitRelation)
+#		feature.connectiveToRootPath(parseFile,explicitRelation)
 #		feature.syntaxSyntaxInteraction()
 		feature.setClassLabel(explicitRelation["Sense"][0])
 		featureCollection.append(feature)
 
-
 	for key in featureCollection[0].featureVector.keys():
 		print key
+	return featureCollection
+
+
+def implicitFeatureGeneration(documentList,implicitRelationList):
+
+	print "number of implicit relations",len(implicitRelationList)
+
+	featureCollection=[]
+	
+	for implicitRelation in implicitRelationList:
+	
+		parseFile=documentList[implicitRelation["DocID"]]
+		feature=Feature()
+
+		feature.firstWordArg1(parseFile,implicitRelation)
+		feature.firstWordArg2(parseFile,implicitRelation)
+		feature.lastWordArg1(parseFile,implicitRelation)
+		feature.lastWordArg2(parseFile,implicitRelation)
+
+		feature.setClassLabel(implicitRelation["Sense"][0])
+		featureCollection.append(feature)
 	return featureCollection
 
 if __name__=='__main__':
@@ -88,18 +109,19 @@ if __name__=='__main__':
 	testImplicitRelationList,testExplicitRelationList=divideRelations(testRelationList)
 
 
-	trainExplicitFeatureCollection=explicitConnectiveFeatureGeneration(trainDocumentList,trainExplicitRelationList)
+#	trainExplicitFeatureCollection=explictFeatureGeneration(trainDocumentList,trainExplicitRelationList)
 
-#	createDirectory("featureCollection/explicitRelation/")
-#	for featureNum in range(0,len(trainExplicitFeatureCollection)):
-#		exportModel("featureCollection/explicitRelation/"+str(featureNum),trainExplicitFeatureCollection[featureNum])
 
-	trainModel(trainExplicitFeatureCollection,"explicitModel")
+#	trainModel(trainExplicitFeatureCollection,"explicitModel")
 
-	testExplicitFeatureCollection=explicitConnectiveFeatureGeneration(testDocumentList,testExplicitRelationList)
+#	testExplicitFeatureCollection=explictFeatureGeneration(testDocumentList,testExplicitRelationList)
 	
-	simpleTrainedModelRun(testExplicitFeatureCollection,"explicitModel","explicitRelation")
-
-#	simpleModelRun(featureCollection,10,"explicitRelation/",False)
+#	simpleTrainedModelRun(testExplicitFeatureCollection,"explicitModel","explicitRelation")
 	
-	#runFeatureCombination(featureCollection,"explictRelationCombo",False)    
+
+	trainImplicitFeatureCollection=implicitFeatureGeneration(trainDocumentList,trainImplicitRelationList)
+	testImplicitFeatureCollection=implicitFeatureGeneration(testDocumentList,testImplicitRelationList)
+
+	trainModel(trainImplicitFeatureCollection,"implicitModel")
+	simpleTrainedModelRun(testImplicitFeatureCollection,"implicitModel","implicitRelation")
+
