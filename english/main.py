@@ -9,6 +9,18 @@ from util import *
 from feature import *
 from model_api import *
 
+
+brownClusterDict={}
+
+def readBrownClusters(brownClusterLocation):
+	FD=open(brownClusterLocation,'r')
+
+	for line in FD.readlines():
+		line=line[:-1]
+		line=line.split('\t')
+		brownClusterDict[line[1].lower()]=line[0]
+
+
 def readDocuments(documentLocation,relationLocation):
 	
 	documentData=codecs.open(documentLocation,encoding='utf-8')
@@ -83,14 +95,19 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 		feature.firstWordArg2(parseFile,implicitRelation)
 		feature.lastWordArg1(parseFile,implicitRelation)
 		feature.lastWordArg2(parseFile,implicitRelation)
-
+		feature.first2WordArg1(parseFile,implicitRelation)
+		feature.first2WordArg2(parseFile,implicitRelation)
+		feature.first3WordArg1(parseFile,implicitRelation)
+		feature.first3WordArg2(parseFile,implicitRelation)
+		feature.brownCluster(parseFile,implicitRelation,brownClusterDict)		
 		feature.setClassLabel(implicitRelation["Sense"][0])
 		featureCollection.append(feature)
+		print len(featureCollection)
 	return featureCollection
 
 if __name__=='__main__':
-	if(len(sys.argv)<3):
-		print "Please train and test document parses and relation data folder location"
+	if(len(sys.argv)<4):
+		print "Please train and test document parses and relation data folder location , and also brown cluster location"
 		exit()
 
 	trainDocumentLocation=sys.argv[1]+"parses.json"
@@ -104,6 +121,8 @@ if __name__=='__main__':
 	trainDocumentList,trainRelationList=readDocuments(trainDocumentLocation,trainRelationLocation)
 	testDocumentList,testRelationList=readDocuments(testDocumentLocation,testRelationLocation)
 
+
+	readBrownClusters(sys.argv[3])
 
 	trainImplicitRelationList,trainExplicitRelationList=divideRelations(trainRelationList)
 	testImplicitRelationList,testExplicitRelationList=divideRelations(testRelationList)

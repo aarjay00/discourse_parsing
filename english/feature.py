@@ -303,3 +303,31 @@ class Feature():
 
 	def lastWordArg2(self,parseFile,discourseRelation):
 		self.featureVector["firstWordArg2"]=discourseRelation["Arg2"]["RawText"].split()[-1]
+
+	def first3WordArg1(self,parseFile,discourseRelation):
+		self.featureVector["first3WordsArg1"]="_".join(discourseRelation["Arg1"]["RawText"].split()[:3])
+
+	def first3WordArg2(self,parseFile,discourseRelation):
+		self.featureVector["first3WordsArg2"]="_".join(discourseRelation["Arg2"]["RawText"].split()[:3])
+	def first2WordArg1(self,parseFile,discourseRelation):
+		self.featureVector["first3WordsArg1"]="_".join(discourseRelation["Arg1"]["RawText"].split()[:2])
+
+	def first2WordArg2(self,parseFile,discourseRelation):
+		self.featureVector["first3WordsArg2"]="_".join(discourseRelation["Arg2"]["RawText"].split()[:2])
+
+
+	def brownCluster(self,parseFile,discourseRelation,brownCluster):
+
+		for token1 in discourseRelation["Arg1"]["TokenList"]:
+			sentenceNum1=token1[3]
+			wordNum1=token1[4]
+			word1=parseFile["sentences"][sentenceNum1]["words"][wordNum1][0].lower()
+			if(word1 not in brownCluster.keys()):
+				continue
+			for token2 in discourseRelation["Arg2"]["TokenList"]:
+				sentenceNum2=token2[3]
+				wordNum2=token2[4]
+				word2=parseFile["sentences"][sentenceNum2]["words"][wordNum2][0].lower()
+				if(word2 not in brownCluster.keys()):
+					continue
+				self.featureVector[brownCluster[word1]+"__"+brownCluster[word2]]="True"
