@@ -360,3 +360,65 @@ class Feature():
 		for modal1 in arg1Modals:
 			for modal2 in arg2Modals:
 				self.featureVector["arg1-arg2ModalPresence"]=True
+	def numberPresence(self,parseFile,discourseRelation):
+
+		arg1=[]
+		arg2=[]
+
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			sentenceNum=token[3]
+			wordNum=token[4]
+			arg1.append(parseFile["sentences"][sentenceNum]["words"][wordNum][0])
+		for token in discourseRelation["Arg2"]["TokenList"]:
+			sentenceNum=token[3]
+			wordNum=token[4]
+			arg2.append(parseFile["sentences"][sentenceNum]["words"][wordNum][0])
+
+
+		arg1N=[]
+		arg1P=[]
+		arg1D=[]
+		dollar=False
+		prevWord=""
+		for  word in arg1:
+			if(word=="%"):
+				arg1P.append(prevWord)
+			elif(word=="$"):
+				dollar=True
+			elif(word.isdigit() and dollar):
+				arg1D.append(word)
+				dollar=False
+			elif(word.isdigit() and not dollar):
+				arg1N.append(word)
+			prevWord=word
+
+		arg2N=[]
+		arg2P=[]
+		arg2D=[]
+		dollar=False
+		prevWord=""
+		for  word in arg2:
+			if(word=="%"):
+				arg2P.append(prevWord)
+			elif(word=="$"):
+				dollar=True
+			elif(word.isdigit() and dollar):
+				arg2D.append(word)
+				dollar=False
+			elif(word.isdigit() and not dollar):
+				arg2N.append(word)
+			prevWord=word
+
+
+		if(len(arg1N)>0 and len(arg2N)>0):
+			self.featureVector["NumberMention"]=True
+		else:
+			self.featureVector["NumberMention"]=False
+		if(len(arg1P)>0 and len(arg2P)>0):
+			self.featureVector["PercentageMention"]=True
+		else:
+			self.featureVector["PercentageMention"]=False
+		if(len(arg1D)>0 and len(arg2D)>0):
+			self.featureVector["DollarMention"]=True
+		else:
+			self.featureVector["DollarMention"]=False

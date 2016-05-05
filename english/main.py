@@ -102,6 +102,7 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 		feature.first3WordArg2(parseFile,implicitRelation)
 #		feature.brownCluster(parseFile,implicitRelation,brownClusterDict)
 #		feature.modalWords(parseFile,implicitRelation)
+		feature.numberPresence(parseFile,implicitRelation)
 		feature.setClassLabel(implicitRelation["Sense"][0])
 		featureCollection.append(feature)
 
