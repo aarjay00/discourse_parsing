@@ -120,7 +120,6 @@ def featureCombinations(featureCollection,analysisLocation,weight=False):
 	studyErrors(errorCollection,analysisLocation)
 	return resultCollection[-1]
 
-
 def runFeatureCombination(featureCollectionLocation,analysisLocation,loadCollection=True,weight=False):	   
 	if(loadCollection):
 		featureCollection=loadModel(featureCollectionLocation)

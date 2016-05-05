@@ -314,7 +314,14 @@ class Feature():
 
 	def first2WordArg2(self,parseFile,discourseRelation):
 		self.featureVector["first3WordsArg2"]="_".join(discourseRelation["Arg2"]["RawText"].split()[:2])
+	
 
+	def initializeBrownCluster(self,brownCluster):
+		
+		cluster=brownCluster.keys()
+		for c1 in cluster:
+			for c2 in cluster:
+				self.featureVector[c1+"__"+c2]=0
 
 	def brownCluster(self,parseFile,discourseRelation,brownCluster):
 
@@ -322,12 +329,34 @@ class Feature():
 			sentenceNum1=token1[3]
 			wordNum1=token1[4]
 			word1=parseFile["sentences"][sentenceNum1]["words"][wordNum1][0].lower()
-			if(word1 not in brownCluster.keys()):
+			if(word1 not in brownCluster):
 				continue
 			for token2 in discourseRelation["Arg2"]["TokenList"]:
 				sentenceNum2=token2[3]
 				wordNum2=token2[4]
 				word2=parseFile["sentences"][sentenceNum2]["words"][wordNum2][0].lower()
-				if(word2 not in brownCluster.keys()):
+				if(word2 not in brownCluster):
 					continue
-				self.featureVector[brownCluster[word1]+"__"+brownCluster[word2]]="True"
+				self.featureVector[brownCluster[word1]+"__"+brownCluster[word2]]=True
+	def modalWords(self,parseFile,discourseRelation):
+		
+		modalWordList=["can","could","may","might","will","shall","would","should","must","dare","need","ought to","used to","have got to","to be going to","to be able to"]
+
+		
+		arg1=discourseRelation["Arg1"]["RawText"].lower()
+		arg2=discourseRelation["Arg2"]["RawText"].lower()
+
+		arg1Modals=[]
+		arg2Modals=[]
+		for modal in modalWordList:
+			if(modal in arg1 or modal in arg2):
+				self.featureVector["SimpleModalPresence_"+modal]=True
+			if(modal in arg1):
+				self.featureVector["arg1ModalPresence_"+modal]=True
+				arg1Modals.append(modal)
+			if(modal in arg2):
+				self.featureVector["arg2ModalPresence_"+modal]=True
+				arg2Modals.append(modal)
+		for modal1 in arg1Modals:
+			for modal2 in arg2Modals:
+				self.featureVector["arg1-arg2ModalPresence"]=True

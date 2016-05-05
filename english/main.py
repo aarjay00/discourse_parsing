@@ -19,6 +19,7 @@ def readBrownClusters(brownClusterLocation):
 		line=line[:-1]
 		line=line.split('\t')
 		brownClusterDict[line[1].lower()]=line[0]
+	print len(brownClusterDict.keys())
 
 
 def readDocuments(documentLocation,relationLocation):
@@ -37,7 +38,7 @@ def divideRelations(relationList):
 	implicitRelationList=[]
 	for relation in relationList:
 		connective=relation['Connective']['CharacterSpanList']
-		if(len(connective)==0):
+		if(len(connective)==0 or relation['Type']!="Explicit"):
 			implicitRelationList.append(relation)
 		else:
 			if(relation['Type']=="Explicit"):
@@ -93,16 +94,17 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 
 		feature.firstWordArg1(parseFile,implicitRelation)
 		feature.firstWordArg2(parseFile,implicitRelation)
-		feature.lastWordArg1(parseFile,implicitRelation)
-		feature.lastWordArg2(parseFile,implicitRelation)
-		feature.first2WordArg1(parseFile,implicitRelation)
-		feature.first2WordArg2(parseFile,implicitRelation)
+#		feature.lastWordArg1(parseFile,implicitRelation)
+#		feature.lastWordArg2(parseFile,implicitRelation)
+#		feature.first2WordArg1(parseFile,implicitRelation)
+#		feature.first2WordArg2(parseFile,implicitRelation)
 		feature.first3WordArg1(parseFile,implicitRelation)
 		feature.first3WordArg2(parseFile,implicitRelation)
-		feature.brownCluster(parseFile,implicitRelation,brownClusterDict)		
+#		feature.brownCluster(parseFile,implicitRelation,brownClusterDict)
+#		feature.modalWords(parseFile,implicitRelation)
 		feature.setClassLabel(implicitRelation["Sense"][0])
 		featureCollection.append(feature)
-		print len(featureCollection)
+
 	return featureCollection
 
 if __name__=='__main__':
