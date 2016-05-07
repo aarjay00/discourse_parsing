@@ -4,7 +4,7 @@
 
 from nltk import tree
 from tree_api import *
-
+from nltk.corpus import verbnet
 
 class Feature():
 	def __init__(self):
@@ -304,6 +304,16 @@ class Feature():
 	def lastWordArg2(self,parseFile,discourseRelation):
 		self.featureVector["firstWordArg2"]=discourseRelation["Arg2"]["RawText"].split()[-1]
 
+
+	def firstAndLastArg1(self,parseFile,discourseRelation):
+		l=discourseRelation["Arg1"]["RawText"].split()
+		self.featureVector["firstAndLastArg1"]=l[0]+"__"+l[-1]
+
+
+	def firstAndLastArg2(self,parseFile,discourseRelation):
+		l=discourseRelation["Arg2"]["RawText"].split()
+		self.featureVector["firstAndLastArg"]=l[0]+"__"+l[-1]
+
 	def first3WordArg1(self,parseFile,discourseRelation):
 		self.featureVector["first3WordsArg1"]="_".join(discourseRelation["Arg1"]["RawText"].split()[:3])
 
@@ -335,6 +345,7 @@ class Feature():
 				sentenceNum2=token2[3]
 				wordNum2=token2[4]
 				word2=parseFile["sentences"][sentenceNum2]["words"][wordNum2][0].lower()
+#				self.featureVector[word1+"__"+word2]=word1+"__"+word2
 				if(word2 not in brownCluster):
 					continue
 				self.featureVector[brownCluster[word1]+"__"+brownCluster[word2]]=True
@@ -343,23 +354,36 @@ class Feature():
 		modalWordList=["can","could","may","might","will","shall","would","should","must","dare","need","ought to","used to","have got to","to be going to","to be able to"]
 
 		
-		arg1=discourseRelation["Arg1"]["RawText"].lower()
-		arg2=discourseRelation["Arg2"]["RawText"].lower()
+		arg1=[]
+		arg2=[]
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			arg1.append(parseFile["sentences"][token[3]]["words"][token[4]][0])
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			arg2.append(parseFile["sentences"][token[3]]["words"][token[4]][0])
 
 		arg1Modals=[]
 		arg2Modals=[]
 		for modal in modalWordList:
 			if(modal in arg1 or modal in arg2):
 				self.featureVector["SimpleModalPresence_"+modal]=True
+			else:
+				self.featureVector["SimpleModalPresence_"+modal]=False
 			if(modal in arg1):
 				self.featureVector["arg1ModalPresence_"+modal]=True
 				arg1Modals.append(modal)
+			else:
+				self.featureVector["arg1ModalPresence_"+modal]=False
 			if(modal in arg2):
 				self.featureVector["arg2ModalPresence_"+modal]=True
 				arg2Modals.append(modal)
+			else:
+				self.featureVector["arg2ModalPresence_"+modal]=False
+		for m1 in modalWordList:
+		  for m2 in modalWordList:
+		  	self.featureVector[m1+"__"+m2]=False
 		for modal1 in arg1Modals:
 			for modal2 in arg2Modals:
-				self.featureVector["arg1-arg2ModalPresence"]=True
+				self.featureVector[modal1+"__"+modal2]=True
 	def numberPresence(self,parseFile,discourseRelation):
 
 		arg1=[]
@@ -422,3 +446,188 @@ class Feature():
 			self.featureVector["DollarMention"]=True
 		else:
 			self.featureVector["DollarMention"]=False
+
+#		if(len(arg1N)>0 and len(arg2D)>0):
+#			self.featureVector["NumberDollarMention"]=True
+#		else:
+#			self.featureVector["NumberDollarMention"]=False
+#		if(len(arg1N)>0 and len(arg2P)>0):
+#			self.featureVector["NumberPercentageMention"]=True
+#		else:
+#			self.featureVector["NumberPercentageMention"]=False
+#		if(len(arg1D)>0 and len(arg2P)>0):
+#			self.featureVector["DollarPercentageMention"]=True
+#		else:
+#			self.featureVector["DollarPercentageMention"]=False
+
+	def verbSimilarity(self,parseFile,discourseRelation,brownCluster):
+		
+		arg1=[]
+		arg2=[]
+		arg1Indices=[]
+		arg2Indices=[]
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			arg1.append(parseFile["sentences"][token[3]]["words"][token[4]])
+			arg1Indices.append(token[4])
+		for token in discourseRelation["Arg2"]["TokenList"]:
+			arg2.append(parseFile["sentences"][token[3]]["words"][token[4]])
+			arg2Indices.append(token[4])
+
+		#DO LATER , get different trees for arg1 since arg1 spans more than 1 sentence -----------------------
+		arg1=[x for x in filter(lambda x: "VB" in x[1]["PartOfSpeech"],arg1)]
+		arg2=[x for x in filter(lambda x: "VB" in x[1]["PartOfSpeech"],arg2)]
+
+#		for word in arg1:
+#			print word[0],word[1]["PartOfSpeech"],verbnet.classids(lemma=word[0])
+#		print ""
+#		for word in arg2:
+#			print word[0],word[1]["PartOfSpeech"],verbnet.classids(lemma=word[0])
+#		print ""
+
+		simmilarity=False
+		for word1 in arg1:
+			for word2 in arg2:
+				try:
+					if(brownCluster[word1[0].lower()]==brownCluster[word2[0].lower()]):
+						simmilarity=True
+				except:
+				  	pass
+#				self.featureVector[word1[0]+"__"+word2[0]]=word1[0]+"__"+word2[0]
+		self.featureVector["verbSimilarity"]=simmilarity
+
+	def argumentSentiment(self,parseFile,discourseRelation,sentimentDict):
+		
+		arg1=[]
+		arg2=[]
+		sentimentArg1=[]
+		sentimentArg2=[]
+
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			arg1.append(parseFile["sentences"][token[3]]["words"][token[4]])
+			try:
+				sentimentArg1.append((sentimentDict[arg1[-1][0].upper()],token[3],token[4]))
+			except KeyError:
+				continue
+		for token in discourseRelation["Arg2"]["TokenList"]:
+			arg2.append(parseFile["sentences"][token[3]]["words"][token[4]])
+			try:
+				sentimentArg2.append((sentimentDict[arg2[-1][0].upper()],token[3],token[4]))
+			except KeyError:
+				continue
+
+		sentiment_1=[]
+		sentiment_2=[]
+		prev=""
+		currentSentiment="None"
+		for i in sentimentArg1:
+			if(prev!="" and i[1]==prev[1] and i[2]-1==prev[2]):
+				if(currentSentiment=="None" or currentSentiment=="neutral"):
+					if(i[0][0]=="positive"):
+						currentSentiment="positive"
+					elif(i[0][0]=="negative" or i[0][0]=="weakneg"):
+						currentSentiment="negative"
+				elif(i[0][0]=="weakneg" or i[0][0]=="negative"):
+					currentSentiment="negative"
+				elif(i[0][0]=="positive"):
+					currentSentiment="positive"
+			else:
+			 	if(currentSentiment!="None"):
+					sentiment_1.append(currentSentiment)
+			 	if(i[0][0]=="weakneg" or i[0][0]=="negative"):
+			 		currentSentiment="negative"
+				elif(i[0]=="positive"):
+					currentSentiment="positive"
+				else:
+					currentSentiment=i[0][0]
+			prev=i
+		if(currentSentiment!="None"):
+			sentiment_1.append(currentSentiment)
+		prev=""
+		currentSentiment="None"
+		for i in sentimentArg2:
+			if(prev!="" and i[1]==prev[1] and i[2]-1==prev[2]):
+				if(currentSentiment=="None" or currentSentiment=="neutral"):
+					if(i[0]=="positive"):
+						currentSentiment="positive"
+					elif(i[0]=="negative" or i[0]=="weakneg"):
+						currentSentiment="negative"
+				elif(i[0][0]=="weakneg" or i[0][0]=="negative"):
+					currentSentiment="negative"
+				elif(i[0][0]=="positive"):
+					currentSentiment="positive"
+			else:
+			 	if(currentSentiment!="None"):
+					sentiment_2.append(currentSentiment)
+			 	if(i[0][0]=="weakneg" or i[0][0]=="negative"):
+			 		currentSentiment="negative"
+				elif(i[0][0]=="positive"):
+					currentSentiment="positive"
+				else:
+					currentSentiment=i[0][0]
+			prev=i
+		if(currentSentiment!="None"):
+			sentiment_2.append(currentSentiment)
+
+		arg1FinalSentiment=0
+		arg2FinalSentiment=0
+		for i in sentiment_1:
+			if(i=="positive"):
+				arg1FinalSentiment+=1
+			elif(i=="negative"):
+				arg1FinalSentiment-=1
+		for i in sentiment_2:
+			if(i=="positive"):
+				arg2FinalSentiment+=1
+			elif(i=="negative"):
+				arg2FinalSentiment-=1
+		if(arg1FinalSentiment==0 or arg2FinalSentiment==0):
+			self.featureVector["arg1Sentiment"]="none"
+			self.featureVector["arg2Sentiment"]="none"
+			self.featureVector["arg1_arg2Sentiment"]="none"
+			return
+
+		if(arg1FinalSentiment<0 and arg2FinalSentiment>0):
+			self.featureVector["NegToPos"]=True
+		else:
+		 	self.featureVector["NegToPos"]=False
+		if(arg1FinalSentiment>0 and arg2FinalSentiment<0):
+			self.featureVector["PosToNeg"]=True
+		else:
+		 	self.featureVector["PosToNeg"]=False
+		
+		return
+
+		if(arg1FinalSentiment<0):
+			self.featureVector["arg1Sentiment"]="negative"
+		elif(arg1FinalSentiment>0):
+			self.featureVector["arg1Sentiment"]="positive"
+		else:
+			self.featureVector["arg1Sentiment"]="nuetral"
+		if(arg2FinalSentiment<0):
+			self.featureVector["arg2Sentiment"]="negative"
+		elif(arg2FinalSentiment>0):
+			self.featureVector["arg2Sentiment"]="positive"
+		else:
+			self.featureVector["arg2Sentiment"]="nuetral"
+
+		self.featureVector["arg1_arg2Sentiment"]=self.featureVector["arg1Sentiment"]+"__"+self.featureVector["arg2Sentiment"]
+
+	def argumentPosition(self,parseFile,discourseRelation):
+
+		arg1Sentence=[]
+		arg1Word=[]
+		arg2Sentence=[]
+		arg2Word=[]
+
+		for token in discourseRelation["Arg1"]["TokenList"]:
+			arg1Sentence.append(token[3])
+			arg1Word.append(token[4])
+		for token in discourseRelation["Arg2"]["TokenList"]:
+			arg2Sentence.append(token[3])
+			arg2Word.append(token[4])
+		arg1Sentence=list(set(arg1Sentence))
+		arg2Sentence=list(set(arg2Sentence))
+		if(len(arg1Sentence)==len(arg2Sentence)==1 and arg1Sentence[0]==arg2Sentence[0]):
+			self.featureVector["bothArgInSameSentence"]=True
+		else:
+			self.featureVector["bothArgInSameSentence"]=False

@@ -11,8 +11,12 @@ from model_api import *
 
 
 brownClusterDict={}
+sentimentDict={}
+
 
 def readBrownClusters(brownClusterLocation):
+	global sentimentDict
+	global brownClusterDict
 	FD=open(brownClusterLocation,'r')
 
 	for line in FD.readlines():
@@ -20,7 +24,10 @@ def readBrownClusters(brownClusterLocation):
 		line=line.split('\t')
 		brownClusterDict[line[1].lower()]=line[0]
 	print len(brownClusterDict.keys())
-
+	FD.close()
+	fileFD=open("mpqa_subj_05.json","r")
+	sentimentDict=json.load(fileFD)
+	print len(sentimentDict.keys())
 
 def readDocuments(documentLocation,relationLocation):
 	
@@ -86,7 +93,7 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 	print "number of implicit relations",len(implicitRelationList)
 
 	featureCollection=[]
-	
+	num=0	
 	for implicitRelation in implicitRelationList:
 	
 		parseFile=documentList[implicitRelation["DocID"]]
@@ -94,6 +101,7 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 
 		feature.firstWordArg1(parseFile,implicitRelation)
 		feature.firstWordArg2(parseFile,implicitRelation)
+#		feature.firstAndLastArg1(parseFile,implicitRelation)
 #		feature.lastWordArg1(parseFile,implicitRelation)
 #		feature.lastWordArg2(parseFile,implicitRelation)
 #		feature.first2WordArg1(parseFile,implicitRelation)
@@ -101,11 +109,16 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 		feature.first3WordArg1(parseFile,implicitRelation)
 		feature.first3WordArg2(parseFile,implicitRelation)
 #		feature.brownCluster(parseFile,implicitRelation,brownClusterDict)
-#		feature.modalWords(parseFile,implicitRelation)
+		feature.modalWords(parseFile,implicitRelation)
 		feature.numberPresence(parseFile,implicitRelation)
+#		feature.verbSimilarity(parseFile,implicitRelation,brownClusterDict)
+		feature.argumentSentiment(parseFile,implicitRelation,sentimentDict)
+#		feature.argumentPosition(parseFile,implicitRelation)
 		feature.setClassLabel(implicitRelation["Sense"][0])
 		featureCollection.append(feature)
-
+#		if(num>10):
+#			exit()
+		num+=1
 	return featureCollection
 
 if __name__=='__main__':

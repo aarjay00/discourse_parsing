@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.linear_model import LogisticRegression as maxent
+from sklearn.naive_bayes import GaussianNB as nb
 from sklearn.svm import SVC
 from sklearn.pipeline import Pipeline
 from sklearn.feature_selection import RFE
@@ -20,6 +21,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.metrics import confusion_matrix
+
+from nltk.classify import NaiveBayesClassifier
+from nltk.classify import MaxentClassifier
 
 import operator
 
@@ -32,9 +36,14 @@ from analysis import *
 def genClassifer(corpus,weight=False):
 	if(not weight):
 		logistic=maxent()
+		naives=nb()
 #		featureselector=RFE(logistic,step=10)
 #		pipeline=Pipeline([('rfe',featureselector),('maxent',logistic)])
+#		classifier=SklearnClassifier(logistic).train(corpus)
 		classifier=SklearnClassifier(logistic).train(corpus)
+#		classifier=MaxentClassifier.train(corpus)
+#		classifier.show_most_informative_features(n=1000)
+#		classifier.explain()
 	else:
 		classifier=SklearnClassifier(maxent(class_weight={1:2,0:1})).train(corpus)
 		print "weighted"
@@ -229,7 +238,7 @@ def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation):
 	errorSamples=[]
 	errorSampleLabels=[]
 
-	print(classification_report(dataSetLabel,results))
+#	print(classification_report(dataSetLabel,results))
 	print accuracy_score(dataSetLabel,results)
 	print precision_score(dataSetLabel,results,average="weighted")
 	print recall_score(dataSetLabel,results , average="weighted")
@@ -238,9 +247,9 @@ def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation):
 	np.set_printoptions(precision=2)
 	print('Confusion matrix, without normalization')
 	print(cm)
-	plt.figure()
-	plot_confusion_matrix(cm,classifier.labels())
-	plt.show()
+#	plt.figure()
+#	plot_confusion_matrix(cm,classifier.labels())
+#	plt.show()
 
 	for result in results:
 		if(result==dataSetLabel[sampleNum]):
