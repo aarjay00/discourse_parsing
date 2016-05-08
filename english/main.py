@@ -54,6 +54,16 @@ def divideRelations(relationList):
 				print "hmmma",relation['Type']
 	return implicitRelationList,explicitRelationList
 
+def divideRelationsFinal(relationList):
+	explicitRelationList=[]
+	implicitRelationList=[]
+	for relation in relationList:
+		connective=relation['Connective']['CharacterSpanList']
+		if(len(connective)==0 ):
+			implicitRelationList.append(relation)
+		else:
+			explicitRelationList.append(relation)
+	return implicitRelationList,explicitRelationList
 
 def explictFeatureGeneration(documentList,explicitRelationList):
 
@@ -64,7 +74,7 @@ def explictFeatureGeneration(documentList,explicitRelationList):
 	featureCollection=[]
 	for explicitRelation in explicitRelationList :
 		parseFile=documentList[explicitRelation["DocID"]]
-		feature=Feature()
+		feature=Feature(explicitRelation["ID"])
 
 		feature.connectiveString(explicitRelation)
 		feature.connectivePOS(parseFile,explicitRelation)
@@ -80,11 +90,12 @@ def explictFeatureGeneration(documentList,explicitRelationList):
 		feature.parentLinkedContext(parseFile,explicitRelation)
 #		feature.connectiveToRootPath(parseFile,explicitRelation)
 #		feature.syntaxSyntaxInteraction()
-		feature.setClassLabel(explicitRelation["Sense"][0])
+		try:
+			feature.setClassLabel(explicitRelation["Sense"][0])
+		except:
+			pass
 		featureCollection.append(feature)
 
-	for key in featureCollection[0].featureVector.keys():
-		print key
 	return featureCollection
 
 
@@ -97,7 +108,7 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 	for implicitRelation in implicitRelationList:
 	
 		parseFile=documentList[implicitRelation["DocID"]]
-		feature=Feature()
+		feature=Feature(implicitRelation["ID"])
 
 		feature.firstWordArg1(parseFile,implicitRelation)
 		feature.firstWordArg2(parseFile,implicitRelation)
@@ -113,15 +124,78 @@ def implicitFeatureGeneration(documentList,implicitRelationList):
 		feature.numberPresence(parseFile,implicitRelation)
 #		feature.verbSimilarity(parseFile,implicitRelation,brownClusterDict)
 		feature.argumentSentiment(parseFile,implicitRelation,sentimentDict)
-#		feature.argumentPosition(parseFile,implicitRelation)
-		feature.setClassLabel(implicitRelation["Sense"][0])
+		feature.argumentPosition(parseFile,implicitRelation)
+		feature.parseTreeProductionRules(parseFile,implicitRelation)
+		try:
+			feature.setClassLabel(implicitRelation["Sense"][0])
+		except:
+			pass
 		featureCollection.append(feature)
 #		if(num>10):
 #			exit()
 		num+=1
+	for feature in featureCollection:
+		feature.productionRuleCutoff()
 	return featureCollection
 
+def runCompleteSystem():
+	if(len(sys.argv)<4):
+		print "Please train and test document parses and relation data folder location , and also brown cluster location"
+		exit()
+	trainDocumentLocation=sys.argv[1]+"parses.json"
+	trainRelationLocation=sys.argv[1]+"relations.json"
+
+	testDocumentLocation=sys.argv[2]+"parses.json"
+	testRelationLocation=sys.argv[2]+"relations-no-senses.json"
+#	testRelationLocation=sys.argv[2]+"relations.json"
+	
+	trainDocumentList,trainRelationList=readDocuments(trainDocumentLocation,trainRelationLocation)
+	testDocumentList,testRelationList=readDocuments(testDocumentLocation,testRelationLocation)
+
+
+	readBrownClusters(sys.argv[3])
+
+	trainImplicitRelationList,trainExplicitRelationList=divideRelationsFinal(trainRelationList)
+	testImplicitRelationList,testExplicitRelationList=divideRelationsFinal(testRelationList)
+
+	finalResults={}
+#-------------Explict Relations --------------------------
+	trainExplicitFeatureCollection=explictFeatureGeneration(trainDocumentList,trainExplicitRelationList)
+	testExplicitFeatureCollection=explictFeatureGeneration(testDocumentList,testExplicitRelationList)
+
+	trainModel(trainExplicitFeatureCollection,"explicitModel")
+	
+	results=simpleTrainedModelRun(testExplicitFeatureCollection,"explicitModel","explicitRelation",False)
+	for num in range(0,len(results)):
+		finalResults[testExplicitRelationList[num]["ID"]]=results[num]
+	
+#-------------Implict Relations --------------------------
+
+	trainImplicitFeatureCollection=implicitFeatureGeneration(trainDocumentList,trainImplicitRelationList)
+	testImplicitFeatureCollection=implicitFeatureGeneration(testDocumentList,testImplicitRelationList)
+
+	trainModel(trainImplicitFeatureCollection,"implicitModel")
+	results=simpleTrainedModelRun(testImplicitFeatureCollection,"implicitModel","implicitRelation",False)
+	for num in range(0,len(results)):
+		finalResults[testImplicitRelationList[num]["ID"]]=results[num]
+	for testRelation in testRelationList:
+	 	testRelation["Sense"]=[finalResults[testRelation["ID"]]]
+		if(testRelation["Connective"]["RawText"]==""):
+			testRelation["Type"]="Implicit"
+		else:
+			testRelation["Type"]="Explicit"
+
+	 	testRelation["Connective"]["TokenList"]=[token[2] for token in testRelation["Connective"]["TokenList"]]
+	 	testRelation["Arg1"]["TokenList"]=[token[2] for token in testRelation["Arg1"]["TokenList"]]
+	 	testRelation["Arg2"]["TokenList"]=[token[2] for token in testRelation["Arg2"]["TokenList"]]
+	FD=open("finalResult.json","w")
+	for testRelation in testRelationList:
+		json.dump(testRelation,FD)
+		FD.write("\n")
+	FD.close()
 if __name__=='__main__':
+	runCompleteSystem()
+	exit()
 	if(len(sys.argv)<4):
 		print "Please train and test document parses and relation data folder location , and also brown cluster location"
 		exit()

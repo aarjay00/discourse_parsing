@@ -22,10 +22,13 @@ def genAttrMaps(attrList,errorList):
 	for attrName in attrList:
 		attrMap={}
 		for error in errorList:
-			if(error.featureVector[attrName]  in attrMap):
-				attrMap[error.featureVector[attrName]].append(error)
-			else:
-				attrMap[error.featureVector[attrName]]=[error]
+			try:
+				if(error.featureVector[attrName]  in attrMap):
+					attrMap[error.featureVector[attrName]].append(error)
+				else:
+					attrMap[error.featureVector[attrName]]=[error]
+			except:
+			  	pass
 		attrMapList.append((attrName,attrMap))
 	return attrMapList
 def printAttrMaps(attrMapList,folderName):

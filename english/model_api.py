@@ -220,7 +220,7 @@ def trainModel(featureCollection,modelLocation):
 	classifier=genClassifer(dataSet,False)
 	exportModel(modelLocation,classifier)
 
-def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation):
+def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation,runAnalysis=True):
 
 	featureSet=featureCollection[0].featureVector.keys()
 	dataSet=convertFeatureCollection(featureCollection,False,featureSet)
@@ -231,7 +231,8 @@ def simpleTrainedModelRun(featureCollection,modelLocation,analysisLocation):
 	dataSetLabel=[sample[1] for sample in dataSet]
 
 	results=classifier.classify_many(dataSetFeature)
-
+	if(not runAnalysis):
+		return results
 	sampleNum=0
 	positive=0
 	negative=0

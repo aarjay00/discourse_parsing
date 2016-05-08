@@ -6,10 +6,15 @@ from nltk import tree
 from tree_api import *
 from nltk.corpus import verbnet
 
+
+productionRuleArg1Count={}
+productionRuleArg2Count={}
+
 class Feature():
-	def __init__(self):
+	def __init__(self,relationID):
 		self.featureVector={}
 		self.classLabel=""
+		self.ID=relationID
 	def setClassLabel(self,classLabel):
 		self.classLabel=classLabel
 
@@ -581,19 +586,20 @@ class Feature():
 			elif(i=="negative"):
 				arg2FinalSentiment-=1
 		if(arg1FinalSentiment==0 or arg2FinalSentiment==0):
-			self.featureVector["arg1Sentiment"]="none"
-			self.featureVector["arg2Sentiment"]="none"
-			self.featureVector["arg1_arg2Sentiment"]="none"
+			self.featureVector["NoSentiment"]=True
+#			self.featureVector["arg1Sentiment"]="none"
+#			self.featureVector["arg2Sentiment"]="none"
+#			self.featureVector["arg1_arg2Sentiment"]="none"
 			return
 
 		if(arg1FinalSentiment<0 and arg2FinalSentiment>0):
 			self.featureVector["NegToPos"]=True
-		else:
-		 	self.featureVector["NegToPos"]=False
+#		else:
+#		 	self.featureVector["NegToPos"]=False
 		if(arg1FinalSentiment>0 and arg2FinalSentiment<0):
 			self.featureVector["PosToNeg"]=True
-		else:
-		 	self.featureVector["PosToNeg"]=False
+#		else:
+#		 	self.featureVector["PosToNeg"]=False
 		
 		return
 
@@ -629,5 +635,94 @@ class Feature():
 		arg2Sentence=list(set(arg2Sentence))
 		if(len(arg1Sentence)==len(arg2Sentence)==1 and arg1Sentence[0]==arg2Sentence[0]):
 			self.featureVector["bothArgInSameSentence"]=True
-		else:
-			self.featureVector["bothArgInSameSentence"]=False
+#		else:
+#			self.featureVector["bothArgInSameSentence"]=False
+	def parseTreeProductionRules(self,parseFile,discourseRelation):
+
+		arg1Indices=[]
+		productionRules=[]
+		for token in  discourseRelation["Arg1"]["TokenList"]:
+			if(arg1Indices==[] or arg1Indices[-1][3]==token[3]):
+				arg1Indices.append(token)
+			else:
+				arg1Indices=[token[4] for token in arg1Indices]
+				parseTree=parseFile["sentences"][token[3]]["parsetree"]
+				parseTree=tree.ParentedTree.fromstring(parseTree)
+				try:
+					arg1Tree=parseTree.treeposition_spanning_leaves(arg1Indices[0],arg1Indices[-1]+1)
+					arg1Tree=getNodeFromTreePostion(arg1Tree,parseTree)
+					productionRules.extend(getProductionRulesFromTree(arg1Tree))
+				except:
+					pass
+				arg1Indices=[]
+		if(arg1Indices!=[]):
+				arg1Indices=[token[4] for token in arg1Indices]
+				parseTree=parseFile["sentences"][token[3]]["parsetree"]
+				parseTree=tree.ParentedTree.fromstring(parseTree)
+				try:
+					arg1Tree=parseTree.treeposition_spanning_leaves(arg1Indices[0],arg1Indices[-1]+1)
+					arg1Tree=getNodeFromTreePostion(arg1Tree,parseTree)
+					productionRules.extend(getProductionRulesFromTree(arg1Tree))
+				except:
+					pass
+		for rule in productionRules:
+			self.featureVector["Arg1"+rule]=True
+			if(rule not in productionRuleArg1Count):
+				productionRuleArg1Count[rule]=1
+			else:
+				productionRuleArg1Count[rule]+=1
+		productionRules=[]
+		arg2Indices=[]
+		for token in  discourseRelation["Arg2"]["TokenList"]:
+			if(arg2Indices==[] or arg2Indices[-1][3]==token[3]):
+				arg2Indices.append(token)
+			else:
+				arg2Indices=[token[4] for token in arg2Indices]
+				parseTree=parseFile["sentences"][token[3]]["parsetree"]
+				parseTree=tree.ParentedTree.fromstring(parseTree)
+				try:
+					arg2Tree=parseTree.treeposition_spanning_leaves(arg2Indices[0],arg2Indices[-1]+1)
+					arg2Tree=getNodeFromTreePostion(arg2Tree,parseTree)
+					productionRules.extend(getProductionRulesFromTree(arg2Tree))
+				except:
+					pass
+				arg2Indices=[]
+		if(arg2Indices!=[]):
+				arg2Indices=[token[4] for token in arg2Indices]
+				parseTree=parseFile["sentences"][token[3]]["parsetree"]
+				parseTree=tree.ParentedTree.fromstring(parseTree)
+				try:			
+					arg2Tree=parseTree.treeposition_spanning_leaves(arg2Indices[0],arg2Indices[-1]+1)
+					arg2Tree=getNodeFromTreePostion(arg2Tree,parseTree)
+					productionRules.extend(getProductionRulesFromTree(arg2Tree))
+				except:
+					pass
+		for rule in productionRules:
+			self.featureVector["Arg2-"+rule]=True
+			if(rule not in productionRuleArg2Count):
+				productionRuleArg2Count[rule]=1
+			else:
+				productionRuleArg2Count[rule]+=1
+	def productionRuleCutoff(self):
+
+		keys=productionRuleArg1Count.keys()
+		for key in keys:
+			if(productionRuleArg1Count[key]<10):
+				del productionRuleArg1Count[key]
+				if("Arg1-"+key in self.featureVector):
+					del self.featureVector["Arg1-"+key]
+		keys=productionRuleArg2Count.keys()
+		for key in keys:
+			if(productionRuleArg2Count[key]<10):
+				del productionRuleArg2Count[key]
+				if("Arg2-"+key in self.featureVector):
+					del self.featureVector["Arg2-"+key]
+		
+#		for key in productionRuleArg1Count:
+#			if("Arg1-"+key not in self.featureVector):
+#				self.featureVector["Arg1-"+key]=False
+
+#		for key in productionRuleArg2Count:
+#			if("Arg2-"+key not in self.featureVector):
+#				self.featureVector["Arg2-"+key]=False
+
