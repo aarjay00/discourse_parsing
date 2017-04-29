@@ -690,19 +690,21 @@ fcollec=[]
 
 fsNum=0
 createDirectory("./processedData/featureCollection/")
-for fs in featureCollectionSingle:
+for idx,fs in enumerate(featureCollectionSingle):
 #	print "f1",fs.featureList
 	fcollec.append((fsNum,fs.featureList,fs.classLabel))
-	exportModel("./processedData/featureCollection/"+str(fsNum),featureCollectionDescSingle[fsNum])
+	exportModel("./processedData/featureCollection/"+str(idx),featureCollectionSingle[idx])
 	fsNum+=1
 exportModel("./fList",fcollec)
 
 fcollec=[]
 fsNum=0
-createDirectory("./processedData/featureCollection/")
-for fs in featureCollectionSplit:
+createDirectory("./processedData/featureCollectionDescription/")
+for idx, fs in enumerate(featureCollectionSplit):
 #	print "f1",fs.featureList
 	fcollec.append((fsNum,fs.featureList,fs.classLabel))
+	exportModel("./processedData/featureCollectionDescription/" + str(idx), featureCollectionDescSingle[idx])
+
 #	exportModel("./processedData/featureCollection/"+str(fsNum),featureCollectionDescSingle[fsNum])
 	fsNum+=1
 exportModel("./fListSplit",fcollec)

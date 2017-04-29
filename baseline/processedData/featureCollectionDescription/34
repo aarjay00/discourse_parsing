@@ -1,0 +1,70 @@
+(ifeature
+featureDesc
+p1
+(dp2
+S'Arg1num'
+p3
+I14
+sS'attrList'
+p4
+(lp5
+S'rawFileName'
+p6
+aS'sentenceNum'
+p7
+aS'description'
+p8
+aS'classLabel'
+p9
+aS'classifiedAs'
+p10
+aS'Single connective'
+p11
+aS'Arg1'
+p12
+ag3
+aS'Arg2'
+p13
+aS'Arg2num'
+p14
+aS'remove'
+p15
+aS'Single connective neighborhood'
+p16
+asg8
+S'Single connective identification'
+p17
+sg14
+I15
+sg11
+V\u0938\u093e\u0925 \u0939\u0940
+p18
+sg13
+V\u0936\u0902\u0915\u0930\u093e\u091a\u093e\u0930\u094d\u092f \u091c\u0940 \u0915\u094b \u0935\u0938\u094d\u0924\u0941\u0938\u094d\u0925\u093f\u0924\u093f \u0938\u0947 \u0905\u0935\u0917\u0924 \u0915\u0930\u093e\u092f\u093e \u0917\u092f\u093e \u0964
+p19
+sg15
+I00
+sg7
+I15
+sg12
+V\u0938\u092e\u093f\u0924\u093f \u0928\u0947 \u0905\u092c \u0924\u0915 \u0905\u092f\u094b\u0927\u094d\u092f\u093e \u092a\u094d\u0930\u0915\u0930\u0923 \u0915\u0947 \u0938\u092e\u093e\u0927\u093e\u0928 \u0915\u0947 \u0932\u093f\u090f \u0935\u093f\u091a\u093e\u0930 \u092e\u0902\u0925\u0928 \u091a\u0915\u094d\u0930 \u091a\u0932\u093e\u092f\u093e \u0964
+p20
+sg9
+S'Yes'
+p21
+sg10
+S''
+sg6
+S'../data/raw/Section_11/fullnews_id_2578406_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn'
+p22
+sS'connSpan'
+p23
+(lp24
+I401
+aI402
+asS'ID'
+p25
+I35
+sg16
+V\u0964
+sb.

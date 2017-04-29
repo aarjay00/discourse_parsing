@@ -6,7 +6,7 @@ import codecs
 sys.setdefaultencoding("utf-8")
 
 import re
-import ssf
+# import ssf
 from util import *
 from bs4 import BeautifulSoup
 

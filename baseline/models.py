@@ -32,10 +32,10 @@ def genModel(classList):
 	for classLabel in classList:
 		classWeight[classLabel]=1.0
 	model=maxent(solver='liblinear')
-	model=maxent(dual=True,solver='lbfgs' , max_iter=200)
+	model=maxent(solver='lbfgs' , max_iter=200)
 #	model=tree.DecisionTreeClassifier()
 #	model=AdaBoostClassifier(n_estimators=100)
-	model=MultinomialNB()
+	# model=MultinomialNB()
 #	model=Perceptron(n_iter=10)
 #	model=SGDClassifier()
 #	model=SVC()

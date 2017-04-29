@@ -161,3 +161,5 @@ Accuracy 95.7-95.97-95.84
 Accuracy 95.66-95.89-95.8
  wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 toRootFeature tok7tFeature
 Accuracy 94.55-94.71-94.6
+ wordFeature tagFeature tagNeighbor--1 tagNeighbor-1 chunkFeature chunkNeighbor-1 chunkNeighbor--1 aurFeature2 tathaFeature2
+Accuracy 95.23-95.51-95.37

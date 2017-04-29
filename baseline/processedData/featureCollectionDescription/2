@@ -1,0 +1,71 @@
+(ifeature
+featureDesc
+p1
+(dp2
+S'Arg1num'
+p3
+I1
+sS'attrList'
+p4
+(lp5
+S'rawFileName'
+p6
+aS'sentenceNum'
+p7
+aS'description'
+p8
+aS'classLabel'
+p9
+aS'classifiedAs'
+p10
+aS'Single connective'
+p11
+aS'Arg1'
+p12
+ag3
+aS'Arg2'
+p13
+aS'Arg2num'
+p14
+aS'remove'
+p15
+aS'Single connective neighborhood'
+p16
+asg8
+S'Single connective identification'
+p17
+sg14
+I2
+sg11
+V\u0915\u0947 \u0915\u093e\u0930\u0923
+p18
+sg13
+V\u0932\u094b\u0917\u094b\u0902 \u0928\u0947 \u0917\u0930\u094d\u092e \u0935\u0938\u094d\u0924\u094d\u0930 \u092a\u0939\u0928\u0928\u0947 \u0936\u0941\u0930\u0942 \u0915\u0930 \u0926\u093f\u090f
+p19
+sg15
+I00
+sg7
+I2
+sg12
+V\u0964 \u0924\u093e\u091c\u093e \u0939\u093f\u092e\u092a\u093e\u0924 \u0939\u094b\u0928\u0947 \u0938\u0947 \u0918\u093e\u091f\u0940 \u0915\u0947 \u0924\u093e\u092a\u092e\u093e\u0928 \u092e\u0947\u0902 \u0917\u093f\u0930\u093e\u0935\u091f \u0906\u0928\u0947
+p20
+sg9
+S'Yes'
+p21
+sg10
+S''
+sg6
+S'../data/raw/Section_11/fullnews_id_2578405_date_7_7_2004.utf8.cml.V.tkn.cml_updated.mo.pos.chnk.prun.posn'
+p22
+sS'connSpan'
+p23
+(lp24
+I93
+aI94
+asS'ID'
+p25
+I2
+sg16
+V\u0906\u0928\u0947
+p26
+sb.
