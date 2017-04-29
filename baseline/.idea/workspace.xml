@@ -48,7 +48,7 @@
       <file leaf-file-name="keras_experiments.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keras_experiments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="254">
               <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -695,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keras_experiments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="254">
           <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
