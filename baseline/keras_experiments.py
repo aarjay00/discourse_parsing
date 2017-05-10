@@ -39,7 +39,6 @@ def connective_model():
     # create model
     model = Sequential()
     model.add(Dense(512, input_dim=286, activation='relu'))
-    model.add(Dense(256, activation='relu'))
     model.add(Dense(128, activation='relu'))
     model.add(Dense(32, activation='relu'))
     model.add(Dense(1, activation='sigmoid'))
@@ -51,7 +50,7 @@ def connective_model():
     # evaluate the model
     scores = model.evaluate(X, Y)
     print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
-    model.save("connective_deep_4")
+    model.save("connective_deep_simple")
 
 def rnn_basic_model():
     # load pima indians dataset
@@ -68,7 +67,7 @@ def rnn_basic_model():
     R_X = numpy.array(R_X)
     # create model
     model = Sequential()
-    model.add(LSTM(512,input_dim=286))
+    model.add(LSTM(512,input_dim=286, activation="tanh"))
     model.add(Dense(1, activation='sigmoid'))
 
     # Compile model
@@ -80,4 +79,34 @@ def rnn_basic_model():
     print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
     model.save("connective_rnn")
 
-rnn_basic_model()
+def rnn_model_2():
+    # load pima indians dataset
+    # top_words = 5000
+    # (X_train, y_train), (X_test, y_test) = imdb.load_data(num_words=top_words)
+    dataset = numpy.loadtxt("connective-features.csv", delimiter=",")
+    # split into input (X) and output (Y) variables
+    X = dataset[:, 0:286]
+    Y = dataset[:, 286]
+    R_X = []
+    for x in X:
+        r_x = (x,x)
+        R_X.append(r_x)
+    R_X = numpy.array(R_X)
+    # create model
+    model = Sequential()
+    model.add(LSTM(512,input_dim=286, activation="relu"))
+    model.add(Dense(128,activation="relu"))
+    model.add(Dense(32,activation="relu"))
+    model.add(Dense(1, activation='sigmoid'))
+
+    # Compile model
+    model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
+    # Fit the model
+    model.fit(R_X, Y, epochs=200, batch_size=10)
+    # evaluate the model
+    scores = model.evaluate(R_X, Y)
+    print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
+    model.save("connective_rnn_dense")
+
+
+connective_model()

@@ -235,7 +235,7 @@ accuracyMin={}
 for iteration in range(0,time):
 	print "running"
 	#x,y,z,l=runModel(featureCollectionSplit,8,1,1)
-	x,y,z=runModel(featureCollectionSingle,featureDescSingleCollection,classList,"sense_identification",15,1,1)
+	x, y, z, err, corr, extra=runModel(featureCollectionSingle,featureDescSingleCollection,classList,"sense_identification",15,1,1)
 	for key in x.keys():
 		if(key not in accuracyFinal):
 			accuracyFinal[key]=0.0
