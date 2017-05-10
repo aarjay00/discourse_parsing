@@ -23,6 +23,7 @@ Keras==2.0.3
 Logbook==1.0.0
 memory-profiler==0.46
 mock==2.0.0
+nltk==3.2.2
 numpy==1.12.1
 packaging==16.8
 pathlib2==2.2.1
